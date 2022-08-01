@@ -89,11 +89,6 @@
   <block id="f63d604edef29843d35ad367e0d82814" category="inline-link-macro">FSX for ONTAP のアクセス許可を設定する方法について説明します</block>
   <block id="85f610955384d6c0dcae09552c4508e0" category="paragraph"><block ref="121317bac1802e026b9ea68cbe410489" category="inline-link-macro-rx"></block>。</block>
   <block id="784044bd2af30d58bbb0dbcea3adbad6" category="section-title">2021 年 10 月 31 日</block>
-  <block id="5b80dcfe3dbe5a2279a764bb895220e8" category="section-title">Cloud Manager API を使用して iSCSI ボリュームを作成</block>
-  <block id="c9901681b19037cfe4d776eb572a7a6b" category="paragraph">Cloud Manager API を使用して FSX for ONTAP 用の iSCSI ボリュームを作成し、作業環境で管理できます。</block>
-  <block id="1b06c7a9314e682b34302ac90d6d6650" category="section-title">ボリュームの作成時にボリュームの単位を選択します</block>
-  <block id="155385bf6757f064143eb321fbfd3bff" category="inline-link-macro">ボリュームの作成時にボリュームの単位（ GiB または TiB ）を選択します</block>
-  <block id="bdc6d93b4370ea76238df491d9d141c4" category="paragraph">可能です <block ref="88fc27d29fd6019ad989d255373b75d1" category="inline-link-macro-rx"></block> FSX for ONTAP の場合。</block>
   <block id="983a4e7f5913304ec713a249baf7be47" category="section-title">2022 年 3 月 3 日</block>
   <block id="400480e0d45c783abec0a0fffbb005a6" category="section-title">テンプレートを作成して、特定の作業環境を検索できるようになりました</block>
   <block id="6aa300e24ddf3ee5a99bbb1cf5bb4a72" category="inline-link">詳細については、こちらをご覧ください</block>
@@ -110,19 +105,6 @@
   <block id="00b4c4979fe8d65dc663ea7c82a1b1c2" category="paragraph"><block ref="ddc85a18edb3f9e32810e603b7ef9eb7" category="inline-link-rx"></block>。</block>
   <block id="ad806d4b803a5aa7358400786d14dec0" category="section-title">2022 年 4 月 4 日</block>
   <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">データで特定できるすべての種類の個人データを表示します</block>
-  <block id="f670023c78e0e3dbeb691779659d5049" category="section-title">2022 年 3 月 15 日</block>
-  <block id="5e16db4c47abe8cb1c5bd746df2fd94a" category="section-title">2022 年 4 月 3 日</block>
-  <block id="33c34b75ae4154295ed3cdeeccb3fd6a" category="section-title">データブローカーグループの機能拡張</block>
-  <block id="9e85c5ace2120c3600ae07824bd6d1a9" category="paragraph">データブローカーグループには、次のような機能拡張が行われました。</block>
-  <block id="d1dcf627a81e370076956675cf99d2b9" category="list-text">データブローカーを新規または既存のグループに移動できるようになりました。</block>
-  <block id="1a89df8c409f135e6e7efd8c0600dba6" category="list-text">データブローカーのプロキシ設定を更新できるようになりました。</block>
-  <block id="71dba184b83141e962cb89e88563baf3" category="list-text">最後に、データブローカーグループを削除することもできます。</block>
-  <block id="fe914f8d9b65e6214843cbd5f42cddc8" category="inline-link">データブローカーグループの管理方法について説明します</block>
-  <block id="ced18d468e2bb63d56f45d8b16575d02" category="paragraph"><block ref="f6641f935ea9b46efe2ca72364b0bc1e" category="inline-link-rx"></block>。</block>
-  <block id="16f353b4ac76ea7e1a66509c3863e0f9" category="section-title">ダッシュボードフィルタ</block>
-  <block id="c81f80b5e3a2c8dfe8c2f908cbbfc2fa" category="paragraph">Sync Dashboard の内容をフィルタリングして、特定のステータスに一致する同期関係を簡単に見つけることができるようになりました。たとえば、ステータスが「失敗」の同期関係をフィルタリングできます</block>
-  <block id="ab31e38babe6f59fc89d1a7f8d3ea2c9" category="inline-image-macro">ダッシュボードの上部にある ［ 同期によるフィルタ ］ ステータスオプションを示すスクリーンショット。</block>
-  <block id="9a086a6121a0ffa4e8986b7ce540eece" category="paragraph"><block ref="9a086a6121a0ffa4e8986b7ce540eece" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6cb8333618f00b139da255e7f5a82ea0" category="section-title">Amazon S3 Glacier Instant Retrieval ストレージクラスが使用可能になりました</block>
   <block id="199090bb5d58df554b18a5cb68acb0b7" category="section-title">Cloud Tiering は、 ONTAP Select システムで完全に認定されています</block>
   <block id="a74220a8acc78d1041352afb305af18f" category="paragraph">AFF システムと FAS システムのデータを階層化するだけでなく、 ONTAP Select システムからクラウドストレージにもアクセス頻度の低いデータを階層化できるようになりました。</block>
@@ -153,17 +135,6 @@
   <block id="b70ff2217d4c493d72369bc7013d42a1" category="paragraph"><block ref="0d930208c139fddb05408afa8bb5cf71" category="inline-link-rx"></block>。</block>
   <block id="6ae18045fc1ab0bf7898b13f3ef31c9a" category="inline-image-macro">Cloud Manager のコスト分析ページを示すスクリーンショット。</block>
   <block id="dfe5d33062cb5ad4c4036bb7e93ff63e" category="paragraph"><block ref="dfe5d33062cb5ad4c4036bb7e93ff63e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="df62d5ca9c29346bfeb41f9581ecdf5b" category="section-title">2021 年 12 月 17 日（バージョン 1.2.0 ）</block>
-  <block id="cd25d0dea9ddd72c58145908f9602867" category="section-title">OpenSSL モジュールがバージョン 1.1.1L にアップグレードされました。</block>
-  <block id="9d15f44f2f441c9fbcdc28d40b323389" category="paragraph">これは最新バージョンであり、より安全です。このモジュールは、 GFC エッジと GFC コア間のセキュアな通信に使用されます。</block>
-  <block id="c49811e0cecf194341b2ae059236dc2a" category="section-title">ロギングインフラが強化されました。</block>
-  <block id="4d18c7d8762e789debac221e79dece82" category="section-title">2021 年 6 月 9 日（バージョン 1.1.0 ）</block>
-  <block id="77e6f4e52a856772d2e09ae19855212a" category="section-title">「エッジ同期」機能が追加されました。</block>
-  <block id="15b783a23e5291e1ffb9f638317d4bcb" category="inline-link">『 NetApp Global File Cache User Guide 』を参照してください</block>
-  <block id="850383dab52cb38649682d2f7d66f04f" category="paragraph">この機能では、リモートオフィスの複数のエッジが同期され、データは常にキャッシュ / ウォームに保存されます。ファイルを 1 つのエッジでフラッシュ / フェッチすると、 Edge Sync に参加するすべてのエッジ上の同じファイルが更新され、キャッシュされます。のセクション 8.4 を参照してください<block ref="0f1e08336ba0ac25d056248c22c33aaf" category="inline-link-rx"></block> を参照してください。</block>
-  <block id="8703dd42c4c647846ef556f4d8459d59" category="section-title">OpenSSL モジュールがバージョン 1.1.1k にアップグレードされました。</block>
-  <block id="513502857f15915e7acef1b7916eda1b" category="section-title">ライセンス登録ページが更新されました。</block>
-  <block id="9993afe041a131f763bfa71520f8d27d" category="paragraph">GFC ライセンス登録ページに、ネットアップのサブスクリプションを通じてライセンスをアクティブ化したときに表示されるライセンス数が追加されました。</block>
   <block id="ef1bf4095b622ba80ac24b48b8e45eac" category="section-title">2022 年 1 月 11 日</block>
   <block id="9e27c4a53794e4f6cfc9949de58e5091" category="section-title">2021 年 8 月 1 日</block>
   <block id="f9564bccd9f6164dfb5486c5fe5ff233" category="section-title">Acquisition Unit の名前に変更します</block>
@@ -186,9 +157,6 @@
   <block id="a70e816a0245e4c041fe696bc068fde8" category="paragraph"><block ref="cdf49294fa22fe97f3cd9774fbb3d925" category="inline-link-rx"></block>。クラスタ用のネットアップサポートサイトのアカウント（ NSS ）が必要です。また、 NSS のクレデンシャルを Cloud Manager アカウントに接続する必要があります。</block>
   <block id="d69df284f21ccdf93082c4aaf0953b6d" category="section-title">オンプレミスの ONTAP クラスタのボリュームに追加するタグは、 Tagging サービスで使用できます。</block>
   <block id="3686b84bef4027bfe5a11fcf472d8662" category="paragraph">ボリュームに追加するタグは、アプリケーションテンプレートサービスのタグ機能に関連付けられます。これにより、リソースの管理を整理して簡単にすることができます。</block>
-  <block id="70ca849e4710f5c98451b61f2b47e5a8" category="section-title">ビジネスクリティカルなデータの権限ステータスを追跡する新しいパネル</block>
-  <block id="1029db4aa82b2fd39d624a6eda513d6c" category="section-title">[ アクセス許可 ] 領域に OneDrive アカウントと SharePoint アカウントが含まれるようになりました</block>
-  <block id="52a3db95e0c303b6251e8f60de3b3f3d" category="paragraph">ランサムウェア対策保護ダッシュボードの [ 開くアクセス許可 ] 領域に、 OneDrive アカウントと SharePoint アカウントでスキャンされるファイルに存在するアクセス許可が表示されるようになりました。</block>
   <block id="6c88f9e17d9019e00177d64f9db55d2e" category="section-title">Amazon FSX for ONTAP のサポート</block>
   <block id="59dfc17500b1e0b8d1824eb8b1413080" category="paragraph">Cloud Volumes ONTAP システムまたはオンプレミスの ONTAP クラスタから ONTAP ファイルシステム用の Amazon FSX にデータをレプリケートできるようになりました。</block>
   <block id="40f78d193b858589ad7df4dd4ce61ad6" category="inline-link">データレプリケーションの設定方法について説明します</block>
@@ -201,15 +169,7 @@
   <block id="b59fdb8f9fe5a28d08cd50bf85b70880" category="section-title">Apache log4j の脆弱性に対する修正</block>
   <block id="6b6f87c741f6734b4908d03d2c21e449" category="paragraph">SnapCenter サービス 1.0.1 をアップグレードすると、バージョン 2.9.1 から 2.17 に Apache log4j がアップグレードされ、次の脆弱性が解決されます： CVE-20244228 、 CVE-2012-4104 、および CVE-2016-45105 。</block>
   <block id="ae1f9a5afbc7e02967d7f7e643135d82" category="paragraph">SnapCenter サービスクラスタは最新バージョンに自動更新される必要があります。SnapCenter サービス UI に、クラスタが 1.0.1.1251 以降であることを確認する必要があります。</block>
-  <block id="81fb4d1570abd75a1e2945d1f1c9f8cc" category="section-title">2022年5月1日</block>
-  <block id="5cccebf55aa4da23124f776528630bf3" category="section-title">同期タイムアウト</block>
-  <block id="5e4a50a7111ce8bba22cd01d07f86a3b" category="paragraph">新しい* Sync Timeout *設定を同期関係に使用できるようになりました。この設定を使用すると、指定した時間数または日数内に同期が完了していない場合にCloud Sync でデータの同期をキャンセルするかどうかを定義できます。</block>
-  <block id="21a5968447686d2d79ece94fc6ab0653" category="inline-link">同期関係の設定の変更の詳細については、こちらをご覧ください</block>
-  <block id="5f03ed55634cfe3f169d94549e45f06c" category="paragraph"><block ref="050cf03a98debb532006e420507b54cf" category="inline-link-rx"></block>。</block>
-  <block id="a274f4d4670213a9045ce258c6c56b80" category="section-title">通知</block>
-  <block id="0a3f4ee017f808dc79fb4939a3eaf91b" category="paragraph">新しい* Notifications *設定を同期関係に使用できるようになりました。この設定を使用すると、Cloud Sync 通知をCloud Managerの通知センターで受信するかどうかを選択できます。データの同期が成功した場合、データの同期が失敗した場合、データの同期がキャンセルされた場合の通知を有効にできます。</block>
   <block id="9081c0430b4e4fcf1f0dd042e7c0ca60" category="inline-image-macro">Cloud Managerの通知センターを示すスクリーンショット。</block>
-  <block id="914b918c172fa270f423df8135932978" category="paragraph"><block ref="914b918c172fa270f423df8135932978" category="inline-image-macro-rx" type="image"></block></block>
   <block id="49644953fd4e9612a9842d17bef5e79b" category="section-title">2022年5月2日</block>
   <block id="403f4772d715b69d553d3568ca523be0" category="section-title">Google Cloud Storageのバックアップファイルで検索とリストアがサポートされるようになりました</block>
   <block id="a2824b49f1c7526bf0e925b86c7b293c" category="inline-link">Search &amp; Restoreを使用してボリュームとファイルをリストアする方法を参照してください</block>
@@ -222,84 +182,25 @@
   <block id="013bf9b0d5295922582e97a69409b714" category="list-text">無料トライアルは、Marketplaceのサブスクリプションが開始された日から開始されます。たとえば、Cloud Volumes ONTAP システムのMarketplaceサブスクリプションを30日間使用した後で無料トライアルを有効にした場合、クラウドバックアップトライアルは利用できません。</block>
   <block id="caf9c5028f987d64131bfc8e9f4bd0ed" category="inline-link">使用可能なライセンスモデルの詳細については、こちらをご覧ください</block>
   <block id="ecd035ede918d91432ba5203669d96bd" category="paragraph"><block ref="7226e404226609d8e6a7fa892651e74a" category="inline-link-rx"></block>。</block>
-  <block id="b11df59ba05c25c3a8734d54b7501ae7" category="list-text">デリー（アジア-サウス2）</block>
-  <block id="68fb6cfeb81e52feef062b88d7037b7e" category="list-text">メルボルン（オーストラリア-スモアカス2）</block>
   <block id="3b61cbbfa7452cc07df9dbea0756d650" category="inline-link">サポートされているリージョンの完全なリストを表示します</block>
   <block id="0ec2b2e4840acfd3f21b50b176ec45f1" category="paragraph"><block ref="0ec2b2e4840acfd3f21b50b176ec45f1" category="inline-link-rx"></block></block>
-  <block id="898d465c80c6b6783418f6fa71db0946" category="inline-image-macro">サービスアカウントフィールドのスクリーンショット</block>
-  <block id="bfd761a70b5f9cd277ef7c878344df38" category="paragraph">単一のAvailability Zone（AZ；アベイラビリティゾーン）にHAペアを導入する際にAWS分散配置グループを作成するためには、次の権限が必要です。</block>
-  <block id="0080f4096e51a12d4256890c125c5c46" category="paragraph">これらの権限は、Cloud Managerによる配置グループの作成方法を最適化するために必要になります。</block>
   <block id="d3e8cd2e370974f27de1b310b4aa8cb3" category="section-title">2022年5月3日</block>
   <block id="a74300b6b08791dda4f54d473a58e17a" category="section-title">Cloud Tieringは、追加のクラスタ構成をサポートしています</block>
   <block id="afacb33ad65bcd63eb15aeba04b4aed0" category="inline-link">これらのタイプのクラスタのライセンスを設定する方法を参照してください。</block>
   <block id="4675a948ea93098e22976c0848737e1a" category="paragraph">クラウド階層化ライセンスを、階層化ミラー構成（MetroCluster 構成を除く）のクラスタと、IBM Cloud Object Storageに階層化されたクラスタと共有できるようになりました。これらのシナリオで廃止されたFabricPool ライセンスを使用する必要はなくなりました。これにより、多くのクラスタで「フローティング」のクラウド階層化ライセンスを簡単に使用できるようになります。<block ref="4e8c6c7f1b8cf8bbca1bc62528b46ae2" category="inline-link-rx"></block></block>
   <block id="75ad6cd4979a906c67e27abc9ee1c14e" category="inline-link">サポートされているS3ストレージクラスを参照してください。</block>
   <block id="d3028cb26dae3dbde1ec068c17d15383" category="paragraph">Cloud Tiering をセットアップする際に、アクティブでないデータが特定の日数後に _Standard_storage クラスから _Glacier Instant Retrieve_に 移行するようにライフサイクルルールを設定できるようになりました。これにより、 AWS インフラのコストを削減できます。<block ref="99f36cc81f33df65a0349e719000fada" category="inline-link-rx"></block></block>
-  <block id="6401d12bcac1f01899ab494a0a6d8edb" category="section-title">ドラッグアンドドロップしてストレージクラスを追加します</block>
-  <block id="0f808082ee99c2acfbcb1661162034f6" category="paragraph">KubernetesクラスタをドラッグしてCloud Volumes ONTAP 作業環境にドロップし、ストレージクラスをキャンバスから直接追加できるようになりました。</block>
   <block id="d23895cd28f2e8e5d3074279cea7aacf" category="inline-link-macro">ストレージクラスを追加します</block>
   <block id="2556925e0b340fdd647987c6af7fbee9" category="paragraph"><block ref="2556925e0b340fdd647987c6af7fbee9" category="inline-link-macro-rx"></block></block>
-  <block id="19f4ed17c6ec00f67063b70e40bfc661" category="section-title">2022年5月4日</block>
   <block id="7d6adafb3c8bb3861e1f6a4ca4b68455" category="section-title">2022年5月11日</block>
-  <block id="6c5c8bcc3e6c86825162a1ff2603c1f3" category="section-title">Google Driveアカウントでのデータスキャンのサポートが追加されました</block>
-  <block id="686f6248c08053e57c0ee91c18b2d097" category="inline-link">Googleドライブアカウントをスキャンする方法をご覧ください</block>
-  <block id="b3393b07bc5334485489796939a3c1ac" category="paragraph">Googleドライブアカウントからドキュメントやファイルをスキャンするために、Googleドライブアカウントをデータセンスに追加できるようになりました。<block ref="a42326c5e8654fdf4afea98988689f56" category="inline-link-rx"></block>。</block>
-  <block id="1c569820a2d89c87007e78d8b99f545d" category="inline-link">既存のファイルタイプ</block>
-  <block id="d166e1f4f240d3915c676102b853aab5" category="paragraph">データセンスは、に加えて、Googleドキュメントスイート（ドキュメント、シート、スライド）からGoogleファイルタイプ内の個人識別情報（PII）を識別できます<block ref="c10736ee2c8542c954ba18655a2447a7" category="inline-link-rx"></block>。</block>
-  <block id="2f8d7f7b2a9f475f94e961eea0214b6f" category="section-title">[データ調査]ページに追加されたディレクトリレベルビュー</block>
-  <block id="a1e4ba958a7013f98fdbb1a883102e86" category="inline-link">スキャンしたデータのディレクトリビューを選択する方法を参照してください</block>
-  <block id="fc923fa1acb929379421a26667fff392" category="section-title">グループを展開して、ファイルにアクセスする権限を持つユーザー/メンバーを表示します</block>
-  <block id="87dc185d970f7684d5d731eebbf8d195" category="inline-link">ファイルに対する読み取り権限または書き込み権限を持つユーザーおよびグループを表示する方法を参照してください</block>
-  <block id="3fedcf7612eed43efc90d19f42d43f9a" category="paragraph">データセンス権限機能の一部として、ファイルにアクセスできるユーザとグループのリストを表示できるようになりました。各グループを展開すると、グループ内のユーザのリストが表示されます。<block ref="978ddb309e10f2b48cc0f4a959fbca42" category="inline-link-rx"></block>。</block>
-  <block id="96ab93ed4512cdb4dd07828ed738b502" category="section-title">2つの新しいフィルタが[データ調査]ページに追加されました</block>
-  <block id="9e4e3d73f23809aabccd30c3abe0f99f" category="list-text">「ディレクトリタイプ」フィルタを使用すると、フォルダまたは共有のみを表示するようにデータを絞り込むことができます。結果は新しい*ディレクトリ*タブに表示されます。</block>
-  <block id="7613f02556e4a651db53f06b87b1b460" category="list-text">「ユーザ/グループの権限」フィルタを使用すると、特定のユーザまたはグループに対する読み取り/書き込み権限があるファイル、フォルダ、および共有を表示できます。複数のユーザまたはグループの名前を選択するか、名前の一部を入力できます。t</block>
   <block id="a3065e926a55339df72c1343ee9b3fae" category="inline-link">データの調査に使用できるすべてのフィルタのリストを確認します</block>
   <block id="2d7dcb96cb20cbaa2b94280f3b67d862" category="paragraph"><block ref="e3dd455551e82145f7b0bbdda5ed35ae" category="inline-link-rx"></block>。</block>
-  <block id="55a52ff3da54b1be61be4ffbf282e94a" category="section-title">ONTAP 環境のセキュリティ強化を追跡する新しいパネル。</block>
   <block id="9c7ce6244ca9eb3215d61dd69afa3325" category="inline-link">『 NetApp Security Hardening Guide for ONTAP Systems 』を参照してください</block>
   <block id="3380ed6ae32f99410860532de07b57a7" category="inline-link">ONTAP ランサムウェア対策機能</block>
   <block id="914a5a27ea412edf84bb416054ec6d75" category="paragraph">推奨事項を確認し、潜在的な問題への対処方法を決定できます。次の手順に従って、クラスタの設定を変更したり、変更を別の時間に延期したり、推奨された設定を無視したりできます。<block ref="87553c653b94d5529a2080374ec70030" category="inline-link-rx"></block>。</block>
-  <block id="76553642514a4b204c12afe14df42e92" category="section-title">Cloud Backup を使用してさまざまなカテゴリのデータを保護する方法については、新しいパネルを参照してください。</block>
-  <block id="c7fd320d60c5b92b36ff4a806aef9121" category="paragraph">すべてのファイルおよびデータベースのデータを表示およびフィルタリングするだけでなく、[データ調査]ページのフォルダおよび共有内のすべてのデータに基づいてデータを表示およびフィルタリングできるようになりました。ディレクトリには、スキャンされたCIFS共有とNFS共有、OneDrive、SharePoint、Google Driveフォルダのインデックスが作成されます。これで、権限を表示し、ディレクトリレベルでデータを管理できるようになりました。<block ref="9e53e59afd29cea3c43eb27dc0a3476a" category="inline-link-rx"></block>。</block>
-  <block id="e76164b285bb635d604e86db0ddefffb" category="paragraph">コネクタの3.9.18リリースでは、次の変更が加えられました。</block>
-  <block id="44521137c9499dbef6a006058d0d9127" category="section-title">Cloud Volumes ONTAP 9.11.0</block>
-  <block id="f5820273186d8dafc3fd2a4b4a00f3ab" category="paragraph">Cloud ManagerでCloud Volumes ONTAP 9.11.0の導入と管理が可能になりました。</block>
-  <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP</block>
-  <block id="066405d152aeaf5c017e93048679ce43" category="paragraph"><block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block>。</block>
-  <block id="a0834297e8b28b9a51d59500441c7351" category="section-title">メディエーターのアップグレードに関する機能拡張</block>
-  <block id="b1001d52fd68a717e647b035c7ba64fe" category="paragraph">Cloud ManagerによってHAペアのメディエーターがアップグレードされると、ブートディスクを削除する前に新しいメディエーターイメージが使用可能であるかどうかが検証されるようになりました。この変更により、アップグレードプロセスが失敗した場合でもメディエーターは正常に動作し続けることができます。</block>
-  <block id="e6e5b99786bfefd88e32c940b7547ab3" category="section-title">K8sタブが削除されました</block>
-  <block id="6eb7d1343cce33ec7d31b57edd9f3aef" category="paragraph">K8sタブは以前のでは廃止されており、現在は削除されています。KubernetesとCloud Volumes ONTAP を併用する場合は、高度なデータ管理のための作業環境として、管理対象- Kubernetesクラスタをキャンバスに追加できます。</block>
-  <block id="75b200b4f9a63bca2792f985693a22c8" category="inline-link">Cloud ManagerでのKubernetesのデータ管理について説明します</block>
-  <block id="97bbe1f6bede29b64e2101d03c2362cb" category="paragraph"><block ref="97bbe1f6bede29b64e2101d03c2362cb" category="inline-link-rx"></block></block>
-  <block id="7475abfb4039c00bb03fd05d6d792b3d" category="section-title">Azureの年間契約</block>
-  <block id="52b398f13b1acf3e73584a9cb106e989" category="paragraph">EssentialsパッケージとProfessionalパッケージは、年間契約を通じてAzureで利用できるようになりました。年間契約を購入するには、ネットアップの営業担当者にお問い合わせください。この契約は、Azure Marketplaceでのプライベートオファーとして提供されます。</block>
-  <block id="51606c7b614cdc7ab9e0489981838dfa" category="paragraph">ネットアップがお客様とプライベートオファーを共有したあとは、Azure Marketplaceでの作業環境の作成時にサブスクリプションするときに、年間プランを選択できます。</block>
-  <block id="ba089edca33f314482ad946ae680f1eb" category="inline-link">ライセンスの詳細については、こちらをご覧ください</block>
-  <block id="bd2a7f63a398b5af0c64c2d07409b38c" category="paragraph"><block ref="fa67dcc1253d6ef7da36dd244bfe620f" category="inline-link-rx"></block>。</block>
-  <block id="57ae56f77d278076fb394799067eb3ef" category="section-title">S3 Glacierのインスタント検索</block>
-  <block id="465771d8890531f2527e09ef3f1b4f68" category="paragraph">Amazon S3 Glacier Instant Retrievalストレージクラスに階層化データを格納できるようになりました。</block>
-  <block id="6d4822148bad6fb79e6d92864dde8771" category="inline-link">階層化データのストレージクラスを変更する方法について説明します</block>
-  <block id="e6eb181abe02ab22f2df966da6c0669d" category="paragraph"><block ref="5ae2503a0985d77718c9fe3da8dbc989" category="inline-link-rx"></block>。</block>
-  <block id="ef8e1d8f242a7ee4d109deb44db1b252" category="section-title">コネクタに新しいAWS権限が必要です</block>
   <block id="81ad4f0de90ee8a7305d0fd7751df796" category="section-title">新しいGoogle Cloudリージョンサポート</block>
-  <block id="6b071f4257d8badb0aeb96e6b0547800" category="paragraph">9.10.1リリース以降、Cloud Volumes ONTAP は次のGoogle Cloudリージョンでサポートされるようになりました。</block>
-  <block id="986ef6cfb21ad2831a7ae053e3f0506e" category="list-text">Milan（Europe - west8）-シングルノードのみ</block>
-  <block id="00f803da9ac7d98ccbfd2178a95625ee" category="list-text">Santiago（southamerica-west1）-シングルノードのみ</block>
   <block id="d1ce20099e22fd96c2217da218a20a9e" category="inline-link">Cloud Volumes ONTAP でサポートされるリージョンの完全なリストを表示します</block>
   <block id="efb1786cdf88244f9480e15cb039f942" category="paragraph"><block ref="efb1786cdf88244f9480e15cb039f942" category="inline-link-rx"></block></block>
-  <block id="8184a89f6d67aafd228ddc002e159ce5" category="section-title">Google Cloudでのn2標準16のサポート</block>
-  <block id="86a3a073b385c5ae85e4523282be3124" category="paragraph">Google CloudのCloud Volumes ONTAP では、9.10.1リリース以降のn2標準-16マシンタイプがサポートされます。</block>
-  <block id="4994b2bf1bd5c0153c9dc0077a84b5a7" category="inline-link">Google CloudでCloud Volumes ONTAP がサポートされている構成を表示します</block>
-  <block id="528aaaafbacf255285f844e94403a43f" category="paragraph"><block ref="528aaaafbacf255285f844e94403a43f" category="inline-link-rx"></block></block>
-  <block id="291a5c22c8cb78fe8ec363d61830f63e" category="section-title">Google Cloudファイアウォールポリシーの機能強化</block>
-  <block id="73d44bfa5f20953f5799b7072e1f9dc7" category="list-text">Google CloudでCloud Volumes ONTAP HAペアを作成すると、VPC内の既存のすべてのファイアウォールポリシーがCloud Managerに表示されるようになりました。</block>
-  <block id="5e1082179426bea32e466fe447cc5f2e" category="paragraph">以前は、Cloud Managerでは、ターゲットタグのないVPC -1、VPC -2、またはVPC -3のポリシーは表示されませんでした。</block>
-  <block id="880f67f103405f29628ff848182ca330" category="list-text">Google CloudでCloud Volumes ONTAP シングルノードシステムを作成する際に、定義済みのファイアウォールポリシーで、選択したVPC内のトラフィックのみを許可するか（推奨）、すべてのVPC内のトラフィックを許可するかを選択できるようになりました。</block>
-  <block id="5c4a95a56d4b5bfef734aeab388618c0" category="section-title">Google Cloudサービスアカウントの機能強化</block>
-  <block id="06fa5bb865f711b645e1f86dd8711d63" category="paragraph">Cloud Volumes ONTAP で使用するGoogle Cloudサービスアカウントを選択すると、Cloud Managerに各サービスアカウントに関連付けられているEメールアドレスが表示されるようになりました。メールアドレスを表示すると、同じ名前を共有するサービスアカウントを区別しやすくなります。</block>
-  <block id="92a991ca375ee56317f82c3a30f16fff" category="paragraph"><block ref="92a991ca375ee56317f82c3a30f16fff" category="inline-image-macro-rx" type="image"></block></block>
   <block id="25cd9b4ac7b3c20c21ee2a72afe32aa0" category="section-title">2022年5月19日（バージョン1.3.0）</block>
   <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link">このページです</block>
   <block id="538b3d7be12bcc1f18433981df773bc1" category="paragraph">バージョン1.3.0のグローバルファイルキャッシュエッジソフトウェアは、から入手できます<block ref="2c81bb98c990e9738e500d000082628f" category="inline-link-rx"></block>。</block>
@@ -317,7 +218,6 @@
   <block id="969431a3ee7466b53b917ad1bc5d032a" category="paragraph">データブローカーに関連付けられているIAMロールでは、この設定を使用するために次の権限が必要です。</block>
   <block id="8817adc7e5de41abc6dded623fbb60a9" category="paragraph">これらの権限は、新しく作成したすべてのデータブローカーに自動的に追加されます。</block>
   <block id="f23841b65ba519d2dd6a63a2a3e4de83" category="inline-link-macro">Continuous Syncの詳細については、こちらをご覧ください</block>
-  <block id="9bc62ddcbad4365043432f4afd539ab9" category="paragraph"><block ref="b78c060d9cafb1faa0c3c10254143905" category="inline-link-macro-rx"></block>。</block>
   <block id="3d7f78f24cbebe2c601558e90c9fe15f" category="section-title">すべてのONTAP ボリュームを表示します</block>
   <block id="517d881d38e3ddd50495a5763ac986b4" category="paragraph">同期関係を作成するときに、ソースCloud Volumes ONTAP システム、オンプレミスONTAP クラスタ、またはCloud Sync ONTAP ファイルシステムのFSXにすべてのボリュームが表示されるようになりました。</block>
   <block id="9de2181e94c0cd08ea8823917ee87c3f" category="paragraph">以前は、Cloud Sync では、選択したプロトコルに一致するボリュームのみが表示されていました。すべてのボリュームが表示されますが、選択したプロトコルに一致しないボリュームや、共有やエクスポートがないボリュームはグレー表示され、選択できません。</block>
@@ -338,34 +238,6 @@
   <block id="f1567e25bd3a491ec53134f59ea7cea7" category="paragraph">SnapCenter Plug-in for VMware vSphereとCloud Managerを統合することで、仮想マシン上のデータを保護できます。データストアをクラウドにバックアップし、仮想マシンをオンプレミスのSnapCenter Plug-in for VMware vSphereにリストアする作業は簡単です。</block>
   <block id="b418e05c847b656e4a8ac26f2f0cc045" category="inline-link">仮想マシンをクラウドに保護する方法については、こちらをご覧ください</block>
   <block id="3a5ea6bb0616fe3f66bd74e5e18fd1b3" category="paragraph"><block ref="95fa49d8f0b9a0affedd5e0d4a52c2d2" category="inline-link-rx"></block>。</block>
-  <block id="650bbb3fd1c3ec1cf13fbf6dc440ce1c" category="paragraph">コネクタの3.9.19リリースでは、次の変更が加えられました。</block>
-  <block id="daa1014700acb24b76e93296bfc813fb" category="section-title">Cloud Volumes ONTAP 9.11.1</block>
-  <block id="5422eb6b3ee88eee2b931a6c1ae61c0d" category="paragraph">Cloud ManagerでCloud Volumes ONTAP 9.11.1の導入と管理が可能になりました。これには、新機能やその他のクラウドプロバイダリージョンのサポートが含まれます。</block>
-  <block id="0d69949c9de36f8752d49be7f0ec9aed" category="paragraph"><block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block></block>
-  <block id="129cb997dac90f5eb582bd49d3cae82c" category="paragraph">Cloud Volumes ONTAP の高度な管理を行う必要がある場合は、ONTAP システムに付属の管理インターフェイスであるONTAP System Managerを使用します。高度な管理のためにCloud Managerを終了する必要がないように、Cloud ManagerのインターフェイスはCloud Managerに直接組み込まれています。</block>
-  <block id="07bba549da0c5d9af2f0531199cb73e0" category="paragraph">この拡張ビューは、Cloud Volumes ONTAP 9.10.0以降でプレビューとして使用できます。今後のリリースでは、この点をさらに改良し、機能を強化する予定です。製品内のチャットでご意見をお寄せください。</block>
-  <block id="18f1ba3764c7c45f17295cada3f1b2ff" category="section-title">Amazon EBS Elastic Volumesのサポート</block>
-  <block id="2e2c03493705dc64283827f16a01fab5" category="paragraph">Cloud Volumes ONTAP アグリゲートでAmazon EBS Elastic Volumes機能がサポートされるため、パフォーマンスが向上して容量が追加されると同時に、必要に応じて基盤となるディスク容量がCloud Managerで自動的に拡張されます。</block>
-  <block id="1fb2d1e9760db598bc140d6df5875a5f" category="paragraph">Elastic Volumeは、Cloud Volumes ONTAP 9.11.0システム以降、GP3およびio1 EBSディスクタイプでサポートされます。</block>
-  <block id="70fb554e00e352dd7da6941d99b53751" category="inline-link-macro">Elastic Volumesのサポートに関する詳細情報</block>
-  <block id="65c3a54d401a824934a0b2987cd79906" category="paragraph"><block ref="e64e49a1cded5f4109adae46b4faa045" category="inline-link-macro-rx"></block>。</block>
-  <block id="1fa9d78d7f603e0879c6fe006c9879ac" category="paragraph">Elastic Volumesをサポートするために、Connectorに対する新しいAWS権限が必要になることに注意してください。</block>
-  <block id="209d7fb058921dcca459d965ee59c7fc" category="section-title">共有AWSサブネットでのHAペアの導入をサポートします</block>
-  <block id="009d92f6e41918233a5d5983863734d0" category="paragraph">Cloud Volumes ONTAP 9.11.1では、AWS VPC共有がサポートされています。このリリースのコネクタでは、APIを使用するときにAWS共有サブネットにHAペアを導入できます。</block>
-  <block id="d4b5e68525cac241fcf3cdcaa1a6e3dd" category="inline-link-macro">共有サブネットにHAペアを導入する方法について説明します</block>
-  <block id="4c45890715a33614c9b68937f7331041" category="paragraph"><block ref="a2afa807549bbfc6a98031b51b81dd74" category="inline-link-macro-rx"></block>。</block>
-  <block id="b58bf50dd57317d50ce59551de45158f" category="section-title">サービスエンドポイントを使用する場合は、ネットワークアクセスが制限されます</block>
-  <block id="982c0b0bc19727a7a5017f464489da09" category="paragraph">Cloud Volumes ONTAP とストレージアカウント間の接続にVNetサービスエンドポイントを使用する際に、Cloud Managerはネットワークアクセスを制限するようになりました。Azure Private Link接続を無効にすると、Cloud Managerはサービスエンドポイントを使用します。</block>
-  <block id="e020ad0693308c5d73b7fe4c7bafd660" category="inline-link-macro">Cloud Volumes ONTAP でのAzureプライベートリンク接続の詳細については、こちらをご覧ください</block>
-  <block id="572f029bc460b235b79bf593e07bce0a" category="paragraph"><block ref="11d2e9af90a503c65edc8ce2e258f040" category="inline-link-macro-rx"></block>。</block>
-  <block id="aace3e8a265fffb87e8d7fbd81d6adb9" category="section-title">Google CloudでのStorage VMの作成がサポートされます</block>
-  <block id="c248c01b69af03d24d1cd7a6b9ee8e7b" category="paragraph">Google CloudのCloud Volumes ONTAP では、9.11.1リリース以降、複数のStorage VMがサポートされています。このリリースのコネクタから、Cloud Managerを使用して、Google CloudのCloud Volumes ONTAP HAペアにStorage VMを作成できます。</block>
-  <block id="33fdc8eb46b228d804c2bf216d7ab788" category="paragraph">Storage VMの作成をサポートするには、次のコネクタに対する新しいGoogle Cloud権限が必要です。</block>
-  <block id="1639fb8b97b722c837cf68d599ffe1c4" category="paragraph">ONTAP CLIまたはSystem Managerを使用して、シングルノードシステムにStorage VMを作成する必要があります。</block>
-  <block id="ab9d588372f30d162e50dbbed45980eb" category="inline-link">Google CloudのStorage VMの制限に関する詳細を確認できます</block>
-  <block id="7859fc06f13ff8714740aa72213f86e7" category="list-text"><block ref="7859fc06f13ff8714740aa72213f86e7" category="inline-link-rx"></block></block>
-  <block id="3a7eebf972f838daafe4ea7948002b3d" category="inline-link-macro">Google CloudでCloud Volumes ONTAP 向けのデータ提供用Storage VMを作成する方法をご確認ください</block>
-  <block id="4d4f80e19da50b86ec7f247f81baedf7" category="list-text"><block ref="4d4f80e19da50b86ec7f247f81baedf7" category="inline-link-macro-rx"></block></block>
   <block id="338b73eb5ee02b02ceb307b68866c9f2" category="section-title">クラウドのリストアインスタンスは、ONTAP の参照とリストア機能では必要ありません</block>
   <block id="c2f301bf47b0e51a835909a868e786b5" category="paragraph">S3およびBLOBストレージからのファイルレベルの参照およびリストア処理に必要な、別のCloud Restoreインスタンス/仮想マシン。このインスタンスは使用していないときにシャットダウンされますが、ファイルのリストアに時間とコストがかかります。この機能は、必要に応じてコネクタに導入される無償のコンテナに置き換えられました。これには、次の利点があります。</block>
   <block id="b7a41babdf28bb4d456f0725ccfbc402" category="list-text">ファイルレベルのリストア処理のための追加コストは不要です</block>
@@ -406,7 +278,6 @@
   <block id="e59924af0c76a1072bb2a4cb349960b8" category="paragraph">_harden your ONTAP environments _パネルに、FSX for ONTAP システム上のボリュームのSnapshotコピーのステータスが表示されるようになりました。ボリュームの40%未満がスナップショットによって保護されている場合は、_Cyber Resilience Map_でもアラートが生成されます。</block>
   <block id="5e5a2d8b7f4ac8723d3873b0ba14916e" category="paragraph">新しいパネル_ ONTAP 環境の強化_導入環境の安全性を追跡するONTAP システムの特定の設定の状態を提供します<block ref="060f8a2b53a60ac49c67caafaf5b129f" category="inline-link-rx"></block> およびを参照してください<block ref="0be7bd5b5f280e211653a4c6e05c11a6" category="inline-link-rx"></block> これにより、異常なアクティビティをプロアクティブに検出して警告します。</block>
   <block id="ed35eae63358acfc6c38aefc0b7736d0" category="paragraph">このNew_Backup Status_panelでは、ランサムウェア攻撃によってリカバリが必要になった場合に、最も重要なカテゴリのデータを包括的にバックアップする方法を示しています。このデータは、 Cloud Backup によってバックアップされる、環境内の特定のカテゴリの項目数を視覚的に表したものです。<block ref="eddc9c9a841fbf81e5d5b5a19c7e11a3" category="inline-link-rx"></block>。</block>
-  <block id="f0affd41380a1f75f1e8cb0eb63a3746" category="paragraph">新しいパネル_ビジネスクリティカルデータアクセス権分析_ビジネスに不可欠なデータのアクセス権ステータスを表示しますこれにより、ビジネスクリティカルなデータの保護状況を迅速に評価できます。<block ref="20409d23480e4ebcd1abe3eb7cf44ef8" category="inline-link-rx"></block>。</block>
   <block id="d4e2be367ddcfb2b47d5711136446363" category="section-title">2022年6月14日</block>
   <block id="dd16b8804cbc8afa6e2f6deb9acf5bcf" category="section-title">インターネットにアクセスできないサイトのオンプレミスONTAP クラスタデータをバックアップするサポートが追加されました</block>
   <block id="6f5c7024f5953e20be33f1c72e8d5f4a" category="paragraph">オンプレミスのONTAP クラスタが、インターネットにアクセスできないサイト（ダークサイトまたはオフラインサイトとも呼ばれます）にある場合は、Cloud Backupを使用して、同じサイトにあるNetApp StorageGRID システムにボリュームデータをバックアップできるようになりました。この機能を使用するには、Cloud Manager Connector（バージョン3.9.19以降）もオフラインサイトに導入する必要があります。</block>
@@ -415,14 +286,9 @@
   <block id="824ce1955c2b2d5f91cb80c86545d639" category="paragraph"><block ref="eb618b89294e80d594faecbc4641afee" category="inline-link-rx"></block>。<block ref="f39d73248b535226c2e16237e43ff2d0" category="inline-link-rx"></block>。</block>
   <block id="0a0c24e7fef8cd9bcb19d6db19987b93" category="paragraph">以前に使用していた場合は、Cloud Restoreインスタンス/VMが自動的に削除されることに注意してください。Cloud Backupプロセスが1日に1回実行され、古いCloud Restoreインスタンスがすべて削除されます。この変更は完全に透過的に行われます。データへの影響はなく、バックアップジョブやリストアジョブの変更は通知されません。</block>
   <block id="360d69dcc915fa54a4ac5faccbaf2127" category="section-title">2022年6月12日（バージョン1.13.1）</block>
-  <block id="2dd4f685f001cb4e6c0149956ba4a997" category="section-title">2022年5月11日（バージョン1.12.1）</block>
   <block id="22c3479f6dd133b2d2d79cc8b481240f" category="section-title">2022年6月23日（バージョン1.3.1）</block>
   <block id="a720f7f5208abaac19d4db46d3bc0a7b" category="inline-link">修正された問題</block>
   <block id="2ffbf992fae9becab7e787491b2cdf41" category="paragraph">バージョン1.3.1用のグローバルファイルキャッシュエッジソフトウェアは、から入手できます<block ref="2c81bb98c990e9738e500d000082628f" category="inline-link-rx"></block>。このリリースでは、に記載されている問題が修正されています<block ref="11a0d6c8cafa0c0950060c707371e2a0" category="inline-link-rx"></block>。</block>
-  <block id="38ce4e90f119b89b2fdf1f274431e262" category="section-title">2022年6月28日</block>
-  <block id="47d69a1f17128c359904338c3502fe31" category="section-title">ネットアップのクレデンシャルでログインします</block>
-  <block id="f646305c890b8deec88379aeecbe56a5" category="paragraph">新規ユーザがCloud Centralに登録する際に、「ネットアップでログイン」オプションを選択して、ネットアップサポートサイトのクレデンシャルを使用してログインできるようになりました。Eメールアドレスとパスワードを入力する代わりに使用できます。</block>
-  <block id="f27b2370dfece83354cbb560bf251abc" category="admonition">Eメールアドレスとパスワードを使用する既存のログインでは、このログイン方法を使用し続ける必要があります。ネットアップでログインするオプションは、新規ユーザがサインアップする際に使用できます。</block>
   <block id="1511b856d0328cfba458b8f83c2e94e3" category="section-title">2022年7月3日</block>
   <block id="dbb3531fc9f461de7f3beb2624712465" category="section-title">コネクタ3.9.20</block>
   <block id="d62eba143e9a6b4f6e0d6902d78ea096" category="list-text">拡大する機能のリストへの新しいナビゲート方法が導入されました。左側のパネルにカーソルを合わせると、使い慣れたCloud Managerの機能を簡単に確認できます。</block>
@@ -445,7 +311,6 @@
   <block id="c7b46a2bde58e21272436d4c94238e15" category="paragraph">NFSサーバまたはSMBサーバからAzure Data Lake Storage Gen2へデータを同期できるようになりました。</block>
   <block id="20a2ab980685308347c082aec3253ed9" category="paragraph">Azureデータレイクを含む同期関係を作成する場合は、Cloud Sync にストレージアカウントの接続文字列を指定する必要があります。共有アクセスシグニチャ（SAS）ではなく、通常の接続文字列である必要があります。</block>
   <block id="557b7fbb966ab34b32484f8c806869ae" category="inline-link-macro">サポートされている同期関係のリストを表示します</block>
-  <block id="5d7e962256f3b412b8fa7e864448a86e" category="paragraph"><block ref="22efe00007987c46f8bce57edbae4cc7" category="inline-link-macro-rx"></block>。</block>
   <block id="ebf5fe0ded517668f74c4f41da278835" category="section-title">Google Cloud Storageからの継続的な同期</block>
   <block id="6ce39114bc116067ef30366e7df90870" category="paragraph">ソースのGoogle Cloud Storageバケットからクラウドストレージターゲットへ、継続的な同期設定がサポートされるようになりました。</block>
   <block id="fd36af2b64264c3f7fb77364a0046eb8" category="paragraph">Cloud Sync は、初回のデータ同期後、ソースのGoogle Cloud Storageバケットで変更をリスンし、変更が発生した場合はターゲットに継続的に同期します。この設定は、Google Cloud StorageバケットからS3、Google Cloud Storage、Azure BLOBストレージ、StorageGRID 、またはIBMストレージに同期する場合に使用できます。</block>
@@ -464,7 +329,6 @@
   <block id="d9c05beb7c27c53dc1cb952afddea3ac" category="section-title">Elastic Volumesの機能拡張</block>
   <block id="119ffefd11e6681de49e316bc16a471d" category="paragraph">Cloud Managerで、ユーザインターフェイスからCloud Volumes ONTAP の作業環境を作成する際に、Amazon EBS Elastic Volumes機能がサポートされるようになりました。Elastic Volumes機能は、GP3またはio1ディスクを使用している場合、デフォルトで有効になっています。初期容量はストレージのニーズに基づいて選択し、Cloud Volumes ONTAP の導入後に変更することができます。</block>
   <block id="0c5741d0ec0127a10c28f7c82579da32" category="inline-link-macro">Elastic VolumesのAWSサポートの詳細については、こちらをご覧ください</block>
-  <block id="3cc8cd9bef921086f444d55cf1ea25c6" category="paragraph"><block ref="a2865c7bad4b206df6582ad55cba915e" category="inline-link-macro-rx"></block>。</block>
   <block id="7fb4d101a5e000398c4d5b4c48b802a6" category="section-title">AWSのONTAP S3ライセンス</block>
   <block id="6958464059ef304c59d06fcb948ccafd" category="inline-link">ONTAP で S3 オブジェクトストレージサービスを設定および管理する方法について説明します</block>
   <block id="c86d179c90248acd6ebdba05bd94320c" category="section-title">Azure Cloudリージョンが新たにサポートされます</block>
@@ -513,9 +377,116 @@
   <block id="4c2e66937d2d8ba8680502b29c20f843" category="paragraph">ドキュメントを更新するには、Cloud Managerのポリシーをドキュメント内に直接追加します。これにより、コネクタとCloud Volumes ONTAP に必要な権限を、設定方法を説明する手順とともに表示できるようになりました。これらのポリシーには、ネットアップサポートサイトのページからアクセスできます。</block>
   <block id="28f37fc0eb4fe20ff92020d4d8d46b8d" category="inline-link-macro">次の例は、コネクタの作成に使用するAWS IAMロールの権限を示しています</block>
   <block id="49056d93dd3cd3fc9129ebadcf6877e0" category="inline-link-macro">Cloud Managerの権限の概要を確認します</block>
-  <block id="63e4eec15ba75260d01771611989182b" category="inline-link">AWSの最新のコネクタポリシーを確認します</block>
-  <block id="3f5180c6dfc0906c58f04ff000c41a28" category="paragraph">Cloud Managerに追加したAWSクレデンシャルの各セットに、これらの権限を必ず付与してください。<block ref="68d3de9f2b18269a91b4a95ab6a0f18b" category="inline-link-rx"></block>。</block>
   <block id="75c4b088a92b16dc79074e212617e6c6" category="paragraph"><block ref="75c4b088a92b16dc79074e212617e6c6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2c6996f5a98ca1cbcfa64873c18f13e9" category="paragraph"><block ref="077586b4338f7fc9c66e0ae0e2365a30" category="inline-link-rx"></block>。</block>
   <block id="2533820d9e3e679d169b5decdbf29c60" category="paragraph">また、各ポリシーへのリンクを提供するページも作成しました。<block ref="3bc30da5781f88e99acbb8ce33011928" category="inline-link-rx"></block>。</block>
+  <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
+  <block id="01f2c0e19d8bbd614814f0651e7feec1" category="section-title">コネクタ3.9.21</block>
+  <block id="1beb197487d0f07564b924071751aa36" category="list-text">Cloud Managerでまだ管理していない既存のクラウドリソースを検出する新しい方法が導入されました。</block>
+  <block id="155ccfd3578c4b827fbaaa1208c5c86a" category="paragraph">Canvasでは、* My Opportunities *タブを使用して、ハイブリッドマルチクラウド全体で一貫したデータサービスと運用を実現するために、Cloud Managerに追加できる既存のリソースを一元的に検出できます。</block>
+  <block id="586c381704849af8eb925f1bb3c1cc89" category="paragraph">この初回リリースでは、My Opportunitiesを使用して、AWSアカウント内のONTAP ファイルシステム用の既存のFSXを検出できます。</block>
+  <block id="0023c752677bd572df55463d76cf9b90" category="inline-link">ONTAP のFSXを発見する方法については、こちらをご覧ください</block>
+  <block id="b8aac0d7b730cae52d7fa6174da69a85" category="paragraph"><block ref="b8aac0d7b730cae52d7fa6174da69a85" category="inline-link-rx"></block></block>
+  <block id="56148e3a5b597bf775527bf28e119033" category="paragraph"><block ref="56148e3a5b597bf775527bf28e119033" category="inline-link-rx"></block></block>
+  <block id="dd15e63d013ad6e70302caae66b83f6d" category="list-text">以前にCloud ManagerにAWSクレデンシャルを指定していた場合、新しい* My Opportunities *機能によって、Cloud Managerを使用して追加および管理するONTAP ファイルシステムのFSXが自動的に検出されて提案されます。また、［* My Opportunities *］タブで、利用可能なデータサービスを確認することもできます。</block>
+  <block id="6ebe96f0162b363fd765e000afd1c4f0" category="inline-link-macro">「My Opportunities（機会）」を使用して、FSX for ONTAP を検出</block>
+  <block id="9480b8170649423ab940807a0b920da2" category="paragraph"><block ref="9480b8170649423ab940807a0b920da2" category="inline-link-macro-rx"></block></block>
+  <block id="e2399171d04de4904bc9ceb3e1c97260" category="inline-link-macro">スループット容量を変更します</block>
+  <block id="c9937dd2be3306177e54f23d06f05522" category="list-text">次の操作を実行できます。 <block ref="506ff771d5601b67d5eec9e79bc3848f" category="inline-link-macro-rx"></block> ONTAP 作業環境用のFSXを作成した後であれば、いつでも作成できます。</block>
+  <block id="7699be7c50b8640b313d71cce9004797" category="inline-link-macro">データをレプリケートして同期</block>
+  <block id="2e54b9a897181c7862d708807a350694" category="list-text">次の操作を実行できます。 <block ref="8a24fd2682d2561e3f75043a6b0c8221" category="inline-link-macro-rx"></block> FSX for ONTAP をソースとして使用する、ONTAP システム用のオンプレミスおよびその他のFSXへの移行。</block>
+  <block id="42c82b44ceecde8407f75a70409e2aec" category="inline-link-macro">Cloud Managerを使用して、FSX for ONTAP にiSCSIボリュームを作成します</block>
+  <block id="d6d2f19a8b69e681e2faa33500bbff6c" category="list-text">次の操作を実行できます。 <block ref="7bd2232976707f7841c519f0d4d2c5a6" category="inline-link-macro-rx"></block>。</block>
+  <block id="6006377785b7aa3dfed8795e05fbc569" category="section-title">2022年8月7日（バージョン1.15）</block>
+  <block id="afae08b9f3014d73a3bf7e0c201b2b36" category="section-title">ニュージーランドの5つの新しいタイプの個人データは、データセンスによって識別されます</block>
+  <block id="3b4b0faa54186ef002c6026e97e51a10" category="paragraph">データセンスでは、次の種類のデータを含むファイルを識別および分類できます。</block>
+  <block id="c189819be34e41f0ac712261c4bb10b0" category="list-text">ニュージーランド銀行口座番号</block>
+  <block id="57d4e061073cf52ee992a5523c0e31cb" category="list-text">ニュージーランド・ドライバーのライセンス番号</block>
+  <block id="2be885677b02540592a1f44b87ee5fb9" category="list-text">ニュージーランドIRD番号（税ID）</block>
+  <block id="52c2b4f82109d0afee40fe69db9a8cbe" category="list-text">ニュージーランドNHI（National Health Index）番号 </block>
+  <block id="3c266b4db1bf588305e19eddcef36116" category="list-text">ニュージーランドパスポート番号</block>
+  <block id="c8c8337bd5f0527c7ba4b08117f3d96f" category="paragraph"><block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
+  <block id="8d3dd83a131924f6dd08fdea2d8e7828" category="section-title">ブレッドクラムファイルを追加して、ファイルが移動された理由を示す機能</block>
+  <block id="d59048f21fd887ad520398ce677be586" category="inline-link">詳細はこちら。</block>
+  <block id="e92169a6172fd2cba6d57bfe01aea45a" category="paragraph">データ検出機能を使用してソースファイルをNFS共有に移動する際に、移動したファイルの場所にブレッドクラムファイルを残すことができるようになりました。ブレッドクラムファイルは、ファイルが元の場所から移動された理由をユーザーが理解するのに役立ちます。移動された各ファイルについて、システムは「&lt;filename&gt;-ブレッドクラム-&lt;date&gt;.txt」という名前のソースロケーションにブレッドクラムファイルを作成し、ファイルが移動された場所とファイルを移動したユーザを表示します。<block ref="c1eac1298d336c56373b10262d37ad96" category="inline-link-rx"></block>。</block>
+  <block id="13cd21aa095db4c5e2c5cd12303ecc97" category="section-title">ディレクトリにある個人データと機密性の高い個人データは、調査結果に表示されます</block>
+  <block id="6b473faf5fc253b69b173e6b8b87f726" category="inline-link">例を参照してください</block>
+  <block id="e8886543955f7a165a88e44f53559443" category="paragraph">[データ調査]ページに、個人データと、ディレクトリ（フォルダおよび共有）内で検出された機密性の高い個人データの結果が表示されるようになりました。<block ref="37ae8b694ca9dace0885ec3ddd4e8904" category="inline-link-rx"></block>。</block>
+  <block id="76013a8e1044d1903752927bac2c2799" category="section-title">分類に成功したボリューム、バケットなどの数のステータスを表示します</block>
+  <block id="046e94b126bcddc4303664d7f72819a5" category="inline-link">この情報の表示方法については、を参照してください</block>
+  <block id="7e79533726de53720d91f0e491df7b7f" category="paragraph">データ検出でスキャンしている個々のリポジトリ（ボリューム、バケットなど）を表示したときに、マッピングされているリポジトリの数と「分類済み」の数が表示されるようになりました。すべてのデータに対してAIの完全な識別が実行されるため、分類にかかる時間が長くなります。<block ref="0871135af547cfbd7267d7772f52c15b" category="inline-link-rx"></block>。</block>
+  <block id="e0daf39823ec1a1a7878c9718f063d5f" category="section-title">Googleドライブ</block>
+  <block id="173bb19c121e8b179d4baa317b637722" category="paragraph">NFSサーバまたはSMBサーバからGoogle Driveにデータを同期できるようになりました。「マイドライブ」と「共有ドライブ」の両方がターゲットとしてサポートされています。</block>
+  <block id="edb5ab0783f7fd41d24fc8a5ae44aef6" category="inline-link">Googleドライブの要件について詳しくは、こちらをご覧ください</block>
+  <block id="bcc0f3bd91fbadb8c521e47f25f76843" category="paragraph">Googleドライブを含む同期関係を作成する前に、必要な権限と秘密鍵を持つサービスアカウントを設定する必要があります。<block ref="556946ce0efd88231506c545597e8d31" category="inline-link-rx"></block>。</block>
+  <block id="470d6fa86215393cc3b918331e6ca824" category="paragraph"><block ref="4191451a3c972228fe86dca53f50e67d" category="inline-link-rx"></block>。</block>
+  <block id="d6a24c2feaa9a899592c4cd5cf4a5011" category="section-title">Azure Data Lakeのサポートが追加されています</block>
+  <block id="ac7f6cb7e466c5bda81009406ce9c28c" category="paragraph">Cloud Sync で、Azure Data Lake Storage Gen2：</block>
+  <block id="291356d9de6df3e4cba63e5478b2bc01" category="list-text">Amazon S3からAzure Data Lake Storage Gen2への接続に対応しています</block>
+  <block id="427bae06dc18214df77602503b45e556" category="list-text">IBM Cloud Object StorageからAzure Data Lake Storage Gen2への接続</block>
+  <block id="2ade6486b18196b7cbbcabc2c40d01ac" category="list-text">StorageGRID からAzureデータレイクストレージGen2への接続</block>
+  <block id="6d7ca7d8b2d372856465f7f7cee67c0c" category="section-title">同期関係の新しいセットアップ方法が追加されました</block>
+  <block id="2a8934d9990d0c3b34b537cb85b95cb3" category="paragraph">Cloud ManagerのCanvasから直接同期関係を設定する方法が追加されました。</block>
+  <block id="1bc09668b27b6867ae7fc05d1c02faa8" category="section-title">ドラッグアンドドロップ</block>
+  <block id="bb444099cdb375196c5bb6444eabdc45" category="paragraph">ある作業環境を別の作業環境の上にドラッグアンドドロップして、キャンバスから同期関係を設定できるようになりました。</block>
+  <block id="3c19e417c99aac7906cccf189792344f" category="paragraph"><block ref="3c19e417c99aac7906cccf189792344f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bf283dfa54b095b3eda8812752b158f9" category="section-title">右パネル設定</block>
+  <block id="79074218529972fce8a6ccab7f00095d" category="paragraph">Canvasから作業環境を選択し、右パネルから同期オプションを選択することで、Azure Blob StorageまたはGoogle Cloud Storageの同期関係を設定できるようになりました。</block>
+  <block id="b0b9021c705a42adb2b41c27fd7502f5" category="paragraph"><block ref="b0b9021c705a42adb2b41c27fd7502f5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9fffb7017709a369d0e0ce563839fee2" category="paragraph"><block ref="74635618081bc819b4c328f5ee049800" category="inline-link-rx"></block>。</block>
+  <block id="5d95d03306d738eddc1fcb7b61b6151a" category="paragraph">コネクタの3.9.21リリースでは、次の変更が加えられました。</block>
+  <block id="1bbedbfdc08c3ed9498540dc734fa96a" category="section-title">MTEKMライセンス</block>
+  <block id="6412f38167d8bd5882b37955a102350e" category="paragraph">バージョン9.11.1以降を実行している新規および既存のCloud Volumes ONTAP システムに、Multi-tenant Encryption Key Management（MTEKM）ライセンスが追加されました。</block>
+  <block id="c43a4aedaaa96e7a4c838a24978b6052" category="paragraph">マルチテナントの外部キー管理を使用すると、NetApp Volume Encryptionの使用時に、個々のStorage VM（SVM）でKMIPサーバを介して独自のキーを保持できます。</block>
+  <block id="6b8afb72156ec7e5aff9808d22a9eb10" category="inline-link">ネットアップの暗号化ソリューションでボリュームを暗号化する方法について説明します</block>
+  <block id="58d699d73838a8f3d0660e52bb5df744" category="paragraph"><block ref="c9a99e5900c97d829a142b9eef78ba06" category="inline-link-rx"></block>。</block>
+  <block id="824f455afa0ae197e5e7156988b6dc50" category="section-title">プロキシサーバ</block>
+  <block id="f0823a7c4bb0823970669d0756fceb8a" category="paragraph">Cloud Volumes ONTAP メッセージの送信にアウトバウンドのインターネット接続を使用できない場合に、AutoSupport システムがプロキシサーバとしてコネクタを使用するようにCloud Managerで自動的に設定されるようになりました。</block>
+  <block id="80f5caa6fde5a9410197e8753e6f4625" category="paragraph">AutoSupport は、システムの健常性をプロアクティブに監視し、ネットアップテクニカルサポートにメッセージを送信します。</block>
+  <block id="5fc25795a93f92bfee952eef3220d9e5" category="paragraph">唯一の要件は、コネクタのセキュリティグループがポート3128で_ inbound_connectionsを許可することです。コネクタを展開した後、このポートを開く必要があります。</block>
+  <block id="b69737a8aa6d54e160fd215ef53825b5" category="section-title">充電方法を変更します</block>
+  <block id="2ce6294ffa35428110be8d048560952f" category="paragraph">容量ベースのライセンスを使用するCloud Volumes ONTAP システムの充電方法を変更できるようになりました。たとえば、Essentialsパッケージを含むCloud Volumes ONTAP システムを導入した場合、ビジネスニーズの変化に応じて、そのシステムをProfessionalパッケージに変更できます。この機能は、デジタルウォレットから使用できます。</block>
+  <block id="63b54c0d3b4fb8e35270bfdf7b2bdcbb" category="inline-link">充電方法を変更する方法について説明します</block>
+  <block id="41bfdfd8eb98d1c3acb217f5420b6818" category="paragraph"><block ref="895cb871a858d35efad6129a7ae888ab" category="inline-link-rx"></block>。</block>
+  <block id="41b5565824d562a55cfa454b5b57da3d" category="section-title">セキュリティグループの機能拡張</block>
+  <block id="68519dd54d9e3922e66ec5b7a67c39e0" category="paragraph">Cloud Volumes ONTAP 作業環境を作成するときに、ユーザインターフェイスを使用して、事前定義されたセキュリティグループで選択したネットワークのみ（推奨）またはすべてのネットワーク内のトラフィックを許可するかどうかを選択できるようになりました。</block>
+  <block id="2261cc540df38326c53234c3d2d87794" category="inline-image-macro">セキュリティグループを選択したときに作業環境ウィザードで使用可能なAllow traffic withinオプションを示すスクリーンショット。</block>
+  <block id="4c4a915707766fae320a6c1004e2969d" category="paragraph"><block ref="4c4a915707766fae320a6c1004e2969d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cb8e43d2f95cb40206b28ff3def0b89c" category="section-title">2022年7月18日</block>
+  <block id="98ec171ea5a9061794734313fc3bfc8a" category="section-title">Azureの新しいライセンスパッケージです</block>
+  <block id="84b9d69f0957a24ce7fbed46c5b0ab12" category="paragraph">Azure Marketplaceサブスクリプションでのお支払い時に、Cloud Volumes ONTAP 用に2つの容量ベースのライセンスパッケージが新たに提供されます。</block>
+  <block id="99c581fb257fff513bc65272d605290f" category="list-text">*最適化*：プロビジョニングされた容量とI/O処理に別々に課金します</block>
+  <block id="e4bdb4038975db929f91098fe2d7ec12" category="inline-link">Cloud Volume エッジキャッシュ</block>
+  <block id="acc34707a7642d8ca31b72c25ca50920" category="list-text">* Edge Cache*:のライセンス<block ref="1bc1fd590dd203d9bb10cdd372d8de71" category="inline-link-rx"></block></block>
+  <block id="2d66a0b2e45838b2ebcec83efd6c765c" category="inline-link">これらのライセンスパッケージの詳細については、こちらをご覧ください</block>
+  <block id="ee76810836e6a3bb9dd07dfba26221a1" category="paragraph"><block ref="ddf7de7bfe14bcbf78a072c21440c1a8" category="inline-link-rx"></block>。</block>
+  <block id="3ae1886c49dab0e65e020c2758daff67" category="paragraph"><block ref="6f81c4ca34877706a163afe91c466abd" category="inline-link-rx"></block>。</block>
+  <block id="a207f0479f1471fc5336b474cf75c28a" category="section-title">2022年7月25日（バージョン2.0）</block>
+  <block id="0cdaa1584e91bdecaff25609aa4f9058" category="paragraph">このリリースには、以下に示す新機能が搭載されています。また、に記載されている問題も修正されています<block ref="11a0d6c8cafa0c0950060c707371e2a0" category="inline-link-rx"></block>。</block>
+  <block id="40ede24da7e93db6d61cd94c084008e7" category="section-title">Azure Marketplaceからのグローバルファイルキャッシュの容量ベースの新しいライセンスモデル</block>
+  <block id="70dc5565ba7814d08bd68476e5fb76ff" category="paragraph">新しい「Edge Cache」ライセンスには、「CVO Professional」ライセンスと同じ機能がありますが、グローバルファイルキャッシュのサポートも含まれています。このオプションは、Azureに新しいCloud Volumes ONTAP システムを導入するときに表示されます。Cloud Volumes ONTAP システムでプロビジョニングされた容量3TiBにつき、グローバルファイルキャッシュエッジシステムを1台導入することができます。少なくとも30TiBをプロビジョニングする必要があります。GFC License Managerサービスが拡張され、容量ベースのライセンスが提供されるようになりました。</block>
+  <block id="6a749e3d1bafd02cdf9a303ba6375e66" category="inline-link">Edge Cacheライセンスパッケージの詳細については、こちらをご覧ください。</block>
+  <block id="0d8fd49fcb5c25122324fcb59637aff8" category="paragraph"><block ref="0d8fd49fcb5c25122324fcb59637aff8" category="inline-link-rx"></block></block>
+  <block id="b7b58b4424e766ec66e0ab4ea9c812b8" category="section-title">グローバルファイルキャッシュがCloud Insights に統合されました</block>
+  <block id="acb729f8fd6ddd0e3a9a1a39397d6274" category="paragraph">NetApp Cloud Insights （CI）では、インフラとアプリケーションを包括的に可視化できます。グローバルファイルキャッシュがCIと統合され、すべてのエッジとコアを完全に可視化し、インスタンスで実行されているプロセスを監視できるようになりました。さまざまなグローバルファイルキャッシュメトリックがCIにプッシュされ、CIダッシュボードの全体的な概要が表示されます。</block>
+  <block id="902eaec7802b7e6292febf1b6526a6b5" category="inline-link">Cloud Insights の詳細については、こちらをご覧ください。</block>
+  <block id="6d7b1d6577d8e6bfc5f78e821377a7d4" category="paragraph"><block ref="6d7b1d6577d8e6bfc5f78e821377a7d4" category="inline-link-rx"></block></block>
+  <block id="1f56bc157b53331171e2209738abd411" category="section-title">ライセンス管理サーバは、非常に制限のある環境で動作するように拡張されています</block>
+  <block id="706163f56e3d19088d2a54cd0451269e" category="paragraph">ライセンスの設定時に、ライセンス管理サーバ（LMS）がインターネットにアクセスして、ネットアップ/ Zuoraからライセンスの詳細を収集できる必要があります。設定が正常に完了すると、LMSはオフラインモードでの作業を継続し、制限のある環境であってもライセンス機能を提供できます。</block>
+  <block id="1b66d26240c6a01df03ec7dc4a6d1a2b" category="section-title">OptimusのEdge Sync UIが強化され、接続されているクライアントのリストがコーディネータEdgeに表示されるようになりました</block>
+  <block id="5b68f6193aeecc12614fe4ce8bedf31e" category="list-text">ストレージクラスの新しい「-watch` verb」を使用して、YAMLの設定をバックアップおよびリストアできるようになりました。Cloud ManagerはKubernetesクラスタバックエンドに加えられた変更を監視し、クラスタで自動バックアップが設定されている場合は、新しい永続ボリュームのバックアップを自動的に有効にすることができます。</block>
+  <block id="eb3b05e2bcc0acdca8f3706dc6168810" category="inline-link-macro">ストレージクラスを定義する</block>
+  <block id="4d7aa2608f19ed6007e314a1e829a7f0" category="list-text">いつ <block ref="44765f3a3e8511cc80b0083ae1e5f436" category="inline-link-macro-rx"></block>では、次の操作を実行できます。</block>
+  <block id="41ee8bf0ce0084d7bbc703ebd0503f3f" category="list-text">ブロックストレージのファイルシステムタイプ（fsstype）を指定します</block>
+  <block id="3fce6f9d08f0fed5c965732f940ad498" category="list-text">ブロックストレージとファイルストレージで、経済的なストレージを実現</block>
+  <block id="5aa38ee0e17acbfece3b3bc0fdb18bab" category="section-title">2022年8月7日</block>
+  <block id="1e945f34aa7e283df49e7bc1f6e519fc" category="section-title">クラスタのセキュリティの脆弱性を示す新しいパネル</block>
+  <block id="83497bfd5911b64807f63c35ff9fe293" category="paragraph">_Storage system vulnerabilities _panelには、Active IQ デジタルアドバイザツールが各ONTAP クラスタで検出した高、中、低のセキュリティ脆弱性の総数を示します。システムが攻撃を受けて開かないように、すぐに高脆弱性を確認する必要があります。<block ref="e5c1efd527ebe3fd1f784ff961df8f95" category="inline-link-rx"></block>。</block>
+  <block id="681c888dc1b5514c36d2da9636ab4d27" category="section-title">変更不可のスキャンファイルを表示する新しいパネル</block>
+  <block id="ce5ff705f172d820f90c05f58e1c3e19" category="paragraph">_Criticalデータの不変性_パネルは、ONTAP SnapLock テクノロジを使用してWORMストレージの変更および削除から保護されている作業環境内の項目数を示します。これにより、書き換え不可のコピーがどの程度あるかを確認できるため、ランサムウェアに対するバックアップとリカバリの計画をより詳しく把握できます。<block ref="d02321ee0847267b2bfa5fdc78748651" category="inline-link-rx"></block>。</block>
+  <block id="ab2a86429c9a87e5d3019d275a5cfb4d" category="section-title">ONTAP 環境のセキュリティ強化を追跡する新しいパネル</block>
+  <block id="0bcaeb5db18a29ede99b5fa22ca702dd" category="section-title">Cloud Backupを使用してさまざまなカテゴリのデータを保護する方法については、新しいパネルを参照してください</block>
+  <block id="b42dff6de52c55fe0d6831817d6b309d" category="section-title">ONTAP のFSXをデータソースとして使用します</block>
+  <block id="0f8ffeac5211fc4e0dfb43c430753ef2" category="paragraph">Amazon FSX for ONTAP ファイルシステムから次のデスティネーションにデータをレプリケートできるようになりました。</block>
+  <block id="0ef90fde5440e5fbd859cb4d59f76f2c" category="list-text">オンプレミスの ONTAP クラスタ</block>
 </blocks>
