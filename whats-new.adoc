@@ -248,6 +248,16 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 
 
+=== 2022年8月18日
+
+
+
+==== クラウドネイティブアプリケーションデータを保護するためのサポートが追加されました
+
+Cloud Backup for Applicationsは、NetApp Cloud Storageで実行されているアプリケーションにデータ保護機能を提供するSaaSベースのサービスです。Cloud Managerで有効になっているアプリケーション向けのCloud Backupは、Amazon FSX for NetApp ONTAP 上に存在するOracleデータベースを、アプリケーションと整合性のある効率的なポリシーベースのバックアップおよびリストアを実現します。https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-cloud-app-data-to-cloud.html["詳細はこちら。"^]。
+
+
+
 === 2022年8月16日
 
 
@@ -262,9 +272,15 @@ Azure BLOBストレージにバックアップファイルを保存するユー�
 
 ==== バックアップファイルを削除攻撃やランサムウェア攻撃から保護する機能が追加されました
 
-Cloud Backupでランサムウェアセーフバックアップのオブジェクトロックがサポートされるようになりました。クラスタがONTAP 9.11.1以降を使用していて、バックアップのデスティネーションがAmazon S3の場合、_DataLockという新しいバックアップポリシーオプションとランサムウェア防御_が利用可能になりました。DataLockはバックアップファイルの変更や削除を防止します。ランサムウェア対策はバックアップファイルをスキャンして、ランサムウェアによるバックアップファイルへの攻撃の証拠を探します。
+Cloud Backupでランサムウェアセーフバックアップのオブジェクトロックがサポートされるようになりました。クラスタがONTAP 9.11.1以降を使用していて、バックアップのデスティネーションがAmazon S3の場合、_DataLockという新しいバックアップポリシーオプションとランサムウェア防御_が利用可能になりました。DataLockはバックアップファイルの変更や削除を防止します。ランサムウェア対策はバックアップファイルをスキャンして、ランサムウェアによるバックアップファイルへの攻撃の証拠を探します。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-cloud-backup-policies.html#datalock-and-ransomware-protection["DataLockとRansomwareによる保護でバックアップを保護する方法の詳細をご確認ください"^]。
 
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-cloud-backup-policies.html#datalock-and-ransomware-protection["DataLockとRansomwareによる保護でバックアップを保護する方法の詳細をご確認ください"^]。
+この機能を使用するには、Connectorロールで追加の権限が必要です。バージョン3.9.21ソフトウェアを使用して展開されたコネクタには、これらの権限が含まれています。以前のリリースを使用してコネクタを導入した場合は、権限を手動で追加する必要があります。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-to-aws.html#set-up-s3-permissions["必要に応じて、これらの権限を追加する方法を参照してください"^]。
+
+
+
+==== Cloud Backupで、カスタムSnapMirrorラベルを使用して作成したポリシーがサポートされるようになりまし
+
+以前は、Cloud Backupであらかじめ定義されているSnapMirrorラベル（hourly、daily、weekly、hourly、yearlyなど）のみがサポートされていました。これで、System ManagerまたはCLIを使用して作成したカスタムのSnapMirrorラベルを含むSnapMirrorポリシーがCloud Backupで検出されるようになります。これらの新しいラベルはCloud BackupのUIで公開されており、SnapMirrorラベルを使用してボリュームをクラウドにバックアップできます。
 
 
 
@@ -276,7 +292,7 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-cloud-backup-
 
 ==== ドラッグアンドドロップして、Azure BlobやGoogle Cloud StorageへのCloud Backupを有効にします
 
-状況に応じて https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-viewing-azure-blob.html["Azure Blob の略"^] または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-viewing-gcp-storage.html["Google クラウドストレージ"^] バックアップ先はキャンバス上の作業環境として存在します。オンプレミスのONTAP クラスタまたはCloud Volumes ONTAP システム（AzureまたはGCPにインストール）を作業環境にドラッグして、バックアップセットアップウィザードを開始できます。
+状況に応じて https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-viewing-azure-blob.html["Azure Blob の略"^] または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-viewing-gcp-storage.html["Google クラウドストレージ"^] バックアップ先はキャンバス上の作業環境として存在し、オンプレミスのONTAP またはCloud Volumes ONTAP 作業環境（AzureまたはGCPにインストール）を移行先にドラッグしてバックアップセットアップウィザードを開始できます。
 
 この機能はAmazon S3バケットに対してはすでに存在します。
 
@@ -405,6 +421,12 @@ link:reference-private-data-categories.html#types-of-personal-data["データで
 ==== 分類に成功したボリューム、バケットなどの数のステータスを表示します
 
 データ検出でスキャンしている個々のリポジトリ（ボリューム、バケットなど）を表示したときに、マッピングされているリポジトリの数と「分類済み」の数が表示されるようになりました。すべてのデータに対してAIの完全な識別が実行されるため、分類にかかる時間が長くなります。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-repo-scanning.html#viewing-the-scan-status-for-your-repositories["この情報の表示方法については、を参照してください"^]。
+
+
+
+==== これで、データの中でデータを識別するカスタムパターンを追加できるようになりました
+
+カスタム正規表現（regex）を使用して、データ内の特定の情報を識別するためのパーソナルパターンを追加できます。正規表現は、すでにData Senseで使用されている既存の事前定義パターンに追加され、結果は［個人パターン］セクションに表示されます。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion.html#creating-custom-personal-data-identifiers-using-a-regex["詳細はこちら。"^]。
 
 
 
@@ -905,6 +927,15 @@ Global File Cache License Management Server（LMS）サービスが拡張され�
 === 2022年7月31日
 
 * ストレージクラスの新しい「-watch` verb」を使用して、YAMLの設定をバックアップおよびリストアできるようになりました。Cloud ManagerはKubernetesクラスタバックエンドに加えられた変更を監視し、クラスタで自動バックアップが設定されている場合は、新しい永続ボリュームのバックアップを自動的に有効にすることができます。
++
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aws.html["AWS での Kubernetes クラスタの要件"]
+
++
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html["Azure での Kubernetes クラスタの要件"]
+
++
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud の Kubernetes クラスタの要件"]
+
 * いつ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["ストレージクラスを定義する"]では、次の操作を実行できます。
 +
 ** ブロックストレージのファイルシステムタイプ（fsstype）を指定します
