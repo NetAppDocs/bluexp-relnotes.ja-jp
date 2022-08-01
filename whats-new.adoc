@@ -248,6 +248,40 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 
 
+=== 2022年8月16日
+
+
+
+==== 検索とリストアがAzure Blobでのバックアップファイルでサポートされるようになりました
+
+Azure BLOBストレージにバックアップファイルを保存するユーザが、ボリュームとファイルのリストア方法を検索してリストアできるようになりました。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-ontap.html#prerequisites-2["Search & Restoreを使用してボリュームとファイルをリストアする方法を参照してください"^]。
+
+この機能を使用するには、Connectorロールで追加の権限が必要です。バージョン3.9.21ソフトウェア（2022年8月）を使用して導入されたコネクタに、次の権限が含まれます。以前のリリースを使用してコネクタを導入した場合は、権限を手動で追加する必要があります。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-to-azure.html#verify-or-add-permissions-to-the-connector["必要に応じて、これらの権限を追加する方法を参照してください"^]。
+
+
+
+==== バックアップファイルを削除攻撃やランサムウェア攻撃から保護する機能が追加されました
+
+Cloud Backupでランサムウェアセーフバックアップのオブジェクトロックがサポートされるようになりました。クラスタがONTAP 9.11.1以降を使用していて、バックアップのデスティネーションがAmazon S3の場合、_DataLockという新しいバックアップポリシーオプションとランサムウェア防御_が利用可能になりました。DataLockはバックアップファイルの変更や削除を防止します。ランサムウェア対策はバックアップファイルをスキャンして、ランサムウェアによるバックアップファイルへの攻撃の証拠を探します。
+
+https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-cloud-backup-policies.html#datalock-and-ransomware-protection["DataLockとRansomwareによる保護でバックアップを保護する方法の詳細をご確認ください"^]。
+
+
+
+==== ONTAP システムのバックアップポリシーも強化されました
+
+一部のバックアップポリシーのページが再設計され、各ONTAP クラスタのボリュームに使用できるすべてのバックアップポリシーが表示されるようになりました。これにより、使用可能なポリシーの詳細を簡単に確認できるため、ボリュームに最適なポリシーを適用できます。
+
+
+
+==== ドラッグアンドドロップして、Azure BlobやGoogle Cloud StorageへのCloud Backupを有効にします
+
+状況に応じて https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-viewing-azure-blob.html["Azure Blob の略"^] または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-viewing-gcp-storage.html["Google クラウドストレージ"^] バックアップ先はキャンバス上の作業環境として存在します。オンプレミスのONTAP クラスタまたはCloud Volumes ONTAP システム（AzureまたはGCPにインストール）を作業環境にドラッグして、バックアップセットアップウィザードを開始できます。
+
+この機能はAmazon S3バケットに対してはすでに存在します。
+
+
+
 === 2022年7月13日
 
 
@@ -330,35 +364,6 @@ Cloud Backupをアクティブ化したあとにKubernetesクラスタに新し�
 ==== Cloud Backup APIを使用して、バックアップとリストアの処理を管理できるようになりました
 
 APIはにあります https://docs.netapp.com/us-en/cloud-manager-automation/cbs/overview.html[]。を参照してください link:api-backup-restore.html["このページです"] を参照してください。
-
-
-
-=== 2022年5月2日
-
-
-
-==== Google Cloud Storageのバックアップファイルで検索とリストアがサポートされるようになりました
-
-ボリュームとファイルをリストアするための検索とリストアの方法は、AWSにバックアップファイルを格納するユーザ向けに4月に導入されました。Google Cloud Storageにバックアップファイルを保存するユーザーがこの機能を使用できるようになりました。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-ontap.html#prerequisites-2["Search & Restoreを使用してボリュームとファイルをリストアする方法を参照してください"]。
-
-
-
-==== Kubernetesクラスタ内に新しく作成されたボリュームにバックアップポリシーが自動的に適用されるように設定します
-
-Cloud Backupをアクティブ化したあとにKubernetesクラスタに新しい永続ボリュームを追加した場合は、以前にそれらのボリュームのバックアップを忘れずに設定する必要がありました。新しく作成したボリュームに自動的に適用するポリシーを選択できます。このオプションは、新しいKubernetesクラスタに対してCloud Backupをアクティブ化するときにセットアップウィザードで使用できます。
-
-
-
-==== Cloud Backupを作業環境でアクティブ化するには、ライセンスが必要になります
-
-Cloud Backupのライセンスの実装方法には、次の点が変更されています。
-
-* Cloud Backupをアクティブ化するには、クラウドプロバイダからPAYGO Marketplaceサブスクリプションに登録するか、ネットアップからBYOLライセンスを購入する必要があります。
-* 30日間無償トライアルは、クラウドプロバイダがPAYGOサブスクリプションを使用している場合にのみ利用できます。BYOLライセンスを使用している場合は利用できません。
-* 無料トライアルは、Marketplaceのサブスクリプションが開始された日から開始されます。たとえば、Cloud Volumes ONTAP システムのMarketplaceサブスクリプションを30日間使用した後で無料トライアルを有効にした場合、クラウドバックアップトライアルは利用できません。
-
-
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-licensing-cloud-backup.html["使用可能なライセンスモデルの詳細については、こちらをご覧ください"]。
 
 
 

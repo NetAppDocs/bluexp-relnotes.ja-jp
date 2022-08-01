@@ -163,18 +163,7 @@
   <block id="6b6f87c741f6734b4908d03d2c21e449" category="paragraph">SnapCenter サービス 1.0.1 をアップグレードすると、バージョン 2.9.1 から 2.17 に Apache log4j がアップグレードされ、次の脆弱性が解決されます： CVE-20244228 、 CVE-2012-4104 、および CVE-2016-45105 。</block>
   <block id="ae1f9a5afbc7e02967d7f7e643135d82" category="paragraph">SnapCenter サービスクラスタは最新バージョンに自動更新される必要があります。SnapCenter サービス UI に、クラスタが 1.0.1.1251 以降であることを確認する必要があります。</block>
   <block id="9081c0430b4e4fcf1f0dd042e7c0ca60" category="inline-image-macro">Cloud Managerの通知センターを示すスクリーンショット。</block>
-  <block id="49644953fd4e9612a9842d17bef5e79b" category="section-title">2022年5月2日</block>
-  <block id="403f4772d715b69d553d3568ca523be0" category="section-title">Google Cloud Storageのバックアップファイルで検索とリストアがサポートされるようになりました</block>
   <block id="a2824b49f1c7526bf0e925b86c7b293c" category="inline-link">Search &amp; Restoreを使用してボリュームとファイルをリストアする方法を参照してください</block>
-  <block id="c84eb78e4a1957b6b0aa50908d89949f" category="paragraph">ボリュームとファイルをリストアするための検索とリストアの方法は、AWSにバックアップファイルを格納するユーザ向けに4月に導入されました。Google Cloud Storageにバックアップファイルを保存するユーザーがこの機能を使用できるようになりました。<block ref="c9d4c1d19223377e15b82823d41fa44a" category="inline-link-rx"></block>。</block>
-  <block id="1dc3a9d2d46d5247757ad692a1dda8d4" category="section-title">Kubernetesクラスタ内に新しく作成されたボリュームにバックアップポリシーが自動的に適用されるように設定します</block>
-  <block id="fd875d3cd25e36f42ac27fb4f3449a8e" category="section-title">Cloud Backupを作業環境でアクティブ化するには、ライセンスが必要になります</block>
-  <block id="75c0e3b9776c1472c507114bf7a7a1cf" category="paragraph">Cloud Backupのライセンスの実装方法には、次の点が変更されています。</block>
-  <block id="e84f7761b10b99ddca7152e4bb801dd6" category="list-text">Cloud Backupをアクティブ化するには、クラウドプロバイダからPAYGO Marketplaceサブスクリプションに登録するか、ネットアップからBYOLライセンスを購入する必要があります。</block>
-  <block id="6902b4bfe7e77a50b544384d4b87d579" category="list-text">30日間無償トライアルは、クラウドプロバイダがPAYGOサブスクリプションを使用している場合にのみ利用できます。BYOLライセンスを使用している場合は利用できません。</block>
-  <block id="013bf9b0d5295922582e97a69409b714" category="list-text">無料トライアルは、Marketplaceのサブスクリプションが開始された日から開始されます。たとえば、Cloud Volumes ONTAP システムのMarketplaceサブスクリプションを30日間使用した後で無料トライアルを有効にした場合、クラウドバックアップトライアルは利用できません。</block>
-  <block id="caf9c5028f987d64131bfc8e9f4bd0ed" category="inline-link">使用可能なライセンスモデルの詳細については、こちらをご覧ください</block>
-  <block id="ecd035ede918d91432ba5203669d96bd" category="paragraph"><block ref="7226e404226609d8e6a7fa892651e74a" category="inline-link-rx"></block>。</block>
   <block id="3b61cbbfa7452cc07df9dbea0756d650" category="inline-link">サポートされているリージョンの完全なリストを表示します</block>
   <block id="0ec2b2e4840acfd3f21b50b176ec45f1" category="paragraph"><block ref="0ec2b2e4840acfd3f21b50b176ec45f1" category="inline-link-rx"></block></block>
   <block id="d3e8cd2e370974f27de1b310b4aa8cb3" category="section-title">2022年5月3日</block>
@@ -203,7 +192,6 @@
   <block id="03036f549995f5d3240d1c89c4f2f496" category="paragraph">Global File Cache License Management Server（LMS）サービスが拡張され、プロキシ設定が自動検出されるようになりました。これにより、シームレスな構成が可能になります。</block>
   <block id="f8b475a3fefebada77a30229238d0a1a" category="section-title">2022年6月7日</block>
   <block id="03e6ae21f561049c3e8010740c63aab3" category="inline-link">Cloud Volumes ONTAP の機能拡張について説明します</block>
-  <block id="35902f649443d8dd6c5f04595fff3035" category="paragraph">Cloud Backupをアクティブ化したあとにKubernetesクラスタに新しい永続ボリュームを追加した場合は、以前にそれらのボリュームのバックアップを忘れずに設定する必要がありました。新しく作成したボリュームに自動的に適用するポリシーを選択できます。このオプションは、新しいKubernetesクラスタに対してCloud Backupをアクティブ化するときにセットアップウィザードで使用できます。</block>
   <block id="62ee9336109ed1c4538423613b856682" category="section-title">2022年6月6日</block>
   <block id="c20246791a0594003975011a29aae438" category="section-title">継続的な同期</block>
   <block id="ade9a1db23f7d605ed4e98f520c46b00" category="paragraph">新しい設定を使用すると、ソースのS3バケットからターゲットに変更を継続的に同期できます。</block>
@@ -488,4 +476,20 @@
   <block id="e13d7be0c5a4bf2f3e8d1dd04f69dd41" category="paragraph">Cloud Tiering UIに、オブジェクトストレージ構成用の新しいページセットが追加されました。新しいオブジェクトストアの追加、FabricPool ミラーリング用のアグリゲートへの複数のオブジェクトストアの接続、プライマリオブジェクトストアとミラーオブジェクトストアの交換、アグリゲートへのオブジェクトストアの接続の削除などが可能です。<block ref="4f404ee3f4c3295f701ed8b17cef66df" category="inline-link-rx"></block></block>
   <block id="5c10257d843c1a8aa9e46f55d2064835" category="section-title">MetroCluster 構成に対するCloud Tieringライセンスがサポートされています</block>
   <block id="141c7c6c3afeeb8d968939161f64f8d2" category="paragraph">Cloud Tieringライセンスを、MetroCluster 構成に含まれるクラスタと共有できるようになりました。これらのシナリオで廃止されたFabricPool ライセンスを使用する必要はなくなりました。これにより、多くのクラスタで「フローティング」のクラウド階層化ライセンスを簡単に使用できるようになります。<block ref="4e8c6c7f1b8cf8bbca1bc62528b46ae2" category="inline-link-rx"></block></block>
+  <block id="80ebda6d6ef4b796a7797ba0d73d8fc4" category="section-title">2022年8月16日</block>
+  <block id="5f98181f93bdb66aed67b6ec6ca0e6a1" category="section-title">検索とリストアがAzure Blobでのバックアップファイルでサポートされるようになりました</block>
+  <block id="3cc0a32f0024bbcc0e74c0ca7c01b4ca" category="paragraph">Azure BLOBストレージにバックアップファイルを保存するユーザが、ボリュームとファイルのリストア方法を検索してリストアできるようになりました。<block ref="2505b78b897ef0dc1c5d1783874239f2" category="inline-link-rx"></block>。</block>
+  <block id="df69045929c0c3d81d05d291d9a65cdf" category="inline-link">必要に応じて、これらの権限を追加する方法を参照してください</block>
+  <block id="0d686592bdbc5c86f2ba1c8248bc44da" category="paragraph">この機能を使用するには、Connectorロールで追加の権限が必要です。バージョン3.9.21ソフトウェア（2022年8月）を使用して導入されたコネクタに、次の権限が含まれます。以前のリリースを使用してコネクタを導入した場合は、権限を手動で追加する必要があります。<block ref="0ebb6015b7a8d1b3b67f8b17b057acd1" category="inline-link-rx"></block>。</block>
+  <block id="2f176cfab68c991edad2596ce5f71c26" category="section-title">バックアップファイルを削除攻撃やランサムウェア攻撃から保護する機能が追加されました</block>
+  <block id="0a3404862f01e82bee84db8919a15819" category="paragraph">Cloud Backupでランサムウェアセーフバックアップのオブジェクトロックがサポートされるようになりました。クラスタがONTAP 9.11.1以降を使用していて、バックアップのデスティネーションがAmazon S3の場合、_DataLockという新しいバックアップポリシーオプションとランサムウェア防御_が利用可能になりました。DataLockはバックアップファイルの変更や削除を防止します。ランサムウェア対策はバックアップファイルをスキャンして、ランサムウェアによるバックアップファイルへの攻撃の証拠を探します。</block>
+  <block id="9ca61d0605df8b23ed36445fbf3f2f6a" category="inline-link">DataLockとRansomwareによる保護でバックアップを保護する方法の詳細をご確認ください</block>
+  <block id="6dd6bb59703afa0fa4c54bab99ad8d4c" category="paragraph"><block ref="fe4d56bff61ff0408b8d5349d9b6a033" category="inline-link-rx"></block>。</block>
+  <block id="a50aef84191a2a8583dff3169f0e9722" category="section-title">ONTAP システムのバックアップポリシーも強化されました</block>
+  <block id="49ed93361b6144f58f401017aa6361d0" category="paragraph">一部のバックアップポリシーのページが再設計され、各ONTAP クラスタのボリュームに使用できるすべてのバックアップポリシーが表示されるようになりました。これにより、使用可能なポリシーの詳細を簡単に確認できるため、ボリュームに最適なポリシーを適用できます。</block>
+  <block id="c386ae49c48be8bcc2fbd19ab4807c0a" category="section-title">ドラッグアンドドロップして、Azure BlobやGoogle Cloud StorageへのCloud Backupを有効にします</block>
+  <block id="52745271323ee9ea30e3a37d0338d118" category="inline-link">Azure Blob の略</block>
+  <block id="833c2c211a541e50ad94433664e4b5c1" category="inline-link">Google クラウドストレージ</block>
+  <block id="b58db1afa291d3cbd84b014051cca4d9" category="paragraph">状況に応じて<block ref="a3c3477c66a633d03b9d52df95b2c874" category="inline-link-rx"></block> または<block ref="d8758b85898e795623db75e4c1372f83" category="inline-link-rx"></block> バックアップ先はキャンバス上の作業環境として存在します。オンプレミスのONTAP クラスタまたはCloud Volumes ONTAP システム（AzureまたはGCPにインストール）を作業環境にドラッグして、バックアップセットアップウィザードを開始できます。</block>
+  <block id="b6f2e1a880ce20ab3d1039056746fa33" category="paragraph">この機能はAmazon S3バケットに対してはすでに存在します。</block>
 </blocks>
