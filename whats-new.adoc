@@ -506,6 +506,48 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-
 
 
 
+=== 2022年9月4日
+
+
+
+==== Googleドライブの追加サポート
+
+* Cloud Sync でGoogleドライブの同期関係が新たにサポートされるようになりました。
++
+** Google DriveからNFSサーバーへ
+** GoogleドライブからSMBサーバーへ
+
+
+* Google Driveを含む同期関係に関するレポートを生成することもできます。
++
+https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-reports.html["レポートの詳細については、こちらをご覧ください"]。
+
+
+
+
+
+==== 継続的な同期機能の強化
+
+次のタイプの同期関係で、継続的同期設定を有効にできるようになりました。
+
+* NFSサーバへのS3バケット
+* Google Cloud StorageをNFSサーバに接続している
+
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["Continuous Syncの詳細については、こちらをご覧ください"]。
+
+
+
+==== Eメール通知
+
+Cloud Sync 通知をEメールで受信できるようになりました。
+
+Eメールで通知を受け取るには、同期関係で* Notifications *の設定を有効にしてから、Cloud Managerでアラートと通知の設定を構成する必要があります。
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-relationships.html#setting-up-notifications["通知を設定する方法について説明します"]。
+
+
+
 === 2022年7月31日
 
 
@@ -610,49 +652,6 @@ Cloud Sync データブローカーがGoogle Cloudの次のリージョンでサ
 ==== 新しいGoogle Cloudマシンタイプ
 
 Google Cloudのデータブローカーのデフォルトのマシンタイプは、n2 -標準-4になりました。
-
-
-
-=== 2022年6月6日
-
-
-
-==== 継続的な同期
-
-新しい設定を使用すると、ソースのS3バケットからターゲットに変更を継続的に同期できます。
-
-初期データ同期が完了すると、Cloud Sync はソースS3バケットで変更をリスンし、ターゲットへの変更が発生した場合はその変更を継続的に同期します。ソースを定期的に再スキャンする必要はありません。この設定は、S3バケットからS3、Google Cloud Storage、Azure BLOBストレージ、StorageGRID 、またはIBMストレージに同期する場合にのみ使用できます。
-
-データブローカーに関連付けられているIAMロールでは、この設定を使用するために次の権限が必要です。
-
-[source, json]
-----
-"s3:GetBucketNotification",
-"s3:PutBucketNotification"
-----
-これらの権限は、新しく作成したすべてのデータブローカーに自動的に追加されます。
-
-https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["Continuous Syncの詳細については、こちらをご覧ください"]。
-
-
-
-==== すべてのONTAP ボリュームを表示します
-
-同期関係を作成するときに、ソースCloud Volumes ONTAP システム、オンプレミスONTAP クラスタ、またはCloud Sync ONTAP ファイルシステムのFSXにすべてのボリュームが表示されるようになりました。
-
-以前は、Cloud Sync では、選択したプロトコルに一致するボリュームのみが表示されていました。すべてのボリュームが表示されますが、選択したプロトコルに一致しないボリュームや、共有やエクスポートがないボリュームはグレー表示され、選択できません。
-
-
-
-==== Azure Blobへのタグのコピー
-
-Azure Blobがターゲットである同期関係を作成する際に、Cloud Sync でタグをAzure BLOBコンテナにコピーできるようになりました。
-
-* [*設定*（* Settings *）]ページでは、[*オブジェクトのコピー*（* Copy for Objects *）]設定を使用して、ソースからAzure BLOBコンテナにタグをコピーできます。これは、メタデータのコピーに加えて機能します。
-* * Tags/Metadata*ページで、Azure BLOBコンテナにコピーされるオブジェクトに設定するBLOBインデックスタグを指定できます。以前は、関係のメタデータしか指定できませんでした。
-
-
-これらのオプションは、Azure Blobがターゲットで、ソースがAzure BlobエンドポイントまたはS3互換エンドポイント（S3、StorageGRID 、IBM Cloud Object Storage）の場合にサポートされます。
 
 
 
