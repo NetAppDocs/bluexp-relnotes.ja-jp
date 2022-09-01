@@ -27,6 +27,25 @@ Cloud Manager プラットフォームで行われた クラウド サービス 
 
 
 
+=== 2022年9月18日
+
+
+
+==== コネクタ3.9.22
+
+* Connectorのインストールウィザードを強化しました。このウィザードには、Connectorのインストールに関する最小要件（権限、認証、ネットワーク）を満たすための手順が記載されています。
+* ネットアップサポートケースをCloud Managerのサポートダッシュボードで直接作成できるようになりました。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-get-help.html#netapp-support["ケースを作成する方法について説明します"]。
+
+* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#18-september-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
+
+
+
+
+
 === 2022年7月31日
 
 
@@ -163,6 +182,12 @@ Cloud Manager では、ボリューム Snapshot を作成、削除、リスト�
 
 
 
+=== 2022年9月18日
+
+次の操作を実行できます。 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#change-storage-capacity-and-IOPS["ストレージ容量とIOPSを変更します"] ONTAP 作業環境用のFSXを作成した後であれば、いつでも作成できます。
+
+
+
 === 2022年7月31日
 
 * 以前にCloud ManagerにAWSクレデンシャルを指定していた場合、新しい* My Opportunities *機能によって、Cloud Managerを使用して追加および管理するONTAP ファイルシステムのFSXが自動的に検出されて提案されます。また、［* My Opportunities *］タブで、利用可能なデータサービスを確認することもできます。
@@ -187,18 +212,6 @@ link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx
 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html#set-up-the-iam-role["IAM ロールを設定します"]
 
 
-
-
-
-=== 2022 年 2 月 27 日
-
-
-
-==== IAM の役割を引き受けます
-
-ONTAP 作業環境向け FSX を作成する場合、 Cloud Manager が ONTAP 作業環境用の FSX を作成すると想定できる IAM ロールの ARN を指定する必要があります。以前は、 AWS アクセスキーを指定する必要がありました。
-
-link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["FSX for ONTAP のアクセス許可を設定する方法について説明します"]。
 
 
 
@@ -248,6 +261,42 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 
 
+=== 2022年9月19日
+
+
+
+==== DataLockとRansomwareによる保護は、StorageGRID システムのバックアップファイルに対して設定できます
+
+最後のリリースで導入された、Amazon S3バケットに格納されたバックアップ向けの_DataLockとRansomware Protection_forが含まれます。このリリースでは、StorageGRID システムに格納されたバックアップファイルのサポートが拡張されています。クラスタがONTAP 9.11.1以降を使用していて、StorageGRID システムがバージョン11.6.0.3以降を実行している場合、この新しいバックアップポリシーオプションを使用できます。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-cloud-backup-policies.html#datalock-and-ransomware-protection["DataLockとRansomwareによる保護でバックアップを保護する方法の詳細をご確認ください"^]。
+
+バージョン3.9.22以降のソフトウェアがインストールされたコネクタを実行する必要があります。コネクタはオンプレミスにインストールする必要があり、インターネットにアクセスできるサイトまたはインターネットに接続できないサイトにインストールできます。
+
+
+
+==== これで、バックアップファイルからフォルダレベルのリストアを実行できるようになりました
+
+フォルダ（ディレクトリまたは共有）内のすべてのファイルにアクセスする必要がある場合は、バックアップファイルからフォルダをリストアできるようになりました。フォルダをリストアする方が、ボリューム全体をリストアするよりもはるかに効率的です。この機能は、参照およびリストア方法と検索およびリストア方法の両方を使用して、リストア処理を実行する場合に使用できます。この時点では、1つのフォルダのみを選択してリストアできます。そのフォルダのファイルのみがリストアされます。サブフォルダやサブフォルダ内のファイルはリストアされません。
+
+
+
+==== アーカイブストレージに移動されたバックアップからファイルレベルのリストアを実行できるようになりました
+
+以前は、アーカイブストアに移動されたバックアップファイルからのみボリュームをリストアできました（AWSおよびAzureのみ）。これらのアーカイブ済みバックアップファイルから個々のファイルやフォルダをリストアできるようになりました。この機能は、参照およびリストア方法と検索およびリストア方法の両方を使用して、リストア処理を実行する場合に使用できます。
+
+
+
+==== ファイルレベルのリストアで、元のソースファイルを上書きするオプションが追加されました
+
+以前は、元のボリュームにリストアされたファイルは、「Restore_< file_name >」というプレフィックスの新しいファイルとして常にリストアされていました。ボリューム上の元の場所にファイルをリストアする際に、元のソースファイルを上書きできるようになりました。この機能は、参照およびリストア方法と検索およびリストア方法の両方を使用して、リストア処理を実行する場合に使用できます。
+
+
+
+==== ドラッグアンドドロップして、StorageGRID システムへのクラウドバックアップを有効にします
+
+状況に応じて https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-viewing-azure-blob.html["StorageGRID"^] バックアップ先がキャンバス上の作業環境として存在する場合、オンプレミスのONTAP 作業環境をデスティネーションにドラッグしてバックアップセットアップウィザードを開始できます。
+
+
+
 === 2022年8月18日
 
 
@@ -258,13 +307,9 @@ Cloud Backup for Applicationsは、NetApp Cloud Storageで実行されている�
 
 
 
-=== 2022年8月16日
-
-
-
 ==== 検索とリストアがAzure Blobでのバックアップファイルでサポートされるようになりました
 
-Azure BLOBストレージにバックアップファイルを保存するユーザが、ボリュームとファイルのリストア方法を検索してリストアできるようになりました。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-ontap.html#prerequisites-2["Search & Restoreを使用してボリュームとファイルをリストアする方法を参照してください"^]。
+Azure BLOBストレージにバックアップファイルを保存するユーザが、ボリュームとファイルのリストア方法を検索してリストアできるようになりました。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-ontap.html#prerequisites-2["Search  Restoreを使用してボリュームとファイルをリストアする方法を参照してください"^]。
 
 この機能を使用するには、Connectorロールで追加の権限が必要です。バージョン3.9.21ソフトウェア（2022年8月）を使用して導入されたコネクタに、次の権限が含まれます。以前のリリースを使用してコネクタを導入した場合は、権限を手動で追加する必要があります。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-to-azure.html#verify-or-add-permissions-to-the-connector["必要に応じて、これらの権限を追加する方法を参照してください"^]。
 
@@ -319,67 +364,6 @@ Cloud Backupを使用して、SnapLock Enterpriseボリュームをパブリッ�
 * 毎年のスケジュールでバックアップを実行できるようになりました。年単位のバックアップの場合、デフォルトの保持期間は1ですが、この値を変更して、以前の多数のバックアップファイルにアクセスできるようにすることができます。
 * バックアップポリシーに名前を付けておくと、よりわかりやすいテキストでポリシーを識別できます。
 
-
-
-
-=== 2022年6月14日
-
-
-
-==== インターネットにアクセスできないサイトのオンプレミスONTAP クラスタデータをバックアップするサポートが追加されました
-
-オンプレミスのONTAP クラスタが、インターネットにアクセスできないサイト（ダークサイトまたはオフラインサイトとも呼ばれます）にある場合は、Cloud Backupを使用して、同じサイトにあるNetApp StorageGRID システムにボリュームデータをバックアップできるようになりました。この機能を使用するには、Cloud Manager Connector（バージョン3.9.19以降）もオフラインサイトに導入する必要があります。
-
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["コネクターをオフラインサイトにインストールする方法を参照してください"]。https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["オフラインサイトのStorageGRID にONTAP データをバックアップする方法を参照してください"]。
-
-
-
-=== 2022年6月8日
-
-
-
-==== Cloud Backup for Virtual Machines 1.1.0のGA版になりました
-
-SnapCenter Plug-in for VMware vSphereとCloud Managerを統合することで、仮想マシン上のデータを保護できます。データストアをクラウドにバックアップし、仮想マシンをオンプレミスのSnapCenter Plug-in for VMware vSphereにリストアする作業は簡単です。
-
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-vm-data.html["仮想マシンをクラウドに保護する方法については、こちらをご覧ください"]。
-
-
-
-==== クラウドのリストアインスタンスは、ONTAP の参照とリストア機能では必要ありません
-
-S3およびBLOBストレージからのファイルレベルの参照およびリストア処理に必要な、別のCloud Restoreインスタンス/仮想マシン。このインスタンスは使用していないときにシャットダウンされますが、ファイルのリストアに時間とコストがかかります。この機能は、必要に応じてコネクタに導入される無償のコンテナに置き換えられました。これには、次の利点があります。
-
-* ファイルレベルのリストア処理のための追加コストは不要です
-* ファイルレベルのリストア処理が高速化されます
-* Connectorがオンプレミスにインストールされている場合のクラウドからのファイルの参照とリストアの処理がサポートされます
-
-
-以前に使用していた場合は、Cloud Restoreインスタンス/VMが自動的に削除されることに注意してください。Cloud Backupプロセスが1日に1回実行され、古いCloud Restoreインスタンスがすべて削除されます。この変更は完全に透過的に行われます。データへの影響はなく、バックアップジョブやリストアジョブの変更は通知されません。
-
-
-
-==== Google CloudおよびStorageGRID ストレージからのファイルのサポートを参照してリストアできます
-
-前述のように、参照および復元操作用のコンテナが追加されたことで、Google CloudおよびStorageGRID システムに保存されているバックアップファイルからファイルの復元操作を実行できるようになりました。現在は、参照とリストアを使用して、すべてのパブリッククラウドプロバイダとStorageGRID からファイルをリストアできます。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-ontap.html#restoring-ontap-data-using-browse-restore["参照リストアを使用してONTAP バックアップからボリュームとファイルをリストアする方法を参照してください"]。
-
-
-
-==== ドラッグアンドドロップして、Cloud Backup to S3ストレージを有効にします
-
-バックアップのAmazon S3デスティネーションがキャンバス上の作業環境として存在する場合、オンプレミスのONTAP クラスタまたはCloud Volumes ONTAP システム（AWSにインストール）をAmazon S3作業環境にドラッグしてセットアップウィザードを開始できます。
-
-
-
-==== Kubernetesクラスタ内に新しく作成されたボリュームにバックアップポリシーを自動的に適用します
-
-Cloud Backupをアクティブ化したあとにKubernetesクラスタに新しい永続ボリュームを追加した場合は、以前にそれらのボリュームのバックアップを忘れずに設定する必要がありました。新しく作成したボリュームに自動的に適用するポリシーを選択できます https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backups-kubernetes.html#setting-a-backup-policy-to-be-assigned-to-new-volumes["[バックアップ設定]ページから選択します"] Cloud Backupをすでにアクティブ化しているクラスタの場合
-
-
-
-==== Cloud Backup APIを使用して、バックアップとリストアの処理を管理できるようになりました
-
-APIはにあります https://docs.netapp.com/us-en/cloud-manager-automation/cbs/overview.html[]。を参照してください link:api-backup-restore.html["このページです"] を参照してください。
 
 
 
@@ -653,6 +637,24 @@ Google Cloudのデータブローカーのデフォルトのマシンタイプ�
 
 
 
+=== 2022年9月19日
+
+
+
+==== 階層化ウィザードを使用すると、AWS PrivateLinkを使用してS3ストレージに安全に接続できます
+
+以前のリリースでは、VPCエンドポイントを介してクラスタをS3バケットに接続するこのセキュアな方法は、非常に時間がかかりました。前提条件となる手順を実行して、を実行します https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-aws.html#configure-your-system-for-a-private-connection-using-a-vpc-endpoint-interface["VPCエンドポイントインターフェイスを使用して、システムにプライベート接続を設定します"]をクリックすると、[ネットワーク]ページの階層化セットアップウィザードでPrivateLinkを選択できます。
+
+https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-aws.html["アクセス頻度の低いデータをAmazon S3に階層化するための要件と手順を確認します"]。
+
+
+
+==== ドラッグアンドドロップしてAmazon S3へのクラウド階層化を有効にします
+
+Amazon S3階層化のデスティネーションがキャンバスに作業環境として存在する場合は、オンプレミスのONTAP 作業環境をデスティネーションにドラッグして、階層化セットアップウィザードを開始できます。
+
+
+
 === 2022年8月3日
 
 
@@ -676,22 +678,6 @@ Cloud Tieringライセンスを、MetroCluster 構成に含まれるクラスタ
 ==== Cloud Tieringは、追加のクラスタ構成をサポートしています
 
 クラウド階層化ライセンスを、階層化ミラー構成（MetroCluster 構成を除く）のクラスタと、IBM Cloud Object Storageに階層化されたクラスタと共有できるようになりました。これらのシナリオで廃止されたFabricPool ライセンスを使用する必要はなくなりました。これにより、多くのクラスタで「フローティング」のクラウド階層化ライセンスを簡単に使用できるようになります。 https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["これらのタイプのクラスタのライセンスを設定する方法を参照してください。"]
-
-
-
-=== 2022 年 4 月 4 日
-
-
-
-==== Amazon S3 Glacier Instant Retrieval ストレージクラスが使用可能になりました
-
-Cloud Tiering をセットアップする際に、アクティブでないデータが特定の日数後に _Standard_storage クラスから _Glacier Instant Retrieve_に 移行するようにライフサイクルルールを設定できるようになりました。これにより、 AWS インフラのコストを削減できます。 https://docs.netapp.com/us-en/cloud-manager-tiering/reference-aws-support.html["サポートされているS3ストレージクラスを参照してください。"]
-
-
-
-==== Cloud Tiering は、 ONTAP Select システムで完全に認定されています
-
-AFF システムと FAS システムのデータを階層化するだけでなく、 ONTAP Select システムからクラウドストレージにもアクセス頻度の低いデータを階層化できるようになりました。
 
 
 
@@ -917,6 +903,16 @@ Global File Cache License Management Server（LMS）サービスが拡張され�
 
 
 
+=== 2022年9月18日
+
+自己管理OpenShiftクラスタをCloud Managerにインポートできるようになりました。
+
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-openshift.html["OpenShiftでのKubernetesクラスタの要件"]
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-add-openshift.html["Cloud ManagerにOpenShiftクラスタを追加します"]
+
+
+
+
 === 2022年7月31日
 
 * ストレージクラスの新しい「-watch` verb」を使用して、YAMLの設定をバックアップおよびリストアできるようになりました。Cloud ManagerはKubernetesクラスタバックエンドに加えられた変更を監視し、クラスタで自動バックアップが設定されている場合は、新しい永続ボリュームのバックアップを自動的に有効にすることができます。
@@ -929,12 +925,7 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kuberne
 +
 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud の Kubernetes クラスタの要件"]
 
-* いつ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["ストレージクラスを定義する"]では、次の操作を実行できます。
-+
-** ブロックストレージのファイルシステムタイプ（fsstype）を指定します
-** ブロックストレージとファイルストレージで、経済的なストレージを実現
-
-
+* いつ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["ストレージクラスを定義する"]をクリックし、ブロックストレージのファイルシステムタイプ（fstype）を指定できるようになりました。
 
 
 
@@ -950,12 +941,6 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage
 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["ストレージクラスを追加します"]
 
 
-
-
-
-=== 2022年6月6日
-
-Cloud ManagerがバックエンドストレージとしてAmazon FSX for ONTAP をサポートするようになりました。
 
 
 
@@ -1011,6 +996,30 @@ Cloud Volumes ONTAP for Azure で監視サービスがサポートされるよ�
 
 
 
+=== 2022年9月18日
+
+コネクタの3.9.22リリースでは、次の変更が加えられました。
+
+
+
+==== 新しい概要ページ
+
+オンプレミスのONTAP クラスタに関する重要な詳細情報を提供するために、新しい概要ページが導入されました。たとえば、Storage Efficiency、容量分散、システム情報などの詳細を表示できるようになりました。
+
+また、データの階層化、データのレプリケーション、バックアップが可能な他のNetAppクラウド サービス との統合に関する詳細も確認できます。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-overview.png["オンプレミスのONTAP クラスタの概要ページを示すスクリーンショット。"]
+
+
+
+==== ボリュームページが再設計されました
+
+ボリュームページの設計が見直され、クラスタ上のボリュームの概要が表示されるようになりました。この概要には、ボリュームの総数、プロビジョニングされた容量、使用済み容量とリザーブ容量、および階層化されたデータの量が表示されます。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-volumes.png["オンプレミスのONTAP クラスタのボリュームページを示すスクリーンショット。"]
+
+
+
 === 2022年6月7日
 
 コネクタの3.9.19リリースでは、次の変更が加えられました。
@@ -1023,7 +1032,7 @@ Cloud Volumes ONTAP for Azure で監視サービスがサポートされるよ�
 
 この詳細ビューは、9.10.0以降を実行するオンプレミスのONTAP クラスタでプレビューとして使用できます。今後のリリースでは、この点をさらに改良し、機能を強化する予定です。製品内のチャットでご意見をお寄せください。
 
-link:task-administer-advanced-view.html["詳細については、「詳細ビュー」を参照してください"]。
+https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-administer-advanced-view.html["詳細については、「詳細ビュー」を参照してください"]。
 
 
 
@@ -1036,16 +1045,6 @@ link:task-administer-advanced-view.html["詳細については、「詳細ビュ
 オンプレミスの ONTAP クラスタのインベントリと、ハードウェアおよびサービス契約の有効期限を確認できるようになりました。クラスタに関するその他の詳細も確認できます。
 
 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html#viewing-cluster-information-and-contract-details["この重要なオンプレミスクラスタの情報を表示する方法を参照してください"]。クラスタ用のネットアップサポートサイトのアカウント（ NSS ）が必要です。また、 NSS のクレデンシャルを Cloud Manager アカウントに接続する必要があります。
-
-
-
-=== 2022 年 1 月 11 日
-
-
-
-==== オンプレミスの ONTAP クラスタのボリュームに追加するタグは、 Tagging サービスで使用できます。
-
-ボリュームに追加するタグは、アプリケーションテンプレートサービスのタグ機能に関連付けられます。これにより、リソースの管理を整理して簡単にすることができます。
 
 
 
@@ -1102,6 +1101,18 @@ _harden your ONTAP environments _パネルに、FSX for ONTAP システム上の
 
 
 == レプリケーション
+
+
+
+=== 2022年9月18日
+
+
+
+==== FSX for ONTAP to Cloud Volumes ONTAP の略
+
+Amazon FSX for ONTAP ファイルシステムからCloud Volumes ONTAP にデータをレプリケートできるようになりました。
+
+https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["データレプリケーションの設定方法について説明します"]。
 
 
 
