@@ -387,6 +387,38 @@ APIはにあります https://docs.netapp.com/us-en/cloud-manager-automation/cbs
 
 
 
+=== 2022年9月6日（バージョン1.16）
+
+
+
+==== ファイルの変更を反映するために、リポジトリをすぐに再スキャンできます
+
+変更がシステムに反映されるように特定のリポジトリをただちに再スキャンする必要がある場合は、リポジトリを選択して再スキャンします。これにより、特定のデータを再スキャンする際に、他のデータよりも優先順位を付けることができます。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-repo-scanning.html#rescanning-data-for-an-existing-repository["ディレクトリを再スキャンする方法を参照してください"^]。
+
+
+
+==== [データ調査]ページの[データスキャン]ステータスの新しいフィルタ
+
+[分析ステータス]フィルタを使用すると、データセンススキャンの特定の段階にあるファイルを一覧表示できます。オプションを選択して、「*最初のスキャンを保留*」、「*完了*スキャン中」、「*再スキャンを保留中*」、または「スキャンに失敗*」のファイルのリストを表示できます。
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["データの調査に使用できるすべてのフィルタのリストを確認します"^]。
+
+
+
+==== データ主体は、スキャンで見つかった「個人データ」の一部と見なされるようになりました
+
+データセンスは、コンプライアンスダッシュボードに表示される個人結果の一部として、データ主体を認識するようになりました。また、［調査］ページで検索を実行するときに、［個人データ］の［データ主体］を選択して、データ主体を含むファイルのみを表示することもできます。
+
+
+
+==== データ検出ブレッドクラムファイルは、スキャンで検出された「カテゴリ」の一部と見なされるようになりました
+
+データ検出では、階層リンクファイルがコンプライアンスダッシュボードに表示されるカテゴリの一部として認識されるようになりました。これらは、ソースの場所からNFS共有にファイルを移動するときにData Senseによって作成されるファイルです。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share["ブレッドクラムファイルの作成方法の詳細については、こちらをご覧ください"^]。
+
+また、[調査]ページで検索を実行するときに、[カテゴリ]の[データセンスパンくずリスト]を選択して、データセンスブレッドクラムファイルのみを表示することもできます。
+
+
+
 === 2022年8月7日（バージョン1.15）
 
 
@@ -461,44 +493,6 @@ link:reference-private-data-categories.html#types-of-personal-data["データで
 ==== データセンスでは、一度に最大100,000個のファイルを移動できます
 
 スキャンしたデータソースからNFS共有へのファイル移動にData Senseを使用する場合は、ファイルの最大数が100、000ファイルに増加しています。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share["データセンスを使用してファイルを移動する方法をご覧ください"]。
-
-
-
-=== 2022年6月12日（バージョン1.13.1）
-
-
-
-==== Data Investigationページから結果を.jsonレポートとしてダウンロードできるようになりました
-
-[データ調査]ページでデータをフィルタリングした後、データを.jsonファイルに保存してNFS共有にエクスポートできます。これにより、ローカルシステム上の.csvファイルにデータを保存することができます。データセンスにエクスポートアクセスのための正しい権限があることを確認します。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-generating-compliance-reports.html#data-investigation-report["Data Investigationページからレポートを作成する方法を参照してください"]。
-
-
-
-==== データセンスUIからデータセンスをアンインストールする機能
-
-Data Senseをアンインストールして、ソフトウェアをホストから完全に削除することができます。クラウドの導入の場合は、Data Senseが導入されていた仮想マシン/インスタンスを削除します。インスタンスを削除すると、データセンスがスキャンしたインデックス情報がすべて完全に削除されます。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-uninstall-data-sense.html["方法を参照してください"]。
-
-
-
-==== 監査ログを使用して、データ検出によって実行されたアクションの履歴を追跡できるようになりました
-
-監査ログは、データがスキャンしているすべての作業環境およびデータソースから、ファイルに対してデータが実行した管理アクティビティを追跡します。アクティビティには、ユーザが生成するアクティビティ（ファイルの削除、ポリシーの作成など）と生成されるポリシー（ファイルにラベルを自動的に追加するアクティビティ、ファイルを自動的に削除するアクティビティなど）があります。
-
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-audit-data-sense-actions.html["監査ログの詳細を確認してください"]。
-
-
-
-==== [データ調査]ページの重要な識別子の数に対する新しいフィルタ
-
-「Number of identifiers（識別子の数）」フィルタを使用すると、個人データと機密性の高い個人データの両方を含む、一定数の機密識別子を持つファイルをリストできます。1-10や501-1000などの範囲を選択すると、その数の機密識別子を含むファイルのみを表示できます。
-
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["データの調査に使用できるすべてのフィルタのリストを確認します"]。
-
-
-
-==== これで、作成した既存のポリシーを編集できるようになります
-
-以前に作成したカスタムポリシーに変更を加える必要がある場合は、新しいポリシーを作成する代わりにポリシーを編集できるようになりました。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#editing-policies["ポリシーの編集方法については、を参照してください"]。
 
 
 
@@ -1059,19 +1053,29 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 
 
+=== 2022年9月6日
+
+
+
+==== クラスタで検出されたランサムウェアのインシデントを表示する新しいパネル
+
+Ransomware incidents_panelは、システムで発生したランサムウェア攻撃を示します。現在サポートされているのは、Autonomous Ransomware Protection（ARP；自律ランサムウェア保護）を実行しているオンプレミスのONTAP クラスタです。ARPでは、NAS（NFSおよびSMB）環境のワークロード分析を使用して、ランサムウェア攻撃を示す可能性のある異常なアクティビティをプロアクティブに検出し、警告します。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#ransomware-incidents-detected-on-your-systems["詳細はこちらをご覧ください"^]。
+
+
+
 === 2022年8月7日
 
 
 
 ==== クラスタのセキュリティの脆弱性を示す新しいパネル
 
-_Storage system vulnerabilities _panelには、Active IQ デジタルアドバイザツールが各ONTAP クラスタで検出した高、中、低のセキュリティ脆弱性の総数を示します。システムが攻撃を受けて開かないように、すぐに高脆弱性を確認する必要があります。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#storage-system-vulnerabilities["詳細については、こちらをご覧ください"]。
+_Storage system vulnerabilities _panelには、Active IQ デジタルアドバイザツールが各ONTAP クラスタで検出した高、中、低のセキュリティ脆弱性の総数を示します。システムが攻撃を受けて開かないように、すぐに高脆弱性を確認する必要があります。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#storage-system-vulnerabilities["詳細については、こちらをご覧ください"^]。
 
 
 
 ==== 変更不可のスキャンファイルを表示する新しいパネル
 
-_Criticalデータの不変性_パネルは、ONTAP SnapLock テクノロジを使用してWORMストレージの変更および削除から保護されている作業環境内の項目数を示します。これにより、書き換え不可のコピーがどの程度あるかを確認できるため、ランサムウェアに対するバックアップとリカバリの計画をより詳しく把握できます。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#data-in-your-volumes-that-are-being-protected-using-snaplock["詳細については、こちらをご覧ください"]。
+_Criticalデータの不変性_パネルは、ONTAP SnapLock テクノロジを使用してWORMストレージの変更および削除から保護されている作業環境内の項目数を示します。これにより、書き換え不可のコピーがどの程度あるかを確認できるため、ランサムウェアに対するバックアップとリカバリの計画をより詳しく把握できます。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#data-in-your-volumes-that-are-being-protected-using-snaplock["詳細については、こちらをご覧ください"^]。
 
 
 
@@ -1094,24 +1098,6 @@ _Criticalデータの不変性_パネルは、ONTAP SnapLock テクノロジを�
 ==== ONTAP システムのFSXが、ボリュームスナップショットの有効化のために追跡されるようになりました
 
 _harden your ONTAP environments _パネルに、FSX for ONTAP システム上のボリュームのSnapshotコピーのステータスが表示されるようになりました。ボリュームの40%未満がスナップショットによって保護されている場合は、_Cyber Resilience Map_でもアラートが生成されます。
-
-
-
-=== 2022年5月11日
-
-
-
-==== ONTAP 環境のセキュリティ強化を追跡する新しいパネル
-
-新しいパネル_ ONTAP 環境の強化_導入環境の安全性を追跡するONTAP システムの特定の設定の状態を提供します https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf["『 NetApp Security Hardening Guide for ONTAP Systems 』を参照してください"^] およびを参照してください https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["ONTAP ランサムウェア対策機能"^] これにより、異常なアクティビティをプロアクティブに検出して警告します。
-
-推奨事項を確認し、潜在的な問題への対処方法を決定できます。次の手順に従って、クラスタの設定を変更したり、変更を別の時間に延期したり、推奨された設定を無視したりできます。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#status-of-ontap-systems-hardening["詳細については、こちらをご覧ください"]。
-
-
-
-==== Cloud Backupを使用してさまざまなカテゴリのデータを保護する方法については、新しいパネルを参照してください
-
-このNew_Backup Status_panelでは、ランサムウェア攻撃によってリカバリが必要になった場合に、最も重要なカテゴリのデータを包括的にバックアップする方法を示しています。このデータは、 Cloud Backup によってバックアップされる、環境内の特定のカテゴリの項目数を視覚的に表したものです。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#backup-status-of-your-critical-business-data["詳細については、こちらをご覧ください"]。
 
 
 

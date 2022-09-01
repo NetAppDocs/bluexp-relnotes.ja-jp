@@ -174,12 +174,7 @@
   <block id="d3028cb26dae3dbde1ec068c17d15383" category="paragraph">Cloud Tiering をセットアップする際に、アクティブでないデータが特定の日数後に _Standard_storage クラスから _Glacier Instant Retrieve_に 移行するようにライフサイクルルールを設定できるようになりました。これにより、 AWS インフラのコストを削減できます。<block ref="99f36cc81f33df65a0349e719000fada" category="inline-link-rx"></block></block>
   <block id="d23895cd28f2e8e5d3074279cea7aacf" category="inline-link-macro">ストレージクラスを追加します</block>
   <block id="2556925e0b340fdd647987c6af7fbee9" category="paragraph"><block ref="2556925e0b340fdd647987c6af7fbee9" category="inline-link-macro-rx"></block></block>
-  <block id="7d6adafb3c8bb3861e1f6a4ca4b68455" category="section-title">2022年5月11日</block>
   <block id="a3065e926a55339df72c1343ee9b3fae" category="inline-link">データの調査に使用できるすべてのフィルタのリストを確認します</block>
-  <block id="2d7dcb96cb20cbaa2b94280f3b67d862" category="paragraph"><block ref="e3dd455551e82145f7b0bbdda5ed35ae" category="inline-link-rx"></block>。</block>
-  <block id="9c7ce6244ca9eb3215d61dd69afa3325" category="inline-link">『 NetApp Security Hardening Guide for ONTAP Systems 』を参照してください</block>
-  <block id="3380ed6ae32f99410860532de07b57a7" category="inline-link">ONTAP ランサムウェア対策機能</block>
-  <block id="914a5a27ea412edf84bb416054ec6d75" category="paragraph">推奨事項を確認し、潜在的な問題への対処方法を決定できます。次の手順に従って、クラスタの設定を変更したり、変更を別の時間に延期したり、推奨された設定を無視したりできます。<block ref="87553c653b94d5529a2080374ec70030" category="inline-link-rx"></block>。</block>
   <block id="81ad4f0de90ee8a7305d0fd7751df796" category="section-title">新しいGoogle Cloudリージョンサポート</block>
   <block id="d1ce20099e22fd96c2217da218a20a9e" category="inline-link">Cloud Volumes ONTAP でサポートされるリージョンの完全なリストを表示します</block>
   <block id="efb1786cdf88244f9480e15cb039f942" category="paragraph"><block ref="efb1786cdf88244f9480e15cb039f942" category="inline-link-rx"></block></block>
@@ -223,29 +218,12 @@
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
   <block id="b83e2caeb95bea361704be4e9e795cd1" category="paragraph">APIはにあります<block ref="323898002645c2363c910f7c119fd4d6" category="inline-link-rx"></block>。を参照してください <block ref="cf7847f4c926eb96d69d319dfdc23654" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="f8c7ea9d64a54c9a1eb4c1cbc5ef066e" category="section-title">2022年6月12日</block>
-  <block id="f313b26419f4694c764a8d9a38b04ce1" category="section-title">Data Investigationページから結果を.jsonレポートとしてダウンロードできるようになりました</block>
-  <block id="d214193a7fda757836199c60304f2ab0" category="inline-link">Data Investigationページからレポートを作成する方法を参照してください</block>
-  <block id="6cb5a0e32d140f3770c280b471c48cd9" category="paragraph">[データ調査]ページでデータをフィルタリングした後、データを.jsonファイルに保存してNFS共有にエクスポートできます。これにより、ローカルシステム上の.csvファイルにデータを保存することができます。データセンスにエクスポートアクセスのための正しい権限があることを確認します。<block ref="0ee382d3ff8086e5d12287af8220734f" category="inline-link-rx"></block>。</block>
-  <block id="bef8207d9128cb7b1a5dc68939fc3d45" category="section-title">データセンスUIからデータセンスをアンインストールする機能</block>
-  <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link">方法を参照してください</block>
-  <block id="4aa7333b6753545c6a6c04dfb41b9866" category="paragraph">Data Senseをアンインストールして、ソフトウェアをホストから完全に削除することができます。クラウドの導入の場合は、Data Senseが導入されていた仮想マシン/インスタンスを削除します。インスタンスを削除すると、データセンスがスキャンしたインデックス情報がすべて完全に削除されます。<block ref="3da12a48df084f38bafa988bc8e77bd7" category="inline-link-rx"></block>。</block>
-  <block id="d96d07db10c050adfb5fed7e3d885b82" category="section-title">監査ログを使用して、データ検出によって実行されたアクションの履歴を追跡できるようになりました</block>
-  <block id="1ce49760bcdac502d41fb1e9e547086b" category="paragraph">監査ログは、データがスキャンしているすべての作業環境およびデータソースから、ファイルに対してデータが実行した管理アクティビティを追跡します。アクティビティには、ユーザが生成するアクティビティ（ファイルの削除、ポリシーの作成など）と生成されるポリシー（ファイルにラベルを自動的に追加するアクティビティ、ファイルを自動的に削除するアクティビティなど）があります。</block>
-  <block id="f5678b0269d5a9952a36966b56ab8f2e" category="inline-link">監査ログの詳細を確認してください</block>
-  <block id="d96e8ae6f880fe9b4d4de06b59a2128b" category="paragraph"><block ref="a09465601260c6db487e05cfd3d2ec87" category="inline-link-rx"></block>。</block>
-  <block id="a74d72e2c5ed113941ee600287aaa999" category="section-title">[データ調査]ページの重要な識別子の数に対する新しいフィルタ</block>
-  <block id="3c5d93e6c38bd86146cef63658df62d2" category="paragraph">「Number of identifiers（識別子の数）」フィルタを使用すると、個人データと機密性の高い個人データの両方を含む、一定数の機密識別子を持つファイルをリストできます。1-10や501-1000などの範囲を選択すると、その数の機密識別子を含むファイルのみを表示できます。</block>
-  <block id="a630192bda7a95f4930b54f41701fc66" category="section-title">これで、作成した既存のポリシーを編集できるようになります</block>
-  <block id="61e409921fe798c5667689af4656a112" category="inline-link">ポリシーの編集方法については、を参照してください</block>
-  <block id="dccade93a4eb5827c9c662378d30957d" category="paragraph">以前に作成したカスタムポリシーに変更を加える必要がある場合は、新しいポリシーを作成する代わりにポリシーを編集できるようになりました。<block ref="9b2d4d6793839e9e21c2eaa1cfc45637" category="inline-link-rx"></block>。</block>
   <block id="ee4612ccbf2c1a0b8e01a1dc2992487f" category="section-title">NASファイルシステムの監査ステータスがONTAP Storage VMに対して追跡されるようになりました</block>
   <block id="9e0f0ecbfec67c585b4269b113f30ee3" category="paragraph">作業環境内のストレージVMの40%未満でファイルシステムの監査が有効になっている場合、_Cyber Resilience Map_にアラートが追加されます。ONTAP イベントとNFSイベントを追跡および監査ログに記録していないSVMの正確な数は、_harden your environment_panelで確認できます。そのうえで、SVMで監査を有効にするかどうかを判断できます。</block>
   <block id="9f8d82fd59d602cd8a59ae988c97d5e6" category="section-title">ボリュームに組み込みのアンチランサムウェアがアクティブでない場合にアラートが表示されるようになりました</block>
   <block id="5e75c953b6169be120d3ab03b8f54b15" category="paragraph">この情報は、以前にONTAP 環境パネルを強化する_オンプレミスのONTAP システムについて報告されていました。 しかし、搭載されたアンチランサムウェア機能がボリュームの40%未満でオンになると、ダッシュボードでこの情報を確認できるように、_Cyber Resilience Map_でアラートが報告されるようになりました。</block>
   <block id="cc1796d3f81dc9429436a972e383c713" category="section-title">ONTAP システムのFSXが、ボリュームスナップショットの有効化のために追跡されるようになりました</block>
   <block id="e59924af0c76a1072bb2a4cb349960b8" category="paragraph">_harden your ONTAP environments _パネルに、FSX for ONTAP システム上のボリュームのSnapshotコピーのステータスが表示されるようになりました。ボリュームの40%未満がスナップショットによって保護されている場合は、_Cyber Resilience Map_でもアラートが生成されます。</block>
-  <block id="5e5a2d8b7f4ac8723d3873b0ba14916e" category="paragraph">新しいパネル_ ONTAP 環境の強化_導入環境の安全性を追跡するONTAP システムの特定の設定の状態を提供します<block ref="060f8a2b53a60ac49c67caafaf5b129f" category="inline-link-rx"></block> およびを参照してください<block ref="0be7bd5b5f280e211653a4c6e05c11a6" category="inline-link-rx"></block> これにより、異常なアクティビティをプロアクティブに検出して警告します。</block>
-  <block id="ed35eae63358acfc6c38aefc0b7736d0" category="paragraph">このNew_Backup Status_panelでは、ランサムウェア攻撃によってリカバリが必要になった場合に、最も重要なカテゴリのデータを包括的にバックアップする方法を示しています。このデータは、 Cloud Backup によってバックアップされる、環境内の特定のカテゴリの項目数を視覚的に表したものです。<block ref="eddc9c9a841fbf81e5d5b5a19c7e11a3" category="inline-link-rx"></block>。</block>
   <block id="d4e2be367ddcfb2b47d5711136446363" category="section-title">2022年6月14日</block>
   <block id="dd16b8804cbc8afa6e2f6deb9acf5bcf" category="section-title">インターネットにアクセスできないサイトのオンプレミスONTAP クラスタデータをバックアップするサポートが追加されました</block>
   <block id="6f5c7024f5953e20be33f1c72e8d5f4a" category="paragraph">オンプレミスのONTAP クラスタが、インターネットにアクセスできないサイト（ダークサイトまたはオフラインサイトとも呼ばれます）にある場合は、Cloud Backupを使用して、同じサイトにあるNetApp StorageGRID システムにボリュームデータをバックアップできるようになりました。この機能を使用するには、Cloud Manager Connector（バージョン3.9.19以降）もオフラインサイトに導入する必要があります。</block>
@@ -253,7 +231,6 @@
   <block id="826610554423c9dc8481da631ccae8be" category="inline-link">オフラインサイトのStorageGRID にONTAP データをバックアップする方法を参照してください</block>
   <block id="824ce1955c2b2d5f91cb80c86545d639" category="paragraph"><block ref="eb618b89294e80d594faecbc4641afee" category="inline-link-rx"></block>。<block ref="f39d73248b535226c2e16237e43ff2d0" category="inline-link-rx"></block>。</block>
   <block id="0a0c24e7fef8cd9bcb19d6db19987b93" category="paragraph">以前に使用していた場合は、Cloud Restoreインスタンス/VMが自動的に削除されることに注意してください。Cloud Backupプロセスが1日に1回実行され、古いCloud Restoreインスタンスがすべて削除されます。この変更は完全に透過的に行われます。データへの影響はなく、バックアップジョブやリストアジョブの変更は通知されません。</block>
-  <block id="360d69dcc915fa54a4ac5faccbaf2127" category="section-title">2022年6月12日（バージョン1.13.1）</block>
   <block id="22c3479f6dd133b2d2d79cc8b481240f" category="section-title">2022年6月23日（バージョン1.3.1）</block>
   <block id="a720f7f5208abaac19d4db46d3bc0a7b" category="inline-link">修正された問題</block>
   <block id="2ffbf992fae9becab7e787491b2cdf41" category="paragraph">バージョン1.3.1用のグローバルファイルキャッシュエッジソフトウェアは、から入手できます<block ref="2c81bb98c990e9738e500d000082628f" category="inline-link-rx"></block>。このリリースでは、に記載されている問題が修正されています<block ref="11a0d6c8cafa0c0950060c707371e2a0" category="inline-link-rx"></block>。</block>
@@ -449,11 +426,7 @@
   <block id="3fce6f9d08f0fed5c965732f940ad498" category="list-text">ブロックストレージとファイルストレージで、経済的なストレージを実現</block>
   <block id="5aa38ee0e17acbfece3b3bc0fdb18bab" category="section-title">2022年8月7日</block>
   <block id="1e945f34aa7e283df49e7bc1f6e519fc" category="section-title">クラスタのセキュリティの脆弱性を示す新しいパネル</block>
-  <block id="83497bfd5911b64807f63c35ff9fe293" category="paragraph">_Storage system vulnerabilities _panelには、Active IQ デジタルアドバイザツールが各ONTAP クラスタで検出した高、中、低のセキュリティ脆弱性の総数を示します。システムが攻撃を受けて開かないように、すぐに高脆弱性を確認する必要があります。<block ref="e5c1efd527ebe3fd1f784ff961df8f95" category="inline-link-rx"></block>。</block>
   <block id="681c888dc1b5514c36d2da9636ab4d27" category="section-title">変更不可のスキャンファイルを表示する新しいパネル</block>
-  <block id="ce5ff705f172d820f90c05f58e1c3e19" category="paragraph">_Criticalデータの不変性_パネルは、ONTAP SnapLock テクノロジを使用してWORMストレージの変更および削除から保護されている作業環境内の項目数を示します。これにより、書き換え不可のコピーがどの程度あるかを確認できるため、ランサムウェアに対するバックアップとリカバリの計画をより詳しく把握できます。<block ref="d02321ee0847267b2bfa5fdc78748651" category="inline-link-rx"></block>。</block>
-  <block id="ab2a86429c9a87e5d3019d275a5cfb4d" category="section-title">ONTAP 環境のセキュリティ強化を追跡する新しいパネル</block>
-  <block id="0bcaeb5db18a29ede99b5fa22ca702dd" category="section-title">Cloud Backupを使用してさまざまなカテゴリのデータを保護する方法については、新しいパネルを参照してください</block>
   <block id="b42dff6de52c55fe0d6831817d6b309d" category="section-title">ONTAP のFSXをデータソースとして使用します</block>
   <block id="0f8ffeac5211fc4e0dfb43c430753ef2" category="paragraph">Amazon FSX for ONTAP ファイルシステムから次のデスティネーションにデータをレプリケートできるようになりました。</block>
   <block id="0ef90fde5440e5fbd859cb4d59f76f2c" category="list-text">オンプレミスの ONTAP クラスタ</block>
@@ -509,4 +482,23 @@
   <block id="20ef839c6c5f361341c0392939dbf3b2" category="paragraph">Eメールで通知を受け取るには、同期関係で* Notifications *の設定を有効にしてから、Cloud Managerでアラートと通知の設定を構成する必要があります。</block>
   <block id="e6694f6134fb0186a17db662ced006d0" category="inline-link">通知を設定する方法について説明します</block>
   <block id="f7ae9f1fb8f4b7044457ebf35058b088" category="paragraph"><block ref="8365080032c57ac637a7cb1d0af196ae" category="inline-link-rx"></block>。</block>
+  <block id="331a3f3aa511b1c438e9c58674f70985" category="section-title">2022年9月6日（バージョン1.16）</block>
+  <block id="d59aefa3621ff4109ce747758711c46c" category="section-title">ファイルの変更を反映するために、リポジトリをすぐに再スキャンできます</block>
+  <block id="a6277013831bd0ba5dd8499592e6d67b" category="inline-link">ディレクトリを再スキャンする方法を参照してください</block>
+  <block id="45b58068004d744461935c2aae409c04" category="paragraph">変更がシステムに反映されるように特定のリポジトリをただちに再スキャンする必要がある場合は、リポジトリを選択して再スキャンします。これにより、特定のデータを再スキャンする際に、他のデータよりも優先順位を付けることができます。<block ref="62c228b6acfb31476d7e800452f50dcd" category="inline-link-rx"></block>。</block>
+  <block id="24a7d06e1fe90aca0c0301d12fadc686" category="section-title">[データ調査]ページの[データスキャン]ステータスの新しいフィルタ</block>
+  <block id="e2e0734ca474deb38b2c13f526832e06" category="paragraph">[分析ステータス]フィルタを使用すると、データセンススキャンの特定の段階にあるファイルを一覧表示できます。オプションを選択して、「*最初のスキャンを保留*」、「*完了*スキャン中」、「*再スキャンを保留中*」、または「スキャンに失敗*」のファイルのリストを表示できます。</block>
+  <block id="82f05abce805aa872acec563bbca9a1f" category="paragraph"><block ref="b263790debd0f3d5e5a31296d99293db" category="inline-link-rx"></block>。</block>
+  <block id="9d771bf7f3ed0f2d7cd7bbf827bab0a2" category="section-title">データ主体は、スキャンで見つかった「個人データ」の一部と見なされるようになりました</block>
+  <block id="76eab5fecba3164354032ddcdc0feb3d" category="paragraph">データセンスは、コンプライアンスダッシュボードに表示される個人結果の一部として、データ主体を認識するようになりました。また、［調査］ページで検索を実行するときに、［個人データ］の［データ主体］を選択して、データ主体を含むファイルのみを表示することもできます。</block>
+  <block id="6d3ab1cb3139d4416e111272db779d6d" category="section-title">データ検出ブレッドクラムファイルは、スキャンで検出された「カテゴリ」の一部と見なされるようになりました</block>
+  <block id="d6933caaf62074fc0c3e63f604181712" category="inline-link">ブレッドクラムファイルの作成方法の詳細については、こちらをご覧ください</block>
+  <block id="368538217a4a98d2d78bf94a224b8eb6" category="paragraph">データ検出では、階層リンクファイルがコンプライアンスダッシュボードに表示されるカテゴリの一部として認識されるようになりました。これらは、ソースの場所からNFS共有にファイルを移動するときにData Senseによって作成されるファイルです。<block ref="fd6931884959497f6c1600e29f97b838" category="inline-link-rx"></block>。</block>
+  <block id="636d406982c471ea6a3e9f3a5d5f7f1f" category="paragraph">また、[調査]ページで検索を実行するときに、[カテゴリ]の[データセンスパンくずリスト]を選択して、データセンスブレッドクラムファイルのみを表示することもできます。</block>
+  <block id="8c70b531876f0aad87de3df8d9049545" category="section-title">2022年9月6日</block>
+  <block id="4f400ad3636bf9ccb8a232e152ae3a56" category="section-title">クラスタで検出されたランサムウェアのインシデントを表示する新しいパネル</block>
+  <block id="ec9614a46239aa59499c4a94e919963a" category="inline-link">詳細はこちらをご覧ください</block>
+  <block id="2cadd98d70cc36a0982305ace71488f2" category="paragraph">Ransomware incidents_panelは、システムで発生したランサムウェア攻撃を示します。現在サポートされているのは、Autonomous Ransomware Protection（ARP；自律ランサムウェア保護）を実行しているオンプレミスのONTAP クラスタです。ARPでは、NAS（NFSおよびSMB）環境のワークロード分析を使用して、ランサムウェア攻撃を示す可能性のある異常なアクティビティをプロアクティブに検出し、警告します。<block ref="a8b3634a0c7a594234502955588cc1db" category="inline-link-rx"></block>。</block>
+  <block id="cad6252563f98c3f1a50da37df91528f" category="paragraph">_Storage system vulnerabilities _panelには、Active IQ デジタルアドバイザツールが各ONTAP クラスタで検出した高、中、低のセキュリティ脆弱性の総数を示します。システムが攻撃を受けて開かないように、すぐに高脆弱性を確認する必要があります。<block ref="6385dc99da0ff6c045e59c001938f4ed" category="inline-link-rx"></block>。</block>
+  <block id="95055437ddc6fef4303145322941a60e" category="paragraph">_Criticalデータの不変性_パネルは、ONTAP SnapLock テクノロジを使用してWORMストレージの変更および削除から保護されている作業環境内の項目数を示します。これにより、書き換え不可のコピーがどの程度あるかを確認できるため、ランサムウェアに対するバックアップとリカバリの計画をより詳しく把握できます。<block ref="2a21419eb985c05c07ba644754fc60a5" category="inline-link-rx"></block>。</block>
 </blocks>
