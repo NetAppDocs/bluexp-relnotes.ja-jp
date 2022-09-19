@@ -423,9 +423,7 @@
   <block id="f2c9e54745387d4204d350aaf464ef16" category="paragraph">最後のリリースで導入された、Amazon S3バケットに格納されたバックアップ向けの_DataLockとRansomware Protection_forが含まれます。このリリースでは、StorageGRID システムに格納されたバックアップファイルのサポートが拡張されています。クラスタがONTAP 9.11.1以降を使用していて、StorageGRID システムがバージョン11.6.0.3以降を実行している場合、この新しいバックアップポリシーオプションを使用できます。<block ref="3f7eaa3e30bb5eb7a46ecb7c423ee7ad" category="inline-link-rx"></block>。</block>
   <block id="7db81221e474d169032014280bbe8e36" category="paragraph">バージョン3.9.22以降のソフトウェアがインストールされたコネクタを実行する必要があります。コネクタはオンプレミスにインストールする必要があり、インターネットにアクセスできるサイトまたはインターネットに接続できないサイトにインストールできます。</block>
   <block id="dfa4dbaa7b53b80d828eeac39da445d5" category="section-title">これで、バックアップファイルからフォルダレベルのリストアを実行できるようになりました</block>
-  <block id="44049ef063184610d2b3d1f901e33c6a" category="paragraph">フォルダ（ディレクトリまたは共有）内のすべてのファイルにアクセスする必要がある場合は、バックアップファイルからフォルダをリストアできるようになりました。フォルダをリストアする方が、ボリューム全体をリストアするよりもはるかに効率的です。この機能は、参照およびリストア方法と検索およびリストア方法の両方を使用して、リストア処理を実行する場合に使用できます。この時点では、1つのフォルダのみを選択してリストアできます。そのフォルダのファイルのみがリストアされます。サブフォルダやサブフォルダ内のファイルはリストアされません。</block>
   <block id="08c716b38dc966a670cdf75da8f3f86d" category="section-title">アーカイブストレージに移動されたバックアップからファイルレベルのリストアを実行できるようになりました</block>
-  <block id="5a1b289592dc33da4fec4177e12f2abe" category="paragraph">以前は、アーカイブストアに移動されたバックアップファイルからのみボリュームをリストアできました（AWSおよびAzureのみ）。これらのアーカイブ済みバックアップファイルから個々のファイルやフォルダをリストアできるようになりました。この機能は、参照およびリストア方法と検索およびリストア方法の両方を使用して、リストア処理を実行する場合に使用できます。</block>
   <block id="b0e03676724b8b6468356ef104a66e4f" category="section-title">ファイルレベルのリストアで、元のソースファイルを上書きするオプションが追加されました</block>
   <block id="f3e2c168c189da079b62c6ff6558a640" category="paragraph">以前は、元のボリュームにリストアされたファイルは、「Restore_&lt; file_name &gt;」というプレフィックスの新しいファイルとして常にリストアされていました。ボリューム上の元の場所にファイルをリストアする際に、元のソースファイルを上書きできるようになりました。この機能は、参照およびリストア方法と検索およびリストア方法の両方を使用して、リストア処理を実行する場合に使用できます。</block>
   <block id="736c2dbf2aa9f4b08b97a4f719b3cf5e" category="section-title">ドラッグアンドドロップして、StorageGRID システムへのクラウドバックアップを有効にします</block>
@@ -481,4 +479,6 @@
   <block id="ead28cedb204ded1899ad9065642764d" category="list-text"><block ref="ead28cedb204ded1899ad9065642764d" category="inline-link-rx"></block></block>
   <block id="30b77b282030e8985671bcc89e3e4d74" category="inline-link">セットアップと管理</block>
   <block id="10dc3609faa5a0e06b693aa9833bf1aa" category="list-text"><block ref="10dc3609faa5a0e06b693aa9833bf1aa" category="inline-link-rx"></block></block>
+  <block id="201e1c2515e9474bbcf720fb750a48c0" category="paragraph">フォルダ（ディレクトリまたは共有）内のすべてのファイルにアクセスする必要がある場合は、バックアップファイルからフォルダをリストアできるようになりました。フォルダをリストアする方が、ボリューム全体をリストアするよりもはるかに効率的です。この機能は、ONTAP 9.11.1以降を使用している場合、Browse &amp; RestoreメソッドとSearch &amp; Restoreメソッドの両方を使用してリストア処理を実行するときに使用できます。この時点では、1つのフォルダのみを選択してリストアできます。そのフォルダのファイルのみがリストアされます。サブフォルダやサブフォルダ内のファイルはリストアされません。</block>
+  <block id="092186aa28f6e357cce0ba979d549724" category="paragraph">以前は、アーカイブストレージに移動されたバックアップファイルからのみボリュームをリストアできました（AWSおよびAzureのみ）。これらのアーカイブ済みバックアップファイルから個 々 のファイルをリストアできるようになりました。この機能は、ONTAP 9.11.1以降を使用している場合、Browse &amp; RestoreメソッドとSearch &amp; Restoreメソッドの両方を使用してリストア処理を実行するときに使用できます。</block>
 </blocks>
