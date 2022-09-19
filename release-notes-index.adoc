@@ -30,8 +30,10 @@ permalink: release-notes-index.html
 
 
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-service-gcp/whats-new.html["Cloud Volumes Service for Google Cloud"^]
+* https://docs.netapp.com/us-en/cloud-manager-e-series/whats-new.html["Eシリーズシステム"^]
 * https://docs.netapp.com/us-en/cloud-manager-kubernetes/whats-new.html["Kubernetes クラスタ"^]
 * https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html["オンプレミスの ONTAP クラスタ"^]
+* https://docs.netapp.com/us-en/cloud-manager-storagegrid/whats-new.html["StorageGRID"^]
 
 
 
@@ -55,5 +57,5 @@ permalink: release-notes-index.html
 
 == 管理
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/whats-new.html["管理を設定します"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/whats-new.html["セットアップと管理"^]
 
