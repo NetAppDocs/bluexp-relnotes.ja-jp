@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud' 
 summary: Cloud Manager プラットフォームで行われた クラウド サービス の最新の変更点について説明します。詳細については、各サービスのすべてのリリースノートを参照してください。 
 ---
 = Cloud Manager での最新の変更点
@@ -249,7 +249,7 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 ==== ドラッグアンドドロップして、StorageGRID システムへのクラウドバックアップを有効にします
 
-状況に応じて https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-viewing-azure-blob.html["StorageGRID"^] バックアップ先がキャンバス上の作業環境として存在する場合、オンプレミスのONTAP 作業環境をデスティネーションにドラッグしてバックアップセットアップウィザードを開始できます。
+状況に応じて https://docs.netapp.com/us-en/cloud-manager-storagegrid/task-discover-storagegrid.html["StorageGRID"^] バックアップ先がキャンバス上の作業環境として存在する場合、オンプレミスのONTAP 作業環境をデスティネーションにドラッグしてクラウドバックアップセットアップウィザードを開始できます。
 
 
 
