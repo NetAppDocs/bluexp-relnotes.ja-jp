@@ -153,13 +153,6 @@
   <block id="1d83e69fc7f9ed326713517b984b155b" category="list-text">AWS GovCloudアカウント認証はCloud Managerでサポートされるようになりました。</block>
   <block id="d8a56d983b91f097e5ba55dd03a18509" category="inline-link-macro">IAM ロールを設定します</block>
   <block id="9c2f60af941e19d70429b4a59debeeb9" category="paragraph"><block ref="9c2f60af941e19d70429b4a59debeeb9" category="inline-link-macro-rx"></block></block>
-  <block id="a334cff76a53c8f9b93a01e24c56c9e5" category="section-title">2022年7月15日</block>
-  <block id="fd07056b3157389b873051e9d2dd6d40" category="section-title">ポリシーの変更</block>
-  <block id="4c2e66937d2d8ba8680502b29c20f843" category="paragraph">ドキュメントを更新するには、Cloud Managerのポリシーをドキュメント内に直接追加します。これにより、コネクタとCloud Volumes ONTAP に必要な権限を、設定方法を説明する手順とともに表示できるようになりました。これらのポリシーには、ネットアップサポートサイトのページからアクセスできます。</block>
-  <block id="28f37fc0eb4fe20ff92020d4d8d46b8d" category="inline-link-macro">次の例は、コネクタの作成に使用するAWS IAMロールの権限を示しています</block>
-  <block id="49056d93dd3cd3fc9129ebadcf6877e0" category="inline-link-macro">Cloud Managerの権限の概要を確認します</block>
-  <block id="2c6996f5a98ca1cbcfa64873c18f13e9" category="paragraph"><block ref="077586b4338f7fc9c66e0ae0e2365a30" category="inline-link-rx"></block>。</block>
-  <block id="2533820d9e3e679d169b5decdbf29c60" category="paragraph">また、各ポリシーへのリンクを提供するページも作成しました。<block ref="3bc30da5781f88e99acbb8ce33011928" category="inline-link-rx"></block>。</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
   <block id="01f2c0e19d8bbd614814f0651e7feec1" category="section-title">コネクタ3.9.21</block>
   <block id="1beb197487d0f07564b924071751aa36" category="list-text">Cloud Managerでまだ管理していない既存のクラウドリソースを検出する新しい方法が導入されました。</block>
@@ -508,4 +501,22 @@
   <block id="ff3a8dd75b4d3881ab0fc4ce17301af8" category="section-title">2022年11月7日</block>
   <block id="7c16758604271d7ef3055d0e5962ec82" category="section-title">ランサムウェア防御スコアと推奨アクションを表示する新しいパネル</block>
   <block id="2dad48bc5cb886ca6327e125bc6c853d" category="paragraph">これらの2つの新しいパネルは、データがランサムウェア攻撃に対してどの程度復元力を持つか、またスコアを向上させるために何ができるかを特定するために連携して機能します。ランサムウェア防御スコアパネルには、全体のスコアと潜在的な問題が存在するサイバーセキュリティ領域が表示されます。Recommended Actions（推奨アクション）パネルには、ランサムウェア攻撃に対する耐障害性を向上させるために実行できる潜在的なアクションがリストされています。また、必要に応じてアクションを適用できるように、問題 を調査するためのリンクが表示されます。<block ref="020baa7d67cad4299bb33f9b5861968a" category="inline-link-rx"></block>。</block>
+  <block id="f658ebadeb22d41618c5222998030cb9" category="section-title">コネクタ3.9.23</block>
+  <block id="a7dad5ac7e311dedf2a82e4bb5a713dd" category="list-text">PAYGOサブスクリプションとBlueXPの年間契約が、Digital Walletから表示および管理できるようになりました。</block>
+  <block id="949b19dd7e9f6496c1125f7166270450" category="inline-link">サブスクリプションの管理方法について説明します</block>
+  <block id="ee0a02cf5f32853f4619caef4f31ab4e" category="paragraph"><block ref="ee0a02cf5f32853f4619caef4f31ab4e" category="inline-link-rx"></block></block>
+  <block id="9fcd0a1eb1b488b623812d42567ce2d8" category="paragraph"><block ref="9fcd0a1eb1b488b623812d42567ce2d8" category="inline-link-rx"></block></block>
+  <block id="2325f561a20765def93d682f14cae306" category="paragraph">コネクタの3.9.23リリースでは、次の変更が加えられました。</block>
+  <block id="6d5ba1b41fa03c2fdf0d747769a6b053" category="section-title">Azureでリソースグループを移動しています</block>
+  <block id="ea55da5ec5028d99103c938ded49761c" category="paragraph">同じAzureサブスクリプション内で、Azure内の1つのリソースグループから別のリソースグループに作業環境を移動できるようになりました。</block>
+  <block id="6c2dc09b272a4aed6d56a3438a190129" category="inline-link-macro">リソースグループを移動しています</block>
+  <block id="d015054d89d4ecbe893f21f5ab9700c0" category="paragraph">詳細については、を参照してください <block ref="8d94a006f1853b408e5763a514426526" category="inline-link-macro-rx"></block>。</block>
+  <block id="b6a2ac7b66db8e93b936023f17401626" category="section-title">NDMP-copy証明書</block>
+  <block id="c348c640ca478b45f3a3d9e14bb0695b" category="paragraph">ONTAP VolumeでのNDMPコピーの使用が認定されました。</block>
+  <block id="ab5a83d8e39547c5fb30a1fda984aebb" category="inline-link">NDMP 設定の概要</block>
+  <block id="e4b4f60ab9fe08116659a5e12d6db4a8" category="paragraph">NDMPの設定方法および使用方法については、を参照してください<block ref="9c57f7cf04e123991a3c88e286feb189" category="inline-link-rx"></block>。</block>
+  <block id="5e7de773a189ac8974753f9ce70a3dc5" category="section-title">Azureのマネージドディスク暗号化機能をサポート</block>
+  <block id="a09181ba1488df77bf9950cb483e97e8" category="paragraph">作成時にすべての管理対象ディスクを暗号化できる、新しいAzure権限が追加されました。</block>
+  <block id="e76c0365dfa8d6b43992d790f582e6c4" category="inline-link">Azure でお客様が管理するキーを使用するように Cloud Volumes ONTAP を設定します</block>
+  <block id="7343d251ecc72fc362a0ce85cf11a9fe" category="paragraph">この新機能の詳細については、を参照してください<block ref="91da0725d8642ccf887bde4d4604033e" category="inline-link-rx"></block>。</block>
 </blocks>
