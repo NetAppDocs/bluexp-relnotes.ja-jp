@@ -114,10 +114,7 @@
   <block id="40f78d193b858589ad7df4dd4ce61ad6" category="inline-link">データレプリケーションの設定方法について説明します</block>
   <block id="1e56755e05ec049b30c49b9d53744ca1" category="paragraph"><block ref="0337e364432fca0f343e5f2660661b77" category="inline-link-rx"></block>。</block>
   <block id="a2824b49f1c7526bf0e925b86c7b293c" category="inline-link">Search &amp; Restoreを使用してボリュームとファイルをリストアする方法を参照してください</block>
-  <block id="d3e8cd2e370974f27de1b310b4aa8cb3" category="section-title">2022年5月3日</block>
-  <block id="a74300b6b08791dda4f54d473a58e17a" category="section-title">Cloud Tieringは、追加のクラスタ構成をサポートしています</block>
   <block id="afacb33ad65bcd63eb15aeba04b4aed0" category="inline-link">これらのタイプのクラスタのライセンスを設定する方法を参照してください。</block>
-  <block id="4675a948ea93098e22976c0848737e1a" category="paragraph">クラウド階層化ライセンスを、階層化ミラー構成（MetroCluster 構成を除く）のクラスタと、IBM Cloud Object Storageに階層化されたクラスタと共有できるようになりました。これらのシナリオで廃止されたFabricPool ライセンスを使用する必要はなくなりました。これにより、多くのクラスタで「フローティング」のクラウド階層化ライセンスを簡単に使用できるようになります。<block ref="4e8c6c7f1b8cf8bbca1bc62528b46ae2" category="inline-link-rx"></block></block>
   <block id="a3065e926a55339df72c1343ee9b3fae" category="inline-link">データの調査に使用できるすべてのフィルタのリストを確認します</block>
   <block id="81ad4f0de90ee8a7305d0fd7751df796" category="section-title">新しいGoogle Cloudリージョンサポート</block>
   <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link">このページです</block>
@@ -129,13 +126,6 @@
   <block id="5549a52d6578bcb66138c7319ef4ea11" category="paragraph">オンプレミスのONTAP クラスタに対して高度な管理を実行する必要がある場合は、ONTAP システムに付属の管理インターフェイスであるONTAP System Managerを使用できます。高度な管理のためにCloud Managerを終了する必要がないように、Cloud ManagerのインターフェイスはCloud Managerに直接組み込まれています。</block>
   <block id="99721ad2e6d601b2966a9d9e1c7de770" category="paragraph">この詳細ビューは、9.10.0以降を実行するオンプレミスのONTAP クラスタでプレビューとして使用できます。今後のリリースでは、この点をさらに改良し、機能を強化する予定です。製品内のチャットでご意見をお寄せください。</block>
   <block id="f303a87fe6efba259b752f5a9e11064b" category="inline-link-macro">詳細については、「詳細ビュー」を参照してください</block>
-  <block id="f8c7ea9d64a54c9a1eb4c1cbc5ef066e" category="section-title">2022年6月12日</block>
-  <block id="ee4612ccbf2c1a0b8e01a1dc2992487f" category="section-title">NASファイルシステムの監査ステータスがONTAP Storage VMに対して追跡されるようになりました</block>
-  <block id="9e0f0ecbfec67c585b4269b113f30ee3" category="paragraph">作業環境内のストレージVMの40%未満でファイルシステムの監査が有効になっている場合、_Cyber Resilience Map_にアラートが追加されます。ONTAP イベントとNFSイベントを追跡および監査ログに記録していないSVMの正確な数は、_harden your environment_panelで確認できます。そのうえで、SVMで監査を有効にするかどうかを判断できます。</block>
-  <block id="9f8d82fd59d602cd8a59ae988c97d5e6" category="section-title">ボリュームに組み込みのアンチランサムウェアがアクティブでない場合にアラートが表示されるようになりました</block>
-  <block id="5e75c953b6169be120d3ab03b8f54b15" category="paragraph">この情報は、以前にONTAP 環境パネルを強化する_オンプレミスのONTAP システムについて報告されていました。 しかし、搭載されたアンチランサムウェア機能がボリュームの40%未満でオンになると、ダッシュボードでこの情報を確認できるように、_Cyber Resilience Map_でアラートが報告されるようになりました。</block>
-  <block id="cc1796d3f81dc9429436a972e383c713" category="section-title">ONTAP システムのFSXが、ボリュームスナップショットの有効化のために追跡されるようになりました</block>
-  <block id="e59924af0c76a1072bb2a4cb349960b8" category="paragraph">_harden your ONTAP environments _パネルに、FSX for ONTAP システム上のボリュームのSnapshotコピーのステータスが表示されるようになりました。ボリュームの40%未満がスナップショットによって保護されている場合は、_Cyber Resilience Map_でもアラートが生成されます。</block>
   <block id="22c3479f6dd133b2d2d79cc8b481240f" category="section-title">2022年6月23日（バージョン1.3.1）</block>
   <block id="a720f7f5208abaac19d4db46d3bc0a7b" category="inline-link">修正された問題</block>
   <block id="2ffbf992fae9becab7e787491b2cdf41" category="paragraph">バージョン1.3.1用のグローバルファイルキャッシュエッジソフトウェアは、から入手できます<block ref="2c81bb98c990e9738e500d000082628f" category="inline-link-rx"></block>。このリリースでは、に記載されている問題が修正されています<block ref="11a0d6c8cafa0c0950060c707371e2a0" category="inline-link-rx"></block>。</block>
@@ -163,29 +153,6 @@
   <block id="1d83e69fc7f9ed326713517b984b155b" category="list-text">AWS GovCloudアカウント認証はCloud Managerでサポートされるようになりました。</block>
   <block id="d8a56d983b91f097e5ba55dd03a18509" category="inline-link-macro">IAM ロールを設定します</block>
   <block id="9c2f60af941e19d70429b4a59debeeb9" category="paragraph"><block ref="9c2f60af941e19d70429b4a59debeeb9" category="inline-link-macro-rx"></block></block>
-  <block id="d5b8d2f44acff1b98dd9992401eadf24" category="section-title">2022年7月6日（バージョン1.14）</block>
-  <block id="45b5235b8c737e18e646514c30664517" category="section-title">これで、ディレクトリにアクセスできるユーザとグループを表示できます</block>
-  <block id="949b2765e1f54f21e0cad7eec542e087" category="inline-link">フォルダおよびファイル共有にアクセスできるユーザとグループを表示する方法について説明します</block>
-  <block id="a90ca4eb6ddb2e74f2c65cdc04cc3fbb" category="paragraph">これまでは、個々のファイルに付与されているオープンアクセス権のタイプを表示できました。これで、ディレクトリ（フォルダおよびファイル共有）にアクセスできるすべてのユーザまたはグループ、およびディレクトリにアクセスできる権限のタイプのリストが表示されます。<block ref="b60fb470aa4bdcc4f286155f14ead62c" category="inline-link-rx"></block>。</block>
-  <block id="6a3dc819e6a301f028d6d27063bb3b04" category="section-title">リポジトリのスキャンを一時停止すると'特定のコンテンツのスキャンを一時的に停止できます</block>
-  <block id="1c32547b30cc36869742df049964326d" category="inline-link">スキャンを一時停止および再開する方法を参照してください</block>
-  <block id="686ab925b6e810c9c0fd8f818fda9d3f" category="paragraph">スキャンを一時停止すると、ボリュームやバケットへの追加や変更はデータスキャンを実行できなくなりますが、現在の結果はすべてシステムで使用できるようになります。<block ref="a7d93e406d54440657820ff66e02fe00" category="inline-link-rx"></block>。</block>
-  <block id="74055d71ba1631fb4f3285d57f607264" category="section-title">3つの追加状態からのUSドライバーのライセンスデータは、データセンスで識別できます</block>
-  <block id="c249f6d964b8afde45218a63824a58eb" category="paragraph">データセンスは、インディアナ、ニューヨーク、テキサスの運転免許証データを含むファイルを識別して分類できます。 <block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
-  <block id="a3096c7d9e0dca154e6250efb3ce3736" category="section-title">ポリシーは、検索条件に一致するディレクトリを返すようになりました</block>
-  <block id="9fadb6e2508d92e954b40d39c36e9687" category="inline-link">ポリシーの作成の詳細については、こちらをご覧ください</block>
-  <block id="108104172f74542ec4477bdc3526c5a6" category="paragraph">以前は、カスタムポリシーを作成したときに、検索条件に一致したファイルが結果に表示されていました。これで、クエリに一致するディレクトリ（フォルダおよびファイル共有）も結果に表示されます。<block ref="15372ef6946b4e16102f5b52608f8748" category="inline-link-rx"></block>。</block>
-  <block id="7d96313dbf4a19b7144c3ff41f415250" category="section-title">データセンスでは、一度に最大100,000個のファイルを移動できます</block>
-  <block id="3e0c53bc3881ac60b7e7165fda5915c1" category="inline-link">データセンスを使用してファイルを移動する方法をご覧ください</block>
-  <block id="83a532ebc867c79287dd4586ca124d5c" category="paragraph">スキャンしたデータソースからNFS共有へのファイル移動にData Senseを使用する場合は、ファイルの最大数が100、000ファイルに増加しています。<block ref="09dde0c065d21cccd7a9b4c85001931c" category="inline-link-rx"></block>。</block>
-  <block id="02e3f175b6b6db384cc8a9f19dfd8b6a" category="section-title">2022年7月13日</block>
-  <block id="f2c95e400c19071fbcd562467ddc48b3" category="section-title">SnapLock Enterpriseボリュームのバックアップがサポートされるようになりました</block>
-  <block id="e5fff8c021afd86e8d7cd1a5b82dec8e" category="paragraph">Cloud Backupを使用して、SnapLock Enterpriseボリュームをパブリッククラウドとプライベートクラウドにバックアップできるようになりました。この機能を使用するには、ONTAP システムでONTAP 9.11.1以降が実行されている必要があります。ただし、SnapLock Complianceボリュームは現在サポートされていません。</block>
-  <block id="975ab611b7133feabb2a325e663f8347" category="section-title">オンプレミスコネクタを使用して、パブリッククラウドにバックアップファイルを作成できるようになりました</block>
-  <block id="8d2224260491150c834f946712c069a0" category="paragraph">以前は、バックアップファイルの作成場所と同じクラウドプロバイダにConnectorを導入する必要がありました。オンプレミスに導入されたコネクタを使用して、オンプレミスのONTAP システムからAmazon S3、Azure Blob、Google Cloud Storageへのバックアップファイルを作成できるようになりました。（StorageGRID システムでバックアップファイルを作成する場合は、オンプレミスコネクタが常に必要でした）。</block>
-  <block id="f42fcdabb7c9a7075b26292ed8cb7a23" category="section-title">ONTAP システムのバックアップポリシーを作成する場合には、追加の機能を使用できます</block>
-  <block id="cd359ec6a578adbdedd6582f88b84401" category="list-text">毎年のスケジュールでバックアップを実行できるようになりました。年単位のバックアップの場合、デフォルトの保持期間は1ですが、この値を変更して、以前の多数のバックアップファイルにアクセスできるようにすることができます。</block>
-  <block id="42a0fcc08cab0bf2248dfca3aecd8ec9" category="list-text">バックアップポリシーに名前を付けておくと、よりわかりやすいテキストでポリシーを識別できます。</block>
   <block id="a334cff76a53c8f9b93a01e24c56c9e5" category="section-title">2022年7月15日</block>
   <block id="fd07056b3157389b873051e9d2dd6d40" category="section-title">ポリシーの変更</block>
   <block id="4c2e66937d2d8ba8680502b29c20f843" category="paragraph">ドキュメントを更新するには、Cloud Managerのポリシーをドキュメント内に直接追加します。これにより、コネクタとCloud Volumes ONTAP に必要な権限を、設定方法を説明する手順とともに表示できるようになりました。これらのポリシーには、ネットアップサポートサイトのページからアクセスできます。</block>
@@ -308,7 +275,6 @@
   <block id="b6f2e1a880ce20ab3d1039056746fa33" category="paragraph">この機能はAmazon S3バケットに対してはすでに存在します。</block>
   <block id="15471566ffb385e256937957990dd60d" category="section-title">2022年8月18日</block>
   <block id="d583f1393e45db7abf2dbb15da48eaad" category="section-title">クラウドネイティブアプリケーションデータを保護するためのサポートが追加されました</block>
-  <block id="82aa9a316dbbb378e25972999e35a45b" category="paragraph">Cloud Backup for Applicationsは、NetApp Cloud Storageで実行されているアプリケーションにデータ保護機能を提供するSaaSベースのサービスです。Cloud Managerで有効になっているアプリケーション向けのCloud Backupは、Amazon FSX for NetApp ONTAP 上に存在するOracleデータベースを、アプリケーションと整合性のある効率的なポリシーベースのバックアップおよびリストアを実現します。<block ref="5774010e75c0af5301ef0cfe74198590" category="inline-link-rx"></block>。</block>
   <block id="e7f0bd203723dde56c408349b772431e" category="paragraph">Cloud Backupでランサムウェアセーフバックアップのオブジェクトロックがサポートされるようになりました。クラスタがONTAP 9.11.1以降を使用していて、バックアップのデスティネーションがAmazon S3の場合、_DataLockという新しいバックアップポリシーオプションとランサムウェア防御_が利用可能になりました。DataLockはバックアップファイルの変更や削除を防止します。ランサムウェア対策はバックアップファイルをスキャンして、ランサムウェアによるバックアップファイルへの攻撃の証拠を探します。<block ref="3f7eaa3e30bb5eb7a46ecb7c423ee7ad" category="inline-link-rx"></block>。</block>
   <block id="4a13f748ffea2bf384ee164062e7e17f" category="paragraph">この機能を使用するには、Connectorロールで追加の権限が必要です。バージョン3.9.21ソフトウェアを使用して展開されたコネクタには、これらの権限が含まれています。以前のリリースを使用してコネクタを導入した場合は、権限を手動で追加する必要があります。<block ref="b51546833a3c96ab5b8c4e49b196cd94" category="inline-link-rx"></block>。</block>
   <block id="9fa4d73f6f3d752a69adeebba1959edb" category="section-title">Cloud Backupで、カスタムSnapMirrorラベルを使用して作成したポリシーがサポートされるようになりまし</block>
@@ -443,7 +409,6 @@
   <block id="929fa09ef9d24654b353f312638ca6e6" category="paragraph">アカウントに関連付けられた更新トークンが3カ月後に期限切れになると、Cloud ManagerはNetApp Support Site アカウントに関連付けられたクレデンシャルの更新を求めます。<block ref="abba285888ca54da9f89054b7e57f270" category="inline-link-rx"></block></block>
   <block id="2d96aa84884717fd77e4906d82c73ddc" category="section-title">2022年9月28日</block>
   <block id="89d500a3ace67f6d47edb61231336589" category="section-title">Cloud Backup for Applicationsの機能強化</block>
-  <block id="2e73884f73c53eee3aea96494fd4ff16" category="list-text">Google Cloud Provider（GCP）とStorageGRID をサポートしており、アプリケーションと整合性のあるSnapshotをバックアップできます</block>
   <block id="f617da6b50728500642eb376ab97b6f4" category="list-text">カスタムポリシーを作成する</block>
   <block id="eaec67d5f8f719a2f05b5ded5dc4ce60" category="list-text">アーカイブストレージをサポートします</block>
   <block id="37976e53c610f9f37f8310aaacc3323e" category="list-text">SAP HANAアプリケーションをバックアップ</block>
@@ -485,7 +450,6 @@
   <block id="19df80e08f82de8a5a9df23c1e7c6b96" category="paragraph">このリリースでは、以下に示す新機能が提供されます。また、に記載されている問題も修正されています<block ref="11a0d6c8cafa0c0950060c707371e2a0" category="inline-link-rx"></block>。</block>
   <block id="15b783a23e5291e1ffb9f638317d4bcb" category="inline-link">NetApp Global File Cache User Guide</block>
   <block id="cf7c224c7b8d702f6384270dadb22ca0" category="paragraph">NetApp Cloud Insights （CI）では、インフラとアプリケーションを包括的に可視化できます。グローバルファイルキャッシュがCIと統合され、すべてのエッジとコアを完全に可視化し、インスタンスで実行されているプロセスを監視できるようになりました。さまざまなグローバルファイルキャッシュメトリックがCIにプッシュされ、CIダッシュボードの全体的な概要が表示されます。の第11章を参照してください<block ref="2cde0a8e9bca45f9b9d7b53c9b2941a5" category="inline-link-rx"></block></block>
-  <block id="6fc9f5ba6febd413f8f3db3fdd777f58" category="section-title">2022年10月30日</block>
   <block id="084fbbb062290ef487eac98d44edd278" category="paragraph">いつ <block ref="44765f3a3e8511cc80b0083ae1e5f436" category="inline-link-macro-rx"></block>では、ブロックストレージやファイルシステムストレージに対して、ストレージクラスの経済性を実現できます。</block>
   <block id="7e69e168ccaec126378a9fc9829b1a86" category="paragraph">監視サービスは2022年11月1日に廃止されました。ナビゲーションメニューから* Insights &gt; Observability *（監視/監視）を選択すると、Cloud Insights への直接リンクが表示されるようになりました。</block>
   <block id="7c82794438729fe23f8c0939342ab8fb" category="section-title">SnapCenter サービス</block>
@@ -494,4 +458,54 @@
   <block id="ed8f5e7e321372398aae23788c3243a0" category="sidebar">BlueXPインデックス</block>
   <block id="ff93781ff90bf605d8b3070c1501b28f" category="sidebar">BlueXPのウェブサイトのblog</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">BlueXPのすべてのマニュアル</block>
+  <block id="733947b9c31fd162b40f0854f88a98f0" category="section-title">2022年11月2日</block>
+  <block id="4e1bedfa5acb9fc8467640ea1dcaece3" category="section-title">古いSnapshotコピーをベースラインバックアップファイルにエクスポートできるようになりました</block>
+  <block id="ae268c326c8c4dacd9c1078313ddd2ba" category="paragraph">バックアップスケジュールのラベル（日単位、週単位など）に一致するボリュームのローカルSnapshotコピーが作業環境にある場合は、それらの履歴Snapshotをバックアップファイルとしてオブジェクトストレージにエクスポートできます。これにより、古いSnapshotコピーをベースラインバックアップコピーに移動することで、クラウドでバックアップを初期化できます。</block>
+  <block id="649d79e860fd8eae7a579da7093b467e" category="inline-link">[詳細設定]ページ</block>
+  <block id="baf7d965b78ce781f897df564be4d675" category="paragraph">このオプションは、作業環境でCloud Backupをアクティブ化する場合に使用できます。この設定は、あとでで変更することもできます<block ref="88d25b1a851fc3767825406ea8de456d" category="inline-link-rx"></block>。</block>
+  <block id="bddf21f18c4ffad2268ebfc0d565c03c" category="section-title">これで、ソースシステムで不要になったボリュームのアーカイブにCloud Backupを使用できるようになります</block>
+  <block id="3348dcc393bde37af6464ca44f92a231" category="inline-link">詳細をご確認ください</block>
+  <block id="429c129d466e9cdbc94da5ebfd639734" category="paragraph">これで、ボリュームのバックアップ関係を削除できるようになります。これにより、新しいバックアップファイルの作成を停止してソースボリュームを削除し、既存のすべてのバックアップファイルを保持する場合に、アーカイブメカニズムを実現できます。これにより、必要に応じて、あとでソースストレージシステムからスペースを消去しながら、バックアップファイルからボリュームをリストアできるようになります。<block ref="96e512d167a0d6d287f83a8e9bfbf6a3" category="inline-link-rx"></block>。</block>
+  <block id="a2718b7c4580fe65399ac1bb8757a3eb" category="section-title">Cloud BackupのアラートをEメールまたは通知センターで受信するためのサポートが追加されました</block>
+  <block id="ac067f034fd3624f1244abb6d3755efe" category="paragraph">Cloud Backupは、BlueXP Notificationサービスに統合されています。Cloud Backup通知を表示するには、BlueXPメニューバーの通知ベルをクリックします。また、通知を電子メールで送信するようにBlueXPを構成することもできます。これにより、システムにログインしていないときでも重要なシステムアクティビティを通知できます。このEメールは、バックアップとリストアのアクティビティに注意する必要があるすべての受信者に送信できます。<block ref="74389894cb83c627291d11e2dde62faa" category="inline-link-rx"></block>。</block>
+  <block id="d07fed7e54302c401452d86813f74fdb" category="section-title">新しいAdvanced Settingsページでは、クラスタレベルのバックアップ設定を変更できます</block>
+  <block id="711d5dadc0f2641aef64c8697fec3458" category="paragraph">この新しいページでは、ONTAP システムごとにクラウドバックアップをアクティブ化するときに設定したクラスタレベルのバックアップ設定の多くを変更できます。「デフォルト」バックアップ設定として適用される一部の設定を変更することもできます。変更可能なバックアップ設定の完全なセットは、次のとおりです。</block>
+  <block id="54ce718c77c15316f9e58b5cae74c251" category="list-text">ONTAP システムにオブジェクトストレージへのアクセス権を付与するストレージキー</block>
+  <block id="78d9e3520f8237fb4916ac392c73a1cd" category="list-text">バックアップをオブジェクトストレージにアップロードするために割り当てられるネットワーク帯域幅</block>
+  <block id="dee0e1f435efb0ec8a8d1ccf48b11274" category="list-text">以降のボリュームの自動バックアップ設定（およびポリシー）</block>
+  <block id="b4cd50ce088e504eda51f33f2ab7eb47" category="list-text">アーカイブストレージクラス（AWSのみ）</block>
+  <block id="45ae6f10458e4cca2d17200124fa1c20" category="list-text">Snapshotコピーの履歴が最初のベースラインバックアップファイルに含まれているかどうか</block>
+  <block id="81db226b4b2fef2e7c216cbb14e7d89c" category="list-text">ソースシステムから「年次」スナップショットを削除するかどうか</block>
+  <block id="33e5226a6b178bab9e22b761cbda6440" category="list-text">オブジェクトストレージに接続されているONTAP IPspace（アクティブ化時に誤って選択された場合）</block>
+  <block id="7b95d23b6b30b69ed07a2e15017d99e3" category="inline-link">クラスタレベルのバックアップ設定の管理に関する詳細情報</block>
+  <block id="057c181e6c21fad200a862461add5a03" category="paragraph"><block ref="344cf4f459ea1c1e24d6bef144dcb178" category="inline-link-rx"></block>。</block>
+  <block id="ce00affaec3d960c7f7c7e5d24960872" category="section-title">オンプレミスコネクタを使用している場合に、検索とリストアを使用してパブリッククラウドからバックアップファイルをリストアできるようになりました</block>
+  <block id="1906d6d9c8dc27b6ff13fd620f717374" category="paragraph">以前のリリースでは、Connectorをオンプレミスに導入すると、バックアップファイルをパブリッククラウドに作成するためのサポートが追加されていました。このリリースでは、Connectorがオンプレミスに導入されている場合、Search &amp; Restoreを使用してAmazon S3またはAzure Blobからバックアップをリストアできるようになりました。</block>
+  <block id="08eac10f0e32578e8c9f3ee4629f84d3" category="paragraph">現時点では、Google Cloud Storageからバックアップをリストアするために検索とリストアを使用する場合、ConnectorをGoogle Cloud Platformに導入する必要があります。検索とリストアはStorageGRID システムではサポートされていません。この場合は、参照とリストアを使用する必要があります。</block>
+  <block id="f4f4c174196d45dbc07ae62740f92b92" category="section-title">ジョブ監視ページが更新されました</block>
+  <block id="213f79d27d3a76a68080f2d948105d7e" category="inline-link">ジョブ監視ページ</block>
+  <block id="92e275cf9354b2e79f6ecadafa52a965" category="paragraph">には、次の更新が行われています<block ref="2aba02720d116e26596d478ca3ace389" category="inline-link-rx"></block>：</block>
+  <block id="5b839de8a8e7b5f30407c5dc2cfdabd2" category="list-text">「ワークロード」の列を使用して、ページをフィルタして、ボリューム、アプリケーション、仮想マシン、Kubernetesの各バックアップサービスのジョブを表示できます。</block>
+  <block id="a2ed310c63a1aba1225315fe5f7f60ee" category="list-text">特定のバックアップジョブの詳細を表示するには、「ユーザ名」と「ジョブタイプ」の列を新たに追加します。</block>
+  <block id="bcce731a4ced178ba1457a0965f1a878" category="list-text">[ジョブの詳細]ページには、メインジョブを完了するために実行中のすべてのサブジョブが表示されます。</block>
+  <block id="dbe9251780901a4775188539e940cce0" category="list-text">このページは15分ごとに自動的に更新されるので、常に最新のジョブステータスの結果が表示されます。また、[*更新*]ボタンをクリックすると、ページをすぐに更新できます。</block>
+  <block id="95bdcffb51de388c8d204ebc69a73e61" category="section-title">AWSのクロスアカウントバックアップの機能拡張</block>
+  <block id="ae3795f53c6086a9639e4652dbff318b" category="paragraph">Cloud Volumes ONTAP バックアップにソースボリュームに使用しているものとは異なるAWSアカウントを使用する場合は、デスティネーションのAWSアカウントクレデンシャルをBlueXPに追加し、「s3：PutBucketPolicy」および「s3：PutBucketOwnershipControls」権限をBlueXPに権限を提供するIAMロールに追加する必要があります。これまでは、AWSコンソールで多数の設定を行う必要がありましたが、これはもう必要ありません。</block>
+  <block id="ef63a877f0594c057f824f4327169a39" category="list-text">Google Cloud Platform（GCP）とStorageGRID をサポートし、アプリケーションと整合性のあるスナップショットをバックアップします</block>
+  <block id="3f3ac5f6857788bfe6b27f406afcffa5" category="paragraph">Cloud Backup for Applicationsは、NetApp Cloud Storageで実行されているアプリケーションにデータ保護機能を提供するSaaSベースのサービスです。BlueXPで有効になっているアプリケーション向けCloud Backupは、アプリケーションと整合性のある、効率的でポリシーベースのバックアップとリストアを実現します。Amazon FSX for NetApp ONTAP 上にあるOracleデータベースのバックアップとリストアを実行できます。<block ref="5774010e75c0af5301ef0cfe74198590" category="inline-link-rx"></block>。</block>
+  <block id="0fd7cab37419c3f9fdd225020324c7dc" category="section-title">2022年11月7日（バージョン1.17）</block>
+  <block id="0198cdca4033ab7a459e75dac29fa28e" category="section-title">オンプレミスのSharePointアカウントのスキャンがサポートされます</block>
+  <block id="576988db8c435aebbdd8f982f33f8ac5" category="paragraph">データセンスで、SharePoint OnlineアカウントとSharePointオンプレミスアカウント(SharePoint Server)の両方をスキャンできるようになりました。SharePointを自分のサーバー、またはインターネットにアクセスできないサイトにインストールする必要がある場合は、これらのアカウントのユーザーファイルをデータ検出でスキャンできるようになりました。<block ref="8036d15ae032ce99e20eb0ee5791bf65" category="inline-link-rx"></block>。</block>
+  <block id="9793f1d7484adebeb64fb621258edfaf" category="section-title">複数のディレクトリ（フォルダまたは共有）を再スキャンする機能</block>
+  <block id="5f78811b5a7bfd9355b114563c862fc9" category="paragraph">これで、複数のディレクトリ（フォルダまたは共有）をただちに再スキャンして、変更がシステムに反映されるようになります。これにより、特定のデータを再スキャンする際に、他のデータよりも優先順位を付けることができます。<block ref="62c228b6acfb31476d7e800452f50dcd" category="inline-link-rx"></block>。</block>
+  <block id="feec7c47e3e7cb8ab71bbb29acd13ee0" category="section-title">オンプレミスの「スキャナ」ノードを追加して、特定のデータソースをスキャンする機能</block>
+  <block id="c6cc179979c3b50e9f274669a7debb6f" category="paragraph">データ検出機能をオンプレミス環境にインストールしている場合、データソースをスキャンするためにスキャン処理能力を高める必要があるときは、「スキャナ」ノードをさらに追加することができます。マネージャノードをインストールした直後にスキャナノードを追加することも、後でスキャナノードを追加することもできます。たとえば、1つのデータソースのデータ量が1年後に3倍になったことがわかった場合は、データスキャンを支援する新しいスキャナノードを追加できます。</block>
+  <block id="920d0a192fcf42107e363c75e934277b" category="paragraph">必要に応じて、スキャンするデータソースに物理的に近いホストシステムにスキャナノードをインストールできます。スキャナノードがデータに近いほど、データのスキャン時のネットワークレイテンシができるだけ低減されるため、データの読み取り速度が向上します。</block>
+  <block id="5a4346a01828d72104a6540080377b25" category="section-title">2022年11月6日</block>
+  <block id="8f4621192fd1fe94f1b365ae34c1e0ed" category="section-title">ドラッグアンドドロップして、Azure Blob、Google Cloud Storage、StorageGRID へのクラウド階層化を有効にします</block>
+  <block id="6586247c64ea3f20421ae518b26fc973" category="paragraph">Azure Blob、Google Cloud Storage、またはStorageGRID 階層化のデスティネーションがキャンバス上の作業環境として存在する場合は、オンプレミスのONTAP 作業環境を移行先にドラッグして、階層化セットアップウィザードを開始できます。</block>
+  <block id="88268cce7d1b83c765c3f7010df80df5" category="section-title">2022年11月6日</block>
+  <block id="ff3a8dd75b4d3881ab0fc4ce17301af8" category="section-title">2022年11月7日</block>
+  <block id="7c16758604271d7ef3055d0e5962ec82" category="section-title">ランサムウェア防御スコアと推奨アクションを表示する新しいパネル</block>
+  <block id="2dad48bc5cb886ca6327e125bc6c853d" category="paragraph">これらの2つの新しいパネルは、データがランサムウェア攻撃に対してどの程度復元力を持つか、またスコアを向上させるために何ができるかを特定するために連携して機能します。ランサムウェア防御スコアパネルには、全体のスコアと潜在的な問題が存在するサイバーセキュリティ領域が表示されます。Recommended Actions（推奨アクション）パネルには、ランサムウェア攻撃に対する耐障害性を向上させるために実行できる潜在的なアクションがリストされています。また、必要に応じてアクションを適用できるように、問題 を調査するためのリンクが表示されます。<block ref="020baa7d67cad4299bb33f9b5861968a" category="inline-link-rx"></block>。</block>
 </blocks>

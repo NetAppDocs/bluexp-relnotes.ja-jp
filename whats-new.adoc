@@ -229,13 +229,80 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 
 
+=== 2022年11月2日
+
+
+
+==== 古いSnapshotコピーをベースラインバックアップファイルにエクスポートできるようになりました
+
+バックアップスケジュールのラベル（日単位、週単位など）に一致するボリュームのローカルSnapshotコピーが作業環境にある場合は、それらの履歴Snapshotをバックアップファイルとしてオブジェクトストレージにエクスポートできます。これにより、古いSnapshotコピーをベースラインバックアップコピーに移動することで、クラウドでバックアップを初期化できます。
+
+このオプションは、作業環境でCloud Backupをアクティブ化する場合に使用できます。この設定は、あとでで変更することもできます https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backup-settings-ontap.html["[詳細設定]ページ"]。
+
+
+
+==== これで、ソースシステムで不要になったボリュームのアーカイブにCloud Backupを使用できるようになります
+
+これで、ボリュームのバックアップ関係を削除できるようになります。これにより、新しいバックアップファイルの作成を停止してソースボリュームを削除し、既存のすべてのバックアップファイルを保持する場合に、アーカイブメカニズムを実現できます。これにより、必要に応じて、あとでソースストレージシステムからスペースを消去しながら、バックアップファイルからボリュームをリストアできるようになります。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backups-ontap.html#deleting-volume-backup-relationships["詳細をご確認ください"]。
+
+
+
+==== Cloud BackupのアラートをEメールまたは通知センターで受信するためのサポートが追加されました
+
+Cloud Backupは、BlueXP Notificationサービスに統合されています。Cloud Backup通知を表示するには、BlueXPメニューバーの通知ベルをクリックします。また、通知を電子メールで送信するようにBlueXPを構成することもできます。これにより、システムにログインしていないときでも重要なシステムアクティビティを通知できます。このEメールは、バックアップとリストアのアクティビティに注意する必要があるすべての受信者に送信できます。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#use-the-job-monitor-to-view-backup-and-restore-job-status["詳細をご確認ください"]。
+
+
+
+==== 新しいAdvanced Settingsページでは、クラスタレベルのバックアップ設定を変更できます
+
+この新しいページでは、ONTAP システムごとにクラウドバックアップをアクティブ化するときに設定したクラスタレベルのバックアップ設定の多くを変更できます。「デフォルト」バックアップ設定として適用される一部の設定を変更することもできます。変更可能なバックアップ設定の完全なセットは、次のとおりです。
+
+* ONTAP システムにオブジェクトストレージへのアクセス権を付与するストレージキー
+* バックアップをオブジェクトストレージにアップロードするために割り当てられるネットワーク帯域幅
+* 以降のボリュームの自動バックアップ設定（およびポリシー）
+* アーカイブストレージクラス（AWSのみ）
+* Snapshotコピーの履歴が最初のベースラインバックアップファイルに含まれているかどうか
+* ソースシステムから「年次」スナップショットを削除するかどうか
+* オブジェクトストレージに接続されているONTAP IPspace（アクティブ化時に誤って選択された場合）
+
+
+https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backup-settings-ontap.html["クラスタレベルのバックアップ設定の管理に関する詳細情報"]。
+
+
+
+==== オンプレミスコネクタを使用している場合に、検索とリストアを使用してパブリッククラウドからバックアップファイルをリストアできるようになりました
+
+以前のリリースでは、Connectorをオンプレミスに導入すると、バックアップファイルをパブリッククラウドに作成するためのサポートが追加されていました。このリリースでは、Connectorがオンプレミスに導入されている場合、Search & Restoreを使用してAmazon S3またはAzure Blobからバックアップをリストアできるようになりました。
+
+現時点では、Google Cloud Storageからバックアップをリストアするために検索とリストアを使用する場合、ConnectorをGoogle Cloud Platformに導入する必要があります。検索とリストアはStorageGRID システムではサポートされていません。この場合は、参照とリストアを使用する必要があります。
+
+
+
+==== ジョブ監視ページが更新されました
+
+には、次の更新が行われています https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html["ジョブ監視ページ"]：
+
+* 「ワークロード」の列を使用して、ページをフィルタして、ボリューム、アプリケーション、仮想マシン、Kubernetesの各バックアップサービスのジョブを表示できます。
+* 特定のバックアップジョブの詳細を表示するには、「ユーザ名」と「ジョブタイプ」の列を新たに追加します。
+* [ジョブの詳細]ページには、メインジョブを完了するために実行中のすべてのサブジョブが表示されます。
+* このページは15分ごとに自動的に更新されるので、常に最新のジョブステータスの結果が表示されます。また、[*更新*]ボタンをクリックすると、ページをすぐに更新できます。
+
+
+
+
+==== AWSのクロスアカウントバックアップの機能拡張
+
+Cloud Volumes ONTAP バックアップにソースボリュームに使用しているものとは異なるAWSアカウントを使用する場合は、デスティネーションのAWSアカウントクレデンシャルをBlueXPに追加し、「s3：PutBucketPolicy」および「s3：PutBucketOwnershipControls」権限をBlueXPに権限を提供するIAMロールに追加する必要があります。これまでは、AWSコンソールで多数の設定を行う必要がありましたが、これはもう必要ありません。
+
+
+
 === 2022年9月28日
 
 
 
 ==== Cloud Backup for Applicationsの機能強化
 
-* Google Cloud Provider（GCP）とStorageGRID をサポートしており、アプリケーションと整合性のあるSnapshotをバックアップできます
+* Google Cloud Platform（GCP）とStorageGRID をサポートし、アプリケーションと整合性のあるスナップショットをバックアップします
 * カスタムポリシーを作成する
 * アーカイブストレージをサポートします
 * SAP HANAアプリケーションをバックアップ
@@ -297,7 +364,7 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 ==== クラウドネイティブアプリケーションデータを保護するためのサポートが追加されました
 
-Cloud Backup for Applicationsは、NetApp Cloud Storageで実行されているアプリケーションにデータ保護機能を提供するSaaSベースのサービスです。Cloud Managerで有効になっているアプリケーション向けのCloud Backupは、Amazon FSX for NetApp ONTAP 上に存在するOracleデータベースを、アプリケーションと整合性のある効率的なポリシーベースのバックアップおよびリストアを実現します。https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-cloud-app-data-to-cloud.html["詳細はこちら。"^]。
+Cloud Backup for Applicationsは、NetApp Cloud Storageで実行されているアプリケーションにデータ保護機能を提供するSaaSベースのサービスです。BlueXPで有効になっているアプリケーション向けCloud Backupは、アプリケーションと整合性のある、効率的でポリシーベースのバックアップとリストアを実現します。Amazon FSX for NetApp ONTAP 上にあるOracleデータベースのバックアップとリストアを実行できます。https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-cloud-app-data-to-cloud.html["詳細はこちら。"^]。
 
 
 
@@ -337,31 +404,31 @@ Cloud Backupでランサムウェアセーフバックアップのオブジェ�
 
 
 
-=== 2022年7月13日
-
-
-
-==== SnapLock Enterpriseボリュームのバックアップがサポートされるようになりました
-
-Cloud Backupを使用して、SnapLock Enterpriseボリュームをパブリッククラウドとプライベートクラウドにバックアップできるようになりました。この機能を使用するには、ONTAP システムでONTAP 9.11.1以降が実行されている必要があります。ただし、SnapLock Complianceボリュームは現在サポートされていません。
-
-
-
-==== オンプレミスコネクタを使用して、パブリッククラウドにバックアップファイルを作成できるようになりました
-
-以前は、バックアップファイルの作成場所と同じクラウドプロバイダにConnectorを導入する必要がありました。オンプレミスに導入されたコネクタを使用して、オンプレミスのONTAP システムからAmazon S3、Azure Blob、Google Cloud Storageへのバックアップファイルを作成できるようになりました。（StorageGRID システムでバックアップファイルを作成する場合は、オンプレミスコネクタが常に必要でした）。
-
-
-
-==== ONTAP システムのバックアップポリシーを作成する場合には、追加の機能を使用できます
-
-* 毎年のスケジュールでバックアップを実行できるようになりました。年単位のバックアップの場合、デフォルトの保持期間は1ですが、この値を変更して、以前の多数のバックアップファイルにアクセスできるようにすることができます。
-* バックアップポリシーに名前を付けておくと、よりわかりやすいテキストでポリシーを識別できます。
-
-
-
-
 == クラウドデータの意味
+
+
+
+=== 2022年11月7日（バージョン1.17）
+
+
+
+==== オンプレミスのSharePointアカウントのスキャンがサポートされます
+
+データセンスで、SharePoint OnlineアカウントとSharePointオンプレミスアカウント(SharePoint Server)の両方をスキャンできるようになりました。SharePointを自分のサーバー、またはインターネットにアクセスできないサイトにインストールする必要がある場合は、これらのアカウントのユーザーファイルをデータ検出でスキャンできるようになりました。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-scanning-sharepoint.html#adding-a-sharepoint-on-premise-account["詳細はこちら。"^]。
+
+
+
+==== 複数のディレクトリ（フォルダまたは共有）を再スキャンする機能
+
+これで、複数のディレクトリ（フォルダまたは共有）をただちに再スキャンして、変更がシステムに反映されるようになります。これにより、特定のデータを再スキャンする際に、他のデータよりも優先順位を付けることができます。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-repo-scanning.html#rescanning-data-for-an-existing-repository["ディレクトリを再スキャンする方法を参照してください"^]。
+
+
+
+==== オンプレミスの「スキャナ」ノードを追加して、特定のデータソースをスキャンする機能
+
+データ検出機能をオンプレミス環境にインストールしている場合、データソースをスキャンするためにスキャン処理能力を高める必要があるときは、「スキャナ」ノードをさらに追加することができます。マネージャノードをインストールした直後にスキャナノードを追加することも、後でスキャナノードを追加することもできます。たとえば、1つのデータソースのデータ量が1年後に3倍になったことがわかった場合は、データスキャンを支援する新しいスキャナノードを追加できます。
+
+必要に応じて、スキャンするデータソースに物理的に近いホストシステムにスキャナノードをインストールできます。スキャナノードがデータに近いほど、データのスキャン時のネットワークレイテンシができるだけ低減されるため、データの読み取り速度が向上します。
 
 
 
@@ -437,40 +504,6 @@ link:reference-private-data-categories.html#types-of-personal-data["データで
 ==== これで、データの中でデータを識別するカスタムパターンを追加できるようになりました
 
 カスタム正規表現（regex）を使用して、データ内の特定の情報を識別するためのパーソナルパターンを追加できます。正規表現は、すでにData Senseで使用されている既存の事前定義パターンに追加され、結果は［個人パターン］セクションに表示されます。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion.html#creating-custom-personal-data-identifiers-using-a-regex["詳細はこちら。"^]。
-
-
-
-=== 2022年7月6日（バージョン1.14）
-
-
-
-==== これで、ディレクトリにアクセスできるユーザとグループを表示できます
-
-これまでは、個々のファイルに付与されているオープンアクセス権のタイプを表示できました。これで、ディレクトリ（フォルダおよびファイル共有）にアクセスできるすべてのユーザまたはグループ、およびディレクトリにアクセスできる権限のタイプのリストが表示されます。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#viewing-permissions-for-files-and-directories["フォルダおよびファイル共有にアクセスできるユーザとグループを表示する方法について説明します"]。
-
-
-
-==== リポジトリのスキャンを一時停止すると'特定のコンテンツのスキャンを一時的に停止できます
-
-スキャンを一時停止すると、ボリュームやバケットへの追加や変更はデータスキャンを実行できなくなりますが、現在の結果はすべてシステムで使用できるようになります。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-repo-scanning.html#pausing-and-resuming-scanning-for-a-repository["スキャンを一時停止および再開する方法を参照してください"]。
-
-
-
-==== 3つの追加状態からのUSドライバーのライセンスデータは、データセンスで識別できます
-
-データセンスは、インディアナ、ニューヨーク、テキサスの運転免許証データを含むファイルを識別して分類できます。 link:reference-private-data-categories.html#types-of-personal-data["データで特定できるすべての種類の個人データを表示します"]。
-
-
-
-==== ポリシーは、検索条件に一致するディレクトリを返すようになりました
-
-以前は、カスタムポリシーを作成したときに、検索条件に一致したファイルが結果に表示されていました。これで、クエリに一致するディレクトリ（フォルダおよびファイル共有）も結果に表示されます。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#creating-custom-policies["ポリシーの作成の詳細については、こちらをご覧ください"]。
-
-
-
-==== データセンスでは、一度に最大100,000個のファイルを移動できます
-
-スキャンしたデータソースからNFS共有へのファイル移動にData Senseを使用する場合は、ファイルの最大数が100、000ファイルに増加しています。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share["データセンスを使用してファイルを移動する方法をご覧ください"]。
 
 
 
@@ -661,6 +694,16 @@ Google Cloudのデータブローカーのデフォルトのマシンタイプ�
 
 
 
+=== 2022年11月6日
+
+
+
+==== ドラッグアンドドロップして、Azure Blob、Google Cloud Storage、StorageGRID へのクラウド階層化を有効にします
+
+Azure Blob、Google Cloud Storage、またはStorageGRID 階層化のデスティネーションがキャンバス上の作業環境として存在する場合は、オンプレミスのONTAP 作業環境を移行先にドラッグして、階層化セットアップウィザードを開始できます。
+
+
+
 === 2022年9月19日
 
 
@@ -698,16 +741,6 @@ Cloud Tiering UIに、オブジェクトストレージ構成用の新しいペ�
 ==== MetroCluster 構成に対するCloud Tieringライセンスがサポートされています
 
 Cloud Tieringライセンスを、MetroCluster 構成に含まれるクラスタと共有できるようになりました。これらのシナリオで廃止されたFabricPool ライセンスを使用する必要はなくなりました。これにより、多くのクラスタで「フローティング」のクラウド階層化ライセンスを簡単に使用できるようになります。 https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["これらのタイプのクラスタのライセンスを設定する方法を参照してください。"]
-
-
-
-=== 2022年5月3日
-
-
-
-==== Cloud Tieringは、追加のクラスタ構成をサポートしています
-
-クラウド階層化ライセンスを、階層化ミラー構成（MetroCluster 構成を除く）のクラスタと、IBM Cloud Object Storageに階層化されたクラスタと共有できるようになりました。これらのシナリオで廃止されたFabricPool ライセンスを使用する必要はなくなりました。これにより、多くのクラスタで「フローティング」のクラウド階層化ライセンスを簡単に使用できるようになります。 https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["これらのタイプのクラスタのライセンスを設定する方法を参照してください。"]
 
 
 
@@ -968,7 +1001,7 @@ https://cloud.netapp.com/cloud-insights["Cloud Insights の詳細については
 
 
 
-=== 2022年10月30日
+=== 2022年11月6日
 
 いつ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["ストレージクラスを定義する"]では、ブロックストレージやファイルシステムストレージに対して、ストレージクラスの経済性を実現できます。
 
@@ -1067,6 +1100,16 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 
 
+=== 2022年11月7日
+
+
+
+==== ランサムウェア防御スコアと推奨アクションを表示する新しいパネル
+
+これらの2つの新しいパネルは、データがランサムウェア攻撃に対してどの程度復元力を持つか、またスコアを向上させるために何ができるかを特定するために連携して機能します。ランサムウェア防御スコアパネルには、全体のスコアと潜在的な問題が存在するサイバーセキュリティ領域が表示されます。Recommended Actions（推奨アクション）パネルには、ランサムウェア攻撃に対する耐障害性を向上させるために実行できる潜在的なアクションがリストされています。また、必要に応じてアクションを適用できるように、問題 を調査するためのリンクが表示されます。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#ransomware-protection-score-and-recommended-actions["詳細はこちらをご覧ください"^]。
+
+
+
 === 2022年9月6日
 
 
@@ -1090,28 +1133,6 @@ _Storage system vulnerabilities _panelには、Active IQ デジタルアドバ�
 ==== 変更不可のスキャンファイルを表示する新しいパネル
 
 _Criticalデータの不変性_パネルは、ONTAP SnapLock テクノロジを使用してWORMストレージの変更および削除から保護されている作業環境内の項目数を示します。これにより、書き換え不可のコピーがどの程度あるかを確認できるため、ランサムウェアに対するバックアップとリカバリの計画をより詳しく把握できます。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#data-in-your-volumes-that-are-being-protected-using-snaplock["詳細については、こちらをご覧ください"^]。
-
-
-
-=== 2022年6月12日
-
-
-
-==== NASファイルシステムの監査ステータスがONTAP Storage VMに対して追跡されるようになりました
-
-作業環境内のストレージVMの40%未満でファイルシステムの監査が有効になっている場合、_Cyber Resilience Map_にアラートが追加されます。ONTAP イベントとNFSイベントを追跡および監査ログに記録していないSVMの正確な数は、_harden your environment_panelで確認できます。そのうえで、SVMで監査を有効にするかどうかを判断できます。
-
-
-
-==== ボリュームに組み込みのアンチランサムウェアがアクティブでない場合にアラートが表示されるようになりました
-
-この情報は、以前にONTAP 環境パネルを強化する_オンプレミスのONTAP システムについて報告されていました。 しかし、搭載されたアンチランサムウェア機能がボリュームの40%未満でオンになると、ダッシュボードでこの情報を確認できるように、_Cyber Resilience Map_でアラートが報告されるようになりました。
-
-
-
-==== ONTAP システムのFSXが、ボリュームスナップショットの有効化のために追跡されるようになりました
-
-_harden your ONTAP environments _パネルに、FSX for ONTAP システム上のボリュームのSnapshotコピーのステータスが表示されるようになりました。ボリュームの40%未満がスナップショットによって保護されている場合は、_Cyber Resilience Map_でもアラートが生成されます。
 
 
 
