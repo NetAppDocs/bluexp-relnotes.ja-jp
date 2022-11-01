@@ -26,7 +26,7 @@ permalink: release-notes-index.html
 * Cloud Volumes ONTAP
 +
 ** https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Cloud Volumes ONTAP のリリースノート"^]
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Cloud Manager での Cloud Volumes ONTAP 管理に関するリリースノート"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["BlueXPでのCloud Volumes ONTAP 管理に関するリリースノート"^]
 
 
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-service-gcp/whats-new.html["Cloud Volumes Service for Google Cloud"^]
@@ -47,10 +47,8 @@ permalink: release-notes-index.html
 * https://docs.netapp.com/us-en/cloud-manager-tiering/whats-new.html["クラウド階層化"^]
 * https://docs.netapp.com/us-en/cloud-manager-compute/whats-new.html["コンピューティング"^]
 * https://docs.netapp.com/us-en/cloud-manager-file-cache/whats-new.html["グローバルファイルキャッシュ"^]
-* https://docs.netapp.com/us-en/cloud-manager-monitoring/whats-new.html["監視"^]
 * https://docs.netapp.com/us-en/cloud-manager-ransomware/whats-new.html["ランサムウェア"^]
 * https://docs.netapp.com/us-en/cloud-manager-replication/whats-new.html["レプリケーション"^]
-* https://docs.netapp.com/us-en/cloud-manager-snapcenter/whats-new.html["SnapCenter サービス"^]
 
 
 

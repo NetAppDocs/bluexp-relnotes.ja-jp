@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud' 
-summary: Cloud Manager プラットフォームで行われた クラウド サービス の最新の変更点について説明します。詳細については、各サービスのすべてのリリースノートを参照してください。 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp' 
+summary: BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します詳細については、各サービスのすべてのリリースノートを参照してください。 
 ---
-= Cloud Manager での最新の変更点
+= BlueXPの最近の変更点
 :toc: macro
 :hardbreaks:
 :allow-uri-read: 
@@ -17,13 +17,25 @@ summary: Cloud Manager プラットフォームで行われた クラウド サ�
 
 
 [role="lead"]
-Cloud Manager プラットフォームで行われた クラウド サービス の最新の変更点について説明します。詳細については、を参照してください link:release-notes-index.html["リリースノートの全セット"] 個々のサービスごと。
+BlueXPプラットフォーム（以前のCloud Manager）の一部である クラウド サービス の最新の変更点について説明します。詳細については、を参照してください link:release-notes-index.html["リリースノートの全セット"] 個々のサービスごと。
+
+
+
+== BlueXPの導入
+
+2022年11月1日にCloud ManagerがBlueXPに名称変更されました。 https://docs.netapp.com/us-en/cloud-manager-family/concept-overview.html["BlueXPの詳細をご覧ください"^]
 
 
 
 == 管理機能
 
-このセクションでは、 Cloud Manager の管理機能に関連する新機能として、アカウント、コネクタ、クラウドプロバイダのクレデンシャルなどについて説明します。
+このセクションでは、BlueXPの管理機能に関連する新機能(アカウント、コネクタ、クラウドプロバイダの資格情報など)について説明します。
+
+
+
+=== 2022年11月1日
+
+アカウントに関連付けられた更新トークンが3カ月後に期限切れになると、Cloud ManagerはNetApp Support Site アカウントに関連付けられたクレデンシャルの更新を求めます。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#update-nss-credentials["NSS アカウントを管理する方法について説明します"^]
 
 
 
@@ -214,6 +226,32 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 
 == クラウドバックアップ
+
+
+
+=== 2022年9月28日
+
+
+
+==== Cloud Backup for Applicationsの機能強化
+
+* Google Cloud Provider（GCP）とStorageGRID をサポートしており、アプリケーションと整合性のあるSnapshotをバックアップできます
+* カスタムポリシーを作成する
+* アーカイブストレージをサポートします
+* SAP HANAアプリケーションをバックアップ
+* VMware環境のOracleおよびSQLアプリケーションをバックアップする
+* オンプレミスのセカンダリストレージからアプリケーションをバックアップ
+* バックアップの非アクティブ化
+* SnapCenter サーバを登録解除します
+
+
+
+
+==== Cloud Backup for Virtual Machinesの機能拡張
+
+* では、StorageGRID を使用して1つ以上のデータストアをバックアップできます
+* カスタムポリシーを作成する
+
 
 
 
@@ -440,6 +478,36 @@ link:reference-private-data-categories.html#types-of-personal-data["データで
 
 
 
+=== 2022年10月30日
+
+
+
+==== Microsoft Azureからの継続的な同期
+
+Azureデータブローカーを使用し、ソースのAzureストレージバケットからクラウドストレージへの継続的な同期設定がサポートされるようになりました。
+
+Cloud Sync は、最初のデータ同期の完了後、ソースのAzureストレージバケットで変更をリスンし、ターゲットへの変更が発生した場合はその変更を継続的に同期します。この設定は、AzureストレージバケットからAzure BLOBストレージ、CIFS、Google Cloud Storage、IBM Cloud Object Storage、NFS、およびStorageGRID に同期する場合に使用できます。
+
+Azureデータブローカーでは、この設定を使用するためのカスタムロールと次の権限が必要です。
+
+[source, json]
+----
+'Microsoft.Storage/storageAccounts/read',
+'Microsoft.EventGrid/systemTopics/eventSubscriptions/write',
+'Microsoft.EventGrid/systemTopics/eventSubscriptions/read',
+'Microsoft.EventGrid/systemTopics/eventSubscriptions/delete',
+'Microsoft.EventGrid/systemTopics/eventSubscriptions/getFullUrl/action',
+'Microsoft.EventGrid/systemTopics/eventSubscriptions/getDeliveryAttributes/action',
+'Microsoft.EventGrid/systemTopics/read',
+'Microsoft.EventGrid/systemTopics/write',
+'Microsoft.EventGrid/systemTopics/delete',
+'Microsoft.EventGrid/eventSubscriptions/write',
+'Microsoft.Storage/storageAccounts/write'
+----
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["Continuous Syncの詳細については、こちらをご覧ください"]。
+
+
+
 === 2022年9月4日
 
 
@@ -476,7 +544,7 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.htm
 
 Cloud Sync 通知をEメールで受信できるようになりました。
 
-Eメールで通知を受け取るには、同期関係で* Notifications *の設定を有効にしてから、Cloud Managerでアラートと通知の設定を構成する必要があります。
+電子メールで通知を受信するには、同期関係で*Notification*設定を有効にしてから、BlueXPでAlerts and Notification設定を構成する必要があります。
 
 https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-relationships.html#setting-up-notifications["通知を設定する方法について説明します"]。
 
@@ -511,7 +579,7 @@ https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationshi
 
 ==== 同期関係の新しいセットアップ方法が追加されました
 
-Cloud ManagerのCanvasから直接同期関係を設定する方法が追加されました。
+BlueXPのCanvasから同期関係を直接設定する方法が追加されました。
 
 
 
@@ -519,7 +587,7 @@ Cloud ManagerのCanvasから直接同期関係を設定する方法が追加さ�
 
 ある作業環境を別の作業環境の上にドラッグアンドドロップして、キャンバスから同期関係を設定できるようになりました。
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-drag-and-drop.png["Cloud Managerの通知センターを示すスクリーンショット。"]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-drag-and-drop.png["BlueXPの通知センターを示すスクリーンショット"]
 
 
 
@@ -527,7 +595,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media
 
 Canvasから作業環境を選択し、右パネルから同期オプションを選択することで、Azure Blob StorageまたはGoogle Cloud Storageの同期関係を設定できるようになりました。
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-panel.png["Cloud Managerの通知センターを示すスクリーンショット。"]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-panel.png["BlueXPの通知センターを示すスクリーンショット"]
 
 
 
@@ -682,7 +750,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-o
 
 ==== AutoSupport 通知
 
-Cloud Volumes ONTAP システムからAutoSupport メッセージを送信できない場合に、Cloud Managerから通知が生成されるようになりました。この通知には、ネットワークの問題のトラブルシューティングに使用できる手順へのリンクが記載されています。
+Cloud Volumes ONTAP システムがAutoSupport メッセージを送信できない場合、BlueXPは通知を生成するようになりました。この通知には、ネットワークの問題のトラブルシューティングに使用できる手順へのリンクが記載されています。
 
 
 
@@ -704,7 +772,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-
 
 ==== プロキシサーバ
 
-Cloud Volumes ONTAP メッセージの送信にアウトバウンドのインターネット接続を使用できない場合に、AutoSupport システムがプロキシサーバとしてコネクタを使用するようにCloud Managerで自動的に設定されるようになりました。
+Cloud Volumes ONTAP AutoSupport メッセージの送信にアウトバウンドのインターネット接続を使用できない場合、BlueXPでは、コネクタをプロキシサーバとして使用するようにシステムが自動的に設定されるようになりました。
 
 AutoSupport は、システムの健常性をプロアクティブに監視し、ネットアップテクニカルサポートにメッセージを送信します。
 
@@ -754,7 +822,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 
 ==== Cloud Volumes Service for Google Cloud のサポート
 
-Cloud Volumes Service for Google Cloud を Cloud Manager から直接管理できるようになりました。
+Cloud Volumes Service for Google CloudをBlueXPから直接管理できるようになりました。
 
 * 作業環境をセットアップして作成
 * Linux クライアントおよび UNIX クライアント用に、 NFSv3 ボリュームと NFSv4.1 ボリュームを作成および管理します
@@ -794,6 +862,20 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-compute/main/me
 
 
 
+== Digital Advisor
+
+
+
+=== 2022年11月1日
+
+Digital Advisor（旧称Active IQ ）は、BlueXPと完全に統合され、ログインエクスペリエンスが向上しました。
+
+BlueXPでDigital Advisorにアクセスすると、NetApp Support Site 資格情報を入力するように求められ、システムに関連するデータを表示できるようになります。ログイン時に使用するNSSアカウントは、ユーザログイン時のみに関連付けられます。ネットアップアカウントの他のユーザには関連付けられません。
+
+Digital AdvisorとBlueXPの統合の詳細については、を参照してください https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisorのドキュメント"^]
+
+
+
 == Eシリーズシステム
 
 
@@ -804,7 +886,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-compute/main/me
 
 ==== Eシリーズのサポート
 
-Eシリーズストレージシステムは、Cloud Managerから直接検出できるようになりました。Eシリーズシステムを検出すると、ハイブリッドマルチクラウド全体のデータを包括的に把握できます。
+Eシリーズストレージシステムは、BlueXPから直接検出できるようになりました。Eシリーズシステムを検出すると、ハイブリッドマルチクラウド全体のデータを包括的に把握できます。
 
 
 
@@ -812,9 +894,41 @@ Eシリーズストレージシステムは、Cloud Managerから直接検出で
 
 
 
+=== 2022年10月24日（バージョン2.1）
+
+このリリースでは、以下に示す新機能が提供されます。また、に記載されている問題も修正されています https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html["修正された問題"]。更新されたソフトウェアパッケージは、から入手できます https://docs.netapp.com/us-en/cloud-manager-file-cache/download-gfc-resources.html#download-required-resources["このページです"]。
+
+
+
+==== グローバルファイルキャッシュは、任意の数のライセンスで使用できるようになりました
+
+これまでに必要だった10個のライセンス、つまり30 TBのストレージは削除されました。Global File Cacheライセンスは、3 TBのストレージごとに1つずつ発行されます。
+
+
+
+==== オフラインライセンス管理サーバを使用するためのサポートが追加されました
+
+オフラインまたはダークサイトのライセンス管理サーバ（LMS）は、LMSがライセンスソースを使用したライセンス検証用のインターネット接続を備えていない場合に最も便利です。初期設定時には、インターネット接続とライセンスソースへの接続が必要です。設定が完了すると、LMSインスタンスが暗くなることがあります。ライセンスの継続的な検証のために、すべてのエッジ/コアはLMSと接続されている必要があります。
+
+
+
+==== エッジインスタンスは、追加の同時ユーザーをサポートできます
+
+1つのグローバルファイルキャッシュエッジインスタンスは、専用の物理エッジインスタンス1つにつき最大500ユーザー、専用の仮想配置で最大300ユーザーを処理できます。使用可能なユーザの最大数は、それぞれ400と200です。
+
+
+
+==== Optimus PSMを強化し、クラウドライセンスを構成
+
+
+
+==== Optimus UI（Edge Configuration）のEdge Sync機能が強化され、接続されているすべてのクライアントが表示されるようになりました
+
+
+
 === 2022年7月25日（バージョン2.0）
 
-このリリースには、以下に示す新機能が搭載されています。また、に記載されている問題も修正されています https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html["修正された問題"]。
+このリリースでは、以下に示す新機能が提供されます。また、に記載されている問題も修正されています https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html["修正された問題"]。
 
 
 
@@ -828,7 +942,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 
 ==== グローバルファイルキャッシュがCloud Insights に統合されました
 
-NetApp Cloud Insights （CI）では、インフラとアプリケーションを包括的に可視化できます。グローバルファイルキャッシュがCIと統合され、すべてのエッジとコアを完全に可視化し、インスタンスで実行されているプロセスを監視できるようになりました。さまざまなグローバルファイルキャッシュメトリックがCIにプッシュされ、CIダッシュボードの全体的な概要が表示されます。
+NetApp Cloud Insights （CI）では、インフラとアプリケーションを包括的に可視化できます。グローバルファイルキャッシュがCIと統合され、すべてのエッジとコアを完全に可視化し、インスタンスで実行されているプロセスを監視できるようになりました。さまざまなグローバルファイルキャッシュメトリックがCIにプッシュされ、CIダッシュボードの全体的な概要が表示されます。の第11章を参照してください https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.1.0%20User%20Guide.pdf["NetApp Global File Cache User Guide"^]
 
 https://cloud.netapp.com/cloud-insights["Cloud Insights の詳細については、こちらをご覧ください。"]
 
@@ -850,25 +964,13 @@ https://cloud.netapp.com/cloud-insights["Cloud Insights の詳細については
 
 
 
-=== 2022年5月19日（バージョン1.3.0）
-
-バージョン1.3.0のグローバルファイルキャッシュエッジソフトウェアは、から入手できます https://docs.netapp.com/us-en/cloud-manager-file-cache/download-gfc-resources.html#download-required-resources["このページです"]。
-
-
-
-==== 新しいメタデータエッジ同期機能
-
-この「メタデータエッジ同期」機能は、エッジ同期機能をコアフレームワークとして使用します。すべてのサブスクライブ済みエッジでメタデータ情報のみが更新され、Edgeマシンでファイル/フォルダが作成されます。
-
-
-
-==== License Manager Serviceの機能強化
-
-Global File Cache License Management Server（LMS）サービスが拡張され、プロキシ設定が自動検出されるようになりました。これにより、シームレスな構成が可能になります。
-
-
-
 == Kubernetes
+
+
+
+=== 2022年10月30日
+
+いつ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["ストレージクラスを定義する"]では、ブロックストレージやファイルシステムストレージに対して、ストレージクラスの経済性を実現できます。
 
 
 
@@ -899,65 +1001,9 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kuberne
 
 
 
-=== 2022年7月3日
-
-* Tridentオペレータを使用してAstra Tridentを導入した場合、Cloud Managerで最新バージョンのAstra Tridentにアップグレードできるようになりました。
-+
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html["Astra Tridentをインストールして管理"]
-
-* KubernetesクラスタをドラッグしてAWS FSX for ONTAP 作業環境にドロップし、ストレージクラスをキャンバスから直接追加できるようになりました。
-+
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["ストレージクラスを追加します"]
-
-
-
-
-
 == 監視
 
-
-
-=== 2021 年 8 月 1 日
-
-
-
-==== Acquisition Unit の名前に変更します
-
-Acquisition Unit インスタンスのデフォルトの名前を CloudInsights - AU - _UUID_so に変更し、わかりやすい名前にしました（ UUID は生成されたハッシュです）。
-
-このインスタンスは、 Cloud Volumes ONTAP 作業環境で監視サービスを有効にすると Cloud Manager によって導入されます。
-
-
-
-=== 2021 年 5 月 5 日
-
-
-
-==== 既存のテナントをサポート
-
-既存の Cloud Insights テナントがある場合でも、 Cloud Volumes ONTAP 作業環境で監視サービスを有効にできるようになりました。
-
-
-
-==== 無料トライアル移行
-
-監視サービスを有効にすると、 Cloud Manager は Cloud Insights の無償トライアルをセットアップします。29 日目に、計画は自動的に試用版からに移行します https://docs.netapp.com/us-en/cloudinsights/concept_subscribing_to_cloud_insights.html#editions["Basic エディション"^]。
-
-
-
-=== 2021 年 2 月 9 日
-
-
-
-==== Azure でのサポート
-
-Cloud Volumes ONTAP for Azure で監視サービスがサポートされるようになりました。
-
-
-
-==== 政府機関のサポート
-
-監視サービスは、 AWS および Azure の政府機関のリージョンでもサポートされます。
+監視サービスは2022年11月1日に廃止されました。ナビゲーションメニューから* Insights > Observability *（監視/監視）を選択すると、Cloud Insights への直接リンクが表示されるようになりました。
 
 
 
@@ -1115,17 +1161,7 @@ https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.ht
 
 == SnapCenter サービス
 
-
-
-=== 2021 年 12 月 21 日
-
-
-
-==== Apache log4j の脆弱性に対する修正
-
-SnapCenter サービス 1.0.1 をアップグレードすると、バージョン 2.9.1 から 2.17 に Apache log4j がアップグレードされ、次の脆弱性が解決されます： CVE-20244228 、 CVE-2012-4104 、および CVE-2016-45105 。
-
-SnapCenter サービスクラスタは最新バージョンに自動更新される必要があります。SnapCenter サービス UI に、クラスタが 1.0.1.1251 以降であることを確認する必要があります。
+SnapCenter サービスは2022年11月1日に廃止されました。
 
 
 
@@ -1139,4 +1175,4 @@ SnapCenter サービスクラスタは最新バージョンに自動更新され
 
 ==== StorageGRID のサポート
 
-StorageGRID システムは、Cloud Managerから直接検出できるようになりました。StorageGRID を検出すると、ハイブリッドマルチクラウド全体のデータを包括的に把握できます。
+StorageGRID システムをBlueXPから直接検出できるようになりました。StorageGRID を検出すると、ハイブリッドマルチクラウド全体のデータを包括的に把握できます。

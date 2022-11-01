@@ -30,37 +30,25 @@
   <block id="24e6e2f6171b43a847fe194a9a9b5cd0" category="inline-link">グローバルファイルキャッシュ</block>
   <block id="24bb270dd8a21f04115481dc5a9e23f9" category="list-text"><block ref="24bb270dd8a21f04115481dc5a9e23f9" category="inline-link-rx"></block></block>
   <block id="423e555c5ec3885f2bb5d9d2d6627f63" category="inline-link">監視</block>
-  <block id="83ddfdaa5c539f89dd87fac1636bee43" category="list-text"><block ref="83ddfdaa5c539f89dd87fac1636bee43" category="inline-link-rx"></block></block>
   <block id="232a2b16a1710c0ed1d16548ba8bb8f1" category="inline-link">ランサムウェア</block>
   <block id="723c4c67941a96b49b471e8a0ef4b07d" category="list-text"><block ref="723c4c67941a96b49b471e8a0ef4b07d" category="inline-link-rx"></block></block>
   <block id="8c340dc334134096f68b880b42a8692c" category="inline-link">レプリケーション</block>
   <block id="c49bb8aa9fd443e227ec7dd83d980f9b" category="list-text"><block ref="c49bb8aa9fd443e227ec7dd83d980f9b" category="inline-link-rx"></block></block>
-  <block id="fed6fa1f1b675c268f8b78258e2545a7" category="inline-link">SnapCenter サービス</block>
-  <block id="95e16c764bc656c2e4b455b9bcd6da50" category="list-text"><block ref="95e16c764bc656c2e4b455b9bcd6da50" category="inline-link-rx"></block></block>
   <block id="7258e7251413465e0a3eb58094430bde" category="section-title">管理</block>
-  <block id="5443bce5372c23a628767c281d20e64d" category="doc">Cloud Manager での最新の変更点</block>
   <block id="06ec635aca479394e3f10f59b57ce807" category="inline-link-macro">リリースノートの全セット</block>
-  <block id="7e2a23a7215e26914d4490ec8dbd56c8" category="paragraph">Cloud Manager プラットフォームで行われた クラウド サービス の最新の変更点について説明します。詳細については、を参照してください <block ref="1e9f4589e5d2713376df79f13fc9ba0a" category="inline-link-macro-rx"></block> 個々のサービスごと。</block>
   <block id="f3aae44c0ba1e9d5c7a46f4e224ea31e" category="section-title">管理機能</block>
-  <block id="8f351a0ea0c00d874e3538dc3c565ffe" category="paragraph">このセクションでは、 Cloud Manager の管理機能に関連する新機能として、アカウント、コネクタ、クラウドプロバイダのクレデンシャルなどについて説明します。</block>
   <block id="36a9eb77fcf21a931c3ba4a85dff781b" category="section-title">アプリケーションテンプレート</block>
   <block id="a3c559e0541e9bb860178ce6fe414224" category="section-title">Cloud Volumes Service for GCP</block>
   <block id="30136395f01879792198317c11831ea4" category="section-title">Kubernetes</block>
   <block id="950604af87c30e09716e6d097eb491db" category="section-title">ランサムウェアからの保護</block>
-  <block id="46255a0651109e3be491691e312b0332" category="summary">このリリースノートでは、 Cloud Manager プラットフォームで強化された クラウド サービス について説明します。個々のサービスごとにリリースノートの全セットへのリンクがあります。</block>
-  <block id="ab0f38be07f9dea06b0c032857af2e24" category="doc">Cloud Manager リリースノート</block>
   <block id="dcf4ee5c8f297d1f5e0da7b22e359023" category="sidebar">最近の変更</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新機能</block>
   <block id="f5f7a4d1535be1d0940e398b2997dfc0" category="sidebar">サービス別リリースノート</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">ブログコミュニティ</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">ネットアップコミュニティ</block>
-  <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central のブログです</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">クラウドに関する Web セミナー</block>
-  <block id="4e486f7be30b2a2fc9c755f593ec7a7e" category="summary">Cloud Manager プラットフォームで行われた クラウド サービス の最新の変更点について説明します。詳細については、各サービスのすべてのリリースノートを参照してください。</block>
   <block id="f7d121e2a54c62002dd74f6b9dac8069" category="inline-link">Cloud Volumes ONTAP のリリースノート</block>
   <block id="ca138f4890a80dcb981add74fa328598" category="list-text"><block ref="ca138f4890a80dcb981add74fa328598" category="inline-link-rx"></block></block>
-  <block id="92a19295ac05c2a8159ff4e129265e4f" category="inline-link">Cloud Manager での Cloud Volumes ONTAP 管理に関するリリースノート</block>
-  <block id="998c54a50d0a2978b705c26bab946460" category="list-text"><block ref="998c54a50d0a2978b705c26bab946460" category="inline-link-rx"></block></block>
   <block id="ba26e4556a0f160834687982b0479336" category="section-title">2022 年 2 月 27 日</block>
   <block id="29c251ed5a57bbffe470654ccbbe714c" category="section-title">2021 年 4 月 11 日</block>
   <block id="860941d67aa8a8a442ba4a65191838cf" category="section-title">ボリュームテンプレートのサポート</block>
@@ -101,7 +89,6 @@
   <block id="d798cbf5a08fbeb9fdd3652e5b00bb4c" category="section-title">2021 年 9 月 2 日</block>
   <block id="a633f0835832cc75f5a83248a8aa2ba8" category="section-title">2020 年 9 月 9 日</block>
   <block id="8751230100c974b7c3ae5adae22c0f7c" category="section-title">Cloud Volumes Service for Google Cloud のサポート</block>
-  <block id="9e376b2341c224a05e31bf464f6a9a2c" category="paragraph">Cloud Volumes Service for Google Cloud を Cloud Manager から直接管理できるようになりました。</block>
   <block id="69a622f3bb660c4a470d3d96f19e20be" category="list-text">作業環境をセットアップして作成</block>
   <block id="bd596d5c57d76a146d26208cd81913fb" category="list-text">Linux クライアントおよび UNIX クライアント用に、 NFSv3 ボリュームと NFSv4.1 ボリュームを作成および管理します</block>
   <block id="104e3ba4c577e4723ae2db3aaab91044" category="list-text">Windows クライアント用に SMB 3.x ボリュームを作成して管理します</block>
@@ -118,21 +105,6 @@
   <block id="b70ff2217d4c493d72369bc7013d42a1" category="paragraph"><block ref="0d930208c139fddb05408afa8bb5cf71" category="inline-link-rx"></block>。</block>
   <block id="6ae18045fc1ab0bf7898b13f3ef31c9a" category="inline-image-macro">Cloud Manager のコスト分析ページを示すスクリーンショット。</block>
   <block id="dfe5d33062cb5ad4c4036bb7e93ff63e" category="paragraph"><block ref="dfe5d33062cb5ad4c4036bb7e93ff63e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9e27c4a53794e4f6cfc9949de58e5091" category="section-title">2021 年 8 月 1 日</block>
-  <block id="f9564bccd9f6164dfb5486c5fe5ff233" category="section-title">Acquisition Unit の名前に変更します</block>
-  <block id="6894648546fd35a9ed4c63e020255bbb" category="paragraph">Acquisition Unit インスタンスのデフォルトの名前を CloudInsights - AU - _UUID_so に変更し、わかりやすい名前にしました（ UUID は生成されたハッシュです）。</block>
-  <block id="3ee7977b62b54344390843236b7b7fbe" category="paragraph">このインスタンスは、 Cloud Volumes ONTAP 作業環境で監視サービスを有効にすると Cloud Manager によって導入されます。</block>
-  <block id="5057fdb214d9f3773bc386ba2aa1fcb0" category="section-title">2021 年 5 月 5 日</block>
-  <block id="e192d178d731a26f369fc9ded8b836ed" category="section-title">既存のテナントをサポート</block>
-  <block id="10df6526a8d972614ac33d019e498209" category="paragraph">既存の Cloud Insights テナントがある場合でも、 Cloud Volumes ONTAP 作業環境で監視サービスを有効にできるようになりました。</block>
-  <block id="261bb9c11863cc45e7b0056b34cabf2c" category="section-title">無料トライアル移行</block>
-  <block id="4f407ad617aec7f56138e7f5dcb581be" category="inline-link">Basic エディション</block>
-  <block id="1cb2499c8013bb0ab523a856eeaa4c6f" category="paragraph">監視サービスを有効にすると、 Cloud Manager は Cloud Insights の無償トライアルをセットアップします。29 日目に、計画は自動的に試用版からに移行します<block ref="34a93ad61035abe9ad6e17d10c04ea84" category="inline-link-rx"></block>。</block>
-  <block id="d42fa6c698bffd937b50724aa035c2cb" category="section-title">2021 年 2 月 9 日</block>
-  <block id="049a56718afb4bc754cebf8a5567c3c8" category="section-title">Azure でのサポート</block>
-  <block id="0627ad1b1205310c0a00e6213dc9ee59" category="paragraph">Cloud Volumes ONTAP for Azure で監視サービスがサポートされるようになりました。</block>
-  <block id="308527077ec474b731b7715b5cd1deb2" category="section-title">政府機関のサポート</block>
-  <block id="d90533b31d8a70a6866bd47c12676ca9" category="paragraph">監視サービスは、 AWS および Azure の政府機関のリージョンでもサポートされます。</block>
   <block id="f25694bb9bc00e8fcfcc1a3c65dd482b" category="section-title">「社内 ONTAP 」タブはデジタルウォレットで使用できます。</block>
   <block id="d3f07c4c7baf0c60bc64c1cdc48732af" category="paragraph">オンプレミスの ONTAP クラスタのインベントリと、ハードウェアおよびサービス契約の有効期限を確認できるようになりました。クラスタに関するその他の詳細も確認できます。</block>
   <block id="184ca21b83c54a7ba12f9b1077ccb494" category="inline-link">この重要なオンプレミスクラスタの情報を表示する方法を参照してください</block>
@@ -141,27 +113,14 @@
   <block id="59dfc17500b1e0b8d1824eb8b1413080" category="paragraph">Cloud Volumes ONTAP システムまたはオンプレミスの ONTAP クラスタから ONTAP ファイルシステム用の Amazon FSX にデータをレプリケートできるようになりました。</block>
   <block id="40f78d193b858589ad7df4dd4ce61ad6" category="inline-link">データレプリケーションの設定方法について説明します</block>
   <block id="1e56755e05ec049b30c49b9d53744ca1" category="paragraph"><block ref="0337e364432fca0f343e5f2660661b77" category="inline-link-rx"></block>。</block>
-  <block id="5e057a1bffc9bad13fd5567d9b86dd0b" category="section-title">2021 年 12 月 21 日</block>
-  <block id="b59fdb8f9fe5a28d08cd50bf85b70880" category="section-title">Apache log4j の脆弱性に対する修正</block>
-  <block id="6b6f87c741f6734b4908d03d2c21e449" category="paragraph">SnapCenter サービス 1.0.1 をアップグレードすると、バージョン 2.9.1 から 2.17 に Apache log4j がアップグレードされ、次の脆弱性が解決されます： CVE-20244228 、 CVE-2012-4104 、および CVE-2016-45105 。</block>
-  <block id="ae1f9a5afbc7e02967d7f7e643135d82" category="paragraph">SnapCenter サービスクラスタは最新バージョンに自動更新される必要があります。SnapCenter サービス UI に、クラスタが 1.0.1.1251 以降であることを確認する必要があります。</block>
-  <block id="9081c0430b4e4fcf1f0dd042e7c0ca60" category="inline-image-macro">Cloud Managerの通知センターを示すスクリーンショット。</block>
   <block id="a2824b49f1c7526bf0e925b86c7b293c" category="inline-link">Search &amp; Restoreを使用してボリュームとファイルをリストアする方法を参照してください</block>
   <block id="d3e8cd2e370974f27de1b310b4aa8cb3" category="section-title">2022年5月3日</block>
   <block id="a74300b6b08791dda4f54d473a58e17a" category="section-title">Cloud Tieringは、追加のクラスタ構成をサポートしています</block>
   <block id="afacb33ad65bcd63eb15aeba04b4aed0" category="inline-link">これらのタイプのクラスタのライセンスを設定する方法を参照してください。</block>
   <block id="4675a948ea93098e22976c0848737e1a" category="paragraph">クラウド階層化ライセンスを、階層化ミラー構成（MetroCluster 構成を除く）のクラスタと、IBM Cloud Object Storageに階層化されたクラスタと共有できるようになりました。これらのシナリオで廃止されたFabricPool ライセンスを使用する必要はなくなりました。これにより、多くのクラスタで「フローティング」のクラウド階層化ライセンスを簡単に使用できるようになります。<block ref="4e8c6c7f1b8cf8bbca1bc62528b46ae2" category="inline-link-rx"></block></block>
-  <block id="d23895cd28f2e8e5d3074279cea7aacf" category="inline-link-macro">ストレージクラスを追加します</block>
-  <block id="2556925e0b340fdd647987c6af7fbee9" category="paragraph"><block ref="2556925e0b340fdd647987c6af7fbee9" category="inline-link-macro-rx"></block></block>
   <block id="a3065e926a55339df72c1343ee9b3fae" category="inline-link">データの調査に使用できるすべてのフィルタのリストを確認します</block>
   <block id="81ad4f0de90ee8a7305d0fd7751df796" category="section-title">新しいGoogle Cloudリージョンサポート</block>
-  <block id="25cd9b4ac7b3c20c21ee2a72afe32aa0" category="section-title">2022年5月19日（バージョン1.3.0）</block>
   <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link">このページです</block>
-  <block id="538b3d7be12bcc1f18433981df773bc1" category="paragraph">バージョン1.3.0のグローバルファイルキャッシュエッジソフトウェアは、から入手できます<block ref="2c81bb98c990e9738e500d000082628f" category="inline-link-rx"></block>。</block>
-  <block id="9463b6d7b9d38e544c6a7eb98988bb3b" category="section-title">新しいメタデータエッジ同期機能</block>
-  <block id="2e0922ffb3ae1ae6ac16997e734d5154" category="paragraph">この「メタデータエッジ同期」機能は、エッジ同期機能をコアフレームワークとして使用します。すべてのサブスクライブ済みエッジでメタデータ情報のみが更新され、Edgeマシンでファイル/フォルダが作成されます。</block>
-  <block id="2273c570a2dcacbb1c4bb77abccca54b" category="section-title">License Manager Serviceの機能強化</block>
-  <block id="03036f549995f5d3240d1c89c4f2f496" category="paragraph">Global File Cache License Management Server（LMS）サービスが拡張され、プロキシ設定が自動検出されるようになりました。これにより、シームレスな構成が可能になります。</block>
   <block id="f8b475a3fefebada77a30229238d0a1a" category="section-title">2022年6月7日</block>
   <block id="03e6ae21f561049c3e8010740c63aab3" category="inline-link">Cloud Volumes ONTAP の機能拡張について説明します</block>
   <block id="f23841b65ba519d2dd6a63a2a3e4de83" category="inline-link-macro">Continuous Syncの詳細については、こちらをご覧ください</block>
@@ -204,10 +163,6 @@
   <block id="1d83e69fc7f9ed326713517b984b155b" category="list-text">AWS GovCloudアカウント認証はCloud Managerでサポートされるようになりました。</block>
   <block id="d8a56d983b91f097e5ba55dd03a18509" category="inline-link-macro">IAM ロールを設定します</block>
   <block id="9c2f60af941e19d70429b4a59debeeb9" category="paragraph"><block ref="9c2f60af941e19d70429b4a59debeeb9" category="inline-link-macro-rx"></block></block>
-  <block id="3b5790878c6505820d5eed0428e827bb" category="list-text">Tridentオペレータを使用してAstra Tridentを導入した場合、Cloud Managerで最新バージョンのAstra Tridentにアップグレードできるようになりました。</block>
-  <block id="26317664fb1c4e8b3a500a7b1e46a4e7" category="inline-link-macro">Astra Tridentをインストールして管理</block>
-  <block id="74f5fa93248faf352ebad3f966bf3b55" category="paragraph"><block ref="74f5fa93248faf352ebad3f966bf3b55" category="inline-link-macro-rx"></block></block>
-  <block id="412d8f1a8f03a7ee8f0983e7ecafe5e4" category="list-text">KubernetesクラスタをドラッグしてAWS FSX for ONTAP 作業環境にドロップし、ストレージクラスをキャンバスから直接追加できるようになりました。</block>
   <block id="d5b8d2f44acff1b98dd9992401eadf24" category="section-title">2022年7月6日（バージョン1.14）</block>
   <block id="45b5235b8c737e18e646514c30664517" category="section-title">これで、ディレクトリにアクセスできるユーザとグループを表示できます</block>
   <block id="949b2765e1f54f21e0cad7eec542e087" category="inline-link">フォルダおよびファイル共有にアクセスできるユーザとグループを表示する方法について説明します</block>
@@ -284,13 +239,10 @@
   <block id="427bae06dc18214df77602503b45e556" category="list-text">IBM Cloud Object StorageからAzure Data Lake Storage Gen2への接続</block>
   <block id="2ade6486b18196b7cbbcabc2c40d01ac" category="list-text">StorageGRID からAzureデータレイクストレージGen2への接続</block>
   <block id="6d7ca7d8b2d372856465f7f7cee67c0c" category="section-title">同期関係の新しいセットアップ方法が追加されました</block>
-  <block id="2a8934d9990d0c3b34b537cb85b95cb3" category="paragraph">Cloud ManagerのCanvasから直接同期関係を設定する方法が追加されました。</block>
   <block id="1bc09668b27b6867ae7fc05d1c02faa8" category="section-title">ドラッグアンドドロップ</block>
   <block id="bb444099cdb375196c5bb6444eabdc45" category="paragraph">ある作業環境を別の作業環境の上にドラッグアンドドロップして、キャンバスから同期関係を設定できるようになりました。</block>
-  <block id="3c19e417c99aac7906cccf189792344f" category="paragraph"><block ref="3c19e417c99aac7906cccf189792344f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bf283dfa54b095b3eda8812752b158f9" category="section-title">右パネル設定</block>
   <block id="79074218529972fce8a6ccab7f00095d" category="paragraph">Canvasから作業環境を選択し、右パネルから同期オプションを選択することで、Azure Blob StorageまたはGoogle Cloud Storageの同期関係を設定できるようになりました。</block>
-  <block id="b0b9021c705a42adb2b41c27fd7502f5" category="paragraph"><block ref="b0b9021c705a42adb2b41c27fd7502f5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9fffb7017709a369d0e0ce563839fee2" category="paragraph"><block ref="74635618081bc819b4c328f5ee049800" category="inline-link-rx"></block>。</block>
   <block id="5d95d03306d738eddc1fcb7b61b6151a" category="paragraph">コネクタの3.9.21リリースでは、次の変更が加えられました。</block>
   <block id="1bbedbfdc08c3ed9498540dc734fa96a" category="section-title">MTEKMライセンス</block>
@@ -299,7 +251,6 @@
   <block id="6b8afb72156ec7e5aff9808d22a9eb10" category="inline-link">ネットアップの暗号化ソリューションでボリュームを暗号化する方法について説明します</block>
   <block id="58d699d73838a8f3d0660e52bb5df744" category="paragraph"><block ref="c9a99e5900c97d829a142b9eef78ba06" category="inline-link-rx"></block>。</block>
   <block id="824f455afa0ae197e5e7156988b6dc50" category="section-title">プロキシサーバ</block>
-  <block id="f0823a7c4bb0823970669d0756fceb8a" category="paragraph">Cloud Volumes ONTAP メッセージの送信にアウトバウンドのインターネット接続を使用できない場合に、AutoSupport システムがプロキシサーバとしてコネクタを使用するようにCloud Managerで自動的に設定されるようになりました。</block>
   <block id="80f5caa6fde5a9410197e8753e6f4625" category="paragraph">AutoSupport は、システムの健常性をプロアクティブに監視し、ネットアップテクニカルサポートにメッセージを送信します。</block>
   <block id="5fc25795a93f92bfee952eef3220d9e5" category="paragraph">唯一の要件は、コネクタのセキュリティグループがポート3128で_ inbound_connectionsを許可することです。コネクタを展開した後、このポートを開く必要があります。</block>
   <block id="b69737a8aa6d54e160fd215ef53825b5" category="section-title">充電方法を変更します</block>
@@ -319,13 +270,11 @@
   <block id="2d66a0b2e45838b2ebcec83efd6c765c" category="inline-link">これらのライセンスパッケージの詳細については、こちらをご覧ください</block>
   <block id="ee76810836e6a3bb9dd07dfba26221a1" category="paragraph"><block ref="ddf7de7bfe14bcbf78a072c21440c1a8" category="inline-link-rx"></block>。</block>
   <block id="a207f0479f1471fc5336b474cf75c28a" category="section-title">2022年7月25日（バージョン2.0）</block>
-  <block id="0cdaa1584e91bdecaff25609aa4f9058" category="paragraph">このリリースには、以下に示す新機能が搭載されています。また、に記載されている問題も修正されています<block ref="11a0d6c8cafa0c0950060c707371e2a0" category="inline-link-rx"></block>。</block>
   <block id="40ede24da7e93db6d61cd94c084008e7" category="section-title">Azure Marketplaceからのグローバルファイルキャッシュの容量ベースの新しいライセンスモデル</block>
   <block id="70dc5565ba7814d08bd68476e5fb76ff" category="paragraph">新しい「Edge Cache」ライセンスには、「CVO Professional」ライセンスと同じ機能がありますが、グローバルファイルキャッシュのサポートも含まれています。このオプションは、Azureに新しいCloud Volumes ONTAP システムを導入するときに表示されます。Cloud Volumes ONTAP システムでプロビジョニングされた容量3TiBにつき、グローバルファイルキャッシュエッジシステムを1台導入することができます。少なくとも30TiBをプロビジョニングする必要があります。GFC License Managerサービスが拡張され、容量ベースのライセンスが提供されるようになりました。</block>
   <block id="6a749e3d1bafd02cdf9a303ba6375e66" category="inline-link">Edge Cacheライセンスパッケージの詳細については、こちらをご覧ください。</block>
   <block id="0d8fd49fcb5c25122324fcb59637aff8" category="paragraph"><block ref="0d8fd49fcb5c25122324fcb59637aff8" category="inline-link-rx"></block></block>
   <block id="b7b58b4424e766ec66e0ab4ea9c812b8" category="section-title">グローバルファイルキャッシュがCloud Insights に統合されました</block>
-  <block id="acb729f8fd6ddd0e3a9a1a39397d6274" category="paragraph">NetApp Cloud Insights （CI）では、インフラとアプリケーションを包括的に可視化できます。グローバルファイルキャッシュがCIと統合され、すべてのエッジとコアを完全に可視化し、インスタンスで実行されているプロセスを監視できるようになりました。さまざまなグローバルファイルキャッシュメトリックがCIにプッシュされ、CIダッシュボードの全体的な概要が表示されます。</block>
   <block id="902eaec7802b7e6292febf1b6526a6b5" category="inline-link">Cloud Insights の詳細については、こちらをご覧ください。</block>
   <block id="6d7b1d6577d8e6bfc5f78e821377a7d4" category="paragraph"><block ref="6d7b1d6577d8e6bfc5f78e821377a7d4" category="inline-link-rx"></block></block>
   <block id="1f56bc157b53331171e2209738abd411" category="section-title">ライセンス管理サーバは、非常に制限のある環境で動作するように拡張されています</block>
@@ -387,7 +336,6 @@
   <block id="f1b9deb2828fa22b8254f1a8a51f5789" category="list-text">Google Cloud StorageをNFSサーバに接続している</block>
   <block id="a67ce68ccac082ad54a552bdbcb6ecd7" category="section-title">Eメール通知</block>
   <block id="2a6aa0e8585b387718e871db90f1a32e" category="paragraph">Cloud Sync 通知をEメールで受信できるようになりました。</block>
-  <block id="20ef839c6c5f361341c0392939dbf3b2" category="paragraph">Eメールで通知を受け取るには、同期関係で* Notifications *の設定を有効にしてから、Cloud Managerでアラートと通知の設定を構成する必要があります。</block>
   <block id="e6694f6134fb0186a17db662ced006d0" category="inline-link">通知を設定する方法について説明します</block>
   <block id="f7ae9f1fb8f4b7044457ebf35058b088" category="paragraph"><block ref="8365080032c57ac637a7cb1d0af196ae" category="inline-link-rx"></block>。</block>
   <block id="331a3f3aa511b1c438e9c58674f70985" category="section-title">2022年9月6日（バージョン1.16）</block>
@@ -454,7 +402,6 @@
   <block id="638be56d4cf930b576e6dc1300c7c33b" category="section-title">2022年9月18日</block>
   <block id="168c5915eb40be2beb0ac04f286489ba" category="section-title">FSX for ONTAP to Cloud Volumes ONTAP の略</block>
   <block id="6aa89747141f6b258796889b4e964d01" category="paragraph">Amazon FSX for ONTAP ファイルシステムからCloud Volumes ONTAP にデータをレプリケートできるようになりました。</block>
-  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">Cloud Manager のすべてのドキュメント</block>
   <block id="83bad7a989a8ab61893e9cfb7497cefd" category="section-title">デジタルウォレットの機能強化</block>
   <block id="e1de90a0937196074c7abb9f8b5e5edf" category="list-text">デジタルウォレットに、最適化されたI/Oライセンスパッケージと、アカウント全体でCloud Volumes ONTAP システム用にプロビジョニングされたWORM容量の概要が表示されます。</block>
   <block id="c3304f9cf1f523f219fc4a936bde8242" category="paragraph">これらの詳細情報は、充電状況や容量の追加購入が必要かどうかを把握するのに役立ちます。</block>
@@ -467,12 +414,9 @@
   <block id="f929bd53055100ea5034e258d5828a45" category="inline-image-macro">作業環境を選択した後にキャンバスから利用できるコストとパフォーマンスの最適化オプションのスクリーンショット。</block>
   <block id="b04af3108aa064fb53015f188d417418" category="paragraph"><block ref="740982637064d815add45193172173b0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fa5f0abcdf06ead83ea7fc11be56d19a" category="section-title">AutoSupport 通知</block>
-  <block id="72e6a4a100fd0ef72da9bbbef31477d2" category="paragraph">Cloud Volumes ONTAP システムからAutoSupport メッセージを送信できない場合に、Cloud Managerから通知が生成されるようになりました。この通知には、ネットワークの問題のトラブルシューティングに使用できる手順へのリンクが記載されています。</block>
   <block id="6b068f0a943d421535c7d8d412ee3522" category="section-title">Eシリーズシステム</block>
   <block id="532b36a42fa02f3df85b0e70d519a9ac" category="section-title">Eシリーズのサポート</block>
-  <block id="382444d2943af2fada032ac44e187150" category="paragraph">Eシリーズストレージシステムは、Cloud Managerから直接検出できるようになりました。Eシリーズシステムを検出すると、ハイブリッドマルチクラウド全体のデータを包括的に把握できます。</block>
   <block id="dc8bb8905a6984d0c45a4ada9e618ace" category="section-title">StorageGRID のサポート</block>
-  <block id="2e9322f9d5b6c0a3474db4758b049aa0" category="paragraph">StorageGRID システムは、Cloud Managerから直接検出できるようになりました。StorageGRID を検出すると、ハイブリッドマルチクラウド全体のデータを包括的に把握できます。</block>
   <block id="1e8b70ceb2c6c0577446889e5a58ddda" category="list-text"><block ref="1e8b70ceb2c6c0577446889e5a58ddda" category="inline-link-rx"></block></block>
   <block id="ead28cedb204ded1899ad9065642764d" category="list-text"><block ref="ead28cedb204ded1899ad9065642764d" category="inline-link-rx"></block></block>
   <block id="30b77b282030e8985671bcc89e3e4d74" category="inline-link">セットアップと管理</block>
@@ -483,4 +427,71 @@
   <block id="c3d7ada1f42d9b916dd8624c5b5661c1" category="section-title">階層化ウィザードでは、S3ストレージへの階層化時にAWS PrivateLinkを設定できます</block>
   <block id="bf482155aab691ba59a0313f5628cbba" category="section-title">MetroCluster 構成のミラーオブジェクトストアを削除するときに階層化の動作を選択します</block>
   <block id="cd71992689f7bdbde4a7c9f0653f44f3" category="paragraph">MetroCluster 構成からミラーオブジェクトストアを削除する場合は、プライマリオブジェクトストアも削除するかどうかを確認するメッセージが表示されます。プライマリオブジェクトストアをアグリゲートに接続したままにすることも、削除することもできます。</block>
+  <block id="24107a8e1555736c2428c199a70f695f" category="summary">このリリースノートでは、BlueXP（旧称Cloud Manager）で強化された クラウド サービス の最新機能について説明します。個々のサービスごとにリリースノートの全セットへのリンクがあります。</block>
+  <block id="db502201c33ba3b3f867c8360cce228a" category="doc">BlueXPリリースノート</block>
+  <block id="5bffab86d093605978b7c1efd3c0d337" category="inline-link">BlueXPでのCloud Volumes ONTAP 管理に関するリリースノート</block>
+  <block id="768f6f21e441ee3eb49fe0b2939ca706" category="list-text"><block ref="768f6f21e441ee3eb49fe0b2939ca706" category="inline-link-rx"></block></block>
+  <block id="8d9e30572c7be0b05a6e777166ea7d0b" category="summary">BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します詳細については、各サービスのすべてのリリースノートを参照してください。</block>
+  <block id="67d516de6d58e90ec46d8a36eecbf35a" category="doc">BlueXPの最近の変更点</block>
+  <block id="1262adaf755b126adfb35787960ae9ac" category="paragraph">BlueXPプラットフォーム（以前のCloud Manager）の一部である クラウド サービス の最新の変更点について説明します。詳細については、を参照してください <block ref="1e9f4589e5d2713376df79f13fc9ba0a" category="inline-link-macro-rx"></block> 個々のサービスごと。</block>
+  <block id="560c5ee7b92d80b3ef198362d8323824" category="section-title">BlueXPの導入</block>
+  <block id="78d1c9f9c86eecd86f5f568cfe0c0721" category="inline-link">BlueXPの詳細をご覧ください</block>
+  <block id="589a81f9a559c7792363bf5c658f7eb7" category="paragraph">2022年11月1日にCloud ManagerがBlueXPに名称変更されました。<block ref="f8081012fbfe0608e8247bd5ec45b886" category="inline-link-rx"></block></block>
+  <block id="87448a3fa35fafb362a06b4d17cc1328" category="paragraph">このセクションでは、BlueXPの管理機能に関連する新機能(アカウント、コネクタ、クラウドプロバイダの資格情報など)について説明します。</block>
+  <block id="c642de9f40ee79267e2e62e3ebed032e" category="section-title">2022年11月1日</block>
+  <block id="23888423406e47190ca0cf40a113c61f" category="inline-link">NSS アカウントを管理する方法について説明します</block>
+  <block id="929fa09ef9d24654b353f312638ca6e6" category="paragraph">アカウントに関連付けられた更新トークンが3カ月後に期限切れになると、Cloud ManagerはNetApp Support Site アカウントに関連付けられたクレデンシャルの更新を求めます。<block ref="abba285888ca54da9f89054b7e57f270" category="inline-link-rx"></block></block>
+  <block id="2d96aa84884717fd77e4906d82c73ddc" category="section-title">2022年9月28日</block>
+  <block id="89d500a3ace67f6d47edb61231336589" category="section-title">Cloud Backup for Applicationsの機能強化</block>
+  <block id="2e73884f73c53eee3aea96494fd4ff16" category="list-text">Google Cloud Provider（GCP）とStorageGRID をサポートしており、アプリケーションと整合性のあるSnapshotをバックアップできます</block>
+  <block id="f617da6b50728500642eb376ab97b6f4" category="list-text">カスタムポリシーを作成する</block>
+  <block id="eaec67d5f8f719a2f05b5ded5dc4ce60" category="list-text">アーカイブストレージをサポートします</block>
+  <block id="37976e53c610f9f37f8310aaacc3323e" category="list-text">SAP HANAアプリケーションをバックアップ</block>
+  <block id="bd3468a6ecb625b121385bd7f39c67e1" category="list-text">VMware環境のOracleおよびSQLアプリケーションをバックアップする</block>
+  <block id="a0f2b147a9c0eb0f8a59efd52556c7a2" category="list-text">オンプレミスのセカンダリストレージからアプリケーションをバックアップ</block>
+  <block id="c05b61fb3f1a201cd787a5c713ee2461" category="list-text">バックアップの非アクティブ化</block>
+  <block id="40cfdc443f8536e4e751b21f465246d7" category="list-text">SnapCenter サーバを登録解除します</block>
+  <block id="e75ce95021f32383e6a928c1b242bc34" category="section-title">Cloud Backup for Virtual Machinesの機能拡張</block>
+  <block id="46a34c0c1ccc14eb217db2e715c43df6" category="list-text">では、StorageGRID を使用して1つ以上のデータストアをバックアップできます</block>
+  <block id="f3630c1c94e3e51aaea5bdd037dc03c9" category="section-title">2022年10月30日</block>
+  <block id="5c7d084f950ad8af7d03c171b38bbaba" category="section-title">Microsoft Azureからの継続的な同期</block>
+  <block id="e4c664e7de05c9b6f33c4dc4c5e8c120" category="paragraph">Azureデータブローカーを使用し、ソースのAzureストレージバケットからクラウドストレージへの継続的な同期設定がサポートされるようになりました。</block>
+  <block id="3cf98067a279c5afe27919c8acd25ea4" category="paragraph">Cloud Sync は、最初のデータ同期の完了後、ソースのAzureストレージバケットで変更をリスンし、ターゲットへの変更が発生した場合はその変更を継続的に同期します。この設定は、AzureストレージバケットからAzure BLOBストレージ、CIFS、Google Cloud Storage、IBM Cloud Object Storage、NFS、およびStorageGRID に同期する場合に使用できます。</block>
+  <block id="91cba4a0b0d46011e31e848c61739e1e" category="paragraph">Azureデータブローカーでは、この設定を使用するためのカスタムロールと次の権限が必要です。</block>
+  <block id="beee0e2c828d5d7a17dcb84704a1dd82" category="paragraph">電子メールで通知を受信するには、同期関係で*Notification*設定を有効にしてから、BlueXPでAlerts and Notification設定を構成する必要があります。</block>
+  <block id="75a84cecb34ecabf76f44935f66b67eb" category="paragraph">BlueXPのCanvasから同期関係を直接設定する方法が追加されました。</block>
+  <block id="f3347c5f92241e385b544f1b53daa14d" category="inline-image-macro">BlueXPの通知センターを示すスクリーンショット</block>
+  <block id="05d87278ff5c6195179e1954eecb9a4f" category="paragraph"><block ref="05d87278ff5c6195179e1954eecb9a4f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="779ddd312a3a36e145a7bb3229e99a4a" category="paragraph"><block ref="779ddd312a3a36e145a7bb3229e99a4a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7a8757c8fbb4c1997c5641cf6e4a7489" category="paragraph">Cloud Volumes ONTAP システムがAutoSupport メッセージを送信できない場合、BlueXPは通知を生成するようになりました。この通知には、ネットワークの問題のトラブルシューティングに使用できる手順へのリンクが記載されています。</block>
+  <block id="dd8fbb56db547f79b2c75bf3b4e493be" category="paragraph">Cloud Volumes ONTAP AutoSupport メッセージの送信にアウトバウンドのインターネット接続を使用できない場合、BlueXPでは、コネクタをプロキシサーバとして使用するようにシステムが自動的に設定されるようになりました。</block>
+  <block id="3831fedd132ba9d729ab12b97bb43833" category="paragraph">Cloud Volumes Service for Google CloudをBlueXPから直接管理できるようになりました。</block>
+  <block id="f079f17b0940258743d34e7b771c715f" category="section-title">Digital Advisor</block>
+  <block id="a979b908e61b4f4e9d00d64a346ac569" category="paragraph">Digital Advisor（旧称Active IQ ）は、BlueXPと完全に統合され、ログインエクスペリエンスが向上しました。</block>
+  <block id="36aa1bd807334591d822a982d9e304e9" category="paragraph">BlueXPでDigital Advisorにアクセスすると、NetApp Support Site 資格情報を入力するように求められ、システムに関連するデータを表示できるようになります。ログイン時に使用するNSSアカウントは、ユーザログイン時のみに関連付けられます。ネットアップアカウントの他のユーザには関連付けられません。</block>
+  <block id="ea7b2437ddd14dce6ba3f65494d634fd" category="inline-link">Digital Advisorのドキュメント</block>
+  <block id="c0eab8ac6bda2104128dbed1542b309f" category="paragraph">Digital AdvisorとBlueXPの統合の詳細については、を参照してください<block ref="5d1aa2fae9958ef5ced45eec5d13d250" category="inline-link-rx"></block></block>
+  <block id="534171d3771a50398027a07275778b3e" category="paragraph">Eシリーズストレージシステムは、BlueXPから直接検出できるようになりました。Eシリーズシステムを検出すると、ハイブリッドマルチクラウド全体のデータを包括的に把握できます。</block>
+  <block id="d88ec9141ca0f799220b70e6188c8c33" category="section-title">2022年10月24日（バージョン2.1）</block>
+  <block id="6ad27e169d4768e9a46a134513c55556" category="paragraph">このリリースでは、以下に示す新機能が提供されます。また、に記載されている問題も修正されています<block ref="11a0d6c8cafa0c0950060c707371e2a0" category="inline-link-rx"></block>。更新されたソフトウェアパッケージは、から入手できます<block ref="2c81bb98c990e9738e500d000082628f" category="inline-link-rx"></block>。</block>
+  <block id="51d465a61bb0f252b570a31acdf628be" category="section-title">グローバルファイルキャッシュは、任意の数のライセンスで使用できるようになりました</block>
+  <block id="c4579941f945f9c013bc5d2b34483751" category="paragraph">これまでに必要だった10個のライセンス、つまり30 TBのストレージは削除されました。Global File Cacheライセンスは、3 TBのストレージごとに1つずつ発行されます。</block>
+  <block id="a05df94e25a3fdf3c6809915be7db21b" category="section-title">オフラインライセンス管理サーバを使用するためのサポートが追加されました</block>
+  <block id="9952545455211dde3dd54a36ff1e0fd9" category="paragraph">オフラインまたはダークサイトのライセンス管理サーバ（LMS）は、LMSがライセンスソースを使用したライセンス検証用のインターネット接続を備えていない場合に最も便利です。初期設定時には、インターネット接続とライセンスソースへの接続が必要です。設定が完了すると、LMSインスタンスが暗くなることがあります。ライセンスの継続的な検証のために、すべてのエッジ/コアはLMSと接続されている必要があります。</block>
+  <block id="c0e3f3bf15a62c059b94a8ed402b05a1" category="section-title">エッジインスタンスは、追加の同時ユーザーをサポートできます</block>
+  <block id="dac6d17442feba1d57f29d8031c05963" category="paragraph">1つのグローバルファイルキャッシュエッジインスタンスは、専用の物理エッジインスタンス1つにつき最大500ユーザー、専用の仮想配置で最大300ユーザーを処理できます。使用可能なユーザの最大数は、それぞれ400と200です。</block>
+  <block id="7954886e5818e91e397e0ca331d15d48" category="section-title">Optimus PSMを強化し、クラウドライセンスを構成</block>
+  <block id="3bf86cee85be3992be11d6813b4f6b14" category="section-title">Optimus UI（Edge Configuration）のEdge Sync機能が強化され、接続されているすべてのクライアントが表示されるようになりました</block>
+  <block id="19df80e08f82de8a5a9df23c1e7c6b96" category="paragraph">このリリースでは、以下に示す新機能が提供されます。また、に記載されている問題も修正されています<block ref="11a0d6c8cafa0c0950060c707371e2a0" category="inline-link-rx"></block>。</block>
+  <block id="15b783a23e5291e1ffb9f638317d4bcb" category="inline-link">NetApp Global File Cache User Guide</block>
+  <block id="cf7c224c7b8d702f6384270dadb22ca0" category="paragraph">NetApp Cloud Insights （CI）では、インフラとアプリケーションを包括的に可視化できます。グローバルファイルキャッシュがCIと統合され、すべてのエッジとコアを完全に可視化し、インスタンスで実行されているプロセスを監視できるようになりました。さまざまなグローバルファイルキャッシュメトリックがCIにプッシュされ、CIダッシュボードの全体的な概要が表示されます。の第11章を参照してください<block ref="2cde0a8e9bca45f9b9d7b53c9b2941a5" category="inline-link-rx"></block></block>
+  <block id="6fc9f5ba6febd413f8f3db3fdd777f58" category="section-title">2022年10月30日</block>
+  <block id="084fbbb062290ef487eac98d44edd278" category="paragraph">いつ <block ref="44765f3a3e8511cc80b0083ae1e5f436" category="inline-link-macro-rx"></block>では、ブロックストレージやファイルシステムストレージに対して、ストレージクラスの経済性を実現できます。</block>
+  <block id="7e69e168ccaec126378a9fc9829b1a86" category="paragraph">監視サービスは2022年11月1日に廃止されました。ナビゲーションメニューから* Insights &gt; Observability *（監視/監視）を選択すると、Cloud Insights への直接リンクが表示されるようになりました。</block>
+  <block id="7c82794438729fe23f8c0939342ab8fb" category="section-title">SnapCenter サービス</block>
+  <block id="c491d515e74738c0f4f9512024e9b4cd" category="paragraph">SnapCenter サービスは2022年11月1日に廃止されました。</block>
+  <block id="0b17baeba205d071cc0142cf4aba9b76" category="paragraph">StorageGRID システムをBlueXPから直接検出できるようになりました。StorageGRID を検出すると、ハイブリッドマルチクラウド全体のデータを包括的に把握できます。</block>
+  <block id="ed8f5e7e321372398aae23788c3243a0" category="sidebar">BlueXPインデックス</block>
+  <block id="ff93781ff90bf605d8b3070c1501b28f" category="sidebar">BlueXPのウェブサイトのblog</block>
+  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">BlueXPのすべてのマニュアル</block>
 </blocks>
