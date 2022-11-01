@@ -274,7 +274,6 @@
   <block id="387856638678798c3ffb0e38b39170c6" category="paragraph">以前は、Cloud Backupであらかじめ定義されているSnapMirrorラベル（hourly、daily、weekly、hourly、yearlyなど）のみがサポートされていました。これで、System ManagerまたはCLIを使用して作成したカスタムのSnapMirrorラベルを含むSnapMirrorポリシーがCloud Backupで検出されるようになります。これらの新しいラベルはCloud BackupのUIで公開されており、SnapMirrorラベルを使用してボリュームをクラウドにバックアップできます。</block>
   <block id="1c630f0a83d0317db1fef94fb4dac579" category="paragraph">状況に応じて<block ref="a3c3477c66a633d03b9d52df95b2c874" category="inline-link-rx"></block> または<block ref="d8758b85898e795623db75e4c1372f83" category="inline-link-rx"></block> バックアップ先はキャンバス上の作業環境として存在し、オンプレミスのONTAP またはCloud Volumes ONTAP 作業環境（AzureまたはGCPにインストール）を移行先にドラッグしてバックアップセットアップウィザードを開始できます。</block>
   <block id="8b4506c76e97dc4cbdfa92467d581a0a" category="section-title">これで、データの中でデータを識別するカスタムパターンを追加できるようになりました</block>
-  <block id="cdb141fc7c1c0fc93208e7dbbad88e03" category="paragraph">カスタム正規表現（regex）を使用して、データ内の特定の情報を識別するためのパーソナルパターンを追加できます。正規表現は、すでにData Senseで使用されている既存の事前定義パターンに追加され、結果は［個人パターン］セクションに表示されます。<block ref="2190fe4edde1bb0ebe7888202a9ce641" category="inline-link-rx"></block>。</block>
   <block id="b65741d409db3b7986653580cc3988b8" category="inline-link-macro">AWS での Kubernetes クラスタの要件</block>
   <block id="36e8382aa83e74f8ba70303f62ce8d15" category="paragraph"><block ref="36e8382aa83e74f8ba70303f62ce8d15" category="inline-link-macro-rx"></block></block>
   <block id="c5be663296cc453aa3076c0cfcedc102" category="inline-link-macro">Azure での Kubernetes クラスタの要件</block>
@@ -459,7 +458,6 @@
   <block id="bddf21f18c4ffad2268ebfc0d565c03c" category="section-title">これで、ソースシステムで不要になったボリュームのアーカイブにCloud Backupを使用できるようになります</block>
   <block id="3348dcc393bde37af6464ca44f92a231" category="inline-link">詳細をご確認ください</block>
   <block id="429c129d466e9cdbc94da5ebfd639734" category="paragraph">これで、ボリュームのバックアップ関係を削除できるようになります。これにより、新しいバックアップファイルの作成を停止してソースボリュームを削除し、既存のすべてのバックアップファイルを保持する場合に、アーカイブメカニズムを実現できます。これにより、必要に応じて、あとでソースストレージシステムからスペースを消去しながら、バックアップファイルからボリュームをリストアできるようになります。<block ref="96e512d167a0d6d287f83a8e9bfbf6a3" category="inline-link-rx"></block>。</block>
-  <block id="a2718b7c4580fe65399ac1bb8757a3eb" category="section-title">Cloud BackupのアラートをEメールまたは通知センターで受信するためのサポートが追加されました</block>
   <block id="ac067f034fd3624f1244abb6d3755efe" category="paragraph">Cloud Backupは、BlueXP Notificationサービスに統合されています。Cloud Backup通知を表示するには、BlueXPメニューバーの通知ベルをクリックします。また、通知を電子メールで送信するようにBlueXPを構成することもできます。これにより、システムにログインしていないときでも重要なシステムアクティビティを通知できます。このEメールは、バックアップとリストアのアクティビティに注意する必要があるすべての受信者に送信できます。<block ref="74389894cb83c627291d11e2dde62faa" category="inline-link-rx"></block>。</block>
   <block id="d07fed7e54302c401452d86813f74fdb" category="section-title">新しいAdvanced Settingsページでは、クラスタレベルのバックアップ設定を変更できます</block>
   <block id="711d5dadc0f2641aef64c8697fec3458" category="paragraph">この新しいページでは、ONTAP システムごとにクラウドバックアップをアクティブ化するときに設定したクラスタレベルのバックアップ設定の多くを変更できます。「デフォルト」バックアップ設定として適用される一部の設定を変更することもできます。変更可能なバックアップ設定の完全なセットは、次のとおりです。</block>
@@ -472,9 +470,6 @@
   <block id="33e5226a6b178bab9e22b761cbda6440" category="list-text">オブジェクトストレージに接続されているONTAP IPspace（アクティブ化時に誤って選択された場合）</block>
   <block id="7b95d23b6b30b69ed07a2e15017d99e3" category="inline-link">クラスタレベルのバックアップ設定の管理に関する詳細情報</block>
   <block id="057c181e6c21fad200a862461add5a03" category="paragraph"><block ref="344cf4f459ea1c1e24d6bef144dcb178" category="inline-link-rx"></block>。</block>
-  <block id="ce00affaec3d960c7f7c7e5d24960872" category="section-title">オンプレミスコネクタを使用している場合に、検索とリストアを使用してパブリッククラウドからバックアップファイルをリストアできるようになりました</block>
-  <block id="1906d6d9c8dc27b6ff13fd620f717374" category="paragraph">以前のリリースでは、Connectorをオンプレミスに導入すると、バックアップファイルをパブリッククラウドに作成するためのサポートが追加されていました。このリリースでは、Connectorがオンプレミスに導入されている場合、Search &amp; Restoreを使用してAmazon S3またはAzure Blobからバックアップをリストアできるようになりました。</block>
-  <block id="08eac10f0e32578e8c9f3ee4629f84d3" category="paragraph">現時点では、Google Cloud Storageからバックアップをリストアするために検索とリストアを使用する場合、ConnectorをGoogle Cloud Platformに導入する必要があります。検索とリストアはStorageGRID システムではサポートされていません。この場合は、参照とリストアを使用する必要があります。</block>
   <block id="f4f4c174196d45dbc07ae62740f92b92" category="section-title">ジョブ監視ページが更新されました</block>
   <block id="213f79d27d3a76a68080f2d948105d7e" category="inline-link">ジョブ監視ページ</block>
   <block id="92e275cf9354b2e79f6ecadafa52a965" category="paragraph">には、次の更新が行われています<block ref="2aba02720d116e26596d478ca3ace389" category="inline-link-rx"></block>：</block>
@@ -486,14 +481,11 @@
   <block id="ae3795f53c6086a9639e4652dbff318b" category="paragraph">Cloud Volumes ONTAP バックアップにソースボリュームに使用しているものとは異なるAWSアカウントを使用する場合は、デスティネーションのAWSアカウントクレデンシャルをBlueXPに追加し、「s3：PutBucketPolicy」および「s3：PutBucketOwnershipControls」権限をBlueXPに権限を提供するIAMロールに追加する必要があります。これまでは、AWSコンソールで多数の設定を行う必要がありましたが、これはもう必要ありません。</block>
   <block id="ef63a877f0594c057f824f4327169a39" category="list-text">Google Cloud Platform（GCP）とStorageGRID をサポートし、アプリケーションと整合性のあるスナップショットをバックアップします</block>
   <block id="3f3ac5f6857788bfe6b27f406afcffa5" category="paragraph">Cloud Backup for Applicationsは、NetApp Cloud Storageで実行されているアプリケーションにデータ保護機能を提供するSaaSベースのサービスです。BlueXPで有効になっているアプリケーション向けCloud Backupは、アプリケーションと整合性のある、効率的でポリシーベースのバックアップとリストアを実現します。Amazon FSX for NetApp ONTAP 上にあるOracleデータベースのバックアップとリストアを実行できます。<block ref="5774010e75c0af5301ef0cfe74198590" category="inline-link-rx"></block>。</block>
-  <block id="0fd7cab37419c3f9fdd225020324c7dc" category="section-title">2022年11月7日（バージョン1.17）</block>
   <block id="0198cdca4033ab7a459e75dac29fa28e" category="section-title">オンプレミスのSharePointアカウントのスキャンがサポートされます</block>
   <block id="576988db8c435aebbdd8f982f33f8ac5" category="paragraph">データセンスで、SharePoint OnlineアカウントとSharePointオンプレミスアカウント(SharePoint Server)の両方をスキャンできるようになりました。SharePointを自分のサーバー、またはインターネットにアクセスできないサイトにインストールする必要がある場合は、これらのアカウントのユーザーファイルをデータ検出でスキャンできるようになりました。<block ref="8036d15ae032ce99e20eb0ee5791bf65" category="inline-link-rx"></block>。</block>
   <block id="9793f1d7484adebeb64fb621258edfaf" category="section-title">複数のディレクトリ（フォルダまたは共有）を再スキャンする機能</block>
   <block id="5f78811b5a7bfd9355b114563c862fc9" category="paragraph">これで、複数のディレクトリ（フォルダまたは共有）をただちに再スキャンして、変更がシステムに反映されるようになります。これにより、特定のデータを再スキャンする際に、他のデータよりも優先順位を付けることができます。<block ref="62c228b6acfb31476d7e800452f50dcd" category="inline-link-rx"></block>。</block>
   <block id="feec7c47e3e7cb8ab71bbb29acd13ee0" category="section-title">オンプレミスの「スキャナ」ノードを追加して、特定のデータソースをスキャンする機能</block>
-  <block id="c6cc179979c3b50e9f274669a7debb6f" category="paragraph">データ検出機能をオンプレミス環境にインストールしている場合、データソースをスキャンするためにスキャン処理能力を高める必要があるときは、「スキャナ」ノードをさらに追加することができます。マネージャノードをインストールした直後にスキャナノードを追加することも、後でスキャナノードを追加することもできます。たとえば、1つのデータソースのデータ量が1年後に3倍になったことがわかった場合は、データスキャンを支援する新しいスキャナノードを追加できます。</block>
-  <block id="920d0a192fcf42107e363c75e934277b" category="paragraph">必要に応じて、スキャンするデータソースに物理的に近いホストシステムにスキャナノードをインストールできます。スキャナノードがデータに近いほど、データのスキャン時のネットワークレイテンシができるだけ低減されるため、データの読み取り速度が向上します。</block>
   <block id="5a4346a01828d72104a6540080377b25" category="section-title">2022年11月6日</block>
   <block id="8f4621192fd1fe94f1b365ae34c1e0ed" category="section-title">ドラッグアンドドロップして、Azure Blob、Google Cloud Storage、StorageGRID へのクラウド階層化を有効にします</block>
   <block id="6586247c64ea3f20421ae518b26fc973" category="paragraph">Azure Blob、Google Cloud Storage、またはStorageGRID 階層化のデスティネーションがキャンバス上の作業環境として存在する場合は、オンプレミスのONTAP 作業環境を移行先にドラッグして、階層化セットアップウィザードを開始できます。</block>
@@ -504,7 +496,6 @@
   <block id="f658ebadeb22d41618c5222998030cb9" category="section-title">コネクタ3.9.23</block>
   <block id="a7dad5ac7e311dedf2a82e4bb5a713dd" category="list-text">PAYGOサブスクリプションとBlueXPの年間契約が、Digital Walletから表示および管理できるようになりました。</block>
   <block id="949b19dd7e9f6496c1125f7166270450" category="inline-link">サブスクリプションの管理方法について説明します</block>
-  <block id="ee0a02cf5f32853f4619caef4f31ab4e" category="paragraph"><block ref="ee0a02cf5f32853f4619caef4f31ab4e" category="inline-link-rx"></block></block>
   <block id="9fcd0a1eb1b488b623812d42567ce2d8" category="paragraph"><block ref="9fcd0a1eb1b488b623812d42567ce2d8" category="inline-link-rx"></block></block>
   <block id="2325f561a20765def93d682f14cae306" category="paragraph">コネクタの3.9.23リリースでは、次の変更が加えられました。</block>
   <block id="6d5ba1b41fa03c2fdf0d747769a6b053" category="section-title">Azureでリソースグループを移動しています</block>
@@ -519,4 +510,19 @@
   <block id="a09181ba1488df77bf9950cb483e97e8" category="paragraph">作成時にすべての管理対象ディスクを暗号化できる、新しいAzure権限が追加されました。</block>
   <block id="e76c0365dfa8d6b43992d790f582e6c4" category="inline-link">Azure でお客様が管理するキーを使用するように Cloud Volumes ONTAP を設定します</block>
   <block id="7343d251ecc72fc362a0ce85cf11a9fe" category="paragraph">この新機能の詳細については、を参照してください<block ref="91da0725d8642ccf887bde4d4604033e" category="inline-link-rx"></block>。</block>
+  <block id="efa03f1c1a0f03001f1680681d9ac8a7" category="paragraph"><block ref="efa03f1c1a0f03001f1680681d9ac8a7" category="inline-link-rx"></block></block>
+  <block id="d977c6f6b61d0f35299ae86a391a8a57" category="section-title">Cloud BackupのアラートをEメールおよび通知センターで受信するためのサポートが追加されました</block>
+  <block id="49b6fd5ed6bda6ec09a46ece6a679207" category="section-title">オンプレミスコネクタを使用している場合に、検索とリストアを使用してバックアップファイルをリストアできるようになりました</block>
+  <block id="2bcad5b21af9172c1d623bc274dbe4c1" category="paragraph">以前のリリースでは、Connectorをオンプレミスに導入すると、バックアップファイルをパブリッククラウドに作成するためのサポートが追加されていました。このリリースでは、Connectorがオンプレミスに導入されている場合、Search &amp; Restoreを使用してAmazon S3またはAzure Blobからバックアップをリストアできるようになりました。検索とリストアでは、StorageGRID システムからオンプレミスのONTAP システムへのバックアップのリストアもサポートされています。</block>
+  <block id="18cddedef625cde24d34d1b2bb64fb96" category="paragraph">現時点では、Google Cloud Storageからバックアップをリストアするために検索とリストアを使用する場合、ConnectorをGoogle Cloud Platformに導入する必要があります。</block>
+  <block id="bd975c5b95d2c7b6d2e124201b98445c" category="section-title">2022年11月13日（バージョン1.17）</block>
+  <block id="5e5b753fd04f1adde694471a50221a49" category="paragraph">データセンスをオンプレミス環境にインストールしている場合、特定のデータソースをスキャンするためにスキャン処理能力がさらに必要になることがわかったときは、「スキャナ」ノードを追加して、それらのデータソースをスキャンするように割り当てることができます。マネージャノードをインストールした直後にスキャナノードを追加することも、後でスキャナノードを追加することもできます。</block>
+  <block id="c490178f4142a4c06caeff7c04e922f8" category="inline-link">スキャナノードをインストールして他のデータソースをスキャンする方法を参照してください</block>
+  <block id="232acd7f039f2650674c20301305634d" category="paragraph">必要に応じて、スキャンするデータソースに物理的に近いホストシステムにスキャナノードをインストールできます。スキャナノードがデータに近いほど、データのスキャン時のネットワークレイテンシができるだけ低減されるため、データの読み取り速度が向上します。<block ref="1527b8cf69e6865de2ec8736eea9f338" category="inline-link-rx"></block>。</block>
+  <block id="b76fbb180664dd4ccd169f21a4abcfa6" category="section-title">オンプレミスのインストーラが、インストールを開始する前に事前チェックを実行できるようになりました</block>
+  <block id="8ac32533918ec230d2ec5bb2821a3378" category="paragraph">LinuxシステムにData Senseをインストールする場合、実際のインストールを開始する前に、システムが必要な要件（CPU、RAM、容量、ネットワークなど）をすべて満たしているかどうかを確認します。これにより、インストールに時間を費やす前に*問題をキャッチできます。</block>
+  <block id="095466eeefcbabc811ab5e2a672ee877" category="paragraph">将来のスキャンでデータセンスが識別するカスタムの「個人データ」を追加するには、2つの方法があります。これにより、機密性の高いデータがすべての組織のファイル内に存在する場所に関する全体像を確認できます。</block>
+  <block id="db40121770270b95c73895598e6343b2" category="list-text">テキストファイルからカスタムキーワードを追加できます。</block>
+  <block id="3fb1605dea41a1022e020f895acc727f" category="list-text">正規表現（regex）を使用してパーソナルパターンを追加できます。</block>
+  <block id="a7110ffc746d511f3031ce3693e9c099" category="paragraph">これらのキーワードとパターンは、データ検出ですでに使用されている既存の定義済みパターンに追加され、結果は[個人パターン]セクションに表示されます。<block ref="ba4b576d22723dd9b7b37b67a884a8d7" category="inline-link-rx"></block>。</block>
 </blocks>
