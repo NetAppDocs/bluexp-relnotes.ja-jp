@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache' 
 summary: BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します詳細については、各サービスのすべてのリリースノートを参照してください。 
 ---
 = BlueXPの最近の変更点
@@ -30,6 +30,24 @@ BlueXPプラットフォーム（以前のCloud Manager）の一部である ク
 == 管理機能
 
 このセクションでは、BlueXPの管理機能に関連する新機能(アカウント、コネクタ、クラウドプロバイダの資格情報など)について説明します。
+
+
+
+=== 2022年12月4日
+
+
+
+==== コネクタ3.9.24
+
+* BlueXPコンソールのURLがに更新されました https://console.bluexp.netapp.com[]
+* ConnectorはGoogle Cloudイスラエル地域でサポートされるようになりました。
+* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とオンプレミスONTAP クラスタの機能拡張も含まれています。
++
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#4-december-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
+** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#4-december-2022["ONTAP オンプレミスクラスタの機能拡張について説明します"^]
+
+
+
 
 
 
@@ -764,6 +782,24 @@ Cloud Tieringライセンスを、MetroCluster 構成に含まれるクラスタ
 
 
 
+=== 2022年12月4日
+
+コネクタの3.9.24リリースでは、次の変更が加えられました。
+
+
+
+==== Cloud Volumes ONTAP の作成中に、Worm+ Cloud Backupを利用できるようになりました
+
+Cloud Volumes ONTAP の作成プロセスで、Write Once、Read Many（WORM）、およびCloud Backupの両方の機能をアクティブ化できるようになりました。
+
+
+
+==== イスラエルでGoogle Cloudがサポートされるようになりました
+
+イスラエルのリージョンは、Google Cloud for Cloud Volumes ONTAP とConnector for Cloud Volumes ONTAP 9.11.1 P3以降でサポートされるようになりました。
+
+
+
 === 2022年11月6日
 
 コネクタの3.9.23リリースでは、次の変更が加えられました。
@@ -830,64 +866,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-o
 ==== AutoSupport 通知
 
 Cloud Volumes ONTAP システムがAutoSupport メッセージを送信できない場合、BlueXPは通知を生成するようになりました。この通知には、ネットワークの問題のトラブルシューティングに使用できる手順へのリンクが記載されています。
-
-
-
-=== 2022年7月31日
-
-コネクタの3.9.21リリースでは、次の変更が加えられました。
-
-
-
-==== MTEKMライセンス
-
-バージョン9.11.1以降を実行している新規および既存のCloud Volumes ONTAP システムに、Multi-tenant Encryption Key Management（MTEKM）ライセンスが追加されました。
-
-マルチテナントの外部キー管理を使用すると、NetApp Volume Encryptionの使用時に、個々のStorage VM（SVM）でKMIPサーバを介して独自のキーを保持できます。
-
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-volumes.html["ネットアップの暗号化ソリューションでボリュームを暗号化する方法について説明します"]。
-
-
-
-==== プロキシサーバ
-
-Cloud Volumes ONTAP AutoSupport メッセージの送信にアウトバウンドのインターネット接続を使用できない場合、BlueXPでは、コネクタをプロキシサーバとして使用するようにシステムが自動的に設定されるようになりました。
-
-AutoSupport は、システムの健常性をプロアクティブに監視し、ネットアップテクニカルサポートにメッセージを送信します。
-
-唯一の要件は、コネクタのセキュリティグループがポート3128で_ inbound_connectionsを許可することです。コネクタを展開した後、このポートを開く必要があります。
-
-
-
-==== 充電方法を変更します
-
-容量ベースのライセンスを使用するCloud Volumes ONTAP システムの充電方法を変更できるようになりました。たとえば、Essentialsパッケージを含むCloud Volumes ONTAP システムを導入した場合、ビジネスニーズの変化に応じて、そのシステムをProfessionalパッケージに変更できます。この機能は、デジタルウォレットから使用できます。
-
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["充電方法を変更する方法について説明します"]。
-
-
-
-==== セキュリティグループの機能拡張
-
-Cloud Volumes ONTAP 作業環境を作成するときに、ユーザインターフェイスを使用して、事前定義されたセキュリティグループで選択したネットワークのみ（推奨）またはすべてのネットワーク内のトラフィックを許可するかどうかを選択できるようになりました。
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-allow-traffic.png["セキュリティグループを選択したときに作業環境ウィザードで使用可能なAllow traffic withinオプションを示すスクリーンショット。"]
-
-
-
-=== 2022年7月18日
-
-
-
-==== Azureの新しいライセンスパッケージです
-
-Azure Marketplaceサブスクリプションでのお支払い時に、Cloud Volumes ONTAP 用に2つの容量ベースのライセンスパッケージが新たに提供されます。
-
-* *最適化*：プロビジョニングされた容量とI/O処理に別々に課金します
-* * Edge Cache*:のライセンス https://cloud.netapp.com/cloud-volumes-edge-cache["Cloud Volume エッジキャッシュ"^]
-
-
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["これらのライセンスパッケージの詳細については、こちらをご覧ください"]。
 
 
 
@@ -1090,6 +1068,30 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kuberne
 
 
 
+=== 2022年12月4日
+
+コネクタの3.9.24リリースでは、次の変更が加えられました。
+
+
+
+==== オンプレミスのONTAP クラスタを新たに検出する方法
+
+コネクタを使用せずに、オンプレミスのONTAP クラスタを直接検出できるようになりました。このオプションを指定すると、System Managerでのみクラスタ管理が有効になります。このような作業環境では、BlueXPデータサービスを有効にすることはできません。
+
+https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["この検出と管理オプションの詳細については、こちらをご覧ください"]。
+
+
+
+==== FlexGroup ボリューム
+
+コネクタから検出されたオンプレミスのONTAP クラスタでは、BlueXPの標準ビューに、System ManagerまたはONTAP CLIから作成されたFlexGroup ボリュームが表示されるようになりました。また、ボリュームのクローニング、設定の編集、削除などを行って、それらのボリュームを管理することもできます。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-flexgroup-volumes.png["オンプレミスのONTAP クラスタの[ボリューム]ページに表示されるFlexGroup ボリュームのスクリーンショット。"]
+
+BlueXPでは、FlexGroup ボリュームの作成はサポートされていません。FlexGroup ボリュームの作成には、引き続きSystem ManagerまたはCLIを使用する必要があります。
+
+
+
 === 2022年9月18日
 
 コネクタの3.9.22リリースでは、次の変更が加えられました。
@@ -1130,29 +1132,17 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-administer-advance
 
 
 
-=== 2022 年 2 月 27 日
-
-
-
-==== 「社内 ONTAP 」タブはデジタルウォレットで使用できます。
-
-オンプレミスの ONTAP クラスタのインベントリと、ハードウェアおよびサービス契約の有効期限を確認できるようになりました。クラスタに関するその他の詳細も確認できます。
-
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html#viewing-cluster-information-and-contract-details["この重要なオンプレミスクラスタの情報を表示する方法を参照してください"]。クラスタ用のネットアップサポートサイトのアカウント（ NSS ）が必要です。また、 NSS のクレデンシャルを Cloud Manager アカウントに接続する必要があります。
-
-
-
 == ランサムウェアからの保護
 
 
 
-=== 2022年11月7日
+=== 2022年11月13日
 
 
 
 ==== ランサムウェア防御スコアと推奨アクションを表示する新しいパネル
 
-これらの2つの新しいパネルは、データがランサムウェア攻撃に対してどの程度復元力を持つか、またスコアを向上させるために何ができるかを特定するために連携して機能します。ランサムウェア防御スコアパネルには、全体のスコアと潜在的な問題が存在するサイバーセキュリティ領域が表示されます。Recommended Actions（推奨アクション）パネルには、ランサムウェア攻撃に対する耐障害性を向上させるために実行できる潜在的なアクションがリストされています。また、必要に応じてアクションを適用できるように、問題 を調査するためのリンクが表示されます。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#ransomware-protection-score-and-recommended-actions["詳細はこちらをご覧ください"^]。
+これらの2つの新しいパネルは、データがランサムウェア攻撃に対してどの程度復元力を持つか、またスコアを向上させるために何ができるかを特定するために連携して機能します。Ransomware Protection Score_panelは、全体のスコアと潜在的な問題が存在するサイバーセキュリティ領域を表示します。_Recommended Actions_panelには、ランサムウェア攻撃に対する耐障害性を向上させるために実行できる潜在的なアクションのリストを表示し、問題を調査するためのリンクを提供して、必要に応じてアクションを適用できるようにします。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#ransomware-protection-score-and-recommended-actions["詳細はこちらをご覧ください"^]。
 
 
 
