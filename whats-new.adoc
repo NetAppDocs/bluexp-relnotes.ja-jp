@@ -208,6 +208,32 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 
 
+=== 2022年12月6日
+
+
+
+==== Googleアーカイブストレージクラスがサポートされるようになりました
+
+バックアップファイルは、最初にGoogle Standardストレージクラスで作成されます。より古いバックアップをGoogle Archiveストレージに階層化して、コストをさらに最適化できるようになりました。
+
+この機能は、現在、ONTAP 9.12.1以降を使用するオンプレミスONTAP クラスタでサポートされています。現在、Cloud Volumes ONTAP システムでは使用できません。
+
+
+
+==== FlexGroup ボリュームのサポート
+
+Cloud BackupでFlexGroup ボリュームがサポートされるようになりました。ONTAP 9.12.1以降を使用している場合は、FlexGroup ボリュームをパブリッククラウドストレージとプライベートクラウドストレージにバックアップできます。FlexVol ボリュームとFlexGroup ボリュームが含まれる作業環境がある場合、ONTAP ソフトウェアを更新すると、それらのシステム上の任意のFlexGroup をバックアップできます。
+
+https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html#supported-volumes["サポートされるボリュームタイプの一覧を参照してください"]。
+
+
+
+==== バックアップのデータをCloud Volumes ONTAP システムの特定のアグリゲートにリストアする機能
+
+以前のリリースでは、データをオンプレミスのONTAP システムにリストアする場合にのみアグリゲートを選択できました。この機能は、Cloud Volumes ONTAP システムにデータをリストアする場合に使用できるようになりました。
+
+
+
 === 2022年11月2日
 
 
@@ -228,7 +254,7 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 ==== Cloud BackupのアラートをEメールおよび通知センターで受信するためのサポートが追加されました
 
-Cloud Backupは、BlueXP Notificationサービスに統合されています。Cloud Backup通知を表示するには、BlueXPメニューバーの通知ベルをクリックします。また、通知を電子メールで送信するようにBlueXPを構成することもできます。これにより、システムにログインしていないときでも重要なシステムアクティビティを通知できます。このEメールは、バックアップとリストアのアクティビティに注意する必要があるすべての受信者に送信できます。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#use-the-job-monitor-to-view-backup-and-restore-job-status["詳細をご確認ください"]。
+Cloud Backupは、BlueXP Notificationサービスに統合されています。Cloud Backup通知を表示するには、BlueXPメニューバーの通知ベルをクリックします。また、システムにログインしていないときでも重要なシステムアクティビティを通知できるように、メールで通知を送信するようにBlueXPを構成することもできます。このEメールは、バックアップとリストアのアクティビティに注意する必要があるすべての受信者に送信できます。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#use-the-job-monitor-to-view-backup-and-restore-job-status["詳細をご確認ください"]。
 
 
 
@@ -334,52 +360,6 @@ Cloud Volumes ONTAP バックアップにソースボリュームに使用して
 ==== ドラッグアンドドロップして、StorageGRID システムへのクラウドバックアップを有効にします
 
 状況に応じて https://docs.netapp.com/us-en/cloud-manager-storagegrid/task-discover-storagegrid.html["StorageGRID"^] バックアップ先がキャンバス上の作業環境として存在する場合、オンプレミスのONTAP 作業環境をデスティネーションにドラッグしてクラウドバックアップセットアップウィザードを開始できます。
-
-
-
-=== 2022年8月18日
-
-
-
-==== クラウドネイティブアプリケーションデータを保護するためのサポートが追加されました
-
-Cloud Backup for Applicationsは、NetApp Cloud Storageで実行されているアプリケーションにデータ保護機能を提供するSaaSベースのサービスです。BlueXPで有効になっているアプリケーション向けCloud Backupは、アプリケーションと整合性のある、効率的でポリシーベースのバックアップとリストアを実現します。Amazon FSX for NetApp ONTAP 上にあるOracleデータベースのバックアップとリストアを実行できます。https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-cloud-app-data-to-cloud.html["詳細はこちら。"^]。
-
-
-
-==== 検索とリストアがAzure Blobでのバックアップファイルでサポートされるようになりました
-
-Azure BLOBストレージにバックアップファイルを保存するユーザが、ボリュームとファイルのリストア方法を検索してリストアできるようになりました。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-ontap.html#prerequisites-2["Search  Restoreを使用してボリュームとファイルをリストアする方法を参照してください"^]。
-
-この機能を使用するには、Connectorロールで追加の権限が必要です。バージョン3.9.21ソフトウェア（2022年8月）を使用して導入されたコネクタに、次の権限が含まれます。以前のリリースを使用してコネクタを導入した場合は、権限を手動で追加する必要があります。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-to-azure.html#verify-or-add-permissions-to-the-connector["必要に応じて、これらの権限を追加する方法を参照してください"^]。
-
-
-
-==== バックアップファイルを削除攻撃やランサムウェア攻撃から保護する機能が追加されました
-
-Cloud Backupでランサムウェアセーフバックアップのオブジェクトロックがサポートされるようになりました。クラスタがONTAP 9.11.1以降を使用していて、バックアップのデスティネーションがAmazon S3の場合、_DataLockという新しいバックアップポリシーオプションとランサムウェア防御_が利用可能になりました。DataLockはバックアップファイルの変更や削除を防止します。ランサムウェア対策はバックアップファイルをスキャンして、ランサムウェアによるバックアップファイルへの攻撃の証拠を探します。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-cloud-backup-policies.html#datalock-and-ransomware-protection["DataLockとRansomwareによる保護でバックアップを保護する方法の詳細をご確認ください"^]。
-
-この機能を使用するには、Connectorロールで追加の権限が必要です。バージョン3.9.21ソフトウェアを使用して展開されたコネクタには、これらの権限が含まれています。以前のリリースを使用してコネクタを導入した場合は、権限を手動で追加する必要があります。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-to-aws.html#set-up-s3-permissions["必要に応じて、これらの権限を追加する方法を参照してください"^]。
-
-
-
-==== Cloud Backupで、カスタムSnapMirrorラベルを使用して作成したポリシーがサポートされるようになりまし
-
-以前は、Cloud Backupであらかじめ定義されているSnapMirrorラベル（hourly、daily、weekly、hourly、yearlyなど）のみがサポートされていました。これで、System ManagerまたはCLIを使用して作成したカスタムのSnapMirrorラベルを含むSnapMirrorポリシーがCloud Backupで検出されるようになります。これらの新しいラベルはCloud BackupのUIで公開されており、SnapMirrorラベルを使用してボリュームをクラウドにバックアップできます。
-
-
-
-==== ONTAP システムのバックアップポリシーも強化されました
-
-一部のバックアップポリシーのページが再設計され、各ONTAP クラスタのボリュームに使用できるすべてのバックアップポリシーが表示されるようになりました。これにより、使用可能なポリシーの詳細を簡単に確認できるため、ボリュームに最適なポリシーを適用できます。
-
-
-
-==== ドラッグアンドドロップして、Azure BlobやGoogle Cloud StorageへのCloud Backupを有効にします
-
-状況に応じて https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-viewing-azure-blob.html["Azure Blob の略"^] または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-viewing-gcp-storage.html["Google クラウドストレージ"^] バックアップ先はキャンバス上の作業環境として存在し、オンプレミスのONTAP またはCloud Volumes ONTAP 作業環境（AzureまたはGCPにインストール）を移行先にドラッグしてバックアップセットアップウィザードを開始できます。
-
-この機能はAmazon S3バケットに対してはすでに存在します。
 
 
 
