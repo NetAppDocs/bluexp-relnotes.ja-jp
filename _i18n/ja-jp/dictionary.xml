@@ -167,7 +167,6 @@
   <block id="b42dff6de52c55fe0d6831817d6b309d" category="section-title">ONTAP のFSXをデータソースとして使用します</block>
   <block id="0f8ffeac5211fc4e0dfb43c430753ef2" category="paragraph">Amazon FSX for ONTAP ファイルシステムから次のデスティネーションにデータをレプリケートできるようになりました。</block>
   <block id="0ef90fde5440e5fbd859cb4d59f76f2c" category="list-text">オンプレミスの ONTAP クラスタ</block>
-  <block id="9ca61d0605df8b23ed36445fbf3f2f6a" category="inline-link">DataLockとRansomwareによる保護でバックアップを保護する方法の詳細をご確認ください</block>
   <block id="b65741d409db3b7986653580cc3988b8" category="inline-link-macro">AWS での Kubernetes クラスタの要件</block>
   <block id="36e8382aa83e74f8ba70303f62ce8d15" category="paragraph"><block ref="36e8382aa83e74f8ba70303f62ce8d15" category="inline-link-macro-rx"></block></block>
   <block id="c5be663296cc453aa3076c0cfcedc102" category="inline-link-macro">Azure での Kubernetes クラスタの要件</block>
@@ -190,33 +189,10 @@
   <block id="2a6aa0e8585b387718e871db90f1a32e" category="paragraph">Cloud Sync 通知をEメールで受信できるようになりました。</block>
   <block id="e6694f6134fb0186a17db662ced006d0" category="inline-link">通知を設定する方法について説明します</block>
   <block id="f7ae9f1fb8f4b7044457ebf35058b088" category="paragraph"><block ref="8365080032c57ac637a7cb1d0af196ae" category="inline-link-rx"></block>。</block>
-  <block id="331a3f3aa511b1c438e9c58674f70985" category="section-title">2022年9月6日（バージョン1.16）</block>
-  <block id="d59aefa3621ff4109ce747758711c46c" category="section-title">ファイルの変更を反映するために、リポジトリをすぐに再スキャンできます</block>
   <block id="a6277013831bd0ba5dd8499592e6d67b" category="inline-link">ディレクトリを再スキャンする方法を参照してください</block>
-  <block id="45b58068004d744461935c2aae409c04" category="paragraph">変更がシステムに反映されるように特定のリポジトリをただちに再スキャンする必要がある場合は、リポジトリを選択して再スキャンします。これにより、特定のデータを再スキャンする際に、他のデータよりも優先順位を付けることができます。<block ref="62c228b6acfb31476d7e800452f50dcd" category="inline-link-rx"></block>。</block>
-  <block id="24a7d06e1fe90aca0c0301d12fadc686" category="section-title">[データ調査]ページの[データスキャン]ステータスの新しいフィルタ</block>
-  <block id="e2e0734ca474deb38b2c13f526832e06" category="paragraph">[分析ステータス]フィルタを使用すると、データセンススキャンの特定の段階にあるファイルを一覧表示できます。オプションを選択して、「*最初のスキャンを保留*」、「*完了*スキャン中」、「*再スキャンを保留中*」、または「スキャンに失敗*」のファイルのリストを表示できます。</block>
-  <block id="82f05abce805aa872acec563bbca9a1f" category="paragraph"><block ref="b263790debd0f3d5e5a31296d99293db" category="inline-link-rx"></block>。</block>
-  <block id="9d771bf7f3ed0f2d7cd7bbf827bab0a2" category="section-title">データ主体は、スキャンで見つかった「個人データ」の一部と見なされるようになりました</block>
-  <block id="76eab5fecba3164354032ddcdc0feb3d" category="paragraph">データセンスは、コンプライアンスダッシュボードに表示される個人結果の一部として、データ主体を認識するようになりました。また、［調査］ページで検索を実行するときに、［個人データ］の［データ主体］を選択して、データ主体を含むファイルのみを表示することもできます。</block>
-  <block id="6d3ab1cb3139d4416e111272db779d6d" category="section-title">データ検出ブレッドクラムファイルは、スキャンで検出された「カテゴリ」の一部と見なされるようになりました</block>
-  <block id="d6933caaf62074fc0c3e63f604181712" category="inline-link">ブレッドクラムファイルの作成方法の詳細については、こちらをご覧ください</block>
-  <block id="368538217a4a98d2d78bf94a224b8eb6" category="paragraph">データ検出では、階層リンクファイルがコンプライアンスダッシュボードに表示されるカテゴリの一部として認識されるようになりました。これらは、ソースの場所からNFS共有にファイルを移動するときにData Senseによって作成されるファイルです。<block ref="fd6931884959497f6c1600e29f97b838" category="inline-link-rx"></block>。</block>
-  <block id="636d406982c471ea6a3e9f3a5d5f7f1f" category="paragraph">また、[調査]ページで検索を実行するときに、[カテゴリ]の[データセンスパンくずリスト]を選択して、データセンスブレッドクラムファイルのみを表示することもできます。</block>
-  <block id="8c70b531876f0aad87de3df8d9049545" category="section-title">2022年9月6日</block>
-  <block id="4f400ad3636bf9ccb8a232e152ae3a56" category="section-title">クラスタで検出されたランサムウェアのインシデントを表示する新しいパネル</block>
   <block id="ec9614a46239aa59499c4a94e919963a" category="inline-link">詳細はこちらをご覧ください</block>
-  <block id="2cadd98d70cc36a0982305ace71488f2" category="paragraph">Ransomware incidents_panelは、システムで発生したランサムウェア攻撃を示します。現在サポートされているのは、Autonomous Ransomware Protection（ARP；自律ランサムウェア保護）を実行しているオンプレミスのONTAP クラスタです。ARPでは、NAS（NFSおよびSMB）環境のワークロード分析を使用して、ランサムウェア攻撃を示す可能性のある異常なアクティビティをプロアクティブに検出し、警告します。<block ref="a8b3634a0c7a594234502955588cc1db" category="inline-link-rx"></block>。</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022年9月18日</block>
   <block id="ab288ae4b4c50ebb9a997e0f0debbd15" category="section-title">2022年9月19日</block>
-  <block id="4b60b47d2569a6a3e984e451c382fbdb" category="section-title">DataLockとRansomwareによる保護は、StorageGRID システムのバックアップファイルに対して設定できます</block>
-  <block id="f2c9e54745387d4204d350aaf464ef16" category="paragraph">最後のリリースで導入された、Amazon S3バケットに格納されたバックアップ向けの_DataLockとRansomware Protection_forが含まれます。このリリースでは、StorageGRID システムに格納されたバックアップファイルのサポートが拡張されています。クラスタがONTAP 9.11.1以降を使用していて、StorageGRID システムがバージョン11.6.0.3以降を実行している場合、この新しいバックアップポリシーオプションを使用できます。<block ref="3f7eaa3e30bb5eb7a46ecb7c423ee7ad" category="inline-link-rx"></block>。</block>
-  <block id="7db81221e474d169032014280bbe8e36" category="paragraph">バージョン3.9.22以降のソフトウェアがインストールされたコネクタを実行する必要があります。コネクタはオンプレミスにインストールする必要があり、インターネットにアクセスできるサイトまたはインターネットに接続できないサイトにインストールできます。</block>
-  <block id="dfa4dbaa7b53b80d828eeac39da445d5" category="section-title">これで、バックアップファイルからフォルダレベルのリストアを実行できるようになりました</block>
-  <block id="08c716b38dc966a670cdf75da8f3f86d" category="section-title">アーカイブストレージに移動されたバックアップからファイルレベルのリストアを実行できるようになりました</block>
-  <block id="b0e03676724b8b6468356ef104a66e4f" category="section-title">ファイルレベルのリストアで、元のソースファイルを上書きするオプションが追加されました</block>
-  <block id="f3e2c168c189da079b62c6ff6558a640" category="paragraph">以前は、元のボリュームにリストアされたファイルは、「Restore_&lt; file_name &gt;」というプレフィックスの新しいファイルとして常にリストアされていました。ボリューム上の元の場所にファイルをリストアする際に、元のソースファイルを上書きできるようになりました。この機能は、参照およびリストア方法と検索およびリストア方法の両方を使用して、リストア処理を実行する場合に使用できます。</block>
-  <block id="736c2dbf2aa9f4b08b97a4f719b3cf5e" category="section-title">ドラッグアンドドロップして、StorageGRID システムへのクラウドバックアップを有効にします</block>
   <block id="392d70ca39f31f10bd637936769788df" category="inline-link">StorageGRID</block>
   <block id="905ecf204d0cf0b2ed497e63ae9324d0" category="inline-link">VPCエンドポイントインターフェイスを使用して、システムにプライベート接続を設定します</block>
   <block id="33e030edd0380c3b2d743ec2f989598c" category="paragraph">以前のリリースでは、VPCエンドポイントを介してクラスタをS3バケットに接続するこのセキュアな方法は、非常に時間がかかりました。前提条件となる手順を実行して、を実行します<block ref="fb4b1250ed3d38b3a9447c7c732436c8" category="inline-link-rx"></block>をクリックすると、[ネットワーク]ページの階層化セットアップウィザードでPrivateLinkを選択できます。</block>
@@ -250,9 +226,6 @@
   <block id="ead28cedb204ded1899ad9065642764d" category="list-text"><block ref="ead28cedb204ded1899ad9065642764d" category="inline-link-rx"></block></block>
   <block id="30b77b282030e8985671bcc89e3e4d74" category="inline-link">セットアップと管理</block>
   <block id="10dc3609faa5a0e06b693aa9833bf1aa" category="list-text"><block ref="10dc3609faa5a0e06b693aa9833bf1aa" category="inline-link-rx"></block></block>
-  <block id="201e1c2515e9474bbcf720fb750a48c0" category="paragraph">フォルダ（ディレクトリまたは共有）内のすべてのファイルにアクセスする必要がある場合は、バックアップファイルからフォルダをリストアできるようになりました。フォルダをリストアする方が、ボリューム全体をリストアするよりもはるかに効率的です。この機能は、ONTAP 9.11.1以降を使用している場合、Browse &amp; RestoreメソッドとSearch &amp; Restoreメソッドの両方を使用してリストア処理を実行するときに使用できます。この時点では、1つのフォルダのみを選択してリストアできます。そのフォルダのファイルのみがリストアされます。サブフォルダやサブフォルダ内のファイルはリストアされません。</block>
-  <block id="092186aa28f6e357cce0ba979d549724" category="paragraph">以前は、アーカイブストレージに移動されたバックアップファイルからのみボリュームをリストアできました（AWSおよびAzureのみ）。これらのアーカイブ済みバックアップファイルから個 々 のファイルをリストアできるようになりました。この機能は、ONTAP 9.11.1以降を使用している場合、Browse &amp; RestoreメソッドとSearch &amp; Restoreメソッドの両方を使用してリストア処理を実行するときに使用できます。</block>
-  <block id="01fa460d0b4e6c77f9b145e51a76fbd6" category="paragraph">状況に応じて<block ref="81ffc4823c79c3e10cfa644aead6e93c" category="inline-link-rx"></block> バックアップ先がキャンバス上の作業環境として存在する場合、オンプレミスのONTAP 作業環境をデスティネーションにドラッグしてクラウドバックアップセットアップウィザードを開始できます。</block>
   <block id="c3d7ada1f42d9b916dd8624c5b5661c1" category="section-title">階層化ウィザードでは、S3ストレージへの階層化時にAWS PrivateLinkを設定できます</block>
   <block id="bf482155aab691ba59a0313f5628cbba" category="section-title">MetroCluster 構成のミラーオブジェクトストアを削除するときに階層化の動作を選択します</block>
   <block id="cd71992689f7bdbde4a7c9f0653f44f3" category="paragraph">MetroCluster 構成からミラーオブジェクトストアを削除する場合は、プライマリオブジェクトストアも削除するかどうかを確認するメッセージが表示されます。プライマリオブジェクトストアをアグリゲートに接続したままにすることも、削除することもできます。</block>
@@ -344,7 +317,6 @@
   <block id="5b839de8a8e7b5f30407c5dc2cfdabd2" category="list-text">「ワークロード」の列を使用して、ページをフィルタして、ボリューム、アプリケーション、仮想マシン、Kubernetesの各バックアップサービスのジョブを表示できます。</block>
   <block id="a2ed310c63a1aba1225315fe5f7f60ee" category="list-text">特定のバックアップジョブの詳細を表示するには、「ユーザ名」と「ジョブタイプ」の列を新たに追加します。</block>
   <block id="bcce731a4ced178ba1457a0965f1a878" category="list-text">[ジョブの詳細]ページには、メインジョブを完了するために実行中のすべてのサブジョブが表示されます。</block>
-  <block id="dbe9251780901a4775188539e940cce0" category="list-text">このページは15分ごとに自動的に更新されるので、常に最新のジョブステータスの結果が表示されます。また、[*更新*]ボタンをクリックすると、ページをすぐに更新できます。</block>
   <block id="95bdcffb51de388c8d204ebc69a73e61" category="section-title">AWSのクロスアカウントバックアップの機能拡張</block>
   <block id="ae3795f53c6086a9639e4652dbff318b" category="paragraph">Cloud Volumes ONTAP バックアップにソースボリュームに使用しているものとは異なるAWSアカウントを使用する場合は、デスティネーションのAWSアカウントクレデンシャルをBlueXPに追加し、「s3：PutBucketPolicy」および「s3：PutBucketOwnershipControls」権限をBlueXPに権限を提供するIAMロールに追加する必要があります。これまでは、AWSコンソールで多数の設定を行う必要がありましたが、これはもう必要ありません。</block>
   <block id="ef63a877f0594c057f824f4327169a39" category="list-text">Google Cloud Platform（GCP）とStorageGRID をサポートし、アプリケーションと整合性のあるスナップショットをバックアップします</block>
@@ -445,7 +417,6 @@
   <block id="88094c6c8ad963e6131e3c23988917d4" category="list-text">Connect and Copy方式を使用したOracleデータベースのリストアをサポートします</block>
   <block id="7d6f6d1efeae8c573a74a091cc119cb9" category="list-text">Oracle 21cをサポートします</block>
   <block id="35d9afe1e1e85a29b0de625fd2a9a44a" category="list-text">クラウドネイティブのOracleデータベースのクローニングをサポートします</block>
-  <block id="2b02d4e6e1f394b4dc9da1cac8c404a3" category="section-title">Cloud Backupの機能拡張</block>
   <block id="137f19e6e2dc1219f33553b812627bc2" category="list-text">仮想マシン</block>
   <block id="c2452add37f94598e06d237edc68078b" category="list-text">オンプレミスのセカンダリストレージから仮想マシンをバックアップ</block>
   <block id="8e21c62b69b7c01b40ec93ceb9c4b5cd" category="list-text">では、Google Cloud Platform（GCP）をサポートしており、1つ以上のデータストアのバックアップに使用できます</block>
@@ -499,4 +470,26 @@
   <block id="8a08a7490f38dacd86c415a138d60aea" category="inline-link">このオプションの詳細については、こちらをご覧ください。</block>
   <block id="b269330dc42e4f7fc82bba99c0dd5fd7" category="paragraph"><block ref="b269330dc42e4f7fc82bba99c0dd5fd7" category="inline-link-rx"></block></block>
   <block id="b28a6eb89824dac30a69244f881f75b8" category="paragraph">Ransomware Protection Score_panelは、全体のスコアと潜在的な問題が存在するサイバーセキュリティ領域を表示します。_Recommended Actions_panelには、ランサムウェア攻撃に対する耐障害性を向上させるために実行できる潜在的なアクションのリストを表示し、問題を調査するためのリンクを提供して、必要に応じてアクションを適用できるようにします。これらの2つの新しいパネルは、データがランサムウェア攻撃に対してどの程度復元力を持つか、またスコアを向上させるために何ができるかを特定するために連携して機能します。<block ref="020baa7d67cad4299bb33f9b5861968a" category="inline-link-rx"></block>。</block>
+  <block id="88a11892e7418e1eee8c952df9545b46" category="section-title">2023年1月9日</block>
+  <block id="b17d2155a07524d0e8a3d1eb73a257c3" category="section-title">StorageGRID システムからAWS S3アーカイブストレージに古いバックアップファイルを移動する機能</block>
+  <block id="76592785cd14862cf74d11289e50ed92" category="paragraph">これにより、StorageGRID システムの古いバックアップファイルをAWS S3のアーカイブストレージに階層化できるようになりました。これにより、StorageGRID システムのスペースを解放し、古いバックアップファイルには低コストのストレージクラスを使用することでコストを削減できます。AWS S3 GlacierまたはS3 Glacier Deep Archiveストレージにバックアップを階層化することもできます。</block>
+  <block id="481c6a107a47fcbb610d4e79b7d8bc01" category="paragraph">この機能は、クラスタでONTAP 9.12.1以降を使用していて、StorageGRID システムで11.3以降を使用している場合に使用できます。<block ref="ba1010a667c53f122912d421bb932c28" category="inline-link-rx"></block>。</block>
+  <block id="5baabb9bbca503ea382779d0fce7e9c5" category="section-title">Google Cloudのデータ暗号化に、お客様が管理する独自のキーを選択できます</block>
+  <block id="d42d3ab595b05475b681bcec25a25c6b" category="paragraph">ONTAP システムからGoogle Cloud Storageにデータをバックアップする際に、Googleが管理するデフォルトの暗号化キーを使用する代わりに、アクティベーションウィザードで、お客様が管理する独自のキーを選択してデータを暗号化できるようになりました。まずお客様が管理する暗号化キーを設定し、次にCloud Backupをアクティブ化する際に詳細を入力します。</block>
+  <block id="b9395c2030b2a8ad48d31ad52bd9f6e9" category="section-title">「ストレージ管理者」ロールは、サービスアカウントがGoogle Cloud Storageでバックアップを作成するために必要なくなりました</block>
+  <block id="d7cf6019b64afefeee4361ce4c22ce30" category="inline-link">Google Cloud Storageでバックアップを準備する方法をご覧ください</block>
+  <block id="121b4934193e6ec77a35338afd1028bb" category="paragraph">以前のリリースでは、Cloud BackupがGoogle Cloud Storageバケットにアクセスできるようにするサービスアカウントには「Storage Admin」ロールが必要でした。これで、一連の権限を減らしてサービスアカウントに割り当てるカスタムロールを作成できるようになりました。<block ref="cdc0823dc4910df979845484c27cfc1d" category="inline-link-rx"></block>。</block>
+  <block id="fe1757784884bfcaf0ca6254fb7fa44e" category="section-title">ジョブ監視結果ページを.csvレポートとしてダウンロードできるようになりました</block>
+  <block id="5ae1400b4fd16294ac8af42e98d8a9ed" category="inline-link">「ジョブ監視レポートを生成する方法」を参照してください</block>
+  <block id="c8a0a8bdcaf1f25cbadde68224d6591d" category="paragraph">[ジョブ監視]ページをフィルタリングして、必要なジョブとアクションを表示したら、そのデータの.csvファイルを生成してダウンロードできるようになりました。次に、情報を分析したり、組織内の他のユーザーにレポートを送信したりできます。<block ref="f54dc22fe93134a0b2767a291dba51f5" category="inline-link-rx"></block>。</block>
+  <block id="4f4a2e17ef7aa2669f99a3748377015f" category="list-text">このページは15分ごとに自動的に更新されるため、常に最新のジョブステータスの結果が表示されます。また、[*更新*]ボタンをクリックすると、ページをすぐに更新できます。</block>
+  <block id="91edc807a7157b7f0159521433ea5b0f" category="section-title">2023年1月9日（バージョン1.19）</block>
+  <block id="738f7059231d5fe5c1e22879f52682fd" category="section-title">Data Investigationページでは、3つの新しいフィルタを使用できます</block>
+  <block id="a05ecd168005e0205e52b540a66b4208" category="paragraph">[データ調査]ページに表示する結果を絞り込むための新しいフィルタを使用できます。</block>
+  <block id="d40d8569fcb40c761c8217de218391ba" category="list-text">「アクセス権を持つユーザの数」フィルタは、特定の数のユーザに対して開かれているファイルやフォルダを表示します。数値の範囲を選択して結果を絞り込むことができます。たとえば、51~100ユーザがアクセスできるファイルを確認できます。</block>
+  <block id="142c1e7e965016b6fe04e45f8ae01209" category="list-text">「作成日時」、「検出日時」、「最終変更日時」、「最終アクセス日時」の各フィルタを使用して、事前に定義された日範囲だけを選択するのではなく、カスタムの日付範囲を作成できるようになりました。たとえば、「作成日時」が6か月を超えているファイルや、「最終更新日時」が「過去10日間」の日付になっているファイルを探すことができます。</block>
+  <block id="e2abff3453b8cf47fe2cb0886e10722b" category="list-text">「ファイルパス」フィルタで、フィルタリングされたクエリ結果から除外するパスを指定できるようになりました。特定のデータを含むパスと除外するパスの両方を入力すると、最初に含まれているパス内のすべてのファイルが検出され、除外されたパスからファイルが削除され、結果が表示されます。</block>
+  <block id="2d7dcb96cb20cbaa2b94280f3b67d862" category="paragraph"><block ref="e3dd455551e82145f7b0bbdda5ed35ae" category="inline-link-rx"></block>。</block>
+  <block id="4e499a708b699475cdaf2e23cd596d11" category="section-title">ランサムウェア対策保護アラートをEメールや通知センターで受け取るサポートが追加されました</block>
+  <block id="53bccb80a99ecb6d22ac23a5d83a662e" category="paragraph">Ransomware Protectionは、BlueXP Notificationサービスに統合されています。Ransomware Protection通知を表示するには、BlueXPメニューバーの通知ベルをクリックします。また、システムにログインしていないときでも重要なシステムアクティビティを通知できるように、メールで通知を送信するようにBlueXPを構成することもできます。このEメールは、ランサムウェアのアラートに注意する必要のある受信者に送信できます。<block ref="4b31f56f66b4ac96107c1c8a3ca6ad6e" category="inline-link-rx"></block>。</block>
 </blocks>

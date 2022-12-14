@@ -187,6 +187,36 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 
 
+=== 2023年1月9日
+
+
+
+==== StorageGRID システムからAWS S3アーカイブストレージに古いバックアップファイルを移動する機能
+
+これにより、StorageGRID システムの古いバックアップファイルをAWS S3のアーカイブストレージに階層化できるようになりました。これにより、StorageGRID システムのスペースを解放し、古いバックアップファイルには低コストのストレージクラスを使用することでコストを削減できます。AWS S3 GlacierまたはS3 Glacier Deep Archiveストレージにバックアップを階層化することもできます。
+
+この機能は、クラスタでONTAP 9.12.1以降を使用していて、StorageGRID システムで11.3以降を使用している場合に使用できます。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html#preparing-to-archive-older-backup-files-to-public-cloud-storage["詳細はこちらをご覧ください"]。
+
+
+
+==== Google Cloudのデータ暗号化に、お客様が管理する独自のキーを選択できます
+
+ONTAP システムからGoogle Cloud Storageにデータをバックアップする際に、Googleが管理するデフォルトの暗号化キーを使用する代わりに、アクティベーションウィザードで、お客様が管理する独自のキーを選択してデータを暗号化できるようになりました。まずお客様が管理する暗号化キーを設定し、次にCloud Backupをアクティブ化する際に詳細を入力します。
+
+
+
+==== 「ストレージ管理者」ロールは、サービスアカウントがGoogle Cloud Storageでバックアップを作成するために必要なくなりました
+
+以前のリリースでは、Cloud BackupがGoogle Cloud Storageバケットにアクセスできるようにするサービスアカウントには「Storage Admin」ロールが必要でした。これで、一連の権限を減らしてサービスアカウントに割り当てるカスタムロールを作成できるようになりました。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-to-gcp.html#preparing-google-cloud-storage-for-backups["Google Cloud Storageでバックアップを準備する方法をご覧ください"]。
+
+
+
+==== ジョブ監視結果ページを.csvレポートとしてダウンロードできるようになりました
+
+[ジョブ監視]ページをフィルタリングして、必要なジョブとアクションを表示したら、そのデータの.csvファイルを生成してダウンロードできるようになりました。次に、情報を分析したり、組織内の他のユーザーにレポートを送信したりできます。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#download-job-monitoring-results-as-a-report["「ジョブ監視レポートを生成する方法」を参照してください"]。
+
+
+
 === 2022年12月19日
 
 
@@ -214,7 +244,7 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 
 
-==== Cloud Backupの機能拡張
+==== Cloud Backup for Virtual Machinesの機能拡張
 
 * 仮想マシン
 +
@@ -328,7 +358,7 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backup-se
 * 「ワークロード」の列を使用して、ページをフィルタして、ボリューム、アプリケーション、仮想マシン、Kubernetesの各バックアップサービスのジョブを表示できます。
 * 特定のバックアップジョブの詳細を表示するには、「ユーザ名」と「ジョブタイプ」の列を新たに追加します。
 * [ジョブの詳細]ページには、メインジョブを完了するために実行中のすべてのサブジョブが表示されます。
-* このページは15分ごとに自動的に更新されるので、常に最新のジョブステータスの結果が表示されます。また、[*更新*]ボタンをクリックすると、ページをすぐに更新できます。
+* このページは15分ごとに自動的に更新されるため、常に最新のジョブステータスの結果が表示されます。また、[*更新*]ボタンをクリックすると、ページをすぐに更新できます。
 
 
 
@@ -365,43 +395,24 @@ Cloud Volumes ONTAP バックアップにソースボリュームに使用して
 
 
 
-=== 2022年9月19日
-
-
-
-==== DataLockとRansomwareによる保護は、StorageGRID システムのバックアップファイルに対して設定できます
-
-最後のリリースで導入された、Amazon S3バケットに格納されたバックアップ向けの_DataLockとRansomware Protection_forが含まれます。このリリースでは、StorageGRID システムに格納されたバックアップファイルのサポートが拡張されています。クラスタがONTAP 9.11.1以降を使用していて、StorageGRID システムがバージョン11.6.0.3以降を実行している場合、この新しいバックアップポリシーオプションを使用できます。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-cloud-backup-policies.html#datalock-and-ransomware-protection["DataLockとRansomwareによる保護でバックアップを保護する方法の詳細をご確認ください"^]。
-
-バージョン3.9.22以降のソフトウェアがインストールされたコネクタを実行する必要があります。コネクタはオンプレミスにインストールする必要があり、インターネットにアクセスできるサイトまたはインターネットに接続できないサイトにインストールできます。
-
-
-
-==== これで、バックアップファイルからフォルダレベルのリストアを実行できるようになりました
-
-フォルダ（ディレクトリまたは共有）内のすべてのファイルにアクセスする必要がある場合は、バックアップファイルからフォルダをリストアできるようになりました。フォルダをリストアする方が、ボリューム全体をリストアするよりもはるかに効率的です。この機能は、ONTAP 9.11.1以降を使用している場合、Browse & RestoreメソッドとSearch & Restoreメソッドの両方を使用してリストア処理を実行するときに使用できます。この時点では、1つのフォルダのみを選択してリストアできます。そのフォルダのファイルのみがリストアされます。サブフォルダやサブフォルダ内のファイルはリストアされません。
-
-
-
-==== アーカイブストレージに移動されたバックアップからファイルレベルのリストアを実行できるようになりました
-
-以前は、アーカイブストレージに移動されたバックアップファイルからのみボリュームをリストアできました（AWSおよびAzureのみ）。これらのアーカイブ済みバックアップファイルから個 々 のファイルをリストアできるようになりました。この機能は、ONTAP 9.11.1以降を使用している場合、Browse & RestoreメソッドとSearch & Restoreメソッドの両方を使用してリストア処理を実行するときに使用できます。
-
-
-
-==== ファイルレベルのリストアで、元のソースファイルを上書きするオプションが追加されました
-
-以前は、元のボリュームにリストアされたファイルは、「Restore_< file_name >」というプレフィックスの新しいファイルとして常にリストアされていました。ボリューム上の元の場所にファイルをリストアする際に、元のソースファイルを上書きできるようになりました。この機能は、参照およびリストア方法と検索およびリストア方法の両方を使用して、リストア処理を実行する場合に使用できます。
-
-
-
-==== ドラッグアンドドロップして、StorageGRID システムへのクラウドバックアップを有効にします
-
-状況に応じて https://docs.netapp.com/us-en/cloud-manager-storagegrid/task-discover-storagegrid.html["StorageGRID"^] バックアップ先がキャンバス上の作業環境として存在する場合、オンプレミスのONTAP 作業環境をデスティネーションにドラッグしてクラウドバックアップセットアップウィザードを開始できます。
-
-
-
 == クラウドデータの意味
+
+
+
+=== 2023年1月9日（バージョン1.19）
+
+
+
+==== Data Investigationページでは、3つの新しいフィルタを使用できます
+
+[データ調査]ページに表示する結果を絞り込むための新しいフィルタを使用できます。
+
+* 「アクセス権を持つユーザの数」フィルタは、特定の数のユーザに対して開かれているファイルやフォルダを表示します。数値の範囲を選択して結果を絞り込むことができます。たとえば、51~100ユーザがアクセスできるファイルを確認できます。
+* 「作成日時」、「検出日時」、「最終変更日時」、「最終アクセス日時」の各フィルタを使用して、事前に定義された日範囲だけを選択するのではなく、カスタムの日付範囲を作成できるようになりました。たとえば、「作成日時」が6か月を超えているファイルや、「最終更新日時」が「過去10日間」の日付になっているファイルを探すことができます。
+* 「ファイルパス」フィルタで、フィルタリングされたクエリ結果から除外するパスを指定できるようになりました。特定のデータを含むパスと除外するパスの両方を入力すると、最初に含まれているパス内のすべてのファイルが検出され、除外されたパスからファイルが削除され、結果が表示されます。
+
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["データの調査に使用できるすべてのフィルタのリストを確認します"]。
 
 
 
@@ -454,38 +465,6 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-on
 ==== オンプレミスのインストーラが、インストールを開始する前に事前チェックを実行できるようになりました
 
 LinuxシステムにData Senseをインストールする場合、実際のインストールを開始する前に、システムが必要な要件（CPU、RAM、容量、ネットワークなど）をすべて満たしているかどうかを確認します。これにより、インストールに時間を費やす前に*問題をキャッチできます。
-
-
-
-=== 2022年9月6日（バージョン1.16）
-
-
-
-==== ファイルの変更を反映するために、リポジトリをすぐに再スキャンできます
-
-変更がシステムに反映されるように特定のリポジトリをただちに再スキャンする必要がある場合は、リポジトリを選択して再スキャンします。これにより、特定のデータを再スキャンする際に、他のデータよりも優先順位を付けることができます。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-repo-scanning.html#rescanning-data-for-an-existing-repository["ディレクトリを再スキャンする方法を参照してください"^]。
-
-
-
-==== [データ調査]ページの[データスキャン]ステータスの新しいフィルタ
-
-[分析ステータス]フィルタを使用すると、データセンススキャンの特定の段階にあるファイルを一覧表示できます。オプションを選択して、「*最初のスキャンを保留*」、「*完了*スキャン中」、「*再スキャンを保留中*」、または「スキャンに失敗*」のファイルのリストを表示できます。
-
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["データの調査に使用できるすべてのフィルタのリストを確認します"^]。
-
-
-
-==== データ主体は、スキャンで見つかった「個人データ」の一部と見なされるようになりました
-
-データセンスは、コンプライアンスダッシュボードに表示される個人結果の一部として、データ主体を認識するようになりました。また、［調査］ページで検索を実行するときに、［個人データ］の［データ主体］を選択して、データ主体を含むファイルのみを表示することもできます。
-
-
-
-==== データ検出ブレッドクラムファイルは、スキャンで検出された「カテゴリ」の一部と見なされるようになりました
-
-データ検出では、階層リンクファイルがコンプライアンスダッシュボードに表示されるカテゴリの一部として認識されるようになりました。これらは、ソースの場所からNFS共有にファイルを移動するときにData Senseによって作成されるファイルです。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share["ブレッドクラムファイルの作成方法の詳細については、こちらをご覧ください"^]。
-
-また、[調査]ページで検索を実行するときに、[カテゴリ]の[データセンスパンくずリスト]を選択して、データセンスブレッドクラムファイルのみを表示することもできます。
 
 
 
@@ -1091,6 +1070,16 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/ma
 
 
 
+=== 2023年1月9日
+
+
+
+==== ランサムウェア対策保護アラートをEメールや通知センターで受け取るサポートが追加されました
+
+Ransomware Protectionは、BlueXP Notificationサービスに統合されています。Ransomware Protection通知を表示するには、BlueXPメニューバーの通知ベルをクリックします。また、システムにログインしていないときでも重要なシステムアクティビティを通知できるように、メールで通知を送信するようにBlueXPを構成することもできます。このEメールは、ランサムウェアのアラートに注意する必要のある受信者に送信できます。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-monitor-ransomware-alerts.html["詳細をご確認ください"]。
+
+
+
 === 2022年12月11日
 
 
@@ -1114,16 +1103,6 @@ UIでこれらの操作を選択し、ワークフローに従って根本的な
 ==== ランサムウェア防御スコアと推奨アクションを表示する新しいパネル
 
 Ransomware Protection Score_panelは、全体のスコアと潜在的な問題が存在するサイバーセキュリティ領域を表示します。_Recommended Actions_panelには、ランサムウェア攻撃に対する耐障害性を向上させるために実行できる潜在的なアクションのリストを表示し、問題を調査するためのリンクを提供して、必要に応じてアクションを適用できるようにします。これらの2つの新しいパネルは、データがランサムウェア攻撃に対してどの程度復元力を持つか、またスコアを向上させるために何ができるかを特定するために連携して機能します。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#ransomware-protection-score-and-recommended-actions["詳細はこちらをご覧ください"^]。
-
-
-
-=== 2022年9月6日
-
-
-
-==== クラスタで検出されたランサムウェアのインシデントを表示する新しいパネル
-
-Ransomware incidents_panelは、システムで発生したランサムウェア攻撃を示します。現在サポートされているのは、Autonomous Ransomware Protection（ARP；自律ランサムウェア保護）を実行しているオンプレミスのONTAP クラスタです。ARPでは、NAS（NFSおよびSMB）環境のワークロード分析を使用して、ランサムウェア攻撃を示す可能性のある異常なアクティビティをプロアクティブに検出し、警告します。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#ransomware-incidents-detected-on-your-systems["詳細はこちらをご覧ください"^]。
 
 
 
