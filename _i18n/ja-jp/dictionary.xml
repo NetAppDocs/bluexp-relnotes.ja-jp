@@ -107,18 +107,11 @@
   <block id="59dfc17500b1e0b8d1824eb8b1413080" category="paragraph">Cloud Volumes ONTAP システムまたはオンプレミスの ONTAP クラスタから ONTAP ファイルシステム用の Amazon FSX にデータをレプリケートできるようになりました。</block>
   <block id="40f78d193b858589ad7df4dd4ce61ad6" category="inline-link">データレプリケーションの設定方法について説明します</block>
   <block id="1e56755e05ec049b30c49b9d53744ca1" category="paragraph"><block ref="0337e364432fca0f343e5f2660661b77" category="inline-link-rx"></block>。</block>
-  <block id="afacb33ad65bcd63eb15aeba04b4aed0" category="inline-link">これらのタイプのクラスタのライセンスを設定する方法を参照してください。</block>
   <block id="a3065e926a55339df72c1343ee9b3fae" category="inline-link">データの調査に使用できるすべてのフィルタのリストを確認します</block>
   <block id="81ad4f0de90ee8a7305d0fd7751df796" category="section-title">新しいGoogle Cloudリージョンサポート</block>
   <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link">このページです</block>
-  <block id="f8b475a3fefebada77a30229238d0a1a" category="section-title">2022年6月7日</block>
   <block id="03e6ae21f561049c3e8010740c63aab3" category="inline-link">Cloud Volumes ONTAP の機能拡張について説明します</block>
   <block id="f23841b65ba519d2dd6a63a2a3e4de83" category="inline-link-macro">Continuous Syncの詳細については、こちらをご覧ください</block>
-  <block id="4f03a5c652641013d1e43811930f5769" category="paragraph">コネクタの3.9.19リリースでは、次の変更が加えられました。</block>
-  <block id="ffe3ec3b5faef58a758d9449470882a0" category="section-title">新しい詳細ビュー</block>
-  <block id="5549a52d6578bcb66138c7319ef4ea11" category="paragraph">オンプレミスのONTAP クラスタに対して高度な管理を実行する必要がある場合は、ONTAP システムに付属の管理インターフェイスであるONTAP System Managerを使用できます。高度な管理のためにCloud Managerを終了する必要がないように、Cloud ManagerのインターフェイスはCloud Managerに直接組み込まれています。</block>
-  <block id="99721ad2e6d601b2966a9d9e1c7de770" category="paragraph">この詳細ビューは、9.10.0以降を実行するオンプレミスのONTAP クラスタでプレビューとして使用できます。今後のリリースでは、この点をさらに改良し、機能を強化する予定です。製品内のチャットでご意見をお寄せください。</block>
-  <block id="f303a87fe6efba259b752f5a9e11064b" category="inline-link-macro">詳細については、「詳細ビュー」を参照してください</block>
   <block id="22c3479f6dd133b2d2d79cc8b481240f" category="section-title">2022年6月23日（バージョン1.3.1）</block>
   <block id="a720f7f5208abaac19d4db46d3bc0a7b" category="inline-link">修正された問題</block>
   <block id="2ffbf992fae9becab7e787491b2cdf41" category="paragraph">バージョン1.3.1用のグローバルファイルキャッシュエッジソフトウェアは、から入手できます<block ref="2c81bb98c990e9738e500d000082628f" category="inline-link-rx"></block>。このリリースでは、に記載されている問題が修正されています<block ref="11a0d6c8cafa0c0950060c707371e2a0" category="inline-link-rx"></block>。</block>
@@ -140,22 +133,7 @@
   <block id="4b14bbd178377e932c7e97664c276be7" category="list-text">ミラノ（ヨーロッパ-西8）</block>
   <block id="66c941bf286fd505b009d484ca94a594" category="section-title">新しいGoogle Cloudマシンタイプ</block>
   <block id="32ddf7d830e3a5092074c4f9bb211736" category="paragraph">Google Cloudのデータブローカーのデフォルトのマシンタイプは、n2 -標準-4になりました。</block>
-  <block id="f0e3a414b681f7ab90a3f742f40c9365" category="list-text">単一または複数のアベイラビリティゾーンHA導入モデルを選択できるようになりました。</block>
-  <block id="324197c492971b6abe6108b6ed0e2722" category="inline-link-macro">ONTAP 作業環境用の FSX を作成します</block>
-  <block id="28d4a8073a683a018eec6bfdec63098f" category="paragraph"><block ref="28d4a8073a683a018eec6bfdec63098f" category="inline-link-macro-rx"></block></block>
-  <block id="1d83e69fc7f9ed326713517b984b155b" category="list-text">AWS GovCloudアカウント認証はCloud Managerでサポートされるようになりました。</block>
-  <block id="d8a56d983b91f097e5ba55dd03a18509" category="inline-link-macro">IAM ロールを設定します</block>
-  <block id="9c2f60af941e19d70429b4a59debeeb9" category="paragraph"><block ref="9c2f60af941e19d70429b4a59debeeb9" category="inline-link-macro-rx"></block></block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
-  <block id="dd15e63d013ad6e70302caae66b83f6d" category="list-text">以前にCloud ManagerにAWSクレデンシャルを指定していた場合、新しい* My Opportunities *機能によって、Cloud Managerを使用して追加および管理するONTAP ファイルシステムのFSXが自動的に検出されて提案されます。また、［* My Opportunities *］タブで、利用可能なデータサービスを確認することもできます。</block>
-  <block id="6ebe96f0162b363fd765e000afd1c4f0" category="inline-link-macro">「My Opportunities（機会）」を使用して、FSX for ONTAP を検出</block>
-  <block id="9480b8170649423ab940807a0b920da2" category="paragraph"><block ref="9480b8170649423ab940807a0b920da2" category="inline-link-macro-rx"></block></block>
-  <block id="e2399171d04de4904bc9ceb3e1c97260" category="inline-link-macro">スループット容量を変更します</block>
-  <block id="c9937dd2be3306177e54f23d06f05522" category="list-text">次の操作を実行できます。 <block ref="506ff771d5601b67d5eec9e79bc3848f" category="inline-link-macro-rx"></block> ONTAP 作業環境用のFSXを作成した後であれば、いつでも作成できます。</block>
-  <block id="7699be7c50b8640b313d71cce9004797" category="inline-link-macro">データをレプリケートして同期</block>
-  <block id="2e54b9a897181c7862d708807a350694" category="list-text">次の操作を実行できます。 <block ref="8a24fd2682d2561e3f75043a6b0c8221" category="inline-link-macro-rx"></block> FSX for ONTAP をソースとして使用する、ONTAP システム用のオンプレミスおよびその他のFSXへの移行。</block>
-  <block id="42c82b44ceecde8407f75a70409e2aec" category="inline-link-macro">Cloud Managerを使用して、FSX for ONTAP にiSCSIボリュームを作成します</block>
-  <block id="d6d2f19a8b69e681e2faa33500bbff6c" category="list-text">次の操作を実行できます。 <block ref="7bd2232976707f7841c519f0d4d2c5a6" category="inline-link-macro-rx"></block>。</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">詳細はこちら。</block>
   <block id="e0daf39823ec1a1a7878c9718f063d5f" category="section-title">Googleドライブ</block>
   <block id="173bb19c121e8b179d4baa317b637722" category="paragraph">NFSサーバまたはSMBサーバからGoogle Driveにデータを同期できるようになりました。「マイドライブ」と「共有ドライブ」の両方がターゲットとしてサポートされています。</block>
@@ -189,12 +167,6 @@
   <block id="b42dff6de52c55fe0d6831817d6b309d" category="section-title">ONTAP のFSXをデータソースとして使用します</block>
   <block id="0f8ffeac5211fc4e0dfb43c430753ef2" category="paragraph">Amazon FSX for ONTAP ファイルシステムから次のデスティネーションにデータをレプリケートできるようになりました。</block>
   <block id="0ef90fde5440e5fbd859cb4d59f76f2c" category="list-text">オンプレミスの ONTAP クラスタ</block>
-  <block id="1f6fd3301ab6ce127efad422dec03d61" category="section-title">2022年8月3日</block>
-  <block id="059c9f6829260507f53186d7191b058c" category="section-title">クラスタ内の他のアグリゲート用に追加のオブジェクトストアを設定できるようになりました</block>
-  <block id="aa18b7b04ae6143c1d2f56b72718403e" category="inline-link">新しいオブジェクトストレージ機能の詳細については、こちらをご覧ください。</block>
-  <block id="e13d7be0c5a4bf2f3e8d1dd04f69dd41" category="paragraph">Cloud Tiering UIに、オブジェクトストレージ構成用の新しいページセットが追加されました。新しいオブジェクトストアの追加、FabricPool ミラーリング用のアグリゲートへの複数のオブジェクトストアの接続、プライマリオブジェクトストアとミラーオブジェクトストアの交換、アグリゲートへのオブジェクトストアの接続の削除などが可能です。<block ref="4f404ee3f4c3295f701ed8b17cef66df" category="inline-link-rx"></block></block>
-  <block id="5c10257d843c1a8aa9e46f55d2064835" category="section-title">MetroCluster 構成に対するCloud Tieringライセンスがサポートされています</block>
-  <block id="141c7c6c3afeeb8d968939161f64f8d2" category="paragraph">Cloud Tieringライセンスを、MetroCluster 構成に含まれるクラスタと共有できるようになりました。これらのシナリオで廃止されたFabricPool ライセンスを使用する必要はなくなりました。これにより、多くのクラスタで「フローティング」のクラウド階層化ライセンスを簡単に使用できるようになります。<block ref="4e8c6c7f1b8cf8bbca1bc62528b46ae2" category="inline-link-rx"></block></block>
   <block id="9ca61d0605df8b23ed36445fbf3f2f6a" category="inline-link">DataLockとRansomwareによる保護でバックアップを保護する方法の詳細をご確認ください</block>
   <block id="b65741d409db3b7986653580cc3988b8" category="inline-link-macro">AWS での Kubernetes クラスタの要件</block>
   <block id="36e8382aa83e74f8ba70303f62ce8d15" category="paragraph"><block ref="36e8382aa83e74f8ba70303f62ce8d15" category="inline-link-macro-rx"></block></block>
@@ -236,8 +208,6 @@
   <block id="ec9614a46239aa59499c4a94e919963a" category="inline-link">詳細はこちらをご覧ください</block>
   <block id="2cadd98d70cc36a0982305ace71488f2" category="paragraph">Ransomware incidents_panelは、システムで発生したランサムウェア攻撃を示します。現在サポートされているのは、Autonomous Ransomware Protection（ARP；自律ランサムウェア保護）を実行しているオンプレミスのONTAP クラスタです。ARPでは、NAS（NFSおよびSMB）環境のワークロード分析を使用して、ランサムウェア攻撃を示す可能性のある異常なアクティビティをプロアクティブに検出し、警告します。<block ref="a8b3634a0c7a594234502955588cc1db" category="inline-link-rx"></block>。</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022年9月18日</block>
-  <block id="3abe9a67eae0ad33b1c96ff4ae8b1eaa" category="inline-link-macro">ストレージ容量とIOPSを変更します</block>
-  <block id="0e36458fd86c678ff613e05396096775" category="paragraph">次の操作を実行できます。 <block ref="0fb4d5e2ef1238fe0c2ee898e859399c" category="inline-link-macro-rx"></block> ONTAP 作業環境用のFSXを作成した後であれば、いつでも作成できます。</block>
   <block id="ab288ae4b4c50ebb9a997e0f0debbd15" category="section-title">2022年9月19日</block>
   <block id="4b60b47d2569a6a3e984e451c382fbdb" category="section-title">DataLockとRansomwareによる保護は、StorageGRID システムのバックアップファイルに対して設定できます</block>
   <block id="f2c9e54745387d4204d350aaf464ef16" category="paragraph">最後のリリースで導入された、Amazon S3バケットに格納されたバックアップ向けの_DataLockとRansomware Protection_forが含まれます。このリリースでは、StorageGRID システムに格納されたバックアップファイルのサポートが拡張されています。クラスタがONTAP 9.11.1以降を使用していて、StorageGRID システムがバージョン11.6.0.3以降を実行している場合、この新しいバックアップポリシーオプションを使用できます。<block ref="3f7eaa3e30bb5eb7a46ecb7c423ee7ad" category="inline-link-rx"></block>。</block>
@@ -270,7 +240,6 @@
   <block id="99cbfcbab5c608668044fc3849d8db46" category="paragraph">ボリュームページの設計が見直され、クラスタ上のボリュームの概要が表示されるようになりました。この概要には、ボリュームの総数、プロビジョニングされた容量、使用済み容量とリザーブ容量、および階層化されたデータの量が表示されます。</block>
   <block id="2f82cdfc06b6747c85937b5cceabaaee" category="inline-image-macro">オンプレミスのONTAP クラスタのボリュームページを示すスクリーンショット。</block>
   <block id="bb4feb07894e787f9d7a8a9c00fa4d55" category="paragraph"><block ref="bb4feb07894e787f9d7a8a9c00fa4d55" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="677a2aadb254e7c4efbc10a593c2f4db" category="paragraph"><block ref="869a420ba883bbe1b303fc03706f8b2f" category="inline-link-rx"></block>。</block>
   <block id="638be56d4cf930b576e6dc1300c7c33b" category="section-title">2022年9月18日</block>
   <block id="168c5915eb40be2beb0ac04f286489ba" category="section-title">FSX for ONTAP to Cloud Volumes ONTAP の略</block>
   <block id="6aa89747141f6b258796889b4e964d01" category="paragraph">Amazon FSX for ONTAP ファイルシステムからCloud Volumes ONTAP にデータをレプリケートできるようになりました。</block>
@@ -393,7 +362,6 @@
   <block id="a7dad5ac7e311dedf2a82e4bb5a713dd" category="list-text">PAYGOサブスクリプションとBlueXPの年間契約が、Digital Walletから表示および管理できるようになりました。</block>
   <block id="949b19dd7e9f6496c1125f7166270450" category="inline-link">サブスクリプションの管理方法について説明します</block>
   <block id="9fcd0a1eb1b488b623812d42567ce2d8" category="paragraph"><block ref="9fcd0a1eb1b488b623812d42567ce2d8" category="inline-link-rx"></block></block>
-  <block id="2325f561a20765def93d682f14cae306" category="paragraph">コネクタの3.9.23リリースでは、次の変更が加えられました。</block>
   <block id="efa03f1c1a0f03001f1680681d9ac8a7" category="paragraph"><block ref="efa03f1c1a0f03001f1680681d9ac8a7" category="inline-link-rx"></block></block>
   <block id="d977c6f6b61d0f35299ae86a391a8a57" category="section-title">Cloud BackupのアラートをEメールおよび通知センターで受信するためのサポートが追加されました</block>
   <block id="49b6fd5ed6bda6ec09a46ece6a679207" category="section-title">オンプレミスコネクタを使用している場合に、検索とリストアを使用してバックアップファイルをリストアできるようになりました</block>
@@ -415,10 +383,6 @@
   <block id="4703fae8488338a7ad69a5cd4347caf3" category="list-text"><block ref="4703fae8488338a7ad69a5cd4347caf3" category="inline-link-rx"></block></block>
   <block id="8f6062f059e26f94975a36f6a5efcc4b" category="paragraph">以前のリリースでは、Connectorをオンプレミスに導入すると、バックアップファイルをパブリッククラウドに作成するためのサポートが追加されていました。このリリースでは、Connectorがオンプレミスに導入されている場合、Search &amp; Restoreを使用してAmazon S3またはAzure Blobからバックアップをリストアできるようになりました。検索とリストアでは、StorageGRID システムからオンプレミスのONTAP システムへのバックアップのリストアもサポートされています。</block>
   <block id="612111851a1740ab34a9d35045621084" category="paragraph">コネクタの3.9.24リリースでは、次の変更が加えられました。</block>
-  <block id="afb589d73d8814d7f9075b4db6f76911" category="section-title">Cloud Volumes ONTAP の作成中に、Worm+ Cloud Backupを利用できるようになりました</block>
-  <block id="4d0c93d7ce5ce6f6010669f660c38d43" category="paragraph">Cloud Volumes ONTAP の作成プロセスで、Write Once、Read Many（WORM）、およびCloud Backupの両方の機能をアクティブ化できるようになりました。</block>
-  <block id="4d9d8c1f4a4820e4fe54b4e7d8733a68" category="section-title">イスラエルでGoogle Cloudがサポートされるようになりました</block>
-  <block id="4ff0d60c5d06bf54def05888e62a6d9e" category="paragraph">イスラエルのリージョンは、Google Cloud for Cloud Volumes ONTAP とConnector for Cloud Volumes ONTAP 9.11.1 P3以降でサポートされるようになりました。</block>
   <block id="bad2ca9843e053dbde9d0f5cf2f18a7b" category="section-title">オンプレミスのONTAP クラスタを新たに検出する方法</block>
   <block id="d69d6ceca70ae4e3b7cf6949930f5168" category="paragraph">コネクタを使用せずに、オンプレミスのONTAP クラスタを直接検出できるようになりました。このオプションを指定すると、System Managerでのみクラスタ管理が有効になります。このような作業環境では、BlueXPデータサービスを有効にすることはできません。</block>
   <block id="336404297eaddf0051e1d62c3d3bb48e" category="inline-link">この検出と管理オプションの詳細については、こちらをご覧ください</block>
@@ -429,13 +393,9 @@
   <block id="aa60f08e9c5a748d9b57c0e7689a43f5" category="paragraph"><block ref="aa60f08e9c5a748d9b57c0e7689a43f5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c081854506aed2f757f753e779bc45f" category="paragraph">BlueXPでは、FlexGroup ボリュームの作成はサポートされていません。FlexGroup ボリュームの作成には、引き続きSystem ManagerまたはCLIを使用する必要があります。</block>
   <block id="8c40ca85ff5a42317cb1f23a7d716ecc" category="section-title">2022年11月13日</block>
-  <block id="1ec4de7af8ab7de00ed7d13a3182054f" category="paragraph">これらの2つの新しいパネルは、データがランサムウェア攻撃に対してどの程度復元力を持つか、またスコアを向上させるために何ができるかを特定するために連携して機能します。Ransomware Protection Score_panelは、全体のスコアと潜在的な問題が存在するサイバーセキュリティ領域を表示します。_Recommended Actions_panelには、ランサムウェア攻撃に対する耐障害性を向上させるために実行できる潜在的なアクションのリストを表示し、問題を調査するためのリンクを提供して、必要に応じてアクションを適用できるようにします。<block ref="020baa7d67cad4299bb33f9b5861968a" category="inline-link-rx"></block>。</block>
   <block id="5c0fff562b33dc0a5a3acac30ed2d313" category="section-title">2022年12月6日</block>
-  <block id="095cf56774a1692bc55bacaa0dfdfd8e" category="section-title">Googleアーカイブストレージクラスがサポートされるようになりました</block>
-  <block id="a11d9289acedc3e5b501dc8760967251" category="paragraph">バックアップファイルは、最初にGoogle Standardストレージクラスで作成されます。より古いバックアップをGoogle Archiveストレージに階層化して、コストをさらに最適化できるようになりました。</block>
   <block id="738d31d37e16df450b2af9540e98c7d4" category="paragraph">この機能は、現在、ONTAP 9.12.1以降を使用するオンプレミスONTAP クラスタでサポートされています。現在、Cloud Volumes ONTAP システムでは使用できません。</block>
   <block id="4547c4a9db890b3449aca4e706555007" category="section-title">FlexGroup ボリュームのサポート</block>
-  <block id="dd7d3cf5e78a510a4d10a46ebb784dc8" category="paragraph">Cloud BackupでFlexGroup ボリュームがサポートされるようになりました。ONTAP 9.12.1以降を使用している場合は、FlexGroup ボリュームをパブリッククラウドストレージとプライベートクラウドストレージにバックアップできます。FlexVol ボリュームとFlexGroup ボリュームが含まれる作業環境がある場合、ONTAP ソフトウェアを更新すると、それらのシステム上の任意のFlexGroup をバックアップできます。</block>
   <block id="cce3f2ac0edcb49693caf11399223d89" category="inline-link">サポートされるボリュームタイプの一覧を参照してください</block>
   <block id="2750ec6dc42d79b24b9902d41543b6fd" category="paragraph"><block ref="0b2b94d5062b1eb6747bf9cb58e01b77" category="inline-link-rx"></block>。</block>
   <block id="d1c49eec91984b5c0c7c8ff6998bb65d" category="section-title">バックアップのデータをCloud Volumes ONTAP システムの特定のアグリゲートにリストアする機能</block>
@@ -445,10 +405,8 @@
   <block id="329171a5c817ab7ae03a1497aa6d59fa" category="section-title">オンプレミスインストールの機能拡張</block>
   <block id="500b30285e1a741b658bc533a0a125a1" category="paragraph">オンプレミスのデータセンスインストールには、次の拡張機能が追加されています。</block>
   <block id="bacf3e82e48abd0e39c6a162b4aa7191" category="list-text">オンプレミスホストでインストールを開始する前に、いくつかの前提条件が確認されます。これにより、ホストシステムにデータセンスソフトウェアを100%インストールできる状態になります。</block>
-  <block id="ac340636071cd9dc2033767452420aab" category="list-text">/var/lib/docker、/tmp、および/optに十分なスペースがあるかどうかをテストします</block>
   <block id="8e3833fdafa0cd3a63d1fae40cbd74e9" category="list-text">必要なすべてのフォルダについて、関連する権限をテストします</block>
   <block id="36cbb51c271d3c68a01a8599c0fbd2b8" category="list-text">[構成]ページの[作業環境]セクションに、_Working Environment ID_と_Scanner Group_nameが表示されるようになりました。複数のData Senseホストを使用して、データソースをスキャンする処理能力を追加する場合は、Working Environment IDを知っておく必要があります。</block>
-  <block id="81dbf04e421aa5fa2a4acce5215da760" category="list-text">設定ページの新しいセクションには、設定したスキャナグループと各グループにあるスキャナノードが表示されます。</block>
   <block id="73e22396c6474ab27832098f1351b823" category="inline-link">1台のホストサーバと複数のホストにデータセンスをインストールする方法については、こちらをご覧ください</block>
   <block id="7d11de825f5fb48a0194c3826f7e2322" category="paragraph"><block ref="6aec5abc0a91e6bbae2064cb8f81d2dd" category="inline-link-rx"></block>。</block>
   <block id="5912630061434e78e733b8d5e5e3dc88" category="section-title">2022年12月11日</block>
@@ -465,12 +423,6 @@
   <block id="708ffc372ba6f36174a7930961b956ab" category="section-title">2022年12月8日</block>
   <block id="dba89da91170934734e847dcfe4ad5d0" category="section-title">Cloud Volumes ONTAP 9.12.1</block>
   <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP</block>
-  <block id="6cfcf66978702040453f6b0622a89aaa" category="paragraph">BlueXPでは、Cloud Volumes ONTAP 9.12.1を導入および管理できるようになりました。新機能やその他のクラウドプロバイダリージョンのサポートが含まれます。<block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block></block>
-  <block id="2dd09f45720a8f94b29c4d048b61ff4e" category="section-title">2022年11月15日</block>
-  <block id="cca494b1b1d22bc8b5c8a8ecd5367bf8" category="section-title">GCPのONTAP S3ライセンス</block>
-  <block id="44f72ae2127b89a470e082ae9f772acf" category="paragraph">ONTAP Cloud Platformでバージョン9.12.1以降を実行する新規および既存のCloud Volumes ONTAP システムに、S3ライセンスが含まれるようになりました。</block>
-  <block id="6958464059ef304c59d06fcb948ccafd" category="inline-link">ONTAP で S3 オブジェクトストレージサービスを設定および管理する方法について説明します</block>
-  <block id="3fe75f10a35597997861eca633c30fa7" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block></block>
   <block id="fe9c9f72fd091b4ebc4d0686a2dccdc6" category="section-title">2022年12月11日</block>
   <block id="ff1a552e36acc064f2353128cc8cae7e" category="section-title">新たに推奨される対処方法がランサムウェア防御スコアパネルに追加されました</block>
   <block id="3a3306a02dc91a314c088887bca99ae6" category="paragraph">ストレージシステムで見つかった次のランサムウェアからの保護の問題に対して、2つの新しい推奨処置が表示されるようになりました。</block>
@@ -478,4 +430,73 @@
   <block id="e536c956b5336f840fdf1f34295e7626" category="list-text">_Yデータソース間のパッチXオープンCVE --パッチ適用されていないONTAP システム上に存在するCVE</block>
   <block id="dced9da708bc7f04e84ad156297f2b2a" category="inline-link">推奨されるすべての対処方法の一覧を確認してください</block>
   <block id="2887af3281ffddb6374ef4f66b57c7d5" category="paragraph">UIでこれらの操作を選択し、ワークフローに従って根本的な問題を解決できます。<block ref="ed823e4f932da1d207b551c7d7ca0450" category="inline-link-rx"></block>。</block>
+  <block id="1f7138998459804601fc351f8d442e29" category="section-title">2023年1月1日</block>
+  <block id="e139aa454163ce195b3669d769c3f1c8" category="section-title">コネクタ3.9.25</block>
+  <block id="ab010f0ae1d3cb2043f9513a1f81beea" category="paragraph">このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とバグ修正が含まれています。</block>
+  <block id="826d1d89ec2a521e40a7a91c2ee8f024" category="paragraph"><block ref="826d1d89ec2a521e40a7a91c2ee8f024" category="inline-link-rx"></block></block>
+  <block id="e29eef6ae64d545134f2b42984845a94" category="section-title">2022年12月19日</block>
+  <block id="0a286ad90f3a25f45e443367036a8789" category="list-text">SAP HANAデータベース</block>
+  <block id="feb69ad1d8975111fe86bbc94b823a7f" category="list-text">Azure NetApp Files （ANF）上にあるSAP HANAデータベースのポリシーベースのバックアップとリストアをサポート</block>
+  <block id="d5a365014bbbc5172b423043fb2a2501" category="list-text">カスタムポリシーをサポート</block>
+  <block id="5ffbe0deb5b41148dc58e63a20df8411" category="list-text">Oracleデータベース</block>
+  <block id="aa6dc7e308fa4a4875c447c8e7fa4a19" category="list-text">ホストを追加してプラグインを自動的に導入</block>
+  <block id="defa9120f4acf33ddb7a4e571c70938b" category="list-text">Cloud Volumes ONTAP 上にあるOracleデータベースのポリシーベースのバックアップ、リストア、およびクローニングをサポートします</block>
+  <block id="2c35eeb424b768876f1774567e7bf2f5" category="list-text">Amazon FSX for NetApp ONTAP 上に存在するOracleデータベースのポリシーベースのバックアップおよびリストアをサポートします</block>
+  <block id="88094c6c8ad963e6131e3c23988917d4" category="list-text">Connect and Copy方式を使用したOracleデータベースのリストアをサポートします</block>
+  <block id="7d6f6d1efeae8c573a74a091cc119cb9" category="list-text">Oracle 21cをサポートします</block>
+  <block id="35d9afe1e1e85a29b0de625fd2a9a44a" category="list-text">クラウドネイティブのOracleデータベースのクローニングをサポートします</block>
+  <block id="2b02d4e6e1f394b4dc9da1cac8c404a3" category="section-title">Cloud Backupの機能拡張</block>
+  <block id="137f19e6e2dc1219f33553b812627bc2" category="list-text">仮想マシン</block>
+  <block id="c2452add37f94598e06d237edc68078b" category="list-text">オンプレミスのセカンダリストレージから仮想マシンをバックアップ</block>
+  <block id="8e21c62b69b7c01b40ec93ceb9c4b5cd" category="list-text">では、Google Cloud Platform（GCP）をサポートしており、1つ以上のデータストアのバックアップに使用できます</block>
+  <block id="6480beff3c438303fc8c6d8b4009f381" category="list-text">Glacier、Deep Glacier、Azure Archiveなどの低コストのクラウドストレージをサポートします</block>
+  <block id="73358bf2a9d2d2c32dbbab5b76681d7f" category="section-title">必須コネクターアウトバウンドインターネットアクセスエンドポイントの変更</block>
+  <block id="06c42f4f82e29b4e90570ef70b538ed4" category="paragraph">Cloud Backupの処理が変更されたため、クラウドバックアップの処理を成功させるには、次のコネクタエンドポイントを変更する必要があります。</block>
+  <block id="eb75f7332becd8b3fbb2a59ea0bd0536" category="cell">古いエンドポイント</block>
+  <block id="afcce2fe2d959c0f4554e7815a50e8e4" category="cell">新しいエンドポイント</block>
+  <block id="115781a0043a85f8707c5c99fd02dc75" category="cell">\ https://cloudmanager.cloud.netapp.com</block>
+  <block id="e1095ff19466581c5274f67123c95036" category="cell">\ https://api.bluexp.netapp.com</block>
+  <block id="9e434ddc2ad4b9de005368b77254223d" category="cell">\ https://*.cloudmanager.cloud.netapp.com</block>
+  <block id="37ba276f010f4ea07f1196b487811443" category="cell">\ https://*.api.bluexp.netapp.com</block>
+  <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="inline-link">AWS</block>
+  <block id="56ef2682280ac110060b881925a87b80" category="inline-link">Google Cloud</block>
+  <block id="3a580f142203677f1f0bc30898f63f53" category="inline-link">Azure</block>
+  <block id="0e40b9cba041560c9517bc49757da3c7" category="paragraph">のすべてのエンドポイントのリストを参照してください<block ref="4c9e3e17ba20f553394e5bc78e402946" category="inline-link-rx"></block>、<block ref="cd3c6f623ccf3e34f9d46b28c47f2a3d" category="inline-link-rx"></block>または<block ref="80755100f97c37f8aa8e3d999b0a43d9" category="inline-link-rx"></block> クラウド環境：</block>
+  <block id="e3a84cf85e2ede3f349ff73485707901" category="section-title">UIでのGoogleアーカイブストレージクラスの選択がサポートされます</block>
+  <block id="862c6bfd630667f5b535d9741b4f08fc" category="paragraph">バックアップファイルは、最初にGoogle Standardストレージクラスで作成されます。Cloud Backup UIを使用して、特定の日数が経過した古いバックアップをGoogle Archiveストレージに階層化し、コストをさらに最適化できるようになりました。</block>
+  <block id="f337eb9be5f215d07b89436adc58d486" category="paragraph">Cloud BackupでFlexGroup ボリュームのバックアップとリストアがサポートされるようになりました。ONTAP 9.12.1以降を使用している場合は、FlexGroup ボリュームをパブリッククラウドストレージとプライベートクラウドストレージにバックアップできます。FlexVol ボリュームとFlexGroup ボリュームが含まれる作業環境がある場合、ONTAP ソフトウェアを更新すると、それらのシステム上の任意のFlexGroup をバックアップできます。</block>
+  <block id="c73eb1c0478b9ea7f0699ac7b64d4214" category="list-text">の十分なスペースをテストします<block ref="2e1a4e3f55001820560b237188c70bc3" prefix=" " category="inline-code"></block>、<block ref="d42b9c57d24cf5db3bd8d332dc35437f" prefix=" " category="inline-code"></block>および<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block></block>
+  <block id="da8fda88af08dfa86e6c1895e629a7a5" category="list-text">また、設定ページの新しいセクションには、設定したスキャナグループと各グループにあるスキャナノードが表示されます。</block>
+  <block id="bfc6fe3f8d2577420634f29daac2cfe3" category="section-title">2023年1月3日</block>
+  <block id="2ce75b34222d130ea74078b75eb79cc0" category="section-title">データブローカーのローカル設定をUIに表示します</block>
+  <block id="88dcb8d0dd987f4f5606df5981050a8d" category="paragraph">ユーザがUIで各データブローカーのローカル設定を表示できるように、構成を表示*オプションが追加されました。</block>
+  <block id="44580ec91e2012543452f790258e1ccf" category="inline-link">データブローカーグループの管理に関する詳細情報</block>
+  <block id="1bc15ec9e137e3d7653e9f04a08b840b" category="paragraph"><block ref="cbafc7311a6970273ad5a1c3b2c0b656" category="inline-link-rx"></block>。</block>
+  <block id="02840b44154535342dd4cf6739d2c77d" category="section-title">AzureとGoogle Cloudデータブローカーオペレーティングシステムにアップグレード</block>
+  <block id="69e30db11dbff8b5efd6091166af232f" category="paragraph">AzureとGoogle Cloudのデータブローカー向けオペレーティングシステムがRocky Linux 9.0にアップグレードされました。</block>
+  <block id="1c01c907ca0a713df58ba8f4b21fd39c" category="inline-link">Azureのデータブローカーインスタンスの詳細については、こちらをご覧ください</block>
+  <block id="696fb1a24aae70782cbc2deebfd01ec3" category="paragraph"><block ref="721924a927b7206a5d8775fe840ddbcd" category="inline-link-rx"></block>。</block>
+  <block id="648e059d69339d82d82738abf0bd4016" category="inline-link">Google Cloudのデータブローカーインスタンスに関する詳細を確認できます</block>
+  <block id="6619068f4ac101fa3e8003ee6618d9da" category="paragraph"><block ref="fa611f614e55d9a2ca38028d5a5ab5b7" category="inline-link-rx"></block>。</block>
+  <block id="c433416a8f427b90caab6f6eed1f6323" category="paragraph">Cloud Tieringの変更が行われたため、クラウド階層化処理を成功させるには、次のコネクタエンドポイントを変更する必要があります。</block>
+  <block id="3c757e219167079b631dfcb5b1d0c339" category="paragraph">コネクタの3.9.25リリースでは、次の変更が加えられました。</block>
+  <block id="234213185a1ffd45429411672de5d3e7" category="section-title">Google Cloudで提供されているライセンスパッケージ</block>
+  <block id="54aeb573897a8b2a0c9627ff7030c996" category="paragraph">最適化さCloud Volumes ONTAP れた容量ベースのライセンスパッケージとエッジキャッシュ容量ベースのライセンスパッケージは、Google Cloud Marketplaceで従量課金制サービスまたは年間契約として提供されます。</block>
+  <block id="0ff1cb70b28d71c56ee0165393cbd500" category="inline-link-macro">Cloud Volumes ONTAP ライセンス</block>
+  <block id="d1f7ea60f001f689d734c007e925b17e" category="paragraph">を参照してください <block ref="0fb2e984675bc2d20107c292ded47d43" category="inline-link-macro-rx"></block>。</block>
+  <block id="f280b5a5c0eeaf41d31a8a2661b341cb" category="section-title">Cloud Volumes ONTAP のデフォルト設定</block>
+  <block id="fced3090ff990434831b838f07c6a3a7" category="paragraph">マルチテナント暗号化キー管理（MTEKM）ライセンスは新しいCloud Volumes ONTAP 環境には含まれなくなりました。</block>
+  <block id="a1299d36f8821164c4414c1a5ab986dd" category="inline-link-macro">Cloud Volumes ONTAP のデフォルト設定</block>
+  <block id="a8e8ca53febeb9bd58edbc0647eb9a34" category="paragraph">Cloud Volumes ONTAP とともに自動的にインストールされるONTAP 機能ライセンスの詳細については、を参照してください <block ref="79578e78303d1a240e8fa9c178a9de63" category="inline-link-macro-rx"></block>。</block>
+  <block id="97145bbcb02af5e728740b1d40bd2046" category="section-title">2022年12月15日</block>
+  <block id="bf748f930fa11e46773ff6f7b815e480" category="section-title">Cloud Volumes ONTAP 9.12.0</block>
+  <block id="80df4292f7c986dbd0920bb576487060" category="paragraph">BlueXPでは、AWSとGoogle CloudにCloud Volumes ONTAP 9.12.0を導入して管理できるようになりました。</block>
+  <block id="64885a300b31929a1b0ea6b5a20128d3" category="paragraph"><block ref="065aa84d514cfdc6fc00d8cb3eaf6ec4" category="inline-link-rx"></block>。</block>
+  <block id="abd10f7bee2f791a9e8f76bf98163c27" category="paragraph">BlueXPでは、Cloud Volumes ONTAP 9.12.1を導入および管理できるようになりました。新機能やその他のクラウドプロバイダリージョンのサポートが含まれます。</block>
+  <block id="0d69949c9de36f8752d49be7f0ec9aed" category="paragraph"><block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block></block>
+  <block id="f2e4e4f7b0b864863bfac74f4383a826" category="section-title">ONTAP クレデンシャルを保存する</block>
+  <block id="6a28e623eb98d9eb0799ab2c472620f3" category="paragraph">コネクタを使用せずに直接検出されたオンプレミスのONTAP 作業環境を開くときに、作業環境を開くたびにクレデンシャルを入力する必要がないように、ONTAP クラスタのクレデンシャルを保存するオプションが利用できるようになりました。</block>
+  <block id="8a08a7490f38dacd86c415a138d60aea" category="inline-link">このオプションの詳細については、こちらをご覧ください。</block>
+  <block id="b269330dc42e4f7fc82bba99c0dd5fd7" category="paragraph"><block ref="b269330dc42e4f7fc82bba99c0dd5fd7" category="inline-link-rx"></block></block>
+  <block id="b28a6eb89824dac30a69244f881f75b8" category="paragraph">Ransomware Protection Score_panelは、全体のスコアと潜在的な問題が存在するサイバーセキュリティ領域を表示します。_Recommended Actions_panelには、ランサムウェア攻撃に対する耐障害性を向上させるために実行できる潜在的なアクションのリストを表示し、問題を調査するためのリンクを提供して、必要に応じてアクションを適用できるようにします。これらの2つの新しいパネルは、データがランサムウェア攻撃に対してどの程度復元力を持つか、またスコアを向上させるために何ができるかを特定するために連携して機能します。<block ref="020baa7d67cad4299bb33f9b5861968a" category="inline-link-rx"></block>。</block>
 </blocks>
