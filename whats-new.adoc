@@ -406,6 +406,44 @@ Cloud Volumes ONTAP バックアップにソースボリュームに使用して
 
 
 
+=== 2023年2月5日（バージョン1.20）
+
+
+
+==== 任意のEメールアドレスにポリシーベースの通知Eメールを送信できます
+
+以前のバージョンのCloud Data Senseでは、特定の重要なポリシーの結果が返されたときに、アカウントのBlueXPユーザーに電子メールアラートを送信できました。この機能を使用すると、オンラインでないときにデータを保護するための通知を受け取ることができます。また、ポリシーから、BlueXPアカウントに登録されていない最大20個の電子メールアドレスを持つ他のユーザーに電子メールアラートを送信することもできます。
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#sending-email-alerts-when-non-compliant-data-is-found["ポリシーの結果に基づいて電子メールアラートを送信する方法については、こちらをご覧ください"]。
+
+
+
+==== これで、UIからData Senseによって識別される個人パターンを追加できるようになりました
+
+データセンスには、将来のスキャンでデータセンスが特定できるカスタムの「個人データ」を追加する機能がありました。ただし、データセンスLinuxホストにログインし、コマンドラインを使用してカスタムパターンを追加する必要がありました。今回のリリースでは、データセンスUIに正規表現を使用してパターンを追加できるため、カスタムパターンの追加や編集が非常に簡単になりました。
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion.html#add-custom-personal-data-identifiers-using-a-regex["データセンスUIからカスタムパターンを追加する方法については、こちらをご覧ください"^]。
+
+
+
+==== データセンスを使用して1、500万個のファイルを移動できます
+
+これまでは、任意のNFS共有に対して、データセンス・ムーブで最大100、000個のソース・ファイルを移動できました。一度に最大1,500万個のファイルを移動できるようになりました。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share["データセンスを使用したソースファイルの移動の詳細については、こちらをご覧ください"]。
+
+
+
+==== SharePoint Onlineファイルへのアクセス権を持つユーザーの数を表示する機能
+
+フィルタ「アクセス権を持つユーザー数」で、SharePoint Onlineリポジトリに保存されているファイルがサポートされるようになりました。これまでは、CIFS共有上のファイルのみがサポートされていました。現時点では、Active DirectoryベースでないSharePointグループはこのフィルタにカウントされません。
+
+
+
+==== 新しい「部分的成功」ステータスがアクションステータスパネルに追加されました
+
+新しい「部分的成功」ステータスは、データセンスアクションが完了し、一部の項目が失敗し、たとえば100個のファイルを移動または削除するときに一部の項目が成功したことを示します。さらに、「終了」ステータスが「成功」に変更されました。以前は、「終了」ステータスに成功した処理と失敗した処理が表示されることがありました。現在、「Success」ステータスは、すべての項目に対するすべてのアクションが成功したことを意味します。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-view-compliance-actions.html["アクションステータスパネルの表示方法を参照してください"]。
+
+
+
 === 2023年1月9日（バージョン1.19）
 
 
@@ -454,36 +492,6 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-
 
 
 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-onprem.html["1台のホストサーバと複数のホストにデータセンスをインストールする方法については、こちらをご覧ください"]。
-
-
-
-=== 2022年11月13日（バージョン1.17）
-
-
-
-==== オンプレミスのSharePointアカウントのスキャンがサポートされます
-
-データセンスで、SharePoint OnlineアカウントとSharePointオンプレミスアカウント(SharePoint Server)の両方をスキャンできるようになりました。SharePointを自分のサーバー、またはインターネットにアクセスできないサイトにインストールする必要がある場合は、これらのアカウントのユーザーファイルをデータ検出でスキャンできるようになりました。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-scanning-sharepoint.html#adding-a-sharepoint-on-premise-account["詳細はこちら。"^]。
-
-
-
-==== 複数のディレクトリ（フォルダまたは共有）を再スキャンする機能
-
-これで、複数のディレクトリ（フォルダまたは共有）をただちに再スキャンして、変更がシステムに反映されるようになります。これにより、特定のデータを再スキャンする際に、他のデータよりも優先順位を付けることができます。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-repo-scanning.html#rescanning-data-for-an-existing-repository["ディレクトリを再スキャンする方法を参照してください"^]。
-
-
-
-==== オンプレミスの「スキャナ」ノードを追加して、特定のデータソースをスキャンする機能
-
-データセンスをオンプレミス環境にインストールしている場合、特定のデータソースをスキャンするためにスキャン処理能力がさらに必要になることがわかったときは、「スキャナ」ノードを追加して、それらのデータソースをスキャンするように割り当てることができます。マネージャノードをインストールした直後にスキャナノードを追加することも、後でスキャナノードを追加することもできます。
-
-必要に応じて、スキャンするデータソースに物理的に近いホストシステムにスキャナノードをインストールできます。スキャナノードがデータに近いほど、データのスキャン時のネットワークレイテンシができるだけ低減されるため、データの読み取り速度が向上します。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-onprem.html#add-scanner-nodes-to-an-existing-deployment["スキャナノードをインストールして他のデータソースをスキャンする方法を参照してください"^]。
-
-
-
-==== オンプレミスのインストーラが、インストールを開始する前に事前チェックを実行できるようになりました
-
-LinuxシステムにData Senseをインストールする場合、実際のインストールを開始する前に、システムが必要な要件（CPU、RAM、容量、ネットワークなど）をすべて満たしているかどうかを確認します。これにより、インストールに時間を費やす前に*問題をキャッチできます。
 
 
 
@@ -1093,6 +1101,26 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/ma
 
 
 
+=== 2023年2月5日
+
+
+
+==== ビジネスクリティカルとみなすデータを識別するポリシーを定義する機能
+
+『Ransomware Protection』に新たなビジネスクリティカルデータに関するページが追加されました。このページでは、Cloud Data Senseで定義されているすべてのポリシーを表示できます。ランサムウェアから保護されたダッシュボードやその他のランサムウェアのパネルに、重要なデータに基づく潜在的な問題が反映されるように、ビジネスに欠かせないデータを特定するポリシーを選択できます。
+
+ランサムウェア対策サービスでこれらのポリシーをアクティブ化していない場合、「ビジネスクリティカルなデータを構成する」という新しい推奨アクションが「推奨されるアクション」パネルに表示されます。
+
+https://docs.netapp.com/us-en/cloud-manager-ransomware/task-select-business-critical-policies.html["ビジネスクリティカルデータの詳細については、こちらをご覧ください"^]。
+
+
+
+==== ランサムウェア攻撃からの保護は、ProtectionカテゴリからGovernanceカテゴリに移行しました
+
+次に、BlueXPの左ナビゲーションメニューから* Governance > Ransomware Protection *を選択してこのサービスにアクセスしてください。
+
+
+
 === 2023年1月9日
 
 
@@ -1116,16 +1144,6 @@ Ransomware Protectionは、BlueXP Notificationサービスに統合されてい�
 
 
 UIでこれらの操作を選択し、ワークフローに従って根本的な問題を解決できます。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#list-of-recommended-actions["推奨されるすべての対処方法の一覧を確認してください"]。
-
-
-
-=== 2022年11月13日
-
-
-
-==== ランサムウェア防御スコアと推奨アクションを表示する新しいパネル
-
-Ransomware Protection Score_panelは、全体のスコアと潜在的な問題が存在するサイバーセキュリティ領域を表示します。_Recommended Actions_panelには、ランサムウェア攻撃に対する耐障害性を向上させるために実行できる潜在的なアクションのリストを表示し、問題を調査するためのリンクを提供して、必要に応じてアクションを適用できるようにします。これらの2つの新しいパネルは、データがランサムウェア攻撃に対してどの程度復元力を持つか、またスコアを向上させるために何ができるかを特定するために連携して機能します。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#ransomware-protection-score-and-recommended-actions["詳細はこちらをご覧ください"^]。
 
 
 

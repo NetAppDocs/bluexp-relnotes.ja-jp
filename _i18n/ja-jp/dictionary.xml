@@ -187,7 +187,6 @@
   <block id="2a6aa0e8585b387718e871db90f1a32e" category="paragraph">Cloud Sync 通知をEメールで受信できるようになりました。</block>
   <block id="e6694f6134fb0186a17db662ced006d0" category="inline-link">通知を設定する方法について説明します</block>
   <block id="f7ae9f1fb8f4b7044457ebf35058b088" category="paragraph"><block ref="8365080032c57ac637a7cb1d0af196ae" category="inline-link-rx"></block>。</block>
-  <block id="a6277013831bd0ba5dd8499592e6d67b" category="inline-link">ディレクトリを再スキャンする方法を参照してください</block>
   <block id="ec9614a46239aa59499c4a94e919963a" category="inline-link">詳細はこちらをご覧ください</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022年9月18日</block>
   <block id="ab288ae4b4c50ebb9a997e0f0debbd15" category="section-title">2022年9月19日</block>
@@ -307,16 +306,10 @@
   <block id="bcce731a4ced178ba1457a0965f1a878" category="list-text">[ジョブの詳細]ページには、メインジョブを完了するために実行中のすべてのサブジョブが表示されます。</block>
   <block id="95bdcffb51de388c8d204ebc69a73e61" category="section-title">AWSのクロスアカウントバックアップの機能拡張</block>
   <block id="ae3795f53c6086a9639e4652dbff318b" category="paragraph">Cloud Volumes ONTAP バックアップにソースボリュームに使用しているものとは異なるAWSアカウントを使用する場合は、デスティネーションのAWSアカウントクレデンシャルをBlueXPに追加し、「s3：PutBucketPolicy」および「s3：PutBucketOwnershipControls」権限をBlueXPに権限を提供するIAMロールに追加する必要があります。これまでは、AWSコンソールで多数の設定を行う必要がありましたが、これはもう必要ありません。</block>
-  <block id="0198cdca4033ab7a459e75dac29fa28e" category="section-title">オンプレミスのSharePointアカウントのスキャンがサポートされます</block>
-  <block id="576988db8c435aebbdd8f982f33f8ac5" category="paragraph">データセンスで、SharePoint OnlineアカウントとSharePointオンプレミスアカウント(SharePoint Server)の両方をスキャンできるようになりました。SharePointを自分のサーバー、またはインターネットにアクセスできないサイトにインストールする必要がある場合は、これらのアカウントのユーザーファイルをデータ検出でスキャンできるようになりました。<block ref="8036d15ae032ce99e20eb0ee5791bf65" category="inline-link-rx"></block>。</block>
-  <block id="9793f1d7484adebeb64fb621258edfaf" category="section-title">複数のディレクトリ（フォルダまたは共有）を再スキャンする機能</block>
-  <block id="5f78811b5a7bfd9355b114563c862fc9" category="paragraph">これで、複数のディレクトリ（フォルダまたは共有）をただちに再スキャンして、変更がシステムに反映されるようになります。これにより、特定のデータを再スキャンする際に、他のデータよりも優先順位を付けることができます。<block ref="62c228b6acfb31476d7e800452f50dcd" category="inline-link-rx"></block>。</block>
-  <block id="feec7c47e3e7cb8ab71bbb29acd13ee0" category="section-title">オンプレミスの「スキャナ」ノードを追加して、特定のデータソースをスキャンする機能</block>
   <block id="5a4346a01828d72104a6540080377b25" category="section-title">2022年11月6日</block>
   <block id="8f4621192fd1fe94f1b365ae34c1e0ed" category="section-title">ドラッグアンドドロップして、Azure Blob、Google Cloud Storage、StorageGRID へのクラウド階層化を有効にします</block>
   <block id="6586247c64ea3f20421ae518b26fc973" category="paragraph">Azure Blob、Google Cloud Storage、またはStorageGRID 階層化のデスティネーションがキャンバス上の作業環境として存在する場合は、オンプレミスのONTAP 作業環境を移行先にドラッグして、階層化セットアップウィザードを開始できます。</block>
   <block id="88268cce7d1b83c765c3f7010df80df5" category="section-title">2022年11月6日</block>
-  <block id="7c16758604271d7ef3055d0e5962ec82" category="section-title">ランサムウェア防御スコアと推奨アクションを表示する新しいパネル</block>
   <block id="f658ebadeb22d41618c5222998030cb9" category="section-title">コネクタ3.9.23</block>
   <block id="a7dad5ac7e311dedf2a82e4bb5a713dd" category="list-text">PAYGOサブスクリプションとBlueXPの年間契約が、Digital Walletから表示および管理できるようになりました。</block>
   <block id="949b19dd7e9f6496c1125f7166270450" category="inline-link">サブスクリプションの管理方法について説明します</block>
@@ -325,12 +318,6 @@
   <block id="d977c6f6b61d0f35299ae86a391a8a57" category="section-title">Cloud BackupのアラートをEメールおよび通知センターで受信するためのサポートが追加されました</block>
   <block id="49b6fd5ed6bda6ec09a46ece6a679207" category="section-title">オンプレミスコネクタを使用している場合に、検索とリストアを使用してバックアップファイルをリストアできるようになりました</block>
   <block id="18cddedef625cde24d34d1b2bb64fb96" category="paragraph">現時点では、Google Cloud Storageからバックアップをリストアするために検索とリストアを使用する場合、ConnectorをGoogle Cloud Platformに導入する必要があります。</block>
-  <block id="bd975c5b95d2c7b6d2e124201b98445c" category="section-title">2022年11月13日（バージョン1.17）</block>
-  <block id="5e5b753fd04f1adde694471a50221a49" category="paragraph">データセンスをオンプレミス環境にインストールしている場合、特定のデータソースをスキャンするためにスキャン処理能力がさらに必要になることがわかったときは、「スキャナ」ノードを追加して、それらのデータソースをスキャンするように割り当てることができます。マネージャノードをインストールした直後にスキャナノードを追加することも、後でスキャナノードを追加することもできます。</block>
-  <block id="c490178f4142a4c06caeff7c04e922f8" category="inline-link">スキャナノードをインストールして他のデータソースをスキャンする方法を参照してください</block>
-  <block id="232acd7f039f2650674c20301305634d" category="paragraph">必要に応じて、スキャンするデータソースに物理的に近いホストシステムにスキャナノードをインストールできます。スキャナノードがデータに近いほど、データのスキャン時のネットワークレイテンシができるだけ低減されるため、データの読み取り速度が向上します。<block ref="1527b8cf69e6865de2ec8736eea9f338" category="inline-link-rx"></block>。</block>
-  <block id="b76fbb180664dd4ccd169f21a4abcfa6" category="section-title">オンプレミスのインストーラが、インストールを開始する前に事前チェックを実行できるようになりました</block>
-  <block id="8ac32533918ec230d2ec5bb2821a3378" category="paragraph">LinuxシステムにData Senseをインストールする場合、実際のインストールを開始する前に、システムが必要な要件（CPU、RAM、容量、ネットワークなど）をすべて満たしているかどうかを確認します。これにより、インストールに時間を費やす前に*問題をキャッチできます。</block>
   <block id="83ec139c80a3d5b2f11f1a94eed47cd2" category="section-title">2022年12月4日</block>
   <block id="9a37fbeb5352e14f2a53fe349c60ad58" category="section-title">コネクタ3.9.24</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
@@ -351,7 +338,6 @@
   <block id="2907843476579cb2696e8e0e783a2a07" category="inline-image-macro">オンプレミスのONTAP クラスタの[ボリューム]ページに表示されるFlexGroup ボリュームのスクリーンショット。</block>
   <block id="aa60f08e9c5a748d9b57c0e7689a43f5" category="paragraph"><block ref="aa60f08e9c5a748d9b57c0e7689a43f5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c081854506aed2f757f753e779bc45f" category="paragraph">BlueXPでは、FlexGroup ボリュームの作成はサポートされていません。FlexGroup ボリュームの作成には、引き続きSystem ManagerまたはCLIを使用する必要があります。</block>
-  <block id="8c40ca85ff5a42317cb1f23a7d716ecc" category="section-title">2022年11月13日</block>
   <block id="5c0fff562b33dc0a5a3acac30ed2d313" category="section-title">2022年12月6日</block>
   <block id="738d31d37e16df450b2af9540e98c7d4" category="paragraph">この機能は、現在、ONTAP 9.12.1以降を使用するオンプレミスONTAP クラスタでサポートされています。現在、Cloud Volumes ONTAP システムでは使用できません。</block>
   <block id="4547c4a9db890b3449aca4e706555007" category="section-title">FlexGroup ボリュームのサポート</block>
@@ -456,7 +442,6 @@
   <block id="6a28e623eb98d9eb0799ab2c472620f3" category="paragraph">コネクタを使用せずに直接検出されたオンプレミスのONTAP 作業環境を開くときに、作業環境を開くたびにクレデンシャルを入力する必要がないように、ONTAP クラスタのクレデンシャルを保存するオプションが利用できるようになりました。</block>
   <block id="8a08a7490f38dacd86c415a138d60aea" category="inline-link">このオプションの詳細については、こちらをご覧ください。</block>
   <block id="b269330dc42e4f7fc82bba99c0dd5fd7" category="paragraph"><block ref="b269330dc42e4f7fc82bba99c0dd5fd7" category="inline-link-rx"></block></block>
-  <block id="b28a6eb89824dac30a69244f881f75b8" category="paragraph">Ransomware Protection Score_panelは、全体のスコアと潜在的な問題が存在するサイバーセキュリティ領域を表示します。_Recommended Actions_panelには、ランサムウェア攻撃に対する耐障害性を向上させるために実行できる潜在的なアクションのリストを表示し、問題を調査するためのリンクを提供して、必要に応じてアクションを適用できるようにします。これらの2つの新しいパネルは、データがランサムウェア攻撃に対してどの程度復元力を持つか、またスコアを向上させるために何ができるかを特定するために連携して機能します。<block ref="020baa7d67cad4299bb33f9b5861968a" category="inline-link-rx"></block>。</block>
   <block id="88a11892e7418e1eee8c952df9545b46" category="section-title">2023年1月9日</block>
   <block id="b17d2155a07524d0e8a3d1eb73a257c3" category="section-title">StorageGRID システムからAWS S3アーカイブストレージに古いバックアップファイルを移動する機能</block>
   <block id="76592785cd14862cf74d11289e50ed92" category="paragraph">これにより、StorageGRID システムの古いバックアップファイルをAWS S3のアーカイブストレージに階層化できるようになりました。これにより、StorageGRID システムのスペースを解放し、古いバックアップファイルには低コストのストレージクラスを使用することでコストを削減できます。AWS S3 GlacierまたはS3 Glacier Deep Archiveストレージにバックアップを階層化することもできます。</block>
@@ -505,4 +490,29 @@
   <block id="897d994d4d024883042e664eba152417" category="list-text">次の操作を実行できます。 <block ref="df556429a26e71fbf9e095a790447f2b" category="inline-link-macro-rx"></block> FSX for ONTAP をソースとして使用する、ONTAP システム用のオンプレミスおよびその他のFSXへの移行。</block>
   <block id="42c82b44ceecde8407f75a70409e2aec" category="inline-link-macro">Cloud Managerを使用して、FSX for ONTAP にiSCSIボリュームを作成します</block>
   <block id="cf648eb1e2c8b4986628f39a529b68f1" category="list-text">次の操作を実行できます。 <block ref="7c9b88630e88eb3d402b9bbec2515bca" category="inline-link-macro-rx"></block>。</block>
+  <block id="5c19ef53902ef56ea5c8f554cccb9ad8" category="section-title">2023年2月5日（バージョン1.20）</block>
+  <block id="f0da8cded20db5ee6dce9c1c4da7bcd8" category="section-title">任意のEメールアドレスにポリシーベースの通知Eメールを送信できます</block>
+  <block id="01bfbdebf8836af0160f70e1bacc3787" category="paragraph">以前のバージョンのCloud Data Senseでは、特定の重要なポリシーの結果が返されたときに、アカウントのBlueXPユーザーに電子メールアラートを送信できました。この機能を使用すると、オンラインでないときにデータを保護するための通知を受け取ることができます。また、ポリシーから、BlueXPアカウントに登録されていない最大20個の電子メールアドレスを持つ他のユーザーに電子メールアラートを送信することもできます。</block>
+  <block id="01111213f34b03537871696a29c018fa" category="inline-link">ポリシーの結果に基づいて電子メールアラートを送信する方法については、こちらをご覧ください</block>
+  <block id="78f271269524c3df01d3ea41bb6702bb" category="paragraph"><block ref="d67cffea398d88e5b23de3d6e657ce99" category="inline-link-rx"></block>。</block>
+  <block id="58c8b31479a452f2c02b4c4beb2b8e6f" category="section-title">これで、UIからData Senseによって識別される個人パターンを追加できるようになりました</block>
+  <block id="bbc056ffe85cbc0784df7b39d5fac941" category="paragraph">データセンスには、将来のスキャンでデータセンスが特定できるカスタムの「個人データ」を追加する機能がありました。ただし、データセンスLinuxホストにログインし、コマンドラインを使用してカスタムパターンを追加する必要がありました。今回のリリースでは、データセンスUIに正規表現を使用してパターンを追加できるため、カスタムパターンの追加や編集が非常に簡単になりました。</block>
+  <block id="e743c1cea3cca118a07bf2fd9a21ec39" category="inline-link">データセンスUIからカスタムパターンを追加する方法については、こちらをご覧ください</block>
+  <block id="6f3ebec91d6086cea205504bdbc3fd37" category="paragraph"><block ref="8eedc9e36b5a6054f1f5d8b4937ba068" category="inline-link-rx"></block>。</block>
+  <block id="84c8adf32e115baa72ae8b3a8f822476" category="section-title">データセンスを使用して1、500万個のファイルを移動できます</block>
+  <block id="ce5fbe7b662ddb049a74e9f53fbb248d" category="inline-link">データセンスを使用したソースファイルの移動の詳細については、こちらをご覧ください</block>
+  <block id="ba15bcd4f08736ac348b497a16e4692c" category="paragraph">これまでは、任意のNFS共有に対して、データセンス・ムーブで最大100、000個のソース・ファイルを移動できました。一度に最大1,500万個のファイルを移動できるようになりました。<block ref="40c227e71c831207540f496880532db6" category="inline-link-rx"></block>。</block>
+  <block id="e25a297a27416e76c1a8e01af56d07ed" category="section-title">SharePoint Onlineファイルへのアクセス権を持つユーザーの数を表示する機能</block>
+  <block id="6e0f24b07c077e6e557a1d0fac76b6c1" category="paragraph">フィルタ「アクセス権を持つユーザー数」で、SharePoint Onlineリポジトリに保存されているファイルがサポートされるようになりました。これまでは、CIFS共有上のファイルのみがサポートされていました。現時点では、Active DirectoryベースでないSharePointグループはこのフィルタにカウントされません。</block>
+  <block id="cab6c5a0928827eecbe652fb21944075" category="section-title">新しい「部分的成功」ステータスがアクションステータスパネルに追加されました</block>
+  <block id="d889002fb629aff0cd2d82543e5f378b" category="inline-link">アクションステータスパネルの表示方法を参照してください</block>
+  <block id="8c01977ad1276f1ec21ee04cc193f1e3" category="paragraph">新しい「部分的成功」ステータスは、データセンスアクションが完了し、一部の項目が失敗し、たとえば100個のファイルを移動または削除するときに一部の項目が成功したことを示します。さらに、「終了」ステータスが「成功」に変更されました。以前は、「終了」ステータスに成功した処理と失敗した処理が表示されることがありました。現在、「Success」ステータスは、すべての項目に対するすべてのアクションが成功したことを意味します。<block ref="fcc1d764ae2299a747d914333deb15cf" category="inline-link-rx"></block>。</block>
+  <block id="e1bc7b26155063f1ce71b76f655669ef" category="section-title">2023年2月5日</block>
+  <block id="de7ceda1f3ad5462ebeba9b4e49bf946" category="section-title">ビジネスクリティカルとみなすデータを識別するポリシーを定義する機能</block>
+  <block id="8fd9b1ab36b743c5caaee60cb0ffb46a" category="paragraph">『Ransomware Protection』に新たなビジネスクリティカルデータに関するページが追加されました。このページでは、Cloud Data Senseで定義されているすべてのポリシーを表示できます。ランサムウェアから保護されたダッシュボードやその他のランサムウェアのパネルに、重要なデータに基づく潜在的な問題が反映されるように、ビジネスに欠かせないデータを特定するポリシーを選択できます。</block>
+  <block id="32f6be7f4e5713fdc38188d3ef348a70" category="paragraph">ランサムウェア対策サービスでこれらのポリシーをアクティブ化していない場合、「ビジネスクリティカルなデータを構成する」という新しい推奨アクションが「推奨されるアクション」パネルに表示されます。</block>
+  <block id="5bba5081ab3b5a554fbba4b798a66e4f" category="inline-link">ビジネスクリティカルデータの詳細については、こちらをご覧ください</block>
+  <block id="f77caa23f512ad7c5c38882b9a13b6db" category="paragraph"><block ref="d9564f80e250011b85c05664d779bbef" category="inline-link-rx"></block>。</block>
+  <block id="1e189efdd1c21e1702b4e4a48e6a3815" category="section-title">ランサムウェア攻撃からの保護は、ProtectionカテゴリからGovernanceカテゴリに移行しました</block>
+  <block id="c1d1220273fe79d481c41539bea31710" category="paragraph">次に、BlueXPの左ナビゲーションメニューから* Governance &gt; Ransomware Protection *を選択してこのサービスにアクセスしてください。</block>
 </blocks>
