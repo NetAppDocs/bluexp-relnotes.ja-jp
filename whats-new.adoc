@@ -236,6 +236,52 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 
 
+=== 2023年2月6日
+
+
+
+==== 古いバックアップファイルをStorageGRID システムからAzureアーカイブストレージに移動する機能
+
+これで、古いバックアップファイルをStorageGRID システムからAzureのアーカイブストレージに階層化できるようになりました。これにより、StorageGRID システムのスペースを解放し、古いバックアップファイルには低コストのストレージクラスを使用することでコストを削減できます。
+
+この機能は、オンプレミスクラスタがONTAP 9.12.1以降を使用し、StorageGRID システムが11.4以降を使用している場合に使用できます。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html#preparing-to-archive-older-backup-files-to-public-cloud-storage["詳細はこちらをご覧ください"^]。
+
+
+
+==== DataLockとRansomwareによる保護は、Azure Blobでのバックアップファイルに対して設定できます
+
+DataLockとRansomware Protectionは、Azure Blobに保存されたバックアップファイルでサポートされるようになりました。Cloud Volumes ONTAP またはオンプレミスONTAP システムでONTAP 9.12.1以降を実行している場合、バックアップファイルをロックしてスキャンし、ランサムウェアの可能性を検出できるようになりました。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-cloud-backup-policies.html#datalock-and-ransomware-protection["DataLockとランサムウェア防御を使用してバックアップを保護する方法については、こちらをご覧ください"^]。
+
+
+
+==== FlexGroup ボリュームのバックアップとリストアの機能拡張
+
+* FlexGroup ボリュームのリストア時に複数のアグリゲートを選択できるようになりました。前回のリリースでは、アグリゲートを1つしか選択できませんでした。
+* FlexGroup ボリュームリストアがCloud Volumes ONTAP システムでサポートされるようになりました。前回のリリースでは、オンプレミスのONTAP システムにのみリストアできました。
+
+
+
+
+==== Cloud Volumes ONTAP システムでは、古いバックアップをGoogleアーカイブストレージに移動できます
+
+バックアップファイルは、最初にGoogle Standardストレージクラスで作成されます。Cloud Backupを使用して、より古いバックアップをGoogle Archiveストレージに階層化し、コストをさらに最適化できるようになりました。前回のリリースでは、オンプレミスのONTAP クラスタでのみこの機能がサポートされていました。現在Google Cloudに導入されているCloud Volumes ONTAP システムがサポートされています。
+
+
+
+==== ボリュームリストア処理で、ボリュームデータをリストアするSVMを選択できるようになりました
+
+次に、ONTAP クラスタ内の別のStorage VMにボリュームデータをリストアします。これまでは、Storage VMを選択できませんでした。
+
+
+
+==== MetroCluster 構成でのボリュームのサポートが強化されました
+
+ONTAP 9.12.1 GA以降を使用している場合、MetroCluster 構成でプライマリシステムに接続しているときにバックアップがサポートされるようになりました。バックアップ構成全体がセカンダリシステムに転送されるため、スイッチオーバー後もクラウドへのバックアップが自動的に続行されます。
+
+https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html#backup-limitations["詳細については、「バックアップの制限」を参照してください"]。
+
+
+
 === 2023年1月9日
 
 
@@ -359,73 +405,6 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-
 
 
 
-=== 2022年11月2日
-
-
-
-==== 古いSnapshotコピーをベースラインバックアップファイルにエクスポートできるようになりました
-
-バックアップスケジュールのラベル（日単位、週単位など）に一致するボリュームのローカルSnapshotコピーが作業環境にある場合は、それらの履歴Snapshotをバックアップファイルとしてオブジェクトストレージにエクスポートできます。これにより、古いSnapshotコピーをベースラインバックアップコピーに移動することで、クラウドでバックアップを初期化できます。
-
-このオプションは、作業環境でCloud Backupをアクティブ化する場合に使用できます。この設定は、あとでで変更することもできます https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backup-settings-ontap.html["[詳細設定]ページ"]。
-
-
-
-==== これで、ソースシステムで不要になったボリュームのアーカイブにCloud Backupを使用できるようになります
-
-これで、ボリュームのバックアップ関係を削除できるようになります。これにより、新しいバックアップファイルの作成を停止してソースボリュームを削除し、既存のすべてのバックアップファイルを保持する場合に、アーカイブメカニズムを実現できます。これにより、必要に応じて、あとでソースストレージシステムからスペースを消去しながら、バックアップファイルからボリュームをリストアできるようになります。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backups-ontap.html#deleting-volume-backup-relationships["詳細をご確認ください"]。
-
-
-
-==== Cloud BackupのアラートをEメールおよび通知センターで受信するためのサポートが追加されました
-
-Cloud Backupは、BlueXP Notificationサービスに統合されています。Cloud Backup通知を表示するには、BlueXPメニューバーの通知ベルをクリックします。また、システムにログインしていないときでも重要なシステムアクティビティを通知できるように、メールで通知を送信するようにBlueXPを構成することもできます。このEメールは、バックアップとリストアのアクティビティに注意する必要があるすべての受信者に送信できます。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#use-the-job-monitor-to-view-backup-and-restore-job-status["詳細をご確認ください"]。
-
-
-
-==== 新しいAdvanced Settingsページでは、クラスタレベルのバックアップ設定を変更できます
-
-この新しいページでは、ONTAP システムごとにクラウドバックアップをアクティブ化するときに設定したクラスタレベルのバックアップ設定の多くを変更できます。「デフォルト」バックアップ設定として適用される一部の設定を変更することもできます。変更可能なバックアップ設定の完全なセットは、次のとおりです。
-
-* ONTAP システムにオブジェクトストレージへのアクセス権を付与するストレージキー
-* バックアップをオブジェクトストレージにアップロードするために割り当てられるネットワーク帯域幅
-* 以降のボリュームの自動バックアップ設定（およびポリシー）
-* アーカイブストレージクラス（AWSのみ）
-* Snapshotコピーの履歴が最初のベースラインバックアップファイルに含まれているかどうか
-* ソースシステムから「年次」スナップショットを削除するかどうか
-* オブジェクトストレージに接続されているONTAP IPspace（アクティブ化時に誤って選択された場合）
-
-
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backup-settings-ontap.html["クラスタレベルのバックアップ設定の管理に関する詳細情報"]。
-
-
-
-==== オンプレミスコネクタを使用している場合に、検索とリストアを使用してバックアップファイルをリストアできるようになりました
-
-以前のリリースでは、Connectorをオンプレミスに導入すると、バックアップファイルをパブリッククラウドに作成するためのサポートが追加されていました。このリリースでは、Connectorがオンプレミスに導入されている場合、Search & Restoreを使用してAmazon S3またはAzure Blobからバックアップをリストアできるようになりました。検索とリストアでは、StorageGRID システムからオンプレミスのONTAP システムへのバックアップのリストアもサポートされています。
-
-現時点では、Google Cloud Storageからバックアップをリストアするために検索とリストアを使用する場合、ConnectorをGoogle Cloud Platformに導入する必要があります。
-
-
-
-==== ジョブ監視ページが更新されました
-
-には、次の更新が行われています https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html["ジョブ監視ページ"]：
-
-* 「ワークロード」の列を使用して、ページをフィルタして、ボリューム、アプリケーション、仮想マシン、Kubernetesの各バックアップサービスのジョブを表示できます。
-* 特定のバックアップジョブの詳細を表示するには、「ユーザ名」と「ジョブタイプ」の列を新たに追加します。
-* [ジョブの詳細]ページには、メインジョブを完了するために実行中のすべてのサブジョブが表示されます。
-* このページは15分ごとに自動的に更新されるため、常に最新のジョブステータスの結果が表示されます。また、[*更新*]ボタンをクリックすると、ページをすぐに更新できます。
-
-
-
-
-==== AWSのクロスアカウントバックアップの機能拡張
-
-Cloud Volumes ONTAP バックアップにソースボリュームに使用しているものとは異なるAWSアカウントを使用する場合は、デスティネーションのAWSアカウントクレデンシャルをBlueXPに追加し、「s3：PutBucketPolicy」および「s3：PutBucketOwnershipControls」権限をBlueXPに権限を提供するIAMロールに追加する必要があります。これまでは、AWSコンソールで多数の設定を行う必要がありましたが、これはもう必要ありません。
-
-
-
 == クラウドデータの意味
 
 
@@ -438,7 +417,7 @@ Cloud Volumes ONTAP バックアップにソースボリュームに使用して
 
 以前のバージョンのCloud Data Senseでは、特定の重要なポリシーの結果が返されたときに、アカウントのBlueXPユーザーに電子メールアラートを送信できました。この機能を使用すると、オンラインでないときにデータを保護するための通知を受け取ることができます。また、ポリシーから、BlueXPアカウントに登録されていない最大20個の電子メールアドレスを持つ他のユーザーに電子メールアラートを送信することもできます。
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#sending-email-alerts-when-non-compliant-data-is-found["ポリシーの結果に基づいて電子メールアラートを送信する方法については、こちらをご覧ください"]。
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-using-policies.html#sending-email-alerts-when-non-compliant-data-is-found["ポリシーの結果に基づいて電子メールアラートを送信する方法については、こちらをご覧ください"]。
 
 
 
@@ -487,7 +466,7 @@ Governanceダッシュボードには、機密データ（機密性の高い個�
 * 「ファイルパス」フィルタで、フィルタリングされたクエリ結果から除外するパスを指定できるようになりました。特定のデータを含むパスと除外するパスの両方を入力すると、最初に含まれているパス内のすべてのファイルが検出され、除外されたパスからファイルが削除され、結果が表示されます。
 
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["データの調査に使用できるすべてのフィルタのリストを確認します"]。
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.html#filtering-data-in-the-data-investigation-page["データの調査に使用できるすべてのフィルタのリストを確認します"]。
 
 
 
@@ -789,7 +768,7 @@ Google Cloudのデータブローカーのデフォルトのマシンタイプ�
 
 
 
-==== 必須コネクターアウトバウンドインターネットアクセスエンドポイントの変更
+==== Connectorアウトバウンドインターネットアクセスエンドポイントの変更
 
 Cloud Tieringの変更が行われたため、クラウド階層化処理を成功させるには、次のコネクタエンドポイントを変更する必要があります。
 
