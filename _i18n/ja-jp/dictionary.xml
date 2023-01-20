@@ -491,4 +491,18 @@
   <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">データで特定できるすべての種類の個人データを表示します</block>
   <block id="21e575de9b2cf958293bb22c657eba7b" category="paragraph">データセンスでは、日本語の個人番号（My Number）を含むファイルを識別して分類できます。これには、個人用電話番号と会社用電話番号の両方が含まれます。<block ref="b4ce36808fde13e40836bb7d14af31c6" category="inline-link-rx"></block>。</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXPのブログ</block>
+  <block id="5a0c953dba56aa463b4468d70bfc3feb" category="section-title">2023年1月1日</block>
+  <block id="f99ecd5cff9b18879fcd5ee404af256f" category="inline-link-macro">容量の自動管理</block>
+  <block id="380fe7c3627610af34c9936f46325923" category="paragraph">これで、を有効にすることができます <block ref="79658b4a46346ad9aa23a5f92d57dfaa" category="inline-link-macro-rx"></block> 必要に応じて差分ストレージを追加自動容量管理では、要求を評価するためにクラスタを定期的にポーリングし、クラスタの最大容量の10%までの割合でストレージ容量を自動的に拡張します。</block>
+  <block id="3abe9a67eae0ad33b1c96ff4ae8b1eaa" category="inline-link-macro">ストレージ容量とIOPSを変更します</block>
+  <block id="4054992d1ab241cf4542bc8cd502d679" category="paragraph">次の操作を実行できます。 <block ref="57fbdd5ba152894391c55cce5d9fe8f8" category="inline-link-macro-rx"></block> ONTAP 作業環境用のFSXを作成した後であれば、いつでも作成できます。</block>
+  <block id="dd15e63d013ad6e70302caae66b83f6d" category="list-text">以前にCloud ManagerにAWSクレデンシャルを指定していた場合、新しい* My Opportunities *機能によって、Cloud Managerを使用して追加および管理するONTAP ファイルシステムのFSXが自動的に検出されて提案されます。また、［* My Opportunities *］タブで、利用可能なデータサービスを確認することもできます。</block>
+  <block id="6ebe96f0162b363fd765e000afd1c4f0" category="inline-link-macro">「My Opportunities（機会）」を使用して、FSX for ONTAP を検出</block>
+  <block id="a83471208430f7fbd0630757d97c5142" category="paragraph"><block ref="a83471208430f7fbd0630757d97c5142" category="inline-link-macro-rx"></block></block>
+  <block id="e2399171d04de4904bc9ceb3e1c97260" category="inline-link-macro">スループット容量を変更します</block>
+  <block id="6cd901297cf29a4b459f2cc11e68c6d6" category="list-text">次の操作を実行できます。 <block ref="697a0d5ee189fb6da3b3bef50626dd94" category="inline-link-macro-rx"></block> ONTAP 作業環境用のFSXを作成した後であれば、いつでも作成できます。</block>
+  <block id="7699be7c50b8640b313d71cce9004797" category="inline-link-macro">データをレプリケートして同期</block>
+  <block id="897d994d4d024883042e664eba152417" category="list-text">次の操作を実行できます。 <block ref="df556429a26e71fbf9e095a790447f2b" category="inline-link-macro-rx"></block> FSX for ONTAP をソースとして使用する、ONTAP システム用のオンプレミスおよびその他のFSXへの移行。</block>
+  <block id="42c82b44ceecde8407f75a70409e2aec" category="inline-link-macro">Cloud Managerを使用して、FSX for ONTAP にiSCSIボリュームを作成します</block>
+  <block id="cf648eb1e2c8b4986628f39a529b68f1" category="list-text">次の操作を実行できます。 <block ref="7c9b88630e88eb3d402b9bbec2515bca" category="inline-link-macro-rx"></block>。</block>
 </blocks>

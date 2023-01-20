@@ -141,6 +141,31 @@ Cloud Manager では、ボリューム Snapshot を作成、削除、リスト�
 
 
 
+=== 2023年1月1日
+
+これで、を有効にすることができます link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#manage-automatic-capacity["容量の自動管理"^] 必要に応じて差分ストレージを追加自動容量管理では、要求を評価するためにクラスタを定期的にポーリングし、クラスタの最大容量の10%までの割合でストレージ容量を自動的に拡張します。
+
+
+
+=== 2022年9月18日
+
+次の操作を実行できます。 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#change-storage-capacity-and-IOPS["ストレージ容量とIOPSを変更します"^] ONTAP 作業環境用のFSXを作成した後であれば、いつでも作成できます。
+
+
+
+=== 2022年7月31日
+
+* 以前にCloud ManagerにAWSクレデンシャルを指定していた場合、新しい* My Opportunities *機能によって、Cloud Managerを使用して追加および管理するONTAP ファイルシステムのFSXが自動的に検出されて提案されます。また、［* My Opportunities *］タブで、利用可能なデータサービスを確認することもできます。
++
+link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system["「My Opportunities（機会）」を使用して、FSX for ONTAP を検出"^]
+
+* 次の操作を実行できます。 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#change-throughput-capacity["スループット容量を変更します"^] ONTAP 作業環境用のFSXを作成した後であれば、いつでも作成できます。
+* 次の操作を実行できます。 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#replicate-and-sync-data["データをレプリケートして同期"^] FSX for ONTAP をソースとして使用する、ONTAP システム用のオンプレミスおよびその他のFSXへの移行。
+* 次の操作を実行できます。 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes["Cloud Managerを使用して、FSX for ONTAP にiSCSIボリュームを作成します"^]。
+
+
+
+
 == アプリケーションテンプレート
 
 
