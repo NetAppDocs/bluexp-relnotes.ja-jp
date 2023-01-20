@@ -30,8 +30,6 @@
   <block id="24e6e2f6171b43a847fe194a9a9b5cd0" category="inline-link">グローバルファイルキャッシュ</block>
   <block id="24bb270dd8a21f04115481dc5a9e23f9" category="list-text"><block ref="24bb270dd8a21f04115481dc5a9e23f9" category="inline-link-rx"></block></block>
   <block id="423e555c5ec3885f2bb5d9d2d6627f63" category="inline-link">監視</block>
-  <block id="232a2b16a1710c0ed1d16548ba8bb8f1" category="inline-link">ランサムウェア</block>
-  <block id="723c4c67941a96b49b471e8a0ef4b07d" category="list-text"><block ref="723c4c67941a96b49b471e8a0ef4b07d" category="inline-link-rx"></block></block>
   <block id="8c340dc334134096f68b880b42a8692c" category="inline-link">レプリケーション</block>
   <block id="c49bb8aa9fd443e227ec7dd83d980f9b" category="list-text"><block ref="c49bb8aa9fd443e227ec7dd83d980f9b" category="inline-link-rx"></block></block>
   <block id="7258e7251413465e0a3eb58094430bde" category="section-title">管理</block>
@@ -243,17 +241,8 @@
   <block id="c642de9f40ee79267e2e62e3ebed032e" category="section-title">2022年11月1日</block>
   <block id="23888423406e47190ca0cf40a113c61f" category="inline-link">NSS アカウントを管理する方法について説明します</block>
   <block id="929fa09ef9d24654b353f312638ca6e6" category="paragraph">アカウントに関連付けられた更新トークンが3カ月後に期限切れになると、Cloud ManagerはNetApp Support Site アカウントに関連付けられたクレデンシャルの更新を求めます。<block ref="abba285888ca54da9f89054b7e57f270" category="inline-link-rx"></block></block>
-  <block id="2d96aa84884717fd77e4906d82c73ddc" category="section-title">2022年9月28日</block>
   <block id="89d500a3ace67f6d47edb61231336589" category="section-title">Cloud Backup for Applicationsの機能強化</block>
-  <block id="f617da6b50728500642eb376ab97b6f4" category="list-text">カスタムポリシーを作成する</block>
-  <block id="eaec67d5f8f719a2f05b5ded5dc4ce60" category="list-text">アーカイブストレージをサポートします</block>
-  <block id="37976e53c610f9f37f8310aaacc3323e" category="list-text">SAP HANAアプリケーションをバックアップ</block>
-  <block id="bd3468a6ecb625b121385bd7f39c67e1" category="list-text">VMware環境のOracleおよびSQLアプリケーションをバックアップする</block>
-  <block id="a0f2b147a9c0eb0f8a59efd52556c7a2" category="list-text">オンプレミスのセカンダリストレージからアプリケーションをバックアップ</block>
-  <block id="c05b61fb3f1a201cd787a5c713ee2461" category="list-text">バックアップの非アクティブ化</block>
-  <block id="40cfdc443f8536e4e751b21f465246d7" category="list-text">SnapCenter サーバを登録解除します</block>
   <block id="e75ce95021f32383e6a928c1b242bc34" category="section-title">Cloud Backup for Virtual Machinesの機能拡張</block>
-  <block id="46a34c0c1ccc14eb217db2e715c43df6" category="list-text">では、StorageGRID を使用して1つ以上のデータストアをバックアップできます</block>
   <block id="f3630c1c94e3e51aaea5bdd037dc03c9" category="section-title">2022年10月30日</block>
   <block id="5c7d084f950ad8af7d03c171b38bbaba" category="section-title">Microsoft Azureからの継続的な同期</block>
   <block id="e4c664e7de05c9b6f33c4dc4c5e8c120" category="paragraph">Azureデータブローカーを使用し、ソースのAzureストレージバケットからクラウドストレージへの継続的な同期設定がサポートされるようになりました。</block>
@@ -290,7 +279,6 @@
   <block id="c491d515e74738c0f4f9512024e9b4cd" category="paragraph">SnapCenter サービスは2022年11月1日に廃止されました。</block>
   <block id="0b17baeba205d071cc0142cf4aba9b76" category="paragraph">StorageGRID システムをBlueXPから直接検出できるようになりました。StorageGRID を検出すると、ハイブリッドマルチクラウド全体のデータを包括的に把握できます。</block>
   <block id="ed8f5e7e321372398aae23788c3243a0" category="sidebar">BlueXPインデックス</block>
-  <block id="ff93781ff90bf605d8b3070c1501b28f" category="sidebar">BlueXPのウェブサイトのblog</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">BlueXPのすべてのマニュアル</block>
   <block id="733947b9c31fd162b40f0854f88a98f0" category="section-title">2022年11月2日</block>
   <block id="4e1bedfa5acb9fc8467640ea1dcaece3" category="section-title">古いSnapshotコピーをベースラインバックアップファイルにエクスポートできるようになりました</block>
@@ -319,7 +307,6 @@
   <block id="bcce731a4ced178ba1457a0965f1a878" category="list-text">[ジョブの詳細]ページには、メインジョブを完了するために実行中のすべてのサブジョブが表示されます。</block>
   <block id="95bdcffb51de388c8d204ebc69a73e61" category="section-title">AWSのクロスアカウントバックアップの機能拡張</block>
   <block id="ae3795f53c6086a9639e4652dbff318b" category="paragraph">Cloud Volumes ONTAP バックアップにソースボリュームに使用しているものとは異なるAWSアカウントを使用する場合は、デスティネーションのAWSアカウントクレデンシャルをBlueXPに追加し、「s3：PutBucketPolicy」および「s3：PutBucketOwnershipControls」権限をBlueXPに権限を提供するIAMロールに追加する必要があります。これまでは、AWSコンソールで多数の設定を行う必要がありましたが、これはもう必要ありません。</block>
-  <block id="ef63a877f0594c057f824f4327169a39" category="list-text">Google Cloud Platform（GCP）とStorageGRID をサポートし、アプリケーションと整合性のあるスナップショットをバックアップします</block>
   <block id="0198cdca4033ab7a459e75dac29fa28e" category="section-title">オンプレミスのSharePointアカウントのスキャンがサポートされます</block>
   <block id="576988db8c435aebbdd8f982f33f8ac5" category="paragraph">データセンスで、SharePoint OnlineアカウントとSharePointオンプレミスアカウント(SharePoint Server)の両方をスキャンできるようになりました。SharePointを自分のサーバー、またはインターネットにアクセスできないサイトにインストールする必要がある場合は、これらのアカウントのユーザーファイルをデータ検出でスキャンできるようになりました。<block ref="8036d15ae032ce99e20eb0ee5791bf65" category="inline-link-rx"></block>。</block>
   <block id="9793f1d7484adebeb64fb621258edfaf" category="section-title">複数のディレクトリ（フォルダまたは共有）を再スキャンする機能</block>
@@ -473,9 +460,7 @@
   <block id="88a11892e7418e1eee8c952df9545b46" category="section-title">2023年1月9日</block>
   <block id="b17d2155a07524d0e8a3d1eb73a257c3" category="section-title">StorageGRID システムからAWS S3アーカイブストレージに古いバックアップファイルを移動する機能</block>
   <block id="76592785cd14862cf74d11289e50ed92" category="paragraph">これにより、StorageGRID システムの古いバックアップファイルをAWS S3のアーカイブストレージに階層化できるようになりました。これにより、StorageGRID システムのスペースを解放し、古いバックアップファイルには低コストのストレージクラスを使用することでコストを削減できます。AWS S3 GlacierまたはS3 Glacier Deep Archiveストレージにバックアップを階層化することもできます。</block>
-  <block id="481c6a107a47fcbb610d4e79b7d8bc01" category="paragraph">この機能は、クラスタでONTAP 9.12.1以降を使用していて、StorageGRID システムで11.3以降を使用している場合に使用できます。<block ref="ba1010a667c53f122912d421bb932c28" category="inline-link-rx"></block>。</block>
   <block id="5baabb9bbca503ea382779d0fce7e9c5" category="section-title">Google Cloudのデータ暗号化に、お客様が管理する独自のキーを選択できます</block>
-  <block id="d42d3ab595b05475b681bcec25a25c6b" category="paragraph">ONTAP システムからGoogle Cloud Storageにデータをバックアップする際に、Googleが管理するデフォルトの暗号化キーを使用する代わりに、アクティベーションウィザードで、お客様が管理する独自のキーを選択してデータを暗号化できるようになりました。まずお客様が管理する暗号化キーを設定し、次にCloud Backupをアクティブ化する際に詳細を入力します。</block>
   <block id="b9395c2030b2a8ad48d31ad52bd9f6e9" category="section-title">「ストレージ管理者」ロールは、サービスアカウントがGoogle Cloud Storageでバックアップを作成するために必要なくなりました</block>
   <block id="d7cf6019b64afefeee4361ce4c22ce30" category="inline-link">Google Cloud Storageでバックアップを準備する方法をご覧ください</block>
   <block id="121b4934193e6ec77a35338afd1028bb" category="paragraph">以前のリリースでは、Cloud BackupがGoogle Cloud Storageバケットにアクセスできるようにするサービスアカウントには「Storage Admin」ロールが必要でした。これで、一連の権限を減らしてサービスアカウントに割り当てるカスタムロールを作成できるようになりました。<block ref="cdc0823dc4910df979845484c27cfc1d" category="inline-link-rx"></block>。</block>
@@ -492,4 +477,18 @@
   <block id="2d7dcb96cb20cbaa2b94280f3b67d862" category="paragraph"><block ref="e3dd455551e82145f7b0bbdda5ed35ae" category="inline-link-rx"></block>。</block>
   <block id="4e499a708b699475cdaf2e23cd596d11" category="section-title">ランサムウェア対策保護アラートをEメールや通知センターで受け取るサポートが追加されました</block>
   <block id="53bccb80a99ecb6d22ac23a5d83a662e" category="paragraph">Ransomware Protectionは、BlueXP Notificationサービスに統合されています。Ransomware Protection通知を表示するには、BlueXPメニューバーの通知ベルをクリックします。また、システムにログインしていないときでも重要なシステムアクティビティを通知できるように、メールで通知を送信するようにBlueXPを構成することもできます。このEメールは、ランサムウェアのアラートに注意する必要のある受信者に送信できます。<block ref="4b31f56f66b4ac96107c1c8a3ca6ad6e" category="inline-link-rx"></block>。</block>
+  <block id="4856dfc18851de08c9ed97332b1fd100" category="list-text"><block ref="4856dfc18851de08c9ed97332b1fd100" category="inline-link-rx"></block></block>
+  <block id="b7027e7163ab44680c3c69296db41564" category="paragraph">この機能は、オンプレミスクラスタでONTAP 9.12.1以降を使用し、StorageGRID システムで11.3以上を使用している場合に使用できます。<block ref="ba1010a667c53f122912d421bb932c28" category="inline-link-rx"></block>。</block>
+  <block id="0b17a5b6850808b4455bcd3d8bf54966" category="paragraph">ONTAP システムからGoogle Cloud Storageにデータをバックアップする際に、Googleが管理するデフォルトの暗号化キーを使用する代わりに、アクティベーションウィザードで、お客様が管理する独自のキーを選択してデータを暗号化できるようになりました。まずGoogleでお客様管理の暗号化キーを設定し、次にCloud Backupをアクティブ化する際に詳細を入力します。</block>
+  <block id="e083799711dc9b588bbb440525564506" category="section-title">インターネットにアクセスできないサイトで検索とリストアを使用してデータをリストアする機能がサポートされるようになりました</block>
+  <block id="a282fca785a0e402e0b5cdde4c380d6d" category="paragraph">インターネットアクセスのないサイト（ダークサイトまたはオフラインサイトとも呼ばれます）のオンプレミスのONTAP クラスタからStorageGRID にデータをバックアップする場合は、必要に応じて検索とリストアのオプションを使用してデータをリストアできるようになりました。この機能を使用するには、BlueXPコネクタ(バージョン3.9.25以上)がオフラインサイトに配置されている必要があります。</block>
+  <block id="c9ec78264dce9938676b736265201e28" category="inline-link">検索とリストアを使用してONTAP データをリストアする方法を参照してください</block>
+  <block id="6f44a1bf2246f054fd573ae9473909b6" category="inline-link">コネクターをオフラインサイトにインストールする方法を参照してください</block>
+  <block id="74aacc002c6d6d85e9786012bf71af08" category="paragraph"><block ref="fbe0ce057e5d8013a227c4cb944242a5" category="inline-link-rx"></block>。<block ref="eb618b89294e80d594faecbc4641afee" category="inline-link-rx"></block>。</block>
+  <block id="5e6d4a84337eb1e0ff5a019edf3a15d6" category="section-title">機密データが含まれ、過度に許容されるファイルのグラフを表示する機能</block>
+  <block id="d9b195efc41ceb51899b712eb2c0c583" category="paragraph">Governanceダッシュボードには、機密データ（機密性の高い個人データと機密性の高い個人データの両方を含む）を含むファイルのヒートマップを提供するnew_sensitive DataおよびWide Permissive_areaが追加されています。これにより、機密データを含むリスクがある場所を確認できます。<block ref="315faeb2b0e6f27dd87bce24f0b16dd0" category="inline-link-rx"></block>。</block>
+  <block id="39042f4c3554377e7367f85ef5edf207" category="section-title">データセンスは日本語の個人番号を識別できます</block>
+  <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">データで特定できるすべての種類の個人データを表示します</block>
+  <block id="21e575de9b2cf958293bb22c657eba7b" category="paragraph">データセンスでは、日本語の個人番号（My Number）を含むファイルを識別して分類できます。これには、個人用電話番号と会社用電話番号の両方が含まれます。<block ref="b4ce36808fde13e40836bb7d14af31c6" category="inline-link-rx"></block>。</block>
+  <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXPのブログ</block>
 </blocks>
