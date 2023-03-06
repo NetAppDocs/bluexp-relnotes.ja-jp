@@ -288,14 +288,6 @@
   <block id="2750ec6dc42d79b24b9902d41543b6fd" category="paragraph"><block ref="0b2b94d5062b1eb6747bf9cb58e01b77" category="inline-link-rx"></block>。</block>
   <block id="d1c49eec91984b5c0c7c8ff6998bb65d" category="section-title">バックアップのデータをCloud Volumes ONTAP システムの特定のアグリゲートにリストアする機能</block>
   <block id="e674451efff1f119cf056a3e852d4483" category="paragraph">以前のリリースでは、データをオンプレミスのONTAP システムにリストアする場合にのみアグリゲートを選択できました。この機能は、Cloud Volumes ONTAP システムにデータをリストアする場合に使用できるようになりました。</block>
-  <block id="c3828ad11edf9a8e2a0d7bd8910b2ad3" category="section-title">2022年12月11日（バージョン1.18）</block>
-  <block id="329171a5c817ab7ae03a1497aa6d59fa" category="section-title">オンプレミスインストールの機能拡張</block>
-  <block id="500b30285e1a741b658bc533a0a125a1" category="paragraph">オンプレミスのデータセンスインストールには、次の拡張機能が追加されています。</block>
-  <block id="bacf3e82e48abd0e39c6a162b4aa7191" category="list-text">オンプレミスホストでインストールを開始する前に、いくつかの前提条件が確認されます。これにより、ホストシステムにデータセンスソフトウェアを100%インストールできる状態になります。</block>
-  <block id="8e3833fdafa0cd3a63d1fae40cbd74e9" category="list-text">必要なすべてのフォルダについて、関連する権限をテストします</block>
-  <block id="36cbb51c271d3c68a01a8599c0fbd2b8" category="list-text">[構成]ページの[作業環境]セクションに、_Working Environment ID_と_Scanner Group_nameが表示されるようになりました。複数のData Senseホストを使用して、データソースをスキャンする処理能力を追加する場合は、Working Environment IDを知っておく必要があります。</block>
-  <block id="73e22396c6474ab27832098f1351b823" category="inline-link">1台のホストサーバと複数のホストにデータセンスをインストールする方法については、こちらをご覧ください</block>
-  <block id="7d11de825f5fb48a0194c3826f7e2322" category="paragraph"><block ref="6aec5abc0a91e6bbae2064cb8f81d2dd" category="inline-link-rx"></block>。</block>
   <block id="5912630061434e78e733b8d5e5e3dc88" category="section-title">2022年12月11日</block>
   <block id="9709c6ba9ff4b10cb5ec3f4f956d3226" category="section-title">ディレクトリを名前でフィルタリングします</block>
   <block id="43b44f78e255d05aac846a6181095cd6" category="paragraph">同期関係に新しい*ディレクトリ名を除外*設定を使用できるようになりました。ユーザは、最大15個のディレクトリ名を同期から除外できます。デフォルトでは、.copy-Offload、.snapshot、~snapshotディレクトリが除外されます。</block>
@@ -308,13 +300,6 @@
   <block id="c7360b05ac6a5646b2770ea0c162d4fb" category="inline-link">サポートされている同期関係の詳細を確認できます</block>
   <block id="623dda645e4d20988b8c1d61423da14e" category="paragraph"><block ref="f9c4f71cab183e7ba62e68df19c3dfe9" category="inline-link-rx"></block>。</block>
   <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP</block>
-  <block id="fe9c9f72fd091b4ebc4d0686a2dccdc6" category="section-title">2022年12月11日</block>
-  <block id="ff1a552e36acc064f2353128cc8cae7e" category="section-title">新たに推奨される対処方法がランサムウェア防御スコアパネルに追加されました</block>
-  <block id="3a3306a02dc91a314c088887bca99ae6" category="paragraph">ストレージシステムで見つかった次のランサムウェアからの保護の問題に対して、2つの新しい推奨処置が表示されるようになりました。</block>
-  <block id="ac70ac84684b450ac1ec25740da08f6f" category="list-text">_幅広いアクセス権を持つXの機密項目に対するアクセス権を削減します。オープンアクセス権を持つ機密ファイルがデータソースに見つかりました</block>
-  <block id="e536c956b5336f840fdf1f34295e7626" category="list-text">_Yデータソース間のパッチXオープンCVE --パッチ適用されていないONTAP システム上に存在するCVE</block>
-  <block id="dced9da708bc7f04e84ad156297f2b2a" category="inline-link">推奨されるすべての対処方法の一覧を確認してください</block>
-  <block id="2887af3281ffddb6374ef4f66b57c7d5" category="paragraph">UIでこれらの操作を選択し、ワークフローに従って根本的な問題を解決できます。<block ref="ed823e4f932da1d207b551c7d7ca0450" category="inline-link-rx"></block>。</block>
   <block id="1f7138998459804601fc351f8d442e29" category="section-title">2023年1月1日</block>
   <block id="e139aa454163ce195b3669d769c3f1c8" category="section-title">コネクタ3.9.25</block>
   <block id="ab010f0ae1d3cb2043f9513a1f81beea" category="paragraph">このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とバグ修正が含まれています。</block>
@@ -348,8 +333,6 @@
   <block id="e3a84cf85e2ede3f349ff73485707901" category="section-title">UIでのGoogleアーカイブストレージクラスの選択がサポートされます</block>
   <block id="862c6bfd630667f5b535d9741b4f08fc" category="paragraph">バックアップファイルは、最初にGoogle Standardストレージクラスで作成されます。Cloud Backup UIを使用して、特定の日数が経過した古いバックアップをGoogle Archiveストレージに階層化し、コストをさらに最適化できるようになりました。</block>
   <block id="f337eb9be5f215d07b89436adc58d486" category="paragraph">Cloud BackupでFlexGroup ボリュームのバックアップとリストアがサポートされるようになりました。ONTAP 9.12.1以降を使用している場合は、FlexGroup ボリュームをパブリッククラウドストレージとプライベートクラウドストレージにバックアップできます。FlexVol ボリュームとFlexGroup ボリュームが含まれる作業環境がある場合、ONTAP ソフトウェアを更新すると、それらのシステム上の任意のFlexGroup をバックアップできます。</block>
-  <block id="c73eb1c0478b9ea7f0699ac7b64d4214" category="list-text">の十分なスペースをテストします<block ref="2e1a4e3f55001820560b237188c70bc3" prefix=" " category="inline-code"></block>、<block ref="d42b9c57d24cf5db3bd8d332dc35437f" prefix=" " category="inline-code"></block>および<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block></block>
-  <block id="da8fda88af08dfa86e6c1895e629a7a5" category="list-text">また、設定ページの新しいセクションには、設定したスキャナグループと各グループにあるスキャナノードが表示されます。</block>
   <block id="bfc6fe3f8d2577420634f29daac2cfe3" category="section-title">2023年1月3日</block>
   <block id="2ce75b34222d130ea74078b75eb79cc0" category="section-title">データブローカーのローカル設定をUIに表示します</block>
   <block id="88dcb8d0dd987f4f5606df5981050a8d" category="paragraph">ユーザがUIで各データブローカーのローカル設定を表示できるように、構成を表示*オプションが追加されました。</block>
@@ -420,7 +403,6 @@
   <block id="f0da8cded20db5ee6dce9c1c4da7bcd8" category="section-title">任意のEメールアドレスにポリシーベースの通知Eメールを送信できます</block>
   <block id="01bfbdebf8836af0160f70e1bacc3787" category="paragraph">以前のバージョンのCloud Data Senseでは、特定の重要なポリシーの結果が返されたときに、アカウントのBlueXPユーザーに電子メールアラートを送信できました。この機能を使用すると、オンラインでないときにデータを保護するための通知を受け取ることができます。また、ポリシーから、BlueXPアカウントに登録されていない最大20個の電子メールアドレスを持つ他のユーザーに電子メールアラートを送信することもできます。</block>
   <block id="01111213f34b03537871696a29c018fa" category="inline-link">ポリシーの結果に基づいて電子メールアラートを送信する方法については、こちらをご覧ください</block>
-  <block id="58c8b31479a452f2c02b4c4beb2b8e6f" category="section-title">これで、UIからData Senseによって識別される個人パターンを追加できるようになりました</block>
   <block id="bbc056ffe85cbc0784df7b39d5fac941" category="paragraph">データセンスには、将来のスキャンでデータセンスが特定できるカスタムの「個人データ」を追加する機能がありました。ただし、データセンスLinuxホストにログインし、コマンドラインを使用してカスタムパターンを追加する必要がありました。今回のリリースでは、データセンスUIに正規表現を使用してパターンを追加できるため、カスタムパターンの追加や編集が非常に簡単になりました。</block>
   <block id="e743c1cea3cca118a07bf2fd9a21ec39" category="inline-link">データセンスUIからカスタムパターンを追加する方法については、こちらをご覧ください</block>
   <block id="6f3ebec91d6086cea205504bdbc3fd37" category="paragraph"><block ref="8eedc9e36b5a6054f1f5d8b4937ba068" category="inline-link-rx"></block>。</block>
@@ -547,4 +529,47 @@
   <block id="f86857f0a51fde5819da3a17258b5448" category="inline-link">階層化レポートのダウンロード方法をご覧ください</block>
   <block id="10607665fc9de51ae2bf29927d3673b9" category="paragraph">[階層ボリューム]ページからレポートをダウンロードして、管理しているクラスタ上のすべてのボリュームの階層化ステータスを確認できます。Cloud Tieringは.csvファイルを生成します。このファイルを確認して、必要に応じて社内の他のユーザに送信できます。<block ref="b6be70acd3f28aaa18a7e212c9bc7736" category="inline-link-rx"></block>。</block>
   <block id="ed9855757b31d516a4fa8f955edec2eb" category="list-text">BlueXPのKubernetesでAstra Trident 23.01がサポートされるようになりました。</block>
+  <block id="916fe80558e430806f51297666a415c2" category="section-title">2023年3月7日（バージョン1.21）</block>
+  <block id="7cc6aa730dc07100bcd50ee1f4fbfd19" category="section-title">Data Sense UIから独自のカスタムカテゴリを追加する新機能</block>
+  <block id="19c8ed5c1b936813e368bc7d83dbccf2" category="inline-link">事前定義されたカテゴリ</block>
+  <block id="e9b59b0856829e5de68c6c48d7bf751a" category="paragraph">Data Senseでは、独自のカスタムカテゴリを追加できるようになりました。これにより、これらのカテゴリに該当するファイルがData Senseによって識別されます。Data Senseには多数あります<block ref="de03089a629f50d7fb2223d1c9b484a6" category="inline-link-rx"></block>そのため、この機能を使用すると、カスタムカテゴリを追加して、組織固有の情報がデータ内のどこにあるかを特定できます。</block>
+  <block id="4aedc0068ab1ebb9a68cd09e40502224" category="paragraph"><block ref="29977fc02ca1e575e657cf5a87ae1883" category="inline-link-rx"></block>。</block>
+  <block id="0cfe3d251c44c584db4827f5eac474f3" category="section-title">Data Sense UIからカスタムキーワードを追加できるようになりました</block>
+  <block id="675cae3035897ece265ad5535f76321b" category="paragraph">Data Senseには、将来のスキャンでData Senseが識別するカスタムキーワードを追加する機能があります。ただし、Data Sense Linuxホストにログインし、コマンドラインインターフェイスを使用してキーワードを追加する必要がありました。このリリースでは、Data Sense UIでカスタムキーワードを追加できるようになり、これらのキーワードの追加や編集が非常に簡単になりました。</block>
+  <block id="3c12577975025d20be661bf1079d0923" category="inline-link">Data Sense UIからカスタムキーワードを追加する方法については、こちらをご覧ください</block>
+  <block id="5e505948799cd73b45f70a049da0e41a" category="paragraph"><block ref="ef53a029e403771b20a22fa95fad2aaa" category="inline-link-rx"></block>。</block>
+  <block id="146d89b210b39f6767f51058456d0756" category="section-title">「最終アクセス時間」が変更されたときに、Data Sense * NOT *スキャンファイルを使用できるようになりました</block>
+  <block id="a295dd857506727c4c246759c7a474d3" category="paragraph">デフォルトでは、Data Senseに適切な「書き込み」権限がない場合、Data Senseでは「最終アクセス時間」を元のタイムスタンプに戻すことができないため、ボリューム内のファイルはスキャンされません。ただし、最終アクセス時刻がファイルの元の時刻にリセットされていても問題ない場合は、[Configuration]ページでこの動作を無効にして、Data Senseが権限に関係なくボリュームをスキャンするようにできます。</block>
+  <block id="b6bc23c7fd42c2dda40fd1667ea26c94" category="paragraph">この機能と併せて、「Scan Analysis Event」という新しいフィルタが追加されました。これにより、Data Senseが最終アクセス時刻を元に戻すことができなかったために分類されなかったファイル、またはData Senseが最終アクセス時刻を元に戻すことができなかったにもかかわらず分類されたファイルを表示できます。</block>
+  <block id="b498fa3614efad3784e7b196a75f0744" category="inline-link">「Last access time timestamp」とData Senseに必要な権限の詳細については、こちらを参照してください</block>
+  <block id="fdcb05c5040512d32e3c0eb54cd81fdb" category="paragraph"><block ref="094f0faa5796fc52325373d032f76ea7" category="inline-link-rx"></block>。</block>
+  <block id="7abfe7c481a0b29f8cf39a89e86de868" category="section-title">Data Senseは、3つの新しいタイプの個人データを特定します</block>
+  <block id="3b4b0faa54186ef002c6026e97e51a10" category="paragraph">データセンスでは、次の種類のデータを含むファイルを識別および分類できます。</block>
+  <block id="e47ea30e34a3a076c6a7779b8a54db7c" category="list-text">ボツワナIDカード（Omang）番号</block>
+  <block id="2d3ad991cc78b072cf48ad8db3fb43e0" category="list-text">ボツワナパスポート番号</block>
+  <block id="ff3bab043a00af2e37e7dcaf393aea61" category="list-text">シンガポール国民登録IDカード（NRIC）</block>
+  <block id="1e95bdda0b00306da0fc13aa5272c14f" category="paragraph"><block ref="fbd66eb529b6064c128e443473612523" category="inline-link-rx"></block>。</block>
+  <block id="c750c2392e2683a70ab7309253a1954b" category="section-title">ディレクトリの機能が更新されました</block>
+  <block id="179219a43ca594b98a13e70b7ebc112a" category="list-text">データ調査レポートの[Light CSV Report]オプションに、ディレクトリからの情報が含まれるようになりました。</block>
+  <block id="b2755be94249995adeed2a28b31a7393" category="list-text">[Last Accessed]時間フィルタに、ファイルとディレクトリの両方の最終アクセス時刻が表示されるようになりました。</block>
+  <block id="013efea19f002683e016d90789038d6e" category="section-title">インストールの機能拡張</block>
+  <block id="7b335a4581e4988d6ea3f8d6f1235a87" category="list-text">Data Senseは、CentOS Stream 8を実行しているLinuxホストにインストールできます。</block>
+  <block id="1a62d65b23b4f298f3e1310266bbfad4" category="list-text">インターネットアクセスがないサイト（ダークサイト）用のData Senseインストーラで事前チェックが実行され、インストールを成功させるためのシステム要件とネットワーク要件が満たされていることが確認されるようになりました。</block>
+  <block id="64abb83963bf9db8126f2ee52cdc0390" category="list-text">インストール監査ログファイルは保存され、に書き込まれます<block ref="2f5e01665193c4e95e37ac69411567bb" prefix=" " category="inline-code"></block>。</block>
+  <block id="9a8e487c18ad9b8cacca43174094061d" category="section-title">Data Sense UIから個人用パターンを追加できるようになりました</block>
+  <block id="eed8585d0b45afc4676b1c89f6f22a9a" category="paragraph">コネクタの3.9.27リリースでは、次の変更が加えられました。</block>
+  <block id="e2c7f196cec5020e2b840087f6a8e068" category="section-title">Azureで16TiBと32TiBをサポート</block>
+  <block id="bfb9ab5387a727da709a7377d950cee0" category="paragraph">Cloud Volumes ONTAP では、Azureのマネージドディスクで実行される高可用性環境向けに、16TiBと32TiBのディスクサイズがサポートされるようになりました。</block>
+  <block id="8f9e72f80a7dd402a28a4b46aca286f9" category="inline-link">Azureでサポートされるディスクサイズ</block>
+  <block id="9bc26ebd17008cdc39569edf382f0b5e" category="paragraph">の詳細を確認してください<block ref="e55b1d7df019ac083c7ffec036e8de25" category="inline-link-rx"></block>。</block>
+  <block id="1bbedbfdc08c3ed9498540dc734fa96a" category="section-title">MTEKMライセンス</block>
+  <block id="3cc0e97defd245de4dee36cae1e4c485" category="paragraph">バージョン9.12.1 GA以降を実行する新規および既存のCloud Volumes ONTAP システムに、マルチテナント暗号化キー管理（MTEKM）ライセンスが含まれるようになりました。</block>
+  <block id="c43a4aedaaa96e7a4c838a24978b6052" category="paragraph">マルチテナントの外部キー管理を使用すると、NetApp Volume Encryptionの使用時に、個々のStorage VM（SVM）でKMIPサーバを介して独自のキーを保持できます。</block>
+  <block id="6b8afb72156ec7e5aff9808d22a9eb10" category="inline-link">ネットアップの暗号化ソリューションでボリュームを暗号化する方法について説明します</block>
+  <block id="bc912dd00b6301509fad22d6a376560d" category="paragraph"><block ref="532112271454bf057b0a2415bb119744" category="inline-link-rx"></block>。</block>
+  <block id="93616689ecb546d3ff1261cf76e33109" category="section-title">インターネットを使用しない環境のサポート </block>
+  <block id="28f5f7b773a8085f5db45145fb774c27" category="paragraph">インターネットから完全に分離されたすべてのクラウド環境でCloud Volumes ONTAP がサポートされるようになりました。これらの環境では、ノードベースのライセンス（BYOL）のみがサポートされます。容量単位のライセンスはサポートされていません。開始するには、コネクタソフトウェアを手動でインストールし、コネクタで実行されているBlueXPコンソールにログインし、BYOLライセンスをDigital Walletに追加してから、Cloud Volumes ONTAP を導入します。 </block>
+  <block id="4b10c384bd11c38afbbe24f979f5519d" category="section-title">2023年3月7日</block>
+  <block id="b20988b483bceb3fb63077025a07d023" category="section-title">攻撃からシステムをリカバリするための新しいRansomware Recovery Dashboardが追加されました</block>
+  <block id="aa31096585d7d55e20d8a7b196ea1a2a" category="paragraph">Ransomware Recovery Dashboardには、ランサムウェアに感染した可能性のあるデータをリカバリするためのオプションが用意されています。これにより、システムを迅速にバックアップして稼働させることができます。現時点では、リカバリアクションを使用して、破損したボリュームを、ランサムウェアの影響を受けていないSnapshotコピーに置き換えることができます。<block ref="736cade400f507ba8b7ce738b709d6e6" category="inline-link-rx"></block>。</block>
 </blocks>
