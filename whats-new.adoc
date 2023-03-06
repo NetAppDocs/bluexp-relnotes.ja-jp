@@ -17,7 +17,7 @@ summary: BlueXPプラットフォームの一部である クラウド サービ
 
 
 [role="lead"]
-BlueXPプラットフォーム（以前のCloud Manager）の一部である クラウド サービス の最新の変更点について説明します。詳細については、を参照してください link:release-notes-index.html["リリースノートの全セット"] 個々のサービスごと。
+BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します詳細については、を参照してください link:release-notes-index.html["リリースノートの全セット"] 個々のサービスごと。
 
 
 
@@ -30,6 +30,46 @@ BlueXPプラットフォーム（以前のCloud Manager）の一部である ク
 == 管理機能
 
 このセクションでは、BlueXPの管理機能に関連する新機能(アカウント、コネクタ、クラウドプロバイダの資格情報など)について説明します。
+
+
+
+=== 2023年3月5日
+
+
+
+==== コネクタ3.9.27
+
+* BlueXPコンソールで検索できるようになりました。この時点で、検索機能を使用してBlueXPのサービスと機能を検索できます。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search.png["コンソールの上部に表示されるBlueXP検索のスクリーンショット。"]
+
+* アクティブなサポートケースと解決済みのサポートケースは、BlueXPから直接表示および管理できます。NSSアカウントと会社に関連付けられたケースを管理できます。
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases["サポートケースの管理方法について説明します"]。
+
+* Red Hat Enterprise Linux 8.7を実行するホストでコネクタがサポートされるようになりました。
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["コネクタのシステム要件を確認します"]。
+
+* このコネクタは、インターネットから完全に分離されたクラウド環境でサポートされるようになりました。その後、コネクタで実行されているBlueXPコンソールを使用して、同じ場所にCloud Volumes ONTAP を導入し、オンプレミスのONTAP クラスタを検出できます（クラウド環境からオンプレミス環境に接続されている場合）。このタイプの環境では、Digital Walletを除き、他のBlueXPサービスはサポートされません。
++
+クラウドリージョンは、AWS C2S/SC2S、Azure IL6、または任意の商用リージョンのような安全な米国機関のリージョンにすることができます。
+
++
+開始するには、コネクタソフトウェアを手動でインストールし、コネクタで実行されているBlueXPコンソールにログインし、BYOLライセンスをDigital Walletに追加してから、Cloud Volumes ONTAP を導入します。
+
++
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["インターネットにアクセスできない場所にコネクタを取り付けます"^]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#access-the-local-ui["コネクタのBlueXPコンソールにアクセスします"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["未割り当てライセンスを追加します"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-overview-cvo.html["Cloud Volumes ONTAP の使用を開始します"^]
+
+
+* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張が含まれています。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-march-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
+
+
 
 
 
@@ -93,24 +133,6 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#1
 
 
 
-=== 2022年12月4日
-
-
-
-==== コネクタ3.9.24
-
-* BlueXPコンソールのURLがに更新されました https://console.bluexp.netapp.com[]
-* ConnectorはGoogle Cloudイスラエル地域でサポートされるようになりました。
-* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とオンプレミスONTAP クラスタの機能拡張も含まれています。
-+
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#4-december-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
-** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#4-december-2022["ONTAP オンプレミスクラスタの機能拡張について説明します"^]
-
-
-
-
-
-
 == Azure NetApp Files の特長
 
 
@@ -165,6 +187,12 @@ Cloud Manager では、ボリューム Snapshot を作成、削除、リスト�
 
 
 
+=== 2023年3月5日
+
+ユーザインターフェイスが改善され、ドキュメントのスクリーンショットが更新されました。
+
+
+
 === 2023年1月1日
 
 これで、を有効にすることができます link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#manage-automatic-capacity["容量の自動管理"^] 必要に応じて差分ストレージを追加自動容量管理では、要求を評価するためにクラスタを定期的にポーリングし、クラスタの最大容量の10%までの割合でストレージ容量を自動的に拡張します。
@@ -174,19 +202,6 @@ Cloud Manager では、ボリューム Snapshot を作成、削除、リスト�
 === 2022年9月18日
 
 次の操作を実行できます。 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#change-storage-capacity-and-IOPS["ストレージ容量とIOPSを変更します"^] ONTAP 作業環境用のFSXを作成した後であれば、いつでも作成できます。
-
-
-
-=== 2022年7月31日
-
-* 以前にCloud ManagerにAWSクレデンシャルを指定していた場合、新しい* My Opportunities *機能によって、Cloud Managerを使用して追加および管理するONTAP ファイルシステムのFSXが自動的に検出されて提案されます。また、［* My Opportunities *］タブで、利用可能なデータサービスを確認することもできます。
-+
-link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system["「My Opportunities（機会）」を使用して、FSX for ONTAP を検出"^]
-
-* 次の操作を実行できます。 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#change-throughput-capacity["スループット容量を変更します"^] ONTAP 作業環境用のFSXを作成した後であれば、いつでも作成できます。
-* 次の操作を実行できます。 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#replicate-and-sync-data["データをレプリケートして同期"^] FSX for ONTAP をソースとして使用する、ONTAP システム用のオンプレミスおよびその他のFSXへの移行。
-* 次の操作を実行できます。 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes["Cloud Managerを使用して、FSX for ONTAP にiSCSIボリュームを作成します"^]。
-
 
 
 
@@ -328,7 +343,7 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-
 
 * SAP HANAデータベース
 +
-** Azure NetApp Files （ANF）上にあるSAP HANAデータベースのポリシーベースのバックアップとリストアをサポート
+** Azure NetApp Files 上にあるSAP HANAデータベースのポリシーベースのバックアップとリストアをサポートします
 ** カスタムポリシーをサポート
 
 
@@ -764,6 +779,16 @@ Google Cloudのデータブローカーのデフォルトのマシンタイプ�
 
 
 
+=== 2023年3月5日
+
+
+
+==== ボリュームの階層化レポートを生成できるようになりました
+
+[階層ボリューム]ページからレポートをダウンロードして、管理しているクラスタ上のすべてのボリュームの階層化ステータスを確認できます。Cloud Tieringは.csvファイルを生成します。このファイルを確認して、必要に応じて社内の他のユーザに送信できます。 https://docs.netapp.com/us-en/cloud-manager-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["階層化レポートのダウンロード方法をご覧ください"]。
+
+
+
 === 2022年12月6日
 
 
@@ -793,30 +818,6 @@ Cloud Tieringの変更が行われたため、クラウド階層化処理を成�
 ==== ドラッグアンドドロップして、Azure Blob、Google Cloud Storage、StorageGRID へのクラウド階層化を有効にします
 
 Azure Blob、Google Cloud Storage、またはStorageGRID 階層化のデスティネーションがキャンバス上の作業環境として存在する場合は、オンプレミスのONTAP 作業環境を移行先にドラッグして、階層化セットアップウィザードを開始できます。
-
-
-
-=== 2022年9月19日
-
-
-
-==== 階層化ウィザードでは、S3ストレージへの階層化時にAWS PrivateLinkを設定できます
-
-以前のリリースでは、VPCエンドポイントを介してクラスタをS3バケットに接続するこのセキュアな方法は、非常に時間がかかりました。前提条件となる手順を実行して、を実行します https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-aws.html#configure-your-system-for-a-private-connection-using-a-vpc-endpoint-interface["VPCエンドポイントインターフェイスを使用して、システムにプライベート接続を設定します"]をクリックすると、[ネットワーク]ページの階層化セットアップウィザードでPrivateLinkを選択できます。
-
-https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-aws.html["アクセス頻度の低いデータをAmazon S3に階層化するための要件と手順を確認します"]。
-
-
-
-==== ドラッグアンドドロップしてAmazon S3へのクラウド階層化を有効にします
-
-Amazon S3階層化のデスティネーションがキャンバスに作業環境として存在する場合は、オンプレミスのONTAP 作業環境をデスティネーションにドラッグして、階層化セットアップウィザードを開始できます。
-
-
-
-==== MetroCluster 構成のミラーオブジェクトストアを削除するときに階層化の動作を選択します
-
-MetroCluster 構成からミラーオブジェクトストアを削除する場合は、プライマリオブジェクトストアも削除するかどうかを確認するメッセージが表示されます。プライマリオブジェクトストアをアグリゲートに接続したままにすることも、削除することもできます。
 
 
 
@@ -1041,6 +1042,14 @@ https://cloud.netapp.com/cloud-insights["Cloud Insights の詳細については
 
 
 == Kubernetes
+
+
+
+=== 2023年3月5日
+
+* BlueXPのKubernetesでAstra Trident 23.01がサポートされるようになりました。
+* ユーザインターフェイスが改善され、ドキュメントのスクリーンショットが更新されました。
+
 
 
 
