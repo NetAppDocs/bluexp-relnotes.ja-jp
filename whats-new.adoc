@@ -65,6 +65,10 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.ht
 ** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-overview-cvo.html["Cloud Volumes ONTAP の使用を開始します"^]
 
 
+* このコネクタで、BlueXPからAmazon S3バケットを追加および管理できるようになりました。
++
+https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["BlueXPからAWSアカウントに新しいAmazon S3バケットを追加する方法をご確認ください"^]。
+
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張が含まれています。
 +
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-march-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
@@ -265,6 +269,28 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 
 
+=== 2023年3月9日
+
+
+
+==== フォルダレベルのリストア処理に、すべてのサブフォルダとファイルが含まれるようになりました
+
+以前は、フォルダをリストアしたときに、そのフォルダのファイルのみがリストアされました。サブフォルダやサブフォルダ内のファイルはリストアされませんでした。ONTAP 9.13.0以降を使用している場合は、選択したフォルダ内のすべてのサブフォルダとファイルが復元されます。これにより、トップレベルフォルダに複数のフォルダがネストされている場合に、時間とコストを大幅に節約できます。
+
+
+
+==== ダークサイトのCloud Volumes ONTAP システムからデータをバックアップする機能
+
+AWSおよびAzureの商用リージョンにインストールされているCloud Volumes ONTAP システムから、Amazon S3またはAzure Blobにデータをバックアップできるようになりました。そのためには、商用地域のLinuxホストにコネクタをインストールし、そこにCloud Volumes ONTAP システムを展開する必要があります。を参照してください link:task-backup-to-s3.html["Amazon S3 への Cloud Volumes ONTAP データのバックアップ"] および link:task-backup-to-azure.html["Cloud Volumes ONTAP データをAzure Blobにバックアップしています"]。
+
+
+
+==== ジョブモニタでは、特定のバックアップジョブまたはリストアジョブを検索するための高度なフィルタリングが提供されます
+
+[Job Monitoring]ページには高度なフィルタリング機能が追加され、時間、ワークロード（ボリューム、アプリケーション、仮想マシン、またはKubernetes）ごとにバックアップジョブとリストアジョブを検索できるようになりました。 ジョブタイプ、ステータス、作業環境、およびStorage VM。任意のリソース（「application_3」など）を検索するフリーテキストを入力することもできます。  https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#searching-and-filtering-the-list-of-jobs["詳細フィルタの使用方法を参照してください"]。
+
+
+
 === 2023年2月6日
 
 
@@ -346,91 +372,6 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-
 ==== ジョブ監視結果ページを.csvレポートとしてダウンロードできるようになりました
 
 [ジョブ監視]ページをフィルタリングして、必要なジョブとアクションを表示したら、そのデータの.csvファイルを生成してダウンロードできるようになりました。次に、情報を分析したり、組織内の他のユーザーにレポートを送信したりできます。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#download-job-monitoring-results-as-a-report["「ジョブ監視レポートを生成する方法」を参照してください"]。
-
-
-
-=== 2022年12月19日
-
-
-
-==== Cloud Backup for Applicationsの機能強化
-
-* SAP HANAデータベース
-+
-** Azure NetApp Files 上にあるSAP HANAデータベースのポリシーベースのバックアップとリストアをサポートします
-** カスタムポリシーをサポート
-
-
-* Oracleデータベース
-+
-** ホストを追加してプラグインを自動的に導入
-** カスタムポリシーをサポート
-** Cloud Volumes ONTAP 上にあるOracleデータベースのポリシーベースのバックアップ、リストア、およびクローニングをサポートします
-** Amazon FSX for NetApp ONTAP 上に存在するOracleデータベースのポリシーベースのバックアップおよびリストアをサポートします
-** Connect and Copy方式を使用したOracleデータベースのリストアをサポートします
-** Oracle 21cをサポートします
-** クラウドネイティブのOracleデータベースのクローニングをサポートします
-
-
-
-
-
-
-==== Cloud Backup for Virtual Machinesの機能拡張
-
-* 仮想マシン
-+
-** オンプレミスのセカンダリストレージから仮想マシンをバックアップ
-** カスタムポリシーをサポート
-** では、Google Cloud Platform（GCP）をサポートしており、1つ以上のデータストアのバックアップに使用できます
-** Glacier、Deep Glacier、Azure Archiveなどの低コストのクラウドストレージをサポートします
-
-
-
-
-
-
-=== 2022年12月6日
-
-
-
-==== 必須コネクターアウトバウンドインターネットアクセスエンドポイントの変更
-
-Cloud Backupの処理が変更されたため、クラウドバックアップの処理を成功させるには、次のコネクタエンドポイントを変更する必要があります。
-
-[cols="50,50"]
-|===
-| 古いエンドポイント | 新しいエンドポイント 
-
-
-| \ https://cloudmanager.cloud.netapp.com | \ https://api.bluexp.netapp.com 
-
-
-| \ https://*.cloudmanager.cloud.netapp.com | \ https://*.api.bluexp.netapp.com 
-|===
-のすべてのエンドポイントのリストを参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html#outbound-internet-access["AWS"^]、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#outbound-internet-access["Google Cloud"^]または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html#outbound-internet-access["Azure"^] クラウド環境：
-
-
-
-==== UIでのGoogleアーカイブストレージクラスの選択がサポートされます
-
-バックアップファイルは、最初にGoogle Standardストレージクラスで作成されます。Cloud Backup UIを使用して、特定の日数が経過した古いバックアップをGoogle Archiveストレージに階層化し、コストをさらに最適化できるようになりました。
-
-この機能は、現在、ONTAP 9.12.1以降を使用するオンプレミスONTAP クラスタでサポートされています。現在、Cloud Volumes ONTAP システムでは使用できません。
-
-
-
-==== FlexGroup ボリュームのサポート
-
-Cloud BackupでFlexGroup ボリュームのバックアップとリストアがサポートされるようになりました。ONTAP 9.12.1以降を使用している場合は、FlexGroup ボリュームをパブリッククラウドストレージとプライベートクラウドストレージにバックアップできます。FlexVol ボリュームとFlexGroup ボリュームが含まれる作業環境がある場合、ONTAP ソフトウェアを更新すると、それらのシステム上の任意のFlexGroup をバックアップできます。
-
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html#supported-volumes["サポートされるボリュームタイプの一覧を参照してください"]。
-
-
-
-==== バックアップのデータをCloud Volumes ONTAP システムの特定のアグリゲートにリストアする機能
-
-以前のリリースでは、データをオンプレミスのONTAP システムにリストアする場合にのみアグリゲートを選択できました。この機能は、Cloud Volumes ONTAP システムにデータをリストアする場合に使用できるようになりました。
 
 
 
@@ -566,6 +507,18 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.htm
 
 
 == Cloud Sync
+
+
+
+=== 2023年3月7日
+
+
+
+==== AWSデータブローカー向けのEBS Encryption
+
+アカウントのKMSキーを使用して、AWSデータブローカーのボリュームを暗号化できるようになりました。
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-installing-aws.html#creating-the-data-broker["AWSでデータブローカーを作成する方法については、こちらをご覧ください"]。
 
 
 
@@ -883,6 +836,14 @@ Azure Blob、Google Cloud Storage、またはStorageGRID 階層化のデステ�
 
 
 
+==== Cloud Volumes ONTAP 9.13.0
+
+BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.13.0を導入、管理できるようになりました。
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
+
+
+
 ==== Azureで16TiBと32TiBをサポート
 
 Cloud Volumes ONTAP では、Azureのマネージドディスクで実行される高可用性環境向けに、16TiBと32TiBのディスクサイズがサポートされるようになりました。
@@ -961,18 +922,6 @@ link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-wor
 マルチテナント暗号化キー管理（MTEKM）ライセンスは新しいCloud Volumes ONTAP 環境には含まれなくなりました。
 
 Cloud Volumes ONTAP とともに自動的にインストールされるONTAP 機能ライセンスの詳細については、を参照してください link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/reference-default-configs.html["Cloud Volumes ONTAP のデフォルト設定"^]。
-
-
-
-=== 2022年12月15日
-
-
-
-==== Cloud Volumes ONTAP 9.12.0
-
-BlueXPでは、AWSとGoogle CloudにCloud Volumes ONTAP 9.12.0を導入して管理できるようになりました。
-
-https://docs.netapp.com/us-en/cloud-volumes-ontap-9120-relnotes["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
 
 
 
