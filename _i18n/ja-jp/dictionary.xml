@@ -572,4 +572,9 @@
   <block id="4b10c384bd11c38afbbe24f979f5519d" category="section-title">2023年3月7日</block>
   <block id="b20988b483bceb3fb63077025a07d023" category="section-title">攻撃からシステムをリカバリするための新しいRansomware Recovery Dashboardが追加されました</block>
   <block id="aa31096585d7d55e20d8a7b196ea1a2a" category="paragraph">Ransomware Recovery Dashboardには、ランサムウェアに感染した可能性のあるデータをリカバリするためのオプションが用意されています。これにより、システムを迅速にバックアップして稼働させることができます。現時点では、リカバリアクションを使用して、破損したボリュームを、ランサムウェアの影響を受けていないSnapshotコピーに置き換えることができます。<block ref="736cade400f507ba8b7ce738b709d6e6" category="inline-link-rx"></block>。</block>
+  <block id="d79294e72dc3584cc12c98a7a931315d" category="inline-link">Amazon S3ストレージ</block>
+  <block id="e27ba65d55db98b6fd6764580355edcf" category="list-text"><block ref="e27ba65d55db98b6fd6764580355edcf" category="inline-link-rx"></block></block>
+  <block id="912b3a604a5106bda5b0c99ddaaf1364" category="section-title">BlueXPから新しいバケットを追加できるようになりました</block>
+  <block id="c07c4e2e029d6d6eb829c29902cb63ff" category="inline-link">新しいAmazon S3バケットを追加する方法をご覧ください</block>
+  <block id="91402ca539ef196ec17265c55db694dc" category="paragraph">BlueXP CanvasでAmazon S3バケットを表示できるようになりました。BlueXPから直接、新しいバケットを追加したり、既存のバケットのプロパティを変更したりできるようになりました。<block ref="2c8909472f79d70b0988a1b1340a52c9" category="inline-link-rx"></block>。</block>
 </blocks>
