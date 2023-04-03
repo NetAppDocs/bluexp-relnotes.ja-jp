@@ -572,4 +572,35 @@
   <block id="92900172340dbf6ba4b3454580c7583b" category="list-text"><block ref="92900172340dbf6ba4b3454580c7583b" category="inline-link-rx"></block></block>
   <block id="6f6e8b4bb29cff7fb5a94ccadb883777" category="inline-link-macro">ユーザクレデンシャルの管理方法について説明します</block>
   <block id="551a80734187b23f5368b6a5609f3de3" category="paragraph"><block ref="cf16e3f2aabf285f3de8d29b23130725" category="inline-link-macro-rx"></block>。</block>
+  <block id="cabf1912632a0d24145c02f00dc7d6b2" category="inline-link-macro">FSx for ONTAP でFlexGroup を構築</block>
+  <block id="9a2a26c33c1a0f6b14b7bb3a214dbaf0" category="list-text">次の操作を実行できます。 <block ref="5e895283a25d01b135da63bdfcfdf72e" category="inline-link-macro-rx"></block> ボリューム：ボリュームデータをクラスタ全体に分散します。</block>
+  <block id="9af9b754c1d16f271c1e6f4b1b2c4f4d" category="list-text">IOPS制限が引き上げられ、手動または自動で最大160、000のプロビジョニングが可能になりました。</block>
+  <block id="c7326baf2ea51b61fafa4f4680d916c0" category="section-title">2023年4月2日</block>
+  <block id="9c305cf5f9f8051acc945eda0fc8a1be" category="section-title">Azure Data Lake Storage Gen2関係のサポートが追加されました</block>
+  <block id="61babc330ca2ea0af752965dd3965d41" category="paragraph">Azure Data Lake Storage Gen2をソースおよびターゲットとして使用し、以下を使用して同期関係を作成できるようになりました。</block>
+  <block id="a37b0a91d7c4d8ac6ce924a7f8e1ce5a" category="list-text">On-Prem ONTAP の略</block>
+  <block id="ad5a82acd30f0d971a29fdb4632bd7d4" category="section-title">完全パスでディレクトリをフィルタリングします</block>
+  <block id="b7395f4da221ab7779cce11224436fb3" category="paragraph">ディレクトリを名前でフィルタリングするだけでなく、完全パスでディレクトリをフィルタリングできるようになりました。</block>
+  <block id="d1624b8f3b686e981a178c03616a370b" category="inline-link">[ディレクトリを除外する]設定の詳細については、こちらを参照してください</block>
+  <block id="c73e2e476b1a94d1d032f8e0828dcd20" category="paragraph"><block ref="f4b5f7467e10befa1f2855925c118fa5" category="inline-link-rx"></block>。</block>
+  <block id="2dfd965acb2426b281b13a70df99c06b" category="paragraph">コネクタの3.9.28リリースでは、次の変更が導入されました。</block>
+  <block id="671e2a59b2bfa852def9660bf14badde" category="section-title">デジタルウォレットの機能強化</block>
+  <block id="d3ab2a9ddd985032aa120324e6da3710" category="paragraph">Digital Walletに、Marketplaceのプライベートオファーで購入したライセンス容量が表示されるようになりました。</block>
+  <block id="207aaa44f72ba634c18fcc9bae44d655" category="inline-link">アカウントの使用済み容量を表示する方法について説明します</block>
+  <block id="41ed2f596edd466ead9a03a4cdcb3b22" category="paragraph"><block ref="5faaec1089d682f6bad43c9cd2141819" category="inline-link-rx"></block>。</block>
+  <block id="6ee7d527518e93562cc9e691d20fb1d5" category="section-title">ボリューム作成時のコメントがサポートされます</block>
+  <block id="ac14eb6382fa5b619966ba72622ecd3f" category="paragraph">このリリースでは、APIを使用してCloud Volumes ONTAP FlexGroup ボリュームまたはFlexVol ボリュームを作成する際にコメントを作成することができます。</block>
+  <block id="231ea98554191e640c216736796158d5" category="section-title">Cloud Volumes ONTAP の[Overview]、[Volumes]、[Aggregates]ページでBlueXPのユーザインターフェイスが再設計されました</block>
+  <block id="1cc55fcb982bea0e8f241a1271bda985" category="paragraph">Cloud Volumes ONTAP の[概要]、[ボリューム]、[アグリゲート]ページで使用できるユーザインターフェイスが再設計されました。タイルベースのデザインでは、より包括的な情報が各タイルに表示され、ユーザーエクスペリエンスが向上します。</block>
+  <block id="9000895c1e7c46e6e8fc9eb750dfb403" category="inline-image-macro">このスクリーンショットは、Cloud Volumes ONTAP の概要ページに再設計されたBlueXPユーザインターフェイスを示しています。さまざまなタイルに、ストレージ効率、バージョン、容量分布、Cloud Volumes ONTAP 環境に関する情報、ボリューム、アグリゲート、レプリケーション、バックアップが表示されます。</block>
+  <block id="23fbfdbb598644432ab089fa6e533405" category="paragraph"><block ref="23fbfdbb598644432ab089fa6e533405" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6fff4762fc0aeb74dd0a918683c157ae" category="section-title">FlexGroup ボリュームはCloud Volumes ONTAP で確認できます</block>
+  <block id="8d40e6e8379382ee39fba2c4a1cb5629" category="paragraph">CLIまたはSystem Managerで作成したFlexGroup ボリュームは、BlueXPの再設計された[ボリューム]タイルで直接表示できるようになりました。FlexVol ボリュームの場合と同じように、作成したFlexGroup ボリュームの詳細情報は専用の[Volumes]タイルで確認できます。</block>
+  <block id="905d8520d584560b3995118b2a01f6c2" category="admonition">現時点では、BlueXPでは既存のFlexGroup ボリュームのみを表示できます。BlueXPでFlexGroup ボリュームを作成することはできませんが、今後のリリースでサポートする予定です。</block>
+  <block id="91f0dcc3b5f3e7c2ced12a923ca3b92e" category="inline-image-macro">[Volumes]タイルの下にFlexGroup ボリュームアイコンが配置されたテキストを示すスクリーンショット。</block>
+  <block id="ce46ac36501bd1de8616d715ef7ee1c2" category="paragraph"><block ref="ce46ac36501bd1de8616d715ef7ee1c2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9f223d40f9c90f08d9cd6ef8cba648c3" category="inline-link-macro">作成したFlexGroup ボリュームの表示について詳しくは、こちらをご覧ください。</block>
+  <block id="acef74218ad5e199582b5c76062e5559" category="paragraph"><block ref="acef74218ad5e199582b5c76062e5559" category="inline-link-macro-rx"></block></block>
+  <block id="7786076739da628161f45de338cd6e69" category="inline-link-macro">Astra Tridentをアンインストールします</block>
+  <block id="ffb0a040d2831585e0b568e5514270de" category="list-text">次の操作を実行できます。 <block ref="16c9025f993808479cd22f07cd778a2c" category="inline-link-macro-rx"></block> これは、TridentオペレータまたはBlueXPを使用してインストールしました。</block>
 </blocks>

@@ -229,8 +229,8 @@ Cloud Manager では、ボリューム Snapshot を作成、削除、リスト�
 
 === 2023年4月2日
 
-* 9a2a26c33c1a0f6b14b7bb3a214dbaf0
-* 9af9b754c1d16f271c1e6f4b1b2c4f4d
+* 次の操作を実行できます。 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#create-volumes["FSx for ONTAP でFlexGroup を構築"^] ボリューム：ボリュームデータをクラスタ全体に分散します。
+* IOPS制限が引き上げられ、手動または自動で最大160、000のプロビジョニングが可能になりました。
 
 
 
@@ -550,29 +550,29 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.htm
 
 
 
-=== c7326baf2ea51b61fafa4f4680d916c0
+=== 2023年4月2日
 
 
 
-==== 9c305cf5f9f8051acc945eda0fc8a1be
+==== Azure Data Lake Storage Gen2関係のサポートが追加されました
 
-61babc330ca2ea0af752965dd3965d41
+Azure Data Lake Storage Gen2をソースおよびターゲットとして使用し、以下を使用して同期関係を作成できるようになりました。
 
 * Azure NetApp Files の特長
 * ONTAP 対応の Amazon FSX
 * Cloud Volumes ONTAP
-* a37b0a91d7c4d8ac6ce924a7f8e1ce5a
+* On-Prem ONTAP の略
 
 
 https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["サポートされている同期関係の詳細を確認できます"]。
 
 
 
-==== ad5a82acd30f0d971a29fdb4632bd7d4
+==== 完全パスでディレクトリをフィルタリングします
 
-b7395f4da221ab7779cce11224436fb3
+ディレクトリを名前でフィルタリングするだけでなく、完全パスでディレクトリをフィルタリングできるようになりました。
 
-c73e2e476b1a94d1d032f8e0828dcd20
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["[ディレクトリを除外する]設定の詳細については、こちらを参照してください"]。
 
 
 
@@ -904,42 +904,42 @@ Cloud Tieringの変更が行われたため、クラウド階層化処理を成�
 
 === 2023年4月3日
 
-2dfd965acb2426b281b13a70df99c06b
+コネクタの3.9.28リリースでは、次の変更が導入されました。
 
 
 
-==== 671e2a59b2bfa852def9660bf14badde
+==== デジタルウォレットの機能強化
 
-d3ab2a9ddd985032aa120324e6da3710
+Digital Walletに、Marketplaceのプライベートオファーで購入したライセンス容量が表示されるようになりました。
 
-41ed2f596edd466ead9a03a4cdcb3b22
-
-
-
-==== 6ee7d527518e93562cc9e691d20fb1d5
-
-ac14eb6382fa5b619966ba72622ecd3f
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["アカウントの使用済み容量を表示する方法について説明します"]。
 
 
 
-==== 231ea98554191e640c216736796158d5
+==== ボリューム作成時のコメントがサポートされます
 
-1cc55fcb982bea0e8f241a1271bda985
-
-23fbfdbb598644432ab089fa6e533405
+このリリースでは、APIを使用してCloud Volumes ONTAP FlexGroup ボリュームまたはFlexVol ボリュームを作成する際にコメントを作成することができます。
 
 
 
-==== 6fff4762fc0aeb74dd0a918683c157ae
+==== Cloud Volumes ONTAP の[Overview]、[Volumes]、[Aggregates]ページでBlueXPのユーザインターフェイスが再設計されました
 
-8d40e6e8379382ee39fba2c4a1cb5629
+Cloud Volumes ONTAP の[概要]、[ボリューム]、[アグリゲート]ページで使用できるユーザインターフェイスが再設計されました。タイルベースのデザインでは、より包括的な情報が各タイルに表示され、ユーザーエクスペリエンスが向上します。
+
+image:screenshot-resource-page-rn.png["このスクリーンショットは、Cloud Volumes ONTAP の概要ページに再設計されたBlueXPユーザインターフェイスを示しています。さまざまなタイルに、ストレージ効率、バージョン、容量分布、Cloud Volumes ONTAP 環境に関する情報、ボリューム、アグリゲート、レプリケーション、バックアップが表示されます。"]
 
 
-NOTE: 905d8520d584560b3995118b2a01f6c2
 
-ce46ac36501bd1de8616d715ef7ee1c2
+==== FlexGroup ボリュームはCloud Volumes ONTAP で確認できます
 
-acef74218ad5e199582b5c76062e5559
+CLIまたはSystem Managerで作成したFlexGroup ボリュームは、BlueXPの再設計された[ボリューム]タイルで直接表示できるようになりました。FlexVol ボリュームの場合と同じように、作成したFlexGroup ボリュームの詳細情報は専用の[Volumes]タイルで確認できます。
+
+
+NOTE: 現時点では、BlueXPでは既存のFlexGroup ボリュームのみを表示できます。BlueXPでFlexGroup ボリュームを作成することはできませんが、今後のリリースでサポートする予定です。
+
+image:screenshot-show-flexgroup-volume.png["[Volumes]タイルの下にFlexGroup ボリュームアイコンが配置されたテキストを示すスクリーンショット。"]
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-volumes.html["作成したFlexGroup ボリュームの表示について詳しくは、こちらをご覧ください。"^]
 
 
 
@@ -1165,7 +1165,7 @@ https://cloud.netapp.com/cloud-insights["Cloud Insights の詳細については
 
 === 2023年4月2日
 
-* ffb0a040d2831585e0b568e5514270de
+* 次の操作を実行できます。 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html["Astra Tridentをアンインストールします"] これは、TridentオペレータまたはBlueXPを使用してインストールしました。
 * ユーザインターフェイスが改善され、ドキュメントのスクリーンショットが更新されました。
 
 
