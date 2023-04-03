@@ -854,15 +854,15 @@ Google Cloudのデータブローカーのデフォルトのマシンタイプ�
 
 
 
-==== 2e79231a13ecf62585403e20da2dea4a
+==== [ライセンス]タブが削除されました
 
-d4a0c23b533adffe42d63c23035edd5c
+Cloud Tieringインターフェイスから[Licensing]タブが削除されました。従量課金制（PAYGO）サブスクリプションのすべてのライセンスに、オンプレミスのCloud Tieringダッシュボードからアクセスできるようになりました。また、このページからDigital Walletへのリンクもあり、Cloud Tieringのお客様所有のライセンスの使用（BYOL）を表示および管理できます。
 
 
 
-==== 66a0b4752150538292b81c073ca0b83b
+==== 階層化タブの名前が変更され、内容が更新されました
 
-10d9a166ad36cdda1e0585914ac18d5f
+[Clusters Dashboard]タブの名前が[Clusters]に変更され、[On-Prem Overview]タブの名前が[On-Prem Dashboard]に変更されました。これらのページには、階層化構成を追加してストレージスペースを最適化できるかどうかを評価するための情報が追加されています。
 
 
 
