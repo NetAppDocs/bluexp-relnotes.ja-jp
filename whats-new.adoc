@@ -33,6 +33,54 @@ BlueXPプラットフォームの一部である クラウド サービス の�
 
 
 
+=== 2023年4月3日
+
+
+
+==== コネクタ3.9.28
+
+* デジタルウォレットでEメール通知がサポートされるようになりました。
++
+通知を設定すると、BYOLライセンスの有効期限が近づいたとき（「警告」通知）、またはすでに有効期限が切れているとき（「エラー」通知）にEメール通知を受け取ることができます。
+
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["Eメール通知の設定方法については、こちらをご覧ください"]。
+
+* Google Cloud Turinリージョンでコネクタがサポートされるようになりました。
++
+https://cloud.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
+
+* BlueXPでVMware vCenter Serverを検出できるようになりました。
++
+AWSまたはオンプレミスで実行されているVMware vCenter Serverを検出したら、作業環境を開いて、サーバに関連付けられているデータストアと仮想マシンに関する詳細を確認できます。
+
++
+唯一の要件は、バージョン7.0以降を実行しているVMware vCenter Serverに接続するコネクタです。
+
++
+作業を開始するには、*[作業環境の追加]*を選択し、* Amazon Web Services *または*オンプレミス*を選択して、*[VMware vCenter Server]*を選択します。サーバのドメイン名またはIPアドレスを入力し、adminユーザのユーザ名とパスワードを入力します。
+
+* BlueXPログインに関連付けられたユーザクレデンシャル（ONTAP クレデンシャルとNetApp Support Site （NSS）クレデンシャル）を管理できるようになりました。
++
+[設定]>[クレデンシャル]*に移動すると、クレデンシャルを表示したり、更新したり、削除したりできます。たとえば、これらのクレデンシャルのパスワードを変更した場合は、BlueXPでパスワードを更新する必要があります。
+
++
+551a80734187b23f5368b6a5609f3de3
+
+* サポートケースを作成するとき、または既存のサポートケースのケースノートを更新するときに、添付ファイルをアップロードできるようになりました。
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases["サポートケースを作成および管理する方法について説明します"]。
+
+* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とオンプレミスONTAP クラスタの機能拡張も含まれています。
++
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3-april-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
+** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#3-april-2023["ONTAP オンプレミスクラスタの機能拡張について説明します"^]
+
+
+
+
+
+
 === 2023年3月5日
 
 
@@ -51,7 +99,7 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manag
 +
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["コネクタのシステム要件を確認します"]。
 
-* このコネクタは、インターネットから完全に分離されたクラウド環境でサポートされるようになりました。その後、コネクタで実行されているBlueXPコンソールを使用して、同じ場所にCloud Volumes ONTAP を導入し、オンプレミスのONTAP クラスタを検出できます（クラウド環境からオンプレミス環境に接続されている場合）。このタイプの環境では、Digital Walletを除き、他のBlueXPサービスはサポートされません。
+* このコネクタは、インターネットから完全に分離されたクラウド環境でサポートされるようになりました。その後、コネクタで実行されているBlueXPコンソールを使用して、同じ場所にCloud Volumes ONTAP を導入し、オンプレミスのONTAP クラスタを検出できます（クラウド環境からオンプレミス環境に接続されている場合）。Cloud Backupを使用して、AWSとAzureの商用リージョンのCloud Volumes ONTAP ボリュームをバックアップすることもできます。このタイプの環境では、Digital Walletを除き、他のBlueXPサービスはサポートされません。
 +
 クラウドリージョンは、AWS C2S/SC2S、Azure IL6、または任意の商用リージョンのような安全な米国機関のリージョンにすることができます。
 
@@ -125,18 +173,6 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5
 
 
 
-=== 2023年1月1日
-
-
-
-==== コネクタ3.9.25
-
-このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とバグ修正が含まれています。
-
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#1-january-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
-
-
-
 == Azure NetApp Files の特長
 
 
@@ -191,6 +227,14 @@ Cloud Manager では、ボリューム Snapshot を作成、削除、リスト�
 
 
 
+=== 2023年4月2日
+
+* 9a2a26c33c1a0f6b14b7bb3a214dbaf0
+* 9af9b754c1d16f271c1e6f4b1b2c4f4d
+
+
+
+
 === 2023年3月5日
 
 ユーザインターフェイスが改善され、ドキュメントのスクリーンショットが更新されました。
@@ -200,12 +244,6 @@ Cloud Manager では、ボリューム Snapshot を作成、削除、リスト�
 === 2023年1月1日
 
 これで、を有効にすることができます link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#manage-automatic-capacity["容量の自動管理"^] 必要に応じて差分ストレージを追加自動容量管理では、要求を評価するためにクラスタを定期的にポーリングし、クラスタの最大容量の10%までの割合でストレージ容量を自動的に拡張します。
-
-
-
-=== 2022年9月18日
-
-次の操作を実行できます。 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#change-storage-capacity-and-IOPS["ストレージ容量とIOPSを変更します"^] ONTAP 作業環境用のFSXを作成した後であれば、いつでも作成できます。
 
 
 
@@ -285,9 +323,11 @@ AWSおよびAzureの商用リージョンにインストールされているClo
 
 
 
-==== ジョブモニタでは、特定のバックアップジョブまたはリストアジョブを検索するための高度なフィルタリングが提供されます
+==== ジョブモニタに複数の機能拡張が追加されました
 
-[Job Monitoring]ページには高度なフィルタリング機能が追加され、時間、ワークロード（ボリューム、アプリケーション、仮想マシン、またはKubernetes）ごとにバックアップジョブとリストアジョブを検索できるようになりました。 ジョブタイプ、ステータス、作業環境、およびStorage VM。任意のリソース（「application_3」など）を検索するフリーテキストを入力することもできます。  https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#searching-and-filtering-the-list-of-jobs["詳細フィルタの使用方法を参照してください"]。
+* [Job Monitoring]ページには高度なフィルタリング機能が追加され、時間、ワークロード（ボリューム、アプリケーション、仮想マシン、またはKubernetes）ごとにバックアップジョブとリストアジョブを検索できるようになりました。 ジョブタイプ、ステータス、作業環境、およびStorage VM。任意のリソース（「application_3」など）を検索するフリーテキストを入力することもできます。  https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#searching-and-filtering-the-list-of-jobs["詳細フィルタの使用方法を参照してください"]。
+* ONTAP 9.13.0以降を実行しているCloud Volumes ONTAP システムでは、ユーザが開始したバックアップ処理とリストア処理、およびシステムが開始したジョブ（進行中のバックアップ処理など）が[ジョブ監視]*タブで使用できるようになりました。以前のバージョンのCloud Volumes ONTAP システムおよびオンプレミスのONTAP システムでは、現時点ではユーザが開始したジョブのみが表示されます。
+
 
 
 
@@ -507,6 +547,32 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.htm
 
 
 == Cloud Sync
+
+
+
+=== c7326baf2ea51b61fafa4f4680d916c0
+
+
+
+==== 9c305cf5f9f8051acc945eda0fc8a1be
+
+61babc330ca2ea0af752965dd3965d41
+
+* Azure NetApp Files の特長
+* ONTAP 対応の Amazon FSX
+* Cloud Volumes ONTAP
+* a37b0a91d7c4d8ac6ce924a7f8e1ce5a
+
+
+https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["サポートされている同期関係の詳細を確認できます"]。
+
+
+
+==== ad5a82acd30f0d971a29fdb4632bd7d4
+
+b7395f4da221ab7779cce11224436fb3
+
+c73e2e476b1a94d1d032f8e0828dcd20
 
 
 
@@ -830,6 +896,64 @@ Azure Blob、Google Cloud Storage、またはStorageGRID 階層化のデステ�
 
 
 
+=== 2023年4月3日
+
+2dfd965acb2426b281b13a70df99c06b
+
+
+
+==== 671e2a59b2bfa852def9660bf14badde
+
+d3ab2a9ddd985032aa120324e6da3710
+
+41ed2f596edd466ead9a03a4cdcb3b22
+
+
+
+==== 6ee7d527518e93562cc9e691d20fb1d5
+
+ac14eb6382fa5b619966ba72622ecd3f
+
+
+
+==== 231ea98554191e640c216736796158d5
+
+1cc55fcb982bea0e8f241a1271bda985
+
+23fbfdbb598644432ab089fa6e533405
+
+
+
+==== 6fff4762fc0aeb74dd0a918683c157ae
+
+8d40e6e8379382ee39fba2c4a1cb5629
+
+
+NOTE: 905d8520d584560b3995118b2a01f6c2
+
+ce46ac36501bd1de8616d715ef7ee1c2
+
+acef74218ad5e199582b5c76062e5559
+
+
+
+=== 2023年3月13日
+
+
+
+==== 中国地域のサポート
+
+Cloud Volumes ONTAP 9.12.1 GA以降では、次のように中国リージョンのサポートがAzureでサポートされるようになりました。
+
+* Cloud Volumes ONTAP は中国北部3でサポートされています。
+* シングルノードシステムがサポートされます。
+* ネットアップから直接購入したライセンスはサポートされます。
+
+
+地域ごとの可用性については、を参照してください link:https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP のグローバルリージョンマップ"^]。
+
+
+
 === 2023年3月5日
 
 コネクタの3.9.27リリースでは、次の変更が加えられました。
@@ -841,14 +965,6 @@ Azure Blob、Google Cloud Storage、またはStorageGRID 階層化のデステ�
 BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.13.0を導入、管理できるようになりました。
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
-
-
-
-==== Azureで16TiBと32TiBをサポート
-
-Cloud Volumes ONTAP では、Azureのマネージドディスクで実行される高可用性環境向けに、16TiBと32TiBのディスクサイズがサポートされるようになりました。
-
-の詳細を確認してください https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#supported-disk-sizes["Azureでサポートされるディスクサイズ"^]。
 
 
 
@@ -870,58 +986,6 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#access-the-local-ui["コネクタのBlueXPコンソールにアクセスします"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["未割り当てライセンスを追加します"^]
 
-
-
-
-=== 2023年2月5日
-
-コネクタの3.9.26リリースでは、次の変更が加えられました。
-
-
-
-==== AWSでの配置グループの作成
-
-AWS HA単一アベイラビリティゾーン（AZ）環境で配置グループを作成するための新しい設定が追加されました。失敗した配置グループの作成をバイパスして、AWS HA単一のAZ環境を正常に完了できるようにすることができます。
-
-配置グループの作成設定の詳細については、を参照してください link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-configure-placement-group-failure-aws.html#overview["AWS HA単一AZ用の配置グループの作成を設定する"^]。
-
-
-
-==== プライベートDNSゾーン設定の更新
-
-Azureプライベートリンクの使用時にプライベートDNSゾーンと仮想ネットワークの間にリンクを作成しないように、新しい設定が追加されました。作成はデフォルトで有効になっています。
-
-link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html#provide-bluexp-with-details-about-your-azure-private-dns["AzureプライベートDNSの詳細をBlueXPに提供します"^]
-
-
-
-==== WORMストレージとデータ階層化
-
-Cloud Volumes ONTAP 9.8以降のシステムを作成するときに、データ階層化とWORMストレージの両方を有効にできるようになりました。WORMストレージによるデータ階層化を有効にすると、データをクラウドのオブジェクトストアに階層化できます。
-
-link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-worm.html["WORMストレージについて説明します。"^]
-
-
-
-=== 2023年1月1日
-
-コネクタの3.9.25リリースでは、次の変更が加えられました。
-
-
-
-==== Google Cloudで提供されているライセンスパッケージ
-
-最適化さCloud Volumes ONTAP れた容量ベースのライセンスパッケージとエッジキャッシュ容量ベースのライセンスパッケージは、Google Cloud Marketplaceで従量課金制サービスまたは年間契約として提供されます。
-
-を参照してください link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["Cloud Volumes ONTAP ライセンス"^]。
-
-
-
-==== Cloud Volumes ONTAP のデフォルト設定
-
-マルチテナント暗号化キー管理（MTEKM）ライセンスは新しいCloud Volumes ONTAP 環境には含まれなくなりました。
-
-Cloud Volumes ONTAP とともに自動的にインストールされるONTAP 機能ライセンスの詳細については、を参照してください link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/reference-default-configs.html["Cloud Volumes ONTAP のデフォルト設定"^]。
 
 
 
@@ -986,6 +1050,18 @@ Digital Advisor（旧称Active IQ ）は、BlueXPと完全に統合され、ロ�
 BlueXPでDigital Advisorにアクセスすると、NetApp Support Site 資格情報を入力するように求められ、システムに関連するデータを表示できるようになります。ログイン時に使用するNSSアカウントは、ユーザログイン時のみに関連付けられます。ネットアップアカウントの他のユーザには関連付けられません。
 
 Digital AdvisorとBlueXPの統合の詳細については、を参照してください https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisorのドキュメント"^]
+
+
+
+== 経済効率
+
+
+
+=== 2023年4月2日
+
+新しいEconomic Efficiencyサービスは、容量が現在または予測される低いクラスタを特定し、オンプレミスのAFF システムのデータ階層化や容量の追加に関する推奨事項を提供します。
+
+link:https://docs.netapp.com/us-en/bluexp-economic-efficiency/get-started/intro.html["この新しいサービスの詳細については、こちらをご覧ください"]。
 
 
 
@@ -1081,6 +1157,14 @@ https://cloud.netapp.com/cloud-insights["Cloud Insights の詳細については
 
 
 
+=== 2023年4月2日
+
+* ffb0a040d2831585e0b568e5514270de
+* ユーザインターフェイスが改善され、ドキュメントのスクリーンショットが更新されました。
+
+
+
+
 === 2023年3月5日
 
 * BlueXPのKubernetesでAstra Trident 23.01がサポートされるようになりました。
@@ -1095,33 +1179,6 @@ https://cloud.netapp.com/cloud-insights["Cloud Insights の詳細については
 
 
 
-=== 2022年9月18日
-
-自己管理OpenShiftクラスタをCloud Managerにインポートできるようになりました。
-
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-openshift.html["OpenShiftでのKubernetesクラスタの要件"]
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-add-openshift.html["Cloud ManagerにOpenShiftクラスタを追加します"]
-
-
-
-
-=== 2022年7月31日
-
-* ストレージクラスの新しい「-watch` verb」を使用して、YAMLの設定をバックアップおよびリストアできるようになりました。Cloud ManagerはKubernetesクラスタバックエンドに加えられた変更を監視し、クラスタで自動バックアップが設定されている場合は、新しい永続ボリュームのバックアップを自動的に有効にすることができます。
-+
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aws.html["AWS での Kubernetes クラスタの要件"]
-
-+
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html["Azure での Kubernetes クラスタの要件"]
-
-+
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud の Kubernetes クラスタの要件"]
-
-* いつ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["ストレージクラスを定義する"]をクリックし、ブロックストレージのファイルシステムタイプ（fstype）を指定できるようになりました。
-
-
-
-
 == 監視
 
 
@@ -1133,6 +1190,28 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kuberne
 
 
 == オンプレミスの ONTAP クラスタ
+
+
+
+=== 2023年4月3日
+
+
+
+==== BlueXPコンソールから単一の検出オプションを選択できます
+
+BlueXPコンソールからオンプレミスのONTAP クラスタを検出すると、次の1つのオプションが表示されます。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-discover-on-prem-ontap.png["作業環境を作成するときに使用可能な[Discover On-Premises ONTAP （オンプレミスのを検出）]オプションを示すスクリーンショット"]
+
+以前は、直接検出用とコネクタによる検出用に別 々 のフローがありました。これらのオプションはどちらも引き続き使用できますが、単一のフローにマージされます。
+
+検出プロセスを開始すると、BlueXPで次のようにクラスタが検出されます。
+
+* ONTAP クラスタに接続しているアクティブなコネクタがある場合、BlueXPはそのコネクタを使用してクラスタを検出および管理します。
+* コネクタがない場合やコネクタがONTAP クラスタに接続されていない場合は、BlueXPで自動的に検出と管理の直接オプションが使用されます。
+
+
+https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["検出と管理のオプションの詳細については、こちらをご覧ください"]。
 
 
 
@@ -1182,7 +1261,7 @@ BlueXPでは、FlexGroup ボリュームの作成はサポートされていま�
 
 オンプレミスのONTAP クラスタに関する重要な詳細情報を提供するために、新しい概要ページが導入されました。たとえば、Storage Efficiency、容量分散、システム情報などの詳細を表示できるようになりました。
 
-また、データの階層化、データのレプリケーション、バックアップが可能な他のNetAppクラウド サービス との統合に関する詳細も確認できます。
+また、データ階層化、データレプリケーション、バックアップを可能にする他のBlueXPサービスとの統合に関する詳細も確認できます。
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-overview.png["オンプレミスのONTAP クラスタの概要ページを示すスクリーンショット。"]
 
@@ -1193,6 +1272,20 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/ma
 ボリュームページの設計が見直され、クラスタ上のボリュームの概要が表示されるようになりました。この概要には、ボリュームの総数、プロビジョニングされた容量、使用済み容量とリザーブ容量、および階層化されたデータの量が表示されます。
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-volumes.png["オンプレミスのONTAP クラスタのボリュームページを示すスクリーンショット。"]
+
+
+
+== 運用の耐障害性
+
+
+
+=== 2023年4月2日
+
+新しい運用耐障害性サービスと自動化されたIT運用リスク修復の提案を使用すると、システム停止や障害が発生する前に推奨される修復を実装できます。
+
+運用の耐障害性は、アラートとイベントを分析してサービスとソリューションの健全性、アップタイム、パフォーマンスを維持するのに役立つサービスのカテゴリです。
+
+link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/intro.html["この新しいサービスの詳細については、こちらをご覧ください"]。
 
 
 
