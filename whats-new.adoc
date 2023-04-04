@@ -33,6 +33,26 @@ BlueXPプラットフォームの一部である クラウド サービス の�
 
 
 
+=== 2023年4月4日
+
+
+
+==== 展開モード
+
+BlueXP_deployment modes_を使用すると、ビジネス要件やセキュリティ要件に合わせてBlueXPを使用できます。次の3つのモードから選択できます。
+
+* 標準モード
+* 制限モード
+* プライベートモード
+
+
+link:concept-modes.html["これらの展開モードの詳細については、こちらをご覧ください"]。
+
+
+NOTE: 制限モードが導入されたことで、SaaSプラットフォームを有効または無効にするオプションが廃止されました。制限モードはアカウント作成時に有効にすることができます。後で有効または無効にすることはできません。
+
+
+
 === 2023年4月3日
 
 
@@ -65,7 +85,7 @@ AWSまたはオンプレミスで実行されているVMware vCenter Serverを�
 [設定]>[クレデンシャル]*に移動すると、クレデンシャルを表示したり、更新したり、削除したりできます。たとえば、これらのクレデンシャルのパスワードを変更した場合は、BlueXPでパスワードを更新する必要があります。
 
 +
-link:task-manage-user-credentials.html["ユーザクレデンシャルの管理方法について説明します"]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-user-credentials.html["ユーザクレデンシャルの管理方法について説明します"]。
 
 * サポートケースを作成するとき、または既存のサポートケースのケースノートを更新するときに、添付ファイルをアップロードできるようになりました。
 +
@@ -120,54 +140,6 @@ https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["BlueXP�
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張が含まれています。
 +
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-march-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
-
-
-
-
-
-=== 2023年2月5日
-
-
-
-==== コネクタ3.9.26
-
-* ログイン*ページで、ログインに関連付けられたメールアドレスを入力するように求められます。[次へ]をクリックすると、ログインに関連付けられた認証方法を使用して認証を行うように求めるメッセージが表示されます。
-+
-** ネットアップクラウドクレデンシャルのパスワード
-** フェデレーテッドアイデンティティのクレデンシャル
-** NetApp Support Site クレデンシャルが必要です
-
-
-+
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-login.png["BlueXPのログインページのスクリーンショットで、電子メールアドレスの入力を求められます。"]
-
-* BlueXPを初めて使用していて、既存のNetApp Support Site (NSS)の資格情報がある場合は、サインアップページをスキップして、ログインページに電子メールアドレスを直接入力できます。この初回ログインの一環として、BlueXPがサインアップします。
-* クラウドプロバイダのマーケットプレイスからBlueXPに登録すると、1つのアカウントの既存のサブスクリプションを新しいサブスクリプションに置き換えることができます。
-+
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-aws-subscription.png["BlueXPアカウントのサブスクリプション割り当てを示すスクリーンショット"]
-
-+
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["AWSサブスクリプションを関連付ける方法について説明します"]
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html#associating-an-azure-marketplace-subscription-to-credentials["Azureサブスクリプションを関連付ける方法について説明します"]
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["Google Cloudサブスクリプションを関連付ける方法について説明します"]
-
-
-* BlueXPは、コネクタの電源が14日以上切れている場合に通知します。
-+
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["BlueXP通知についてはこちらをご覧ください"]
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#connectors-should-remain-running["コネクタの動作を維持する理由について説明します"]
-
-
-* Google Cloudのコネクタポリシーを更新し、Cloud Volumes ONTAP HAペアでStorage VMを作成および管理するために必要な権限を追加しました。
-+
-compute.instances.updateNetworkInterface
-
-+
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["ConnectorのGoogle Cloud権限を表示します"]。
-
-* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張が含まれています。
-+
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-february-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
 
 
 
@@ -307,6 +279,37 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 
 
+=== 2023年4月4日
+
+
+
+==== 「制限付き」モードでCloud Volumes ONTAP システムからクラウドにデータをバックアップする機能
+
+これで、AWS、Azure、GCPの商用リージョンにインストールされているCloud Volumes ONTAP システムのデータを「制限付き」モードでバックアップできるようになりました。これを行うには、まず「制限された」商業地域にコネクタをインストールする必要があります。を参照してください https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["Amazon S3 への Cloud Volumes ONTAP データのバックアップ"] および https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-azure.html["Cloud Volumes ONTAP データをAzure Blobにバックアップしています"]。
+
+
+
+==== APIを使用して、オンプレミスのONTAP ボリュームをONTAP S3にバックアップする機能
+
+f25c47eb7d9f3c638d89723bee6d2360
+
+
+
+==== Azureストレージアカウントのゾーン冗長性の側面をLRSからZRSに変更する機能
+
+Cloud Volumes ONTAP システムからAzureストレージへのバックアップを作成する際、デフォルトでは、コスト最適化のためにローカル冗長性（LRS）を使用してBlobコンテナがプロビジョニングされます。異なるゾーン間でデータを複製する場合は、この設定をZone redundancy（ZRS）に変更できます。Microsoftの手順を参照してください https://learn.microsoft.com/en-us/azure/storage/common/redundancy-migration?tabs=portal["ストレージアカウントの複製方法の変更"^]。
+
+
+
+==== ジョブモニタの機能拡張
+
+* ユーザが開始したバックアップ処理とリストア処理、および進行中のバックアップ処理などのシステム開始ジョブは、ONTAP 9.13.1以降を実行しているオンプレミスのONTAP システムの*[ジョブ監視]*タブで使用できるようになりました。以前のバージョンのONTAP では、ユーザが開始したジョブのみが表示されます。
+* すべてのジョブをレポートするためのCSVファイルをダウンロードできるほか、単一のジョブのJSONファイルをダウンロードして詳細を確認できるようになりました。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#download-job-monitoring-results-as-a-report["詳細はこちら。"]。
+* 「Scheduled job failure」と「Restore job completes but with warnings」という2つの新しいバックアップジョブアラートが追加されました。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#review-backup-and-restore-alerts-in-the-bluexp-notification-center["Cloud Backupから送信できるすべてのアラートを確認します"]。
+
+
+
+
 === 2023年3月9日
 
 
@@ -319,7 +322,7 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 ==== ダークサイトのCloud Volumes ONTAP システムからデータをバックアップする機能
 
-AWSおよびAzureの商用リージョンにインストールされているCloud Volumes ONTAP システムから、Amazon S3またはAzure Blobにデータをバックアップできるようになりました。そのためには、商用地域のLinuxホストにコネクタをインストールし、そこにCloud Volumes ONTAP システムを展開する必要があります。を参照してください link:task-backup-to-s3.html["Amazon S3 への Cloud Volumes ONTAP データのバックアップ"] および link:task-backup-to-azure.html["Cloud Volumes ONTAP データをAzure Blobにバックアップしています"]。
+AWSおよびAzureの商用リージョンにインストールされているCloud Volumes ONTAP システムから、Amazon S3またはAzure Blobにデータをバックアップできるようになりました。そのためには、商用地域のLinuxホストにコネクタをインストールし、そこにCloud Volumes ONTAP システムを展開する必要があります。を参照してください https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["Amazon S3 への Cloud Volumes ONTAP データのバックアップ"] および https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-azure.html["Cloud Volumes ONTAP データをAzure Blobにバックアップしています"]。
 
 
 
@@ -377,45 +380,29 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-
 
 
 
-=== 2023年1月9日
-
-
-
-==== StorageGRID システムからAWS S3アーカイブストレージに古いバックアップファイルを移動する機能
-
-これにより、StorageGRID システムの古いバックアップファイルをAWS S3のアーカイブストレージに階層化できるようになりました。これにより、StorageGRID システムのスペースを解放し、古いバックアップファイルには低コストのストレージクラスを使用することでコストを削減できます。AWS S3 GlacierまたはS3 Glacier Deep Archiveストレージにバックアップを階層化することもできます。
-
-この機能は、オンプレミスクラスタでONTAP 9.12.1以降を使用し、StorageGRID システムで11.3以上を使用している場合に使用できます。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html#preparing-to-archive-older-backup-files-to-public-cloud-storage["詳細はこちらをご覧ください"]。
-
-
-
-==== Google Cloudのデータ暗号化に、お客様が管理する独自のキーを選択できます
-
-ONTAP システムからGoogle Cloud Storageにデータをバックアップする際に、Googleが管理するデフォルトの暗号化キーを使用する代わりに、アクティベーションウィザードで、お客様が管理する独自のキーを選択してデータを暗号化できるようになりました。まずGoogleでお客様管理の暗号化キーを設定し、次にCloud Backupをアクティブ化する際に詳細を入力します。
-
-
-
-==== 「ストレージ管理者」ロールは、サービスアカウントがGoogle Cloud Storageでバックアップを作成するために必要なくなりました
-
-以前のリリースでは、Cloud BackupがGoogle Cloud Storageバケットにアクセスできるようにするサービスアカウントには「Storage Admin」ロールが必要でした。これで、一連の権限を減らしてサービスアカウントに割り当てるカスタムロールを作成できるようになりました。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-to-gcp.html#preparing-google-cloud-storage-for-backups["Google Cloud Storageでバックアップを準備する方法をご覧ください"]。
-
-
-
-==== インターネットにアクセスできないサイトで検索とリストアを使用してデータをリストアする機能がサポートされるようになりました
-
-インターネットアクセスのないサイト（ダークサイトまたはオフラインサイトとも呼ばれます）のオンプレミスのONTAP クラスタからStorageGRID にデータをバックアップする場合は、必要に応じて検索とリストアのオプションを使用してデータをリストアできるようになりました。この機能を使用するには、BlueXPコネクタ(バージョン3.9.25以上)がオフラインサイトに配置されている必要があります。
-
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-ontap.html#restoring-ontap-data-using-search-restore["検索とリストアを使用してONTAP データをリストアする方法を参照してください"]。https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["コネクターをオフラインサイトにインストールする方法を参照してください"]。
-
-
-
-==== ジョブ監視結果ページを.csvレポートとしてダウンロードできるようになりました
-
-[ジョブ監視]ページをフィルタリングして、必要なジョブとアクションを表示したら、そのデータの.csvファイルを生成してダウンロードできるようになりました。次に、情報を分析したり、組織内の他のユーザーにレポートを送信したりできます。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#download-job-monitoring-results-as-a-report["「ジョブ監視レポートを生成する方法」を参照してください"]。
-
-
-
 == クラウドデータの意味
+
+
+
+=== 2023年4月3日（バージョン1.22）
+
+
+
+==== 新しいデータ検出評価レポート
+
+Data Discovery Assessment Reportでは、スキャンされた環境の概要を分析して、システムの調査結果を強調し、懸念領域と潜在的な修復手順を示します。このレポートの目的は、データガバナンスの懸念、データセキュリティの危険性、データセットのデータコンプライアンスギャップに対する認識を高めることです。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-governance-data.html#data-discovery-assessment-report["Data Discovery Assessment Reportを生成して使用する方法を説明します"]。
+
+
+
+==== クラウド内の小規模インスタンスにData Senseを導入できます
+
+AWS環境にBlueXPコネクタからData Senseを導入する際に、デフォルトのインスタンスよりも小さい2つのインスタンスタイプから選択できるようになりました。小規模な環境をスキャンする場合は、クラウドコストを節約できます。ただし、小さいインスタンスを使用する場合はいくつかの制限があります。 https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html#using-a-smaller-instance-type["使用可能なインスタンスタイプと制限事項を参照してください"]。
+
+
+
+==== スタンドアロンスクリプトを使用して、LinuxシステムがData Senseのインストールに適しているかどうかをテストできます
+
+Data Senseのインストールとは別に、Linuxシステムがすべての前提条件を満たしていることを確認する場合は、必要条件のみをテストするスクリプトをダウンロードできます。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-test-linux-system.html["LinuxホストでData Senseをインストールする準備ができているかどうかを確認する方法を参照してください"]。
 
 
 
@@ -514,35 +501,6 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion
 ==== 新しい「部分的成功」ステータスがアクションステータスパネルに追加されました
 
 新しい「部分的成功」ステータスは、データセンスアクションが完了し、一部の項目が失敗し、たとえば100個のファイルを移動または削除するときに一部の項目が成功したことを示します。さらに、「終了」ステータスが「成功」に変更されました。以前は、「終了」ステータスに成功した処理と失敗した処理が表示されることがありました。現在、「Success」ステータスは、すべての項目に対するすべてのアクションが成功したことを意味します。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-view-compliance-actions.html["アクションステータスパネルの表示方法を参照してください"]。
-
-
-
-=== 2023年1月9日（バージョン1.19）
-
-
-
-==== 機密データが含まれ、過度に許容されるファイルのグラフを表示する機能
-
-Governanceダッシュボードには、機密データ（機密性の高い個人データと機密性の高い個人データの両方を含む）を含むファイルのヒートマップを提供するnew_sensitive DataおよびWide Permissive_areaが追加されています。これにより、機密データを含むリスクがある場所を確認できます。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-governance-data.html#data-listed-by-sensitivity-and-wide-permissions["詳細はこちら。"]。
-
-
-
-==== Data Investigationページでは、3つの新しいフィルタを使用できます
-
-[データ調査]ページに表示する結果を絞り込むための新しいフィルタを使用できます。
-
-* 「アクセス権を持つユーザの数」フィルタは、特定の数のユーザに対して開かれているファイルやフォルダを表示します。数値の範囲を選択して結果を絞り込むことができます。たとえば、51~100ユーザがアクセスできるファイルを確認できます。
-* 「作成日時」、「検出日時」、「最終変更日時」、「最終アクセス日時」の各フィルタを使用して、事前に定義された日範囲だけを選択するのではなく、カスタムの日付範囲を作成できるようになりました。たとえば、「作成日時」が6か月を超えているファイルや、「最終更新日時」が「過去10日間」の日付になっているファイルを探すことができます。
-* 「ファイルパス」フィルタで、フィルタリングされたクエリ結果から除外するパスを指定できるようになりました。特定のデータを含むパスと除外するパスの両方を入力すると、最初に含まれているパス内のすべてのファイルが検出され、除外されたパスからファイルが削除され、結果が表示されます。
-
-
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.html#filtering-data-in-the-data-investigation-page["データの調査に使用できるすべてのフィルタのリストを確認します"]。
-
-
-
-==== データセンスは日本語の個人番号を識別できます
-
-データセンスでは、日本語の個人番号（My Number）を含むファイルを識別して分類できます。これには、個人用電話番号と会社用電話番号の両方が含まれます。 https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-personal-data["データで特定できるすべての種類の個人データを表示します"]。
 
 
 
@@ -1299,6 +1257,20 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 
+=== 2023年4月3日
+
+
+
+==== ランサムウェア攻撃からデータを保護するための新しい推奨アクション
+
+* 「データソースのビジネスクリティカルなファイルをバックアップする」という新しい推奨アクションでは、Cloud Backupを使用してボリュームをバックアップして、最も重要なカテゴリのデータを保護する方法が記載されています。これは、ランサムウェア攻撃によってデータをリカバリする必要がある場合に重要です。推奨構成に従うと、必要なボリュームでバックアップを有効にできるようにCloud Backupインターフェイスにリダイレクトされます。
+* 「データソースのサイバーストレージ構成をオンにする」という新しい推奨アクションでは、データの保護に役立つ6つのONTAP 機能が有効になっているか無効になっているかを特定します。これらの機能は、オンプレミスのすべてのONTAP システムとCloud Volumes ONTAP システムで有効にする必要があります。
+
+
+https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#list-of-recommended-actions["推奨されるすべての対処方法の一覧を確認してください"]。
+
+
+
 === 2023年3月7日
 
 
@@ -1326,16 +1298,6 @@ https://docs.netapp.com/us-en/cloud-manager-ransomware/task-select-business-crit
 ==== ランサムウェア攻撃からの保護は、ProtectionカテゴリからGovernanceカテゴリに移行しました
 
 次に、BlueXPの左ナビゲーションメニューから* Governance > Ransomware Protection *を選択してこのサービスにアクセスしてください。
-
-
-
-=== 2023年1月9日
-
-
-
-==== ランサムウェア対策保護アラートをEメールや通知センターで受け取るサポートが追加されました
-
-Ransomware Protectionは、BlueXP Notificationサービスに統合されています。Ransomware Protection通知を表示するには、BlueXPメニューバーの通知ベルをクリックします。また、システムにログインしていないときでも重要なシステムアクティビティを通知できるように、メールで通知を送信するようにBlueXPを構成することもできます。このEメールは、ランサムウェアのアラートに注意する必要のある受信者に送信できます。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-monitor-ransomware-alerts.html["詳細をご確認ください"]。
 
 
 

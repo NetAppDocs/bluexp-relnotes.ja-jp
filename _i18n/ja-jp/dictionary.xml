@@ -105,7 +105,6 @@
   <block id="59dfc17500b1e0b8d1824eb8b1413080" category="paragraph">Cloud Volumes ONTAP システムまたはオンプレミスの ONTAP クラスタから ONTAP ファイルシステム用の Amazon FSX にデータをレプリケートできるようになりました。</block>
   <block id="40f78d193b858589ad7df4dd4ce61ad6" category="inline-link">データレプリケーションの設定方法について説明します</block>
   <block id="1e56755e05ec049b30c49b9d53744ca1" category="paragraph"><block ref="0337e364432fca0f343e5f2660661b77" category="inline-link-rx"></block>。</block>
-  <block id="a3065e926a55339df72c1343ee9b3fae" category="inline-link">データの調査に使用できるすべてのフィルタのリストを確認します</block>
   <block id="81ad4f0de90ee8a7305d0fd7751df796" category="section-title">新しいGoogle Cloudリージョンサポート</block>
   <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link">このページです</block>
   <block id="03e6ae21f561049c3e8010740c63aab3" category="inline-link">Cloud Volumes ONTAP の機能拡張について説明します</block>
@@ -249,7 +248,6 @@
   <block id="0b17baeba205d071cc0142cf4aba9b76" category="paragraph">StorageGRID システムをBlueXPから直接検出できるようになりました。StorageGRID を検出すると、ハイブリッドマルチクラウド全体のデータを包括的に把握できます。</block>
   <block id="ed8f5e7e321372398aae23788c3243a0" category="sidebar">BlueXPインデックス</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">BlueXPのすべてのマニュアル</block>
-  <block id="3348dcc393bde37af6464ca44f92a231" category="inline-link">詳細をご確認ください</block>
   <block id="88268cce7d1b83c765c3f7010df80df5" category="section-title">2022年11月6日</block>
   <block id="83ec139c80a3d5b2f11f1a94eed47cd2" category="section-title">2022年12月4日</block>
   <block id="612111851a1740ab34a9d35045621084" category="paragraph">コネクタの3.9.24リリースでは、次の変更が加えられました。</block>
@@ -302,37 +300,8 @@
   <block id="6a28e623eb98d9eb0799ab2c472620f3" category="paragraph">コネクタを使用せずに直接検出されたオンプレミスのONTAP 作業環境を開くときに、作業環境を開くたびにクレデンシャルを入力する必要がないように、ONTAP クラスタのクレデンシャルを保存するオプションが利用できるようになりました。</block>
   <block id="8a08a7490f38dacd86c415a138d60aea" category="inline-link">このオプションの詳細については、こちらをご覧ください。</block>
   <block id="b269330dc42e4f7fc82bba99c0dd5fd7" category="paragraph"><block ref="b269330dc42e4f7fc82bba99c0dd5fd7" category="inline-link-rx"></block></block>
-  <block id="88a11892e7418e1eee8c952df9545b46" category="section-title">2023年1月9日</block>
-  <block id="b17d2155a07524d0e8a3d1eb73a257c3" category="section-title">StorageGRID システムからAWS S3アーカイブストレージに古いバックアップファイルを移動する機能</block>
-  <block id="76592785cd14862cf74d11289e50ed92" category="paragraph">これにより、StorageGRID システムの古いバックアップファイルをAWS S3のアーカイブストレージに階層化できるようになりました。これにより、StorageGRID システムのスペースを解放し、古いバックアップファイルには低コストのストレージクラスを使用することでコストを削減できます。AWS S3 GlacierまたはS3 Glacier Deep Archiveストレージにバックアップを階層化することもできます。</block>
-  <block id="5baabb9bbca503ea382779d0fce7e9c5" category="section-title">Google Cloudのデータ暗号化に、お客様が管理する独自のキーを選択できます</block>
-  <block id="b9395c2030b2a8ad48d31ad52bd9f6e9" category="section-title">「ストレージ管理者」ロールは、サービスアカウントがGoogle Cloud Storageでバックアップを作成するために必要なくなりました</block>
-  <block id="d7cf6019b64afefeee4361ce4c22ce30" category="inline-link">Google Cloud Storageでバックアップを準備する方法をご覧ください</block>
-  <block id="121b4934193e6ec77a35338afd1028bb" category="paragraph">以前のリリースでは、Cloud BackupがGoogle Cloud Storageバケットにアクセスできるようにするサービスアカウントには「Storage Admin」ロールが必要でした。これで、一連の権限を減らしてサービスアカウントに割り当てるカスタムロールを作成できるようになりました。<block ref="cdc0823dc4910df979845484c27cfc1d" category="inline-link-rx"></block>。</block>
-  <block id="fe1757784884bfcaf0ca6254fb7fa44e" category="section-title">ジョブ監視結果ページを.csvレポートとしてダウンロードできるようになりました</block>
-  <block id="5ae1400b4fd16294ac8af42e98d8a9ed" category="inline-link">「ジョブ監視レポートを生成する方法」を参照してください</block>
-  <block id="c8a0a8bdcaf1f25cbadde68224d6591d" category="paragraph">[ジョブ監視]ページをフィルタリングして、必要なジョブとアクションを表示したら、そのデータの.csvファイルを生成してダウンロードできるようになりました。次に、情報を分析したり、組織内の他のユーザーにレポートを送信したりできます。<block ref="f54dc22fe93134a0b2767a291dba51f5" category="inline-link-rx"></block>。</block>
-  <block id="91edc807a7157b7f0159521433ea5b0f" category="section-title">2023年1月9日（バージョン1.19）</block>
-  <block id="738f7059231d5fe5c1e22879f52682fd" category="section-title">Data Investigationページでは、3つの新しいフィルタを使用できます</block>
-  <block id="a05ecd168005e0205e52b540a66b4208" category="paragraph">[データ調査]ページに表示する結果を絞り込むための新しいフィルタを使用できます。</block>
-  <block id="d40d8569fcb40c761c8217de218391ba" category="list-text">「アクセス権を持つユーザの数」フィルタは、特定の数のユーザに対して開かれているファイルやフォルダを表示します。数値の範囲を選択して結果を絞り込むことができます。たとえば、51~100ユーザがアクセスできるファイルを確認できます。</block>
-  <block id="142c1e7e965016b6fe04e45f8ae01209" category="list-text">「作成日時」、「検出日時」、「最終変更日時」、「最終アクセス日時」の各フィルタを使用して、事前に定義された日範囲だけを選択するのではなく、カスタムの日付範囲を作成できるようになりました。たとえば、「作成日時」が6か月を超えているファイルや、「最終更新日時」が「過去10日間」の日付になっているファイルを探すことができます。</block>
-  <block id="e2abff3453b8cf47fe2cb0886e10722b" category="list-text">「ファイルパス」フィルタで、フィルタリングされたクエリ結果から除外するパスを指定できるようになりました。特定のデータを含むパスと除外するパスの両方を入力すると、最初に含まれているパス内のすべてのファイルが検出され、除外されたパスからファイルが削除され、結果が表示されます。</block>
-  <block id="4e499a708b699475cdaf2e23cd596d11" category="section-title">ランサムウェア対策保護アラートをEメールや通知センターで受け取るサポートが追加されました</block>
-  <block id="53bccb80a99ecb6d22ac23a5d83a662e" category="paragraph">Ransomware Protectionは、BlueXP Notificationサービスに統合されています。Ransomware Protection通知を表示するには、BlueXPメニューバーの通知ベルをクリックします。また、システムにログインしていないときでも重要なシステムアクティビティを通知できるように、メールで通知を送信するようにBlueXPを構成することもできます。このEメールは、ランサムウェアのアラートに注意する必要のある受信者に送信できます。<block ref="4b31f56f66b4ac96107c1c8a3ca6ad6e" category="inline-link-rx"></block>。</block>
   <block id="4856dfc18851de08c9ed97332b1fd100" category="list-text"><block ref="4856dfc18851de08c9ed97332b1fd100" category="inline-link-rx"></block></block>
-  <block id="b7027e7163ab44680c3c69296db41564" category="paragraph">この機能は、オンプレミスクラスタでONTAP 9.12.1以降を使用し、StorageGRID システムで11.3以上を使用している場合に使用できます。<block ref="ba1010a667c53f122912d421bb932c28" category="inline-link-rx"></block>。</block>
-  <block id="0b17a5b6850808b4455bcd3d8bf54966" category="paragraph">ONTAP システムからGoogle Cloud Storageにデータをバックアップする際に、Googleが管理するデフォルトの暗号化キーを使用する代わりに、アクティベーションウィザードで、お客様が管理する独自のキーを選択してデータを暗号化できるようになりました。まずGoogleでお客様管理の暗号化キーを設定し、次にCloud Backupをアクティブ化する際に詳細を入力します。</block>
-  <block id="e083799711dc9b588bbb440525564506" category="section-title">インターネットにアクセスできないサイトで検索とリストアを使用してデータをリストアする機能がサポートされるようになりました</block>
-  <block id="a282fca785a0e402e0b5cdde4c380d6d" category="paragraph">インターネットアクセスのないサイト（ダークサイトまたはオフラインサイトとも呼ばれます）のオンプレミスのONTAP クラスタからStorageGRID にデータをバックアップする場合は、必要に応じて検索とリストアのオプションを使用してデータをリストアできるようになりました。この機能を使用するには、BlueXPコネクタ(バージョン3.9.25以上)がオフラインサイトに配置されている必要があります。</block>
-  <block id="c9ec78264dce9938676b736265201e28" category="inline-link">検索とリストアを使用してONTAP データをリストアする方法を参照してください</block>
-  <block id="6f44a1bf2246f054fd573ae9473909b6" category="inline-link">コネクターをオフラインサイトにインストールする方法を参照してください</block>
-  <block id="74aacc002c6d6d85e9786012bf71af08" category="paragraph"><block ref="fbe0ce057e5d8013a227c4cb944242a5" category="inline-link-rx"></block>。<block ref="eb618b89294e80d594faecbc4641afee" category="inline-link-rx"></block>。</block>
-  <block id="5e6d4a84337eb1e0ff5a019edf3a15d6" category="section-title">機密データが含まれ、過度に許容されるファイルのグラフを表示する機能</block>
-  <block id="d9b195efc41ceb51899b712eb2c0c583" category="paragraph">Governanceダッシュボードには、機密データ（機密性の高い個人データと機密性の高い個人データの両方を含む）を含むファイルのヒートマップを提供するnew_sensitive DataおよびWide Permissive_areaが追加されています。これにより、機密データを含むリスクがある場所を確認できます。<block ref="315faeb2b0e6f27dd87bce24f0b16dd0" category="inline-link-rx"></block>。</block>
-  <block id="39042f4c3554377e7367f85ef5edf207" category="section-title">データセンスは日本語の個人番号を識別できます</block>
   <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">データで特定できるすべての種類の個人データを表示します</block>
-  <block id="21e575de9b2cf958293bb22c657eba7b" category="paragraph">データセンスでは、日本語の個人番号（My Number）を含むファイルを識別して分類できます。これには、個人用電話番号と会社用電話番号の両方が含まれます。<block ref="b4ce36808fde13e40836bb7d14af31c6" category="inline-link-rx"></block>。</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXPのブログ</block>
   <block id="5a0c953dba56aa463b4468d70bfc3feb" category="section-title">2023年1月1日</block>
   <block id="f99ecd5cff9b18879fcd5ee404af256f" category="inline-link-macro">容量の自動管理</block>
@@ -360,34 +329,7 @@
   <block id="f77caa23f512ad7c5c38882b9a13b6db" category="paragraph"><block ref="d9564f80e250011b85c05664d779bbef" category="inline-link-rx"></block>。</block>
   <block id="1e189efdd1c21e1702b4e4a48e6a3815" category="section-title">ランサムウェア攻撃からの保護は、ProtectionカテゴリからGovernanceカテゴリに移行しました</block>
   <block id="c1d1220273fe79d481c41539bea31710" category="paragraph">次に、BlueXPの左ナビゲーションメニューから* Governance &gt; Ransomware Protection *を選択してこのサービスにアクセスしてください。</block>
-  <block id="d2ab99e3c8406089dca863337debb121" category="section-title">コネクタ3.9.26</block>
-  <block id="330ddcd0a3779c8729cfb2c56aeb33f5" category="list-text">ログイン*ページで、ログインに関連付けられたメールアドレスを入力するように求められます。[次へ]をクリックすると、ログインに関連付けられた認証方法を使用して認証を行うように求めるメッセージが表示されます。</block>
-  <block id="1baec3621cd37cfb63c78d95c414ca61" category="list-text">ネットアップクラウドクレデンシャルのパスワード</block>
-  <block id="1dca7678a1041ed05b6071c24454dfde" category="list-text">フェデレーテッドアイデンティティのクレデンシャル</block>
-  <block id="9ec04e5ecf7230969f472cb3ba28f9d5" category="list-text">NetApp Support Site クレデンシャルが必要です</block>
-  <block id="95161959ea62121420b9e6e6553c5afa" category="inline-image-macro">BlueXPのログインページのスクリーンショットで、電子メールアドレスの入力を求められます。</block>
-  <block id="7fef862357cf2face17cb8062b1f051f" category="paragraph"><block ref="7fef862357cf2face17cb8062b1f051f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9cb7486a7e7f24abb51cfcc8bb6085db" category="list-text">BlueXPを初めて使用していて、既存のNetApp Support Site (NSS)の資格情報がある場合は、サインアップページをスキップして、ログインページに電子メールアドレスを直接入力できます。この初回ログインの一環として、BlueXPがサインアップします。</block>
-  <block id="845c6364e1c82b67190dc691538533e1" category="list-text">クラウドプロバイダのマーケットプレイスからBlueXPに登録すると、1つのアカウントの既存のサブスクリプションを新しいサブスクリプションに置き換えることができます。</block>
-  <block id="79ee9d46f0018b3cb493ecfda60ffa4b" category="inline-image-macro">BlueXPアカウントのサブスクリプション割り当てを示すスクリーンショット</block>
-  <block id="cd56a207e786d73d9abfd43dd2202acd" category="paragraph"><block ref="cd56a207e786d73d9abfd43dd2202acd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f1b38e057f0b3e3f883f386f412fd0a9" category="inline-link">AWSサブスクリプションを関連付ける方法について説明します</block>
-  <block id="73f01c2e56cdb9b30f4fe33ce5bbdc20" category="list-text"><block ref="73f01c2e56cdb9b30f4fe33ce5bbdc20" category="inline-link-rx"></block></block>
-  <block id="72bfd3f607087d94f12332f83b700ab8" category="inline-link">Azureサブスクリプションを関連付ける方法について説明します</block>
-  <block id="58b7b647775bc09b6b8a9f45df71775b" category="list-text"><block ref="58b7b647775bc09b6b8a9f45df71775b" category="inline-link-rx"></block></block>
-  <block id="1c74f0a5753f74c783e970c346408b4a" category="inline-link">Google Cloudサブスクリプションを関連付ける方法について説明します</block>
-  <block id="896471f03a9a1e209bebabb5923d2b3e" category="list-text"><block ref="896471f03a9a1e209bebabb5923d2b3e" category="inline-link-rx"></block></block>
-  <block id="f906d086ca70101dd1f218ea0786aee8" category="list-text">BlueXPは、コネクタの電源が14日以上切れている場合に通知します。</block>
-  <block id="18ed152ca3e6d97795e3c62f29f14fa3" category="inline-link">BlueXP通知についてはこちらをご覧ください</block>
-  <block id="68f34edaf3c796f179fbe80b3df89f0c" category="list-text"><block ref="68f34edaf3c796f179fbe80b3df89f0c" category="inline-link-rx"></block></block>
-  <block id="752697882fd7ee73f8d5f60a6f8c02f5" category="inline-link">コネクタの動作を維持する理由について説明します</block>
-  <block id="23f4e22cbf061f84ba77fd79e423d90f" category="list-text"><block ref="23f4e22cbf061f84ba77fd79e423d90f" category="inline-link-rx"></block></block>
-  <block id="1c8a63199471322e5b0fe67deb835f4b" category="list-text">Google Cloudのコネクタポリシーを更新し、Cloud Volumes ONTAP HAペアでStorage VMを作成および管理するために必要な権限を追加しました。</block>
-  <block id="3503950ea6a1ba87d4be44e07b1a16c8" category="paragraph">compute.instances.updateNetworkInterface</block>
-  <block id="67d29883f03468dc44eefc494f37473e" category="inline-link">ConnectorのGoogle Cloud権限を表示します</block>
-  <block id="cad0970fb2c4e3d28b046315bb4b7f02" category="paragraph"><block ref="ac22e421263f6f828d096313fa20e6a8" category="inline-link-rx"></block>。</block>
   <block id="fdfef50a14b07533a8bab908a66de10c" category="list-text">このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張が含まれています。</block>
-  <block id="e5fa209a01e6f968295b098866e0fcf5" category="paragraph"><block ref="e5fa209a01e6f968295b098866e0fcf5" category="inline-link-rx"></block></block>
   <block id="55157331e0485d25f0d603400a66335e" category="section-title">2023年2月5日</block>
   <block id="761cba7c96f916f975634bfd465401cb" category="section-title">Azure Data Lake Storage Gen2、ONTAP S3ストレージ、およびNFSがサポートされるようになりました</block>
   <block id="93cf60ec095fd8da10fc299cc367ba5f" category="paragraph">Cloud Sync でONTAP S3ストレージおよびNFSの追加の同期関係がサポートされるようになりました。</block>
@@ -421,7 +363,6 @@
   <block id="5f3a7b9d761ca72393881ec6b3e09094" category="inline-link">詳細については、「バックアップの制限」を参照してください</block>
   <block id="a6fdbb3a339b191fd632ddee7fbee8cf" category="paragraph"><block ref="10efc6f0a427d8e27569782c3149d3d7" category="inline-link-rx"></block>。</block>
   <block id="6d1902eb0495d9d60f02e9146d0a091a" category="paragraph"><block ref="0ee4c43a6d75245009919f8e1767edb7" category="inline-link-rx"></block>。</block>
-  <block id="33720bb7474c733a91f61445b2fe886d" category="paragraph"><block ref="919878f5ddd65e1ab5af9e84f9299a2f" category="inline-link-rx"></block>。</block>
   <block id="433c1ccd6c6d5af5fc78b729975e5f20" category="section-title">Connectorアウトバウンドインターネットアクセスエンドポイントの変更</block>
   <block id="6beb41a356d9287866f0b22c4b4eadcb" category="paragraph">BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します詳細については、を参照してください <block ref="1e9f4589e5d2713376df79f13fc9ba0a" category="inline-link-macro-rx"></block> 個々のサービスごと。</block>
   <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">2023年3月5日</block>
@@ -505,7 +446,6 @@
   <block id="bbe776d643f3b0568f3c2fa216a50124" category="section-title">ダークサイトのCloud Volumes ONTAP システムからデータをバックアップする機能</block>
   <block id="9d811f8ab4335c82eeb7d1477874bc1c" category="inline-link-macro">Amazon S3 への Cloud Volumes ONTAP データのバックアップ</block>
   <block id="a5e6246728060cb5f413df6fa5adbf0c" category="inline-link-macro">Cloud Volumes ONTAP データをAzure Blobにバックアップしています</block>
-  <block id="aef1b3252b7a5b85dab7066cccc19b52" category="paragraph">AWSおよびAzureの商用リージョンにインストールされているCloud Volumes ONTAP システムから、Amazon S3またはAzure Blobにデータをバックアップできるようになりました。そのためには、商用地域のLinuxホストにコネクタをインストールし、そこにCloud Volumes ONTAP システムを展開する必要があります。を参照してください <block ref="31e49e13e812c331f506a2a8e6b7ad22" category="inline-link-macro-rx"></block> および <block ref="ab5c78f08c8780b598ee1d4de19230ab" category="inline-link-macro-rx"></block>。</block>
   <block id="1cdf820a77c583c660d65df7b1ca03b8" category="inline-link">詳細フィルタの使用方法を参照してください</block>
   <block id="aa3492539222da5bc85fd5614f489f71" category="paragraph">[Job Monitoring]ページには高度なフィルタリング機能が追加され、時間、ワークロード（ボリューム、アプリケーション、仮想マシン、またはKubernetes）ごとにバックアップジョブとリストアジョブを検索できるようになりました。 ジョブタイプ、ステータス、作業環境、およびStorage VM。任意のリソース（「application_3」など）を検索するフリーテキストを入力することもできます。 <block ref="f726054cf0d935cd51c2a5edb3b3fd0c" category="inline-link-rx"></block>。</block>
   <block id="a19f14c281dd654ce355a7e0b63146b5" category="section-title">AWSデータブローカー向けのEBS Encryption</block>
@@ -571,7 +511,6 @@
   <block id="7907a1fccb5b8aa9b8df8283d3705052" category="list-text"><block ref="7907a1fccb5b8aa9b8df8283d3705052" category="inline-link-rx"></block></block>
   <block id="92900172340dbf6ba4b3454580c7583b" category="list-text"><block ref="92900172340dbf6ba4b3454580c7583b" category="inline-link-rx"></block></block>
   <block id="6f6e8b4bb29cff7fb5a94ccadb883777" category="inline-link-macro">ユーザクレデンシャルの管理方法について説明します</block>
-  <block id="551a80734187b23f5368b6a5609f3de3" category="paragraph"><block ref="cf16e3f2aabf285f3de8d29b23130725" category="inline-link-macro-rx"></block>。</block>
   <block id="cabf1912632a0d24145c02f00dc7d6b2" category="inline-link-macro">FSx for ONTAP でFlexGroup を構築</block>
   <block id="9a2a26c33c1a0f6b14b7bb3a214dbaf0" category="list-text">次の操作を実行できます。 <block ref="5e895283a25d01b135da63bdfcfdf72e" category="inline-link-macro-rx"></block> ボリューム：ボリュームデータをクラスタ全体に分散します。</block>
   <block id="9af9b754c1d16f271c1e6f4b1b2c4f4d" category="list-text">IOPS制限が引き上げられ、手動または自動で最大160、000のプロビジョニングが可能になりました。</block>
@@ -607,4 +546,42 @@
   <block id="d4a0c23b533adffe42d63c23035edd5c" category="paragraph">Cloud Tieringインターフェイスから[Licensing]タブが削除されました。従量課金制（PAYGO）サブスクリプションのすべてのライセンスに、オンプレミスのCloud Tieringダッシュボードからアクセスできるようになりました。また、このページからDigital Walletへのリンクもあり、Cloud Tieringのお客様所有のライセンスの使用（BYOL）を表示および管理できます。</block>
   <block id="66a0b4752150538292b81c073ca0b83b" category="section-title">階層化タブの名前が変更され、内容が更新されました</block>
   <block id="10d9a166ad36cdda1e0585914ac18d5f" category="paragraph">[Clusters Dashboard]タブの名前が[Clusters]に変更され、[On-Prem Overview]タブの名前が[On-Prem Dashboard]に変更されました。これらのページには、階層化構成を追加してストレージスペースを最適化できるかどうかを評価するための情報が追加されています。</block>
+  <block id="38d4d167f6dd9174c3535fc5c7ba4b76" category="section-title">2023年4月4日</block>
+  <block id="05cb21b1c0958252effc11eb9d437f38" category="section-title">展開モード</block>
+  <block id="9e2110ccb138521e2ed734b9376c3f5b" category="paragraph">BlueXP_deployment modes_を使用すると、ビジネス要件やセキュリティ要件に合わせてBlueXPを使用できます。次の3つのモードから選択できます。</block>
+  <block id="53c512e9599c71e1a585d636a5229820" category="list-text">標準モード</block>
+  <block id="e429f30641aba9e1fc7f2090cc77ce40" category="list-text">制限モード</block>
+  <block id="44f51c4ac8fa1a6f53f07c0c2f751b69" category="list-text">プライベートモード</block>
+  <block id="14862370498786066b8605b6924a2605" category="inline-link-macro">これらの展開モードの詳細については、こちらをご覧ください</block>
+  <block id="8ac00ea11b6f6d690abdf2e43ac24aa0" category="paragraph"><block ref="0074b237bf3db6e42e5cd08e19595bea" category="inline-link-macro-rx"></block>。</block>
+  <block id="7196a94f4d2eb95bbda75c84fd8bbaa9" category="admonition">制限モードが導入されたことで、SaaSプラットフォームを有効または無効にするオプションが廃止されました。制限モードはアカウント作成時に有効にすることができます。後で有効または無効にすることはできません。</block>
+  <block id="830d9c74b9a0266753efa0c38f11ba15" category="paragraph"><block ref="b3303746b1f0c3c97f0d5584351ddef9" category="inline-link-rx"></block>。</block>
+  <block id="40c193dda1b0a4df68695abe150f234a" category="section-title">「制限付き」モードでCloud Volumes ONTAP システムからクラウドにデータをバックアップする機能</block>
+  <block id="28e1f4495f1c7f5d7f7a5392a215c21a" category="paragraph">これで、AWS、Azure、GCPの商用リージョンにインストールされているCloud Volumes ONTAP システムのデータを「制限付き」モードでバックアップできるようになりました。これを行うには、まず「制限された」商業地域にコネクタをインストールする必要があります。を参照してください<block ref="0607f60a93455f62c98c67f333a631e0" category="inline-link-rx"></block> および<block ref="d878e312b2f9cdcef2f8eccaa51619ee" category="inline-link-rx"></block>。</block>
+  <block id="57c3b4ba3c60295d45a2554606080eef" category="section-title">APIを使用して、オンプレミスのONTAP ボリュームをONTAP S3にバックアップする機能</block>
+  <block id="430a1b25bf435fd21376b7b1884b6999" category="inline-link">デスティネーションとしてのONTAP S3との統合（REST APIを使用）</block>
+  <block id="720734599c08f49ea57d729ec9f12d53" category="section-title">Azureストレージアカウントのゾーン冗長性の側面をLRSからZRSに変更する機能</block>
+  <block id="95fa16fe802a71eca4c0ade2049c7325" category="inline-link">ストレージアカウントの複製方法の変更</block>
+  <block id="d9f6af5f4e2b16940729f1ac7da86d7d" category="paragraph">Cloud Volumes ONTAP システムからAzureストレージへのバックアップを作成する際、デフォルトでは、コスト最適化のためにローカル冗長性（LRS）を使用してBlobコンテナがプロビジョニングされます。異なるゾーン間でデータを複製する場合は、この設定をZone redundancy（ZRS）に変更できます。Microsoftの手順を参照してください<block ref="c549763665cfbb93dbccfdbf667aa0f2" category="inline-link-rx"></block>。</block>
+  <block id="a7393f4b2940dc4b2ad20a62564d25be" category="section-title">ジョブモニタの機能拡張</block>
+  <block id="93d5bf0f2acae0e81a6d13b46176b48e" category="list-text">ユーザが開始したバックアップ処理とリストア処理、および進行中のバックアップ処理などのシステム開始ジョブは、ONTAP 9.13.1以降を実行しているオンプレミスのONTAP システムの*[ジョブ監視]*タブで使用できるようになりました。以前のバージョンのONTAP では、ユーザが開始したジョブのみが表示されます。</block>
+  <block id="37ead9c61d06cf605bf6ef53ce2c8b21" category="list-text">すべてのジョブをレポートするためのCSVファイルをダウンロードできるほか、単一のジョブのJSONファイルをダウンロードして詳細を確認できるようになりました。<block ref="66069a05d43f728baec5f6540c7eac38" category="inline-link-rx"></block>。</block>
+  <block id="b52af75f0a736f3d25d4ca26a392ae12" category="inline-link">Cloud Backupから送信できるすべてのアラートを確認します</block>
+  <block id="d5bb4794eda4b0c9284e4c974224e6be" category="list-text">「Scheduled job failure」と「Restore job completes but with warnings」という2つの新しいバックアップジョブアラートが追加されました。<block ref="195577865fd88650b7ad870ffdc0b71a" category="inline-link-rx"></block>。</block>
+  <block id="220577050b1ecc839ba3ad281c6d2862" category="paragraph">AWSおよびAzureの商用リージョンにインストールされているCloud Volumes ONTAP システムから、Amazon S3またはAzure Blobにデータをバックアップできるようになりました。そのためには、商用地域のLinuxホストにコネクタをインストールし、そこにCloud Volumes ONTAP システムを展開する必要があります。を参照してください<block ref="0607f60a93455f62c98c67f333a631e0" category="inline-link-rx"></block> および<block ref="d878e312b2f9cdcef2f8eccaa51619ee" category="inline-link-rx"></block>。</block>
+  <block id="f42926ae5eb2834453e4706e43354d5c" category="section-title">2023年4月3日（バージョン1.22）</block>
+  <block id="e4279e9f497576fcde3caeb67ed0f96d" category="section-title">新しいデータ検出評価レポート</block>
+  <block id="5b9233dec22bab321ca47a360d9950b6" category="inline-link">Data Discovery Assessment Reportを生成して使用する方法を説明します</block>
+  <block id="a2f7db2af3b89cce9c368f52089406c7" category="paragraph">Data Discovery Assessment Reportでは、スキャンされた環境の概要を分析して、システムの調査結果を強調し、懸念領域と潜在的な修復手順を示します。このレポートの目的は、データガバナンスの懸念、データセキュリティの危険性、データセットのデータコンプライアンスギャップに対する認識を高めることです。<block ref="9ad86f8b2d35a79c635fcc2e2795f8e1" category="inline-link-rx"></block>。</block>
+  <block id="67778bfe57cf94d953dd530babc8df46" category="section-title">クラウド内の小規模インスタンスにData Senseを導入できます</block>
+  <block id="3d81ce02b62771b2627fbe04a96419a1" category="inline-link">使用可能なインスタンスタイプと制限事項を参照してください</block>
+  <block id="34590974cfa4c7d3c4258641c30ef959" category="paragraph">AWS環境にBlueXPコネクタからData Senseを導入する際に、デフォルトのインスタンスよりも小さい2つのインスタンスタイプから選択できるようになりました。小規模な環境をスキャンする場合は、クラウドコストを節約できます。ただし、小さいインスタンスを使用する場合はいくつかの制限があります。<block ref="98ea36794454fcb53d0ac9a791bd6948" category="inline-link-rx"></block>。</block>
+  <block id="914d653aae79118a23517243079b88cb" category="section-title">スタンドアロンスクリプトを使用して、LinuxシステムがData Senseのインストールに適しているかどうかをテストできます</block>
+  <block id="374deadc3a3b7f52c668078795f75e3a" category="inline-link">LinuxホストでData Senseをインストールする準備ができているかどうかを確認する方法を参照してください</block>
+  <block id="04659fbbded99230220bc3321874622f" category="paragraph">Data Senseのインストールとは別に、Linuxシステムがすべての前提条件を満たしていることを確認する場合は、必要条件のみをテストするスクリプトをダウンロードできます。<block ref="721973ab191f916be1f3432f173ac838" category="inline-link-rx"></block>。</block>
+  <block id="e86989a1de71c911aa1dff7be51112bd" category="section-title">ランサムウェア攻撃からデータを保護するための新しい推奨アクション</block>
+  <block id="23797756fe343bd5a2aff68f74b935df" category="list-text">「データソースのビジネスクリティカルなファイルをバックアップする」という新しい推奨アクションでは、Cloud Backupを使用してボリュームをバックアップして、最も重要なカテゴリのデータを保護する方法が記載されています。これは、ランサムウェア攻撃によってデータをリカバリする必要がある場合に重要です。推奨構成に従うと、必要なボリュームでバックアップを有効にできるようにCloud Backupインターフェイスにリダイレクトされます。</block>
+  <block id="51ad14036a828a2a993258fe95046128" category="list-text">「データソースのサイバーストレージ構成をオンにする」という新しい推奨アクションでは、データの保護に役立つ6つのONTAP 機能が有効になっているか無効になっているかを特定します。これらの機能は、オンプレミスのすべてのONTAP システムとCloud Volumes ONTAP システムで有効にする必要があります。</block>
+  <block id="dced9da708bc7f04e84ad156297f2b2a" category="inline-link">推奨されるすべての対処方法の一覧を確認してください</block>
+  <block id="8f0f57a606909986a57f6c9a3dcb68ef" category="paragraph"><block ref="3c293b78d34033676deb7d5c4a97ca37" category="inline-link-rx"></block>。</block>
 </blocks>
