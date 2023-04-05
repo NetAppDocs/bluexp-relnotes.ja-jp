@@ -109,9 +109,7 @@
   <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link">このページです</block>
   <block id="03e6ae21f561049c3e8010740c63aab3" category="inline-link">Cloud Volumes ONTAP の機能拡張について説明します</block>
   <block id="f23841b65ba519d2dd6a63a2a3e4de83" category="inline-link-macro">Continuous Syncの詳細については、こちらをご覧ください</block>
-  <block id="22c3479f6dd133b2d2d79cc8b481240f" category="section-title">2022年6月23日（バージョン1.3.1）</block>
   <block id="a720f7f5208abaac19d4db46d3bc0a7b" category="inline-link">修正された問題</block>
-  <block id="2ffbf992fae9becab7e787491b2cdf41" category="paragraph">バージョン1.3.1用のグローバルファイルキャッシュエッジソフトウェアは、から入手できます<block ref="2c81bb98c990e9738e500d000082628f" category="inline-link-rx"></block>。このリリースでは、に記載されている問題が修正されています<block ref="11a0d6c8cafa0c0950060c707371e2a0" category="inline-link-rx"></block>。</block>
   <block id="1511b856d0328cfba458b8f83c2e94e3" category="section-title">2022年7月3日</block>
   <block id="82e8338c73d6540f48f2e0cc8d035511" category="list-text">マドリード（ヨーロッパ-南西部1）</block>
   <block id="1a1145c860165dcd96b82eb7d32cd59f" category="list-text">パリ（ヨーロッパ-西9区）</block>
@@ -207,8 +205,6 @@
   <block id="8d9e30572c7be0b05a6e777166ea7d0b" category="summary">BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します詳細については、各サービスのすべてのリリースノートを参照してください。</block>
   <block id="67d516de6d58e90ec46d8a36eecbf35a" category="doc">BlueXPの最近の変更点</block>
   <block id="560c5ee7b92d80b3ef198362d8323824" category="section-title">BlueXPの導入</block>
-  <block id="78d1c9f9c86eecd86f5f568cfe0c0721" category="inline-link">BlueXPの詳細をご覧ください</block>
-  <block id="589a81f9a559c7792363bf5c658f7eb7" category="paragraph">2022年11月1日にCloud ManagerがBlueXPに名称変更されました。<block ref="f8081012fbfe0608e8247bd5ec45b886" category="inline-link-rx"></block></block>
   <block id="87448a3fa35fafb362a06b4d17cc1328" category="paragraph">このセクションでは、BlueXPの管理機能に関連する新機能(アカウント、コネクタ、クラウドプロバイダの資格情報など)について説明します。</block>
   <block id="c642de9f40ee79267e2e62e3ebed032e" category="section-title">2022年11月1日</block>
   <block id="f3630c1c94e3e51aaea5bdd037dc03c9" category="section-title">2022年10月30日</block>
@@ -584,4 +580,7 @@
   <block id="51ad14036a828a2a993258fe95046128" category="list-text">「データソースのサイバーストレージ構成をオンにする」という新しい推奨アクションでは、データの保護に役立つ6つのONTAP 機能が有効になっているか無効になっているかを特定します。これらの機能は、オンプレミスのすべてのONTAP システムとCloud Volumes ONTAP システムで有効にする必要があります。</block>
   <block id="dced9da708bc7f04e84ad156297f2b2a" category="inline-link">推奨されるすべての対処方法の一覧を確認してください</block>
   <block id="8f0f57a606909986a57f6c9a3dcb68ef" category="paragraph"><block ref="3c293b78d34033676deb7d5c4a97ca37" category="inline-link-rx"></block>。</block>
+  <block id="1d0a8122e5a250dbe5879cd7f8f5a495" category="inline-link">BlueXPの導入について詳しくは、こちらをご覧ください</block>
+  <block id="3214121f77d11d3720f824f6609986e1" category="paragraph">NetApp BlueXPは2022年11月1日にリリースされました。BlueXPは、Cloud Managerが提供する機能を拡張、強化しています。<block ref="f53c3e09f5dc895df05d3b248da7799e" category="inline-link-rx"></block></block>
+  <block id="f25c47eb7d9f3c638d89723bee6d2360" category="paragraph">APIの新機能を使用して、BlueXP Cloud Backupを使用してボリュームSnapshotをONTAP S3にバックアップできます。この機能は、現時点ではオンプレミスのONTAP システムでのみ使用できます。詳細な手順については、ブログを参照してください<block ref="50f757899df464a10b489edfac75ae5d" category="inline-link-rx"></block>。</block>
 </blocks>
