@@ -588,4 +588,5 @@
   <block id="402a1502f5c39fb55ca79d59e3184a34" category="section-title">Optimus PSMが拡張され、Edge Sync機能が構成されます</block>
   <block id="d3d5bae1dc5637cc2d16caf23d0426d2" category="paragraph">新しい運用耐障害性サービスと自動化されたIT運用リスク修復の提案を使用すると、システム停止や障害が発生する前に推奨される修正策を実装できます。</block>
   <block id="ae74e3db3615f676968300b7cc6e8ae1" category="paragraph">運用の耐障害性は、アラートとイベントを分析してサービスとソリューションの健全性、アップタイム、パフォーマンスを維持するのに役立つサービスです。</block>
+  <block id="10b9ce0cb6b2f607e0c7df6e246cfe67" category="paragraph"><block ref="8a7bc1e5ebe0f732b7f8c57cc7b088b6" category="inline-link-rx"></block>。</block>
 </blocks>
