@@ -46,7 +46,7 @@ BlueXP_deployment modes_を使用すると、ビジネス要件やセキュリ�
 * プライベートモード
 
 
-link:concept-modes.html["これらの展開モードの詳細については、こちらをご覧ください"]。
+10b9ce0cb6b2f607e0c7df6e246cfe67
 
 
 NOTE: 制限モードが導入されたことで、SaaSプラットフォームを有効または無効にするオプションが廃止されました。制限モードはアカウント作成時に有効にすることができます。後で有効または無効にすることはできません。
@@ -1023,7 +1023,7 @@ Digital AdvisorとBlueXPの統合の詳細については、を参照してく�
 
 === 2023年4月2日
 
-新しいEconomic Efficiencyサービスは、容量が現在または予測される低いクラスタを特定し、オンプレミスのAFF システムのデータ階層化や容量の追加に関する推奨事項を提供します。
+新しい経済効率化サービスでは、現在または予測される容量の少ないクラスタを特定し、オンプレミスのAFF システムのデータ階層化や容量の追加に関する推奨事項を提供します。
 
 link:https://docs.netapp.com/us-en/bluexp-economic-efficiency/get-started/intro.html["この新しいサービスの詳細については、こちらをご覧ください"]。
 
@@ -1047,25 +1047,25 @@ Eシリーズストレージシステムは、BlueXPから直接検出できる�
 
 
 
-=== e0feab0ee26165da9cddab198d1f1422
+=== 2023年4月5日（バージョン2.2）
 
 このリリースでは、以下に示す新機能が提供されます。また、に記載されている問題も修正されています https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html["修正された問題"]。更新されたソフトウェアパッケージは、から入手できます https://docs.netapp.com/us-en/cloud-manager-file-cache/download-gfc-resources.html#download-required-resources["このページです"]。
 
 
 
-==== b1bdb4b30cdf01fdd4fc306c24b3e449
+==== Google Cloudに導入されたCloud Volumes ONTAP システムでグローバルファイルキャッシュがサポートされます
 
-a92c52030822934c670502facf8a8f31
+Google CloudにCloud Volumes ONTAP システムを導入すると、新しい「エッジキャッシュ」ライセンスが利用可能になります。Cloud Volumes ONTAP システムの購入済み容量3TiBにつき、Global File Cache Edgeシステムを1つ導入できます。
 
-3a8f1f533494279acf2d044c11cf495a
-
-
-
-==== 89960279d43d6d504afb45e5a8dff137
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["Edge Cacheライセンスパッケージの詳細については、こちらをご覧ください。"]
 
 
 
-==== 402a1502f5c39fb55ca79d59e3184a34
+==== セットアップウィザードとGFC設定UIが拡張され、ネットアップライセンスの登録が実行されるようになりました
+
+
+
+==== Optimus PSMが拡張され、Edge Sync機能が構成されます
 
 
 
@@ -1261,9 +1261,9 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/ma
 
 === 2023年4月2日
 
-新しい運用耐障害性サービスと自動化されたIT運用リスク修復の提案を使用すると、システム停止や障害が発生する前に推奨される修復を実装できます。
+新しい運用耐障害性サービスと自動化されたIT運用リスク修復の提案を使用すると、システム停止や障害が発生する前に推奨される修正策を実装できます。
 
-運用の耐障害性は、アラートとイベントを分析してサービスとソリューションの健全性、アップタイム、パフォーマンスを維持するのに役立つサービスのカテゴリです。
+運用の耐障害性は、アラートとイベントを分析してサービスとソリューションの健全性、アップタイム、パフォーマンスを維持するのに役立つサービスです。
 
 link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/intro.html["この新しいサービスの詳細については、こちらをご覧ください"]。
 
