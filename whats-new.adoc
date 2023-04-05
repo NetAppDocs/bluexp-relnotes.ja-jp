@@ -285,13 +285,13 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 ==== 「制限付き」モードでCloud Volumes ONTAP システムからクラウドにデータをバックアップする機能
 
-これで、AWS、Azure、GCPの商用リージョンにインストールされているCloud Volumes ONTAP システムのデータを「制限付き」モードでバックアップできるようになりました。これを行うには、まず「制限された」商業地域にコネクタをインストールする必要があります。を参照してください https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["Amazon S3 への Cloud Volumes ONTAP データのバックアップ"] および https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-azure.html["Cloud Volumes ONTAP データをAzure Blobにバックアップしています"]。
+これで、AWS、Azure、GCPの商用リージョンにインストールされているCloud Volumes ONTAP システムのデータを「制限付き」モードでバックアップできるようになりました。これを行うには、まず「制限された」商業地域にコネクタをインストールする必要があります。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-modes.html["BlueXPの導入モードの詳細については、こちらをご覧ください"^]。を参照してください https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["Amazon S3 への Cloud Volumes ONTAP データのバックアップ"] および https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-azure.html["Cloud Volumes ONTAP データをAzure Blobにバックアップしています"]。
 
 
 
 ==== APIを使用して、オンプレミスのONTAP ボリュームをONTAP S3にバックアップする機能
 
-APIの新機能を使用して、BlueXP Cloud Backupを使用してボリュームSnapshotをONTAP S3にバックアップできます。この機能は、現時点ではオンプレミスのONTAP システムでのみ使用できます。詳細な手順については、ブログを参照してください https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-Feature-Blog-April-23-Updates/ba-p/443075#toc-hId--846533830["デスティネーションとしてのONTAP S3との統合（REST APIを使用）"^]。
+APIの新機能を使用して、BlueXP Cloud Backupを使用してボリュームSnapshotをONTAP S3にバックアップできます。この機能は、現時点ではオンプレミスのONTAP システムでのみ使用できます。詳細な手順については、ブログを参照してください https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-Feature-Blog-April-23-Updates/ba-p/443075#toc-hId--846533830["デスティネーションとしてのONTAP S3との統合"^]。
 
 
 
@@ -400,7 +400,7 @@ AWS環境にBlueXPコネクタからData Senseを導入する際に、デフォ�
 
 
 
-==== スタンドアロンスクリプトを使用して、LinuxシステムがData Senseのインストールに適しているかどうかをテストできます
+==== スタンドアロンスクリプトを使用して、Data Senseをインストールする前にLinuxシステムを認定できるようになりました
 
 Data Senseのインストールとは別に、Linuxシステムがすべての前提条件を満たしていることを確認する場合は、必要条件のみをテストするスクリプトをダウンロードできます。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-test-linux-system.html["LinuxホストでData Senseをインストールする準備ができているかどうかを確認する方法を参照してください"]。
 
@@ -852,7 +852,7 @@ Cloud Tieringの変更が行われたため、クラウド階層化処理を成�
 
 | \ https://*.cloudmanager.cloud.netapp.com | \ https://*.api.bluexp.netapp.com 
 |===
-のすべてのエンドポイントのリストを参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html#outbound-internet-access["AWS"^]、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#outbound-internet-access["Google Cloud"^]または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html#outbound-internet-access["Azure"^] クラウド環境：
+のすべてのエンドポイントのリストを参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-aws.html#outbound-internet-access["AWS"^]、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-google.html#outbound-internet-access["Google Cloud"^]または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-azure.html#outbound-internet-access["Azure"^] クラウド環境：
 
 
 
@@ -860,9 +860,27 @@ Cloud Tieringの変更が行われたため、クラウド階層化処理を成�
 
 
 
+=== 2023年4月4日
+
+Cloud Volumes ONTAP 9.12.1 GA以降では、次のように中国リージョンがAWSでサポートされるようになりました。
+
+* シングルノードシステムがサポートされます。
+* ネットアップから直接購入したライセンスはサポートされます。
+
+
+地域ごとの可用性については、を参照してください link:https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP のグローバルリージョンマップ"^]。
+
+
+
 === 2023年4月3日
 
 コネクタの3.9.28リリースでは、次の変更が導入されました。
+
+
+
+==== TurinリージョンがGoogle Cloudでサポートされるようになりました
+
+Turinリージョンは、Google Cloud for Cloud Volumes ONTAP およびConnector for Cloud Volumes ONTAP 9.12.1 GA以降でサポートされるようになりました。
 
 
 
@@ -884,7 +902,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capa
 
 Cloud Volumes ONTAP の[概要]、[ボリューム]、[アグリゲート]ページで使用できるユーザインターフェイスが再設計されました。タイルベースのデザインでは、より包括的な情報が各タイルに表示され、ユーザーエクスペリエンスが向上します。
 
-image:screenshot-resource-page-rn.png["このスクリーンショットは、Cloud Volumes ONTAP の概要ページに再設計されたBlueXPユーザインターフェイスを示しています。さまざまなタイルに、ストレージ効率、バージョン、容量分布、Cloud Volumes ONTAP 環境に関する情報、ボリューム、アグリゲート、レプリケーション、バックアップが表示されます。"]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-resource-page-rn.png["このスクリーンショットは、Cloud Volumes ONTAP の概要ページに再設計されたBlueXPユーザインターフェイスを示しています。さまざまなタイルに、ストレージ効率、バージョン、容量分布、Cloud Volumes ONTAP 環境に関する情報、ボリューム、アグリゲート、レプリケーション、バックアップが表示されます。"]
 
 
 
@@ -895,7 +913,7 @@ CLIまたはSystem Managerで作成したFlexGroup ボリュームは、BlueXP�
 
 NOTE: 現時点では、BlueXPでは既存のFlexGroup ボリュームのみを表示できます。BlueXPでFlexGroup ボリュームを作成することはできませんが、今後のリリースでサポートする予定です。
 
-image:screenshot-show-flexgroup-volume.png["[Volumes]タイルの下にFlexGroup ボリュームアイコンが配置されたテキストを示すスクリーンショット。"]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-show-flexgroup-volume.png["[Volumes]タイルの下にFlexGroup ボリュームアイコンが配置されたテキストを示すスクリーンショット。"]
 
 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-volumes.html["作成したFlexGroup ボリュームの表示について詳しくは、こちらをご覧ください。"^]
 
@@ -915,41 +933,6 @@ Cloud Volumes ONTAP 9.12.1 GA以降では、次のように中国リージョン
 
 
 地域ごとの可用性については、を参照してください link:https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP のグローバルリージョンマップ"^]。
-
-
-
-=== 2023年3月5日
-
-コネクタの3.9.27リリースでは、次の変更が加えられました。
-
-
-
-==== Cloud Volumes ONTAP 9.13.0
-
-BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.13.0を導入、管理できるようになりました。
-
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
-
-
-
-==== MTEKMライセンス
-
-バージョン9.12.1 GA以降を実行する新規および既存のCloud Volumes ONTAP システムに、マルチテナント暗号化キー管理（MTEKM）ライセンスが含まれるようになりました。
-
-マルチテナントの外部キー管理を使用すると、NetApp Volume Encryptionの使用時に、個々のStorage VM（SVM）でKMIPサーバを介して独自のキーを保持できます。
-
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-volumes.html["ネットアップの暗号化ソリューションでボリュームを暗号化する方法について説明します"^]。
-
-
-
-==== インターネットを使用しない環境のサポート 
-
-インターネットから完全に分離されたすべてのクラウド環境でCloud Volumes ONTAP がサポートされるようになりました。これらの環境では、ノードベースのライセンス（BYOL）のみがサポートされます。容量単位のライセンスはサポートされていません。開始するには、コネクタソフトウェアを手動でインストールし、コネクタで実行されているBlueXPコンソールにログインし、BYOLライセンスをDigital Walletに追加してから、Cloud Volumes ONTAP を導入します。 
-
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["インターネットにアクセスできない場所にコネクタを取り付けます"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#access-the-local-ui["コネクタのBlueXPコンソールにアクセスします"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["未割り当てライセンスを追加します"^]
-
 
 
 
@@ -1023,7 +1006,7 @@ Digital AdvisorとBlueXPの統合の詳細については、を参照してく�
 
 === 2023年4月2日
 
-新しい経済効率化サービスでは、現在または予測される容量の少ないクラスタを特定し、オンプレミスのAFF システムのデータ階層化や容量の追加に関する推奨事項を提供します。
+新しい経済効率化サービスでは、現在または予測されている容量が少ないストレージ資産を特定し、オンプレミスのAFF システムのデータ階層化や容量の追加に関する推奨事項を提供します。
 
 link:https://docs.netapp.com/us-en/bluexp-economic-efficiency/get-started/intro.html["この新しいサービスの詳細については、こちらをご覧ください"]。
 
