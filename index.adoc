@@ -2,8 +2,8 @@
 layout: astra 
 sidebar: sidebar 
 permalink: index.html 
-lead: 'These release notes describe recent enhancements to the cloud services that are part of BlueXP (formerly Cloud Manager). Links are available to the full set of release notes for each individual service.' 
-summary: このリリースノートでは、BlueXP（旧称Cloud Manager）で強化された クラウド サービス の最新機能について説明します。個々のサービスごとにリリースノートの全セットへのリンクがあります。 
+lead: These release notes describe recent enhancements to the cloud services that are part of BlueXP. Links are available to the full set of release notes for each individual service. 
+summary: このリリースノートでは、BlueXPに含まれるクラウドサービスに関する最新の機能強化について説明します。個々のサービスごとにリリースノートの全セットへのリンクがあります。 
 ---
 = BlueXPリリースノート
 :toc: macro
