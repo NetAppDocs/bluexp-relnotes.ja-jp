@@ -47,16 +47,16 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/whats-new.html["セッ�
 
 == データサービス
 
-* https://docs.netapp.com/us-en/cloud-manager-app-template/whats-new.html["AppTemplate （アプリケーションテンプレート）"^]
-* https://docs.netapp.com/us-en/cloud-manager-backup-restore/whats-new.html["クラウドバックアップ"^]
-* https://docs.netapp.com/us-en/cloud-manager-data-sense/whats-new.html["クラウドデータの意味"^]
-* https://docs.netapp.com/us-en/cloud-manager-sync/whats-new.html["Cloud Sync"^]
-* https://docs.netapp.com/us-en/cloud-manager-tiering/whats-new.html["クラウド階層化"^]
-* https://docs.netapp.com/us-en/cloud-manager-compute/whats-new.html["コンピューティング"^]
+* https://docs.netapp.com/us-en/cloud-manager-backup-restore/whats-new.html["バックアップとリカバリ"^]
+* https://docs.netapp.com/us-en/cloud-manager-data-sense/whats-new.html["分類"^]
+* https://docs.netapp.com/us-en/cloud-manager-compute/whats-new.html["クラウド運用"^]
+* https://docs.netapp.com/us-en/cloud-manager-sync/whats-new.html["コピーと同期"^]
 * https://docs.netapp.com/us-en/bluexp-digital-wallet/index.html["デジタルウォレット"^]
 * https://docs.netapp.com/us-en/bluexp-economic-efficiency/index.html["経済効率"^]
-* https://docs.netapp.com/us-en/cloud-manager-file-cache/whats-new.html["グローバルファイルキャッシュ"^]
+* https://docs.netapp.com/us-en/cloud-manager-file-cache/whats-new.html["エッジキャッシュ"^]
 * https://docs.netapp.com/us-en/bluexp-operational-resiliency/index.html["運用の耐障害性"^]
 * https://docs.netapp.com/us-en/cloud-manager-ransomware/whats-new.html["ランサムウェアからの保護"^]
+* https://docs.netapp.com/us-en/cloud-manager-app-template/whats-new.html["修正"^]
 * https://docs.netapp.com/us-en/cloud-manager-replication/whats-new.html["レプリケーション"^]
+* https://docs.netapp.com/us-en/cloud-manager-tiering/whats-new.html["階層化"^]
 
