@@ -88,46 +88,11 @@
   <block id="59dfc17500b1e0b8d1824eb8b1413080" category="paragraph">Cloud Volumes ONTAP システムまたはオンプレミスの ONTAP クラスタから ONTAP ファイルシステム用の Amazon FSX にデータをレプリケートできるようになりました。</block>
   <block id="40f78d193b858589ad7df4dd4ce61ad6" category="inline-link">データレプリケーションの設定方法について説明します</block>
   <block id="1e56755e05ec049b30c49b9d53744ca1" category="paragraph"><block ref="0337e364432fca0f343e5f2660661b77" category="inline-link-rx"></block>。</block>
-  <block id="81ad4f0de90ee8a7305d0fd7751df796" category="section-title">新しいGoogle Cloudリージョンサポート</block>
   <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link">このページです</block>
   <block id="03e6ae21f561049c3e8010740c63aab3" category="inline-link">Cloud Volumes ONTAP の機能拡張について説明します</block>
-  <block id="f23841b65ba519d2dd6a63a2a3e4de83" category="inline-link-macro">Continuous Syncの詳細については、こちらをご覧ください</block>
   <block id="a720f7f5208abaac19d4db46d3bc0a7b" category="inline-link">修正された問題</block>
-  <block id="1511b856d0328cfba458b8f83c2e94e3" category="section-title">2022年7月3日</block>
-  <block id="82e8338c73d6540f48f2e0cc8d035511" category="list-text">マドリード（ヨーロッパ-南西部1）</block>
-  <block id="1a1145c860165dcd96b82eb7d32cd59f" category="list-text">パリ（ヨーロッパ-西9区）</block>
-  <block id="59db2d8d08645826b1c034be277c61d2" category="section-title">Azure Data Lake Storage Gen2のサポート</block>
-  <block id="c7b46a2bde58e21272436d4c94238e15" category="paragraph">NFSサーバまたはSMBサーバからAzure Data Lake Storage Gen2へデータを同期できるようになりました。</block>
-  <block id="20a2ab980685308347c082aec3253ed9" category="paragraph">Azureデータレイクを含む同期関係を作成する場合は、Cloud Sync にストレージアカウントの接続文字列を指定する必要があります。共有アクセスシグニチャ（SAS）ではなく、通常の接続文字列である必要があります。</block>
-  <block id="557b7fbb966ab34b32484f8c806869ae" category="inline-link-macro">サポートされている同期関係のリストを表示します</block>
-  <block id="ebf5fe0ded517668f74c4f41da278835" category="section-title">Google Cloud Storageからの継続的な同期</block>
-  <block id="6ce39114bc116067ef30366e7df90870" category="paragraph">ソースのGoogle Cloud Storageバケットからクラウドストレージターゲットへ、継続的な同期設定がサポートされるようになりました。</block>
-  <block id="fd36af2b64264c3f7fb77364a0046eb8" category="paragraph">Cloud Sync は、初回のデータ同期後、ソースのGoogle Cloud Storageバケットで変更をリスンし、変更が発生した場合はターゲットに継続的に同期します。この設定は、Google Cloud StorageバケットからS3、Google Cloud Storage、Azure BLOBストレージ、StorageGRID 、またはIBMストレージに同期する場合に使用できます。</block>
-  <block id="5f5f25c6813ee0b01f552cd13dcebec9" category="paragraph">データブローカーに関連付けられているサービスアカウントでこの設定を使用するには、次の権限が必要です。</block>
-  <block id="d38ece9df5f99d11a5e7597c6f6c34f2" category="paragraph">Cloud Sync データブローカーがGoogle Cloudの次のリージョンでサポートされるようになりました。</block>
-  <block id="db760e7471192daa123eed31bfba312d" category="list-text">コロンバス（us-east5）</block>
-  <block id="ad6033c8e4eda00017eca167a149ced4" category="list-text">ダラス（US -サウス1）</block>
-  <block id="4b14bbd178377e932c7e97664c276be7" category="list-text">ミラノ（ヨーロッパ-西8）</block>
-  <block id="66c941bf286fd505b009d484ca94a594" category="section-title">新しいGoogle Cloudマシンタイプ</block>
-  <block id="32ddf7d830e3a5092074c4f9bb211736" category="paragraph">Google Cloudのデータブローカーのデフォルトのマシンタイプは、n2 -標準-4になりました。</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">詳細はこちら。</block>
-  <block id="e0daf39823ec1a1a7878c9718f063d5f" category="section-title">Googleドライブ</block>
-  <block id="173bb19c121e8b179d4baa317b637722" category="paragraph">NFSサーバまたはSMBサーバからGoogle Driveにデータを同期できるようになりました。「マイドライブ」と「共有ドライブ」の両方がターゲットとしてサポートされています。</block>
-  <block id="edb5ab0783f7fd41d24fc8a5ae44aef6" category="inline-link">Googleドライブの要件について詳しくは、こちらをご覧ください</block>
-  <block id="bcc0f3bd91fbadb8c521e47f25f76843" category="paragraph">Googleドライブを含む同期関係を作成する前に、必要な権限と秘密鍵を持つサービスアカウントを設定する必要があります。<block ref="556946ce0efd88231506c545597e8d31" category="inline-link-rx"></block>。</block>
-  <block id="470d6fa86215393cc3b918331e6ca824" category="paragraph"><block ref="4191451a3c972228fe86dca53f50e67d" category="inline-link-rx"></block>。</block>
-  <block id="d6a24c2feaa9a899592c4cd5cf4a5011" category="section-title">Azure Data Lakeのサポートが追加されています</block>
-  <block id="ac7f6cb7e466c5bda81009406ce9c28c" category="paragraph">Cloud Sync で、Azure Data Lake Storage Gen2：</block>
-  <block id="291356d9de6df3e4cba63e5478b2bc01" category="list-text">Amazon S3からAzure Data Lake Storage Gen2への接続に対応しています</block>
-  <block id="427bae06dc18214df77602503b45e556" category="list-text">IBM Cloud Object StorageからAzure Data Lake Storage Gen2への接続</block>
-  <block id="2ade6486b18196b7cbbcabc2c40d01ac" category="list-text">StorageGRID からAzureデータレイクストレージGen2への接続</block>
-  <block id="6d7ca7d8b2d372856465f7f7cee67c0c" category="section-title">同期関係の新しいセットアップ方法が追加されました</block>
-  <block id="1bc09668b27b6867ae7fc05d1c02faa8" category="section-title">ドラッグアンドドロップ</block>
-  <block id="bb444099cdb375196c5bb6444eabdc45" category="paragraph">ある作業環境を別の作業環境の上にドラッグアンドドロップして、キャンバスから同期関係を設定できるようになりました。</block>
-  <block id="bf283dfa54b095b3eda8812752b158f9" category="section-title">右パネル設定</block>
-  <block id="79074218529972fce8a6ccab7f00095d" category="paragraph">Canvasから作業環境を選択し、右パネルから同期オプションを選択することで、Azure Blob StorageまたはGoogle Cloud Storageの同期関係を設定できるようになりました。</block>
-  <block id="9fffb7017709a369d0e0ce563839fee2" category="paragraph"><block ref="74635618081bc819b4c328f5ee049800" category="inline-link-rx"></block>。</block>
   <block id="a207f0479f1471fc5336b474cf75c28a" category="section-title">2022年7月25日（バージョン2.0）</block>
   <block id="40ede24da7e93db6d61cd94c084008e7" category="section-title">Azure Marketplaceからのグローバルファイルキャッシュの容量ベースの新しいライセンスモデル</block>
   <block id="70dc5565ba7814d08bd68476e5fb76ff" category="paragraph">新しい「Edge Cache」ライセンスには、「CVO Professional」ライセンスと同じ機能がありますが、グローバルファイルキャッシュのサポートも含まれています。このオプションは、Azureに新しいCloud Volumes ONTAP システムを導入するときに表示されます。Cloud Volumes ONTAP システムでプロビジョニングされた容量3TiBにつき、グローバルファイルキャッシュエッジシステムを1台導入することができます。少なくとも30TiBをプロビジョニングする必要があります。GFC License Managerサービスが拡張され、容量ベースのライセンスが提供されるようになりました。</block>
@@ -143,23 +108,7 @@
   <block id="b42dff6de52c55fe0d6831817d6b309d" category="section-title">ONTAP のFSXをデータソースとして使用します</block>
   <block id="0f8ffeac5211fc4e0dfb43c430753ef2" category="paragraph">Amazon FSX for ONTAP ファイルシステムから次のデスティネーションにデータをレプリケートできるようになりました。</block>
   <block id="0ef90fde5440e5fbd859cb4d59f76f2c" category="list-text">オンプレミスの ONTAP クラスタ</block>
-  <block id="da8b75d7f83536bef455f4cfcb81982f" category="section-title">2022年9月4日</block>
-  <block id="a9b4886a93e658bc8692b215ae9412a0" category="section-title">Googleドライブの追加サポート</block>
-  <block id="38e24a385d32651afeede647ae09290f" category="list-text">Cloud Sync でGoogleドライブの同期関係が新たにサポートされるようになりました。</block>
-  <block id="989bccb142d89b75c8392bf5f5e1604c" category="list-text">Google DriveからNFSサーバーへ</block>
-  <block id="44191e60b1503eaf657847a1915cafeb" category="list-text">GoogleドライブからSMBサーバーへ</block>
-  <block id="1483ec65b58ea8f21aa486ac67f98497" category="list-text">Google Driveを含む同期関係に関するレポートを生成することもできます。</block>
-  <block id="b8573b8d6cb0195fa946927c3aa36397" category="inline-link">レポートの詳細については、こちらをご覧ください</block>
-  <block id="913d3279d6ca39c6bd290fac85314961" category="paragraph"><block ref="9ba5aa88e2b271505b32ed12efb1883e" category="inline-link-rx"></block>。</block>
-  <block id="6a8d3c04a6ef359c72722da014b3e2a0" category="section-title">継続的な同期機能の強化</block>
-  <block id="700604b36a9bc9c763c84403ff4fc2a1" category="paragraph">次のタイプの同期関係で、継続的同期設定を有効にできるようになりました。</block>
-  <block id="16a4f69cf5e478434d66f741eb65609e" category="list-text">NFSサーバへのS3バケット</block>
-  <block id="f1b9deb2828fa22b8254f1a8a51f5789" category="list-text">Google Cloud StorageをNFSサーバに接続している</block>
   <block id="a67ce68ccac082ad54a552bdbcb6ecd7" category="section-title">Eメール通知</block>
-  <block id="2a6aa0e8585b387718e871db90f1a32e" category="paragraph">Cloud Sync 通知をEメールで受信できるようになりました。</block>
-  <block id="e6694f6134fb0186a17db662ced006d0" category="inline-link">通知を設定する方法について説明します</block>
-  <block id="f7ae9f1fb8f4b7044457ebf35058b088" category="paragraph"><block ref="8365080032c57ac637a7cb1d0af196ae" category="inline-link-rx"></block>。</block>
-  <block id="ec9614a46239aa59499c4a94e919963a" category="inline-link">詳細はこちらをご覧ください</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022年9月18日</block>
   <block id="392d70ca39f31f10bd637936769788df" category="inline-link">StorageGRID</block>
   <block id="440be74a67502f9c3d55890782329328" category="paragraph">コネクタの3.9.22リリースでは、次の変更が加えられました。</block>
@@ -187,16 +136,6 @@
   <block id="560c5ee7b92d80b3ef198362d8323824" category="section-title">BlueXPの導入</block>
   <block id="87448a3fa35fafb362a06b4d17cc1328" category="paragraph">このセクションでは、BlueXPの管理機能に関連する新機能(アカウント、コネクタ、クラウドプロバイダの資格情報など)について説明します。</block>
   <block id="c642de9f40ee79267e2e62e3ebed032e" category="section-title">2022年11月1日</block>
-  <block id="f3630c1c94e3e51aaea5bdd037dc03c9" category="section-title">2022年10月30日</block>
-  <block id="5c7d084f950ad8af7d03c171b38bbaba" category="section-title">Microsoft Azureからの継続的な同期</block>
-  <block id="e4c664e7de05c9b6f33c4dc4c5e8c120" category="paragraph">Azureデータブローカーを使用し、ソースのAzureストレージバケットからクラウドストレージへの継続的な同期設定がサポートされるようになりました。</block>
-  <block id="3cf98067a279c5afe27919c8acd25ea4" category="paragraph">Cloud Sync は、最初のデータ同期の完了後、ソースのAzureストレージバケットで変更をリスンし、ターゲットへの変更が発生した場合はその変更を継続的に同期します。この設定は、AzureストレージバケットからAzure BLOBストレージ、CIFS、Google Cloud Storage、IBM Cloud Object Storage、NFS、およびStorageGRID に同期する場合に使用できます。</block>
-  <block id="91cba4a0b0d46011e31e848c61739e1e" category="paragraph">Azureデータブローカーでは、この設定を使用するためのカスタムロールと次の権限が必要です。</block>
-  <block id="beee0e2c828d5d7a17dcb84704a1dd82" category="paragraph">電子メールで通知を受信するには、同期関係で*Notification*設定を有効にしてから、BlueXPでAlerts and Notification設定を構成する必要があります。</block>
-  <block id="75a84cecb34ecabf76f44935f66b67eb" category="paragraph">BlueXPのCanvasから同期関係を直接設定する方法が追加されました。</block>
-  <block id="f3347c5f92241e385b544f1b53daa14d" category="inline-image-macro">BlueXPの通知センターを示すスクリーンショット</block>
-  <block id="05d87278ff5c6195179e1954eecb9a4f" category="paragraph"><block ref="05d87278ff5c6195179e1954eecb9a4f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="779ddd312a3a36e145a7bb3229e99a4a" category="paragraph"><block ref="779ddd312a3a36e145a7bb3229e99a4a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3831fedd132ba9d729ab12b97bb43833" category="paragraph">Cloud Volumes Service for Google CloudをBlueXPから直接管理できるようになりました。</block>
   <block id="534171d3771a50398027a07275778b3e" category="paragraph">Eシリーズストレージシステムは、BlueXPから直接検出できるようになりました。Eシリーズシステムを検出すると、ハイブリッドマルチクラウド全体のデータを包括的に把握できます。</block>
   <block id="d88ec9141ca0f799220b70e6188c8c33" category="section-title">2022年10月24日（バージョン2.1）</block>
@@ -232,15 +171,6 @@
   <block id="aa60f08e9c5a748d9b57c0e7689a43f5" category="paragraph"><block ref="aa60f08e9c5a748d9b57c0e7689a43f5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c081854506aed2f757f753e779bc45f" category="paragraph">BlueXPでは、FlexGroup ボリュームの作成はサポートされていません。FlexGroup ボリュームの作成には、引き続きSystem ManagerまたはCLIを使用する必要があります。</block>
   <block id="5c0fff562b33dc0a5a3acac30ed2d313" category="section-title">2022年12月6日</block>
-  <block id="5912630061434e78e733b8d5e5e3dc88" category="section-title">2022年12月11日</block>
-  <block id="9709c6ba9ff4b10cb5ec3f4f956d3226" category="section-title">ディレクトリを名前でフィルタリングします</block>
-  <block id="43b44f78e255d05aac846a6181095cd6" category="paragraph">同期関係に新しい*ディレクトリ名を除外*設定を使用できるようになりました。ユーザは、最大15個のディレクトリ名を同期から除外できます。デフォルトでは、.copy-Offload、.snapshot、~snapshotディレクトリが除外されます。</block>
-  <block id="84a8ea117dd9c6b8ddbbe8f47665f923" category="inline-link">[ディレクトリ名を除外する]設定の詳細を確認してください</block>
-  <block id="8391e3aac2d2f8dd1b8e38350d072463" category="paragraph"><block ref="018123db357961d73398ef3066f74a1b" category="inline-link-rx"></block>。</block>
-  <block id="211e17aac7e6f53a17024d84713e8c34" category="section-title">Amazon S3およびONTAP S3ストレージのサポートが追加されています</block>
-  <block id="9c0b9eb5c4fc9353fd2021e992f68e22" category="paragraph">Cloud Sync でAWS S3およびONTAP S3ストレージの追加の同期関係がサポートされるようになりました。</block>
-  <block id="9952f86a1aa7c6f33a76413df4560b41" category="list-text">AWS S3からONTAP S3ストレージ</block>
-  <block id="dfe6b806f7dd136ec5c5baaaae335c21" category="list-text">ONTAP S3ストレージからAWS S3へ</block>
   <block id="c7360b05ac6a5646b2770ea0c162d4fb" category="inline-link">サポートされている同期関係の詳細を確認できます</block>
   <block id="623dda645e4d20988b8c1d61423da14e" category="paragraph"><block ref="f9c4f71cab183e7ba62e68df19c3dfe9" category="inline-link-rx"></block>。</block>
   <block id="1f7138998459804601fc351f8d442e29" category="section-title">2023年1月1日</block>
@@ -253,17 +183,6 @@
   <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="inline-link">AWS</block>
   <block id="56ef2682280ac110060b881925a87b80" category="inline-link">Google Cloud</block>
   <block id="3a580f142203677f1f0bc30898f63f53" category="inline-link">Azure</block>
-  <block id="bfc6fe3f8d2577420634f29daac2cfe3" category="section-title">2023年1月3日</block>
-  <block id="2ce75b34222d130ea74078b75eb79cc0" category="section-title">データブローカーのローカル設定をUIに表示します</block>
-  <block id="88dcb8d0dd987f4f5606df5981050a8d" category="paragraph">ユーザがUIで各データブローカーのローカル設定を表示できるように、構成を表示*オプションが追加されました。</block>
-  <block id="44580ec91e2012543452f790258e1ccf" category="inline-link">データブローカーグループの管理に関する詳細情報</block>
-  <block id="1bc15ec9e137e3d7653e9f04a08b840b" category="paragraph"><block ref="cbafc7311a6970273ad5a1c3b2c0b656" category="inline-link-rx"></block>。</block>
-  <block id="02840b44154535342dd4cf6739d2c77d" category="section-title">AzureとGoogle Cloudデータブローカーオペレーティングシステムにアップグレード</block>
-  <block id="69e30db11dbff8b5efd6091166af232f" category="paragraph">AzureとGoogle Cloudのデータブローカー向けオペレーティングシステムがRocky Linux 9.0にアップグレードされました。</block>
-  <block id="1c01c907ca0a713df58ba8f4b21fd39c" category="inline-link">Azureのデータブローカーインスタンスの詳細については、こちらをご覧ください</block>
-  <block id="696fb1a24aae70782cbc2deebfd01ec3" category="paragraph"><block ref="721924a927b7206a5d8775fe840ddbcd" category="inline-link-rx"></block>。</block>
-  <block id="648e059d69339d82d82738abf0bd4016" category="inline-link">Google Cloudのデータブローカーインスタンスに関する詳細を確認できます</block>
-  <block id="6619068f4ac101fa3e8003ee6618d9da" category="paragraph"><block ref="fa611f614e55d9a2ca38028d5a5ab5b7" category="inline-link-rx"></block>。</block>
   <block id="f2e4e4f7b0b864863bfac74f4383a826" category="section-title">ONTAP クレデンシャルを保存する</block>
   <block id="6a28e623eb98d9eb0799ab2c472620f3" category="paragraph">コネクタを使用せずに直接検出されたオンプレミスのONTAP 作業環境を開くときに、作業環境を開くたびにクレデンシャルを入力する必要がないように、ONTAP クラスタのクレデンシャルを保存するオプションが利用できるようになりました。</block>
   <block id="8a08a7490f38dacd86c415a138d60aea" category="inline-link">このオプションの詳細については、こちらをご覧ください。</block>
@@ -282,37 +201,6 @@
   <block id="f77caa23f512ad7c5c38882b9a13b6db" category="paragraph"><block ref="d9564f80e250011b85c05664d779bbef" category="inline-link-rx"></block>。</block>
   <block id="c1d1220273fe79d481c41539bea31710" category="paragraph">次に、BlueXPの左ナビゲーションメニューから* Governance &gt; Ransomware Protection *を選択してこのサービスにアクセスしてください。</block>
   <block id="fdfef50a14b07533a8bab908a66de10c" category="list-text">このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張が含まれています。</block>
-  <block id="55157331e0485d25f0d603400a66335e" category="section-title">2023年2月5日</block>
-  <block id="761cba7c96f916f975634bfd465401cb" category="section-title">Azure Data Lake Storage Gen2、ONTAP S3ストレージ、およびNFSがサポートされるようになりました</block>
-  <block id="93cf60ec095fd8da10fc299cc367ba5f" category="paragraph">Cloud Sync でONTAP S3ストレージおよびNFSの追加の同期関係がサポートされるようになりました。</block>
-  <block id="852f9290d6e492b0c65094f3676c0c9b" category="list-text">ONTAP S3ストレージからNFSへ</block>
-  <block id="84b6c32a0e939d90280ebcdf036f7678" category="list-text">NFSからONTAP S3ストレージ</block>
-  <block id="444a944798699bf4690bdc286127a9f2" category="paragraph">Cloud Sync では、Azure Data Lake Storage Gen2もサポートしています。これは、以下の機能に対するソースとターゲットの両方に対応しています。</block>
-  <block id="e83e5674ab295a6613b60f5e12d1bfe3" category="list-text">NFS サーバ</block>
-  <block id="876d9b7b1c11a792f25a0e1e9dbf31dd" category="list-text">SMB サーバ</block>
-  <block id="a68d8b6ae92fdf98aa74ce8cfe41a27f" category="list-text">ONTAP S3 ストレージ</block>
-  <block id="5446a6bee3301e1f52824fc0affa6299" category="list-text">IBM クラウドオブジェクトストレージ</block>
-  <block id="b3c6595e164d585a18699d6b36cab08a" category="section-title">Amazon Web Servicesデータブローカーオペレーティングシステムにアップグレード</block>
-  <block id="56b81b60dec6a853cc4a71acf27e639b" category="paragraph">AWSデータブローカーのオペレーティングシステムがAmazon Linux 2022にアップグレードされました。</block>
-  <block id="0dd728efd36ee3f96597b07096922b08" category="inline-link">AWSのデータブローカーインスタンスに関する詳細を確認できます</block>
-  <block id="ab1608bfe0e155c43b562df0832f62cb" category="paragraph"><block ref="f5f6281702689de644df10baf88bc982" category="inline-link-rx"></block>。</block>
-  <block id="4378789701cd2498a252a52806a1f3a4" category="section-title">2023年2月6日</block>
-  <block id="86763912a3fb720760d95338a077e264" category="section-title">古いバックアップファイルをStorageGRID システムからAzureアーカイブストレージに移動する機能</block>
-  <block id="56182657e28c8dfde64ef2386feb1cde" category="paragraph">これで、古いバックアップファイルをStorageGRID システムからAzureのアーカイブストレージに階層化できるようになりました。これにより、StorageGRID システムのスペースを解放し、古いバックアップファイルには低コストのストレージクラスを使用することでコストを削減できます。</block>
-  <block id="2dbb2c58aa8d6b345d1c74a70f17d1a2" category="paragraph">この機能は、オンプレミスクラスタがONTAP 9.12.1以降を使用し、StorageGRID システムが11.4以降を使用している場合に使用できます。<block ref="70195a33db6d6b4308ed37adb844e324" category="inline-link-rx"></block>。</block>
-  <block id="609d2baddee02ef8a648a83c3c6583af" category="section-title">DataLockとRansomwareによる保護は、Azure Blobでのバックアップファイルに対して設定できます</block>
-  <block id="dc78c18207a001d77615c0f857f16f9d" category="inline-link">DataLockとランサムウェア防御を使用してバックアップを保護する方法については、こちらをご覧ください</block>
-  <block id="44522dba6ab4478f7cb53c4622e3dafa" category="paragraph">DataLockとRansomware Protectionは、Azure Blobに保存されたバックアップファイルでサポートされるようになりました。Cloud Volumes ONTAP またはオンプレミスONTAP システムでONTAP 9.12.1以降を実行している場合、バックアップファイルをロックしてスキャンし、ランサムウェアの可能性を検出できるようになりました。<block ref="97e28eb0f7fdcd65cbf9241c83ee1d40" category="inline-link-rx"></block>。</block>
-  <block id="5b97e7065442b7eb64668b69dbdada19" category="section-title">FlexGroup ボリュームのバックアップとリストアの機能拡張</block>
-  <block id="36698eb018d0923e923633648afc1660" category="list-text">FlexGroup ボリュームのリストア時に複数のアグリゲートを選択できるようになりました。前回のリリースでは、アグリゲートを1つしか選択できませんでした。</block>
-  <block id="f5f0348847173672e951c41ae184f50e" category="list-text">FlexGroup ボリュームリストアがCloud Volumes ONTAP システムでサポートされるようになりました。前回のリリースでは、オンプレミスのONTAP システムにのみリストアできました。</block>
-  <block id="a54cefe3a8b51c74b8c67bb08d2b0a06" category="section-title">Cloud Volumes ONTAP システムでは、古いバックアップをGoogleアーカイブストレージに移動できます</block>
-  <block id="f14d5764e935884afbd83d7ee86487df" category="section-title">ボリュームリストア処理で、ボリュームデータをリストアするSVMを選択できるようになりました</block>
-  <block id="7caa222989bc85d23ec0930e42a99387" category="paragraph">次に、ONTAP クラスタ内の別のStorage VMにボリュームデータをリストアします。これまでは、Storage VMを選択できませんでした。</block>
-  <block id="14f514abf2e1958a0b5bcab66eaf30a4" category="section-title">MetroCluster 構成でのボリュームのサポートが強化されました</block>
-  <block id="1fe2df29e9bf17baaab103f0a9bba7fe" category="paragraph">ONTAP 9.12.1 GA以降を使用している場合、MetroCluster 構成でプライマリシステムに接続しているときにバックアップがサポートされるようになりました。バックアップ構成全体がセカンダリシステムに転送されるため、スイッチオーバー後もクラウドへのバックアップが自動的に続行されます。</block>
-  <block id="5f3a7b9d761ca72393881ec6b3e09094" category="inline-link">詳細については、「バックアップの制限」を参照してください</block>
-  <block id="a6fdbb3a339b191fd632ddee7fbee8cf" category="paragraph"><block ref="10efc6f0a427d8e27569782c3149d3d7" category="inline-link-rx"></block>。</block>
   <block id="6d1902eb0495d9d60f02e9146d0a091a" category="paragraph"><block ref="0ee4c43a6d75245009919f8e1767edb7" category="inline-link-rx"></block>。</block>
   <block id="433c1ccd6c6d5af5fc78b729975e5f20" category="section-title">Connectorアウトバウンドインターネットアクセスエンドポイントの変更</block>
   <block id="6beb41a356d9287866f0b22c4b4eadcb" category="paragraph">BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します詳細については、を参照してください <block ref="1e9f4589e5d2713376df79f13fc9ba0a" category="inline-link-macro-rx"></block> 個々のサービスごと。</block>
@@ -420,7 +308,6 @@
   <block id="ffb0a040d2831585e0b568e5514270de" category="list-text">次の操作を実行できます。 <block ref="16c9025f993808479cd22f07cd778a2c" category="inline-link-macro-rx"></block> これは、TridentオペレータまたはBlueXPを使用してインストールしました。</block>
   <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">[ライセンス]タブが削除されました</block>
   <block id="66a0b4752150538292b81c073ca0b83b" category="section-title">階層化タブの名前が変更され、内容が更新されました</block>
-  <block id="10d9a166ad36cdda1e0585914ac18d5f" category="paragraph">[Clusters Dashboard]タブの名前が[Clusters]に変更され、[On-Prem Overview]タブの名前が[On-Prem Dashboard]に変更されました。これらのページには、階層化構成を追加してストレージスペースを最適化できるかどうかを評価するための情報が追加されています。</block>
   <block id="38d4d167f6dd9174c3535fc5c7ba4b76" category="section-title">2023年4月4日</block>
   <block id="05cb21b1c0958252effc11eb9d437f38" category="section-title">展開モード</block>
   <block id="9e2110ccb138521e2ed734b9376c3f5b" category="paragraph">BlueXP_deployment modes_を使用すると、ビジネス要件やセキュリティ要件に合わせてBlueXPを使用できます。次の3つのモードから選択できます。</block>
@@ -457,7 +344,6 @@
   <block id="ae74e3db3615f676968300b7cc6e8ae1" category="paragraph">運用の耐障害性は、アラートとイベントを分析してサービスとソリューションの健全性、アップタイム、パフォーマンスを維持するのに役立つサービスです。</block>
   <block id="10b9ce0cb6b2f607e0c7df6e246cfe67" category="paragraph"><block ref="8a7bc1e5ebe0f732b7f8c57cc7b088b6" category="inline-link-rx"></block>。</block>
   <block id="42d7d856cc8f6a2f82ed10cd8356e7d2" category="inline-link">BlueXPの導入モードの詳細については、こちらをご覧ください</block>
-  <block id="ed84e3ec0d45db682853810ea96888fd" category="paragraph">これで、AWS、Azure、GCPの商用リージョンにインストールされているCloud Volumes ONTAP システムのデータを「制限付き」モードでバックアップできるようになりました。これを行うには、まず「制限された」商業地域にコネクタをインストールする必要があります。<block ref="18611796b9b4332697b6f9bb72b16e0b" category="inline-link-rx"></block>。を参照してください<block ref="0607f60a93455f62c98c67f333a631e0" category="inline-link-rx"></block> および<block ref="d878e312b2f9cdcef2f8eccaa51619ee" category="inline-link-rx"></block>。</block>
   <block id="d7cfe6967f3004ef3386a27fe99a4610" category="inline-link">デスティネーションとしてのONTAP S3との統合</block>
   <block id="c395006d6063b66336be768382280c9e" category="paragraph">のすべてのエンドポイントのリストを参照してください<block ref="684a3f4234dd7d8f8b7d90e00da95138" category="inline-link-rx"></block>、<block ref="fd66fc554da543d0f7f94dcde36b2a2f" category="inline-link-rx"></block>または<block ref="2484264a704a749bc992bec76f43f13d" category="inline-link-rx"></block> クラウド環境：</block>
   <block id="ebef32c1ba0aec7a39eb2ce8370a97d5" category="paragraph">Cloud Volumes ONTAP 9.12.1 GA以降では、次のように中国リージョンがAWSでサポートされるようになりました。</block>
@@ -505,16 +391,13 @@
   <block id="ab5eec0b36e1c0d7a8538ce2f367515c" category="list-text">Azure NetApp Files 上のOracleデータベースの自動検出とポリシーベースの保護をサポートします</block>
   <block id="d21798a5d9e370e5fbb0150023dfaa38" category="list-text">きめ細かなリカバリにより、Oracleデータベースを元の場所にリストアできます</block>
   <block id="a1501619265b99c9d02aefcdb1128d6d" category="section-title">アプリケーション向けのBlueXPのバックアップとリカバリの機能拡張（ハイブリッド）</block>
-  <block id="61d664f90cea3bf652d380cd39162905" category="list-text">アプリケーション（ハイブリッド）向けのBlueXPのバックアップとリカバリは、SaaSコントロールプレーンから実行されます。</block>
   <block id="abfdb85669faee0a0fe78a3ddd25158b" category="list-text">ハイブリッドREST APIが変更され、クラウドネイティブAPIと連携するようになりました。</block>
   <block id="91dd9ae8b3342cf7e40f497897ce70d7" category="list-text">Eメール通知をサポートします</block>
   <block id="ef08fc33d8b9b410529dc05986b2e248" category="paragraph">APIの新機能を使用して、BlueXPのバックアップとリカバリを使用してボリュームSnapshotをONTAP S3にバックアップできます。この機能は、現時点ではオンプレミスのONTAP システムでのみ使用できます。詳細な手順については、ブログを参照してください<block ref="8bfab3c14784f20047e4459b814ebfe4" category="inline-link-rx"></block>。</block>
   <block id="bcd4bdef20ff7dec0587f35facdeb7be" category="paragraph">Cloud Volumes ONTAP システムからAzureストレージへのバックアップを作成する場合、BlueXPのバックアップとリカバリでは、コスト最適化のためにローカル冗長性（LRS）を使用してBlobコンテナがデフォルトでプロビジョニングされます。異なるゾーン間でデータを複製する場合は、この設定をZone redundancy（ZRS）に変更できます。Microsoftの手順を参照してください<block ref="c549763665cfbb93dbccfdbf667aa0f2" category="inline-link-rx"></block>。</block>
-  <block id="3e5afb80ef2b2c6b108c664e6550be33" category="list-text">ONTAP 9.13.1以降を実行しているオンプレミスのONTAP システムでは、BlueXPのバックアップ/リカバリのUIとAPIでユーザが開始したバックアップ処理とリストア処理と、システムが開始したジョブ（進行中のバックアップ処理など）が[ジョブ監視]タブで利用できるようになりました。以前のバージョンのONTAP では、ユーザが開始したジョブのみが表示されます。</block>
   <block id="4788963de19a5204a352f3308b0395d8" category="inline-link">BlueXPのバックアップとリカバリから送信されるアラートをすべて確認します</block>
   <block id="960c0ab25a72da6f7d7346baac33e363" category="list-text">「Scheduled job failure」と「Restore job completes but with warnings」という2つの新しいバックアップジョブアラートが追加されました。<block ref="3e116d9df9448a73fe644888b390168f" category="inline-link-rx"></block>。</block>
   <block id="81ddb60f2f70b21c8b419a542095feca" category="list-text">ONTAP 9.13.0以降を実行しているCloud Volumes ONTAP システムでは、BlueXPのバックアップ/リカバリのUIとAPIでユーザが開始したバックアップ処理とリストア処理と、システムが開始したジョブ（進行中のバックアップ処理など）が[ジョブ監視]タブで利用できるようになりました。以前のバージョンのCloud Volumes ONTAP システムおよびオンプレミスのONTAP システムでは、現時点ではユーザが開始したジョブのみが表示されます。</block>
-  <block id="fc310628dedc46ee8ac6f1897c186fda" category="paragraph">バックアップファイルは、最初にGoogle Standardストレージクラスで作成されます。BlueXPのバックアップとリカバリ機能を使用して、古いバックアップをGoogleアーカイブストレージに階層化し、コストをさらに最適化できるようになりました。前回のリリースでは、オンプレミスのONTAP クラスタでのみこの機能がサポートされていました。現在Google Cloudに導入されているCloud Volumes ONTAP システムがサポートされています。</block>
   <block id="21db17f88f41dcd13f48cc90aced1d74" category="section-title">クラウド内の小規模インスタンスにBlueXPの分類機能を導入できます</block>
   <block id="47e8bf8f9cb5a2a9f79b4f6c0ba9d3b5" category="paragraph">AWS環境のBlueXP ConnectorからBlueXPの分類を導入する際に、デフォルトのインスタンスよりも小さい2つのインスタンスタイプから選択できるようになりました。小規模な環境をスキャンする場合は、クラウドコストを節約できます。ただし、小さいインスタンスを使用する場合はいくつかの制限があります。<block ref="98ea36794454fcb53d0ac9a791bd6948" category="inline-link-rx"></block>。</block>
   <block id="cb608d54d750eeb9d266241b5a1d63c7" category="section-title">BlueXPの分類をインストールする前に、スタンドアロンスクリプトを使用してLinuxシステムを認定できるようになりました</block>
@@ -561,7 +444,6 @@
   <block id="7c446b3d2b5f39a022c6af3569a59a1f" category="paragraph">BlueXPランサムウェア対策に、ビジネスクリティカルデータに関する新しいページが追加されました。このページでは、BlueXPの分類で定義されているすべてのポリシーを表示できます。ビジネスにとって重要なデータを特定するポリシーを選択すると、BlueXPランサムウェア対策ダッシュボードやその他のランサムウェアパネルに、最も重要なデータに基づく潜在的な問題が反映されるようになります。</block>
   <block id="6b501182c10867e7258fc2278cf3d451" category="paragraph">BlueXPランサムウェア対策サービスに対してこれらのポリシーをアクティブ化していない場合は、[Recommended Actions]パネルに[Configure your business critical data]という新しい推奨アクションが表示されます。</block>
   <block id="e90b826155dae219948b9b2fca9feca3" category="section-title">BlueXPのランサムウェア対策は、「Protection」カテゴリから「Governance」カテゴリに移行されました</block>
-  <block id="a109e3cb0dd9ad8fb1c83a4902e1c322" category="paragraph">BlueXP階層化インターフェイスから[ライセンス]タブが削除されました。従量課金制（PAYGO）サブスクリプションのすべてのライセンスに、オンプレミスのBlueXP階層化ダッシュボードからアクセスできるようになりました。また、このページからBlueXPのデジタルウォレットへのリンクもあり、BlueXP階層化サービスのお客様所有のライセンスの使用（BYOL）を表示および管理できます。</block>
   <block id="35083b11acbb58293019b38b8f232a5a" category="paragraph">[階層ボリューム]ページからレポートをダウンロードして、管理しているクラスタ上のすべてのボリュームの階層化ステータスを確認できます。BlueXPの階層化サービスでは.csvファイルが生成されます。このファイルを確認して、必要に応じて社内の他のユーザに送信できます。<block ref="b6be70acd3f28aaa18a7e212c9bc7736" category="inline-link-rx"></block>。</block>
   <block id="8c14896b1d1fc37f02aa2e6dfc06354a" category="paragraph">BlueXPの階層化が変更されたため、BlueXPの階層化処理を成功させるには、次のコネクタエンドポイントを変更する必要があります。</block>
   <block id="d128bda2634e1051cc984231da065144" category="list-text">Eメール通知がBlueXPデジタルウォレットでサポートされるようになりました。</block>
@@ -607,4 +489,33 @@
   <block id="eaf72ee058835b38b417b55e2fb1c0af" category="section-title">MarketplaceのサブスクリプションなしでBlueXPにアクセスすると通知が表示されるようになりました</block>
   <block id="5cc1493ad28334fdb28f7ed57f0e1d41" category="paragraph">Marketplaceのサブスクリプションを購入せずにBlueXPでCloud Volumes ONTAP にアクセスすると、必ず通知が表示されるようになりました。通知には、「この作業環境のマーケットプレイスサブスクリプションは、Cloud Volumes ONTAP の利用規約に準拠する必要があります」と記載されています。</block>
   <block id="d845f71cd5cacb5fdb671f6530007953" category="paragraph"><block ref="b614243ef1614b3040beb4428349cfdf" category="inline-link-rx"></block>。</block>
+  <block id="ea42cbd645e47130e67a7cbb87fe5de8" category="section-title">2023年5月8日</block>
+  <block id="93c8b08c928ba95dab5c066b4611e000" category="section-title">アーカイブストレージとロックされたバックアップでフォルダレベルのリストア処理がサポートされるようになりました</block>
+  <block id="2f57132a5aa255f3e276ff3b62b985c8" category="paragraph">バックアップファイルにDataLockおよびRansomware保護が設定されている場合、またはバックアップファイルがアーカイブストレージにある場合、クラスタでONTAP 9.13.1以降が実行されている場合にフォルダレベルのリストア処理がサポートされるようになりました。</block>
+  <block id="8cb8abb20ae0b2e7c64136ae92b2250d" category="section-title">ボリュームをGoogle Cloudにバックアップするときは、リージョン間およびプロジェクト間でお客様が管理するキーがサポートされます</block>
+  <block id="562c459140eec7ec934af0554f42baab" category="paragraph">顧客管理暗号化キー（CMEK）のプロジェクトとは別のプロジェクトにあるバケットを選択できるようになりました。</block>
+  <block id="679a2d98f8c7c05c4944b0d161a6d567" category="section-title">バックアップファイルでAWS Chinaリージョンがサポートされるようになりました</block>
+  <block id="aad236ec8e2b61a79fb4bb3a416a2e06" category="paragraph">クラスタでONTAP 9.12.1以降が実行されている場合、AWS China Beijing（cn-north-1）リージョンとNingxia（cn-northwest-1）リージョンがバックアップファイルのデスティネーションとしてサポートされるようになりました。</block>
+  <block id="c93bfe725726f47fe3bfcc0e95f8ec7d" category="inline-link">オンプレミスのONTAP データをAmazon S3にバックアップします</block>
+  <block id="afe182ec329d300711f89a81223f8fe1" category="paragraph">BlueXPコネクタに割り当てるIAMポリシーでは、all_Resource_sectionsの下にあるAWSリソース名「arn」を「aws」から「aws-cn」に変更する必要があります（例：「arn：aws-cn：s3：：：netapp-backup-*」）。を参照してください<block ref="0607f60a93455f62c98c67f333a631e0" category="inline-link-rx"></block> および<block ref="98f7c8e7ee596af91f0142606f0617c9" category="inline-link-rx"></block> を参照してください。</block>
+  <block id="5db93da6e314f6aa0349c5e8f35f4b9a" category="paragraph">ONTAP 9.13.1以降を実行しているオンプレミスのONTAP システムで、システム開始ジョブ（進行中のバックアップ処理など）を*[ジョブ監視]*タブで確認できるようになりました。以前のバージョンのONTAP では、ユーザが開始したジョブのみが表示されます。</block>
+  <block id="4d5789e8f025b3895d94f1b6a7225e4a" category="list-text">アプリケーション（ハイブリッド）向けのBlueXPのバックアップとリカバリは、SaaSコントロールプレーンから実行されます</block>
+  <block id="53eb0fdde70aa10525b581e17b5d6f86" category="paragraph">これで、AWS、Azure、GCPの商用リージョンにインストールされているCloud Volumes ONTAP システムのデータを「制限モード」でバックアップできるようになりました。これを行うには、まず「制限された」商業地域にコネクタをインストールする必要があります。<block ref="18611796b9b4332697b6f9bb72b16e0b" category="inline-link-rx"></block>。を参照してください<block ref="0607f60a93455f62c98c67f333a631e0" category="inline-link-rx"></block> および<block ref="d878e312b2f9cdcef2f8eccaa51619ee" category="inline-link-rx"></block>。</block>
+  <block id="f1a109ae8d953da8e05cf5534df6b22b" category="list-text">ONTAP 9.13.0以降を実行しているCloud Volumes ONTAP システムでは、BlueXPのバックアップ/リカバリのUIとAPIでユーザが開始したバックアップ処理とリストア処理と、システムが開始したジョブ（進行中のバックアップ処理など）が[ジョブ監視]タブで利用できるようになりました。以前のバージョンのONTAP では、ユーザが開始したジョブのみが表示されます。</block>
+  <block id="2652537da62e22a06b22374119e6c40f" category="section-title">ハードリンク機能</block>
+  <block id="74b59acd161d1704c8c78879dc8fba01" category="paragraph">セキュアでないNFSとNFSの関係を含む同期のハードリンクを含めることができるようになりました。</block>
+  <block id="689dbd8363b6599ce07ff94a27510e99" category="inline-link">ファイルタイプ設定の詳細については、こちらを参照してください</block>
+  <block id="c2c4f3224fc131a75284695269fdeb1e" category="paragraph"><block ref="b8337b36588af87bdf82aa24c2fb92dc" category="inline-link-rx"></block>。</block>
+  <block id="b37e1d04fbc8f3ac1aa4b71252cc4d4b" category="section-title">セキュアなNFS関係にあるデータブローカーのユーザ証明書を追加できるようになりました</block>
+  <block id="fad605010f8f29a3a10f7062fe2cd4e9" category="paragraph">セキュアなNFS関係を作成する際に、ターゲットデータブローカー用に独自の証明書を設定できるようになりました。サーバ名を設定し、秘密鍵と証明書IDを提供する必要があります。この機能は、すべてのデータブローカーで使用できます。</block>
+  <block id="3bf0932004501be46156880cfe858e8f" category="section-title">最近変更されたファイルの除外期間が延長されました</block>
+  <block id="72293cd7eff96e1e45510dc52f4ef25e" category="paragraph">スケジュールされた同期の365日前までに変更されたファイルを除外できるようになりました。</block>
+  <block id="87ca8046e9c8a782bd5c06267e7f93f7" category="inline-link">「最近変更されたファイル」設定の詳細については、こちらを参照してください</block>
+  <block id="deca82fda63a32d6ff9637b293af8d58" category="paragraph"><block ref="721635a0a6bd58b504914b6d4beb3e0e" category="inline-link-rx"></block>。</block>
+  <block id="e03b4aafcead6edb397ccbf7e180255f" category="section-title">UIで関係を関係IDでフィルタリングします</block>
+  <block id="aca73b993cefdbe81afe166bf8692c50" category="paragraph">RESTful APIを使用するユーザは、関係IDを使用して関係をフィルタできるようになりました。</block>
+  <block id="37a616e16a0f4d18ac25d57ddb913bf8" category="inline-link">BlueXPのコピーと同期でRESTful APIを使用する方法の詳細については、こちらをご覧ください</block>
+  <block id="30033019c9002410c1dee9e19900cb24" category="paragraph"><block ref="e9b17dee7c6de8c1de2830a91fd1865f" category="inline-link-rx"></block>。</block>
+  <block id="6e3d9df489c437a2601f627a5b8935c9" category="paragraph">BlueXP階層化インターフェイスから[ライセンス]タブが削除されました。従量課金制（PAYGO）サブスクリプションのすべてのライセンスに、BlueXP階層化オンプレミスダッシュボードからアクセスできるようになりました。また、このページからBlueXPのデジタルウォレットへのリンクもあり、BlueXP階層化サービスのお客様所有のライセンスの使用（BYOL）を表示および管理できます。</block>
+  <block id="f6e3b39522072e9cb3b0ffb8cecf9b0b" category="paragraph">[Clusters Dashboard]タブの名前が[Clusters]に変更され、[On-Prem Overview]タブの名前が[On-Premises Dashboard]に変更されました。これらのページには、階層化構成を追加してストレージスペースを最適化できるかどうかを評価するための情報が追加されています。</block>
 </blocks>
