@@ -476,6 +476,50 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion
 
 
 
+=== 2023年5月7日
+
+コネクタの3.9.29リリースでは、次の変更が加えられました。
+
+
+
+==== カタール地域がGoogle Cloudでサポートされるようになりました
+
+カタール地域は、Google Cloud for Cloud Volumes ONTAP およびConnector for Cloud Volumes ONTAP 9.12.1 GA以降でサポートされるようになりました。
+
+
+
+==== Sweden CentralリージョンがAzureでサポートされるようになりました
+
+Sweden Centralリージョンは、Azure for Cloud Volumes ONTAP およびConnector for Cloud Volumes ONTAP 9.12.1 GA以降でサポートされるようになりました。
+
+
+
+==== Azure Australia EastでのHAマルチアベイラビリティゾーン導入のサポート
+
+Azureのオーストラリア東部リージョンでは、Cloud Volumes ONTAP 9.12.1 GA以降でHAマルチアベイラビリティゾーンの導入がサポートされるようになりました。
+
+
+
+==== 充電使用量の内訳
+
+容量ベースのライセンスにサブスクライブしたときに課金される料金を確認できるようになりました。次のタイプの使用状況レポートは、BlueXPのデジタルウォレットからダウンロードできます。使用状況レポートには、サブスクリプションの容量の詳細と、Cloud Volumes ONTAP サブスクリプションのリソースに対する課金状況が表示されます。ダウンロード可能なレポートは、他のユーザーと簡単に共有できます。
+
+* Cloud Volumes ONTAP パッケージの使用状況
+* 使用状況の概要
+* Storage VMの使用状況
+* ボリュームの使用状況
+
+
+詳細については、を参照してください link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["容量ベースのライセンスを管理します"^]。
+
+
+
+==== MarketplaceのサブスクリプションなしでBlueXPにアクセスすると通知が表示されるようになりました
+
+Marketplaceのサブスクリプションを購入せずにBlueXPでCloud Volumes ONTAP にアクセスすると、必ず通知が表示されるようになりました。通知には、「この作業環境のマーケットプレイスサブスクリプションは、Cloud Volumes ONTAP の利用規約に準拠する必要があります」と記載されています。
+
+
+
 === 2023年4月4日
 
 Cloud Volumes ONTAP 9.12.1 GA以降では、次のように中国リージョンがAWSでサポートされるようになりました。
@@ -504,7 +548,7 @@ Turinリージョンは、Google Cloud for Cloud Volumes ONTAP およびConnecto
 
 Digital Walletに、Marketplaceのプライベートオファーで購入したライセンス容量が表示されるようになりました。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["アカウントの使用済み容量を表示する方法について説明します"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["アカウントの使用済み容量を表示する方法について説明します"^]。
 
 
 
@@ -532,23 +576,6 @@ NOTE: 現時点では、BlueXPでは既存のFlexGroup ボリュームのみを�
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-show-flexgroup-volume.png["[Volumes]タイルの下にFlexGroup ボリュームアイコンが配置されたテキストを示すスクリーンショット。"]
 
 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-volumes.html["作成したFlexGroup ボリュームの表示について詳しくは、こちらをご覧ください。"^]
-
-
-
-=== 2023年3月13日
-
-
-
-==== 中国地域のサポート
-
-Cloud Volumes ONTAP 9.12.1 GA以降では、次のように中国リージョンのサポートがAzureでサポートされるようになりました。
-
-* Cloud Volumes ONTAP は中国北部3でサポートされています。
-* シングルノードシステムがサポートされます。
-* ネットアップから直接購入したライセンスはサポートされます。
-
-
-地域ごとの可用性については、を参照してください link:https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP のグローバルリージョンマップ"^]。
 
 
 
