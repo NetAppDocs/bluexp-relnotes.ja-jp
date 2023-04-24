@@ -33,6 +33,36 @@ NetApp BlueXPは2022年11月1日にリリースされました。BlueXPは、Clo
 
 
 
+=== 2023年5月7日
+
+
+
+==== コネクタ3.9.29
+
+* Ubuntu 22.04は、BlueXPまたはクラウドプロバイダのマーケットプレイスからコネクタを導入する際のコネクタ用の新しいオペレーティングシステムです。
++
+また、Ubuntu 22.04を実行している独自のLinuxホストにコネクタを手動でインストールすることもできます。
+
+* Red Hat Enterprise Linux 8.6および8.7は、新しいコネクタの導入ではサポートされなくなりました。
++
+Red Hatではコネクタに必要なDockerがサポートされなくなるため、新しい環境ではこれらのバージョンはサポートされません。RHEL 8.6または8.7で既存のコネクタを実行している場合、ネットアップは引き続きこの構成をサポートします。
+
++
+Red Hat 7.6、7.7、7.8、および7.9は、新規および既存のコネクタで引き続きサポートされます。
+
+* コネクタは現在、Google Cloudのカタール地域でサポートされています。
+* このコネクタは、Microsoft AzureのSweden Centralリージョンでもサポートされています。
++
+https://cloud.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
+
+* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張が含まれています。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#7-may-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
+
+
+
+
+
 === 2023年4月4日
 
 
@@ -70,16 +100,6 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operatio
 +
 https://cloud.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
 
-* BlueXPでVMware vCenter Serverを検出できるようになりました。
-+
-AWSまたはオンプレミスで実行されているVMware vCenter Serverを検出したら、作業環境を開いて、サーバに関連付けられているデータストアと仮想マシンに関する詳細を確認できます。
-
-+
-唯一の要件は、バージョン7.0以降を実行しているVMware vCenter Serverに接続するコネクタです。
-
-+
-作業を開始するには、*[作業環境の追加]*を選択し、* Amazon Web Services *または*オンプレミス*を選択して、*[VMware vCenter Server]*を選択します。サーバのドメイン名またはIPアドレスを入力し、adminユーザのユーザ名とパスワードを入力します。
-
 * BlueXPログインに関連付けられたユーザクレデンシャル（ONTAP クレデンシャルとNetApp Support Site （NSS）クレデンシャル）を管理できるようになりました。
 +
 [設定]>[クレデンシャル]*に移動すると、クレデンシャルを表示したり、更新したり、削除したりできます。たとえば、これらのクレデンシャルのパスワードを変更した場合は、BlueXPでパスワードを更新する必要があります。
@@ -96,50 +116,6 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manag
 ** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3-april-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
 ** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#3-april-2023["ONTAP オンプレミスクラスタの機能拡張について説明します"^]
 
-
-
-
-
-
-=== 2023年3月5日
-
-
-
-==== コネクタ3.9.27
-
-* BlueXPコンソールで検索できるようになりました。この時点で、検索機能を使用してBlueXPのサービスと機能を検索できます。
-+
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search.png["コンソールの上部に表示されるBlueXP検索のスクリーンショット。"]
-
-* アクティブなサポートケースと解決済みのサポートケースは、BlueXPから直接表示および管理できます。NSSアカウントと会社に関連付けられたケースを管理できます。
-+
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases["サポートケースの管理方法について説明します"]。
-
-* Red Hat Enterprise Linux 8.7を実行するホストでコネクタがサポートされるようになりました。
-+
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["コネクタのシステム要件を確認します"]。
-
-* このコネクタは、インターネットから完全に分離されたクラウド環境でサポートされるようになりました。その後、コネクタで実行されているBlueXPコンソールを使用して、同じ場所にCloud Volumes ONTAP を導入し、オンプレミスのONTAP クラスタを検出できます（クラウド環境からオンプレミス環境に接続されている場合）。BlueXPのバックアップとリカバリを使用して、AWSとAzureのコマーシャルリージョンのCloud Volumes ONTAP ボリュームをバックアップすることもできます。このタイプの環境では、BlueXPデジタルウォレットを除き、他のBlueXPサービスはサポートされません。
-+
-クラウドリージョンは、AWS C2S/SC2S、Azure IL6、または任意の商用リージョンのような安全な米国機関のリージョンにすることができます。
-
-+
-開始するには、コネクタソフトウェアを手動でインストールし、コネクタで実行されているBlueXPコンソールにログインし、BlueXPデジタルウォレットにBYOLライセンスを追加してから、Cloud Volumes ONTAP を導入します。
-
-+
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["インターネットにアクセスできない場所にコネクタを取り付けます"^]
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#access-the-local-ui["コネクタのBlueXPコンソールにアクセスします"^]
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["未割り当てライセンスを追加します"^]
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-overview-cvo.html["Cloud Volumes ONTAP の使用を開始します"^]
-
-
-* このコネクタで、BlueXPからAmazon S3バケットを追加および管理できるようになりました。
-+
-https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["BlueXPからAWSアカウントに新しいAmazon S3バケットを追加する方法をご確認ください"^]。
-
-* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張が含まれています。
-+
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-march-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
 
 
 
@@ -199,23 +175,23 @@ Cloud Manager では、ボリューム Snapshot を作成、削除、リスト�
 
 
 
+=== 2023年5月7日
+
+* 作業環境の作成時にBlueXPを使用できるようになりました link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["セキュリティグループを生成します"^] これにより、選択したVPC内のトラフィックのみが許可されます。この機能 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["追加の権限が必要です"^]。
+* オプションで、を選択できます link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#create-volumes["追加（ Add ）"^] および link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#manage-volume-tags["変更"^] ボリュームを分類するためのタグ。
+
+
+
+
 === 2023年4月2日
 
-* 次の操作を実行できます。 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#create-volumes["FSx for ONTAP でFlexGroup を構築"^] ボリューム：ボリュームデータをクラスタ全体に分散します。
-* IOPS制限が引き上げられ、手動または自動で最大160、000のプロビジョニングが可能になりました。
-
+IOPS制限が引き上げられ、手動または自動で最大160、000のプロビジョニングが可能になりました。
 
 
 
 === 2023年3月5日
 
 ユーザインターフェイスが改善され、ドキュメントのスクリーンショットが更新されました。
-
-
-
-=== 2023年1月1日
-
-これで、を有効にすることができます link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#manage-automatic-capacity["容量の自動管理"^] 必要に応じて差分ストレージを追加自動容量管理では、要求を評価するためにクラスタを定期的にポーリングし、クラスタの最大容量の10%までの割合でストレージ容量を自動的に拡張します。
 
 
 
@@ -944,6 +920,30 @@ https://docs.netapp.com/us-en/active-iq/index.html["BlueXP Digital Advisorの詳
 
 
 
+=== 2023年5月7日
+
+
+
+==== Google Cloudプライベートオファー
+
+BlueXPのデジタルウォレットに、プライベートオファーに関連付けられているGoogle Cloud Marketplaceサブスクリプションが表示され、サブスクリプションの終了日と期間が表示されるようになりました。この機能強化により、プライベートオファーが正常に受け入れられたことを確認し、その条件を検証できます。
+
+
+
+==== 充電使用量の内訳
+
+容量ベースのライセンスにサブスクライブしたときに課金される料金を確認できるようになりました。次のタイプの使用状況レポートは、BlueXPデジタルウォレットからダウンロードできます。使用状況レポートには、サブスクリプションの容量の詳細と、Cloud Volumes ONTAP サブスクリプションのリソースに対する課金状況が表示されます。ダウンロード可能なレポートは、他のユーザーと簡単に共有できます。
+
+* Cloud Volumes ONTAP パッケージの使用状況
+* 使用状況の概要
+* Storage VMの使用状況
+* ボリュームの使用状況
+
+
+詳細については、を参照してください link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["容量ベースのライセンスを管理します"]。
+
+
+
 === 2023年4月3日
 
 
@@ -975,20 +975,6 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-license
 BlueXPのPAYGOサブスクリプションと年間契約が、BlueXPのデジタルウォレットで表示、管理できるようになりました。
 
 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-subscriptions.html["サブスクリプションの管理方法について説明します"]。
-
-
-
-=== 2022年9月18日
-
-
-
-==== I/OとWORM容量を最適化
-
-BlueXPのデジタルウォレットに、最適化されたI/Oライセンスパッケージの概要と、アカウントのCloud Volumes ONTAP システムにプロビジョニングされたWORM容量が表示されるようになりました。
-
-これらの詳細情報は、充電状況や容量の追加購入が必要かどうかを把握するのに役立ちます。
-
-https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["アカウントの使用済み容量を表示する方法について説明します"]。
 
 
 
