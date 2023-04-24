@@ -62,7 +62,6 @@
   <block id="17fc50243c5a80f407e83d268bcab18e" category="section-title">2022 年 2 月 9 日</block>
   <block id="f1f7e50301c1e57e30e795fa8928ee8f" category="section-title">テンプレートを作成して特定の既存ボリュームを検索し、 Cloud Backup を有効にすることができます</block>
   <block id="98b343467576e58f6658965bc67f83c1" category="paragraph">新しい「リソース検索」アクションを使用すると、 Cloud Backup を有効にするすべてのボリュームを特定し、 Cloud Backup アクションを使用してそれらのボリュームのバックアップを有効にできます。</block>
-  <block id="8b4368f9c9aad8f44dd1b5ba1d4d746a" category="paragraph">現在サポートされているのは、 Cloud Volumes ONTAP 上のボリュームとオンプレミスの ONTAP システムです。<block ref="f7210026d1a7cf546c7270b9d8e104cc" category="inline-link-rx"></block>。</block>
   <block id="70c889b200c3ef8dbb491ca542d1d091" category="section-title">これで、同期関係にタグを付けて、簡単にアクセスできるように関係をグループ化または分類できます</block>
   <block id="049ebb609707e4c76f578eb98777ffdc" category="inline-link">リソースタグ付けの詳細については、こちらをご覧ください</block>
   <block id="00b4c4979fe8d65dc663ea7c82a1b1c2" category="paragraph"><block ref="ddc85a18edb3f9e32810e603b7ef9eb7" category="inline-link-rx"></block>。</block>
@@ -604,4 +603,11 @@
   <block id="a109e3cb0dd9ad8fb1c83a4902e1c322" category="paragraph">BlueXP階層化インターフェイスから[ライセンス]タブが削除されました。従量課金制（PAYGO）サブスクリプションのすべてのライセンスに、オンプレミスのBlueXP階層化ダッシュボードからアクセスできるようになりました。また、このページからBlueXPのデジタルウォレットへのリンクもあり、BlueXP階層化サービスのお客様所有のライセンスの使用（BYOL）を表示および管理できます。</block>
   <block id="35083b11acbb58293019b38b8f232a5a" category="paragraph">[階層ボリューム]ページからレポートをダウンロードして、管理しているクラスタ上のすべてのボリュームの階層化ステータスを確認できます。BlueXPの階層化サービスでは.csvファイルが生成されます。このファイルを確認して、必要に応じて社内の他のユーザに送信できます。<block ref="b6be70acd3f28aaa18a7e212c9bc7736" category="inline-link-rx"></block>。</block>
   <block id="8c14896b1d1fc37f02aa2e6dfc06354a" category="paragraph">BlueXPの階層化が変更されたため、BlueXPの階層化処理を成功させるには、次のコネクタエンドポイントを変更する必要があります。</block>
+  <block id="d128bda2634e1051cc984231da065144" category="list-text">Eメール通知がBlueXPデジタルウォレットでサポートされるようになりました。</block>
+  <block id="d2792d178cbdf6c41f2b8f2ae64424ed" category="list-text">このコネクタは、インターネットから完全に分離されたクラウド環境でサポートされるようになりました。その後、コネクタで実行されているBlueXPコンソールを使用して、同じ場所にCloud Volumes ONTAP を導入し、オンプレミスのONTAP クラスタを検出できます（クラウド環境からオンプレミス環境に接続されている場合）。BlueXPのバックアップとリカバリを使用して、AWSとAzureのコマーシャルリージョンのCloud Volumes ONTAP ボリュームをバックアップすることもできます。このタイプの環境では、BlueXPデジタルウォレットを除き、他のBlueXPサービスはサポートされません。</block>
+  <block id="75327cdc175eca204abf0a4aa66413b3" category="paragraph">開始するには、コネクタソフトウェアを手動でインストールし、コネクタで実行されているBlueXPコンソールにログインし、BlueXPデジタルウォレットにBYOLライセンスを追加してから、Cloud Volumes ONTAP を導入します。</block>
+  <block id="016c818ed3128119f94a31cbec32bf1f" category="paragraph">Cloud Volumes ONTAP の容量単位のライセンスを表示する場合、BlueXPデジタルウォレットに、マーケットプレイスのプライベートオファーで購入したライセンス容量が表示されるようになりました。</block>
+  <block id="b3e680bd6b6b80e2fd4f5bd19f3ad015" category="paragraph">BlueXPのPAYGOサブスクリプションと年間契約が、BlueXPのデジタルウォレットで表示、管理できるようになりました。</block>
+  <block id="dfc3d3012360c41f119ce032ebb3ed8b" category="paragraph">BlueXPのデジタルウォレットに、最適化されたI/Oライセンスパッケージの概要と、アカウントのCloud Volumes ONTAP システムにプロビジョニングされたWORM容量が表示されるようになりました。</block>
+  <block id="12c7b4f361520fac32769892a3adb104" category="paragraph">現在サポートされているのは、 Cloud Volumes ONTAP 上のボリュームとオンプレミスの ONTAP システムです。<block ref="cf92aa38511759ce0275086447e2bfa9" category="inline-link-rx"></block>。</block>
 </blocks>

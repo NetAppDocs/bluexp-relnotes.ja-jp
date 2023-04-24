@@ -59,7 +59,7 @@ NOTE: 制限モードが導入されたことで、SaaSプラットフォーム�
 
 ==== コネクタ3.9.28
 
-* d128bda2634e1051cc984231da065144
+* Eメール通知がBlueXPデジタルウォレットでサポートされるようになりました。
 +
 通知を設定すると、BYOLライセンスの有効期限が近づいたとき（「警告」通知）、またはすでに有効期限が切れているとき（「エラー」通知）にEメール通知を受け取ることができます。
 
@@ -119,12 +119,12 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manag
 +
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["コネクタのシステム要件を確認します"]。
 
-* d2792d178cbdf6c41f2b8f2ae64424ed
+* このコネクタは、インターネットから完全に分離されたクラウド環境でサポートされるようになりました。その後、コネクタで実行されているBlueXPコンソールを使用して、同じ場所にCloud Volumes ONTAP を導入し、オンプレミスのONTAP クラスタを検出できます（クラウド環境からオンプレミス環境に接続されている場合）。BlueXPのバックアップとリカバリを使用して、AWSとAzureのコマーシャルリージョンのCloud Volumes ONTAP ボリュームをバックアップすることもできます。このタイプの環境では、BlueXPデジタルウォレットを除き、他のBlueXPサービスはサポートされません。
 +
 クラウドリージョンは、AWS C2S/SC2S、Azure IL6、または任意の商用リージョンのような安全な米国機関のリージョンにすることができます。
 
 +
-75327cdc175eca204abf0a4aa66413b3
+開始するには、コネクタソフトウェアを手動でインストールし、コネクタで実行されているBlueXPコンソールにログインし、BlueXPデジタルウォレットにBYOLライセンスを追加してから、Cloud Volumes ONTAP を導入します。
 
 +
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["インターネットにアクセスできない場所にコネクタを取り付けます"^]
@@ -936,6 +936,8 @@ Digital Advisor（旧称Active IQ ）がBlueXPに完全に統合され、ログ�
 
 BlueXP Digital Advisorにアクセスすると、システムに関連するデータを表示できるように、NetApp Support Site クレデンシャルの入力を求められます。ログイン時に使用するNSSアカウントは、ユーザログイン時のみに関連付けられます。ネットアップアカウントの他のユーザには関連付けられません。
 
+https://docs.netapp.com/us-en/active-iq/index.html["BlueXP Digital Advisorの詳細については、こちらをご覧ください"^]
+
 
 
 == デジタルウォレット
@@ -948,7 +950,7 @@ BlueXP Digital Advisorにアクセスすると、システムに関連するデ�
 
 ==== Eメール通知
 
-d128bda2634e1051cc984231da065144
+Eメール通知がBlueXPデジタルウォレットでサポートされるようになりました。
 
 通知を設定すると、BYOLライセンスの有効期限が近づいたとき（「警告」通知）、またはすでに有効期限が切れているとき（「エラー」通知）にEメール通知を受け取ることができます。
 
@@ -958,7 +960,7 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operatio
 
 ==== Marketplaceのサブスクリプション用にライセンスされた容量
 
-016c818ed3128119f94a31cbec32bf1f
+Cloud Volumes ONTAP の容量単位のライセンスを表示する場合、BlueXPデジタルウォレットに、マーケットプレイスのプライベートオファーで購入したライセンス容量が表示されるようになりました。
 
 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["アカウントの使用済み容量を表示する方法について説明します"]。
 
@@ -970,7 +972,7 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-license
 
 ==== サブスクリプションと年間契約
 
-b3e680bd6b6b80e2fd4f5bd19f3ad015
+BlueXPのPAYGOサブスクリプションと年間契約が、BlueXPのデジタルウォレットで表示、管理できるようになりました。
 
 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-subscriptions.html["サブスクリプションの管理方法について説明します"]。
 
@@ -982,17 +984,11 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-subscriptions.ht
 
 ==== I/OとWORM容量を最適化
 
-dfc3d3012360c41f119ce032ebb3ed8b
+BlueXPのデジタルウォレットに、最適化されたI/Oライセンスパッケージの概要と、アカウントのCloud Volumes ONTAP システムにプロビジョニングされたWORM容量が表示されるようになりました。
 
 これらの詳細情報は、充電状況や容量の追加購入が必要かどうかを把握するのに役立ちます。
 
 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["アカウントの使用済み容量を表示する方法について説明します"]。
-
-
-
-== 経済効率
-
-https://docs.netapp.com/us-en/active-iq/index.html["BlueXP Digital Advisorの詳細については、こちらをご覧ください"^]
 
 
 
@@ -1324,7 +1320,7 @@ AWS での Cloud Volumes ONTAP 作業環境の作成は、既存のサポート�
 
 新しい「リソース検索」アクションを使用すると、 Cloud Backup を有効にするすべてのボリュームを特定し、 Cloud Backup アクションを使用してそれらのボリュームのバックアップを有効にできます。
 
-現在サポートされているのは、 Cloud Volumes ONTAP 上のボリュームとオンプレミスの ONTAP システムです。 https://docs.netapp.com/us-en/cloud-manager-app-template/task-define-templates.html#find-existing-volumes-and-activate-cloud-backup["詳細については、こちらをご覧ください"]。
+現在サポートされているのは、 Cloud Volumes ONTAP 上のボリュームとオンプレミスの ONTAP システムです。 https://docs.netapp.com/us-en/cloud-manager-app-template/task-define-templates.html#find-existing-volumes-and-activate-bluexp-backup-and-recovery["詳細については、こちらをご覧ください"]。
 
 
 
