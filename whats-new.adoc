@@ -225,7 +225,7 @@ BlueXP CanvasでAmazon S3バケットを表示できるようになりました�
 
 ==== ボリュームをGoogle Cloudにバックアップするときは、リージョン間およびプロジェクト間でお客様が管理するキーがサポートされます
 
-顧客管理暗号化キー（CMEK）のプロジェクトとは別のプロジェクトにあるバケットを選択できるようになりました。
+顧客管理暗号化キー（CMEK）のプロジェクトとは別のプロジェクトにあるバケットを選択できるようになりました。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-to-gcp.html#preparing-google-cloud-storage-for-backups["お客様が管理する独自の暗号化キーの設定の詳細については、こちらをご覧ください"]。
 
 
 
@@ -528,9 +528,9 @@ Turinリージョンは、Google Cloud for Cloud Volumes ONTAP およびConnecto
 
 
 
-==== デジタルウォレットの機能強化
+==== BlueXPのデジタルウォレット機能の強化
 
-Digital Walletに、Marketplaceのプライベートオファーで購入したライセンス容量が表示されるようになりました。
+BlueXPのデジタルウォレットに、Marketplaceのプライベートオファーで購入したライセンス容量が表示されるようになりました。
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["アカウントの使用済み容量を表示する方法について説明します"^]。
 
@@ -923,6 +923,25 @@ https://cloud.netapp.com/cloud-insights["Cloud Insights の詳細については
 
 
 
+=== 2023年5月4日
+
+
+
+==== BlueXPのバックアップとリカバリを有効にする
+
+ONTAP 9.13.1以降では、コネクタを使用してクラスタを検出した場合、System Manager（アドバンストビュー）を使用してBlueXPのバックアップとリカバリを有効にすることができます。 link:https://docs.netapp.com/us-en/ontap/task_cloud_backup_data_using_cbs.html["BlueXPのバックアップとリカバリの有効化の詳細については、こちらをご覧ください"^]
+
+
+
+==== ONTAP のバージョンイメージとハードウェアファームウェアをアップグレードします
+
+ONTAP 9.10.1以降では、System Manager（アドバンストビュー）を使用してONTAP のバージョンイメージとハードウェアファームウェアをアップグレードできます。自動アップグレードを利用して最新の状態を維持することも、ローカルマシンやBlueXPを使用してアクセスできるサーバから手動で更新することもできます。 link:https://docs.netapp.com/us-en/ontap/task_admin_update_firmware.html#prepare-for-firmware-update["ONTAP とファームウェアのアップグレードの詳細については、こちらをご覧ください"^]
+
+
+NOTE: コネクタがない場合は、ローカルマシンからは更新できず、BlueXPを使用してアクセスできるサーバからのみ更新できます。
+
+
+
 === 2023年4月3日
 
 
@@ -951,57 +970,9 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 ==== ONTAP クレデンシャルを保存する
 
-コネクタを使用せずに直接検出されたオンプレミスのONTAP 作業環境を開くときに、作業環境を開くたびにクレデンシャルを入力する必要がないように、ONTAP クラスタのクレデンシャルを保存するオプションが利用できるようになりました。
+コネクタを使用せずに直接検出されたオンプレミスのONTAP 作業環境を開く場合、作業環境を開くたびに入力する必要がないように、ONTAP クラスタのクレデンシャルを保存できるようになりました。
 
 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-manage-ontap-direct.html["このオプションの詳細については、こちらをご覧ください。"]
-
-
-
-=== 2022年12月4日
-
-コネクタの3.9.24リリースでは、次の変更が加えられました。
-
-
-
-==== オンプレミスのONTAP クラスタを新たに検出する方法
-
-コネクタを使用せずに、オンプレミスのONTAP クラスタを直接検出できるようになりました。このオプションを指定すると、System Managerでのみクラスタ管理が有効になります。このような作業環境では、BlueXPデータサービスを有効にすることはできません。
-
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["この検出と管理オプションの詳細については、こちらをご覧ください"]。
-
-
-
-==== FlexGroup ボリューム
-
-コネクタから検出されたオンプレミスのONTAP クラスタでは、BlueXPの標準ビューに、System ManagerまたはONTAP CLIから作成されたFlexGroup ボリュームが表示されるようになりました。また、ボリュームのクローニング、設定の編集、削除などを行って、それらのボリュームを管理することもできます。
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-flexgroup-volumes.png["オンプレミスのONTAP クラスタの[ボリューム]ページに表示されるFlexGroup ボリュームのスクリーンショット。"]
-
-BlueXPでは、FlexGroup ボリュームの作成はサポートされていません。FlexGroup ボリュームの作成には、引き続きSystem ManagerまたはCLIを使用する必要があります。
-
-
-
-=== 2022年9月18日
-
-コネクタの3.9.22リリースでは、次の変更が加えられました。
-
-
-
-==== 新しい概要ページ
-
-オンプレミスのONTAP クラスタに関する重要な詳細情報を提供するために、新しい概要ページが導入されました。たとえば、Storage Efficiency、容量分散、システム情報などの詳細を表示できるようになりました。
-
-また、データ階層化、データレプリケーション、バックアップを可能にする他のBlueXPサービスとの統合に関する詳細も確認できます。
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-overview.png["オンプレミスのONTAP クラスタの概要ページを示すスクリーンショット。"]
-
-
-
-==== ボリュームページが再設計されました
-
-ボリュームページの設計が見直され、クラスタ上のボリュームの概要が表示されるようになりました。この概要には、ボリュームの総数、プロビジョニングされた容量、使用済み容量とリザーブ容量、および階層化されたデータの量が表示されます。
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-volumes.png["オンプレミスのONTAP クラスタのボリュームページを示すスクリーンショット。"]
 
 
 
