@@ -23,7 +23,7 @@ BlueXPプラットフォームの一部である クラウド サービス の�
 
 == BlueXPの導入
 
-NetApp BlueXPは2022年11月1日にリリースされました。BlueXPは、Cloud Managerが提供する機能を拡張、強化しています。 https://docs.netapp.com/us-en/cloud-manager-family/concept-overview.html["BlueXPの導入について詳しくは、こちらをご覧ください"^]
+NetApp BlueXPは2022年11月1日にリリースされました。BlueXPは、Cloud Managerが提供する機能を拡張、強化しています。 https://docs.netapp.com/us-en/bluexp-family/concept-overview.html["BlueXPの導入について詳しくは、こちらをご覧ください"^]
 
 
 
@@ -57,7 +57,7 @@ https://cloud.netapp.com/cloud-volumes-global-regions["サポートされてい�
 
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張が含まれています。
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#7-may-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#7-may-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
 
 
 
@@ -76,7 +76,7 @@ BlueXP_deployment modes_を使用すると、ビジネス要件やセキュリ�
 * プライベートモード
 
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-modes.html["これらの展開モードの詳細については、こちらをご覧ください"]。
+https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["これらの展開モードの詳細については、こちらをご覧ください"]。
 
 
 NOTE: 制限モードが導入されたことで、SaaSプラットフォームを有効または無効にするオプションが廃止されました。制限モードはアカウント作成時に有効にすることができます。後で有効または無効にすることはできません。
@@ -94,7 +94,7 @@ NOTE: 制限モードが導入されたことで、SaaSプラットフォーム�
 通知を設定すると、BYOLライセンスの有効期限が近づいたとき（「警告」通知）、またはすでに有効期限が切れているとき（「エラー」通知）にEメール通知を受け取ることができます。
 
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["Eメール通知の設定方法については、こちらをご覧ください"]。
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["Eメール通知の設定方法については、こちらをご覧ください"]。
 
 * Google Cloud Turinリージョンでコネクタがサポートされるようになりました。
 +
@@ -105,16 +105,16 @@ https://cloud.netapp.com/cloud-volumes-global-regions["サポートされてい�
 [設定]>[クレデンシャル]*に移動すると、クレデンシャルを表示したり、更新したり、削除したりできます。たとえば、これらのクレデンシャルのパスワードを変更した場合は、BlueXPでパスワードを更新する必要があります。
 
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-user-credentials.html["ユーザクレデンシャルの管理方法について説明します"]。
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-user-credentials.html["ユーザクレデンシャルの管理方法について説明します"]。
 
 * サポートケースを作成するとき、または既存のサポートケースのケースノートを更新するときに、添付ファイルをアップロードできるようになりました。
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases["サポートケースを作成および管理する方法について説明します"]。
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#manage-your-support-cases["サポートケースを作成および管理する方法について説明します"]。
 
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とオンプレミスONTAP クラスタの機能拡張も含まれています。
 +
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3-april-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
-** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#3-april-2023["ONTAP オンプレミスクラスタの機能拡張について説明します"^]
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#3-april-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#3-april-2023["ONTAP オンプレミスクラスタの機能拡張について説明します"^]
 
 
 
@@ -133,8 +133,8 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manag
 
 新しいアプリケーションテンプレートサービスを使用すると、 Azure NetApp Files のボリュームテンプレートを設定できます。テンプレートを使用すると、容量プール、サイズ、プロトコル、 VNet 、ボリュームを配置するサブネットなど、一部のボリュームパラメータがテンプレートにすでに定義されているため、ジョブの簡易化に役立ちます。パラメータがすでに事前定義されている場合は、次のボリュームパラメータに進みます。
 
-* https://docs.netapp.com/us-en/cloud-manager-app-template/concept-resource-templates.html["アプリケーションテンプレートと、環境での使用方法について説明します"^]
-* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-create-volumes.html["テンプレートから Azure NetApp Files ボリュームを作成する方法について説明します"]
+* https://docs.netapp.com/us-en/bluexp-remediation/concept-resource-templates.html["アプリケーションテンプレートと、環境での使用方法について説明します"^]
+* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-volumes.html["テンプレートから Azure NetApp Files ボリュームを作成する方法について説明します"]
 
 
 
@@ -147,7 +147,7 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manag
 
 ワークロードのニーズを満たし、コストを最適化するために、ボリュームのサービスレベルを動的に変更できるようになりました。ボリュームは、ボリュームに影響を及ぼすことなく、もう一方の容量プールに移動されます。
 
-https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-volumes.html#change-the-volumes-service-level["ボリュームのサービスレベルを変更する方法について説明します"]。
+https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html#change-the-volumes-service-level["ボリュームのサービスレベルを変更する方法について説明します"]。
 
 
 
@@ -177,8 +177,8 @@ Cloud Manager では、ボリューム Snapshot を作成、削除、リスト�
 
 === 2023年5月7日
 
-* 作業環境の作成時にBlueXPを使用できるようになりました link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["セキュリティグループを生成します"^] これにより、選択したVPC内のトラフィックのみが許可されます。この機能 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["追加の権限が必要です"^]。
-* オプションで、を選択できます link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#create-volumes["追加（ Add ）"^] および link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#manage-volume-tags["変更"^] ボリュームを分類するためのタグ。
+* 作業環境の作成時にBlueXPを使用できるようになりました link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["セキュリティグループを生成します"^] これにより、選択したVPC内のトラフィックのみが許可されます。この機能 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["追加の権限が必要です"^]。
+* オプションで、を選択できます link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-add-fsx-volumes.html#create-volumes["追加（ Add ）"^] および link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-fsx-volumes.html#manage-volume-tags["変更"^] ボリュームを分類するためのタグ。
 
 
 
@@ -225,7 +225,7 @@ BlueXP CanvasでAmazon S3バケットを表示できるようになりました�
 
 ==== ボリュームをGoogle Cloudにバックアップするときは、リージョン間およびプロジェクト間でお客様が管理するキーがサポートされます
 
-顧客管理暗号化キー（CMEK）のプロジェクトとは別のプロジェクトにあるバケットを選択できるようになりました。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-to-gcp.html#preparing-google-cloud-storage-for-backups["お客様が管理する独自の暗号化キーの設定の詳細については、こちらをご覧ください"]。
+顧客管理暗号化キー（CMEK）のプロジェクトとは別のプロジェクトにあるバケットを選択できるようになりました。 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#preparing-google-cloud-storage-for-backups["お客様が管理する独自の暗号化キーの設定の詳細については、こちらをご覧ください"]。
 
 
 
@@ -233,7 +233,7 @@ BlueXP CanvasでAmazon S3バケットを表示できるようになりました�
 
 クラスタでONTAP 9.12.1以降が実行されている場合、AWS China Beijing（cn-north-1）リージョンとNingxia（cn-northwest-1）リージョンがバックアップファイルのデスティネーションとしてサポートされるようになりました。
 
-BlueXPコネクタに割り当てるIAMポリシーでは、all_Resource_sectionsの下にあるAWSリソース名「arn」を「aws」から「aws-cn」に変更する必要があります（例：「arn：aws-cn：s3：：：netapp-backup-*」）。を参照してください https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["Amazon S3 への Cloud Volumes ONTAP データのバックアップ"] および https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-to-aws.html["オンプレミスのONTAP データをAmazon S3にバックアップします"] を参照してください。
+BlueXPコネクタに割り当てるIAMポリシーでは、all_Resource_sectionsの下にあるAWSリソース名「arn」を「aws」から「aws-cn」に変更する必要があります（例：「arn：aws-cn：s3：：：netapp-backup-*」）。を参照してください https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-s3.html["Amazon S3 への Cloud Volumes ONTAP データのバックアップ"] および https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-aws.html["オンプレミスのONTAP データをAmazon S3にバックアップします"] を参照してください。
 
 
 
@@ -283,7 +283,7 @@ ONTAP 9.13.1以降を実行しているオンプレミスのONTAP システム�
 
 ==== 「制限付き」モードでCloud Volumes ONTAP システムからクラウドにデータをバックアップする機能
 
-これで、AWS、Azure、GCPの商用リージョンにインストールされているCloud Volumes ONTAP システムのデータを「制限モード」でバックアップできるようになりました。これを行うには、まず「制限された」商業地域にコネクタをインストールする必要があります。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-modes.html["BlueXPの導入モードの詳細については、こちらをご覧ください"^]。を参照してください https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["Amazon S3 への Cloud Volumes ONTAP データのバックアップ"] および https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-azure.html["Cloud Volumes ONTAP データをAzure Blobにバックアップしています"]。
+これで、AWS、Azure、GCPの商用リージョンにインストールされているCloud Volumes ONTAP システムのデータを「制限モード」でバックアップできるようになりました。これを行うには、まず「制限された」商業地域にコネクタをインストールする必要があります。 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["BlueXPの導入モードの詳細については、こちらをご覧ください"^]。を参照してください https://docs.netapp.com/us-en/bluexp-backup-restore/task-backup-to-s3.html["Amazon S3 への Cloud Volumes ONTAP データのバックアップ"] および https://docs.netapp.com/us-en/bluexp-backup-restore/task-backup-to-azure.html["Cloud Volumes ONTAP データをAzure Blobにバックアップしています"]。
 
 
 
@@ -301,9 +301,9 @@ Cloud Volumes ONTAP システムからAzureストレージへのバックアッ�
 
 ==== ジョブモニタの機能拡張
 
-* ONTAP 9.13.0以降を実行しているCloud Volumes ONTAP システムでは、BlueXPのバックアップ/リカバリのUIとAPIでユーザが開始したバックアップ処理とリストア処理と、システムが開始したジョブ（進行中のバックアップ処理など）が[ジョブ監視]タブで利用できるようになりました。以前のバージョンのONTAP では、ユーザが開始したジョブのみが表示されます。
-* すべてのジョブをレポートするためのCSVファイルをダウンロードできるほか、単一のジョブのJSONファイルをダウンロードして詳細を確認できるようになりました。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#download-job-monitoring-results-as-a-report["詳細はこちら。"]。
-* 「Scheduled job failure」と「Restore job completes but with warnings」という2つの新しいバックアップジョブアラートが追加されました。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#review-backup-and-restore-alerts-in-the-bluexp-notification-center["BlueXPのバックアップとリカバリから送信されるアラートをすべて確認します"]。
+* ONTAP 9.13.1以降を実行しているオンプレミスのONTAP システムでは、BlueXPのバックアップ/リカバリのUIとAPIでユーザが開始したバックアップ処理とリストア処理と、システムが開始したジョブ（進行中のバックアップ処理など）が[ジョブ監視]タブで利用できるようになりました。以前のバージョンのONTAP では、ユーザが開始したジョブのみが表示されます。
+* すべてのジョブをレポートするためのCSVファイルをダウンロードできるほか、単一のジョブのJSONファイルをダウンロードして詳細を確認できるようになりました。 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html#download-job-monitoring-results-as-a-report["詳細はこちら。"]。
+* 「Scheduled job failure」と「Restore job completes but with warnings」という2つの新しいバックアップジョブアラートが追加されました。 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html#review-backup-and-restore-alerts-in-the-bluexp-notification-center["BlueXPのバックアップとリカバリから送信されるアラートをすべて確認します"]。
 
 
 
@@ -320,13 +320,13 @@ Cloud Volumes ONTAP システムからAzureストレージへのバックアッ�
 
 ==== ダークサイトのCloud Volumes ONTAP システムからデータをバックアップする機能
 
-AWSおよびAzureの商用リージョンにインストールされているCloud Volumes ONTAP システムから、Amazon S3またはAzure Blobにデータをバックアップできるようになりました。そのためには、商用地域のLinuxホストにコネクタをインストールし、そこにCloud Volumes ONTAP システムを展開する必要があります。を参照してください https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["Amazon S3 への Cloud Volumes ONTAP データのバックアップ"] および https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-azure.html["Cloud Volumes ONTAP データをAzure Blobにバックアップしています"]。
+AWSおよびAzureの商用リージョンにインストールされているCloud Volumes ONTAP システムから、Amazon S3またはAzure Blobにデータをバックアップできるようになりました。そのためには、商用地域のLinuxホストにコネクタをインストールし、そこにCloud Volumes ONTAP システムを展開する必要があります。を参照してください https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-s3.html["Amazon S3 への Cloud Volumes ONTAP データのバックアップ"] および https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-azure.html["Cloud Volumes ONTAP データをAzure Blobにバックアップしています"]。
 
 
 
 ==== ジョブモニタに複数の機能拡張が追加されました
 
-* [Job Monitoring]ページには高度なフィルタリング機能が追加され、時間、ワークロード（ボリューム、アプリケーション、仮想マシン、またはKubernetes）ごとにバックアップジョブとリストアジョブを検索できるようになりました。 ジョブタイプ、ステータス、作業環境、およびStorage VM。任意のリソース（「application_3」など）を検索するフリーテキストを入力することもできます。  https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#searching-and-filtering-the-list-of-jobs["詳細フィルタの使用方法を参照してください"]。
+* [Job Monitoring]ページには高度なフィルタリング機能が追加され、時間、ワークロード（ボリューム、アプリケーション、仮想マシン、またはKubernetes）ごとにバックアップジョブとリストアジョブを検索できるようになりました。 ジョブタイプ、ステータス、作業環境、およびStorage VM。任意のリソース（「application_3」など）を検索するフリーテキストを入力することもできます。  https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html#searching-and-filtering-the-list-of-jobs["詳細フィルタの使用方法を参照してください"]。
 * ONTAP 9.13.0以降を実行しているCloud Volumes ONTAP システムでは、BlueXPのバックアップ/リカバリのUIとAPIでユーザが開始したバックアップ処理とリストア処理と、システムが開始したジョブ（進行中のバックアップ処理など）が[ジョブ監視]タブで利用できるようになりました。以前のバージョンのCloud Volumes ONTAP システムおよびオンプレミスのONTAP システムでは、現時点ではユーザが開始したジョブのみが表示されます。
 
 
@@ -342,19 +342,19 @@ AWSおよびAzureの商用リージョンにインストールされているClo
 
 ==== 新しいデータ検出評価レポート
 
-Data Discovery Assessment Reportでは、スキャンされた環境の概要を分析して、システムの調査結果を強調し、懸念領域と潜在的な修復手順を示します。このレポートの目的は、データガバナンスの懸念、データセキュリティの危険性、データセットのデータコンプライアンスギャップに対する認識を高めることです。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-governance-data.html#data-discovery-assessment-report["Data Discovery Assessment Reportを生成して使用する方法を説明します"]。
+Data Discovery Assessment Reportでは、スキャンされた環境の概要を分析して、システムの調査結果を強調し、懸念領域と潜在的な修復手順を示します。このレポートの目的は、データガバナンスの懸念、データセキュリティの危険性、データセットのデータコンプライアンスギャップに対する認識を高めることです。 https://docs.netapp.com/us-en/bluexp-classification/task-controlling-governance-data.html#data-discovery-assessment-report["Data Discovery Assessment Reportを生成して使用する方法を説明します"]。
 
 
 
 ==== クラウド内の小規模インスタンスにBlueXPの分類機能を導入できます
 
-AWS環境のBlueXP ConnectorからBlueXPの分類を導入する際に、デフォルトのインスタンスよりも小さい2つのインスタンスタイプから選択できるようになりました。小規模な環境をスキャンする場合は、クラウドコストを節約できます。ただし、小さいインスタンスを使用する場合はいくつかの制限があります。 https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html#using-a-smaller-instance-type["使用可能なインスタンスタイプと制限事項を参照してください"]。
+AWS環境のBlueXP ConnectorからBlueXPの分類を導入する際に、デフォルトのインスタンスよりも小さい2つのインスタンスタイプから選択できるようになりました。小規模な環境をスキャンする場合は、クラウドコストを節約できます。ただし、小さいインスタンスを使用する場合はいくつかの制限があります。 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#using-a-smaller-instance-type["使用可能なインスタンスタイプと制限事項を参照してください"]。
 
 
 
 ==== BlueXPの分類をインストールする前に、スタンドアロンスクリプトを使用してLinuxシステムを認定できるようになりました
 
-BlueXP分類インストールとは別に、Linuxシステムがすべての前提条件を満たしていることを確認する場合は、前提条件のみをテストするスクリプトをダウンロードできます。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-test-linux-system.html["LinuxホストでBlueXPのインストール準備が完了しているかどうかを確認する方法を説明します"]。
+BlueXP分類インストールとは別に、Linuxシステムがすべての前提条件を満たしていることを確認する場合は、前提条件のみをテストするスクリプトをダウンロードできます。 https://docs.netapp.com/us-en/bluexp-classification/task-test-linux-system.html["LinuxホストでBlueXPのインストール準備が完了しているかどうかを確認する方法を説明します"]。
 
 
 
@@ -364,9 +364,9 @@ BlueXP分類インストールとは別に、Linuxシステムがすべての前
 
 ==== BlueXPの分類UIから独自のカスタムカテゴリを追加する新機能
 
-BlueXPの分類で独自のカスタムカテゴリを追加できるようになりました。これにより、それらのカテゴリに該当するファイルがBlueXPの分類で識別されます。BlueXPには多くの種類があります https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-categories["事前定義されたカテゴリ"]そのため、この機能を使用すると、カスタムカテゴリを追加して、組織固有の情報がデータ内のどこにあるかを特定できます。
+BlueXPの分類で独自のカスタムカテゴリを追加できるようになりました。これにより、それらのカテゴリに該当するファイルがBlueXPの分類で識別されます。BlueXPには多くの種類があります https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-categories["事前定義されたカテゴリ"]そのため、この機能を使用すると、カスタムカテゴリを追加して、組織固有の情報がデータ内のどこにあるかを特定できます。
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion.html#add-custom-categories["詳細はこちら。"^]。
+https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html#add-custom-categories["詳細はこちら。"^]。
 
 
 
@@ -374,7 +374,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion
 
 BlueXPの分類では、今後のスキャンでBlueXPの分類によって特定されるカスタムキーワードを追加できます。ただし、BlueXP分類Linuxホストにログインし、コマンドラインインターフェイスを使用してキーワードを追加する必要がありました。今回のリリースでは、BlueXPの分類UIでカスタムキーワードを追加できるようになり、キーワードの追加や編集が非常に簡単になりました。
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion.html#add-custom-keywords-from-a-list-of-words["BlueXPの分類UIからカスタムキーワードを追加する方法については、こちらをご覧ください"^]。
+https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html#add-custom-keywords-from-a-list-of-words["BlueXPの分類UIからカスタムキーワードを追加する方法については、こちらをご覧ください"^]。
 
 
 
@@ -384,7 +384,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion
 
 この機能と併せて、「Scan Analysis Event」という新しいフィルタが追加され、BlueXPの分類で最終アクセス時刻を元に戻すことができなかったために分類されなかったファイルや、BlueXPの分類で最終アクセス時刻を元に戻すことができなかったにもかかわらず分類されたファイルを表示できるようになりました。
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-collected-metadata.html#last-access-time-timestamp["「最終アクセス時間のタイムスタンプ」とBlueXPの分類に必要な権限について詳しくは、こちらをご覧ください"]。
+https://docs.netapp.com/us-en/bluexp-classification/reference-collected-metadata.html#last-access-time-timestamp["「最終アクセス時間のタイムスタンプ」とBlueXPの分類に必要な権限について詳しくは、こちらをご覧ください"]。
 
 
 
@@ -397,7 +397,7 @@ BlueXPの分類では、次のタイプのデータを含むファイルを特�
 * シンガポール国民登録IDカード（NRIC）
 
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-personal-data["BlueXPの分類によってデータから特定できるすべてのタイプの個人データを確認できます"]。
+https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["BlueXPの分類によってデータから特定できるすべてのタイプの個人データを確認できます"]。
 
 
 
@@ -426,7 +426,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-ca
 
 以前のバージョンのBlueXP分類では、特定のクリティカルポリシーが結果を返したときに、アカウントのBlueXPユーザにEメールアラートを送信できました。この機能を使用すると、オンラインでないときにデータを保護するための通知を受け取ることができます。また、ポリシーから、BlueXPアカウントに登録されていない最大20個の電子メールアドレスを持つ他のユーザーに電子メールアラートを送信することもできます。
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-using-policies.html#sending-email-alerts-when-non-compliant-data-is-found["ポリシーの結果に基づいて電子メールアラートを送信する方法については、こちらをご覧ください"]。
+https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html#sending-email-alerts-when-non-compliant-data-is-found["ポリシーの結果に基づいて電子メールアラートを送信する方法については、こちらをご覧ください"]。
 
 
 
@@ -434,13 +434,13 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-using-policies.html#
 
 BlueXPの分類では、カスタムの「個人データ」を追加できるようになりました。BlueXPの分類で今後のスキャンで特定できるようになります。ただし、BlueXP分類Linuxホストにログインし、コマンドラインを使用してカスタムパターンを追加する必要がありました。このリリースでは、BlueXPの分類UIで正規表現を使用して個人用パターンを追加できるようになり、カスタムパターンの追加と編集が非常に簡単になりました。
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion.html#add-custom-personal-data-identifiers-using-a-regex["BlueXPの分類UIからカスタムパターンを追加する方法については、こちらをご覧ください"^]。
+https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html#add-custom-personal-data-identifiers-using-a-regex["BlueXPの分類UIからカスタムパターンを追加する方法については、こちらをご覧ください"^]。
 
 
 
 ==== BlueXPの分類を使用して1、500万個のファイルを移動できます
 
-これまで、BlueXPの分類では、最大100、000個のソースファイルを任意のNFS共有に移動できました。一度に最大1,500万個のファイルを移動できるようになりました。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share["BlueXPによる分類を使用したソースファイルの移動の詳細については、こちらをご覧ください"]。
+これまで、BlueXPの分類では、最大100、000個のソースファイルを任意のNFS共有に移動できました。一度に最大1,500万個のファイルを移動できるようになりました。 https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html#moving-source-files-to-an-nfs-share["BlueXPによる分類を使用したソースファイルの移動の詳細については、こちらをご覧ください"]。
 
 
 
@@ -452,7 +452,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion
 
 ==== 新しい「部分的成功」ステータスがアクションステータスパネルに追加されました
 
-新しい「Partial Success」ステータスは、BlueXPの分類処理が完了し、一部の項目が失敗し、一部の項目が成功したことを示します（100個のファイルを移動または削除する場合など）。さらに、「終了」ステータスが「成功」に変更されました。以前は、「終了」ステータスに成功した処理と失敗した処理が表示されることがありました。現在、「Success」ステータスは、すべての項目に対するすべてのアクションが成功したことを意味します。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-view-compliance-actions.html["アクションステータスパネルの表示方法を参照してください"]。
+新しい「Partial Success」ステータスは、BlueXPの分類処理が完了し、一部の項目が失敗し、一部の項目が成功したことを示します（100個のファイルを移動または削除する場合など）。さらに、「終了」ステータスが「成功」に変更されました。以前は、「終了」ステータスに成功した処理と失敗した処理が表示されることがありました。現在、「Success」ステータスは、すべての項目に対するすべてのアクションが成功したことを意味します。 https://docs.netapp.com/us-en/bluexp-classification/task-view-compliance-actions.html["アクションステータスパネルの表示方法を参照してください"]。
 
 
 
@@ -494,7 +494,7 @@ Azureのオーストラリア東部リージョンでは、Cloud Volumes ONTAP 9
 * ボリュームの使用状況
 
 
-詳細については、を参照してください link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["容量ベースのライセンスを管理します"^]。
+詳細については、を参照してください link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["容量ベースのライセンスを管理します"^]。
 
 
 
@@ -532,7 +532,7 @@ Turinリージョンは、Google Cloud for Cloud Volumes ONTAP およびConnecto
 
 BlueXPのデジタルウォレットに、Marketplaceのプライベートオファーで購入したライセンス容量が表示されるようになりました。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["アカウントの使用済み容量を表示する方法について説明します"^]。
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["アカウントの使用済み容量を表示する方法について説明します"^]。
 
 
 
@@ -546,7 +546,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capa
 
 Cloud Volumes ONTAP の[概要]、[ボリューム]、[アグリゲート]ページで使用できるユーザインターフェイスが再設計されました。タイルベースのデザインでは、より包括的な情報が各タイルに表示され、ユーザーエクスペリエンスが向上します。
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-resource-page-rn.png["このスクリーンショットは、Cloud Volumes ONTAP の概要ページに再設計されたBlueXPユーザインターフェイスを示しています。さまざまなタイルに、ストレージ効率、バージョン、容量分布、Cloud Volumes ONTAP 環境に関する情報、ボリューム、アグリゲート、レプリケーション、バックアップが表示されます。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-resource-page-rn.png["このスクリーンショットは、Cloud Volumes ONTAP の概要ページに再設計されたBlueXPユーザインターフェイスを示しています。さまざまなタイルに、ストレージ効率、バージョン、容量分布、Cloud Volumes ONTAP 環境に関する情報、ボリューム、アグリゲート、レプリケーション、バックアップが表示されます。"]
 
 
 
@@ -557,13 +557,13 @@ CLIまたはSystem Managerで作成したFlexGroup ボリュームは、BlueXP�
 
 NOTE: 現時点では、BlueXPでは既存のFlexGroup ボリュームのみを表示できます。BlueXPでFlexGroup ボリュームを作成することはできませんが、今後のリリースでサポートする予定です。
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-show-flexgroup-volume.png["[Volumes]タイルの下にFlexGroup ボリュームアイコンが配置されたテキストを示すスクリーンショット。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-show-flexgroup-volume.png["[Volumes]タイルの下にFlexGroup ボリュームアイコンが配置されたテキストを示すスクリーンショット。"]
 
-link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-volumes.html["作成したFlexGroup ボリュームの表示について詳しくは、こちらをご覧ください。"^]
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-volumes.html["作成したFlexGroup ボリュームの表示について詳しくは、こちらをご覧ください。"^]
 
 
 
-== Cloud Volumes Service for GCP
+== Cloud Volumes Service for Google Cloud
 
 
 
@@ -607,9 +607,9 @@ Spot の新しい「 * ストレージ運用 * 」セクションでは、 Cloud
 
 を活用して https://spot.io/products/cloud-analyzer/["Spot の Cloud Analyzer の略"^]Cloud Manager では、クラウドコンピューティング関連のコストを高水準で分析し、コスト削減の可能性を特定できるようになりました。この情報は、 Cloud Manager の * Compute * サービスから入手できます。
 
-https://docs.netapp.com/us-en/cloud-manager-compute/concept-compute.html["コンピューティングサービスの詳細については、こちらをご覧ください"]。
+https://docs.netapp.com/us-en/bluexp-cloud-ops/concept-compute.html["コンピューティングサービスの詳細については、こちらをご覧ください"]。
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-compute/main/media/screenshot_compute_dashboard.gif["Cloud Manager のコスト分析ページを示すスクリーンショット。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/screenshot_compute_dashboard.gif["Cloud Manager のコスト分析ページを示すスクリーンショット。"]
 
 
 
@@ -625,7 +625,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-compute/main/me
 
 セキュアでないNFSとNFSの関係を含む同期のハードリンクを含めることができるようになりました。
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["ファイルタイプ設定の詳細については、こちらを参照してください"]。
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["ファイルタイプ設定の詳細については、こちらを参照してください"]。
 
 
 
@@ -639,7 +639,7 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.htm
 
 スケジュールされた同期の365日前までに変更されたファイルを除外できるようになりました。
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["「最近変更されたファイル」設定の詳細については、こちらを参照してください"]。
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["「最近変更されたファイル」設定の詳細については、こちらを参照してください"]。
 
 
 
@@ -647,9 +647,9 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.htm
 
 RESTful APIを使用するユーザは、関係IDを使用して関係をフィルタできるようになりました。
 
-https://docs.netapp.com/us-en/cloud-manager-sync/api-sync.html["BlueXPのコピーと同期でRESTful APIを使用する方法の詳細については、こちらをご覧ください"]。
+https://docs.netapp.com/us-en/bluexp-copy-sync/api-sync.html["BlueXPのコピーと同期でRESTful APIを使用する方法の詳細については、こちらをご覧ください"]。
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["[ディレクトリを除外する]設定の詳細については、こちらを参照してください"]。
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["[ディレクトリを除外する]設定の詳細については、こちらを参照してください"]。
 
 
 
@@ -667,7 +667,7 @@ Azure Data Lake Storage Gen2をソースおよびターゲットとして使用�
 * On-Prem ONTAP の略
 
 
-https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["サポートされている同期関係の詳細を確認できます"]。
+https://docs.netapp.com/us-en/bluexp-copy-sync/reference-supported-relationships.html["サポートされている同期関係の詳細を確認できます"]。
 
 
 
@@ -675,7 +675,7 @@ https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationshi
 
 ディレクトリを名前でフィルタリングするだけでなく、完全パスでディレクトリをフィルタリングできるようになりました。
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["[ディレクトリを除外する]設定の詳細については、こちらを参照してください"]。
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["[ディレクトリを除外する]設定の詳細については、こちらを参照してください"]。
 
 
 
@@ -687,7 +687,7 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.htm
 
 アカウントのKMSキーを使用して、AWSデータブローカーのボリュームを暗号化できるようになりました。
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-installing-aws.html#creating-the-data-broker["AWSでデータブローカーを作成する方法については、こちらをご覧ください"]。
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#creating-the-data-broker["AWSでデータブローカーを作成する方法については、こちらをご覧ください"]。
 
 
 
@@ -799,7 +799,7 @@ link:https://docs.netapp.com/us-en/bluexp-economic-efficiency/get-started/intro.
 
 === 2023年4月5日（バージョン2.2）
 
-このリリースでは、以下に示す新機能が提供されます。また、に記載されている問題も修正されています https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html["修正された問題"]。更新されたソフトウェアパッケージは、から入手できます https://docs.netapp.com/us-en/cloud-manager-file-cache/download-gfc-resources.html#download-required-resources["このページです"]。
+このリリースでは、以下に示す新機能が提供されます。また、に記載されている問題も修正されています https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["修正された問題"]。更新されたソフトウェアパッケージは、から入手できます https://docs.netapp.com/us-en/bluexp-edge-caching/download-gfc-resources.html#download-required-resources["このページです"]。
 
 
 
@@ -807,7 +807,7 @@ link:https://docs.netapp.com/us-en/bluexp-economic-efficiency/get-started/intro.
 
 Google CloudにCloud Volumes ONTAP システムを導入すると、新しい「エッジキャッシュ」ライセンスが利用可能になります。Cloud Volumes ONTAP システムの購入済み容量3TiBにつき、Global File Cache Edgeシステムを1つ導入できます。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["Edge Cacheライセンスパッケージの詳細については、こちらをご覧ください。"]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages["Edge Cacheライセンスパッケージの詳細については、こちらをご覧ください。"]
 
 
 
@@ -821,7 +821,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 
 === 2022年10月24日（バージョン2.1）
 
-このリリースでは、以下に示す新機能が提供されます。また、に記載されている問題も修正されています https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html["修正された問題"]。
+このリリースでは、以下に示す新機能が提供されます。また、に記載されている問題も修正されています https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["修正された問題"]。
 
 
 
@@ -853,7 +853,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 
 === 2022年7月25日（バージョン2.0）
 
-このリリースでは、以下に示す新機能が提供されます。また、に記載されている問題も修正されています https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html["修正された問題"]。
+このリリースでは、以下に示す新機能が提供されます。また、に記載されている問題も修正されています https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["修正された問題"]。
 
 
 
@@ -861,7 +861,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 
 新しい「Edge Cache」ライセンスには、「CVO Professional」ライセンスと同じ機能がありますが、グローバルファイルキャッシュのサポートも含まれています。このオプションは、Azureに新しいCloud Volumes ONTAP システムを導入するときに表示されます。Cloud Volumes ONTAP システムでプロビジョニングされた容量3TiBにつき、グローバルファイルキャッシュエッジシステムを1台導入することができます。少なくとも30TiBをプロビジョニングする必要があります。GFC License Managerサービスが拡張され、容量ベースのライセンスが提供されるようになりました。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#capacity-based-licensing["Edge Cacheライセンスパッケージの詳細については、こちらをご覧ください。"]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#capacity-based-licensing["Edge Cacheライセンスパッケージの詳細については、こちらをご覧ください。"]
 
 
 
@@ -889,7 +889,7 @@ https://cloud.netapp.com/cloud-insights["Cloud Insights の詳細については
 
 === 2023年4月2日
 
-* 次の操作を実行できます。 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html["Astra Tridentをアンインストールします"] これは、TridentオペレータまたはBlueXPを使用してインストールしました。
+* 次の操作を実行できます。 link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-trident.html["Astra Tridentをアンインストールします"] これは、TridentオペレータまたはBlueXPを使用してインストールしました。
 * ユーザインターフェイスが改善され、ドキュメントのスクリーンショットが更新されました。
 
 
@@ -905,17 +905,7 @@ https://cloud.netapp.com/cloud-insights["Cloud Insights の詳細については
 
 === 2022年11月6日
 
-いつ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["ストレージクラスを定義する"]では、ブロックストレージやファイルシステムストレージに対して、ストレージクラスの経済性を実現できます。
-
-
-
-== 監視
-
-
-
-=== 2022年11月1日
-
-監視サービスは2022年11月1日に廃止されました。ナビゲーションメニューから* Insights > Observability *（監視/監視）を選択すると、Cloud Insights への直接リンクが表示されるようになりました。
+いつ link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["ストレージクラスを定義する"]では、ブロックストレージやファイルシステムストレージに対して、ストレージクラスの経済性を実現できます。
 
 
 
@@ -950,7 +940,7 @@ NOTE: コネクタがない場合は、ローカルマシンからは更新で�
 
 BlueXPコンソールからオンプレミスのONTAP クラスタを検出すると、次の1つのオプションが表示されます。
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-discover-on-prem-ontap.png["作業環境を作成するときに使用可能な[Discover On-Premises ONTAP （オンプレミスのを検出）]オプションを示すスクリーンショット"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-ontap-onprem/main/media/screenshot-discover-on-prem-ontap.png["作業環境を作成するときに使用可能な[Discover On-Premises ONTAP （オンプレミスのを検出）]オプションを示すスクリーンショット"]
 
 以前は、直接検出用とコネクタによる検出用に別 々 のフローがありました。これらのオプションはどちらも引き続き使用できますが、単一のフローにマージされます。
 
@@ -960,7 +950,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/ma
 * コネクタがない場合やコネクタがONTAP クラスタに接続されていない場合は、BlueXPで自動的に検出と管理の直接オプションが使用されます。
 
 
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["検出と管理のオプションの詳細については、こちらをご覧ください"]。
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["検出と管理のオプションの詳細については、こちらをご覧ください"]。
 
 
 
@@ -972,7 +962,7 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 コネクタを使用せずに直接検出されたオンプレミスのONTAP 作業環境を開く場合、作業環境を開くたびに入力する必要がないように、ONTAP クラスタのクレデンシャルを保存できるようになりました。
 
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-manage-ontap-direct.html["このオプションの詳細については、こちらをご覧ください。"]
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-manage-ontap-direct.html["このオプションの詳細については、こちらをご覧ください。"]
 
 
 
@@ -1004,7 +994,7 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 * 「データソースのサイバーストレージ構成をオンにする」という新しい推奨アクションでは、データの保護に役立つ6つのONTAP 機能が有効になっているか無効になっているかを特定します。これらの機能は、オンプレミスのすべてのONTAP システムとCloud Volumes ONTAP システムで有効にする必要があります。
 
 
-https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#list-of-recommended-actions["推奨されるすべての対処方法の一覧を確認してください"]。
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/task-analyze-ransomware-data.html#list-of-recommended-actions["推奨されるすべての対処方法の一覧を確認してください"]。
 
 
 
@@ -1014,7 +1004,7 @@ https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-d
 
 ==== 攻撃からシステムをリカバリするための新しいRansomware Recovery Dashboardが追加されました
 
-Ransomware Recovery Dashboardには、ランサムウェアに感染した可能性のあるデータをリカバリするためのオプションが用意されています。これにより、システムを迅速にバックアップして稼働させることができます。現時点では、リカバリアクションを使用して、破損したボリュームを、ランサムウェアの影響を受けていないSnapshotコピーに置き換えることができます。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-ransomware-recovery.html["詳細はこちら。"]。
+Ransomware Recovery Dashboardには、ランサムウェアに感染した可能性のあるデータをリカバリするためのオプションが用意されています。これにより、システムを迅速にバックアップして稼働させることができます。現時点では、リカバリアクションを使用して、破損したボリュームを、ランサムウェアの影響を受けていないSnapshotコピーに置き換えることができます。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/task-ransomware-recovery.html["詳細はこちら。"]。
 
 
 
@@ -1028,7 +1018,7 @@ BlueXPランサムウェア対策に、ビジネスクリティカルデータ�
 
 BlueXPランサムウェア対策サービスに対してこれらのポリシーをアクティブ化していない場合は、[Recommended Actions]パネルに[Configure your business critical data]という新しい推奨アクションが表示されます。
 
-https://docs.netapp.com/us-en/cloud-manager-ransomware/task-select-business-critical-policies.html["ビジネスクリティカルデータの詳細については、こちらをご覧ください"^]。
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/task-select-business-critical-policies.html["ビジネスクリティカルデータの詳細については、こちらをご覧ください"^]。
 
 
 
@@ -1048,13 +1038,13 @@ https://docs.netapp.com/us-en/cloud-manager-ransomware/task-select-business-crit
 
 ==== テンプレートを作成して、特定の作業環境を検索できるようになりました
 
-「既存のリソースを検索」アクションを使用すると、作業環境を特定してから、ボリュームの作成などの他のテンプレートアクションを使用して、既存の作業環境に対して簡単にアクションを実行できます。 https://docs.netapp.com/us-en/cloud-manager-app-template/task-define-templates.html#examples-of-finding-existing-resources-and-enabling-services-using-templates["詳細については、こちらをご覧ください"]。
+「既存のリソースを検索」アクションを使用すると、作業環境を特定してから、ボリュームの作成などの他のテンプレートアクションを使用して、既存の作業環境に対して簡単にアクションを実行できます。 https://docs.netapp.com/us-en/bluexp-remediation/task-define-templates.html#examples-of-finding-existing-resources-and-enabling-services-using-templates["詳細については、こちらをご覧ください"]。
 
 
 
 ==== AWS で Cloud Volumes ONTAP HA 作業環境を作成できる
 
-AWS での Cloud Volumes ONTAP 作業環境の作成は、既存のサポートが拡張されて、シングルノードシステムに加えて高可用性システムも作成できるようになりました。 https://docs.netapp.com/us-en/cloud-manager-app-template/task-define-templates.html#create-a-template-for-a-cloud-volumes-ontap-working-environment["Cloud Volumes ONTAP 作業環境用のテンプレートの作成方法については、を参照してください"]。
+AWS での Cloud Volumes ONTAP 作業環境の作成は、既存のサポートが拡張されて、シングルノードシステムに加えて高可用性システムも作成できるようになりました。 https://docs.netapp.com/us-en/bluexp-remediation/task-define-templates.html#create-a-template-for-a-cloud-volumes-ontap-working-environment["Cloud Volumes ONTAP 作業環境用のテンプレートの作成方法については、を参照してください"]。
 
 
 
@@ -1066,7 +1056,7 @@ AWS での Cloud Volumes ONTAP 作業環境の作成は、既存のサポート�
 
 新しい「リソース検索」アクションを使用すると、 Cloud Backup を有効にするすべてのボリュームを特定し、 Cloud Backup アクションを使用してそれらのボリュームのバックアップを有効にできます。
 
-現在サポートされているのは、 Cloud Volumes ONTAP 上のボリュームとオンプレミスの ONTAP システムです。 https://docs.netapp.com/us-en/cloud-manager-app-template/task-define-templates.html#find-existing-volumes-and-activate-bluexp-backup-and-recovery["詳細については、こちらをご覧ください"]。
+現在サポートされているのは、 Cloud Volumes ONTAP 上のボリュームとオンプレミスの ONTAP システムです。 https://docs.netapp.com/us-en/bluexp-remediation/task-define-templates.html#find-existing-volumes-and-activate-bluexp-backup-and-recovery["詳細については、こちらをご覧ください"]。
 
 
 
@@ -1076,7 +1066,7 @@ AWS での Cloud Volumes ONTAP 作業環境の作成は、既存のサポート�
 
 ==== これで、同期関係にタグを付けて、簡単にアクセスできるように関係をグループ化または分類できます
 
-https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["リソースタグ付けの詳細については、こちらをご覧ください"]。
+https://docs.netapp.com/us-en/bluexp-remediation/concept-tagging.html["リソースタグ付けの詳細については、こちらをご覧ください"]。
 
 
 
@@ -1092,7 +1082,7 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 Amazon FSX for ONTAP ファイルシステムからCloud Volumes ONTAP にデータをレプリケートできるようになりました。
 
-https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["データレプリケーションの設定方法について説明します"]。
+https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["データレプリケーションの設定方法について説明します"]。
 
 
 
@@ -1108,7 +1098,7 @@ Amazon FSX for ONTAP ファイルシステムから次のデスティネーシ�
 * オンプレミスの ONTAP クラスタ
 
 
-https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["データレプリケーションの設定方法について説明します"]。
+https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["データレプリケーションの設定方法について説明します"]。
 
 
 
@@ -1120,17 +1110,7 @@ https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.ht
 
 Cloud Volumes ONTAP システムまたはオンプレミスの ONTAP クラスタから ONTAP ファイルシステム用の Amazon FSX にデータをレプリケートできるようになりました。
 
-https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["データレプリケーションの設定方法について説明します"]。
-
-
-
-== SnapCenter サービス
-
-
-
-=== 2022年11月1日
-
-SnapCenter サービスは2022年11月1日に廃止されました。
+https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["データレプリケーションの設定方法について説明します"]。
 
 
 
@@ -1174,7 +1154,7 @@ BlueXP階層化インターフェイスから[ライセンス]タブが削除さ
 
 ==== ボリュームの階層化レポートを生成できるようになりました
 
-[階層ボリューム]ページからレポートをダウンロードして、管理しているクラスタ上のすべてのボリュームの階層化ステータスを確認できます。BlueXPの階層化サービスでは.csvファイルが生成されます。このファイルを確認して、必要に応じて社内の他のユーザに送信できます。 https://docs.netapp.com/us-en/cloud-manager-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["階層化レポートのダウンロード方法をご覧ください"]。
+[階層ボリューム]ページからレポートをダウンロードして、管理しているクラスタ上のすべてのボリュームの階層化ステータスを確認できます。BlueXPの階層化サービスでは.csvファイルが生成されます。このファイルを確認して、必要に応じて社内の他のユーザに送信できます。 https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["階層化レポートのダウンロード方法をご覧ください"]。
 
 
 
@@ -1196,4 +1176,4 @@ BlueXPの階層化が変更されたため、BlueXPの階層化処理を成功�
 
 | \ https://*.cloudmanager.cloud.netapp.com | \ https://*.api.bluexp.netapp.com 
 |===
-のすべてのエンドポイントのリストを参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-aws.html#outbound-internet-access["AWS"^]、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-google.html#outbound-internet-access["Google Cloud"^]または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-azure.html#outbound-internet-access["Azure"^] クラウド環境：
+のすべてのエンドポイントのリストを参照してください https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-aws.html#outbound-internet-access["AWS"^]、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-google.html#outbound-internet-access["Google Cloud"^]または https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-azure.html#outbound-internet-access["Azure"^] クラウド環境：

@@ -21,42 +21,42 @@ permalink: release-notes-index.html
 
 == 管理
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/whats-new.html["セットアップと管理"^]
+https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html["セットアップと管理"^]
 
 
 
 == ストレージ
 
-* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/whats-new.html["Azure NetApp Files の特長"^]
-* https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/whats-new.html["ONTAP 対応の Amazon FSX"^]
+* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/whats-new.html["Azure NetApp Files の特長"^]
+* https://docs.netapp.com/us-en/bluexp-fsx-ontap/whats-new.html["ONTAP 対応の Amazon FSX"^]
 * https://docs.netapp.com/us-en/bluexp-s3-storage/whats-new.html["Amazon S3ストレージ"^]
 * Cloud Volumes ONTAP
 +
 ** https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Cloud Volumes ONTAP のリリースノート"^]
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["BlueXPでのCloud Volumes ONTAP 管理に関するリリースノート"^]
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["BlueXPでのCloud Volumes ONTAP 管理に関するリリースノート"^]
 
 
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-service-gcp/whats-new.html["Cloud Volumes Service for Google Cloud"^]
-* https://docs.netapp.com/us-en/cloud-manager-e-series/whats-new.html["Eシリーズシステム"^]
-* https://docs.netapp.com/us-en/cloud-manager-kubernetes/whats-new.html["Kubernetes クラスタ"^]
-* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html["オンプレミスの ONTAP クラスタ"^]
-* https://docs.netapp.com/us-en/cloud-manager-storagegrid/whats-new.html["StorageGRID"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/whats-new.html["Cloud Volumes Service for Google Cloud"^]
+* https://docs.netapp.com/us-en/bluexp-e-series/whats-new.html["Eシリーズシステム"^]
+* https://docs.netapp.com/us-en/bluexp-kubernetes/whats-new.html["Kubernetes クラスタ"^]
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html["オンプレミスの ONTAP クラスタ"^]
+* https://docs.netapp.com/us-en/bluexp-storagegrid/whats-new.html["StorageGRID"^]
 
 
 
 
 == データサービス
 
-* https://docs.netapp.com/us-en/cloud-manager-backup-restore/whats-new.html["バックアップとリカバリ"^]
-* https://docs.netapp.com/us-en/cloud-manager-data-sense/whats-new.html["分類"^]
-* https://docs.netapp.com/us-en/cloud-manager-compute/whats-new.html["クラウド運用"^]
-* https://docs.netapp.com/us-en/cloud-manager-sync/whats-new.html["コピーと同期"^]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["バックアップとリカバリ"^]
+* https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["分類"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-ops/whats-new.html["クラウド運用"^]
+* https://docs.netapp.com/us-en/bluexp-copy-sync/whats-new.html["コピーと同期"^]
 * https://docs.netapp.com/us-en/bluexp-digital-wallet/index.html["デジタルウォレット"^]
 * https://docs.netapp.com/us-en/bluexp-economic-efficiency/index.html["経済効率"^]
-* https://docs.netapp.com/us-en/cloud-manager-file-cache/whats-new.html["エッジキャッシュ"^]
+* https://docs.netapp.com/us-en/bluexp-edge-caching/whats-new.html["エッジキャッシュ"^]
 * https://docs.netapp.com/us-en/bluexp-operational-resiliency/index.html["運用の耐障害性"^]
-* https://docs.netapp.com/us-en/cloud-manager-ransomware/whats-new.html["ランサムウェアからの保護"^]
-* https://docs.netapp.com/us-en/cloud-manager-app-template/whats-new.html["修正"^]
-* https://docs.netapp.com/us-en/cloud-manager-replication/whats-new.html["レプリケーション"^]
-* https://docs.netapp.com/us-en/cloud-manager-tiering/whats-new.html["階層化"^]
+* https://docs.netapp.com/us-en/bluexp-ransomware-protection/whats-new.html["ランサムウェアからの保護"^]
+* https://docs.netapp.com/us-en/bluexp-remediation/whats-new.html["修正"^]
+* https://docs.netapp.com/us-en/bluexp-replication/whats-new.html["レプリケーション"^]
+* https://docs.netapp.com/us-en/bluexp-tiering/whats-new.html["階層化"^]
 
