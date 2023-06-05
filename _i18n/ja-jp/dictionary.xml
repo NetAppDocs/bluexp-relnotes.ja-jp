@@ -123,24 +123,13 @@
   <block id="ed8f5e7e321372398aae23788c3243a0" category="sidebar">BlueXPインデックス</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">BlueXPのすべてのマニュアル</block>
   <block id="88268cce7d1b83c765c3f7010df80df5" category="section-title">2022年11月6日</block>
-  <block id="5c0fff562b33dc0a5a3acac30ed2d313" category="section-title">2022年12月6日</block>
   <block id="c7360b05ac6a5646b2770ea0c162d4fb" category="inline-link">サポートされている同期関係の詳細を確認できます</block>
-  <block id="eb75f7332becd8b3fbb2a59ea0bd0536" category="cell">古いエンドポイント</block>
-  <block id="afcce2fe2d959c0f4554e7815a50e8e4" category="cell">新しいエンドポイント</block>
-  <block id="115781a0043a85f8707c5c99fd02dc75" category="cell">\ https://cloudmanager.cloud.netapp.com</block>
-  <block id="e1095ff19466581c5274f67123c95036" category="cell">\ https://api.bluexp.netapp.com</block>
-  <block id="9e434ddc2ad4b9de005368b77254223d" category="cell">\ https://*.cloudmanager.cloud.netapp.com</block>
-  <block id="37ba276f010f4ea07f1196b487811443" category="cell">\ https://*.api.bluexp.netapp.com</block>
-  <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="inline-link">AWS</block>
-  <block id="56ef2682280ac110060b881925a87b80" category="inline-link">Google Cloud</block>
-  <block id="3a580f142203677f1f0bc30898f63f53" category="inline-link">Azure</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXPのブログ</block>
   <block id="e1bc7b26155063f1ce71b76f655669ef" category="section-title">2023年2月5日</block>
   <block id="de7ceda1f3ad5462ebeba9b4e49bf946" category="section-title">ビジネスクリティカルとみなすデータを識別するポリシーを定義する機能</block>
   <block id="5bba5081ab3b5a554fbba4b798a66e4f" category="inline-link">ビジネスクリティカルデータの詳細については、こちらをご覧ください</block>
   <block id="c1d1220273fe79d481c41539bea31710" category="paragraph">次に、BlueXPの左ナビゲーションメニューから* Governance &gt; Ransomware Protection *を選択してこのサービスにアクセスしてください。</block>
   <block id="fdfef50a14b07533a8bab908a66de10c" category="list-text">このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張が含まれています。</block>
-  <block id="433c1ccd6c6d5af5fc78b729975e5f20" category="section-title">Connectorアウトバウンドインターネットアクセスエンドポイントの変更</block>
   <block id="6beb41a356d9287866f0b22c4b4eadcb" category="paragraph">BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します詳細については、を参照してください <block ref="1e9f4589e5d2713376df79f13fc9ba0a" category="inline-link-macro-rx"></block> 個々のサービスごと。</block>
   <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">2023年3月5日</block>
   <block id="eea1e3b9ecdd5e32692761a0a78b9463" category="section-title">2023年3月5日</block>
@@ -283,7 +272,6 @@
   <block id="7c446b3d2b5f39a022c6af3569a59a1f" category="paragraph">BlueXPランサムウェア対策に、ビジネスクリティカルデータに関する新しいページが追加されました。このページでは、BlueXPの分類で定義されているすべてのポリシーを表示できます。ビジネスにとって重要なデータを特定するポリシーを選択すると、BlueXPランサムウェア対策ダッシュボードやその他のランサムウェアパネルに、最も重要なデータに基づく潜在的な問題が反映されるようになります。</block>
   <block id="6b501182c10867e7258fc2278cf3d451" category="paragraph">BlueXPランサムウェア対策サービスに対してこれらのポリシーをアクティブ化していない場合は、[Recommended Actions]パネルに[Configure your business critical data]という新しい推奨アクションが表示されます。</block>
   <block id="e90b826155dae219948b9b2fca9feca3" category="section-title">BlueXPのランサムウェア対策は、「Protection」カテゴリから「Governance」カテゴリに移行されました</block>
-  <block id="8c14896b1d1fc37f02aa2e6dfc06354a" category="paragraph">BlueXPの階層化が変更されたため、BlueXPの階層化処理を成功させるには、次のコネクタエンドポイントを変更する必要があります。</block>
   <block id="d128bda2634e1051cc984231da065144" category="list-text">Eメール通知がBlueXPデジタルウォレットでサポートされるようになりました。</block>
   <block id="016c818ed3128119f94a31cbec32bf1f" category="paragraph">Cloud Volumes ONTAP の容量単位のライセンスを表示する場合、BlueXPデジタルウォレットに、マーケットプレイスのプライベートオファーで購入したライセンス容量が表示されるようになりました。</block>
   <block id="b3e680bd6b6b80e2fd4f5bd19f3ad015" category="paragraph">BlueXPのPAYGOサブスクリプションと年間契約が、BlueXPのデジタルウォレットで表示、管理できるようになりました。</block>
@@ -414,7 +402,6 @@
   <block id="c3f9f5f3154c847ae51038b02652e769" category="paragraph"><block ref="ebf81513d87da0002a3ac7ea6ee056cb" category="inline-link-rx"></block>。</block>
   <block id="51959da1122b405c90c18be52282f18f" category="paragraph"><block ref="1bc1e485e9f9d41e344f0d10f6ad3511" category="inline-link-rx"></block>。</block>
   <block id="af39bae06861b3074eed6e997f9a3ebf" category="paragraph">[階層ボリューム]ページからレポートをダウンロードして、管理しているクラスタ上のすべてのボリュームの階層化ステータスを確認できます。BlueXPの階層化サービスでは.csvファイルが生成されます。このファイルを確認して、必要に応じて社内の他のユーザに送信できます。<block ref="aaab920374e84f87020f8ba8578ab877" category="inline-link-rx"></block>。</block>
-  <block id="fa2934d386823619966e2cc6e222496c" category="paragraph">のすべてのエンドポイントのリストを参照してください<block ref="42eb7f749d4ba3adb326aa0a5756ba02" category="inline-link-rx"></block>、<block ref="96a9d4916fc49c8f082f1cb217b818c4" category="inline-link-rx"></block>または<block ref="4f16be4d60318c8ffb97ef574631956d" category="inline-link-rx"></block> クラウド環境：</block>
   <block id="2b3e8f910d66604cd77f93b333670468" category="inline-link">Azure BLOBストレージ</block>
   <block id="a1182a2fefa3fdd8128a983a3d666611" category="list-text"><block ref="a1182a2fefa3fdd8128a983a3d666611" category="inline-link-rx"></block></block>
   <block id="ac7b3cf10ea08c788a374e0291742517" category="inline-link">移行レポート</block>
@@ -548,4 +535,24 @@
   <block id="49145759efbc79c21fc5ba75bb2aaf72" category="paragraph">この変更により、Azure Governmentリージョン内のコネクタは、次のエンドポイントに接続しなくなりました。</block>
   <block id="9dcb0a1d3281e001a6085626a264be49" category="paragraph">\https://cloudmanagerinfraprod.azurecr.io</block>
   <block id="979b0001d7bec41aff8509faf7b59bef" category="paragraph">このエンドポイントは、他のすべての制限モード設定および標準モードでは引き続き必要であることに注意してください。</block>
+  <block id="51276db22ab007bf8378ddc5150c089e" category="section-title">2023年7月4日</block>
+  <block id="91abdc8faafafce1c7b76b1ecb8b37a6" category="list-text">SAP HANAシステム</block>
+  <block id="bd8b9d76d990f261019903335a2c9e94" category="list-text">Azure NetApp Filesセカンダリ保護が有効な非データボリュームおよびグローバル非データボリュームの接続とコピーリストアをサポートします</block>
+  <block id="0ba30ac65d6a9a5888d4dc02307879d6" category="list-text">Azure NetApp Files上のOracleデータベースを別の場所にリストアできます</block>
+  <block id="699e0e6ae8fec9f5e5e383a17f5ec630" category="list-text">Azure NetApp Files上のOracleデータベースのバックアップのOracle Recovery Manager（RMAN）カタログ化をサポートします</block>
+  <block id="02794f70b3a16972197aaf346fca198e" category="list-text">データベースホストをメンテナンスモードにしてメンテナンスタスクを実行できます</block>
+  <block id="d7d2579b3be99740443be180188dedfc" category="list-text">別の場所へのリストアをサポートします</block>
+  <block id="b0e856a98075908a96697bb21ab6fe32" category="list-text">Oracleデータベースのバックアップをマウントできます</block>
+  <block id="9e9fa16d2206e067234a9dad53361ff4" category="list-text">GCPからアーカイブ層へのバックアップの移動をサポートします</block>
+  <block id="e0d4183564323d306658a92b138bac87" category="section-title">BlueXPの仮想マシンのバックアップとリカバリの機能拡張（ハイブリッド）</block>
+  <block id="64870b941ab2700a64f496038bfb77a9" category="list-text">NFSおよびVMFSタイプのデータストアの保護をサポートします</block>
+  <block id="c54bd2b10766a492ae36855e868d61eb" category="list-text">SnapCenter Plug-in for VMware vSphereホストの登録を解除できます</block>
+  <block id="08c34207830d8869e05cd28a4543f5dc" category="list-text">最新のデータストアとバックアップの更新と検出がサポートされます</block>
+  <block id="28acda3f8bdb20220a5658f1cd81f226" category="section-title">2023年7月4日</block>
+  <block id="f955a076eeae4df4466469593ff635ca" category="section-title">アクセス頻度の低いデータをオブジェクトストレージにアップロードする際の帯域幅を調整できるようになりました</block>
+  <block id="1d59c82c13288b53f26d652175016f90" category="paragraph">BlueXP階層化をアクティブ化すると、ONTAPは無制限のネットワーク帯域幅を使用して、アクセス頻度の低いデータをクラスタ内のボリュームからオブジェクトストレージに転送できます。階層化トラフィックが通常のユーザワークロードに影響していることに気付いた場合は、転送中に使用できる帯域幅を調整できます。<block ref="bd661c8ba5ce12ee5a1adc1010618597" category="inline-link-rx"></block>。</block>
+  <block id="eb516d1f8f028dbd0333948ae6fc06a5" category="section-title">通知センターに「低階層化」の階層化イベントが表示されます</block>
+  <block id="250f0923d20814211c14c5a6cd0e2643" category="paragraph">クラスタがコールドデータの20%未満（データを階層化しないクラスタを含む）を階層化しているときに、階層化イベント「Tier additional data from cluster &lt;name&gt; to object storage efficiency」が通知として表示されるようになりました。</block>
+  <block id="3c23988fbf7c203a2c811a5ce84251c0" category="inline-link">BlueXP階層化サービス（TCO）とコスト削減試算ツールです</block>
+  <block id="57f9b94b395c8e293b7f892fe5995ac7" category="paragraph">本通知は、システムの効率化とストレージコストの削減を目的とした「推奨事項」です。これにより、へのリンクが提供されます<block ref="c9d262883689ef94201e8739cb50c7f6" category="inline-link-rx"></block> コスト削減額の計算に役立ちます。</block>
 </blocks>
