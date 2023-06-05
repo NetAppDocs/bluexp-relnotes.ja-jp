@@ -33,6 +33,58 @@ NetApp BlueXPは2022年11月1日にリリースされました。BlueXPは、Clo
 
 
 
+=== 2023年6月4日
+
+
+
+==== コネクタ3.9.30
+
+* サポートダッシュボードからNetAppサポートケースをオープンすると、BlueXPログインに関連付けられたNetApp Support Siteアカウントを使用してケースがオープンされるようになりました。以前は、BlueXPアカウント全体に関連付けられたNetApp Support Siteアカウントを使用していました。
++
+この変更に伴い、BlueXPアカウントのサポート登録は、ユーザのBlueXPログインに関連付けられたNetApp Support Siteアカウントを使用して行われるようになりました。これまで、サポートの登録には、BlueXPアカウント全体に関連付けられたNSSアカウントを使用していました。そのため、BlueXPへのログインにNetApp Support Siteアカウントが関連付けられていない場合、他のBlueXPユーザには同じサポート登録ステータスが表示されません。以前にBlueXPアカウントをサポートに登録していても、登録ステータスは引き続き有効です。ステータスを確認するには、ユーザレベルのNSSアカウントを追加するだけです。
+
++
+** https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#create-a-case-with-netapp-support["NetAppサポートでケースを作成する方法について説明します"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-user-credentials.html["BlueXPログインに関連付けられているクレデンシャルの管理方法について説明します"]
+** https://docs.netapp.com/us-en/bluexp-setup-admin/task-support-registration.html["サポートに登録する方法について説明します"]
+
+
+* BlueXPからドキュメントを検索できるようになりました。検索結果に、docs.netapp.comおよびkb.netapp.comのコンテンツへのリンクが表示されるようになりました。これは、質問を回答に送信するのに役立つ可能性があります。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search-docs.png["コンソールの上部に表示されるBlueXP検索のスクリーンショット。"]
+
+* このコネクタが次のAWSリージョンでサポートされるようになりました。
++
+** ハイデラバード（AP-south-2）
+** メルボルン（AP南東-4）
+** スペイン（EU-south-2）
+** アラブ首長国連邦（ME-CENTRAL-1）
+** チューリッヒ（EU-CENTRAL-2）
+
+
+* このコネクタは、次のAzureリージョンでサポートされるようになりました。
++
+** ブラジル南部
+** フランス南部
+** インド中部出身
+** 西インド諸島出身
+** ポーランド中部
+** カタール中部
+
+
+* Connectorは、次のGoogle Cloudリージョンでサポートされるようになりました。
++
+** コロンバス（us-east5）
+** ダラス（US -サウス1）
+
+
++
+https://cloud.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
+
+
+
+
+
 === 2023年5月7日
 
 
@@ -83,41 +135,17 @@ NOTE: 制限モードが導入されたことで、SaaSプラットフォーム�
 
 
 
-=== 2023年4月3日
+== Azure BLOBストレージ
 
 
 
-==== コネクタ3.9.28
-
-* Eメール通知がBlueXPデジタルウォレットでサポートされるようになりました。
-+
-通知を設定すると、BYOLライセンスの有効期限が近づいたとき（「警告」通知）、またはすでに有効期限が切れているとき（「エラー」通知）にEメール通知を受け取ることができます。
-
-+
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["Eメール通知の設定方法については、こちらをご覧ください"]。
-
-* Google Cloud Turinリージョンでコネクタがサポートされるようになりました。
-+
-https://cloud.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
-
-* BlueXPログインに関連付けられたユーザクレデンシャル（ONTAP クレデンシャルとNetApp Support Site （NSS）クレデンシャル）を管理できるようになりました。
-+
-[設定]>[クレデンシャル]*に移動すると、クレデンシャルを表示したり、更新したり、削除したりできます。たとえば、これらのクレデンシャルのパスワードを変更した場合は、BlueXPでパスワードを更新する必要があります。
-
-+
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-user-credentials.html["ユーザクレデンシャルの管理方法について説明します"]。
-
-* サポートケースを作成するとき、または既存のサポートケースのケースノートを更新するときに、添付ファイルをアップロードできるようになりました。
-+
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#manage-your-support-cases["サポートケースを作成および管理する方法について説明します"]。
-
-* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とオンプレミスONTAP クラスタの機能拡張も含まれています。
-+
-** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#3-april-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#3-april-2023["ONTAP オンプレミスクラスタの機能拡張について説明します"^]
+=== 2023年6月5日
 
 
 
+==== BlueXPから新しいストレージアカウントを追加できるようになりました
+
+BlueXP CanvasでAzure Blob Storageを表示できるようになりました。BlueXPから直接、新しいストレージアカウントを追加したり、既存のストレージアカウントのプロパティを変更したりできるようになりました。 https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["新しいAzure BLOBストレージアカウントを追加する方法をご覧ください"^]。
 
 
 
@@ -175,6 +203,14 @@ Cloud Manager では、ボリューム Snapshot を作成、削除、リスト�
 
 
 
+=== 2023年6月4日
+
+* いつ link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["作業環境の作成"]では、毎週の30分のメンテナンス時間の開始時間を指定して、メンテナンスが重要なビジネスアクティビティと競合しないようにすることができます。
+* いつ link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html["ボリュームを作成しています"]では、ボリューム間でデータを分散するFlexGroupを作成することで、データの最適化を有効にすることができます。
+
+
+
+
 === 2023年5月7日
 
 * 作業環境の作成時にBlueXPを使用できるようになりました link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["セキュリティグループを生成します"^] これにより、選択したVPC内のトラフィックのみが許可されます。この機能 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["追加の権限が必要です"^]。
@@ -186,12 +222,6 @@ Cloud Manager では、ボリューム Snapshot を作成、削除、リスト�
 === 2023年4月2日
 
 IOPS制限が引き上げられ、手動または自動で最大160、000のプロビジョニングが可能になりました。
-
-
-
-=== 2023年3月5日
-
-ユーザインターフェイスが改善され、ドキュメントのスクリーンショットが更新されました。
 
 
 
@@ -460,6 +490,20 @@ https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.ht
 
 
 
+=== 2023年6月4日
+
+コネクタの3.9.30リリースでは、次の変更が加えられました。
+
+
+
+==== Cloud Volumes ONTAPアップグレードバージョンセレクタの更新
+
+Upgrade Cloud Volumes ONTAPページで、Cloud Volumes ONTAPの最新バージョンまたは古いバージョンへのアップグレードを選択できるようになりました。
+
+BlueXPを使用したCloud Volumes ONTAPのアップグレードの詳細については、を参照してください https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-cloud-volumes-ontap["Cloud Volumes ONTAP をアップグレードします"^]。
+
+
+
 === 2023年5月7日
 
 コネクタの3.9.29リリースでは、次の変更が加えられました。
@@ -513,53 +557,6 @@ Cloud Volumes ONTAP 9.12.1 GA以降では、次のように中国リージョン
 
 
 地域ごとの可用性については、を参照してください link:https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP のグローバルリージョンマップ"^]。
-
-
-
-=== 2023年4月3日
-
-コネクタの3.9.28リリースでは、次の変更が導入されました。
-
-
-
-==== TurinリージョンがGoogle Cloudでサポートされるようになりました
-
-Turinリージョンは、Google Cloud for Cloud Volumes ONTAP およびConnector for Cloud Volumes ONTAP 9.12.1 GA以降でサポートされるようになりました。
-
-
-
-==== BlueXPのデジタルウォレット機能の強化
-
-BlueXPのデジタルウォレットに、Marketplaceのプライベートオファーで購入したライセンス容量が表示されるようになりました。
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["アカウントの使用済み容量を表示する方法について説明します"^]。
-
-
-
-==== ボリューム作成時のコメントがサポートされます
-
-このリリースでは、APIを使用してCloud Volumes ONTAP FlexGroup ボリュームまたはFlexVol ボリュームを作成する際にコメントを作成することができます。
-
-
-
-==== Cloud Volumes ONTAP の[Overview]、[Volumes]、[Aggregates]ページでBlueXPのユーザインターフェイスが再設計されました
-
-Cloud Volumes ONTAP の[概要]、[ボリューム]、[アグリゲート]ページで使用できるユーザインターフェイスが再設計されました。タイルベースのデザインでは、より包括的な情報が各タイルに表示され、ユーザーエクスペリエンスが向上します。
-
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-resource-page-rn.png["このスクリーンショットは、Cloud Volumes ONTAP の概要ページに再設計されたBlueXPユーザインターフェイスを示しています。さまざまなタイルに、ストレージ効率、バージョン、容量分布、Cloud Volumes ONTAP 環境に関する情報、ボリューム、アグリゲート、レプリケーション、バックアップが表示されます。"]
-
-
-
-==== FlexGroup ボリュームはCloud Volumes ONTAP で確認できます
-
-CLIまたはSystem Managerで作成したFlexGroup ボリュームは、BlueXPの再設計された[ボリューム]タイルで直接表示できるようになりました。FlexVol ボリュームの場合と同じように、作成したFlexGroup ボリュームの詳細情報は専用の[Volumes]タイルで確認できます。
-
-
-NOTE: 現時点では、BlueXPでは既存のFlexGroup ボリュームのみを表示できます。BlueXPでFlexGroup ボリュームを作成することはできませんが、今後のリリースでサポートする予定です。
-
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-show-flexgroup-volume.png["[Volumes]タイルの下にFlexGroup ボリュームアイコンが配置されたテキストを示すスクリーンショット。"]
-
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-volumes.html["作成したFlexGroup ボリュームの表示について詳しくは、こちらをご覧ください。"^]
 
 
 
@@ -743,7 +740,7 @@ Eメール通知がBlueXPデジタルウォレットでサポートされるよ�
 
 通知を設定すると、BYOLライセンスの有効期限が近づいたとき（「警告」通知）、またはすでに有効期限が切れているとき（「エラー」通知）にEメール通知を受け取ることができます。
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["Eメール通知の設定方法については、こちらをご覧ください"^]
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["Eメール通知の設定方法については、こちらをご覧ください"^]
 
 
 
@@ -906,6 +903,20 @@ https://cloud.netapp.com/cloud-insights["Cloud Insights の詳細については
 === 2022年11月6日
 
 いつ link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["ストレージクラスを定義する"]では、ブロックストレージやファイルシステムストレージに対して、ストレージクラスの経済性を実現できます。
+
+
+
+== 移行レポート
+
+
+
+=== 2023年6月2日
+
+新しいBlueXP移行レポートサービスでは、ストレージ環境のファイル、ディレクトリ、シンボリックリンク、ハードリンク、ファイルシステムツリーの深さと幅、大容量ファイルなどの数をすばやく特定できます。
+
+この情報を使用すると、使用したいプロセスが在庫を効率的かつ正常に処理できることが事前にわかります。
+
+link:https://docs.netapp.com/us-en/bluexp-reports/get-started/intro.html["BlueXP移行レポートの詳細をご確認ください"]。
 
 
 
@@ -1177,3 +1188,17 @@ BlueXPの階層化が変更されたため、BlueXPの階層化処理を成功�
 | \ https://*.cloudmanager.cloud.netapp.com | \ https://*.api.bluexp.netapp.com 
 |===
 のすべてのエンドポイントのリストを参照してください https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-aws.html#outbound-internet-access["AWS"^]、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-google.html#outbound-internet-access["Google Cloud"^]または https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-azure.html#outbound-internet-access["Azure"^] クラウド環境：
+
+
+
+== ボリュームキャッシュ
+
+
+
+=== 2023年6月4日
+
+ONTAP 9ソフトウェアの機能であるボリュームキャッシングは、ファイル配信を簡易化し、ユーザやコンピューティングリソースの近くにリソースを配置することでWANレイテンシを低減し、WAN帯域幅のコストを削減するリモートキャッシング機能です。ボリュームキャッシングは、リモートの場所にある書き込み可能な永続的ボリュームを提供します。BlueXPのボリュームキャッシュを使用すると、データへのアクセスを高速化したり、アクセス頻度の高いボリュームのトラフィックをオフロードしたりできます。キャッシュボリュームは、特にクライアントが同じデータに繰り返しアクセスする必要がある場合に、読み取り処理が大量に発生するワークロードに最適です。
+
+BlueXPボリュームキャッシングを使用すると、特にAmazon FSx for NetApp ONTAP、Cloud Volumes ONTAP、オンプレミスの作業環境向けに、クラウド向けのキャッシュ機能を利用できます。
+
+link:https://docs.netapp.com/us-en/bluexp-volume-caching/get-started/cache-intro.html["BlueXPのボリュームキャッシュの詳細については、こちらをご覧ください"]。

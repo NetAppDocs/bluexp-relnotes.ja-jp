@@ -27,6 +27,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html["セットアッ
 
 == ストレージ
 
+* https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["Azure BLOBストレージ"^]
 * https://docs.netapp.com/us-en/bluexp-azure-netapp-files/whats-new.html["Azure NetApp Files の特長"^]
 * https://docs.netapp.com/us-en/bluexp-fsx-ontap/whats-new.html["ONTAP 対応の Amazon FSX"^]
 * https://docs.netapp.com/us-en/bluexp-s3-storage/whats-new.html["Amazon S3ストレージ"^]
@@ -39,6 +40,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html["セットアッ
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/whats-new.html["Cloud Volumes Service for Google Cloud"^]
 * https://docs.netapp.com/us-en/bluexp-e-series/whats-new.html["Eシリーズシステム"^]
 * https://docs.netapp.com/us-en/bluexp-kubernetes/whats-new.html["Kubernetes クラスタ"^]
+* https://docs.netapp.com/us-en/bluexp-reports/release-notes/whats-new.html["移行レポート"^]
 * https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html["オンプレミスの ONTAP クラスタ"^]
 * https://docs.netapp.com/us-en/bluexp-storagegrid/whats-new.html["StorageGRID"^]
 
@@ -59,4 +61,5 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html["セットアッ
 * https://docs.netapp.com/us-en/bluexp-remediation/whats-new.html["修正"^]
 * https://docs.netapp.com/us-en/bluexp-replication/whats-new.html["レプリケーション"^]
 * https://docs.netapp.com/us-en/bluexp-tiering/whats-new.html["階層化"^]
+* https://docs.netapp.com/us-en/bluexp-volume-caching/release-notes/cache-whats-new.html["ボリュームキャッシュ"^]
 
