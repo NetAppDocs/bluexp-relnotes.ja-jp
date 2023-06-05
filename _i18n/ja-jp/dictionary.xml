@@ -536,7 +536,6 @@
   <block id="8b33a4571db736cc278b213820df9c13" category="paragraph">データ主体アクセス要求（DSAR）に応答して、被験者の名前を検索する際に日本語名を入力できるようになりました。を生成できます<block ref="8ff27ad1e3f1d885a2f0c0f257501bb1" category="inline-link-rx"></block> 結果の情報を使用して。に日本語の名前を入力することもできます<block ref="615fae5bff7ec48fe0ed5c47e50f199a" category="inline-link-rx"></block> サブジェクト名を含むファイルを識別します。</block>
   <block id="988e5d1ef231d33d94784c928261f0aa" category="section-title">Ubuntuがサポート対象のLinuxディストリビューションになり、BlueXP分類をインストールできるようになりました</block>
   <block id="bf62ea0cc2aa2f5ecb7f712ffcdafc64" category="inline-link">UbuntuがインストールされているホストにBlueXP分類をインストールする方法を参照してください</block>
-  <block id="e79851962ec44d8c7ccd2a63f0c4e92c" category="paragraph">Ubuntu 22.04は、BlueXPのサポート対象オペレーティングシステムとして認定されています。BlueXP分類は、ネットワーク内のUbuntu Linuxホストまたはクラウド内のLinuxホストにインストールできます。<block ref="cc16f95732fa73dc357dabce46e4c311" category="inline-link-rx"></block>。</block>
   <block id="eba7ad27f2a236389ef88102ad7e8e2e" category="section-title">新しいBlueXP分類のインストールでは、Red Hat Enterprise Linux 8.6および8.7はサポートされなくなりました</block>
   <block id="5b1dc8e5b7717b205bb516bc41f51da7" category="paragraph">Red Hatでは前提条件であるDockerがサポートされなくなるため、新規導入ではこれらのバージョンはサポートされません。RHEL 8.6または8.7で既存のBlueXP分類マシンを実行している場合、NetAppでは引き続き構成がサポートされます。</block>
   <block id="b5ba343fa4469021dbdf64181a67e909" category="section-title">BlueXPの分類は、ONTAPシステムからFPolicyイベントを受信するFPolicyコレクタとして設定できます</block>
@@ -545,4 +544,8 @@
   <block id="e1161f065b10936afc930fd3d9d0c76f" category="section-title">ダークサイトでData Sense BYOLライセンスがサポートされるようになりました</block>
   <block id="1ab65443ec0af7e5e1aee32a3cf59dcc" category="inline-link">Data Sense BYOLライセンスの入手方法とアップロード方法をご確認ください</block>
   <block id="645f5675426bc396b45b524635e93bc7" category="paragraph">ダークサイトのBlueXPデジタルウォレットにData Sense BYOLライセンスをアップロードして、ライセンスの残量が少なくなったときに通知を受け取ることができます。<block ref="bd823f9b4dce457c0ea2a8dcca6e749f" category="inline-link-rx"></block>。</block>
+  <block id="26e3ab611e399c831d813cdff5745975" category="list-text">コネクタを使用して、BlueXPからAzureストレージアカウントを追加および管理できるようになりました。</block>
+  <block id="8ffa5f25420a002d3aa8840ec0e7752f" category="inline-link">BlueXPからAzureサブスクリプションに新しいAzureストレージアカウントを追加する方法をご確認ください</block>
+  <block id="6c6c819a667ba8ce8119b4bf796894fc" category="paragraph"><block ref="fef6d7c0add7436be78fa3e990371931" category="inline-link-rx"></block>。</block>
+  <block id="32bb143fdc5ad46423876511f8c73c77" category="paragraph">Ubuntu 22.04は、BlueXPのサポート対象オペレーティングシステムとして認定されています。BlueXP分類は、ネットワーク内のUbuntu Linuxホストにインストールすることも、バージョン1.23のインストーラを使用している場合はクラウドのLinuxホストにインストールすることもできます。<block ref="cc16f95732fa73dc357dabce46e4c311" category="inline-link-rx"></block>。</block>
 </blocks>

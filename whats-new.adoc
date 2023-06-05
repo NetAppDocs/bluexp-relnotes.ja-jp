@@ -53,6 +53,10 @@ NetApp BlueXPは2022年11月1日にリリースされました。BlueXPは、Clo
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search-docs.png["コンソールの上部に表示されるBlueXP検索のスクリーンショット。"]
 
+* コネクタを使用して、BlueXPからAzureストレージアカウントを追加および管理できるようになりました。
++
+https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["BlueXPからAzureサブスクリプションに新しいAzureストレージアカウントを追加する方法をご確認ください"^]。
+
 * このコネクタが次のAWSリージョンでサポートされるようになりました。
 +
 ** ハイデラバード（AP-south-2）
@@ -390,7 +394,7 @@ Cloud Volumes ONTAP システムからAzureストレージへのバックアッ�
 
 ==== Ubuntuがサポート対象のLinuxディストリビューションになり、BlueXP分類をインストールできるようになりました
 
-Ubuntu 22.04は、BlueXPのサポート対象オペレーティングシステムとして認定されています。BlueXP分類は、ネットワーク内のUbuntu Linuxホストまたはクラウド内のLinuxホストにインストールできます。 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["UbuntuがインストールされているホストにBlueXP分類をインストールする方法を参照してください"]。
+Ubuntu 22.04は、BlueXPのサポート対象オペレーティングシステムとして認定されています。BlueXP分類は、ネットワーク内のUbuntu Linuxホストにインストールすることも、バージョン1.23のインストーラを使用している場合はクラウドのLinuxホストにインストールすることもできます。 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["UbuntuがインストールされているホストにBlueXP分類をインストールする方法を参照してください"]。
 
 
 
