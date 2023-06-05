@@ -243,6 +243,42 @@ BlueXP CanvasでAmazon S3バケットを表示できるようになりました�
 
 
 
+=== 2023年6月5日
+
+
+
+==== FlexGroupボリュームは、DataLockとランサムウェア対策を使用してバックアップおよび保護できます
+
+クラスタでONTAP 9.13.1以降が実行されている場合、FlexGroupボリュームのバックアップポリシーでDataLockとランサムウェア対策を使用できるようになりました。
+
+
+
+==== 新しいレポート機能
+
+[Reports]タブでバックアップインベントリレポートを生成できるようになりました。このレポートには、特定のアカウント、作業環境、またはSVMインベントリのすべてのバックアップが含まれます。Data Protection Job Activityレポートを作成することもできます。このレポートには、Snapshot、バックアップ、クローニング、およびリストアの各処理に関する情報が表示され、サービスレベルアグリーメントの監視に役立ちます。を参照してください https://docs.netapp.com/us-en/bluexp-backup-recovery/task-report-inventory.html["データ保護の適用範囲に関するレポートを作成します"]。
+
+
+
+==== ジョブモニタの機能拡張
+
+[Job Monitor]ページで、_backup lifecycle_をジョブタイプとして確認できるようになりました。これにより、バックアップライフサイクル全体を追跡できます。BlueXPタイムラインでは、すべての処理の詳細を確認することもできます。を参照してください https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html["バックアップジョブとリストアジョブのステータスを監視します"]。
+
+
+
+==== 一致しないポリシーラベルに関する追加の通知アラート
+
+新しいバックアップアラート「Backup files were not created because Snapshot policy labels do not match」が追加されました。バックアップポリシーで定義された_label_inにSnapshotポリシーにmatching_label_inがない場合、バックアップファイルは作成されません。欠落しているラベルをボリュームSnapshotポリシーに追加するには、System ManagerまたはONTAP CLIを使用する必要があります。
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html#review-backup-and-restore-alerts-in-the-bluexp-notification-center["BlueXPのバックアップとリカバリから送信されるアラートをすべて確認します"]。
+
+
+
+==== ダークサイトのBlueXPの重要なバックアップファイルとリカバリファイルを自動でバックアップ
+
+インターネットアクセスのないサイト（「プライベートモード」環境）でBlueXPのバックアップとリカバリを使用している場合、BlueXPのバックアップとリカバリの情報はローカルコネクタシステムにのみ格納されます。この新機能では、BlueXPの重要なバックアップ/リカバリデータが接続されたStorageGRIDシステムのバケットに自動的にバックアップされるため、必要に応じてこのデータを新しいコネクタにリストアできます。 https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-backup-cbs-db-in-dark-site.html["詳細はこちら。"]
+
+
+
 === 2023年5月8日
 
 
@@ -313,7 +349,7 @@ ONTAP 9.13.1以降を実行しているオンプレミスのONTAP システム�
 
 ==== 「制限付き」モードでCloud Volumes ONTAP システムからクラウドにデータをバックアップする機能
 
-これで、AWS、Azure、GCPの商用リージョンにインストールされているCloud Volumes ONTAP システムのデータを「制限モード」でバックアップできるようになりました。これを行うには、まず「制限された」商業地域にコネクタをインストールする必要があります。 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["BlueXPの導入モードの詳細については、こちらをご覧ください"^]。を参照してください https://docs.netapp.com/us-en/bluexp-backup-restore/task-backup-to-s3.html["Amazon S3 への Cloud Volumes ONTAP データのバックアップ"] および https://docs.netapp.com/us-en/bluexp-backup-restore/task-backup-to-azure.html["Cloud Volumes ONTAP データをAzure Blobにバックアップしています"]。
+これで、AWS、Azure、GCPの商用リージョンにインストールされているCloud Volumes ONTAP システムのデータを「制限モード」でバックアップできるようになりました。これを行うには、まず「制限された」商業地域にコネクタをインストールする必要があります。 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["BlueXPの導入モードの詳細については、こちらをご覧ください"^]。を参照してください https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-s3.html["Amazon S3 への Cloud Volumes ONTAP データのバックアップ"] および https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-azure.html["Cloud Volumes ONTAP データをAzure Blobにバックアップしています"]。
 
 
 
@@ -331,38 +367,48 @@ Cloud Volumes ONTAP システムからAzureストレージへのバックアッ�
 
 ==== ジョブモニタの機能拡張
 
-* ONTAP 9.13.1以降を実行しているオンプレミスのONTAP システムでは、BlueXPのバックアップ/リカバリのUIとAPIでユーザが開始したバックアップ処理とリストア処理と、システムが開始したジョブ（進行中のバックアップ処理など）が[ジョブ監視]タブで利用できるようになりました。以前のバージョンのONTAP では、ユーザが開始したジョブのみが表示されます。
+* ONTAP 9.13.0以降を実行しているCloud Volumes ONTAP システムでは、BlueXPのバックアップ/リカバリのUIとAPIでユーザが開始したバックアップ処理とリストア処理と、システムが開始したジョブ（進行中のバックアップ処理など）が[ジョブ監視]タブで利用できるようになりました。以前のバージョンのONTAP では、ユーザが開始したジョブのみが表示されます。
 * すべてのジョブをレポートするためのCSVファイルをダウンロードできるほか、単一のジョブのJSONファイルをダウンロードして詳細を確認できるようになりました。 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html#download-job-monitoring-results-as-a-report["詳細はこちら。"]。
 * 「Scheduled job failure」と「Restore job completes but with warnings」という2つの新しいバックアップジョブアラートが追加されました。 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html#review-backup-and-restore-alerts-in-the-bluexp-notification-center["BlueXPのバックアップとリカバリから送信されるアラートをすべて確認します"]。
 
 
 
 
-=== 2023年3月9日
-
-
-
-==== フォルダレベルのリストア処理に、すべてのサブフォルダとファイルが含まれるようになりました
-
-以前は、フォルダをリストアしたときに、そのフォルダのファイルのみがリストアされました。サブフォルダやサブフォルダ内のファイルはリストアされませんでした。ONTAP 9.13.0以降を使用している場合は、選択したフォルダ内のすべてのサブフォルダとファイルが復元されます。これにより、トップレベルフォルダに複数のフォルダがネストされている場合に、時間とコストを大幅に節約できます。
-
-
-
-==== ダークサイトのCloud Volumes ONTAP システムからデータをバックアップする機能
-
-AWSおよびAzureの商用リージョンにインストールされているCloud Volumes ONTAP システムから、Amazon S3またはAzure Blobにデータをバックアップできるようになりました。そのためには、商用地域のLinuxホストにコネクタをインストールし、そこにCloud Volumes ONTAP システムを展開する必要があります。を参照してください https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-s3.html["Amazon S3 への Cloud Volumes ONTAP データのバックアップ"] および https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-azure.html["Cloud Volumes ONTAP データをAzure Blobにバックアップしています"]。
-
-
-
-==== ジョブモニタに複数の機能拡張が追加されました
-
-* [Job Monitoring]ページには高度なフィルタリング機能が追加され、時間、ワークロード（ボリューム、アプリケーション、仮想マシン、またはKubernetes）ごとにバックアップジョブとリストアジョブを検索できるようになりました。 ジョブタイプ、ステータス、作業環境、およびStorage VM。任意のリソース（「application_3」など）を検索するフリーテキストを入力することもできます。  https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html#searching-and-filtering-the-list-of-jobs["詳細フィルタの使用方法を参照してください"]。
-* ONTAP 9.13.0以降を実行しているCloud Volumes ONTAP システムでは、BlueXPのバックアップ/リカバリのUIとAPIでユーザが開始したバックアップ処理とリストア処理と、システムが開始したジョブ（進行中のバックアップ処理など）が[ジョブ監視]タブで利用できるようになりました。以前のバージョンのCloud Volumes ONTAP システムおよびオンプレミスのONTAP システムでは、現時点ではユーザが開始したジョブのみが表示されます。
-
-
-
-
 == 分類
+
+
+
+=== 2023年6月6日（バージョン1.23）
+
+
+
+==== データ主体名の検索で日本語がサポートされるようになりました
+
+データ主体アクセス要求（DSAR）に応答して、被験者の名前を検索する際に日本語名を入力できるようになりました。を生成できます https://docs.netapp.com/us-en/bluexp-classification/task-generating-compliance-reports.html#what-is-a-data-subject-access-request["Data Subject Access Request レポート"] 結果の情報を使用して。に日本語の名前を入力することもできます https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#filter-data-by-sensitivity-and-content["[Data Investigation]ページの[Data Subject]フィルタ"] サブジェクト名を含むファイルを識別します。
+
+
+
+==== Ubuntuがサポート対象のLinuxディストリビューションになり、BlueXP分類をインストールできるようになりました
+
+Ubuntu 22.04は、BlueXPのサポート対象オペレーティングシステムとして認定されています。BlueXP分類は、ネットワーク内のUbuntu Linuxホストまたはクラウド内のLinuxホストにインストールできます。 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["UbuntuがインストールされているホストにBlueXP分類をインストールする方法を参照してください"]。
+
+
+
+==== 新しいBlueXP分類のインストールでは、Red Hat Enterprise Linux 8.6および8.7はサポートされなくなりました
+
+Red Hatでは前提条件であるDockerがサポートされなくなるため、新規導入ではこれらのバージョンはサポートされません。RHEL 8.6または8.7で既存のBlueXP分類マシンを実行している場合、NetAppでは引き続き構成がサポートされます。
+
+
+
+==== BlueXPの分類は、ONTAPシステムからFPolicyイベントを受信するFPolicyコレクタとして設定できます
+
+作業環境内のボリュームで検出されたファイルアクセスイベントについて、BlueXP分類システムでファイルアクセス監査ログの収集を有効にすることができます。BlueXPの分類では、次のタイプのFPolicyイベントと、ファイルに対してアクションを実行したユーザ（Create、Read、Write、Delete、Rename、 所有者/権限を変更し、SACL/DACLを変更します。 https://docs.netapp.com/us-en/bluexp-classification/task-manage-file-access-events.html["ファイルアクセスイベントを監視および管理する方法を参照してください"]。
+
+
+
+==== ダークサイトでData Sense BYOLライセンスがサポートされるようになりました
+
+ダークサイトのBlueXPデジタルウォレットにData Sense BYOLライセンスをアップロードして、ライセンスの残量が少なくなったときに通知を受け取ることができます。 https://docs.netapp.com/us-en/bluexp-classification/task-licensing-datasense.html#obtain-your-bluexp-classification-license-file["Data Sense BYOLライセンスの入手方法とアップロード方法をご確認ください"]。
 
 
 
@@ -441,7 +487,6 @@ https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categ
 
 ==== インストールの機能拡張
 
-* BlueXPの分類は、CentOS Stream 8を実行しているLinuxホストにインストールできます。
 * インターネットアクセスがないサイト（ダークサイト）用のBlueXP分類インストーラで、インストールを成功させるためにシステムとネットワークの要件が満たされていることを確認するための事前チェックが実行されるようになりました。
 * インストール監査ログファイルは保存され、に書き込まれます `/ops/netapp/install_logs`。
 

@@ -175,13 +175,8 @@
   <block id="912b3a604a5106bda5b0c99ddaaf1364" category="section-title">BlueXPから新しいバケットを追加できるようになりました</block>
   <block id="c07c4e2e029d6d6eb829c29902cb63ff" category="inline-link">新しいAmazon S3バケットを追加する方法をご覧ください</block>
   <block id="91402ca539ef196ec17265c55db694dc" category="paragraph">BlueXP CanvasでAmazon S3バケットを表示できるようになりました。BlueXPから直接、新しいバケットを追加したり、既存のバケットのプロパティを変更したりできるようになりました。<block ref="2c8909472f79d70b0988a1b1340a52c9" category="inline-link-rx"></block>。</block>
-  <block id="01e76ab0dacc58799dc14adbdc705ac7" category="section-title">2023年3月9日</block>
-  <block id="35203f05692d5cc102a5525bf4de9733" category="section-title">フォルダレベルのリストア処理に、すべてのサブフォルダとファイルが含まれるようになりました</block>
-  <block id="5463242c7cc34f92b5dbbf1ab6d87188" category="paragraph">以前は、フォルダをリストアしたときに、そのフォルダのファイルのみがリストアされました。サブフォルダやサブフォルダ内のファイルはリストアされませんでした。ONTAP 9.13.0以降を使用している場合は、選択したフォルダ内のすべてのサブフォルダとファイルが復元されます。これにより、トップレベルフォルダに複数のフォルダがネストされている場合に、時間とコストを大幅に節約できます。</block>
-  <block id="bbe776d643f3b0568f3c2fa216a50124" category="section-title">ダークサイトのCloud Volumes ONTAP システムからデータをバックアップする機能</block>
   <block id="9d811f8ab4335c82eeb7d1477874bc1c" category="inline-link-macro">Amazon S3 への Cloud Volumes ONTAP データのバックアップ</block>
   <block id="a5e6246728060cb5f413df6fa5adbf0c" category="inline-link-macro">Cloud Volumes ONTAP データをAzure Blobにバックアップしています</block>
-  <block id="1cdf820a77c583c660d65df7b1ca03b8" category="inline-link">詳細フィルタの使用方法を参照してください</block>
   <block id="a19f14c281dd654ce355a7e0b63146b5" category="section-title">AWSデータブローカー向けのEBS Encryption</block>
   <block id="8663378959352a24f27c3d250a37cf3d" category="paragraph">アカウントのKMSキーを使用して、AWSデータブローカーのボリュームを暗号化できるようになりました。</block>
   <block id="f296e44bbf15ea94dfcce2d2a4649e6d" category="inline-link">AWSでデータブローカーを作成する方法については、こちらをご覧ください</block>
@@ -190,7 +185,6 @@
   <block id="335e7f21f0fdfecbe9c04540dcb8cdd6" category="inline-link">Eメール通知の設定方法については、こちらをご覧ください</block>
   <block id="3b61cbbfa7452cc07df9dbea0756d650" category="inline-link">サポートされているリージョンの完全なリストを表示します</block>
   <block id="0ec2b2e4840acfd3f21b50b176ec45f1" category="paragraph"><block ref="0ec2b2e4840acfd3f21b50b176ec45f1" category="inline-link-rx"></block></block>
-  <block id="1442489a4cf0ea56df2e53ec47c70ec8" category="section-title">ジョブモニタに複数の機能拡張が追加されました</block>
   <block id="fcf30aaa0348521d4d4752992c9db378" category="list-text">シングルノードシステムがサポートされます。</block>
   <block id="80a79e3e92d4834ae8746d205e83c105" category="list-text">ネットアップから直接購入したライセンスはサポートされます。</block>
   <block id="13615a82d1149a992b363c411914d3b8" category="inline-link-macro">Cloud Volumes ONTAP のグローバルリージョンマップ</block>
@@ -285,7 +279,6 @@
   <block id="ef08fc33d8b9b410529dc05986b2e248" category="paragraph">APIの新機能を使用して、BlueXPのバックアップとリカバリを使用してボリュームSnapshotをONTAP S3にバックアップできます。この機能は、現時点ではオンプレミスのONTAP システムでのみ使用できます。詳細な手順については、ブログを参照してください<block ref="8bfab3c14784f20047e4459b814ebfe4" category="inline-link-rx"></block>。</block>
   <block id="bcd4bdef20ff7dec0587f35facdeb7be" category="paragraph">Cloud Volumes ONTAP システムからAzureストレージへのバックアップを作成する場合、BlueXPのバックアップとリカバリでは、コスト最適化のためにローカル冗長性（LRS）を使用してBlobコンテナがデフォルトでプロビジョニングされます。異なるゾーン間でデータを複製する場合は、この設定をZone redundancy（ZRS）に変更できます。Microsoftの手順を参照してください<block ref="c549763665cfbb93dbccfdbf667aa0f2" category="inline-link-rx"></block>。</block>
   <block id="4788963de19a5204a352f3308b0395d8" category="inline-link">BlueXPのバックアップとリカバリから送信されるアラートをすべて確認します</block>
-  <block id="81ddb60f2f70b21c8b419a542095feca" category="list-text">ONTAP 9.13.0以降を実行しているCloud Volumes ONTAP システムでは、BlueXPのバックアップ/リカバリのUIとAPIでユーザが開始したバックアップ処理とリストア処理と、システムが開始したジョブ（進行中のバックアップ処理など）が[ジョブ監視]タブで利用できるようになりました。以前のバージョンのCloud Volumes ONTAP システムおよびオンプレミスのONTAP システムでは、現時点ではユーザが開始したジョブのみが表示されます。</block>
   <block id="21db17f88f41dcd13f48cc90aced1d74" category="section-title">クラウド内の小規模インスタンスにBlueXPの分類機能を導入できます</block>
   <block id="cb608d54d750eeb9d266241b5a1d63c7" category="section-title">BlueXPの分類をインストールする前に、スタンドアロンスクリプトを使用してLinuxシステムを認定できるようになりました</block>
   <block id="e75f898f4dbad5388881095e9582c693" category="inline-link">LinuxホストでBlueXPのインストール準備が完了しているかどうかを確認する方法を説明します</block>
@@ -300,7 +293,6 @@
   <block id="9422d01ffeaf90b54d512834d7e52972" category="section-title">BlueXPは、3つの新しいタイプの個人データを分類しています</block>
   <block id="9fee27139efd09e005728f7dbfa349f2" category="paragraph">BlueXPの分類では、次のタイプのデータを含むファイルを特定して分類できます。</block>
   <block id="22b67d0a50677e01d48389e716223457" category="inline-link">BlueXPの分類によってデータから特定できるすべてのタイプの個人データを確認できます</block>
-  <block id="c2e0848a220b82c9650399e6f13e1421" category="list-text">BlueXPの分類は、CentOS Stream 8を実行しているLinuxホストにインストールできます。</block>
   <block id="27bfd524829d2f58c611b9380403face" category="list-text">インターネットアクセスがないサイト（ダークサイト）用のBlueXP分類インストーラで、インストールを成功させるためにシステムとネットワークの要件が満たされていることを確認するための事前チェックが実行されるようになりました。</block>
   <block id="af415967f6e10a35f69e4fdddc729da2" category="paragraph">以前のバージョンのBlueXP分類では、特定のクリティカルポリシーが結果を返したときに、アカウントのBlueXPユーザにEメールアラートを送信できました。この機能を使用すると、オンラインでないときにデータを保護するための通知を受け取ることができます。また、ポリシーから、BlueXPアカウントに登録されていない最大20個の電子メールアドレスを持つ他のユーザーに電子メールアラートを送信することもできます。</block>
   <block id="110171733cad0cc9610f24012ccf6ee1" category="section-title">BlueXPの分類UIから個人用パターンを追加できるようになりました</block>
@@ -421,12 +413,8 @@
   <block id="46ce6a634ad58fa667690e7f5c151b26" category="list-text">オプションで、を選択できます <block ref="2af1713063b9a7e50c1f5e13c7671bae" category="inline-link-macro-rx"></block> および <block ref="013335dc35ce07c311c673e8a99c88f9" category="inline-link-macro-rx"></block> ボリュームを分類するためのタグ。</block>
   <block id="c55a4ed0f55f8209574960c04bd36597" category="paragraph">顧客管理暗号化キー（CMEK）のプロジェクトとは別のプロジェクトにあるバケットを選択できるようになりました。<block ref="2425c9129a22c7135ee8a04ae0dae970" category="inline-link-rx"></block>。</block>
   <block id="cfc826b330f7a25cc3c4e115a9fcca13" category="paragraph">BlueXPコネクタに割り当てるIAMポリシーでは、all_Resource_sectionsの下にあるAWSリソース名「arn」を「aws」から「aws-cn」に変更する必要があります（例：「arn：aws-cn：s3：：：netapp-backup-*」）。を参照してください<block ref="17dde2a04d27e7ad2a9f0a451a7a0e90" category="inline-link-rx"></block> および<block ref="bb86d78b7593b3e1252f277b7dd6e017" category="inline-link-rx"></block> を参照してください。</block>
-  <block id="e440c82aa05a4e6e5bc3191ceeece3ae" category="paragraph">これで、AWS、Azure、GCPの商用リージョンにインストールされているCloud Volumes ONTAP システムのデータを「制限モード」でバックアップできるようになりました。これを行うには、まず「制限された」商業地域にコネクタをインストールする必要があります。<block ref="0eb8533d49e65dbfdd979d6ceb88ebff" category="inline-link-rx"></block>。を参照してください<block ref="27ee532be7d9f80c345fcb2108369dd1" category="inline-link-rx"></block> および<block ref="eb65204a82ae962a8410421a1d6516bd" category="inline-link-rx"></block>。</block>
-  <block id="3e5afb80ef2b2c6b108c664e6550be33" category="list-text">ONTAP 9.13.1以降を実行しているオンプレミスのONTAP システムでは、BlueXPのバックアップ/リカバリのUIとAPIでユーザが開始したバックアップ処理とリストア処理と、システムが開始したジョブ（進行中のバックアップ処理など）が[ジョブ監視]タブで利用できるようになりました。以前のバージョンのONTAP では、ユーザが開始したジョブのみが表示されます。</block>
   <block id="3f95b7ff004c9ea7ba2c076aa81ddbd8" category="list-text">すべてのジョブをレポートするためのCSVファイルをダウンロードできるほか、単一のジョブのJSONファイルをダウンロードして詳細を確認できるようになりました。<block ref="c5e8ac86e60de65889ee067b8ca8ac22" category="inline-link-rx"></block>。</block>
   <block id="aca6a48e798dafa8a873544468b60e06" category="list-text">「Scheduled job failure」と「Restore job completes but with warnings」という2つの新しいバックアップジョブアラートが追加されました。<block ref="a4848a9ae757d04f84e693376feb04c0" category="inline-link-rx"></block>。</block>
-  <block id="cb388daef1ecf4d75abae922da7c4ccd" category="paragraph">AWSおよびAzureの商用リージョンにインストールされているCloud Volumes ONTAP システムから、Amazon S3またはAzure Blobにデータをバックアップできるようになりました。そのためには、商用地域のLinuxホストにコネクタをインストールし、そこにCloud Volumes ONTAP システムを展開する必要があります。を参照してください<block ref="17dde2a04d27e7ad2a9f0a451a7a0e90" category="inline-link-rx"></block> および<block ref="e88a100423dadabfc9781439f925633d" category="inline-link-rx"></block>。</block>
-  <block id="7397c46a6bf6fde87c1217e8c8bbab15" category="list-text">[Job Monitoring]ページには高度なフィルタリング機能が追加され、時間、ワークロード（ボリューム、アプリケーション、仮想マシン、またはKubernetes）ごとにバックアップジョブとリストアジョブを検索できるようになりました。 ジョブタイプ、ステータス、作業環境、およびStorage VM。任意のリソース（「application_3」など）を検索するフリーテキストを入力することもできます。 <block ref="3ed9d480474f89776ff0bf3cbda69d30" category="inline-link-rx"></block>。</block>
   <block id="4da25d5e326dac4c0bb3865e69dd3325" category="paragraph">Data Discovery Assessment Reportでは、スキャンされた環境の概要を分析して、システムの調査結果を強調し、懸念領域と潜在的な修復手順を示します。このレポートの目的は、データガバナンスの懸念、データセキュリティの危険性、データセットのデータコンプライアンスギャップに対する認識を高めることです。<block ref="34e879e713683b8352bb56b59c6078e2" category="inline-link-rx"></block>。</block>
   <block id="38e8bfeb390cec6e72d97323084e18cc" category="paragraph">AWS環境のBlueXP ConnectorからBlueXPの分類を導入する際に、デフォルトのインスタンスよりも小さい2つのインスタンスタイプから選択できるようになりました。小規模な環境をスキャンする場合は、クラウドコストを節約できます。ただし、小さいインスタンスを使用する場合はいくつかの制限があります。<block ref="d8ef680ce45b86e2a6afe2805a7e5562" category="inline-link-rx"></block>。</block>
   <block id="46b0a8862a90d05f4f40bbcda2473af4" category="paragraph">BlueXP分類インストールとは別に、Linuxシステムがすべての前提条件を満たしていることを確認する場合は、前提条件のみをテストするスクリプトをダウンロードできます。<block ref="f7ad1b05082bb59227795c56a02d9b78" category="inline-link-rx"></block>。</block>
@@ -526,4 +514,35 @@
   <block id="da20ff5e68ae0641ae1925c968ac0244" category="paragraph">BlueXPボリュームキャッシングを使用すると、特にAmazon FSx for NetApp ONTAP、Cloud Volumes ONTAP、オンプレミスの作業環境向けに、クラウド向けのキャッシュ機能を利用できます。</block>
   <block id="62f5b0396e259b44122ad3fd5f9581e0" category="inline-link-macro">BlueXPのボリュームキャッシュの詳細については、こちらをご覧ください</block>
   <block id="2ffe4affb627afa20f3783de7a26c8af" category="paragraph"><block ref="c926d704a05a7f256c6c14f4d9e77466" category="inline-link-macro-rx"></block>。</block>
+  <block id="47cb625c2251a650ce99bc5010f839ac" category="section-title">FlexGroupボリュームは、DataLockとランサムウェア対策を使用してバックアップおよび保護できます</block>
+  <block id="ea9b647c4b660963890b981cadc4c22f" category="paragraph">クラスタでONTAP 9.13.1以降が実行されている場合、FlexGroupボリュームのバックアップポリシーでDataLockとランサムウェア対策を使用できるようになりました。</block>
+  <block id="f6477043c28067a4e579493c6cbb2e5f" category="section-title">新しいレポート機能</block>
+  <block id="7423bbe1d34880696cfb7dd51492349f" category="inline-link">データ保護の適用範囲に関するレポートを作成します</block>
+  <block id="90c3582e59f2cb06c1d746e0f983ffde" category="paragraph">[Reports]タブでバックアップインベントリレポートを生成できるようになりました。このレポートには、特定のアカウント、作業環境、またはSVMインベントリのすべてのバックアップが含まれます。Data Protection Job Activityレポートを作成することもできます。このレポートには、Snapshot、バックアップ、クローニング、およびリストアの各処理に関する情報が表示され、サービスレベルアグリーメントの監視に役立ちます。を参照してください<block ref="76fbdf5883fabf4a66bc2a9d2bdc8b58" category="inline-link-rx"></block>。</block>
+  <block id="5cc0a3c2b0d184efdd93deba5120c0b4" category="section-title">ジョブモニタの機能拡張</block>
+  <block id="8931c68a06f64c8d4063f2e9132e3258" category="inline-link">バックアップジョブとリストアジョブのステータスを監視します</block>
+  <block id="c17e5b19576d968cb68cb76a1904afca" category="paragraph">[Job Monitor]ページで、_backup lifecycle_をジョブタイプとして確認できるようになりました。これにより、バックアップライフサイクル全体を追跡できます。BlueXPタイムラインでは、すべての処理の詳細を確認することもできます。を参照してください<block ref="757859ff46183d1407cb40e64e39a313" category="inline-link-rx"></block>。</block>
+  <block id="e5d5b752cdb14505ba3ec9b2bd2be013" category="section-title">一致しないポリシーラベルに関する追加の通知アラート</block>
+  <block id="92c58fc811dad1461929803e5f5d9205" category="paragraph">新しいバックアップアラート「Backup files were not created because Snapshot policy labels do not match」が追加されました。バックアップポリシーで定義された_label_inにSnapshotポリシーにmatching_label_inがない場合、バックアップファイルは作成されません。欠落しているラベルをボリュームSnapshotポリシーに追加するには、System ManagerまたはONTAP CLIを使用する必要があります。</block>
+  <block id="809c5429fbc9708f2c659ca056b2c098" category="paragraph"><block ref="1fa18ad5aa31d9e300f41aa2d9a59bdd" category="inline-link-rx"></block>。</block>
+  <block id="5a4b2cac486281ad2280371043da8170" category="section-title">ダークサイトのBlueXPの重要なバックアップファイルとリカバリファイルを自動でバックアップ</block>
+  <block id="7109418f2cd9c52748bb2a769336a1d0" category="paragraph">インターネットアクセスのないサイト（「プライベートモード」環境）でBlueXPのバックアップとリカバリを使用している場合、BlueXPのバックアップとリカバリの情報はローカルコネクタシステムにのみ格納されます。この新機能では、BlueXPの重要なバックアップ/リカバリデータが接続されたStorageGRIDシステムのバケットに自動的にバックアップされるため、必要に応じてこのデータを新しいコネクタにリストアできます。<block ref="7987fffb3d9d5da865ce1f589e4bd463" category="inline-link-rx"></block></block>
+  <block id="813935edc5ac8e9f2c18c722e28dddf8" category="paragraph">これで、AWS、Azure、GCPの商用リージョンにインストールされているCloud Volumes ONTAP システムのデータを「制限モード」でバックアップできるようになりました。これを行うには、まず「制限された」商業地域にコネクタをインストールする必要があります。<block ref="0eb8533d49e65dbfdd979d6ceb88ebff" category="inline-link-rx"></block>。を参照してください<block ref="17dde2a04d27e7ad2a9f0a451a7a0e90" category="inline-link-rx"></block> および<block ref="e88a100423dadabfc9781439f925633d" category="inline-link-rx"></block>。</block>
+  <block id="f1a109ae8d953da8e05cf5534df6b22b" category="list-text">ONTAP 9.13.0以降を実行しているCloud Volumes ONTAP システムでは、BlueXPのバックアップ/リカバリのUIとAPIでユーザが開始したバックアップ処理とリストア処理と、システムが開始したジョブ（進行中のバックアップ処理など）が[ジョブ監視]タブで利用できるようになりました。以前のバージョンのONTAP では、ユーザが開始したジョブのみが表示されます。</block>
+  <block id="96828273826a07fdc4f42f4998e536b2" category="section-title">2023年6月6日（バージョン1.23）</block>
+  <block id="04e04c61cd37ca8f12b83c892c2c46ea" category="section-title">データ主体名の検索で日本語がサポートされるようになりました</block>
+  <block id="3a3337f232548d40f54052862077499b" category="inline-link">Data Subject Access Request レポート</block>
+  <block id="931c126009c96d8f8ce9770df003478d" category="inline-link">[Data Investigation]ページの[Data Subject]フィルタ</block>
+  <block id="8b33a4571db736cc278b213820df9c13" category="paragraph">データ主体アクセス要求（DSAR）に応答して、被験者の名前を検索する際に日本語名を入力できるようになりました。を生成できます<block ref="8ff27ad1e3f1d885a2f0c0f257501bb1" category="inline-link-rx"></block> 結果の情報を使用して。に日本語の名前を入力することもできます<block ref="615fae5bff7ec48fe0ed5c47e50f199a" category="inline-link-rx"></block> サブジェクト名を含むファイルを識別します。</block>
+  <block id="988e5d1ef231d33d94784c928261f0aa" category="section-title">Ubuntuがサポート対象のLinuxディストリビューションになり、BlueXP分類をインストールできるようになりました</block>
+  <block id="bf62ea0cc2aa2f5ecb7f712ffcdafc64" category="inline-link">UbuntuがインストールされているホストにBlueXP分類をインストールする方法を参照してください</block>
+  <block id="e79851962ec44d8c7ccd2a63f0c4e92c" category="paragraph">Ubuntu 22.04は、BlueXPのサポート対象オペレーティングシステムとして認定されています。BlueXP分類は、ネットワーク内のUbuntu Linuxホストまたはクラウド内のLinuxホストにインストールできます。<block ref="cc16f95732fa73dc357dabce46e4c311" category="inline-link-rx"></block>。</block>
+  <block id="eba7ad27f2a236389ef88102ad7e8e2e" category="section-title">新しいBlueXP分類のインストールでは、Red Hat Enterprise Linux 8.6および8.7はサポートされなくなりました</block>
+  <block id="5b1dc8e5b7717b205bb516bc41f51da7" category="paragraph">Red Hatでは前提条件であるDockerがサポートされなくなるため、新規導入ではこれらのバージョンはサポートされません。RHEL 8.6または8.7で既存のBlueXP分類マシンを実行している場合、NetAppでは引き続き構成がサポートされます。</block>
+  <block id="b5ba343fa4469021dbdf64181a67e909" category="section-title">BlueXPの分類は、ONTAPシステムからFPolicyイベントを受信するFPolicyコレクタとして設定できます</block>
+  <block id="88b2049c35386070297462047bca71cf" category="inline-link">ファイルアクセスイベントを監視および管理する方法を参照してください</block>
+  <block id="1c6f2c46440d2da9ff124f2379388cf8" category="paragraph">作業環境内のボリュームで検出されたファイルアクセスイベントについて、BlueXP分類システムでファイルアクセス監査ログの収集を有効にすることができます。BlueXPの分類では、次のタイプのFPolicyイベントと、ファイルに対してアクションを実行したユーザ（Create、Read、Write、Delete、Rename、 所有者/権限を変更し、SACL/DACLを変更します。<block ref="e525234fcf42827b85ebd3e0f842cd71" category="inline-link-rx"></block>。</block>
+  <block id="e1161f065b10936afc930fd3d9d0c76f" category="section-title">ダークサイトでData Sense BYOLライセンスがサポートされるようになりました</block>
+  <block id="1ab65443ec0af7e5e1aee32a3cf59dcc" category="inline-link">Data Sense BYOLライセンスの入手方法とアップロード方法をご確認ください</block>
+  <block id="645f5675426bc396b45b524635e93bc7" category="paragraph">ダークサイトのBlueXPデジタルウォレットにData Sense BYOLライセンスをアップロードして、ライセンスの残量が少なくなったときに通知を受け取ることができます。<block ref="bd823f9b4dce457c0ea2a8dcca6e749f" category="inline-link-rx"></block>。</block>
 </blocks>
