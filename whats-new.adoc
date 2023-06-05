@@ -497,44 +497,6 @@ https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categ
 
 
 
-=== 2023年2月5日（バージョン1.20）
-
-
-
-==== 任意のEメールアドレスにポリシーベースの通知Eメールを送信できます
-
-以前のバージョンのBlueXP分類では、特定のクリティカルポリシーが結果を返したときに、アカウントのBlueXPユーザにEメールアラートを送信できました。この機能を使用すると、オンラインでないときにデータを保護するための通知を受け取ることができます。また、ポリシーから、BlueXPアカウントに登録されていない最大20個の電子メールアドレスを持つ他のユーザーに電子メールアラートを送信することもできます。
-
-https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html#sending-email-alerts-when-non-compliant-data-is-found["ポリシーの結果に基づいて電子メールアラートを送信する方法については、こちらをご覧ください"]。
-
-
-
-==== BlueXPの分類UIから個人用パターンを追加できるようになりました
-
-BlueXPの分類では、カスタムの「個人データ」を追加できるようになりました。BlueXPの分類で今後のスキャンで特定できるようになります。ただし、BlueXP分類Linuxホストにログインし、コマンドラインを使用してカスタムパターンを追加する必要がありました。このリリースでは、BlueXPの分類UIで正規表現を使用して個人用パターンを追加できるようになり、カスタムパターンの追加と編集が非常に簡単になりました。
-
-https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html#add-custom-personal-data-identifiers-using-a-regex["BlueXPの分類UIからカスタムパターンを追加する方法については、こちらをご覧ください"^]。
-
-
-
-==== BlueXPの分類を使用して1、500万個のファイルを移動できます
-
-これまで、BlueXPの分類では、最大100、000個のソースファイルを任意のNFS共有に移動できました。一度に最大1,500万個のファイルを移動できるようになりました。 https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html#moving-source-files-to-an-nfs-share["BlueXPによる分類を使用したソースファイルの移動の詳細については、こちらをご覧ください"]。
-
-
-
-==== SharePoint Onlineファイルへのアクセス権を持つユーザーの数を表示する機能
-
-フィルタ「アクセス権を持つユーザー数」で、SharePoint Onlineリポジトリに保存されているファイルがサポートされるようになりました。これまでは、CIFS共有上のファイルのみがサポートされていました。現時点では、Active DirectoryベースでないSharePointグループはこのフィルタにカウントされません。
-
-
-
-==== 新しい「部分的成功」ステータスがアクションステータスパネルに追加されました
-
-新しい「Partial Success」ステータスは、BlueXPの分類処理が完了し、一部の項目が失敗し、一部の項目が成功したことを示します（100個のファイルを移動または削除する場合など）。さらに、「終了」ステータスが「成功」に変更されました。以前は、「終了」ステータスに成功した処理と失敗した処理が表示されることがありました。現在、「Success」ステータスは、すべての項目に対するすべてのアクションが成功したことを意味します。 https://docs.netapp.com/us-en/bluexp-classification/task-view-compliance-actions.html["アクションステータスパネルの表示方法を参照してください"]。
-
-
-
 == Cloud Volumes ONTAP
 
 
