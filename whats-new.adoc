@@ -207,6 +207,14 @@ Cloud Manager では、ボリューム Snapshot を作成、削除、リスト�
 
 
 
+=== 2023年7月2日
+
+* 次の操作を実行できます。 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-svm.html["Storage VMを追加してください"] BlueXPを使用してAmazon FSx for NetApp ONTAPファイルシステムに移行できます。
+* ** My Opportunities **タブが** My estate **になりました。ドキュメントが更新され、新しい名前が反映されます。
+
+
+
+
 === 2023年6月4日
 
 * いつ link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["作業環境の作成"]では、毎週の30分のメンテナンス時間の開始時間を指定して、メンテナンスが重要なビジネスアクティビティと競合しないようにすることができます。
@@ -220,12 +228,6 @@ Cloud Manager では、ボリューム Snapshot を作成、削除、リスト�
 * 作業環境の作成時にBlueXPを使用できるようになりました link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["セキュリティグループを生成します"^] これにより、選択したVPC内のトラフィックのみが許可されます。この機能 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["追加の権限が必要です"^]。
 * オプションで、を選択できます link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-add-fsx-volumes.html#create-volumes["追加（ Add ）"^] および link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-fsx-volumes.html#manage-volume-tags["変更"^] ボリュームを分類するためのタグ。
 
-
-
-
-=== 2023年4月2日
-
-IOPS制限が引き上げられ、手動または自動で最大160、000のプロビジョニングが可能になりました。
 
 
 
@@ -501,6 +503,42 @@ https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categ
 
 
 
+=== 2023年7月2日
+
+コネクタの3.9.31リリースでは、次の変更が導入されました。
+
+
+
+==== AzureでのHAマルチアベイラビリティゾーン環境のサポート
+
+Azureの東日本および韓国中部では、Cloud Volumes ONTAP 9.12.1 GA以降でHAマルチアベイラビリティゾーンの導入がサポートされるようになりました。
+
+複数のアベイラビリティゾーンをサポートするすべてのリージョンのリストについては、を参照してください https://bluexp.netapp.com/cloud-volumes-global-regions["Azureのグローバルリージョンマップ"^]。
+
+
+
+==== 自律型ランサムウェア対策のサポート
+
+Cloud Volumes ONTAPでAutonomous Ransomware Protection（ARP）がサポートされるようになりました。ARPサポートは、Cloud Volumes ONTAPバージョン9.12.1以降で使用できます。
+
+Cloud Volumes ONTAPを使用したARPの詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#autonomous-ransomware-protection["自律的なランサムウェア防御"]。
+
+
+
+=== 2023年6月26日
+
+コネクタの3.9.30リリースでは、次の変更が加えられました。
+
+
+
+==== Cloud Volumes ONTAP 9.13.1 RC1
+
+BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.13.1を導入、管理できるようになりました。
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
+
+
+
 === 2023年6月4日
 
 コネクタの3.9.30リリースでは、次の変更が加えられました。
@@ -556,18 +594,6 @@ Azureのオーストラリア東部リージョンでは、Cloud Volumes ONTAP 9
 ==== MarketplaceのサブスクリプションなしでBlueXPにアクセスすると通知が表示されるようになりました
 
 Marketplaceのサブスクリプションを購入せずにBlueXPでCloud Volumes ONTAP にアクセスすると、必ず通知が表示されるようになりました。通知には、「この作業環境のマーケットプレイスサブスクリプションは、Cloud Volumes ONTAP の利用規約に準拠する必要があります」と記載されています。
-
-
-
-=== 2023年4月4日
-
-Cloud Volumes ONTAP 9.12.1 GA以降では、次のように中国リージョンがAWSでサポートされるようになりました。
-
-* シングルノードシステムがサポートされます。
-* ネットアップから直接購入したライセンスはサポートされます。
-
-
-地域ごとの可用性については、を参照してください link:https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP のグローバルリージョンマップ"^]。
 
 
 
@@ -943,6 +969,18 @@ link:https://docs.netapp.com/us-en/bluexp-reports/get-started/intro.html["BlueXP
 
 
 
+=== 2023年7月2日
+
+
+
+==== My estateからクラスタを検出
+
+オンプレミスのONTAPクラスタを検出できるようになりました。これには、* Canvas > My estate *から、BlueXPログインのEメールアドレスに関連付けられているONTAPクラスタに基づいてBlueXPが検出されたクラスタを選択します。
+
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster["クラスタを検出する方法については、[My estate]ページを参照してください"]。
+
+
+
 === 2023年5月4日
 
 
@@ -981,18 +1019,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-ontap-onprem/main/medi
 
 
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["検出と管理のオプションの詳細については、こちらをご覧ください"]。
-
-
-
-=== 2023年1月1日
-
-
-
-==== ONTAP クレデンシャルを保存する
-
-コネクタを使用せずに直接検出されたオンプレミスのONTAP 作業環境を開く場合、作業環境を開くたびに入力する必要がないように、ONTAP クラスタのクレデンシャルを保存できるようになりました。
-
-https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-manage-ontap-direct.html["このオプションの詳細については、こちらをご覧ください。"]
 
 
 
