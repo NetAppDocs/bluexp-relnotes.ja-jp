@@ -663,6 +663,26 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 2023年6月11日
+
+
+
+==== 分単位での自動中止をサポートします
+
+完了していないアクティブな同期は、*同期タイムアウト*機能を使用して15分後に中止できるようになりました。
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["同期タイムアウト設定の詳細については、こちらを参照してください"]。
+
+
+
+==== アクセス時間のメタデータをコピーします
+
+ファイルシステムを含む関係では、* Copy for Objects *機能によってアクセス時間のメタデータがコピーされるようになりました。
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["[オブジェクトのコピー]設定の詳細については、こちらを参照してください"]。
+
+
+
 === 2023年5月8日
 
 
@@ -722,18 +742,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/reference-supported-relationships
 ディレクトリを名前でフィルタリングするだけでなく、完全パスでディレクトリをフィルタリングできるようになりました。
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["[ディレクトリを除外する]設定の詳細については、こちらを参照してください"]。
-
-
-
-=== 2023年3月7日
-
-
-
-==== AWSデータブローカー向けのEBS Encryption
-
-アカウントのKMSキーを使用して、AWSデータブローカーのボリュームを暗号化できるようになりました。
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#creating-the-data-broker["AWSでデータブローカーを作成する方法については、こちらをご覧ください"]。
 
 
 
