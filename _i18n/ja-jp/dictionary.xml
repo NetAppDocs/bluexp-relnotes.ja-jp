@@ -197,13 +197,6 @@
   <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">[ライセンス]タブが削除されました</block>
   <block id="66a0b4752150538292b81c073ca0b83b" category="section-title">階層化タブの名前が変更され、内容が更新されました</block>
   <block id="38d4d167f6dd9174c3535fc5c7ba4b76" category="section-title">2023年4月4日</block>
-  <block id="05cb21b1c0958252effc11eb9d437f38" category="section-title">展開モード</block>
-  <block id="9e2110ccb138521e2ed734b9376c3f5b" category="paragraph">BlueXP_deployment modes_を使用すると、ビジネス要件やセキュリティ要件に合わせてBlueXPを使用できます。次の3つのモードから選択できます。</block>
-  <block id="53c512e9599c71e1a585d636a5229820" category="list-text">標準モード</block>
-  <block id="e429f30641aba9e1fc7f2090cc77ce40" category="list-text">制限モード</block>
-  <block id="44f51c4ac8fa1a6f53f07c0c2f751b69" category="list-text">プライベートモード</block>
-  <block id="14862370498786066b8605b6924a2605" category="inline-link-macro">これらの展開モードの詳細については、こちらをご覧ください</block>
-  <block id="7196a94f4d2eb95bbda75c84fd8bbaa9" category="admonition">制限モードが導入されたことで、SaaSプラットフォームを有効または無効にするオプションが廃止されました。制限モードはアカウント作成時に有効にすることができます。後で有効または無効にすることはできません。</block>
   <block id="40c193dda1b0a4df68695abe150f234a" category="section-title">「制限付き」モードでCloud Volumes ONTAP システムからクラウドにデータをバックアップする機能</block>
   <block id="57c3b4ba3c60295d45a2554606080eef" category="section-title">APIを使用して、オンプレミスのONTAP ボリュームをONTAP S3にバックアップする機能</block>
   <block id="720734599c08f49ea57d729ec9f12d53" category="section-title">Azureストレージアカウントのゾーン冗長性の側面をLRSからZRSに変更する機能</block>
@@ -379,7 +372,6 @@
   <block id="367cb072fdec82ba883d66fadac7fc54" category="list-text"><block ref="367cb072fdec82ba883d66fadac7fc54" category="inline-link-rx"></block></block>
   <block id="98ffac9f61e6bf431d54a18e34b9a53d" category="paragraph">NetApp BlueXPは2022年11月1日にリリースされました。BlueXPは、Cloud Managerが提供する機能を拡張、強化しています。<block ref="c202e01c48134f154e0a38e5e6d1aed9" category="inline-link-rx"></block></block>
   <block id="4d5f6e2e2b72482865cac1c14f3d2d3d" category="paragraph"><block ref="4d5f6e2e2b72482865cac1c14f3d2d3d" category="inline-link-rx"></block></block>
-  <block id="0e243030d4d37c15e7b806556f21cdc3" category="paragraph"><block ref="07b6d38a8467f077daba3577bc2ba852" category="inline-link-rx"></block>。</block>
   <block id="a80baf4fa5d71b9ef418edfcaebd2759" category="list-text"><block ref="a80baf4fa5d71b9ef418edfcaebd2759" category="inline-link-rx"></block></block>
   <block id="45ee83d3cd24c8a79ff15330399da6a7" category="list-text"><block ref="45ee83d3cd24c8a79ff15330399da6a7" category="inline-link-rx"></block></block>
   <block id="50677882efe321e7fec19456f58faadc" category="paragraph"><block ref="536037d368170de6e6fbdb576d167663" category="inline-link-rx"></block>。</block>
@@ -548,4 +540,12 @@
   <block id="4573c689742769edc01e3f45205fd784" category="paragraph">オンプレミスのONTAPクラスタを検出できるようになりました。これには、* Canvas &gt; My estate *から、BlueXPログインのEメールアドレスに関連付けられているONTAPクラスタに基づいてBlueXPが検出されたクラスタを選択します。</block>
   <block id="5a7621b5dce7d879d4fc86499c34c6e6" category="inline-link">クラスタを検出する方法については、[My estate]ページを参照してください</block>
   <block id="92adae4e241e70163adb8c5469771a82" category="paragraph"><block ref="24b3a807a9407b81f5101322f988421d" category="inline-link-rx"></block>。</block>
+  <block id="78ee56d07ea6442fbe0c88b1ea3be7ad" category="section-title">コネクタ3.9.31</block>
+  <block id="9f1d24d5ab10dd326cb52dffc172eea5" category="list-text">[My estate]タブ（以前の[My Opportunities]）でオンプレミスのONTAPクラスタを検出できるようになりました。</block>
+  <block id="6bdb2baa8fe05cff12c22f9f6f8e9e7f" category="list-text">Azure Governmentリージョンでコネクタを使用している場合は、コネクタが次のエンドポイントに接続できることを確認する必要があります。</block>
+  <block id="1f29f58c7cdabd46095c6ad242933991" category="paragraph">\https://occmclientinfragov.azurecr.us</block>
+  <block id="7cbd2e15c5d25612181f48c177cab04b" category="paragraph">このエンドポイントは、コネクタを手動でインストールし、コネクタとそのDockerコンポーネントをアップグレードするために必要です。</block>
+  <block id="49145759efbc79c21fc5ba75bb2aaf72" category="paragraph">この変更により、Azure Governmentリージョン内のコネクタは、次のエンドポイントに接続しなくなりました。</block>
+  <block id="9dcb0a1d3281e001a6085626a264be49" category="paragraph">\https://cloudmanagerinfraprod.azurecr.io</block>
+  <block id="979b0001d7bec41aff8509faf7b59bef" category="paragraph">このエンドポイントは、他のすべての制限モード設定および標準モードでは引き続き必要であることに注意してください。</block>
 </blocks>

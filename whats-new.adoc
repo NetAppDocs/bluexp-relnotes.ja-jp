@@ -33,6 +33,36 @@ NetApp BlueXPは2022年11月1日にリリースされました。BlueXPは、Clo
 
 
 
+=== 2023年7月2日
+
+
+
+==== コネクタ3.9.31
+
+* [My estate]タブ（以前の[My Opportunities]）でオンプレミスのONTAPクラスタを検出できるようになりました。
++
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster["クラスタを検出する方法については、[My estate]ページを参照してください"]。
+
+* Azure Governmentリージョンでコネクタを使用している場合は、コネクタが次のエンドポイントに接続できることを確認する必要があります。
++
+\https://occmclientinfragov.azurecr.us
+
++
+このエンドポイントは、コネクタを手動でインストールし、コネクタとそのDockerコンポーネントをアップグレードするために必要です。
+
++
+この変更により、Azure Governmentリージョン内のコネクタは、次のエンドポイントに接続しなくなりました。
+
++
+\https://cloudmanagerinfraprod.azurecr.io
+
++
+このエンドポイントは、他のすべての制限モード設定および標準モードでは引き続き必要であることに注意してください。
+
+
+
+
+
 === 2023年6月4日
 
 
@@ -116,26 +146,6 @@ https://cloud.netapp.com/cloud-volumes-global-regions["サポートされてい�
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#7-may-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
 
 
-
-
-
-=== 2023年4月4日
-
-
-
-==== 展開モード
-
-BlueXP_deployment modes_を使用すると、ビジネス要件やセキュリティ要件に合わせてBlueXPを使用できます。次の3つのモードから選択できます。
-
-* 標準モード
-* 制限モード
-* プライベートモード
-
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["これらの展開モードの詳細については、こちらをご覧ください"]。
-
-
-NOTE: 制限モードが導入されたことで、SaaSプラットフォームを有効または無効にするオプションが廃止されました。制限モードはアカウント作成時に有効にすることができます。後で有効または無効にすることはできません。
 
 
 
