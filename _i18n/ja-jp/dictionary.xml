@@ -155,7 +155,6 @@
   <block id="c07c4e2e029d6d6eb829c29902cb63ff" category="inline-link">新しいAmazon S3バケットを追加する方法をご覧ください</block>
   <block id="91402ca539ef196ec17265c55db694dc" category="paragraph">BlueXP CanvasでAmazon S3バケットを表示できるようになりました。BlueXPから直接、新しいバケットを追加したり、既存のバケットのプロパティを変更したりできるようになりました。<block ref="2c8909472f79d70b0988a1b1340a52c9" category="inline-link-rx"></block>。</block>
   <block id="9d811f8ab4335c82eeb7d1477874bc1c" category="inline-link-macro">Amazon S3 への Cloud Volumes ONTAP データのバックアップ</block>
-  <block id="a5e6246728060cb5f413df6fa5adbf0c" category="inline-link-macro">Cloud Volumes ONTAP データをAzure Blobにバックアップしています</block>
   <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">2023年4月3日</block>
   <block id="380d0a0b2cec998dcd9f52b91b24304c" category="paragraph">通知を設定すると、BYOLライセンスの有効期限が近づいたとき（「警告」通知）、またはすでに有効期限が切れているとき（「エラー」通知）にEメール通知を受け取ることができます。</block>
   <block id="335e7f21f0fdfecbe9c04540dcb8cdd6" category="inline-link">Eメール通知の設定方法については、こちらをご覧ください</block>
@@ -185,11 +184,6 @@
   <block id="7786076739da628161f45de338cd6e69" category="inline-link-macro">Astra Tridentをアンインストールします</block>
   <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">[ライセンス]タブが削除されました</block>
   <block id="66a0b4752150538292b81c073ca0b83b" category="section-title">階層化タブの名前が変更され、内容が更新されました</block>
-  <block id="38d4d167f6dd9174c3535fc5c7ba4b76" category="section-title">2023年4月4日</block>
-  <block id="40c193dda1b0a4df68695abe150f234a" category="section-title">「制限付き」モードでCloud Volumes ONTAP システムからクラウドにデータをバックアップする機能</block>
-  <block id="57c3b4ba3c60295d45a2554606080eef" category="section-title">APIを使用して、オンプレミスのONTAP ボリュームをONTAP S3にバックアップする機能</block>
-  <block id="720734599c08f49ea57d729ec9f12d53" category="section-title">Azureストレージアカウントのゾーン冗長性の側面をLRSからZRSに変更する機能</block>
-  <block id="95fa16fe802a71eca4c0ade2049c7325" category="inline-link">ストレージアカウントの複製方法の変更</block>
   <block id="a7393f4b2940dc4b2ad20a62564d25be" category="section-title">ジョブモニタの機能拡張</block>
   <block id="f42926ae5eb2834453e4706e43354d5c" category="section-title">2023年4月3日（バージョン1.22）</block>
   <block id="e4279e9f497576fcde3caeb67ed0f96d" category="section-title">新しいデータ検出評価レポート</block>
@@ -205,8 +199,6 @@
   <block id="89960279d43d6d504afb45e5a8dff137" category="section-title">セットアップウィザードとGFC設定UIが拡張され、ネットアップライセンスの登録が実行されるようになりました</block>
   <block id="402a1502f5c39fb55ca79d59e3184a34" category="section-title">Optimus PSMが拡張され、Edge Sync機能が構成されます</block>
   <block id="ae74e3db3615f676968300b7cc6e8ae1" category="paragraph">運用の耐障害性は、アラートとイベントを分析してサービスとソリューションの健全性、アップタイム、パフォーマンスを維持するのに役立つサービスです。</block>
-  <block id="42d7d856cc8f6a2f82ed10cd8356e7d2" category="inline-link">BlueXPの導入モードの詳細については、こちらをご覧ください</block>
-  <block id="d7cfe6967f3004ef3386a27fe99a4610" category="inline-link">デスティネーションとしてのONTAP S3との統合</block>
   <block id="6d924727c00a77a63749e2f8aa0860d4" category="summary">このリリースノートでは、BlueXPに含まれるクラウドサービスに関する最新の機能強化について説明します。個々のサービスごとにリリースノートの全セットへのリンクがあります。</block>
   <block id="bb50e2459e4e016aa4b14a56adb2358f" category="inline-link">セットアップと管理</block>
   <block id="2049421a4e8e45e83cd7cf18ffc00a12" category="inline-link">デジタルウォレット</block>
@@ -226,21 +218,9 @@
   <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="inline-link">ランサムウェアからの保護</block>
   <block id="282baca6aef56652f503adce6afa9f07" category="inline-link">修正</block>
   <block id="337c62c6b6eb7319bae58701105e889c" category="inline-link">階層化</block>
-  <block id="256c6643ca1c733f72685d5a161161f5" category="section-title">2023年4月14日</block>
   <block id="197747cde80c31576877de78be696240" category="section-title">BlueXPのアプリケーション向けバックアップとリカバリの機能拡張（クラウドネイティブ）</block>
-  <block id="0a286ad90f3a25f45e443367036a8789" category="list-text">SAP HANAデータベース</block>
-  <block id="c0c906f83c940d4d16ffb433d7a368ca" category="list-text">スクリプトベースのシステム更新をサポートします</block>
-  <block id="b53bbb0902c6b7a25e7c1ac484d9fec2" category="list-text">Azure NetApp Files バックアップが設定されている場合は、Single-File-Snapshot-Restoreがサポートされます</block>
-  <block id="14860ef57cb4190ea449b13f7f0c8ea1" category="list-text">プラグインのアップグレードをサポートします</block>
   <block id="5ffbe0deb5b41148dc58e63a20df8411" category="list-text">Oracleデータベース</block>
-  <block id="b24979dddd1ccc913b0f29f30c981677" category="list-text">root以外のsudoユーザ設定が簡易化され、プラグインの導入が強化されました</block>
-  <block id="ab5eec0b36e1c0d7a8538ce2f367515c" category="list-text">Azure NetApp Files 上のOracleデータベースの自動検出とポリシーベースの保護をサポートします</block>
-  <block id="d21798a5d9e370e5fbb0150023dfaa38" category="list-text">きめ細かなリカバリにより、Oracleデータベースを元の場所にリストアできます</block>
   <block id="a1501619265b99c9d02aefcdb1128d6d" category="section-title">アプリケーション向けのBlueXPのバックアップとリカバリの機能拡張（ハイブリッド）</block>
-  <block id="abfdb85669faee0a0fe78a3ddd25158b" category="list-text">ハイブリッドREST APIが変更され、クラウドネイティブAPIと連携するようになりました。</block>
-  <block id="91dd9ae8b3342cf7e40f497897ce70d7" category="list-text">Eメール通知をサポートします</block>
-  <block id="ef08fc33d8b9b410529dc05986b2e248" category="paragraph">APIの新機能を使用して、BlueXPのバックアップとリカバリを使用してボリュームSnapshotをONTAP S3にバックアップできます。この機能は、現時点ではオンプレミスのONTAP システムでのみ使用できます。詳細な手順については、ブログを参照してください<block ref="8bfab3c14784f20047e4459b814ebfe4" category="inline-link-rx"></block>。</block>
-  <block id="bcd4bdef20ff7dec0587f35facdeb7be" category="paragraph">Cloud Volumes ONTAP システムからAzureストレージへのバックアップを作成する場合、BlueXPのバックアップとリカバリでは、コスト最適化のためにローカル冗長性（LRS）を使用してBlobコンテナがデフォルトでプロビジョニングされます。異なるゾーン間でデータを複製する場合は、この設定をZone redundancy（ZRS）に変更できます。Microsoftの手順を参照してください<block ref="c549763665cfbb93dbccfdbf667aa0f2" category="inline-link-rx"></block>。</block>
   <block id="4788963de19a5204a352f3308b0395d8" category="inline-link">BlueXPのバックアップとリカバリから送信されるアラートをすべて確認します</block>
   <block id="21db17f88f41dcd13f48cc90aced1d74" category="section-title">クラウド内の小規模インスタンスにBlueXPの分類機能を導入できます</block>
   <block id="cb608d54d750eeb9d266241b5a1d63c7" category="section-title">BlueXPの分類をインストールする前に、スタンドアロンスクリプトを使用してLinuxシステムを認定できるようになりました</block>
@@ -316,7 +296,6 @@
   <block id="679a2d98f8c7c05c4944b0d161a6d567" category="section-title">バックアップファイルでAWS Chinaリージョンがサポートされるようになりました</block>
   <block id="aad236ec8e2b61a79fb4bb3a416a2e06" category="paragraph">クラスタでONTAP 9.12.1以降が実行されている場合、AWS China Beijing（cn-north-1）リージョンとNingxia（cn-northwest-1）リージョンがバックアップファイルのデスティネーションとしてサポートされるようになりました。</block>
   <block id="c93bfe725726f47fe3bfcc0e95f8ec7d" category="inline-link">オンプレミスのONTAP データをAmazon S3にバックアップします</block>
-  <block id="4d5789e8f025b3895d94f1b6a7225e4a" category="list-text">アプリケーション（ハイブリッド）向けのBlueXPのバックアップとリカバリは、SaaSコントロールプレーンから実行されます</block>
   <block id="2652537da62e22a06b22374119e6c40f" category="section-title">ハードリンク機能</block>
   <block id="74b59acd161d1704c8c78879dc8fba01" category="paragraph">セキュアでないNFSとNFSの関係を含む同期のハードリンクを含めることができるようになりました。</block>
   <block id="689dbd8363b6599ce07ff94a27510e99" category="inline-link">ファイルタイプ設定の詳細については、こちらを参照してください</block>
@@ -367,8 +346,6 @@
   <block id="46ce6a634ad58fa667690e7f5c151b26" category="list-text">オプションで、を選択できます <block ref="2af1713063b9a7e50c1f5e13c7671bae" category="inline-link-macro-rx"></block> および <block ref="013335dc35ce07c311c673e8a99c88f9" category="inline-link-macro-rx"></block> ボリュームを分類するためのタグ。</block>
   <block id="c55a4ed0f55f8209574960c04bd36597" category="paragraph">顧客管理暗号化キー（CMEK）のプロジェクトとは別のプロジェクトにあるバケットを選択できるようになりました。<block ref="2425c9129a22c7135ee8a04ae0dae970" category="inline-link-rx"></block>。</block>
   <block id="cfc826b330f7a25cc3c4e115a9fcca13" category="paragraph">BlueXPコネクタに割り当てるIAMポリシーでは、all_Resource_sectionsの下にあるAWSリソース名「arn」を「aws」から「aws-cn」に変更する必要があります（例：「arn：aws-cn：s3：：：netapp-backup-*」）。を参照してください<block ref="17dde2a04d27e7ad2a9f0a451a7a0e90" category="inline-link-rx"></block> および<block ref="bb86d78b7593b3e1252f277b7dd6e017" category="inline-link-rx"></block> を参照してください。</block>
-  <block id="3f95b7ff004c9ea7ba2c076aa81ddbd8" category="list-text">すべてのジョブをレポートするためのCSVファイルをダウンロードできるほか、単一のジョブのJSONファイルをダウンロードして詳細を確認できるようになりました。<block ref="c5e8ac86e60de65889ee067b8ca8ac22" category="inline-link-rx"></block>。</block>
-  <block id="aca6a48e798dafa8a873544468b60e06" category="list-text">「Scheduled job failure」と「Restore job completes but with warnings」という2つの新しいバックアップジョブアラートが追加されました。<block ref="a4848a9ae757d04f84e693376feb04c0" category="inline-link-rx"></block>。</block>
   <block id="4da25d5e326dac4c0bb3865e69dd3325" category="paragraph">Data Discovery Assessment Reportでは、スキャンされた環境の概要を分析して、システムの調査結果を強調し、懸念領域と潜在的な修復手順を示します。このレポートの目的は、データガバナンスの懸念、データセキュリティの危険性、データセットのデータコンプライアンスギャップに対する認識を高めることです。<block ref="34e879e713683b8352bb56b59c6078e2" category="inline-link-rx"></block>。</block>
   <block id="38e8bfeb390cec6e72d97323084e18cc" category="paragraph">AWS環境のBlueXP ConnectorからBlueXPの分類を導入する際に、デフォルトのインスタンスよりも小さい2つのインスタンスタイプから選択できるようになりました。小規模な環境をスキャンする場合は、クラウドコストを節約できます。ただし、小さいインスタンスを使用する場合はいくつかの制限があります。<block ref="d8ef680ce45b86e2a6afe2805a7e5562" category="inline-link-rx"></block>。</block>
   <block id="46b0a8862a90d05f4f40bbcda2473af4" category="paragraph">BlueXP分類インストールとは別に、Linuxシステムがすべての前提条件を満たしていることを確認する場合は、前提条件のみをテストするスクリプトをダウンロードできます。<block ref="f7ad1b05082bb59227795c56a02d9b78" category="inline-link-rx"></block>。</block>
@@ -474,8 +451,6 @@
   <block id="809c5429fbc9708f2c659ca056b2c098" category="paragraph"><block ref="1fa18ad5aa31d9e300f41aa2d9a59bdd" category="inline-link-rx"></block>。</block>
   <block id="5a4b2cac486281ad2280371043da8170" category="section-title">ダークサイトのBlueXPの重要なバックアップファイルとリカバリファイルを自動でバックアップ</block>
   <block id="7109418f2cd9c52748bb2a769336a1d0" category="paragraph">インターネットアクセスのないサイト（「プライベートモード」環境）でBlueXPのバックアップとリカバリを使用している場合、BlueXPのバックアップとリカバリの情報はローカルコネクタシステムにのみ格納されます。この新機能では、BlueXPの重要なバックアップ/リカバリデータが接続されたStorageGRIDシステムのバケットに自動的にバックアップされるため、必要に応じてこのデータを新しいコネクタにリストアできます。<block ref="7987fffb3d9d5da865ce1f589e4bd463" category="inline-link-rx"></block></block>
-  <block id="813935edc5ac8e9f2c18c722e28dddf8" category="paragraph">これで、AWS、Azure、GCPの商用リージョンにインストールされているCloud Volumes ONTAP システムのデータを「制限モード」でバックアップできるようになりました。これを行うには、まず「制限された」商業地域にコネクタをインストールする必要があります。<block ref="0eb8533d49e65dbfdd979d6ceb88ebff" category="inline-link-rx"></block>。を参照してください<block ref="17dde2a04d27e7ad2a9f0a451a7a0e90" category="inline-link-rx"></block> および<block ref="e88a100423dadabfc9781439f925633d" category="inline-link-rx"></block>。</block>
-  <block id="f1a109ae8d953da8e05cf5534df6b22b" category="list-text">ONTAP 9.13.0以降を実行しているCloud Volumes ONTAP システムでは、BlueXPのバックアップ/リカバリのUIとAPIでユーザが開始したバックアップ処理とリストア処理と、システムが開始したジョブ（進行中のバックアップ処理など）が[ジョブ監視]タブで利用できるようになりました。以前のバージョンのONTAP では、ユーザが開始したジョブのみが表示されます。</block>
   <block id="96828273826a07fdc4f42f4998e536b2" category="section-title">2023年6月6日（バージョン1.23）</block>
   <block id="04e04c61cd37ca8f12b83c892c2c46ea" category="section-title">データ主体名の検索で日本語がサポートされるようになりました</block>
   <block id="3a3337f232548d40f54052862077499b" category="inline-link">Data Subject Access Request レポート</block>
@@ -555,4 +530,20 @@
   <block id="250f0923d20814211c14c5a6cd0e2643" category="paragraph">クラスタがコールドデータの20%未満（データを階層化しないクラスタを含む）を階層化しているときに、階層化イベント「Tier additional data from cluster &lt;name&gt; to object storage efficiency」が通知として表示されるようになりました。</block>
   <block id="3c23988fbf7c203a2c811a5ce84251c0" category="inline-link">BlueXP階層化サービス（TCO）とコスト削減試算ツールです</block>
   <block id="57f9b94b395c8e293b7f892fe5995ac7" category="paragraph">本通知は、システムの効率化とストレージコストの削減を目的とした「推奨事項」です。これにより、へのリンクが提供されます<block ref="c9d262883689ef94201e8739cb50c7f6" category="inline-link-rx"></block> コスト削減額の計算に役立ちます。</block>
+  <block id="f717b8ed4d751174af9f9438951b9a4f" category="section-title">2023年7月6日</block>
+  <block id="10ffd42b58d1ced7127bffaff7185e32" category="section-title">BlueXPのバックアップとリカバリに、Snapshotコピーとレプリケートされたボリュームのスケジュール設定と作成が追加されました</block>
+  <block id="a2e06093d677add4ecd73d26ade99d66" category="paragraph">BlueXPのバックアップとリカバリでは、3-2-1戦略を実装できるようになりました。この戦略では、ソースデータのコピーを2つのストレージシステムに3つ、クラウドに1つ配置できます。アクティベーションが完了すると、次のような状態になります。</block>
+  <block id="4dfb74d83687d8ca40ab05bac1885b0a" category="list-text">ソースシステム上のボリュームのSnapshotコピー</block>
+  <block id="00b4fe156d0b170f5196995dd8889b0d" category="list-text">別のストレージシステムにレプリケートされたボリューム</block>
+  <block id="809b026ec469d1b8bfa79721e15f539b" category="list-text">オブジェクトストレージ内のボリュームのバックアップ</block>
+  <block id="4ae5ef4008b68e98ae1878294a66c9d1" category="inline-link">新しいフルスペクトルバックアップおよびリストア機能の詳細については、こちらをご覧ください</block>
+  <block id="e1ddbe5fcbded46fffd577b7a64c82ef" category="paragraph"><block ref="c0ade183535ec842bf30c511bd86bbf6" category="inline-link-rx"></block>。</block>
+  <block id="1afa76124f2d71427832cd0846eefa31" category="paragraph">この新機能は、環境リカバリ処理にも対応しています。リストア処理は、Snapshotコピー、レプリケートされたボリューム、またはクラウド内のバックアップファイルから実行できます。これにより、リカバリのコストや速度など、リカバリ要件を満たすバックアップファイルを柔軟に選択できます。</block>
+  <block id="6d50e6cd9c195849ff4bcb523527fb42" category="paragraph">この新機能とユーザインターフェイスは、ONTAP 9.8以降を実行するクラスタでのみサポートされます。クラスタに以前のバージョンのソフトウェアがインストールされている場合は、以前のバージョンのBlueXPバックアップとリカバリを引き続き使用できます。ただし、最新の機能を利用するには、サポートされているバージョンのONTAPにアップグレードすることを推奨します。古いバージョンのソフトウェアを引き続き使用するには、次の手順に従います。</block>
+  <block id="fb74ece6972051de48e476af9e1e3b61" category="list-text">[* Volumes （ボリューム） ] タブで、 [* Backup Settings （バックアップ設定） ] を選択します。</block>
+  <block id="cbce457a0f1d693a7ec8fdef080284e8" category="list-text">[_Backup Settings]ページで、*[Display the previous BlueXP backup and recovery version]*のラジオボタンをクリックします。</block>
+  <block id="6ad80584a8fba3d1fc876fd412e2b184" category="paragraph">その後、以前のバージョンのソフトウェアを使用して古いクラスタを管理できます。</block>
+  <block id="098acc7a6e2aef2e0ffd66cabdde369e" category="section-title">オブジェクトストレージへのバックアップ用バケットを作成できるようになりました</block>
+  <block id="7882c4532e24f1cac41cc043cde436b7" category="paragraph">オブジェクトストレージにバックアップファイルを作成すると、デフォルトでは、バックアップおよびリカバリサービスによってオブジェクトストレージにバケットが作成されます。特定の名前を使用したり、特殊なプロパティを割り当てたりする場合は、バケットを自分で作成できます。独自のバケットを作成する場合は、アクティブ化ウィザードを開始する前にバケットを作成する必要があります。</block>
+  <block id="ea600ff03360da539b9cf2f109798fac" category="paragraph">この機能は、StorageGRIDシステムにバックアップファイルを作成する場合は現在サポートされていません。</block>
 </blocks>

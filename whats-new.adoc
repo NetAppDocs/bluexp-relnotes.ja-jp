@@ -259,6 +259,42 @@ BlueXP CanvasでAmazon S3バケットを表示できるようになりました�
 
 
 
+=== 2023年7月6日
+
+
+
+==== BlueXPのバックアップとリカバリに、Snapshotコピーとレプリケートされたボリュームのスケジュール設定と作成が追加されました
+
+BlueXPのバックアップとリカバリでは、3-2-1戦略を実装できるようになりました。この戦略では、ソースデータのコピーを2つのストレージシステムに3つ、クラウドに1つ配置できます。アクティベーションが完了すると、次のような状態になります。
+
+* ソースシステム上のボリュームのSnapshotコピー
+* 別のストレージシステムにレプリケートされたボリューム
+* オブジェクトストレージ内のボリュームのバックアップ
+
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html["新しいフルスペクトルバックアップおよびリストア機能の詳細については、こちらをご覧ください"]。
+
+この新機能は、環境リカバリ処理にも対応しています。リストア処理は、Snapshotコピー、レプリケートされたボリューム、またはクラウド内のバックアップファイルから実行できます。これにより、リカバリのコストや速度など、リカバリ要件を満たすバックアップファイルを柔軟に選択できます。
+
+この新機能とユーザインターフェイスは、ONTAP 9.8以降を実行するクラスタでのみサポートされます。クラスタに以前のバージョンのソフトウェアがインストールされている場合は、以前のバージョンのBlueXPバックアップとリカバリを引き続き使用できます。ただし、最新の機能を利用するには、サポートされているバージョンのONTAPにアップグレードすることを推奨します。古いバージョンのソフトウェアを引き続き使用するには、次の手順に従います。
+
+. [* Volumes （ボリューム） ] タブで、 [* Backup Settings （バックアップ設定） ] を選択します。
+. [_Backup Settings]ページで、*[Display the previous BlueXP backup and recovery version]*のラジオボタンをクリックします。
++
+その後、以前のバージョンのソフトウェアを使用して古いクラスタを管理できます。
+
+
+
+
+
+==== オブジェクトストレージへのバックアップ用バケットを作成できるようになりました
+
+オブジェクトストレージにバックアップファイルを作成すると、デフォルトでは、バックアップおよびリカバリサービスによってオブジェクトストレージにバケットが作成されます。特定の名前を使用したり、特殊なプロパティを割り当てたりする場合は、バケットを自分で作成できます。独自のバケットを作成する場合は、アクティブ化ウィザードを開始する前にバケットを作成する必要があります。
+
+この機能は、StorageGRIDシステムにバックアップファイルを作成する場合は現在サポートされていません。
+
+
+
 === 2023年7月4日
 
 
@@ -362,71 +398,6 @@ BlueXPコネクタに割り当てるIAMポリシーでは、all_Resource_section
 ==== ジョブモニタの機能拡張
 
 ONTAP 9.13.1以降を実行しているオンプレミスのONTAP システムで、システム開始ジョブ（進行中のバックアップ処理など）を*[ジョブ監視]*タブで確認できるようになりました。以前のバージョンのONTAP では、ユーザが開始したジョブのみが表示されます。
-
-
-
-=== 2023年4月14日
-
-
-
-==== BlueXPのアプリケーション向けバックアップとリカバリの機能拡張（クラウドネイティブ）
-
-* SAP HANAデータベース
-+
-** スクリプトベースのシステム更新をサポートします
-** Azure NetApp Files バックアップが設定されている場合は、Single-File-Snapshot-Restoreがサポートされます
-** プラグインのアップグレードをサポートします
-
-
-* Oracleデータベース
-+
-** root以外のsudoユーザ設定が簡易化され、プラグインの導入が強化されました
-** プラグインのアップグレードをサポートします
-** Azure NetApp Files 上のOracleデータベースの自動検出とポリシーベースの保護をサポートします
-** きめ細かなリカバリにより、Oracleデータベースを元の場所にリストアできます
-
-
-
-
-
-
-==== アプリケーション向けのBlueXPのバックアップとリカバリの機能拡張（ハイブリッド）
-
-* アプリケーション（ハイブリッド）向けのBlueXPのバックアップとリカバリは、SaaSコントロールプレーンから実行されます
-* ハイブリッドREST APIが変更され、クラウドネイティブAPIと連携するようになりました。
-* Eメール通知をサポートします
-
-
-
-
-=== 2023年4月4日
-
-
-
-==== 「制限付き」モードでCloud Volumes ONTAP システムからクラウドにデータをバックアップする機能
-
-これで、AWS、Azure、GCPの商用リージョンにインストールされているCloud Volumes ONTAP システムのデータを「制限モード」でバックアップできるようになりました。これを行うには、まず「制限された」商業地域にコネクタをインストールする必要があります。 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["BlueXPの導入モードの詳細については、こちらをご覧ください"^]。を参照してください https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-s3.html["Amazon S3 への Cloud Volumes ONTAP データのバックアップ"] および https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-azure.html["Cloud Volumes ONTAP データをAzure Blobにバックアップしています"]。
-
-
-
-==== APIを使用して、オンプレミスのONTAP ボリュームをONTAP S3にバックアップする機能
-
-APIの新機能を使用して、BlueXPのバックアップとリカバリを使用してボリュームSnapshotをONTAP S3にバックアップできます。この機能は、現時点ではオンプレミスのONTAP システムでのみ使用できます。詳細な手順については、ブログを参照してください https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-Feature-Blog-April-23-Updates/ba-p/443075#toc-hId--846533830["デスティネーションとしてのONTAP S3との統合"^]。
-
-
-
-==== Azureストレージアカウントのゾーン冗長性の側面をLRSからZRSに変更する機能
-
-Cloud Volumes ONTAP システムからAzureストレージへのバックアップを作成する場合、BlueXPのバックアップとリカバリでは、コスト最適化のためにローカル冗長性（LRS）を使用してBlobコンテナがデフォルトでプロビジョニングされます。異なるゾーン間でデータを複製する場合は、この設定をZone redundancy（ZRS）に変更できます。Microsoftの手順を参照してください https://learn.microsoft.com/en-us/azure/storage/common/redundancy-migration?tabs=portal["ストレージアカウントの複製方法の変更"^]。
-
-
-
-==== ジョブモニタの機能拡張
-
-* ONTAP 9.13.0以降を実行しているCloud Volumes ONTAP システムでは、BlueXPのバックアップ/リカバリのUIとAPIでユーザが開始したバックアップ処理とリストア処理と、システムが開始したジョブ（進行中のバックアップ処理など）が[ジョブ監視]タブで利用できるようになりました。以前のバージョンのONTAP では、ユーザが開始したジョブのみが表示されます。
-* すべてのジョブをレポートするためのCSVファイルをダウンロードできるほか、単一のジョブのJSONファイルをダウンロードして詳細を確認できるようになりました。 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html#download-job-monitoring-results-as-a-report["詳細はこちら。"]。
-* 「Scheduled job failure」と「Restore job completes but with warnings」という2つの新しいバックアップジョブアラートが追加されました。 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html#review-backup-and-restore-alerts-in-the-bluexp-notification-center["BlueXPのバックアップとリカバリから送信されるアラートをすべて確認します"]。
-
 
 
 
