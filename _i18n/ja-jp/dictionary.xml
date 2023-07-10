@@ -128,7 +128,6 @@
   <block id="de7ceda1f3ad5462ebeba9b4e49bf946" category="section-title">ビジネスクリティカルとみなすデータを識別するポリシーを定義する機能</block>
   <block id="5bba5081ab3b5a554fbba4b798a66e4f" category="inline-link">ビジネスクリティカルデータの詳細については、こちらをご覧ください</block>
   <block id="c1d1220273fe79d481c41539bea31710" category="paragraph">次に、BlueXPの左ナビゲーションメニューから* Governance &gt; Ransomware Protection *を選択してこのサービスにアクセスしてください。</block>
-  <block id="fdfef50a14b07533a8bab908a66de10c" category="list-text">このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張が含まれています。</block>
   <block id="6beb41a356d9287866f0b22c4b4eadcb" category="paragraph">BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します詳細については、を参照してください <block ref="1e9f4589e5d2713376df79f13fc9ba0a" category="inline-link-macro-rx"></block> 個々のサービスごと。</block>
   <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">2023年3月5日</block>
   <block id="eea1e3b9ecdd5e32692761a0a78b9463" category="section-title">2023年3月5日</block>
@@ -151,14 +150,6 @@
   <block id="0ec2b2e4840acfd3f21b50b176ec45f1" category="paragraph"><block ref="0ec2b2e4840acfd3f21b50b176ec45f1" category="inline-link-rx"></block></block>
   <block id="723ffd15eb7b4453afd0fa0af42c04c3" category="section-title">経済効率</block>
   <block id="88c49608e723add593f5becc8bd9a968" category="section-title">2023年4月2日</block>
-  <block id="44a722c1e42cdb4002c75bb29403670b" category="section-title">BlueXPコンソールから単一の検出オプションを選択できます</block>
-  <block id="7023e56782327af6f409e1889ae33345" category="paragraph">BlueXPコンソールからオンプレミスのONTAP クラスタを検出すると、次の1つのオプションが表示されます。</block>
-  <block id="d70ed695b081fff2505f285b0540727b" category="inline-image-macro">作業環境を作成するときに使用可能な[Discover On-Premises ONTAP （オンプレミスのを検出）]オプションを示すスクリーンショット</block>
-  <block id="3d85937cd401956877664b5f7128cc5d" category="paragraph">以前は、直接検出用とコネクタによる検出用に別 々 のフローがありました。これらのオプションはどちらも引き続き使用できますが、単一のフローにマージされます。</block>
-  <block id="251a667be8662557b7aba30c53380da3" category="paragraph">検出プロセスを開始すると、BlueXPで次のようにクラスタが検出されます。</block>
-  <block id="02067bb3de9c60175abe8c4b7d81c3c2" category="list-text">ONTAP クラスタに接続しているアクティブなコネクタがある場合、BlueXPはそのコネクタを使用してクラスタを検出および管理します。</block>
-  <block id="1f98df6cf22b8e11ecbe762c7b523860" category="list-text">コネクタがない場合やコネクタがONTAP クラスタに接続されていない場合は、BlueXPで自動的に検出と管理の直接オプションが使用されます。</block>
-  <block id="873b328fabdfb8db13a38e03c836d37b" category="inline-link">検出と管理のオプションの詳細については、こちらをご覧ください</block>
   <block id="efc0c4f71709b261c273fb935757cfae" category="section-title">運用の耐障害性</block>
   <block id="7907a1fccb5b8aa9b8df8283d3705052" category="list-text"><block ref="7907a1fccb5b8aa9b8df8283d3705052" category="inline-link-rx"></block></block>
   <block id="92900172340dbf6ba4b3454580c7583b" category="list-text"><block ref="92900172340dbf6ba4b3454580c7583b" category="inline-link-rx"></block></block>
@@ -189,10 +180,6 @@
   <block id="986e1f3279b4d74444bd32d4f833afbd" category="section-title">デジタルウォレット</block>
   <block id="164bf9dea8d8396a2e7501258b908616" category="section-title">Marketplaceのサブスクリプション用にライセンスされた容量</block>
   <block id="1e9f781ad3dabc2f942313854ce94883" category="paragraph"><block ref="bcd8bf14da5e102dbc4b48dd0870869e" category="inline-link-rx"></block>。</block>
-  <block id="5a4346a01828d72104a6540080377b25" category="section-title">2022年11月6日</block>
-  <block id="36e33f823d687cad39366d44fd0b326d" category="section-title">サブスクリプションと年間契約</block>
-  <block id="949b19dd7e9f6496c1125f7166270450" category="inline-link">サブスクリプションの管理方法について説明します</block>
-  <block id="02a7eedc354fe91b04b9ff906dc9c760" category="paragraph"><block ref="dcb08a7187e62f8d5d6c3eba08ea6b8f" category="inline-link-rx"></block>。</block>
   <block id="be062cdcabbb3055334e8f19b4bdf378" category="inline-link">バックアップとリカバリ</block>
   <block id="5c9335b28e6277ddbe0137f04e5e58a7" category="inline-link">分類</block>
   <block id="5b942e8f71976a7f4120006aa3ac54cc" category="inline-link">クラウド運用</block>
@@ -227,16 +214,7 @@
   <block id="e90b826155dae219948b9b2fca9feca3" category="section-title">BlueXPのランサムウェア対策は、「Protection」カテゴリから「Governance」カテゴリに移行されました</block>
   <block id="d128bda2634e1051cc984231da065144" category="list-text">Eメール通知がBlueXPデジタルウォレットでサポートされるようになりました。</block>
   <block id="016c818ed3128119f94a31cbec32bf1f" category="paragraph">Cloud Volumes ONTAP の容量単位のライセンスを表示する場合、BlueXPデジタルウォレットに、マーケットプレイスのプライベートオファーで購入したライセンス容量が表示されるようになりました。</block>
-  <block id="b3e680bd6b6b80e2fd4f5bd19f3ad015" category="paragraph">BlueXPのPAYGOサブスクリプションと年間契約が、BlueXPのデジタルウォレットで表示、管理できるようになりました。</block>
   <block id="71bff2737bdd059023a4784358e71a64" category="section-title">2023年5月7日</block>
-  <block id="d13015f8ae4fd0f7f263eba9f81f4caa" category="section-title">コネクタ3.9.29</block>
-  <block id="05263fcc56b50972b2dfe4be20698328" category="list-text">Ubuntu 22.04は、BlueXPまたはクラウドプロバイダのマーケットプレイスからコネクタを導入する際のコネクタ用の新しいオペレーティングシステムです。</block>
-  <block id="9ab8f4fa1e0839b1101d04c9cd4e1bae" category="paragraph">また、Ubuntu 22.04を実行している独自のLinuxホストにコネクタを手動でインストールすることもできます。</block>
-  <block id="dfcaca26de191f6219819bb7091c9ebe" category="list-text">Red Hat Enterprise Linux 8.6および8.7は、新しいコネクタの導入ではサポートされなくなりました。</block>
-  <block id="2f5617aecec1df3805ada7f05da46bde" category="paragraph">Red Hatではコネクタに必要なDockerがサポートされなくなるため、新しい環境ではこれらのバージョンはサポートされません。RHEL 8.6または8.7で既存のコネクタを実行している場合、ネットアップは引き続きこの構成をサポートします。</block>
-  <block id="470821fb08a53bb45ecda66d23c58d6f" category="paragraph">Red Hat 7.6、7.7、7.8、および7.9は、新規および既存のコネクタで引き続きサポートされます。</block>
-  <block id="a2619f6db1e9fa217b857129c75384ab" category="list-text">コネクタは現在、Google Cloudのカタール地域でサポートされています。</block>
-  <block id="368c64d1828dfb51f85a6ad8427db46c" category="list-text">このコネクタは、Microsoft AzureのSweden Centralリージョンでもサポートされています。</block>
   <block id="a018fc35c6be59c0e9c90d4bd464dc47" category="section-title">2023年5月7日</block>
   <block id="b3aad9775f9ce61fe67c9745594b96f0" category="inline-link-macro">セキュリティグループを生成します</block>
   <block id="beee5e54063eb4d710db752896c928c8" category="inline-link-macro">追加の権限が必要です</block>
@@ -250,18 +228,6 @@
   <block id="160ba974abba347f5e939a1a0acd5982" category="list-text">使用状況の概要</block>
   <block id="bf951096cc9eea5fae867ec94f06dfa3" category="list-text">Storage VMの使用状況</block>
   <block id="3c5979c173a0a4fe3ff27e0e6185a693" category="list-text">ボリュームの使用状況</block>
-  <block id="56a50532d8da2bebb09d6190c126140c" category="inline-link-macro">容量ベースのライセンスを管理します</block>
-  <block id="8156321649d649dc3e16c2849d8aa212" category="paragraph">詳細については、を参照してください <block ref="862b3811f42dd37621050f0605c0d301" category="inline-link-macro-rx"></block>。</block>
-  <block id="3b9e0ca0be1cb4ee263fc0a386a705bc" category="paragraph">コネクタの3.9.29リリースでは、次の変更が加えられました。</block>
-  <block id="ef33a11b5d2090c4cf0e98ca1b79cc2d" category="section-title">カタール地域がGoogle Cloudでサポートされるようになりました</block>
-  <block id="357b47742b71d8fe5b5936de05c522ec" category="paragraph">カタール地域は、Google Cloud for Cloud Volumes ONTAP およびConnector for Cloud Volumes ONTAP 9.12.1 GA以降でサポートされるようになりました。</block>
-  <block id="c8dc4f54d280ddaf5974f6c903e2152f" category="section-title">Sweden CentralリージョンがAzureでサポートされるようになりました</block>
-  <block id="787bf3f02b45f65c827e46d88d4e7b24" category="paragraph">Sweden Centralリージョンは、Azure for Cloud Volumes ONTAP およびConnector for Cloud Volumes ONTAP 9.12.1 GA以降でサポートされるようになりました。</block>
-  <block id="d38001cc976e394cf57ce77223bee1a1" category="section-title">Azure Australia EastでのHAマルチアベイラビリティゾーン導入のサポート</block>
-  <block id="bef0df4f898713881ef2098a621a3745" category="paragraph">Azureのオーストラリア東部リージョンでは、Cloud Volumes ONTAP 9.12.1 GA以降でHAマルチアベイラビリティゾーンの導入がサポートされるようになりました。</block>
-  <block id="300bba824d9f2e68a0c89aef6da5fb8a" category="paragraph">容量ベースのライセンスにサブスクライブしたときに課金される料金を確認できるようになりました。次のタイプの使用状況レポートは、BlueXPのデジタルウォレットからダウンロードできます。使用状況レポートには、サブスクリプションの容量の詳細と、Cloud Volumes ONTAP サブスクリプションのリソースに対する課金状況が表示されます。ダウンロード可能なレポートは、他のユーザーと簡単に共有できます。</block>
-  <block id="eaf72ee058835b38b417b55e2fb1c0af" category="section-title">MarketplaceのサブスクリプションなしでBlueXPにアクセスすると通知が表示されるようになりました</block>
-  <block id="5cc1493ad28334fdb28f7ed57f0e1d41" category="paragraph">Marketplaceのサブスクリプションを購入せずにBlueXPでCloud Volumes ONTAP にアクセスすると、必ず通知が表示されるようになりました。通知には、「この作業環境のマーケットプレイスサブスクリプションは、Cloud Volumes ONTAP の利用規約に準拠する必要があります」と記載されています。</block>
   <block id="ea42cbd645e47130e67a7cbb87fe5de8" category="section-title">2023年5月8日</block>
   <block id="93c8b08c928ba95dab5c066b4611e000" category="section-title">アーカイブストレージとロックされたバックアップでフォルダレベルのリストア処理がサポートされるようになりました</block>
   <block id="2f57132a5aa255f3e276ff3b62b985c8" category="paragraph">バックアップファイルにDataLockおよびRansomware保護が設定されている場合、またはバックアップファイルがアーカイブストレージにある場合、クラスタでONTAP 9.13.1以降が実行されている場合にフォルダレベルのリストア処理がサポートされるようになりました。</block>
@@ -311,7 +277,6 @@
   <block id="c821df2021ac7a846f6554ac1ed76719" category="list-text"><block ref="c821df2021ac7a846f6554ac1ed76719" category="inline-link-rx"></block></block>
   <block id="367cb072fdec82ba883d66fadac7fc54" category="list-text"><block ref="367cb072fdec82ba883d66fadac7fc54" category="inline-link-rx"></block></block>
   <block id="98ffac9f61e6bf431d54a18e34b9a53d" category="paragraph">NetApp BlueXPは2022年11月1日にリリースされました。BlueXPは、Cloud Managerが提供する機能を拡張、強化しています。<block ref="c202e01c48134f154e0a38e5e6d1aed9" category="inline-link-rx"></block></block>
-  <block id="4d5f6e2e2b72482865cac1c14f3d2d3d" category="paragraph"><block ref="4d5f6e2e2b72482865cac1c14f3d2d3d" category="inline-link-rx"></block></block>
   <block id="a80baf4fa5d71b9ef418edfcaebd2759" category="list-text"><block ref="a80baf4fa5d71b9ef418edfcaebd2759" category="inline-link-rx"></block></block>
   <block id="45ee83d3cd24c8a79ff15330399da6a7" category="list-text"><block ref="45ee83d3cd24c8a79ff15330399da6a7" category="inline-link-rx"></block></block>
   <block id="50677882efe321e7fec19456f58faadc" category="paragraph"><block ref="536037d368170de6e6fbdb576d167663" category="inline-link-rx"></block>。</block>
@@ -323,7 +288,6 @@
   <block id="38e8bfeb390cec6e72d97323084e18cc" category="paragraph">AWS環境のBlueXP ConnectorからBlueXPの分類を導入する際に、デフォルトのインスタンスよりも小さい2つのインスタンスタイプから選択できるようになりました。小規模な環境をスキャンする場合は、クラウドコストを節約できます。ただし、小さいインスタンスを使用する場合はいくつかの制限があります。<block ref="d8ef680ce45b86e2a6afe2805a7e5562" category="inline-link-rx"></block>。</block>
   <block id="46b0a8862a90d05f4f40bbcda2473af4" category="paragraph">BlueXP分類インストールとは別に、Linuxシステムがすべての前提条件を満たしていることを確認する場合は、前提条件のみをテストするスクリプトをダウンロードできます。<block ref="f7ad1b05082bb59227795c56a02d9b78" category="inline-link-rx"></block>。</block>
   <block id="7e1e73ad7e6d01345f57dc84d7cd2c47" category="paragraph"><block ref="8ab3022f8d373945c172f9e89b554e84" category="inline-link-rx"></block>。</block>
-  <block id="06765567af68358bde181ef7ae8a31b0" category="paragraph">詳細については、を参照してください <block ref="5aa81dcb1871cc4d565005ce5abe331d" category="inline-link-macro-rx"></block>。</block>
   <block id="9cb4f066718ada1a845659033318004c" category="paragraph"><block ref="19c68668f7d6a95b64e909c5da1cb9b0" category="inline-link-rx"></block>。</block>
   <block id="16364877a101c1787c34f2fe604ef9e9" category="paragraph"><block ref="16364877a101c1787c34f2fe604ef9e9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1a7214a3217999e62943b6eb9a186e66" category="paragraph"><block ref="9bf8313a7db211679a844402f240b32a" category="inline-link-rx"></block>。</block>
@@ -336,8 +300,6 @@
   <block id="f5f78956220294d550567ec883fe45c6" category="paragraph"><block ref="f5f78956220294d550567ec883fe45c6" category="inline-link-rx"></block></block>
   <block id="4e4ff5b7850bf0aae4966bf2353d2764" category="list-text">次の操作を実行できます。 <block ref="79330a9a9d35860d426f0d48c9f654a7" category="inline-link-macro-rx"></block> これは、TridentオペレータまたはBlueXPを使用してインストールしました。</block>
   <block id="08dbc554156c2764d1696fe55d768aed" category="paragraph">いつ <block ref="c5aa031d705396e63c7e52a97cf56f86" category="inline-link-macro-rx"></block>では、ブロックストレージやファイルシステムストレージに対して、ストレージクラスの経済性を実現できます。</block>
-  <block id="6456f90a24e3ce74e10fac140453a9e4" category="paragraph"><block ref="6456f90a24e3ce74e10fac140453a9e4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="31704fc30eb2f5485c6844b2921554ff" category="paragraph"><block ref="9ff7898ac3309c19fb8d99f370e44be1" category="inline-link-rx"></block>。</block>
   <block id="6b5123d10bcaa20aedf265862fd00988" category="paragraph"><block ref="b8d5a3f5bf3c3f09de7cacb30a8225fd" category="inline-link-rx"></block>。</block>
   <block id="d773758b323d5c30c9e4ae45fd81b118" category="paragraph">Ransomware Recovery Dashboardには、ランサムウェアに感染した可能性のあるデータをリカバリするためのオプションが用意されています。これにより、システムを迅速にバックアップして稼働させることができます。現時点では、リカバリアクションを使用して、破損したボリュームを、ランサムウェアの影響を受けていないSnapshotコピーに置き換えることができます。<block ref="1cfef95f6383739a4e12630b10e7eb2d" category="inline-link-rx"></block>。</block>
   <block id="044a391323ce6d62701fd93c1d831b1c" category="paragraph"><block ref="6ae4b2bca0be046d4e2b16ecc9229d9a" category="inline-link-rx"></block>。</block>
@@ -391,11 +353,6 @@
   <block id="c21d5cf174dc36531d6990b13fe89573" category="list-text">いつ <block ref="ad9408e39808bf9ea4b07fa95cac5798" category="inline-link-macro-rx"></block>では、毎週の30分のメンテナンス時間の開始時間を指定して、メンテナンスが重要なビジネスアクティビティと競合しないようにすることができます。</block>
   <block id="e2ba73f0e5661996e4350de09efee512" category="inline-link-macro">ボリュームを作成しています</block>
   <block id="fabdf5de30f7e7084ae6656930904d1d" category="list-text">いつ <block ref="1bfb452ce23fdd4301ee99a62317a7a6" category="inline-link-macro-rx"></block>では、ボリューム間でデータを分散するFlexGroupを作成することで、データの最適化を有効にすることができます。</block>
-  <block id="99b154ed343fdc0ce0be282015d40529" category="paragraph">コネクタの3.9.30リリースでは、次の変更が加えられました。</block>
-  <block id="46f41748d329a2f863d5f787b783bcc5" category="section-title">Cloud Volumes ONTAPアップグレードバージョンセレクタの更新</block>
-  <block id="25c3dcdd6e2c69b30eba973a10e656d8" category="paragraph">Upgrade Cloud Volumes ONTAPページで、Cloud Volumes ONTAPの最新バージョンまたは古いバージョンへのアップグレードを選択できるようになりました。</block>
-  <block id="3a3843b2672bd389702bef2d50b13ac2" category="inline-link">Cloud Volumes ONTAP をアップグレードします</block>
-  <block id="91cf56905c9848b7dbc6e3d59504dcd3" category="paragraph">BlueXPを使用したCloud Volumes ONTAPのアップグレードの詳細については、を参照してください<block ref="9777e426a24de9582e7ed3fdb1795e0a" category="inline-link-rx"></block>。</block>
   <block id="6908c55ed2597c0891f949ee4c49f1df" category="paragraph"><block ref="6908c55ed2597c0891f949ee4c49f1df" category="inline-link-rx"></block></block>
   <block id="2962158ebf7a34c626b48db40bc051ec" category="section-title">2023年6月2日</block>
   <block id="fa62285d299fafbecd9c02da5fa530c6" category="paragraph">新しいBlueXP移行レポートサービスでは、ストレージ環境のファイル、ディレクトリ、シンボリックリンク、ハードリンク、ファイルシステムツリーの深さと幅、大容量ファイルなどの数をすばやく特定できます。</block>
@@ -457,15 +414,7 @@
   <block id="4df3cde02df4d7a411534f5e0a1565bc" category="paragraph">Azureの東日本および韓国中部では、Cloud Volumes ONTAP 9.12.1 GA以降でHAマルチアベイラビリティゾーンの導入がサポートされるようになりました。</block>
   <block id="1453deb356953584c888fcae0040c1c6" category="inline-link">Azureのグローバルリージョンマップ</block>
   <block id="9e8ed8cdd45e3d9bd3f546720545d06a" category="paragraph">複数のアベイラビリティゾーンをサポートするすべてのリージョンのリストについては、を参照してください<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>。</block>
-  <block id="bdecbec2a6c25b03595e885ec64c0ea0" category="section-title">自律型ランサムウェア対策のサポート</block>
-  <block id="ede53fbba4985444af96fca9c3cc6371" category="paragraph">Cloud Volumes ONTAPでAutonomous Ransomware Protection（ARP）がサポートされるようになりました。ARPサポートは、Cloud Volumes ONTAPバージョン9.12.1以降で使用できます。</block>
-  <block id="533c17bbfdfb297420db9af0908070d6" category="inline-link">自律的なランサムウェア防御</block>
-  <block id="ca401b5672c0ad2688c93bc7bc20d2f4" category="paragraph">Cloud Volumes ONTAPを使用したARPの詳細については、を参照してください<block ref="9a5c0a514fb4b4b0c5abdde049600542" category="inline-link-rx"></block>。</block>
-  <block id="e6bab5933e86bee96753d8079fcceaed" category="section-title">2023年6月26日</block>
-  <block id="ba106db82d3577b52130dde5ddd372b4" category="section-title">Cloud Volumes ONTAP 9.13.1 RC1</block>
-  <block id="9bc26bf4259fc1662eaaa13a7534abb1" category="paragraph">BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.13.1を導入、管理できるようになりました。</block>
   <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP</block>
-  <block id="066405d152aeaf5c017e93048679ce43" category="paragraph"><block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block>。</block>
   <block id="11f4fef53a39b0e83d4fdb9f922e768e" category="section-title">My estateからクラスタを検出</block>
   <block id="4573c689742769edc01e3f45205fd784" category="paragraph">オンプレミスのONTAPクラスタを検出できるようになりました。これには、* Canvas &gt; My estate *から、BlueXPログインのEメールアドレスに関連付けられているONTAPクラスタに基づいてBlueXPが検出されたクラスタを選択します。</block>
   <block id="5a7621b5dce7d879d4fc86499c34c6e6" category="inline-link">クラスタを検出する方法については、[My estate]ページを参照してください</block>
@@ -544,4 +493,53 @@
   <block id="e7c3514a81618b80dab1e9591ba97368" category="paragraph">インターネットアクセスがないサイト（プライベートモード）とアウトバウンドのインターネットアクセスが制限されているサイト（制限モード）で、BlueXPの分類が完全にサポートされるようになりました。<block ref="7ee715aa70b4c6d819896ee955e59621" category="inline-link-rx"></block>。</block>
   <block id="8dd6a265487e54146fb2bdfb3e5174a5" category="section-title">BlueXP分類のプライベートモードインストールをアップグレードするときにバージョンをスキップする機能</block>
   <block id="241957d9f6c696915858d43476112454" category="paragraph">シーケンシャルでなくても、新しいバージョンのBlueXP分類にアップグレードできるようになりました。つまり、BlueXPの分類を1つのバージョンにアップグレードするという現行の制限は不要になりました。この機能は、バージョン1.24以降で該当します。</block>
+  <block id="9d5f9909bec8cf71910a31c50878914c" category="section-title">7月30日</block>
+  <block id="167693b239be0e2939d61376cd3a5487" category="section-title">コネクタ3.9.32</block>
+  <block id="7af14628b780746da1b2b7396f10a07e" category="list-text">BlueXP監査サービスAPIを使用して監査ログをエクスポートできるようになりました。</block>
+  <block id="f7cc7ff5799b515f0c19fb83e0dd5098" category="paragraph">監査サービスには、BlueXPサービスで実行された処理に関する情報が記録されます。これには、元のIPアドレス、ワークスペース、使用されているコネクタ、その他のテレメトリデータが含まれます。このデータを使用して、実行されたアクション、実行者、実行日時を確認できます。</block>
+  <block id="5a97fe4fe664c9e98d8ad88cdbf44d98" category="inline-link">監査サービスAPIの使用に関する詳細情報</block>
+  <block id="23822bdcf5039c31a637229d8ca51ffa" category="paragraph"><block ref="23822bdcf5039c31a637229d8ca51ffa" category="inline-link-rx"></block></block>
+  <block id="d00604985bd7a191952bde8a0cec39fd" category="paragraph">このリンクには、BlueXPのユーザインターフェイスの[Timeline]ページからもアクセスできます。</block>
+  <block id="1765dff10197df4bf080f41e5537f2a5" category="list-text">このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とオンプレミスONTAP クラスタの機能拡張も含まれています。</block>
+  <block id="23c565330e0f5d82619b18108f5a32ca" category="list-text"><block ref="23c565330e0f5d82619b18108f5a32ca" category="inline-link-rx"></block></block>
+  <block id="6ff2a7981cc8a7efd758e8ffec4cc69e" category="inline-link">ONTAP オンプレミスクラスタの機能拡張について説明します</block>
+  <block id="405527e38d3c42926031f86b50d381d4" category="list-text"><block ref="405527e38d3c42926031f86b50d381d4" category="inline-link-rx"></block></block>
+  <block id="c94e28d852ce517312825c9ed339fc1d" category="section-title">2023年7月30日</block>
+  <block id="4325a8ea9cec7ffa18f3ee74d15997fe" category="paragraph">コネクタの3.9.32リリースでは、次の変更が導入されました。</block>
+  <block id="7741410e87d6144c42e8ca73837c3707" category="section-title">Google CloudでFlash Cacheと高速書き込み速度をサポート</block>
+  <block id="4f90c73c3d52d1bd4329e9961707db5c" category="paragraph">Google Cloud for Cloud Volumes ONTAP 9.13.1以降では、Flash Cacheと高速書き込み速度を個別に有効にすることができます。高速の書き込み速度は、サポートされているすべてのインスタンスタイプで使用できます。Flash Cacheは、次のインスタンスタイプでサポートされています。</block>
+  <block id="79561dd1a4e00a3e05c0d892a01e77bf" category="list-text">N2-STANDARD-16</block>
+  <block id="8f66358785ed8f4d9a356630a4ee515c" category="list-text">N2-STANDARD-32</block>
+  <block id="33031b274bf5d81fbfbd69c1f2ea39a2" category="list-text">N2-STANDARD-48</block>
+  <block id="7c347fcea29ffaea485ee6128a9d7a06" category="list-text">N2-STANDARD-64</block>
+  <block id="0891ba6a1f7a37c01cb3698c692751bc" category="paragraph">これらの機能は、シングルノード環境とハイアベイラビリティペア環境の両方で個別に使用することも、一緒に使用することもできます。</block>
+  <block id="5195e4b472b1871018c47fface61dc40" category="inline-link-macro">Google CloudでCloud Volumes ONTAP を起動します</block>
+  <block id="1e69916eaa563a1da0ccff3715e2342d" category="paragraph"><block ref="1e69916eaa563a1da0ccff3715e2342d" category="inline-link-macro-rx"></block></block>
+  <block id="ee4272223579f1299444d14f2d185eb5" category="section-title">使用状況レポートの機能拡張</block>
+  <block id="ec123c8f161f9dfe4383b8db1d8883c4" category="paragraph">使用状況レポートに表示される情報に対するさまざまな改善が利用可能になりました。使用状況レポートの機能拡張は次のとおりです。</block>
+  <block id="4c63050f1e33aa32db50cc80b682e805" category="list-text">TiB単位が列名に追加されました。</block>
+  <block id="fc7fa4a44c2c9442201bf8725e6237b7" category="list-text">シリアル番号の新しい「ノード」フィールドが追加されました。</block>
+  <block id="68d761e353cd9d529997fa49bfe51f92" category="list-text">[Storage VMs]使用状況レポートに新しい[Workload Type]列が追加されました。</block>
+  <block id="26f51c309f5237522421f24bf4df04e0" category="list-text">作業環境の名前がStorage VMとボリュームの使用状況レポートに表示されるようになりました。</block>
+  <block id="fa3abcbc43662c93139af3f3f6421a6f" category="list-text">ボリュームタイプ「file」のラベルが「Primary（Read/Write）」に変更されました。</block>
+  <block id="b259e22e76e27ad956b503941804b4c6" category="list-text">ボリュームタイプ「secondary」のラベルが「Secondary（DP）」に変更されました。</block>
+  <block id="37532cd27e3c53471b1caed0ba1f90ed" category="inline-link-macro">使用状況レポートをダウンロードします</block>
+  <block id="a8c4bf4701c4d99d778be1176c8c8616" category="paragraph">使用状況レポートの詳細については、を参照してください。 <block ref="b9c4007084372a89d5df93919658aa73" category="inline-link-macro-rx"></block>。</block>
+  <block id="8ccf37f65f5b32ae30e20faafe7dd9ba" category="section-title">2023年7月26日</block>
+  <block id="eccfb2b7d21b722b7e6659bf39e0f295" category="section-title">Cloud Volumes ONTAP 9.13.1 GA</block>
+  <block id="64118c9781a8b98caa35463a68a24220" category="paragraph">BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.13.1 General Availabilityリリースを導入、管理できるようになりました。</block>
+  <block id="c2282365523aa8fbb305c5432e90d5d7" category="paragraph"><block ref="6f9b2ccd962907ef2c43f6fa9517a053" category="inline-link-macro-rx"></block>。</block>
+  <block id="c1ab40aac4724ff5a3b9540c19eed579" category="paragraph">Cloud Volumes ONTAP使用状況レポートにいくつかの改善点が追加されました。</block>
+  <block id="c352c835cf612ee328fb7dba772bce4d" category="list-text">シリアル番号の新しい_node_fieldが追加されました。</block>
+  <block id="f949b800c66bf942c10c1e2b5847f5cf" category="list-text">[Storage VMs]使用状況レポートに新しい_Workload Type_columnが追加されました。</block>
+  <block id="9f02e3f417792785e27aead6a388ce7b" category="list-text">作業環境の名前がStorage VMとボリュームの使用状況レポートに表示されるようになりました。</block>
+  <block id="001f2392fde5e9977a349af817fa07e9" category="list-text">ボリュームタイプ_file_に_Primary（Read/Write）_というラベルが付けられます。</block>
+  <block id="af30dca925032347d49fd49d710f0164" category="list-text">ボリュームタイプ_secondary_のラベルが_secondary（DP）_に変更されました。</block>
+  <block id="7cc7b7a6d80d31d0e4806abd9de3d8f3" category="paragraph">使用状況レポートの詳細については、を参照してください。<block ref="a7d17f594b62c1bde4179fc580d7da6f" category="inline-link-rx"></block>。</block>
+  <block id="87377698a8dca305b9579a13060142f2" category="section-title">FlexGroup ボリュームを作成します</block>
+  <block id="14b044746cb87538e696ebd7cef86e8f" category="paragraph">コネクタでクラスタを管理している場合は、BlueXP APIを使用してFlexGroupボリュームを作成できるようになりました。</block>
+  <block id="ca513b668252beaae65808764fc2388f" category="inline-link">FlexGroupボリュームを作成する方法</block>
+  <block id="dfc9f0f0920c102b079fd1c513fccdde" category="list-text"><block ref="dfc9f0f0920c102b079fd1c513fccdde" category="inline-link-rx"></block></block>
+  <block id="bbcffd6476036994102e5ec1c5571f64" category="inline-link">FlexGroupボリュームとは</block>
+  <block id="a33a2b4a40f0a01a71b97f709ac14074" category="list-text"><block ref="a33a2b4a40f0a01a71b97f709ac14074" category="inline-link-rx"></block></block>
 </blocks>
