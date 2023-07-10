@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, cloud manager, bluexp' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, cloud manager, bluexp, google cloud' 
 summary: BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します詳細については、各サービスのすべてのリリースノートを参照してください。 
 ---
 = BlueXPの最近の変更点
@@ -672,6 +672,32 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 2023年7月9日
+
+
+
+==== 複数の同期関係を一度に削除
+
+ユーザがUIで一度に複数の同期関係を削除できるようになりました。
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-relationships.html#deleting-relationships["同期関係の削除の詳細については、こちらを参照してください。"]
+
+
+
+==== ACLのみをコピーします
+
+CIF関係とNFS関係のACL情報をコピーするためのオプションが追加されました。同期関係を作成または管理する場合は、ファイルのみをコピー、ACL情報のみをコピー、ファイルとACL情報をコピーできます。
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-copying-acls.html["ACLのコピーの詳細については、こちらをご覧ください。"]
+
+
+
+==== Node.js 20に更新
+
+コピーと同期がNode.js 20に更新されました。使用可能なすべてのデータブローカーが更新されます。この更新プログラムと互換性のないオペレーティングシステムはインストールできません。互換性のない既存のシステムではパフォーマンスの問題が発生する可能性があります。
+
+
+
 === 2023年6月11日
 
 
@@ -723,32 +749,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 RESTful APIを使用するユーザは、関係IDを使用して関係をフィルタできるようになりました。
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/api-sync.html["BlueXPのコピーと同期でRESTful APIを使用する方法の詳細については、こちらをご覧ください"]。
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["[ディレクトリを除外する]設定の詳細については、こちらを参照してください"]。
-
-
-
-=== 2023年4月2日
-
-
-
-==== Azure Data Lake Storage Gen2関係のサポートが追加されました
-
-Azure Data Lake Storage Gen2をソースおよびターゲットとして使用し、以下を使用して同期関係を作成できるようになりました。
-
-* Azure NetApp Files の特長
-* ONTAP 対応の Amazon FSX
-* Cloud Volumes ONTAP
-* On-Prem ONTAP の略
-
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/reference-supported-relationships.html["サポートされている同期関係の詳細を確認できます"]。
-
-
-
-==== 完全パスでディレクトリをフィルタリングします
-
-ディレクトリを名前でフィルタリングするだけでなく、完全パスでディレクトリをフィルタリングできるようになりました。
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["[ディレクトリを除外する]設定の詳細については、こちらを参照してください"]。
 
@@ -943,6 +943,20 @@ https://cloud.netapp.com/cloud-insights["Cloud Insights の詳細については
 
 
 ==== OptimusのEdge Sync UIが強化され、接続されているクライアントのリストがコーディネータEdgeに表示されるようになりました
+
+
+
+== Google クラウドストレージ
+
+
+
+=== 2023年7月10日
+
+
+
+==== BlueXPから新しいバケットを追加したり、既存のバケットを管理したりできます
+
+BlueXPキャンバスでGoogle Cloud Storageのバケットを表示できるようになりました。BlueXPから直接、新しいバケットを追加したり、既存のバケットのプロパティを変更したりできるようになりました。 https://docs.netapp.com/us-en/bluexp-google-cloud-storage/task-add-gcp-bucket.html["新しいGoogle Cloud Storageバケットを追加する方法をご覧ください"^]。
 
 
 

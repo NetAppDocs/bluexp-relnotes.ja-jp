@@ -123,7 +123,6 @@
   <block id="ed8f5e7e321372398aae23788c3243a0" category="sidebar">BlueXPインデックス</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">BlueXPのすべてのマニュアル</block>
   <block id="88268cce7d1b83c765c3f7010df80df5" category="section-title">2022年11月6日</block>
-  <block id="c7360b05ac6a5646b2770ea0c162d4fb" category="inline-link">サポートされている同期関係の詳細を確認できます</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXPのブログ</block>
   <block id="e1bc7b26155063f1ce71b76f655669ef" category="section-title">2023年2月5日</block>
   <block id="de7ceda1f3ad5462ebeba9b4e49bf946" category="section-title">ビジネスクリティカルとみなすデータを識別するポリシーを定義する機能</block>
@@ -173,12 +172,6 @@
   <block id="efc0c4f71709b261c273fb935757cfae" category="section-title">運用の耐障害性</block>
   <block id="7907a1fccb5b8aa9b8df8283d3705052" category="list-text"><block ref="7907a1fccb5b8aa9b8df8283d3705052" category="inline-link-rx"></block></block>
   <block id="92900172340dbf6ba4b3454580c7583b" category="list-text"><block ref="92900172340dbf6ba4b3454580c7583b" category="inline-link-rx"></block></block>
-  <block id="c7326baf2ea51b61fafa4f4680d916c0" category="section-title">2023年4月2日</block>
-  <block id="9c305cf5f9f8051acc945eda0fc8a1be" category="section-title">Azure Data Lake Storage Gen2関係のサポートが追加されました</block>
-  <block id="61babc330ca2ea0af752965dd3965d41" category="paragraph">Azure Data Lake Storage Gen2をソースおよびターゲットとして使用し、以下を使用して同期関係を作成できるようになりました。</block>
-  <block id="a37b0a91d7c4d8ac6ce924a7f8e1ce5a" category="list-text">On-Prem ONTAP の略</block>
-  <block id="ad5a82acd30f0d971a29fdb4632bd7d4" category="section-title">完全パスでディレクトリをフィルタリングします</block>
-  <block id="b7395f4da221ab7779cce11224436fb3" category="paragraph">ディレクトリを名前でフィルタリングするだけでなく、完全パスでディレクトリをフィルタリングできるようになりました。</block>
   <block id="d1624b8f3b686e981a178c03616a370b" category="inline-link">[ディレクトリを除外する]設定の詳細については、こちらを参照してください</block>
   <block id="207aaa44f72ba634c18fcc9bae44d655" category="inline-link">アカウントの使用済み容量を表示する方法について説明します</block>
   <block id="7786076739da628161f45de338cd6e69" category="inline-link-macro">Astra Tridentをアンインストールします</block>
@@ -361,7 +354,6 @@
   <block id="5b1faa5c627185bd8774ba759dbbcf1d" category="paragraph"><block ref="528a28b28e8f5d9df665a229e7a7fa63" category="inline-link-rx"></block>。</block>
   <block id="ce907128271b3f13161731af69efdb83" category="paragraph"><block ref="7d45213b584f83e1010772ef58d497ad" category="inline-link-rx"></block>。</block>
   <block id="791d072486b9f4524702996962f5cb1d" category="paragraph"><block ref="525fcee9e0cdf0ea236cb2377cb58f7b" category="inline-link-rx"></block>。</block>
-  <block id="4e0e0be812e0732ff08c371803f4157c" category="paragraph"><block ref="aabef2d7a8f8ee536d1fe9fe0f22b561" category="inline-link-rx"></block>。</block>
   <block id="10dc1eee3d75610cc244de50455508d3" category="paragraph">このリリースでは、以下に示す新機能が提供されます。また、に記載されている問題も修正されています<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>。更新されたソフトウェアパッケージは、から入手できます<block ref="89fd140dfa15c4587519958830d6000f" category="inline-link-rx"></block>。</block>
   <block id="77474efd411b7748abfa1c88a3e0137c" category="paragraph"><block ref="77474efd411b7748abfa1c88a3e0137c" category="inline-link-rx"></block></block>
   <block id="975b3327995267bde41cd6b4ce0c772d" category="paragraph">このリリースでは、以下に示す新機能が提供されます。また、に記載されている問題も修正されています<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>。</block>
@@ -546,4 +538,21 @@
   <block id="098acc7a6e2aef2e0ffd66cabdde369e" category="section-title">オブジェクトストレージへのバックアップ用バケットを作成できるようになりました</block>
   <block id="7882c4532e24f1cac41cc043cde436b7" category="paragraph">オブジェクトストレージにバックアップファイルを作成すると、デフォルトでは、バックアップおよびリカバリサービスによってオブジェクトストレージにバケットが作成されます。特定の名前を使用したり、特殊なプロパティを割り当てたりする場合は、バケットを自分で作成できます。独自のバケットを作成する場合は、アクティブ化ウィザードを開始する前にバケットを作成する必要があります。</block>
   <block id="ea600ff03360da539b9cf2f109798fac" category="paragraph">この機能は、StorageGRIDシステムにバックアップファイルを作成する場合は現在サポートされていません。</block>
+  <block id="833c2c211a541e50ad94433664e4b5c1" category="inline-link">Google クラウドストレージ</block>
+  <block id="68269a7fe7304a0e7d5a0232d5e7141b" category="list-text"><block ref="68269a7fe7304a0e7d5a0232d5e7141b" category="inline-link-rx"></block></block>
+  <block id="744c3e2d9eefd2af0d741a4bdf013531" category="section-title">2023年7月9日</block>
+  <block id="0d31f76acc0f0585c0ce6603aae95bf9" category="section-title">複数の同期関係を一度に削除</block>
+  <block id="86f4ab992201dfe7e7a91d9236676ea1" category="paragraph">ユーザがUIで一度に複数の同期関係を削除できるようになりました。</block>
+  <block id="f56872f7cec9149a7ac802d7a22773f7" category="inline-link">同期関係の削除の詳細については、こちらを参照してください。</block>
+  <block id="8841a5cc4fff05bb6e2a277bb234a5e9" category="paragraph"><block ref="8841a5cc4fff05bb6e2a277bb234a5e9" category="inline-link-rx"></block></block>
+  <block id="0bf8da16e84dc021192c3cce07860470" category="section-title">ACLのみをコピーします</block>
+  <block id="dda93ca03de99accfa039adc8007a91c" category="paragraph">CIF関係とNFS関係のACL情報をコピーするためのオプションが追加されました。同期関係を作成または管理する場合は、ファイルのみをコピー、ACL情報のみをコピー、ファイルとACL情報をコピーできます。</block>
+  <block id="75188372815d8c81aa145bb6bd881697" category="inline-link">ACLのコピーの詳細については、こちらをご覧ください。</block>
+  <block id="f14be32be1b0e46b478529e782afc130" category="paragraph"><block ref="f14be32be1b0e46b478529e782afc130" category="inline-link-rx"></block></block>
+  <block id="c3605c10e6753f736b31bbe56975b312" category="section-title">Node.js 20に更新</block>
+  <block id="62ace2991e0846010d9d30c14cb37645" category="paragraph">コピーと同期がNode.js 20に更新されました。使用可能なすべてのデータブローカーが更新されます。この更新プログラムと互換性のないオペレーティングシステムはインストールできません。互換性のない既存のシステムではパフォーマンスの問題が発生する可能性があります。</block>
+  <block id="145634d473d937448dc7bdb5a6797ea7" category="section-title">2023年7月10日</block>
+  <block id="5a6d96b9a020e520981bf7fe4c7af203" category="section-title">BlueXPから新しいバケットを追加したり、既存のバケットを管理したりできます</block>
+  <block id="2706c3785e1f78099c28d555600c918b" category="inline-link">新しいGoogle Cloud Storageバケットを追加する方法をご覧ください</block>
+  <block id="71d86d6b260e92b047d7453cd653bd4c" category="paragraph">BlueXPキャンバスでGoogle Cloud Storageのバケットを表示できるようになりました。BlueXPから直接、新しいバケットを追加したり、既存のバケットのプロパティを変更したりできるようになりました。<block ref="df1f25cc6ac4c2f26feeca1367b4ae92" category="inline-link-rx"></block>。</block>
 </blocks>
