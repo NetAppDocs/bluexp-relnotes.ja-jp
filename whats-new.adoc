@@ -287,9 +287,9 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 
 
 
-==== オブジェクトストレージへのバックアップ用バケットを作成できるようになりました
+==== オブジェクトストレージにバックアップするためのストレージコンテナを作成できます
 
-オブジェクトストレージにバックアップファイルを作成すると、デフォルトでは、バックアップおよびリカバリサービスによってオブジェクトストレージにバケットが作成されます。特定の名前を使用したり、特殊なプロパティを割り当てたりする場合は、バケットを自分で作成できます。独自のバケットを作成する場合は、アクティブ化ウィザードを開始する前にバケットを作成する必要があります。
+オブジェクトストレージにバックアップファイルを作成すると、デフォルトでは、バックアップおよびリカバリサービスによってオブジェクトストレージにバケットが作成されます。特定の名前を使用したり、特殊なプロパティを割り当てたりする場合は、バケットを自分で作成できます。独自のバケットを作成する場合は、アクティブ化ウィザードを開始する前にバケットを作成する必要があります。 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#do-you-want-to-create-your-own-object-storage-container["オブジェクトストレージバケットの作成方法について説明します"]。
 
 この機能は、StorageGRIDシステムにバックアップファイルを作成する場合は現在サポートされていません。
 
@@ -405,6 +405,40 @@ ONTAP 9.13.1以降を実行しているオンプレミスのONTAP システム�
 
 
 
+=== 2023年7月17日（バージョン1.24）
+
+
+
+==== BlueXPの分類では、ドイツの2つの新しいタイプの個人データが特定されています。
+
+BlueXPの分類では、次のタイプのデータを含むファイルを特定して分類できます。
+
+* ドイツ語ID（Personalausweisnummer）
+* ドイツ社会保障番号（Sozialversicherungsnummer）
+
+
+https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["BlueXPの分類によってデータから特定できるすべてのタイプの個人データを確認できます"]。
+
+
+
+==== Rocky Linux 9がサポート対象のLinuxディストリビューションになり、BlueXP分類をインストールできるようになりました。
+
+Rocky Linux 9（9.0、9.1、9.2）は、BlueXPのサポート対象オペレーティングシステムとして認定されています。BlueXPの分類は、ネットワーク内のRocky Linuxホストにインストールすることも、バージョン1.24のインストーラを使用している場合はクラウド内のLinuxホストにインストールすることもできます。 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["Rocky LinuxがインストールされているホストにBlueXP分類をインストールする方法を確認"]。
+
+
+
+==== BlueXPの分類は制限モードとプライベートモードで完全にサポートされています。
+
+インターネットアクセスがないサイト（プライベートモード）とアウトバウンドのインターネットアクセスが制限されているサイト（制限モード）で、BlueXPの分類が完全にサポートされるようになりました。 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["コネクタのBlueXP導入モードの詳細"^]。
+
+
+
+==== BlueXP分類のプライベートモードインストールをアップグレードするときにバージョンをスキップする機能
+
+シーケンシャルでなくても、新しいバージョンのBlueXP分類にアップグレードできるようになりました。つまり、BlueXPの分類を1つのバージョンにアップグレードするという現行の制限は不要になりました。この機能は、バージョン1.24以降で該当します。
+
+
+
 === 2023年6月6日（バージョン1.23）
 
 
@@ -458,65 +492,6 @@ AWS環境のBlueXP ConnectorからBlueXPの分類を導入する際に、デフ�
 ==== BlueXPの分類をインストールする前に、スタンドアロンスクリプトを使用してLinuxシステムを認定できるようになりました
 
 BlueXP分類インストールとは別に、Linuxシステムがすべての前提条件を満たしていることを確認する場合は、前提条件のみをテストするスクリプトをダウンロードできます。 https://docs.netapp.com/us-en/bluexp-classification/task-test-linux-system.html["LinuxホストでBlueXPのインストール準備が完了しているかどうかを確認する方法を説明します"]。
-
-
-
-=== 2023年3月7日（バージョン1.21）
-
-
-
-==== BlueXPの分類UIから独自のカスタムカテゴリを追加する新機能
-
-BlueXPの分類で独自のカスタムカテゴリを追加できるようになりました。これにより、それらのカテゴリに該当するファイルがBlueXPの分類で識別されます。BlueXPには多くの種類があります https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-categories["事前定義されたカテゴリ"]そのため、この機能を使用すると、カスタムカテゴリを追加して、組織固有の情報がデータ内のどこにあるかを特定できます。
-
-https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html#add-custom-categories["詳細はこちら。"^]。
-
-
-
-==== BlueXPの分類UIからカスタムキーワードを追加できるようになりました
-
-BlueXPの分類では、今後のスキャンでBlueXPの分類によって特定されるカスタムキーワードを追加できます。ただし、BlueXP分類Linuxホストにログインし、コマンドラインインターフェイスを使用してキーワードを追加する必要がありました。今回のリリースでは、BlueXPの分類UIでカスタムキーワードを追加できるようになり、キーワードの追加や編集が非常に簡単になりました。
-
-https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html#add-custom-keywords-from-a-list-of-words["BlueXPの分類UIからカスタムキーワードを追加する方法については、こちらをご覧ください"^]。
-
-
-
-==== 「最終アクセス時間」が変更されるときに、BlueXPの分類*がファイルをスキャンすることはできません
-
-デフォルトでは、BlueXPの分類に適切な「書き込み」権限がないと、BlueXPの分類では「最終アクセス時間」を元のタイムスタンプに戻すことができないため、ボリューム内のファイルはスキャンされません。ただし、最終アクセス時刻がファイルの元の時刻にリセットされていてもかまわない場合は、[設定]ページでこの動作を無効にして、権限に関係なくBlueXPの分類でボリュームがスキャンされるようにすることができます。
-
-この機能と併せて、「Scan Analysis Event」という新しいフィルタが追加され、BlueXPの分類で最終アクセス時刻を元に戻すことができなかったために分類されなかったファイルや、BlueXPの分類で最終アクセス時刻を元に戻すことができなかったにもかかわらず分類されたファイルを表示できるようになりました。
-
-https://docs.netapp.com/us-en/bluexp-classification/reference-collected-metadata.html#last-access-time-timestamp["「最終アクセス時間のタイムスタンプ」とBlueXPの分類に必要な権限について詳しくは、こちらをご覧ください"]。
-
-
-
-==== BlueXPは、3つの新しいタイプの個人データを分類しています
-
-BlueXPの分類では、次のタイプのデータを含むファイルを特定して分類できます。
-
-* ボツワナIDカード（Omang）番号
-* ボツワナパスポート番号
-* シンガポール国民登録IDカード（NRIC）
-
-
-https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["BlueXPの分類によってデータから特定できるすべてのタイプの個人データを確認できます"]。
-
-
-
-==== ディレクトリの機能が更新されました
-
-* データ調査レポートの[Light CSV Report]オプションに、ディレクトリからの情報が含まれるようになりました。
-* [Last Accessed]時間フィルタに、ファイルとディレクトリの両方の最終アクセス時刻が表示されるようになりました。
-
-
-
-
-==== インストールの機能拡張
-
-* インターネットアクセスがないサイト（ダークサイト）用のBlueXP分類インストーラで、インストールを成功させるためにシステムとネットワークの要件が満たされていることを確認するための事前チェックが実行されるようになりました。
-* インストール監査ログファイルは保存され、に書き込まれます `/ops/netapp/install_logs`。
-
 
 
 

@@ -136,16 +136,6 @@
   <block id="b92f2131d3d225c3c3327daaa8862624" category="section-title">ボリュームの階層化レポートを生成できるようになりました</block>
   <block id="f86857f0a51fde5819da3a17258b5448" category="inline-link">階層化レポートのダウンロード方法をご覧ください</block>
   <block id="ed9855757b31d516a4fa8f955edec2eb" category="list-text">BlueXPのKubernetesでAstra Trident 23.01がサポートされるようになりました。</block>
-  <block id="916fe80558e430806f51297666a415c2" category="section-title">2023年3月7日（バージョン1.21）</block>
-  <block id="19c8ed5c1b936813e368bc7d83dbccf2" category="inline-link">事前定義されたカテゴリ</block>
-  <block id="e47ea30e34a3a076c6a7779b8a54db7c" category="list-text">ボツワナIDカード（Omang）番号</block>
-  <block id="2d3ad991cc78b072cf48ad8db3fb43e0" category="list-text">ボツワナパスポート番号</block>
-  <block id="ff3bab043a00af2e37e7dcaf393aea61" category="list-text">シンガポール国民登録IDカード（NRIC）</block>
-  <block id="c750c2392e2683a70ab7309253a1954b" category="section-title">ディレクトリの機能が更新されました</block>
-  <block id="179219a43ca594b98a13e70b7ebc112a" category="list-text">データ調査レポートの[Light CSV Report]オプションに、ディレクトリからの情報が含まれるようになりました。</block>
-  <block id="b2755be94249995adeed2a28b31a7393" category="list-text">[Last Accessed]時間フィルタに、ファイルとディレクトリの両方の最終アクセス時刻が表示されるようになりました。</block>
-  <block id="013efea19f002683e016d90789038d6e" category="section-title">インストールの機能拡張</block>
-  <block id="64abb83963bf9db8126f2ee52cdc0390" category="list-text">インストール監査ログファイルは保存され、に書き込まれます<block ref="2f5e01665193c4e95e37ac69411567bb" prefix=" " category="inline-code"></block>。</block>
   <block id="4b10c384bd11c38afbbe24f979f5519d" category="section-title">2023年3月7日</block>
   <block id="b20988b483bceb3fb63077025a07d023" category="section-title">攻撃からシステムをリカバリするための新しいRansomware Recovery Dashboardが追加されました</block>
   <block id="d79294e72dc3584cc12c98a7a931315d" category="inline-link">Amazon S3ストレージ</block>
@@ -218,18 +208,8 @@
   <block id="21db17f88f41dcd13f48cc90aced1d74" category="section-title">クラウド内の小規模インスタンスにBlueXPの分類機能を導入できます</block>
   <block id="cb608d54d750eeb9d266241b5a1d63c7" category="section-title">BlueXPの分類をインストールする前に、スタンドアロンスクリプトを使用してLinuxシステムを認定できるようになりました</block>
   <block id="e75f898f4dbad5388881095e9582c693" category="inline-link">LinuxホストでBlueXPのインストール準備が完了しているかどうかを確認する方法を説明します</block>
-  <block id="b4602fb47c1d6ee0427e2682d3a0ca06" category="section-title">BlueXPの分類UIから独自のカスタムカテゴリを追加する新機能</block>
-  <block id="bca8069b731ea966c03da0cea318f9d1" category="section-title">BlueXPの分類UIからカスタムキーワードを追加できるようになりました</block>
-  <block id="c9383e3b8d4c0ef8e217c6982644630b" category="paragraph">BlueXPの分類では、今後のスキャンでBlueXPの分類によって特定されるカスタムキーワードを追加できます。ただし、BlueXP分類Linuxホストにログインし、コマンドラインインターフェイスを使用してキーワードを追加する必要がありました。今回のリリースでは、BlueXPの分類UIでカスタムキーワードを追加できるようになり、キーワードの追加や編集が非常に簡単になりました。</block>
-  <block id="bb81f229fc6d121a288d657aea60262e" category="inline-link">BlueXPの分類UIからカスタムキーワードを追加する方法については、こちらをご覧ください</block>
-  <block id="7e5ec3b51659d16db2e72438a8ca680a" category="section-title">「最終アクセス時間」が変更されるときに、BlueXPの分類*がファイルをスキャンすることはできません</block>
-  <block id="f9bee7a7e545f0d95664d3ccaa7b7151" category="paragraph">デフォルトでは、BlueXPの分類に適切な「書き込み」権限がないと、BlueXPの分類では「最終アクセス時間」を元のタイムスタンプに戻すことができないため、ボリューム内のファイルはスキャンされません。ただし、最終アクセス時刻がファイルの元の時刻にリセットされていてもかまわない場合は、[設定]ページでこの動作を無効にして、権限に関係なくBlueXPの分類でボリュームがスキャンされるようにすることができます。</block>
-  <block id="61d99226273ea30523883fe7209399c2" category="paragraph">この機能と併せて、「Scan Analysis Event」という新しいフィルタが追加され、BlueXPの分類で最終アクセス時刻を元に戻すことができなかったために分類されなかったファイルや、BlueXPの分類で最終アクセス時刻を元に戻すことができなかったにもかかわらず分類されたファイルを表示できるようになりました。</block>
-  <block id="bf8521a1bd91dd809d1d007594f22498" category="inline-link">「最終アクセス時間のタイムスタンプ」とBlueXPの分類に必要な権限について詳しくは、こちらをご覧ください</block>
-  <block id="9422d01ffeaf90b54d512834d7e52972" category="section-title">BlueXPは、3つの新しいタイプの個人データを分類しています</block>
   <block id="9fee27139efd09e005728f7dbfa349f2" category="paragraph">BlueXPの分類では、次のタイプのデータを含むファイルを特定して分類できます。</block>
   <block id="22b67d0a50677e01d48389e716223457" category="inline-link">BlueXPの分類によってデータから特定できるすべてのタイプの個人データを確認できます</block>
-  <block id="27bfd524829d2f58c611b9380403face" category="list-text">インターネットアクセスがないサイト（ダークサイト）用のBlueXP分類インストーラで、インストールを成功させるためにシステムとネットワークの要件が満たされていることを確認するための事前チェックが実行されるようになりました。</block>
   <block id="3d2e7e90fac12bab6a0d0736a593b5b4" category="section-title">デジタルアドバイザ</block>
   <block id="fd31042d52571c6f22cae041d72fc4dd" category="paragraph">Digital Advisor（旧称Active IQ ）がBlueXPに完全に統合され、ログインエクスペリエンスが強化されました。</block>
   <block id="bde16c93c046fa9870a736978717607f" category="paragraph">BlueXP Digital Advisorにアクセスすると、システムに関連するデータを表示できるように、NetApp Support Site クレデンシャルの入力を求められます。ログイン時に使用するNSSアカウントは、ユーザログイン時のみに関連付けられます。ネットアップアカウントの他のユーザには関連付けられません。</block>
@@ -342,10 +322,6 @@
   <block id="4da25d5e326dac4c0bb3865e69dd3325" category="paragraph">Data Discovery Assessment Reportでは、スキャンされた環境の概要を分析して、システムの調査結果を強調し、懸念領域と潜在的な修復手順を示します。このレポートの目的は、データガバナンスの懸念、データセキュリティの危険性、データセットのデータコンプライアンスギャップに対する認識を高めることです。<block ref="34e879e713683b8352bb56b59c6078e2" category="inline-link-rx"></block>。</block>
   <block id="38e8bfeb390cec6e72d97323084e18cc" category="paragraph">AWS環境のBlueXP ConnectorからBlueXPの分類を導入する際に、デフォルトのインスタンスよりも小さい2つのインスタンスタイプから選択できるようになりました。小規模な環境をスキャンする場合は、クラウドコストを節約できます。ただし、小さいインスタンスを使用する場合はいくつかの制限があります。<block ref="d8ef680ce45b86e2a6afe2805a7e5562" category="inline-link-rx"></block>。</block>
   <block id="46b0a8862a90d05f4f40bbcda2473af4" category="paragraph">BlueXP分類インストールとは別に、Linuxシステムがすべての前提条件を満たしていることを確認する場合は、前提条件のみをテストするスクリプトをダウンロードできます。<block ref="f7ad1b05082bb59227795c56a02d9b78" category="inline-link-rx"></block>。</block>
-  <block id="75e47d62ba360614f8cdea86c229c321" category="paragraph">BlueXPの分類で独自のカスタムカテゴリを追加できるようになりました。これにより、それらのカテゴリに該当するファイルがBlueXPの分類で識別されます。BlueXPには多くの種類があります<block ref="7587255274ad12f237a14fbd5f47a14a" category="inline-link-rx"></block>そのため、この機能を使用すると、カスタムカテゴリを追加して、組織固有の情報がデータ内のどこにあるかを特定できます。</block>
-  <block id="740f66f04097135a7846557949061bf8" category="paragraph"><block ref="e14cfeac39419a4a8a842fd3611a27db" category="inline-link-rx"></block>。</block>
-  <block id="8f031c80211d08a2fc3d24c73c826e4b" category="paragraph"><block ref="d597807e5ef4bec605cdd823cfc707e7" category="inline-link-rx"></block>。</block>
-  <block id="b81005c38cb0963c694c4f17fdffdda5" category="paragraph"><block ref="6a34fff85e918ca0361628bb33e44cc4" category="inline-link-rx"></block>。</block>
   <block id="7e1e73ad7e6d01345f57dc84d7cd2c47" category="paragraph"><block ref="8ab3022f8d373945c172f9e89b554e84" category="inline-link-rx"></block>。</block>
   <block id="06765567af68358bde181ef7ae8a31b0" category="paragraph">詳細については、を参照してください <block ref="5aa81dcb1871cc4d565005ce5abe331d" category="inline-link-macro-rx"></block>。</block>
   <block id="9cb4f066718ada1a845659033318004c" category="paragraph"><block ref="19c68668f7d6a95b64e909c5da1cb9b0" category="inline-link-rx"></block>。</block>
@@ -535,8 +511,6 @@
   <block id="fb74ece6972051de48e476af9e1e3b61" category="list-text">[* Volumes （ボリューム） ] タブで、 [* Backup Settings （バックアップ設定） ] を選択します。</block>
   <block id="cbce457a0f1d693a7ec8fdef080284e8" category="list-text">[_Backup Settings]ページで、*[Display the previous BlueXP backup and recovery version]*のラジオボタンをクリックします。</block>
   <block id="6ad80584a8fba3d1fc876fd412e2b184" category="paragraph">その後、以前のバージョンのソフトウェアを使用して古いクラスタを管理できます。</block>
-  <block id="098acc7a6e2aef2e0ffd66cabdde369e" category="section-title">オブジェクトストレージへのバックアップ用バケットを作成できるようになりました</block>
-  <block id="7882c4532e24f1cac41cc043cde436b7" category="paragraph">オブジェクトストレージにバックアップファイルを作成すると、デフォルトでは、バックアップおよびリカバリサービスによってオブジェクトストレージにバケットが作成されます。特定の名前を使用したり、特殊なプロパティを割り当てたりする場合は、バケットを自分で作成できます。独自のバケットを作成する場合は、アクティブ化ウィザードを開始する前にバケットを作成する必要があります。</block>
   <block id="ea600ff03360da539b9cf2f109798fac" category="paragraph">この機能は、StorageGRIDシステムにバックアップファイルを作成する場合は現在サポートされていません。</block>
   <block id="833c2c211a541e50ad94433664e4b5c1" category="inline-link">Google クラウドストレージ</block>
   <block id="68269a7fe7304a0e7d5a0232d5e7141b" category="list-text"><block ref="68269a7fe7304a0e7d5a0232d5e7141b" category="inline-link-rx"></block></block>
@@ -555,4 +529,19 @@
   <block id="5a6d96b9a020e520981bf7fe4c7af203" category="section-title">BlueXPから新しいバケットを追加したり、既存のバケットを管理したりできます</block>
   <block id="2706c3785e1f78099c28d555600c918b" category="inline-link">新しいGoogle Cloud Storageバケットを追加する方法をご覧ください</block>
   <block id="71d86d6b260e92b047d7453cd653bd4c" category="paragraph">BlueXPキャンバスでGoogle Cloud Storageのバケットを表示できるようになりました。BlueXPから直接、新しいバケットを追加したり、既存のバケットのプロパティを変更したりできるようになりました。<block ref="df1f25cc6ac4c2f26feeca1367b4ae92" category="inline-link-rx"></block>。</block>
+  <block id="e2f760131280f3fd361a50b428c7b92d" category="section-title">オブジェクトストレージにバックアップするためのストレージコンテナを作成できます</block>
+  <block id="414c40dd827c6738286ee0b333e39456" category="inline-link">オブジェクトストレージバケットの作成方法について説明します</block>
+  <block id="debda728f2e9b255111b127aed9dc8fd" category="paragraph">オブジェクトストレージにバックアップファイルを作成すると、デフォルトでは、バックアップおよびリカバリサービスによってオブジェクトストレージにバケットが作成されます。特定の名前を使用したり、特殊なプロパティを割り当てたりする場合は、バケットを自分で作成できます。独自のバケットを作成する場合は、アクティブ化ウィザードを開始する前にバケットを作成する必要があります。<block ref="2d2a00fa0eeaa888f8c689ec67e16ffe" category="inline-link-rx"></block>。</block>
+  <block id="0494d69152dc144f6691315fabf9af4d" category="section-title">2023年7月17日（バージョン1.24）</block>
+  <block id="025b17159c4d2dd28926bdc5b13436e2" category="section-title">BlueXPの分類では、ドイツの2つの新しいタイプの個人データが特定されています。</block>
+  <block id="e2f64dc02ab3f9d3b659d24b9503b545" category="list-text">ドイツ語ID（Personalausweisnummer）</block>
+  <block id="ac01084f4d5a1af5de639eaf04ad94ff" category="list-text">ドイツ社会保障番号（Sozialversicherungsnummer）</block>
+  <block id="f6731e0bd9f7a8a40f83ba1c622ffe25" category="section-title">Rocky Linux 9がサポート対象のLinuxディストリビューションになり、BlueXP分類をインストールできるようになりました。</block>
+  <block id="76264cc2bc8d3793465d31c38655f588" category="inline-link">Rocky LinuxがインストールされているホストにBlueXP分類をインストールする方法を確認</block>
+  <block id="059df2e0abacded1764d0222f6ab3b42" category="paragraph">Rocky Linux 9（9.0、9.1、9.2）は、BlueXPのサポート対象オペレーティングシステムとして認定されています。BlueXPの分類は、ネットワーク内のRocky Linuxホストにインストールすることも、バージョン1.24のインストーラを使用している場合はクラウド内のLinuxホストにインストールすることもできます。<block ref="b549f731e0826bdc1659ea47e9a6f422" category="inline-link-rx"></block>。</block>
+  <block id="cdbb87700ea6d8c32de7576d1ecb9987" category="section-title">BlueXPの分類は制限モードとプライベートモードで完全にサポートされています。</block>
+  <block id="7c4ed755305616a8a97076615e4aa1e5" category="inline-link">コネクタのBlueXP導入モードの詳細</block>
+  <block id="e7c3514a81618b80dab1e9591ba97368" category="paragraph">インターネットアクセスがないサイト（プライベートモード）とアウトバウンドのインターネットアクセスが制限されているサイト（制限モード）で、BlueXPの分類が完全にサポートされるようになりました。<block ref="7ee715aa70b4c6d819896ee955e59621" category="inline-link-rx"></block>。</block>
+  <block id="8dd6a265487e54146fb2bdfb3e5174a5" category="section-title">BlueXP分類のプライベートモードインストールをアップグレードするときにバージョンをスキップする機能</block>
+  <block id="241957d9f6c696915858d43476112454" category="paragraph">シーケンシャルでなくても、新しいバージョンのBlueXP分類にアップグレードできるようになりました。つまり、BlueXPの分類を1つのバージョンにアップグレードするという現行の制限は不要になりました。この機能は、バージョン1.24以降で該当します。</block>
 </blocks>
