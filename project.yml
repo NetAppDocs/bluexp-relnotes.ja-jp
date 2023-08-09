@@ -15,8 +15,10 @@ sidebar:
     url: "/index.html"
   - title: 最近の変更
     url: "/whats-new.html"
-  - title: BlueXPインデックス
+  - title: リリースノートインデックス
     url: "/release-notes-index.html"
+  - title: 法的通知
+    url: "/legal-notices.html"
 homepage:
   tiles:
   - title: 新機能

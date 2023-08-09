@@ -213,6 +213,14 @@ Cloud Manager では、ボリューム Snapshot を作成、削除、リスト�
 
 
 
+=== 2023年7月30日
+
+Amazon FSx for NetApp ONTAPファイルシステムは、ヨーロッパ（チューリッヒ）、ヨーロッパ（スペイン）、アジア太平洋（ハイデラバード）の3つの新しいAWSリージョンで作成できるようになりました。
+
+を参照してください link:https://aws.amazon.com/about-aws/whats-new/2023/04/amazon-fsx-netapp-ontap-three-regions/#:~:text=Customers%20can%20now%20create%20Amazon,file%20systems%20in%20the%20cloud["Amazon FSx for NetApp ONTAPは、さらに3つのリージョンで提供が開始されました。"^] 詳細については、
+
+
+
 === 2023年7月2日
 
 * 次の操作を実行できます。 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-svm.html["Storage VMを追加してください"] BlueXPを使用してAmazon FSx for NetApp ONTAPファイルシステムに移行できます。
@@ -225,14 +233,6 @@ Cloud Manager では、ボリューム Snapshot を作成、削除、リスト�
 
 * いつ link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["作業環境の作成"]では、毎週の30分のメンテナンス時間の開始時間を指定して、メンテナンスが重要なビジネスアクティビティと競合しないようにすることができます。
 * いつ link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html["ボリュームを作成しています"]では、ボリューム間でデータを分散するFlexGroupを作成することで、データの最適化を有効にすることができます。
-
-
-
-
-=== 2023年5月7日
-
-* 作業環境の作成時にBlueXPを使用できるようになりました link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["セキュリティグループを生成します"^] これにより、選択したVPC内のトラフィックのみが許可されます。この機能 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["追加の権限が必要です"^]。
-* オプションで、を選択できます link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-add-fsx-volumes.html#create-volumes["追加（ Add ）"^] および link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-fsx-volumes.html#manage-volume-tags["変更"^] ボリュームを分類するためのタグ。
 
 
 
@@ -435,6 +435,16 @@ Rocky Linux 9（9.0、9.1、9.2）は、BlueXPのサポート対象オペレー�
 
 
 
+==== BlueXP分類APIを利用できるようになりました
+
+BlueXP分類APIを使用すると、スキャンするデータに関する操作の実行、クエリの作成、情報のエクスポートを行うことができます。Swaggerを使用して対話型ドキュメントを利用できます。ドキュメントは、調査、コンプライアンス、ガバナンス、構成など、複数のカテゴリに分かれています。各カテゴリは、BlueXP分類用UIのタブを表しています。
+
+Swaggerにアクセスするには、BlueXP分類インスタンスのIPアドレスが必要です。クラウド展開の場合は、パブリックIPアドレスを使用します。次に、次のエンドポイントにアクセスする必要があります。
+
+https://<classification_ip>/documentation[]
+
+
+
 === 2023年6月6日（バージョン1.23）
 
 
@@ -615,6 +625,38 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 2023年8月6日
+
+
+
+==== データブローカーの作成時に既存のAzureセキュリティグループを使用する
+
+データブローカーの作成時に既存のAzureセキュリティグループを使用できるようになりました。
+
+データブローカーの作成時に使用するサービスアカウントには、次の権限が必要です。
+
+* Microsoft.Network/networkSecurityGroups/securityRules/read"
+* Microsoft.Network/networkSecurityGroups/read"
+
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html["Azureでデータブローカーを作成する方法については、こちらをご覧ください。"]
+
+
+
+==== Google Storageへの同期時にデータを暗号化する
+
+Google Storageバケットをターゲットとする同期関係を作成するときに、ユーザが管理する暗号化キーを指定できるようになりました。キーは手動で入力することも、1つのリージョン内のキーのリストから選択することもできます。
+
+データブローカーの作成時に使用するサービスアカウントには、次の権限が必要です。
+
+* cloudkms.cryptoKeys.list
+* cloudkms.keyrings.list
+
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/reference-requirements.html#google-cloud-storage-bucket-requirements["Google Cloud Storageバケットの要件については、こちらをご覧ください。"]
+
+
+
 === 2023年7月9日
 
 
@@ -658,42 +700,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 ファイルシステムを含む関係では、* Copy for Objects *機能によってアクセス時間のメタデータがコピーされるようになりました。
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["[オブジェクトのコピー]設定の詳細については、こちらを参照してください"]。
-
-
-
-=== 2023年5月8日
-
-
-
-==== ハードリンク機能
-
-セキュアでないNFSとNFSの関係を含む同期のハードリンクを含めることができるようになりました。
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["ファイルタイプ設定の詳細については、こちらを参照してください"]。
-
-
-
-==== セキュアなNFS関係にあるデータブローカーのユーザ証明書を追加できるようになりました
-
-セキュアなNFS関係を作成する際に、ターゲットデータブローカー用に独自の証明書を設定できるようになりました。サーバ名を設定し、秘密鍵と証明書IDを提供する必要があります。この機能は、すべてのデータブローカーで使用できます。
-
-
-
-==== 最近変更されたファイルの除外期間が延長されました
-
-スケジュールされた同期の365日前までに変更されたファイルを除外できるようになりました。
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["「最近変更されたファイル」設定の詳細については、こちらを参照してください"]。
-
-
-
-==== UIで関係を関係IDでフィルタリングします
-
-RESTful APIを使用するユーザは、関係IDを使用して関係をフィルタできるようになりました。
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/api-sync.html["BlueXPのコピーと同期でRESTful APIを使用する方法の詳細については、こちらをご覧ください"]。
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["[ディレクトリを除外する]設定の詳細については、こちらを参照してください"]。
 
 
 
@@ -811,9 +817,15 @@ link:https://docs.netapp.com/us-en/bluexp-economic-efficiency/get-started/intro.
 
 
 
+=== 2023年8月1日（バージョン2.3）
+
+このリリースでは、に記載されている問題が修正されています https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["修正された問題"]。更新されたソフトウェアパッケージは、から入手できます https://docs.netapp.com/us-en/bluexp-edge-caching/download-gfc-resources.html#download-required-resources["このページです"]。
+
+
+
 === 2023年4月5日（バージョン2.2）
 
-このリリースでは、以下に示す新機能が提供されます。また、に記載されている問題も修正されています https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["修正された問題"]。更新されたソフトウェアパッケージは、から入手できます https://docs.netapp.com/us-en/bluexp-edge-caching/download-gfc-resources.html#download-required-resources["このページです"]。
+このリリースでは、以下に示す新機能が提供されます。また、に記載されている問題も修正されています https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["修正された問題"]。
 
 
 
@@ -862,38 +874,6 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#
 
 
 ==== Optimus UI（Edge Configuration）のEdge Sync機能が強化され、接続されているすべてのクライアントが表示されるようになりました
-
-
-
-=== 2022年7月25日（バージョン2.0）
-
-このリリースでは、以下に示す新機能が提供されます。また、に記載されている問題も修正されています https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["修正された問題"]。
-
-
-
-==== Azure Marketplaceからのグローバルファイルキャッシュの容量ベースの新しいライセンスモデル
-
-新しい「Edge Cache」ライセンスには、「CVO Professional」ライセンスと同じ機能がありますが、グローバルファイルキャッシュのサポートも含まれています。このオプションは、Azureに新しいCloud Volumes ONTAP システムを導入するときに表示されます。Cloud Volumes ONTAP システムでプロビジョニングされた容量3TiBにつき、グローバルファイルキャッシュエッジシステムを1台導入することができます。少なくとも30TiBをプロビジョニングする必要があります。GFC License Managerサービスが拡張され、容量ベースのライセンスが提供されるようになりました。
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#capacity-based-licensing["Edge Cacheライセンスパッケージの詳細については、こちらをご覧ください。"]
-
-
-
-==== グローバルファイルキャッシュがCloud Insights に統合されました
-
-NetApp Cloud Insights （CI）では、インフラとアプリケーションを包括的に可視化できます。グローバルファイルキャッシュがCIと統合され、すべてのエッジとコアを完全に可視化し、インスタンスで実行されているプロセスを監視できるようになりました。さまざまなグローバルファイルキャッシュメトリックがCIにプッシュされ、CIダッシュボードの全体的な概要が表示されます。の第11章を参照してください https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.1.0%20User%20Guide.pdf["NetApp Global File Cache User Guide"^]
-
-https://cloud.netapp.com/cloud-insights["Cloud Insights の詳細については、こちらをご覧ください。"]
-
-
-
-==== ライセンス管理サーバは、非常に制限のある環境で動作するように拡張されています
-
-ライセンスの設定時に、ライセンス管理サーバ（LMS）がインターネットにアクセスして、ネットアップ/ Zuoraからライセンスの詳細を収集できる必要があります。設定が正常に完了すると、LMSはオフラインモードでの作業を継続し、制限のある環境であってもライセンス機能を提供できます。
-
-
-
-==== OptimusのEdge Sync UIが強化され、接続されているクライアントのリストがコーディネータEdgeに表示されるようになりました
 
 
 
@@ -1166,6 +1146,22 @@ StorageGRID システムをBlueXPから直接検出できるようになりま�
 
 
 
+=== 2023年8月9日
+
+
+
+==== 階層化データを格納するバケット名にカスタムプレフィックスを使用する
+
+以前は、バケット名を定義する際にデフォルトの「fabric-pool」プレフィックス（_fabric-pool-bucket1_など）を使用する必要がありました。バケットに名前を付けるときにカスタムプレフィックスを使用できるようになりました。この機能は、データをAmazon S3に階層化する場合にのみ使用できます。 https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#prepare-your-aws-environment["詳細はこちら。"]。
+
+
+
+==== すべてのBlueXPコネクタでクラスタを検索
+
+環境内のすべてのストレージシステムの管理に複数のコネクタを使用している場合は、階層化を実装する一部のクラスタが別 々 のコネクタに配置されている可能性があります。特定のクラスタを管理しているコネクタが不明な場合は、BlueXP階層化を使用してすべてのコネクタを検索できます。 https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#search-for-a-cluster-across-all-bluexp-connectors["詳細はこちら。"]。
+
+
+
 === 2023年7月4日
 
 
@@ -1197,16 +1193,6 @@ BlueXP階層化インターフェイスから[ライセンス]タブが削除さ
 ==== 階層化タブの名前が変更され、内容が更新されました
 
 [Clusters Dashboard]タブの名前が[Clusters]に変更され、[On-Prem Overview]タブの名前が[On-Premises Dashboard]に変更されました。これらのページには、階層化構成を追加してストレージスペースを最適化できるかどうかを評価するための情報が追加されています。
-
-
-
-=== 2023年3月5日
-
-
-
-==== ボリュームの階層化レポートを生成できるようになりました
-
-[階層ボリューム]ページからレポートをダウンロードして、管理しているクラスタ上のすべてのボリュームの階層化ステータスを確認できます。BlueXPの階層化サービスでは.csvファイルが生成されます。このファイルを確認して、必要に応じて社内の他のユーザに送信できます。 https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["階層化レポートのダウンロード方法をご覧ください"]。
 
 
 

@@ -76,16 +76,7 @@
   <block id="a720f7f5208abaac19d4db46d3bc0a7b" category="inline-link">修正された問題</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">詳細はこちら。</block>
-  <block id="a207f0479f1471fc5336b474cf75c28a" category="section-title">2022年7月25日（バージョン2.0）</block>
-  <block id="40ede24da7e93db6d61cd94c084008e7" category="section-title">Azure Marketplaceからのグローバルファイルキャッシュの容量ベースの新しいライセンスモデル</block>
-  <block id="70dc5565ba7814d08bd68476e5fb76ff" category="paragraph">新しい「Edge Cache」ライセンスには、「CVO Professional」ライセンスと同じ機能がありますが、グローバルファイルキャッシュのサポートも含まれています。このオプションは、Azureに新しいCloud Volumes ONTAP システムを導入するときに表示されます。Cloud Volumes ONTAP システムでプロビジョニングされた容量3TiBにつき、グローバルファイルキャッシュエッジシステムを1台導入することができます。少なくとも30TiBをプロビジョニングする必要があります。GFC License Managerサービスが拡張され、容量ベースのライセンスが提供されるようになりました。</block>
   <block id="6a749e3d1bafd02cdf9a303ba6375e66" category="inline-link">Edge Cacheライセンスパッケージの詳細については、こちらをご覧ください。</block>
-  <block id="b7b58b4424e766ec66e0ab4ea9c812b8" category="section-title">グローバルファイルキャッシュがCloud Insights に統合されました</block>
-  <block id="902eaec7802b7e6292febf1b6526a6b5" category="inline-link">Cloud Insights の詳細については、こちらをご覧ください。</block>
-  <block id="6d7b1d6577d8e6bfc5f78e821377a7d4" category="paragraph"><block ref="6d7b1d6577d8e6bfc5f78e821377a7d4" category="inline-link-rx"></block></block>
-  <block id="1f56bc157b53331171e2209738abd411" category="section-title">ライセンス管理サーバは、非常に制限のある環境で動作するように拡張されています</block>
-  <block id="706163f56e3d19088d2a54cd0451269e" category="paragraph">ライセンスの設定時に、ライセンス管理サーバ（LMS）がインターネットにアクセスして、ネットアップ/ Zuoraからライセンスの詳細を収集できる必要があります。設定が正常に完了すると、LMSはオフラインモードでの作業を継続し、制限のある環境であってもライセンス機能を提供できます。</block>
-  <block id="1b66d26240c6a01df03ec7dc4a6d1a2b" category="section-title">OptimusのEdge Sync UIが強化され、接続されているクライアントのリストがコーディネータEdgeに表示されるようになりました</block>
   <block id="eb3b05e2bcc0acdca8f3706dc6168810" category="inline-link-macro">ストレージクラスを定義する</block>
   <block id="b42dff6de52c55fe0d6831817d6b309d" category="section-title">ONTAP のFSXをデータソースとして使用します</block>
   <block id="0f8ffeac5211fc4e0dfb43c430753ef2" category="paragraph">Amazon FSX for ONTAP ファイルシステムから次のデスティネーションにデータをレプリケートできるようになりました。</block>
@@ -117,10 +108,7 @@
   <block id="dac6d17442feba1d57f29d8031c05963" category="paragraph">1つのグローバルファイルキャッシュエッジインスタンスは、専用の物理エッジインスタンス1つにつき最大500ユーザー、専用の仮想配置で最大300ユーザーを処理できます。使用可能なユーザの最大数は、それぞれ400と200です。</block>
   <block id="7954886e5818e91e397e0ca331d15d48" category="section-title">Optimus PSMを強化し、クラウドライセンスを構成</block>
   <block id="3bf86cee85be3992be11d6813b4f6b14" category="section-title">Optimus UI（Edge Configuration）のEdge Sync機能が強化され、接続されているすべてのクライアントが表示されるようになりました</block>
-  <block id="15b783a23e5291e1ffb9f638317d4bcb" category="inline-link">NetApp Global File Cache User Guide</block>
-  <block id="cf7c224c7b8d702f6384270dadb22ca0" category="paragraph">NetApp Cloud Insights （CI）では、インフラとアプリケーションを包括的に可視化できます。グローバルファイルキャッシュがCIと統合され、すべてのエッジとコアを完全に可視化し、インスタンスで実行されているプロセスを監視できるようになりました。さまざまなグローバルファイルキャッシュメトリックがCIにプッシュされ、CIダッシュボードの全体的な概要が表示されます。の第11章を参照してください<block ref="2cde0a8e9bca45f9b9d7b53c9b2941a5" category="inline-link-rx"></block></block>
   <block id="0b17baeba205d071cc0142cf4aba9b76" category="paragraph">StorageGRID システムをBlueXPから直接検出できるようになりました。StorageGRID を検出すると、ハイブリッドマルチクラウド全体のデータを包括的に把握できます。</block>
-  <block id="ed8f5e7e321372398aae23788c3243a0" category="sidebar">BlueXPインデックス</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">BlueXPのすべてのマニュアル</block>
   <block id="88268cce7d1b83c765c3f7010df80df5" category="section-title">2022年11月6日</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXPのブログ</block>
@@ -132,8 +120,6 @@
   <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">2023年3月5日</block>
   <block id="eea1e3b9ecdd5e32692761a0a78b9463" category="section-title">2023年3月5日</block>
   <block id="3aea41413b60d0894823e739f01efcbb" category="paragraph">ユーザインターフェイスが改善され、ドキュメントのスクリーンショットが更新されました。</block>
-  <block id="b92f2131d3d225c3c3327daaa8862624" category="section-title">ボリュームの階層化レポートを生成できるようになりました</block>
-  <block id="f86857f0a51fde5819da3a17258b5448" category="inline-link">階層化レポートのダウンロード方法をご覧ください</block>
   <block id="ed9855757b31d516a4fa8f955edec2eb" category="list-text">BlueXPのKubernetesでAstra Trident 23.01がサポートされるようになりました。</block>
   <block id="4b10c384bd11c38afbbe24f979f5519d" category="section-title">2023年3月7日</block>
   <block id="b20988b483bceb3fb63077025a07d023" category="section-title">攻撃からシステムをリカバリするための新しいRansomware Recovery Dashboardが追加されました</block>
@@ -153,7 +139,6 @@
   <block id="efc0c4f71709b261c273fb935757cfae" category="section-title">運用の耐障害性</block>
   <block id="7907a1fccb5b8aa9b8df8283d3705052" category="list-text"><block ref="7907a1fccb5b8aa9b8df8283d3705052" category="inline-link-rx"></block></block>
   <block id="92900172340dbf6ba4b3454580c7583b" category="list-text"><block ref="92900172340dbf6ba4b3454580c7583b" category="inline-link-rx"></block></block>
-  <block id="d1624b8f3b686e981a178c03616a370b" category="inline-link">[ディレクトリを除外する]設定の詳細については、こちらを参照してください</block>
   <block id="207aaa44f72ba634c18fcc9bae44d655" category="inline-link">アカウントの使用済み容量を表示する方法について説明します</block>
   <block id="7786076739da628161f45de338cd6e69" category="inline-link-macro">Astra Tridentをアンインストールします</block>
   <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">[ライセンス]タブが削除されました</block>
@@ -215,11 +200,6 @@
   <block id="d128bda2634e1051cc984231da065144" category="list-text">Eメール通知がBlueXPデジタルウォレットでサポートされるようになりました。</block>
   <block id="016c818ed3128119f94a31cbec32bf1f" category="paragraph">Cloud Volumes ONTAP の容量単位のライセンスを表示する場合、BlueXPデジタルウォレットに、マーケットプレイスのプライベートオファーで購入したライセンス容量が表示されるようになりました。</block>
   <block id="71bff2737bdd059023a4784358e71a64" category="section-title">2023年5月7日</block>
-  <block id="a018fc35c6be59c0e9c90d4bd464dc47" category="section-title">2023年5月7日</block>
-  <block id="b3aad9775f9ce61fe67c9745594b96f0" category="inline-link-macro">セキュリティグループを生成します</block>
-  <block id="beee5e54063eb4d710db752896c928c8" category="inline-link-macro">追加の権限が必要です</block>
-  <block id="34ec78fcc91ffb1e54cd85e4a0924332" category="inline-link-macro">追加（ Add ）</block>
-  <block id="8f45a2644508b5282f57fe129f62d19a" category="inline-link-macro">変更</block>
   <block id="060a6559f6065c5058aca6b22d897bce" category="section-title">Google Cloudプライベートオファー</block>
   <block id="bfe876190faa5e7a4cd6d5029395b658" category="paragraph">BlueXPのデジタルウォレットに、プライベートオファーに関連付けられているGoogle Cloud Marketplaceサブスクリプションが表示され、サブスクリプションの終了日と期間が表示されるようになりました。この機能強化により、プライベートオファーが正常に受け入れられたことを確認し、その条件を検証できます。</block>
   <block id="2cd5985150a2728c0c6295c5162b2b1d" category="section-title">充電使用量の内訳</block>
@@ -235,17 +215,6 @@
   <block id="679a2d98f8c7c05c4944b0d161a6d567" category="section-title">バックアップファイルでAWS Chinaリージョンがサポートされるようになりました</block>
   <block id="aad236ec8e2b61a79fb4bb3a416a2e06" category="paragraph">クラスタでONTAP 9.12.1以降が実行されている場合、AWS China Beijing（cn-north-1）リージョンとNingxia（cn-northwest-1）リージョンがバックアップファイルのデスティネーションとしてサポートされるようになりました。</block>
   <block id="c93bfe725726f47fe3bfcc0e95f8ec7d" category="inline-link">オンプレミスのONTAP データをAmazon S3にバックアップします</block>
-  <block id="2652537da62e22a06b22374119e6c40f" category="section-title">ハードリンク機能</block>
-  <block id="74b59acd161d1704c8c78879dc8fba01" category="paragraph">セキュアでないNFSとNFSの関係を含む同期のハードリンクを含めることができるようになりました。</block>
-  <block id="689dbd8363b6599ce07ff94a27510e99" category="inline-link">ファイルタイプ設定の詳細については、こちらを参照してください</block>
-  <block id="b37e1d04fbc8f3ac1aa4b71252cc4d4b" category="section-title">セキュアなNFS関係にあるデータブローカーのユーザ証明書を追加できるようになりました</block>
-  <block id="fad605010f8f29a3a10f7062fe2cd4e9" category="paragraph">セキュアなNFS関係を作成する際に、ターゲットデータブローカー用に独自の証明書を設定できるようになりました。サーバ名を設定し、秘密鍵と証明書IDを提供する必要があります。この機能は、すべてのデータブローカーで使用できます。</block>
-  <block id="3bf0932004501be46156880cfe858e8f" category="section-title">最近変更されたファイルの除外期間が延長されました</block>
-  <block id="72293cd7eff96e1e45510dc52f4ef25e" category="paragraph">スケジュールされた同期の365日前までに変更されたファイルを除外できるようになりました。</block>
-  <block id="87ca8046e9c8a782bd5c06267e7f93f7" category="inline-link">「最近変更されたファイル」設定の詳細については、こちらを参照してください</block>
-  <block id="e03b4aafcead6edb397ccbf7e180255f" category="section-title">UIで関係を関係IDでフィルタリングします</block>
-  <block id="aca73b993cefdbe81afe166bf8692c50" category="paragraph">RESTful APIを使用するユーザは、関係IDを使用して関係をフィルタできるようになりました。</block>
-  <block id="37a616e16a0f4d18ac25d57ddb913bf8" category="inline-link">BlueXPのコピーと同期でRESTful APIを使用する方法の詳細については、こちらをご覧ください</block>
   <block id="6e3d9df489c437a2601f627a5b8935c9" category="paragraph">BlueXP階層化インターフェイスから[ライセンス]タブが削除されました。従量課金制（PAYGO）サブスクリプションのすべてのライセンスに、BlueXP階層化オンプレミスダッシュボードからアクセスできるようになりました。また、このページからBlueXPのデジタルウォレットへのリンクもあり、BlueXP階層化サービスのお客様所有のライセンスの使用（BYOL）を表示および管理できます。</block>
   <block id="f6e3b39522072e9cb3b0ffb8cecf9b0b" category="paragraph">[Clusters Dashboard]タブの名前が[Clusters]に変更され、[On-Prem Overview]タブの名前が[On-Premises Dashboard]に変更されました。これらのページには、階層化構成を追加してストレージスペースを最適化できるかどうかを評価するための情報が追加されています。</block>
   <block id="5afb323d4a36e6ab79cd9d765c5934f7" category="inline-link">お客様が管理する独自の暗号化キーの設定の詳細については、こちらをご覧ください</block>
@@ -280,8 +249,6 @@
   <block id="a80baf4fa5d71b9ef418edfcaebd2759" category="list-text"><block ref="a80baf4fa5d71b9ef418edfcaebd2759" category="inline-link-rx"></block></block>
   <block id="45ee83d3cd24c8a79ff15330399da6a7" category="list-text"><block ref="45ee83d3cd24c8a79ff15330399da6a7" category="inline-link-rx"></block></block>
   <block id="50677882efe321e7fec19456f58faadc" category="paragraph"><block ref="536037d368170de6e6fbdb576d167663" category="inline-link-rx"></block>。</block>
-  <block id="b6f1ebb155eaf4c6e07d7a105b1d5a53" category="list-text">作業環境の作成時にBlueXPを使用できるようになりました <block ref="3ba2cfc3ef2a3c163fc4910682cfb7d6" category="inline-link-macro-rx"></block> これにより、選択したVPC内のトラフィックのみが許可されます。この機能 <block ref="097f8dd60847dad6062ac7ea2bd09c06" category="inline-link-macro-rx"></block>。</block>
-  <block id="46ce6a634ad58fa667690e7f5c151b26" category="list-text">オプションで、を選択できます <block ref="2af1713063b9a7e50c1f5e13c7671bae" category="inline-link-macro-rx"></block> および <block ref="013335dc35ce07c311c673e8a99c88f9" category="inline-link-macro-rx"></block> ボリュームを分類するためのタグ。</block>
   <block id="c55a4ed0f55f8209574960c04bd36597" category="paragraph">顧客管理暗号化キー（CMEK）のプロジェクトとは別のプロジェクトにあるバケットを選択できるようになりました。<block ref="2425c9129a22c7135ee8a04ae0dae970" category="inline-link-rx"></block>。</block>
   <block id="cfc826b330f7a25cc3c4e115a9fcca13" category="paragraph">BlueXPコネクタに割り当てるIAMポリシーでは、all_Resource_sectionsの下にあるAWSリソース名「arn」を「aws」から「aws-cn」に変更する必要があります（例：「arn：aws-cn：s3：：：netapp-backup-*」）。を参照してください<block ref="17dde2a04d27e7ad2a9f0a451a7a0e90" category="inline-link-rx"></block> および<block ref="bb86d78b7593b3e1252f277b7dd6e017" category="inline-link-rx"></block> を参照してください。</block>
   <block id="4da25d5e326dac4c0bb3865e69dd3325" category="paragraph">Data Discovery Assessment Reportでは、スキャンされた環境の概要を分析して、システムの調査結果を強調し、懸念領域と潜在的な修復手順を示します。このレポートの目的は、データガバナンスの懸念、データセキュリティの危険性、データセットのデータコンプライアンスギャップに対する認識を高めることです。<block ref="34e879e713683b8352bb56b59c6078e2" category="inline-link-rx"></block>。</block>
@@ -290,14 +257,8 @@
   <block id="7e1e73ad7e6d01345f57dc84d7cd2c47" category="paragraph"><block ref="8ab3022f8d373945c172f9e89b554e84" category="inline-link-rx"></block>。</block>
   <block id="9cb4f066718ada1a845659033318004c" category="paragraph"><block ref="19c68668f7d6a95b64e909c5da1cb9b0" category="inline-link-rx"></block>。</block>
   <block id="16364877a101c1787c34f2fe604ef9e9" category="paragraph"><block ref="16364877a101c1787c34f2fe604ef9e9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1a7214a3217999e62943b6eb9a186e66" category="paragraph"><block ref="9bf8313a7db211679a844402f240b32a" category="inline-link-rx"></block>。</block>
-  <block id="5b1faa5c627185bd8774ba759dbbcf1d" category="paragraph"><block ref="528a28b28e8f5d9df665a229e7a7fa63" category="inline-link-rx"></block>。</block>
-  <block id="ce907128271b3f13161731af69efdb83" category="paragraph"><block ref="7d45213b584f83e1010772ef58d497ad" category="inline-link-rx"></block>。</block>
-  <block id="791d072486b9f4524702996962f5cb1d" category="paragraph"><block ref="525fcee9e0cdf0ea236cb2377cb58f7b" category="inline-link-rx"></block>。</block>
-  <block id="10dc1eee3d75610cc244de50455508d3" category="paragraph">このリリースでは、以下に示す新機能が提供されます。また、に記載されている問題も修正されています<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>。更新されたソフトウェアパッケージは、から入手できます<block ref="89fd140dfa15c4587519958830d6000f" category="inline-link-rx"></block>。</block>
   <block id="77474efd411b7748abfa1c88a3e0137c" category="paragraph"><block ref="77474efd411b7748abfa1c88a3e0137c" category="inline-link-rx"></block></block>
   <block id="975b3327995267bde41cd6b4ce0c772d" category="paragraph">このリリースでは、以下に示す新機能が提供されます。また、に記載されている問題も修正されています<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>。</block>
-  <block id="f5f78956220294d550567ec883fe45c6" category="paragraph"><block ref="f5f78956220294d550567ec883fe45c6" category="inline-link-rx"></block></block>
   <block id="4e4ff5b7850bf0aae4966bf2353d2764" category="list-text">次の操作を実行できます。 <block ref="79330a9a9d35860d426f0d48c9f654a7" category="inline-link-macro-rx"></block> これは、TridentオペレータまたはBlueXPを使用してインストールしました。</block>
   <block id="08dbc554156c2764d1696fe55d768aed" category="paragraph">いつ <block ref="c5aa031d705396e63c7e52a97cf56f86" category="inline-link-macro-rx"></block>では、ブロックストレージやファイルシステムストレージに対して、ストレージクラスの経済性を実現できます。</block>
   <block id="6b5123d10bcaa20aedf265862fd00988" category="paragraph"><block ref="b8d5a3f5bf3c3f09de7cacb30a8225fd" category="inline-link-rx"></block>。</block>
@@ -308,7 +269,6 @@
   <block id="3ce8031a2a5efd8807d29dc5391ac03a" category="paragraph">現在サポートされているのは、 Cloud Volumes ONTAP 上のボリュームとオンプレミスの ONTAP システムです。<block ref="71acbc1e86413ca32a85c458baf53529" category="inline-link-rx"></block>。</block>
   <block id="c3f9f5f3154c847ae51038b02652e769" category="paragraph"><block ref="ebf81513d87da0002a3ac7ea6ee056cb" category="inline-link-rx"></block>。</block>
   <block id="51959da1122b405c90c18be52282f18f" category="paragraph"><block ref="1bc1e485e9f9d41e344f0d10f6ad3511" category="inline-link-rx"></block>。</block>
-  <block id="af39bae06861b3074eed6e997f9a3ebf" category="paragraph">[階層ボリューム]ページからレポートをダウンロードして、管理しているクラスタ上のすべてのボリュームの階層化ステータスを確認できます。BlueXPの階層化サービスでは.csvファイルが生成されます。このファイルを確認して、必要に応じて社内の他のユーザに送信できます。<block ref="aaab920374e84f87020f8ba8578ab877" category="inline-link-rx"></block>。</block>
   <block id="2b3e8f910d66604cd77f93b333670468" category="inline-link">Azure BLOBストレージ</block>
   <block id="a1182a2fefa3fdd8128a983a3d666611" category="list-text"><block ref="a1182a2fefa3fdd8128a983a3d666611" category="inline-link-rx"></block></block>
   <block id="ac7b3cf10ea08c788a374e0291742517" category="inline-link">移行レポート</block>
@@ -542,4 +502,53 @@
   <block id="dfc9f0f0920c102b079fd1c513fccdde" category="list-text"><block ref="dfc9f0f0920c102b079fd1c513fccdde" category="inline-link-rx"></block></block>
   <block id="bbcffd6476036994102e5ec1c5571f64" category="inline-link">FlexGroupボリュームとは</block>
   <block id="a33a2b4a40f0a01a71b97f709ac14074" category="list-text"><block ref="a33a2b4a40f0a01a71b97f709ac14074" category="inline-link-rx"></block></block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="summary"></block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法的通知</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">著作権に関する声明、商標、特許などにアクセスできます。</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">著作権</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商標</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp のロゴ、および NetApp の商標ページに記載されているマークは、 NetApp, Inc. の商標です。その他の会社名および製品名は、それぞれの所有者の商標である場合があります。</block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">特許</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">ネットアップが所有する特許の最新リストは、次のサイトで入手できます。</block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">プライバシーポリシー</block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">オープンソース</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。</block>
+  <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">BlueXPに関する注意事項</block>
+  <block id="52ba8ac12050d2494572b940a0d65b25" category="paragraph"><block ref="52ba8ac12050d2494572b940a0d65b25" category="inline-link-rx"></block></block>
+  <block id="30fee46958559c602b944cc387c72292" category="paragraph">Amazon FSx for NetApp ONTAPファイルシステムは、ヨーロッパ（チューリッヒ）、ヨーロッパ（スペイン）、アジア太平洋（ハイデラバード）の3つの新しいAWSリージョンで作成できるようになりました。</block>
+  <block id="4a105824b6f84a35559612caf12c452d" category="inline-link-macro">Amazon FSx for NetApp ONTAPは、さらに3つのリージョンで提供が開始されました。</block>
+  <block id="e1203bb3756aaddbc1d40b7033d44bd1" category="paragraph">を参照してください <block ref="2ffac1c1fc93e8203aa3ebf9b3a6ff2d" category="inline-link-macro-rx"></block> 詳細については、</block>
+  <block id="c77d5103bf67167dd667762d984e1e14" category="section-title">BlueXP分類APIを利用できるようになりました</block>
+  <block id="95eaa41c2e7025ac80bcfafd1710ff57" category="paragraph">BlueXP分類APIを使用すると、スキャンするデータに関する操作の実行、クエリの作成、情報のエクスポートを行うことができます。Swaggerを使用して対話型ドキュメントを利用できます。ドキュメントは、調査、コンプライアンス、ガバナンス、構成など、複数のカテゴリに分かれています。各カテゴリは、BlueXP分類用UIのタブを表しています。</block>
+  <block id="af16b996606b35cb0f77fe07ba2e556a" category="paragraph">Swaggerにアクセスするには、BlueXP分類インスタンスのIPアドレスが必要です。クラウド展開の場合は、パブリックIPアドレスを使用します。次に、次のエンドポイントにアクセスする必要があります。</block>
+  <block id="254092d1402121eb76375744912fcb31" category="paragraph"><block ref="76abae69818f3dbdee10e3bc86ddf426" category="inline-link-rx"></block></block>
+  <block id="a57bb636c3624bebb972f007b21fd8fb" category="section-title">2023年8月6日</block>
+  <block id="56a559acc9f9bd2fc9cf51154aef7ce5" category="section-title">データブローカーの作成時に既存のAzureセキュリティグループを使用する</block>
+  <block id="bf4bc301ccb8b2b21ef394a22e4afef6" category="paragraph">データブローカーの作成時に既存のAzureセキュリティグループを使用できるようになりました。</block>
+  <block id="fd514a292e754d2839b0e90da5ac3514" category="paragraph">データブローカーの作成時に使用するサービスアカウントには、次の権限が必要です。</block>
+  <block id="40ab692bf1bd50c2b8af00a0f842eae1" category="list-text">Microsoft.Network/networkSecurityGroups/securityRules/read"</block>
+  <block id="382fee949ad334bb4c7112f8925c1a73" category="list-text">Microsoft.Network/networkSecurityGroups/read"</block>
+  <block id="223263a27baa6e1ed1653cabb17bae1a" category="inline-link">Azureでデータブローカーを作成する方法については、こちらをご覧ください。</block>
+  <block id="dd28ab2cc4abd312627d50ae74f70a47" category="paragraph"><block ref="dd28ab2cc4abd312627d50ae74f70a47" category="inline-link-rx"></block></block>
+  <block id="523a4e14cf869e980cae59f341235b4d" category="section-title">Google Storageへの同期時にデータを暗号化する</block>
+  <block id="f30fd3a2e1153daad9771810719ad64c" category="paragraph">Google Storageバケットをターゲットとする同期関係を作成するときに、ユーザが管理する暗号化キーを指定できるようになりました。キーは手動で入力することも、1つのリージョン内のキーのリストから選択することもできます。</block>
+  <block id="822dcaf9e20737313f761f80cc25031f" category="list-text">cloudkms.cryptoKeys.list</block>
+  <block id="67c2b48a02a1206b0cf882e5b8d15ad2" category="list-text">cloudkms.keyrings.list</block>
+  <block id="2f582d8c48ea99c7b932fa712f18e592" category="inline-link">Google Cloud Storageバケットの要件については、こちらをご覧ください。</block>
+  <block id="32a658d78cdd354c1492f2b54191e16d" category="paragraph"><block ref="32a658d78cdd354c1492f2b54191e16d" category="inline-link-rx"></block></block>
+  <block id="924b35617c7b4bb0713e5eedb1777802" category="section-title">2023年8月1日（バージョン2.3）</block>
+  <block id="4dbe51f9893020550dd4c70ac9a71474" category="paragraph">このリリースでは、に記載されている問題が修正されています<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>。更新されたソフトウェアパッケージは、から入手できます<block ref="89fd140dfa15c4587519958830d6000f" category="inline-link-rx"></block>。</block>
+  <block id="4bca0fdcdafed1e5f31435f4b19c8738" category="section-title">2023年8月9日</block>
+  <block id="b839d32c555694a5245fa2fa33d17d88" category="section-title">階層化データを格納するバケット名にカスタムプレフィックスを使用する</block>
+  <block id="6eb4429639db75cb3b56cc38a3fb8785" category="paragraph">以前は、バケット名を定義する際にデフォルトの「fabric-pool」プレフィックス（_fabric-pool-bucket1_など）を使用する必要がありました。バケットに名前を付けるときにカスタムプレフィックスを使用できるようになりました。この機能は、データをAmazon S3に階層化する場合にのみ使用できます。<block ref="3e8270d3bc816ce30c7c11fe6d073535" category="inline-link-rx"></block>。</block>
+  <block id="2d81e61b650e87c484f1701ff4c00053" category="section-title">すべてのBlueXPコネクタでクラスタを検索</block>
+  <block id="6a3a27c0cd9c23985f6e8260846d58bc" category="paragraph">環境内のすべてのストレージシステムの管理に複数のコネクタを使用している場合は、階層化を実装する一部のクラスタが別 々 のコネクタに配置されている可能性があります。特定のクラスタを管理しているコネクタが不明な場合は、BlueXP階層化を使用してすべてのコネクタを検索できます。<block ref="017b0207cc8469b6ea246adade89f8e1" category="inline-link-rx"></block>。</block>
 </blocks>
