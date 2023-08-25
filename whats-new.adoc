@@ -718,13 +718,42 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 
 
 
-=== 2022年11月1日
+=== 2023年7月16日
 
-Digital Advisor（旧称Active IQ ）がBlueXPに完全に統合され、ログインエクスペリエンスが強化されました。
 
-BlueXP Digital Advisorにアクセスすると、システムに関連するデータを表示できるように、NetApp Support Site クレデンシャルの入力を求められます。ログイン時に使用するNSSアカウントは、ユーザログイン時のみに関連付けられます。ネットアップアカウントの他のユーザには関連付けられません。
 
-https://docs.netapp.com/us-en/active-iq/index.html["BlueXP Digital Advisorの詳細については、こちらをご覧ください"^]
+==== ストレージ効率
+
+* 削減比率を示すラベル* Storage Efficiency *の名前が* Data Reduction *に変更されます。
+* ラベル「Data Saved by Storage Efficiency」*の名前が「Data Reduction Savings」*に変更されます。
+* 機能の変更に伴い、[Snapshotバックアップなしの削減]*の名前が*[Snapshotコピーあり]*に変更されました。 link:https://docs.netapp.com/us-en/active-iq/reference_aiq_faq.html#storage-efficiency["詳細はこちら。"]。
+
+
+
+
+=== 2023年6月21日
+
+
+
+==== Sustainability Dashboard
+
+Sustainability Dashboardは、ストレージシステムの環境の持続可能性に関する貴重なインサイトを提供します。持続可能性スコア、炭素緩和率、電力使用量の予測、直接炭素、熱などの情報を表示できます。特定のサイトの炭素緩和率を調整できます。持続可能性スコアはクラスタレベルでも確認できます。持続可能性スコアを評価することで、ストレージシステム全体の効率性を評価し、持続可能性を強化するためのネットアップの推奨アクションに合わせることができます。 link:https://docs.netapp.com/us-en/active-iq/learn_BlueXP_sustainability.html["詳細はこちら。"]。
+
+
+
+=== 2023年2月22日
+
+
+
+==== パフォーマンスチャート
+
+読み取り、書き込み、およびその他の平均処理数は、ボリュームのIOPSグラフで確認できます。
+
+
+
+==== ストレージ効率
+
+AFF Aシリーズ、AFF C190、オールSANアレイ、ONTAP 9.10以降を実行するFAS500などのONTAP システムでは、SANとNASのストレージ効率をノードレベルで実現できます。
 
 
 
