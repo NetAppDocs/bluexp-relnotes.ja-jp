@@ -140,10 +140,6 @@
   <block id="7786076739da628161f45de338cd6e69" category="inline-link-macro">Astra Tridentをアンインストールします</block>
   <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">[ライセンス]タブが削除されました</block>
   <block id="66a0b4752150538292b81c073ca0b83b" category="section-title">階層化タブの名前が変更され、内容が更新されました</block>
-  <block id="f42926ae5eb2834453e4706e43354d5c" category="section-title">2023年4月3日（バージョン1.22）</block>
-  <block id="e4279e9f497576fcde3caeb67ed0f96d" category="section-title">新しいデータ検出評価レポート</block>
-  <block id="5b9233dec22bab321ca47a360d9950b6" category="inline-link">Data Discovery Assessment Reportを生成して使用する方法を説明します</block>
-  <block id="3d81ce02b62771b2627fbe04a96419a1" category="inline-link">使用可能なインスタンスタイプと制限事項を参照してください</block>
   <block id="e86989a1de71c911aa1dff7be51112bd" category="section-title">ランサムウェア攻撃からデータを保護するための新しい推奨アクション</block>
   <block id="51ad14036a828a2a993258fe95046128" category="list-text">「データソースのサイバーストレージ構成をオンにする」という新しい推奨アクションでは、データの保護に役立つ6つのONTAP 機能が有効になっているか無効になっているかを特定します。これらの機能は、オンプレミスのすべてのONTAP システムとCloud Volumes ONTAP システムで有効にする必要があります。</block>
   <block id="dced9da708bc7f04e84ad156297f2b2a" category="inline-link">推奨されるすべての対処方法の一覧を確認してください</block>
@@ -168,9 +164,6 @@
   <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="inline-link">ランサムウェアからの保護</block>
   <block id="282baca6aef56652f503adce6afa9f07" category="inline-link">修正</block>
   <block id="337c62c6b6eb7319bae58701105e889c" category="inline-link">階層化</block>
-  <block id="21db17f88f41dcd13f48cc90aced1d74" category="section-title">クラウド内の小規模インスタンスにBlueXPの分類機能を導入できます</block>
-  <block id="cb608d54d750eeb9d266241b5a1d63c7" category="section-title">BlueXPの分類をインストールする前に、スタンドアロンスクリプトを使用してLinuxシステムを認定できるようになりました</block>
-  <block id="e75f898f4dbad5388881095e9582c693" category="inline-link">LinuxホストでBlueXPのインストール準備が完了しているかどうかを確認する方法を説明します</block>
   <block id="9fee27139efd09e005728f7dbfa349f2" category="paragraph">BlueXPの分類では、次のタイプのデータを含むファイルを特定して分類できます。</block>
   <block id="22b67d0a50677e01d48389e716223457" category="inline-link">BlueXPの分類によってデータから特定できるすべてのタイプの個人データを確認できます</block>
   <block id="3d2e7e90fac12bab6a0d0736a593b5b4" category="section-title">デジタルアドバイザ</block>
@@ -227,9 +220,6 @@
   <block id="a80baf4fa5d71b9ef418edfcaebd2759" category="list-text"><block ref="a80baf4fa5d71b9ef418edfcaebd2759" category="inline-link-rx"></block></block>
   <block id="45ee83d3cd24c8a79ff15330399da6a7" category="list-text"><block ref="45ee83d3cd24c8a79ff15330399da6a7" category="inline-link-rx"></block></block>
   <block id="50677882efe321e7fec19456f58faadc" category="paragraph"><block ref="536037d368170de6e6fbdb576d167663" category="inline-link-rx"></block>。</block>
-  <block id="4da25d5e326dac4c0bb3865e69dd3325" category="paragraph">Data Discovery Assessment Reportでは、スキャンされた環境の概要を分析して、システムの調査結果を強調し、懸念領域と潜在的な修復手順を示します。このレポートの目的は、データガバナンスの懸念、データセキュリティの危険性、データセットのデータコンプライアンスギャップに対する認識を高めることです。<block ref="34e879e713683b8352bb56b59c6078e2" category="inline-link-rx"></block>。</block>
-  <block id="38e8bfeb390cec6e72d97323084e18cc" category="paragraph">AWS環境のBlueXP ConnectorからBlueXPの分類を導入する際に、デフォルトのインスタンスよりも小さい2つのインスタンスタイプから選択できるようになりました。小規模な環境をスキャンする場合は、クラウドコストを節約できます。ただし、小さいインスタンスを使用する場合はいくつかの制限があります。<block ref="d8ef680ce45b86e2a6afe2805a7e5562" category="inline-link-rx"></block>。</block>
-  <block id="46b0a8862a90d05f4f40bbcda2473af4" category="paragraph">BlueXP分類インストールとは別に、Linuxシステムがすべての前提条件を満たしていることを確認する場合は、前提条件のみをテストするスクリプトをダウンロードできます。<block ref="f7ad1b05082bb59227795c56a02d9b78" category="inline-link-rx"></block>。</block>
   <block id="7e1e73ad7e6d01345f57dc84d7cd2c47" category="paragraph"><block ref="8ab3022f8d373945c172f9e89b554e84" category="inline-link-rx"></block>。</block>
   <block id="9cb4f066718ada1a845659033318004c" category="paragraph"><block ref="19c68668f7d6a95b64e909c5da1cb9b0" category="inline-link-rx"></block>。</block>
   <block id="16364877a101c1787c34f2fe604ef9e9" category="paragraph"><block ref="16364877a101c1787c34f2fe604ef9e9" category="inline-image-macro-rx" type="image"></block></block>
@@ -386,7 +376,6 @@
   <block id="e7c3514a81618b80dab1e9591ba97368" category="paragraph">インターネットアクセスがないサイト（プライベートモード）とアウトバウンドのインターネットアクセスが制限されているサイト（制限モード）で、BlueXPの分類が完全にサポートされるようになりました。<block ref="7ee715aa70b4c6d819896ee955e59621" category="inline-link-rx"></block>。</block>
   <block id="8dd6a265487e54146fb2bdfb3e5174a5" category="section-title">BlueXP分類のプライベートモードインストールをアップグレードするときにバージョンをスキップする機能</block>
   <block id="241957d9f6c696915858d43476112454" category="paragraph">シーケンシャルでなくても、新しいバージョンのBlueXP分類にアップグレードできるようになりました。つまり、BlueXPの分類を1つのバージョンにアップグレードするという現行の制限は不要になりました。この機能は、バージョン1.24以降で該当します。</block>
-  <block id="9d5f9909bec8cf71910a31c50878914c" category="section-title">7月30日</block>
   <block id="167693b239be0e2939d61376cd3a5487" category="section-title">コネクタ3.9.32</block>
   <block id="7af14628b780746da1b2b7396f10a07e" category="list-text">BlueXP監査サービスAPIを使用して監査ログをエクスポートできるようになりました。</block>
   <block id="5a97fe4fe664c9e98d8ad88cdbf44d98" category="inline-link">監査サービスAPIの使用に関する詳細情報</block>
@@ -578,4 +567,26 @@
   <block id="e10f6958064ae5f36e8b132d4142e626" category="section-title">パフォーマンスチャート</block>
   <block id="1c6ca21b0d3e6f38c91e416032c3b178" category="paragraph">読み取り、書き込み、およびその他の平均処理数は、ボリュームのIOPSグラフで確認できます。</block>
   <block id="80a2eb22b09cbe781077565f06b74dbf" category="paragraph">AFF Aシリーズ、AFF C190、オールSANアレイ、ONTAP 9.10以降を実行するFAS500などのONTAP システムでは、SANとNASのストレージ効率をノードレベルで実現できます。</block>
+  <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">2023年9月10日</block>
+  <block id="f2d77c003fbfd61002c06e73a629086c" category="section-title">コネクタ3.9.33</block>
+  <block id="d8465669650730f887acd3754f3dea9f" category="list-text">BlueXPからAWSでコネクタを作成するときに、[Key Pair]フィールド内を検索して、コネクタインスタンスで使用するキーペアを簡単に見つけることができるようになりました。</block>
+  <block id="5fa35188b7dd9c428afc77ce84eeb10b" category="inline-image-macro">BlueXPからAWSでコネクタを作成するときに[Network]ページに表示される[Key Pair]フィールドの検索オプションのスクリーンショット。</block>
+  <block id="37570078060157a3624ff806701689b8" category="paragraph"><block ref="37570078060157a3624ff806701689b8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="90641719c2018ef19f0a8140a88f5fee" category="list-text">このアップデートにはバグ修正も含まれています。</block>
+  <block id="9d1bf1e07d6563a578988a0916d686ff" category="section-title">9月5日（バージョン1.25）</block>
+  <block id="a4338ca25ea7436675e99fe5320a9d8a" category="section-title">[Investigation Results]ページから最大100,000項目にタグを適用</block>
+  <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link">方法を参照してください</block>
+  <block id="6d37cd3f2b76637efa533f6623bf7ceb" category="paragraph">これまでは、[Investigation Results]ページ（20項目）で一度に1つのページにタグを適用することしかできませんでした。[調査結果（Investigation Results）]ページで*すべての*項目を選択し、すべての項目（一度に最大100,000項目）にタグを適用できるようになりました。 <block ref="3e9397a24d29fef2aa895562fb0169fb" category="inline-link-rx"></block>。</block>
+  <block id="d0b71ca8d45c425a9eafb601e1eb4c3c" category="section-title">最小ファイルサイズが1MBの重複ファイルを特定する</block>
+  <block id="40733cb3233c3b83d0f3ecc4ee6fed65" category="paragraph">BlueXPの分類では、ファイルが50MB以上の場合にのみ重複ファイルが特定されます。1MBで始まる重複ファイルを識別できるようになりました。[Investigation]ページフィルタの[File Size]と[Duplicates]を使用して、環境内で特定のサイズのファイルが重複しているかどうかを確認できます。</block>
+  <block id="18cf4605db6670514e116119da7de0a0" category="section-title">2023年9月3日</block>
+  <block id="84a4e9be01e1e0b2123f0992743bb3be" category="section-title">正規表現でファイルを除外</block>
+  <block id="8a2aa0d6caae0bb9fe34491d59f66a36" category="paragraph">ユーザはregexを使用してファイルを除外するオプションを使用できるようになりました。</block>
+  <block id="1f3154fef8201e2bc88bd5111528535c" category="inline-link">*ファイル拡張子を除外*機能の詳細については、こちらをご覧ください。</block>
+  <block id="8ca7330f80b3c6b405f94cdadf97a80c" category="paragraph"><block ref="8ca7330f80b3c6b405f94cdadf97a80c" category="inline-link-rx"></block></block>
+  <block id="f32e3be81b145c34740db00a44c46e93" category="section-title">Azureデータブローカー作成時にS3キーを追加</block>
+  <block id="7631c04fd88511e09fd26f0ce9f65ce1" category="paragraph">Azureデータブローカーの作成時にAWS S3のアクセスキーとシークレットキーを追加できるようになりました。</block>
+  <block id="0aa08047034186671d34875b5617b057" category="paragraph"><block ref="0aa08047034186671d34875b5617b057" category="inline-link-rx"></block></block>
+  <block id="d687b97df8e082fb1a95e853c70aa1c2" category="section-title">2023年9月3日</block>
+  <block id="a0c145fadd8b464775a61d2f1a2e0474" category="paragraph">更新されたBlueXP移行レポートサービスでは、レポートデータの更新を提供します。割り当て容量がレポートに含まれるようになりました。</block>
 </blocks>

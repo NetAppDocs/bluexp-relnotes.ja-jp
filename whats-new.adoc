@@ -33,7 +33,22 @@ NetApp BlueXPは2022年11月1日にリリースされました。BlueXPは、Clo
 
 
 
-=== 7月30日
+=== 2023年9月10日
+
+
+
+==== コネクタ3.9.33
+
+* BlueXPからAWSでコネクタを作成するときに、[Key Pair]フィールド内を検索して、コネクタインスタンスで使用するキーペアを簡単に見つけることができるようになりました。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-connector-aws-key-pair.png["BlueXPからAWSでコネクタを作成するときに[Network]ページに表示される[Key Pair]フィールドの検索オプションのスクリーンショット。"]
+
+* このアップデートにはバグ修正も含まれています。
+
+
+
+
+=== 2023年7月30日
 
 
 
@@ -414,6 +429,22 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.ht
 
 
 
+=== 9月5日（バージョン1.25）
+
+
+
+==== [Investigation Results]ページから最大100,000項目にタグを適用
+
+これまでは、[Investigation Results]ページ（20項目）で一度に1つのページにタグを適用することしかできませんでした。[調査結果（Investigation Results）]ページで*すべての*項目を選択し、すべての項目（一度に最大100,000項目）にタグを適用できるようになりました。  https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html#assigning-tags-to-files["方法を参照してください"]。
+
+
+
+==== 最小ファイルサイズが1MBの重複ファイルを特定する
+
+BlueXPの分類では、ファイルが50MB以上の場合にのみ重複ファイルが特定されます。1MBで始まる重複ファイルを識別できるようになりました。[Investigation]ページフィルタの[File Size]と[Duplicates]を使用して、環境内で特定のサイズのファイルが重複しているかどうかを確認できます。
+
+
+
 === 2023年7月17日（バージョン1.24）
 
 
@@ -487,28 +518,6 @@ Red Hatでは前提条件であるDockerがサポートされなくなるため�
 ==== ダークサイトでData Sense BYOLライセンスがサポートされるようになりました
 
 ダークサイトのBlueXPデジタルウォレットにData Sense BYOLライセンスをアップロードして、ライセンスの残量が少なくなったときに通知を受け取ることができます。 https://docs.netapp.com/us-en/bluexp-classification/task-licensing-datasense.html#obtain-your-bluexp-classification-license-file["Data Sense BYOLライセンスの入手方法とアップロード方法をご確認ください"]。
-
-
-
-=== 2023年4月3日（バージョン1.22）
-
-
-
-==== 新しいデータ検出評価レポート
-
-Data Discovery Assessment Reportでは、スキャンされた環境の概要を分析して、システムの調査結果を強調し、懸念領域と潜在的な修復手順を示します。このレポートの目的は、データガバナンスの懸念、データセキュリティの危険性、データセットのデータコンプライアンスギャップに対する認識を高めることです。 https://docs.netapp.com/us-en/bluexp-classification/task-controlling-governance-data.html#data-discovery-assessment-report["Data Discovery Assessment Reportを生成して使用する方法を説明します"]。
-
-
-
-==== クラウド内の小規模インスタンスにBlueXPの分類機能を導入できます
-
-AWS環境のBlueXP ConnectorからBlueXPの分類を導入する際に、デフォルトのインスタンスよりも小さい2つのインスタンスタイプから選択できるようになりました。小規模な環境をスキャンする場合は、クラウドコストを節約できます。ただし、小さいインスタンスを使用する場合はいくつかの制限があります。 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#using-a-smaller-instance-type["使用可能なインスタンスタイプと制限事項を参照してください"]。
-
-
-
-==== BlueXPの分類をインストールする前に、スタンドアロンスクリプトを使用してLinuxシステムを認定できるようになりました
-
-BlueXP分類インストールとは別に、Linuxシステムがすべての前提条件を満たしていることを確認する場合は、前提条件のみをテストするスクリプトをダウンロードできます。 https://docs.netapp.com/us-en/bluexp-classification/task-test-linux-system.html["LinuxホストでBlueXPのインストール準備が完了しているかどうかを確認する方法を説明します"]。
 
 
 
@@ -633,6 +642,26 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 == コピーと同期
+
+
+
+=== 2023年9月3日
+
+
+
+==== 正規表現でファイルを除外
+
+ユーザはregexを使用してファイルを除外するオプションを使用できるようになりました。
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#create-other-types-of-sync-relationships["*ファイル拡張子を除外*機能の詳細については、こちらをご覧ください。"]
+
+
+
+==== Azureデータブローカー作成時にS3キーを追加
+
+Azureデータブローカーの作成時にAWS S3のアクセスキーとシークレットキーを追加できるようになりました。
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#creating-the-data-broker["Azureでデータブローカーを作成する方法については、こちらをご覧ください。"]
 
 
 
@@ -991,6 +1020,12 @@ BlueXPキャンバスでGoogle Cloud Storageのバケットを表示できるよ
 
 
 == 移行レポート
+
+
+
+=== 2023年9月3日
+
+更新されたBlueXP移行レポートサービスでは、レポートデータの更新を提供します。割り当て容量がレポートに含まれるようになりました。
 
 
 
