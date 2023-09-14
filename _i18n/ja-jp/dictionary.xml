@@ -508,10 +508,6 @@
   <block id="325e4e14529c96a60b99d9cecba4d5a6" category="section-title">2023年6月21日</block>
   <block id="072d1a387472fb47fdfa33e48ff08ffd" category="section-title">Sustainability Dashboard</block>
   <block id="157e4d0632e88d94ee663058894a5415" category="paragraph">Sustainability Dashboardは、ストレージシステムの環境の持続可能性に関する貴重なインサイトを提供します。持続可能性スコア、炭素緩和率、電力使用量の予測、直接炭素、熱などの情報を表示できます。特定のサイトの炭素緩和率を調整できます。持続可能性スコアはクラスタレベルでも確認できます。持続可能性スコアを評価することで、ストレージシステム全体の効率性を評価し、持続可能性を強化するためのネットアップの推奨アクションに合わせることができます。 <block ref="14f04672b3a078b1589b8f46c67500a4" category="inline-link-macro-rx"></block>。</block>
-  <block id="7002d0318dc4f195c464ca83f3d2ca86" category="section-title">2023年2月22日</block>
-  <block id="e10f6958064ae5f36e8b132d4142e626" category="section-title">パフォーマンスチャート</block>
-  <block id="1c6ca21b0d3e6f38c91e416032c3b178" category="paragraph">読み取り、書き込み、およびその他の平均処理数は、ボリュームのIOPSグラフで確認できます。</block>
-  <block id="80a2eb22b09cbe781077565f06b74dbf" category="paragraph">AFF Aシリーズ、AFF C190、オールSANアレイ、ONTAP 9.10以降を実行するFAS500などのONTAP システムでは、SANとNASのストレージ効率をノードレベルで実現できます。</block>
   <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">2023年9月10日</block>
   <block id="f2d77c003fbfd61002c06e73a629086c" category="section-title">コネクタ3.9.33</block>
   <block id="d8465669650730f887acd3754f3dea9f" category="list-text">BlueXPからAWSでコネクタを作成するときに、[Key Pair]フィールド内を検索して、コネクタインスタンスで使用するキーペアを簡単に見つけることができるようになりました。</block>
@@ -556,4 +552,10 @@
   <block id="6ce2a7f72f88b0710fcd4fd7c8040621" category="section-title">小規模および中規模の導入が一時的に利用できない</block>
   <block id="6c7040f055c36964a640c88c62785b1b" category="paragraph">現時点では、BlueXP分類のインスタンスをAWSに導入する場合、*[Deploy]&gt;[Configuration]*を選択してSmallまたはMedium sizedインスタンスを選択するオプションは使用できません。[Deploy]&gt;[Deploy]*を選択して、大きなインスタンスサイズを使用してインスタンスを導入することもできます。</block>
   <block id="a95484ffd76e2e97fc6d584af31d2888" category="paragraph">これまでは、[Investigation Results]ページ（20項目）で一度に1つのページにタグを適用することしかできませんでした。[調査結果（Investigation Results）]ページで*すべての*項目を選択し、すべての項目（一度に最大100,000項目）にタグを適用できるようになりました。<block ref="3e9397a24d29fef2aa895562fb0169fb" category="inline-link-rx"></block>。</block>
+  <block id="0d2ad64b559232943585fd7b1d8a6a97" category="section-title">2023年9月27日</block>
+  <block id="1e3c19e3742fbfc0e6dd22bb91d109a3" category="section-title">Upgrade Advisor を使用します</block>
+  <block id="ca6933ae0f261efa98f09526aba05bf1" category="paragraph">デフォルトの監視リストまたはダッシュボードの[Upgrade Advisor]ページには、 <block ref="2a9dc4897c9bae502dc40fd9fb7b1c92" category="inline-link-macro-rx"></block> リンクデフォルトの監視リストやダッシュボードがない場合は、リンクをクリックすると検索ページにリダイレクトされます。</block>
+  <block id="9622c46ac664d07f743905654edd5f26" category="section-title">アップグレードプラン</block>
+  <block id="bd3f220b24dc61548511364f320ec8ea" category="inline-link-macro">アップグレードプランを使用したONTAPのバージョンのアップグレード</block>
+  <block id="62418fbf78b58ba84b3c5a6987815772" category="paragraph">アップグレードプランは、冗長なアップグレード手順を削除し、情報と警告を変更し、バックアウトプランを簡素化するように最適化されています。クラスタ内のすべてのノードで共通の手順が統合され、[General Information]セクションで使用できます。改善された計画を表示するには、に記載されている手順に従ってアップグレード計画を生成します。 <block ref="90927e731c81adade70cb7e4c40b43bd" category="inline-link-macro-rx"></block>。</block>
 </blocks>
