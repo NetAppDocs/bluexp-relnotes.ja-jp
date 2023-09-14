@@ -346,9 +346,6 @@
   <block id="025b17159c4d2dd28926bdc5b13436e2" category="section-title">BlueXPの分類では、ドイツの2つの新しいタイプの個人データが特定されています。</block>
   <block id="e2f64dc02ab3f9d3b659d24b9503b545" category="list-text">ドイツ語ID（Personalausweisnummer）</block>
   <block id="ac01084f4d5a1af5de639eaf04ad94ff" category="list-text">ドイツ社会保障番号（Sozialversicherungsnummer）</block>
-  <block id="f6731e0bd9f7a8a40f83ba1c622ffe25" category="section-title">Rocky Linux 9がサポート対象のLinuxディストリビューションになり、BlueXP分類をインストールできるようになりました。</block>
-  <block id="76264cc2bc8d3793465d31c38655f588" category="inline-link">Rocky LinuxがインストールされているホストにBlueXP分類をインストールする方法を確認</block>
-  <block id="059df2e0abacded1764d0222f6ab3b42" category="paragraph">Rocky Linux 9（9.0、9.1、9.2）は、BlueXPのサポート対象オペレーティングシステムとして認定されています。BlueXPの分類は、ネットワーク内のRocky Linuxホストにインストールすることも、バージョン1.24のインストーラを使用している場合はクラウド内のLinuxホストにインストールすることもできます。<block ref="b549f731e0826bdc1659ea47e9a6f422" category="inline-link-rx"></block>。</block>
   <block id="cdbb87700ea6d8c32de7576d1ecb9987" category="section-title">BlueXPの分類は制限モードとプライベートモードで完全にサポートされています。</block>
   <block id="7c4ed755305616a8a97076615e4aa1e5" category="inline-link">コネクタのBlueXP導入モードの詳細</block>
   <block id="e7c3514a81618b80dab1e9591ba97368" category="paragraph">インターネットアクセスがないサイト（プライベートモード）とアウトバウンドのインターネットアクセスが制限されているサイト（制限モード）で、BlueXPの分類が完全にサポートされるようになりました。<block ref="7ee715aa70b4c6d819896ee955e59621" category="inline-link-rx"></block>。</block>
@@ -524,7 +521,6 @@
   <block id="9d1bf1e07d6563a578988a0916d686ff" category="section-title">9月5日（バージョン1.25）</block>
   <block id="a4338ca25ea7436675e99fe5320a9d8a" category="section-title">[Investigation Results]ページから最大100,000項目にタグを適用</block>
   <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link">方法を参照してください</block>
-  <block id="6d37cd3f2b76637efa533f6623bf7ceb" category="paragraph">これまでは、[Investigation Results]ページ（20項目）で一度に1つのページにタグを適用することしかできませんでした。[調査結果（Investigation Results）]ページで*すべての*項目を選択し、すべての項目（一度に最大100,000項目）にタグを適用できるようになりました。 <block ref="3e9397a24d29fef2aa895562fb0169fb" category="inline-link-rx"></block>。</block>
   <block id="d0b71ca8d45c425a9eafb601e1eb4c3c" category="section-title">最小ファイルサイズが1MBの重複ファイルを特定する</block>
   <block id="40733cb3233c3b83d0f3ecc4ee6fed65" category="paragraph">BlueXPの分類では、ファイルが50MB以上の場合にのみ重複ファイルが特定されます。1MBで始まる重複ファイルを識別できるようになりました。[Investigation]ページフィルタの[File Size]と[Duplicates]を使用して、環境内で特定のサイズのファイルが重複しているかどうかを確認できます。</block>
   <block id="18cf4605db6670514e116119da7de0a0" category="section-title">2023年9月3日</block>
@@ -557,4 +553,7 @@
   <block id="bc3a07be852924fbf8ece67dbd310169" category="inline-link-macro">AzureでのCloud Volumes ONTAPのストレージ制限を表示</block>
   <block id="7dd77d10e6ae3bee2c34fcea19d9c1ab" category="paragraph"><block ref="2e2ea5a0499f86c06503605a768ce8a2" category="inline-link-macro-rx"></block>
 <block ref="c1f4bd6aa6a7def50b28a0bec13e0184" category="inline-link-macro-rx"></block></block>
+  <block id="6ce2a7f72f88b0710fcd4fd7c8040621" category="section-title">小規模および中規模の導入が一時的に利用できない</block>
+  <block id="6c7040f055c36964a640c88c62785b1b" category="paragraph">現時点では、BlueXP分類のインスタンスをAWSに導入する場合、*[Deploy]&gt;[Configuration]*を選択してSmallまたはMedium sizedインスタンスを選択するオプションは使用できません。[Deploy]&gt;[Deploy]*を選択して、大きなインスタンスサイズを使用してインスタンスを導入することもできます。</block>
+  <block id="a95484ffd76e2e97fc6d584af31d2888" category="paragraph">これまでは、[Investigation Results]ページ（20項目）で一度に1つのページにタグを適用することしかできませんでした。[調査結果（Investigation Results）]ページで*すべての*項目を選択し、すべての項目（一度に最大100,000項目）にタグを適用できるようになりました。<block ref="3e9397a24d29fef2aa895562fb0169fb" category="inline-link-rx"></block>。</block>
 </blocks>

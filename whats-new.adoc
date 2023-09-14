@@ -385,9 +385,15 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 
 
 
+==== 小規模および中規模の導入が一時的に利用できない
+
+現時点では、BlueXP分類のインスタンスをAWSに導入する場合、*[Deploy]>[Configuration]*を選択してSmallまたはMedium sizedインスタンスを選択するオプションは使用できません。[Deploy]>[Deploy]*を選択して、大きなインスタンスサイズを使用してインスタンスを導入することもできます。
+
+
+
 ==== [Investigation Results]ページから最大100,000項目にタグを適用
 
-これまでは、[Investigation Results]ページ（20項目）で一度に1つのページにタグを適用することしかできませんでした。[調査結果（Investigation Results）]ページで*すべての*項目を選択し、すべての項目（一度に最大100,000項目）にタグを適用できるようになりました。  https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html#assigning-tags-to-files["方法を参照してください"]。
+これまでは、[Investigation Results]ページ（20項目）で一度に1つのページにタグを適用することしかできませんでした。[調査結果（Investigation Results）]ページで*すべての*項目を選択し、すべての項目（一度に最大100,000項目）にタグを適用できるようになりました。 https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html#assigning-tags-to-files["方法を参照してください"]。
 
 
 
@@ -410,12 +416,6 @@ BlueXPの分類では、次のタイプのデータを含むファイルを特�
 
 
 https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["BlueXPの分類によってデータから特定できるすべてのタイプの個人データを確認できます"]。
-
-
-
-==== Rocky Linux 9がサポート対象のLinuxディストリビューションになり、BlueXP分類をインストールできるようになりました。
-
-Rocky Linux 9（9.0、9.1、9.2）は、BlueXPのサポート対象オペレーティングシステムとして認定されています。BlueXPの分類は、ネットワーク内のRocky Linuxホストにインストールすることも、バージョン1.24のインストーラを使用している場合はクラウド内のLinuxホストにインストールすることもできます。 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["Rocky LinuxがインストールされているホストにBlueXP分類をインストールする方法を確認"]。
 
 
 
