@@ -270,6 +270,34 @@ BlueXP CanvasでAmazon S3バケットを表示できるようになりました�
 
 
 
+=== 2023年9月11日
+
+
+
+==== ONTAPデータの新しいポリシー管理
+
+このリリースには、UI内で、ONTAPデータのオブジェクトストレージへのバックアップ用のカスタムSnapshotポリシー、レプリケーションポリシー、およびポリシーを作成する機能が含まれています。
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-create-policies-ontap.html["ポリシーの詳細"]。
+
+
+
+==== ONTAP S3オブジェクトストレージ内のボリュームからのファイルとフォルダのリストアのサポート
+
+これまでは、ボリュームがONTAP S3オブジェクトストレージにバックアップされている場合、[Browse & Restore]機能を使用してファイルやフォルダをリストアすることはできませんでした。このリリースでは、この制限はなくなりました。
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["データのリストアに関する詳細情報"]。
+
+
+
+==== SnapLockボリュームのバックアップとリストアのサポートの追加
+
+バックアップとリカバリで、SnapLockコンプライアンスまたはSnapLockエンタープライズ保護モードを使用して設定されたFlexVolボリュームとFlexGroupボリュームの両方をバックアップできるようになりました。このサポートを実行するには、クラスタでONTAP 9.14以降が実行されている必要があります。ONTAPバージョン9.11.1以降では、SnapLock Enterpriseモードを使用したFlexVolボリュームのバックアップがサポートされています。以前のONTAPリリースでは、SnapLock保護ボリュームのバックアップはサポートされません。
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["ONTAPデータの保護に関する詳細情報"]。
+
+
+
 === 2023年8月1日
 
 [IMPORTANT]
@@ -346,82 +374,6 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 オブジェクトストレージにバックアップファイルを作成すると、デフォルトでは、バックアップおよびリカバリサービスによってオブジェクトストレージにバケットが作成されます。特定の名前を使用したり、特殊なプロパティを割り当てたりする場合は、バケットを自分で作成できます。独自のバケットを作成する場合は、アクティブ化ウィザードを開始する前にバケットを作成する必要があります。 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#do-you-want-to-create-your-own-object-storage-container["オブジェクトストレージバケットの作成方法について説明します"]。
 
 この機能は、StorageGRIDシステムにバックアップファイルを作成する場合は現在サポートされていません。
-
-
-
-=== 2023年7月4日
-
-
-
-==== BlueXPのアプリケーション向けバックアップとリカバリの機能拡張（クラウドネイティブ）
-
-* SAP HANAシステム
-+
-** Azure NetApp Filesセカンダリ保護が有効な非データボリュームおよびグローバル非データボリュームの接続とコピーリストアをサポートします
-
-
-* Oracleデータベース
-+
-** Azure NetApp Files上のOracleデータベースを別の場所にリストアできます
-** Azure NetApp Files上のOracleデータベースのバックアップのOracle Recovery Manager（RMAN）カタログ化をサポートします
-** データベースホストをメンテナンスモードにしてメンテナンスタスクを実行できます
-
-
-
-
-
-
-==== アプリケーション向けのBlueXPのバックアップとリカバリの機能拡張（ハイブリッド）
-
-* 別の場所へのリストアをサポートします
-* Oracleデータベースのバックアップをマウントできます
-* GCPからアーカイブ層へのバックアップの移動をサポートします
-
-
-
-
-==== BlueXPの仮想マシンのバックアップとリカバリの機能拡張（ハイブリッド）
-
-* NFSおよびVMFSタイプのデータストアの保護をサポートします
-* SnapCenter Plug-in for VMware vSphereホストの登録を解除できます
-* 最新のデータストアとバックアップの更新と検出がサポートされます
-
-
-
-
-=== 2023年6月5日
-
-
-
-==== FlexGroupボリュームは、DataLockとランサムウェア対策を使用してバックアップおよび保護できます
-
-クラスタでONTAP 9.13.1以降が実行されている場合、FlexGroupボリュームのバックアップポリシーでDataLockとランサムウェア対策を使用できるようになりました。
-
-
-
-==== 新しいレポート機能
-
-[Reports]タブでバックアップインベントリレポートを生成できるようになりました。このレポートには、特定のアカウント、作業環境、またはSVMインベントリのすべてのバックアップが含まれます。Data Protection Job Activityレポートを作成することもできます。このレポートには、Snapshot、バックアップ、クローニング、およびリストアの各処理に関する情報が表示され、サービスレベルアグリーメントの監視に役立ちます。を参照してください https://docs.netapp.com/us-en/bluexp-backup-recovery/task-report-inventory.html["データ保護の適用範囲に関するレポートを作成します"]。
-
-
-
-==== ジョブモニタの機能拡張
-
-[Job Monitor]ページで、_backup lifecycle_をジョブタイプとして確認できるようになりました。これにより、バックアップライフサイクル全体を追跡できます。BlueXPタイムラインでは、すべての処理の詳細を確認することもできます。を参照してください https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html["バックアップジョブとリストアジョブのステータスを監視します"]。
-
-
-
-==== 一致しないポリシーラベルに関する追加の通知アラート
-
-新しいバックアップアラート「Backup files were not created because Snapshot policy labels do not match」が追加されました。バックアップポリシーで定義された_label_inにSnapshotポリシーにmatching_label_inがない場合、バックアップファイルは作成されません。欠落しているラベルをボリュームSnapshotポリシーに追加するには、System ManagerまたはONTAP CLIを使用する必要があります。
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html#review-backup-and-restore-alerts-in-the-bluexp-notification-center["BlueXPのバックアップとリカバリから送信されるアラートをすべて確認します"]。
-
-
-
-==== ダークサイトのBlueXPの重要なバックアップファイルとリカバリファイルを自動でバックアップ
-
-インターネットアクセスのないサイト（「プライベートモード」環境）でBlueXPのバックアップとリカバリを使用している場合、BlueXPのバックアップとリカバリの情報はローカルコネクタシステムにのみ格納されます。この新機能では、BlueXPの重要なバックアップ/リカバリデータが接続されたStorageGRIDシステムのバケットに自動的にバックアップされるため、必要に応じてこのデータを新しいコネクタにリストアできます。 https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-backup-cbs-db-in-dark-site.html["詳細はこちら。"]
 
 
 
@@ -525,6 +477,21 @@ Red Hatでは前提条件であるDockerがサポートされなくなるため�
 
 
 
+=== 2023年9月10日
+
+コネクタの3.9.33リリースでは、次の変更が導入されました。
+
+
+
+==== AzureでのLsv3シリーズVMのサポート
+
+AzureのCloud Volumes ONTAPでは、9.13.1リリース以降で、単一のアベイラビリティゾーンと複数のアベイラビリティゾーンに管理対象ディスクを共有するシングルノード環境とハイアベイラビリティペア環境で、L48s_v3とL64s_v3のインスタンスタイプがサポートされるようになりました。これらのインスタンスタイプでは、Flash Cacheがサポートされます。
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["AzureでサポートされるCloud Volumes ONTAP構成を確認する"]
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["AzureでのCloud Volumes ONTAPのストレージ制限を表示"]
+
+
+
 === 2023年7月30日
 
 コネクタの3.9.32リリースでは、次の変更が導入されました。
@@ -574,20 +541,6 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp
 BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.13.1 General Availabilityリリースを導入、管理できるようになりました。
 
 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
-
-
-
-=== 2023年7月2日
-
-コネクタの3.9.31リリースでは、次の変更が導入されました。
-
-
-
-==== AzureでのHAマルチアベイラビリティゾーン環境のサポート
-
-Azureの東日本および韓国中部では、Cloud Volumes ONTAP 9.12.1 GA以降でHAマルチアベイラビリティゾーンの導入がサポートされるようになりました。
-
-複数のアベイラビリティゾーンをサポートするすべてのリージョンのリストについては、を参照してください https://bluexp.netapp.com/cloud-volumes-global-regions["Azureのグローバルリージョンマップ"^]。
 
 
 
@@ -1099,54 +1052,6 @@ NOTE: コネクタがない場合は、ローカルマシンからは更新で�
 運用の耐障害性は、アラートとイベントを分析してサービスとソリューションの健全性、アップタイム、パフォーマンスを維持するのに役立つサービスです。
 
 link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/intro.html["BlueXPの運用耐障害性の詳細については、こちらをご覧ください"]。
-
-
-
-== ランサムウェアからの保護
-
-
-
-=== 2023年4月3日
-
-
-
-==== ランサムウェア攻撃からデータを保護するための新しい推奨アクション
-
-* 「データソースのビジネスクリティカルなファイルをバックアップする」の新しい推奨アクションでは、BlueXPのバックアップとリカバリを使用してボリュームをバックアップし、最も重要なカテゴリのデータを保護する方法について説明します。これは、ランサムウェア攻撃によってデータをリカバリする必要がある場合に重要です。推奨構成に従うと、必要なボリュームでバックアップを有効にできるように、BlueXPのバックアップとリカバリのインターフェイスにリダイレクトされます。
-* 「データソースのサイバーストレージ構成をオンにする」という新しい推奨アクションでは、データの保護に役立つ6つのONTAP 機能が有効になっているか無効になっているかを特定します。これらの機能は、オンプレミスのすべてのONTAP システムとCloud Volumes ONTAP システムで有効にする必要があります。
-
-
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/task-analyze-ransomware-data.html#list-of-recommended-actions["推奨されるすべての対処方法の一覧を確認してください"]。
-
-
-
-=== 2023年3月7日
-
-
-
-==== 攻撃からシステムをリカバリするための新しいRansomware Recovery Dashboardが追加されました
-
-Ransomware Recovery Dashboardには、ランサムウェアに感染した可能性のあるデータをリカバリするためのオプションが用意されています。これにより、システムを迅速にバックアップして稼働させることができます。現時点では、リカバリアクションを使用して、破損したボリュームを、ランサムウェアの影響を受けていないSnapshotコピーに置き換えることができます。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/task-ransomware-recovery.html["詳細はこちら。"]。
-
-
-
-=== 2023年2月5日
-
-
-
-==== ビジネスクリティカルとみなすデータを識別するポリシーを定義する機能
-
-BlueXPランサムウェア対策に、ビジネスクリティカルデータに関する新しいページが追加されました。このページでは、BlueXPの分類で定義されているすべてのポリシーを表示できます。ビジネスにとって重要なデータを特定するポリシーを選択すると、BlueXPランサムウェア対策ダッシュボードやその他のランサムウェアパネルに、最も重要なデータに基づく潜在的な問題が反映されるようになります。
-
-BlueXPランサムウェア対策サービスに対してこれらのポリシーをアクティブ化していない場合は、[Recommended Actions]パネルに[Configure your business critical data]という新しい推奨アクションが表示されます。
-
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/task-select-business-critical-policies.html["ビジネスクリティカルデータの詳細については、こちらをご覧ください"^]。
-
-
-
-==== BlueXPのランサムウェア対策は、「Protection」カテゴリから「Governance」カテゴリに移行されました
-
-次に、BlueXPの左ナビゲーションメニューから* Governance > Ransomware Protection *を選択してこのサービスにアクセスしてください。
 
 
 
