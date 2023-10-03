@@ -287,7 +287,6 @@
   <block id="ef4fe9904a05c0168f433db5ef979256" category="list-text">次の操作を実行できます。 <block ref="73429b7c98363ef2dcc9eca20bd224e7" category="inline-link-macro-rx"></block> BlueXPを使用してAmazon FSx for NetApp ONTAPファイルシステムに移行できます。</block>
   <block id="c835313828dae8f6f2e19118949a05ce" category="list-text">** My Opportunities **タブが** My estate **になりました。ドキュメントが更新され、新しい名前が反映されます。</block>
   <block id="f73b546b2cf111d3a080443f2cd3b97f" category="section-title">2023年7月2日</block>
-  <block id="a6d6a466484f2718bba09926e0dfb2c7" category="paragraph">コネクタの3.9.31リリースでは、次の変更が導入されました。</block>
   <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP</block>
   <block id="11f4fef53a39b0e83d4fdb9f922e768e" category="section-title">My estateからクラスタを検出</block>
   <block id="4573c689742769edc01e3f45205fd784" category="paragraph">オンプレミスのONTAPクラスタを検出できるようになりました。これには、* Canvas &gt; My estate *から、BlueXPログインのEメールアドレスに関連付けられているONTAPクラスタに基づいてBlueXPが検出されたクラスタを選択します。</block>
@@ -364,9 +363,6 @@
   <block id="b259e22e76e27ad956b503941804b4c6" category="list-text">ボリュームタイプ「secondary」のラベルが「Secondary（DP）」に変更されました。</block>
   <block id="37532cd27e3c53471b1caed0ba1f90ed" category="inline-link-macro">使用状況レポートをダウンロードします</block>
   <block id="a8c4bf4701c4d99d778be1176c8c8616" category="paragraph">使用状況レポートの詳細については、を参照してください。 <block ref="b9c4007084372a89d5df93919658aa73" category="inline-link-macro-rx"></block>。</block>
-  <block id="8ccf37f65f5b32ae30e20faafe7dd9ba" category="section-title">2023年7月26日</block>
-  <block id="eccfb2b7d21b722b7e6659bf39e0f295" category="section-title">Cloud Volumes ONTAP 9.13.1 GA</block>
-  <block id="64118c9781a8b98caa35463a68a24220" category="paragraph">BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.13.1 General Availabilityリリースを導入、管理できるようになりました。</block>
   <block id="c2282365523aa8fbb305c5432e90d5d7" category="paragraph"><block ref="6f9b2ccd962907ef2c43f6fa9517a053" category="inline-link-macro-rx"></block>。</block>
   <block id="c1ab40aac4724ff5a3b9540c19eed579" category="paragraph">Cloud Volumes ONTAP使用状況レポートにいくつかの改善点が追加されました。</block>
   <block id="c352c835cf612ee328fb7dba772bce4d" category="list-text">シリアル番号の新しい_node_fieldが追加されました。</block>
@@ -490,7 +486,6 @@
   <block id="2a88859b894ead28756789553bc66754" category="list-text">機能の変更に伴い、[Snapshotバックアップなしの削減]*の名前が*[Snapshotコピーあり]*に変更されました。 <block ref="3a01d99aaa6c74ce8f92a2ac5ca4e5e9" category="inline-link-macro-rx"></block>。</block>
   <block id="325e4e14529c96a60b99d9cecba4d5a6" category="section-title">2023年6月21日</block>
   <block id="072d1a387472fb47fdfa33e48ff08ffd" category="section-title">Sustainability Dashboard</block>
-  <block id="157e4d0632e88d94ee663058894a5415" category="paragraph">Sustainability Dashboardは、ストレージシステムの環境の持続可能性に関する貴重なインサイトを提供します。持続可能性スコア、炭素緩和率、電力使用量の予測、直接炭素、熱などの情報を表示できます。特定のサイトの炭素緩和率を調整できます。持続可能性スコアはクラスタレベルでも確認できます。持続可能性スコアを評価することで、ストレージシステム全体の効率性を評価し、持続可能性を強化するためのネットアップの推奨アクションに合わせることができます。 <block ref="14f04672b3a078b1589b8f46c67500a4" category="inline-link-macro-rx"></block>。</block>
   <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">2023年9月10日</block>
   <block id="f2d77c003fbfd61002c06e73a629086c" category="section-title">コネクタ3.9.33</block>
   <block id="d8465669650730f887acd3754f3dea9f" category="list-text">BlueXPからAWSでコネクタを作成するときに、[Key Pair]フィールド内を検索して、コネクタインスタンスで使用するキーペアを簡単に見つけることができるようになりました。</block>
@@ -537,14 +532,20 @@
   <block id="a95484ffd76e2e97fc6d584af31d2888" category="paragraph">これまでは、[Investigation Results]ページ（20項目）で一度に1つのページにタグを適用することしかできませんでした。[調査結果（Investigation Results）]ページで*すべての*項目を選択し、すべての項目（一度に最大100,000項目）にタグを適用できるようになりました。<block ref="3e9397a24d29fef2aa895562fb0169fb" category="inline-link-rx"></block>。</block>
   <block id="0d2ad64b559232943585fd7b1d8a6a97" category="section-title">2023年9月27日</block>
   <block id="1e3c19e3742fbfc0e6dd22bb91d109a3" category="section-title">Upgrade Advisor を使用します</block>
-  <block id="ca6933ae0f261efa98f09526aba05bf1" category="paragraph">デフォルトの監視リストまたはダッシュボードの[Upgrade Advisor]ページには、 <block ref="2a9dc4897c9bae502dc40fd9fb7b1c92" category="inline-link-macro-rx"></block> リンクデフォルトの監視リストやダッシュボードがない場合は、リンクをクリックすると検索ページにリダイレクトされます。</block>
-  <block id="9622c46ac664d07f743905654edd5f26" category="section-title">アップグレードプラン</block>
-  <block id="bd3f220b24dc61548511364f320ec8ea" category="inline-link-macro">アップグレードプランを使用したONTAPのバージョンのアップグレード</block>
-  <block id="62418fbf78b58ba84b3c5a6987815772" category="paragraph">アップグレードプランは、冗長なアップグレード手順を削除し、情報と警告を変更し、バックアウトプランを簡素化するように最適化されています。クラスタ内のすべてのノードで共通の手順が統合され、[General Information]セクションで使用できます。改善された計画を表示するには、に記載されている手順に従ってアップグレード計画を生成します。 <block ref="90927e731c81adade70cb7e4c40b43bd" category="inline-link-macro-rx"></block>。</block>
   <block id="4b9f4d0e463502904f138e1d9f0014a4" category="section-title">10月4日（バージョン1.26）</block>
   <block id="620a73262e6956695319caae21506289" category="section-title">RHELバージョン9を使用したオンプレミスインストールのサポート</block>
   <block id="97e778415712a740a3bb71e9070c88c5" category="paragraph">Red Hat Enterprise Linuxバージョン8および9は、BlueXP分類のインストールに必要なDockerエンジンをサポートしていません。コンテナインフラとしてPodmanバージョン4以降を使用したRHEL 9.0、9.1、9.2へのインストールがサポートされるようになりました。最新バージョンのRHELを使用する必要がある環境では、Podmanを使用する際にBlueXP分類（バージョン1.26以降）をインストールできるようになりました。</block>
   <block id="081ac57be4c35d4de4fc43c105089d8f" category="paragraph">現時点では、ダークサイトのインストールや分散スキャン環境（マスターおよびリモートスキャナノードを使用）はサポートされていません。</block>
   <block id="db5b005cbaaba7a23899858892848a77" category="section-title">調査ページの結果には、項目の合計数に加えて合計サイズが表示されるようになりました。</block>
   <block id="81b243d81f786faa99d42ef659adac3a" category="paragraph">[Investigation]ページでフィルタ処理された結果に、ファイルの合計数に加えてアイテムの合計サイズが表示されるようになりました。これは、ファイルの移動、ファイルの削除などを行うときに役立ちます。</block>
+  <block id="69483d973a063c873a5a66f6edcc241c" category="section-title">2023年10月6日</block>
+  <block id="ce408175c3b7eaf6c3dfc910f3547833" category="section-title">コネクタ3.9.34</block>
+  <block id="0b440ac3de48c7d11ee5fad31e6b4f12" category="paragraph">このリリースには、マイナーな改善とバグ修正が含まれています。</block>
+  <block id="5612c729ea34f27969af31fd815184e0" category="paragraph">コネクタの3.9.34リリースでは、次の変更が導入されました。</block>
+  <block id="44d133359b344c4542acdebe6209e101" category="section-title">Cloud Volumes ONTAP 9.14.0</block>
+  <block id="c5fa627d231c9a8813c9a2421d86136f" category="paragraph">BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.14.0 General Availabilityリリースを導入、管理できるようになりました。</block>
+  <block id="f32be3299de249a0d2ea856582aaf567" category="list-text">デフォルトの監視リストの[Upgrade Advisor]ページには、 <block ref="2a9dc4897c9bae502dc40fd9fb7b1c92" category="inline-link-macro-rx"></block> リンク</block>
+  <block id="d733f1a5970e5ea99d583388ac25e9cf" category="inline-link-macro">アップグレードプランを生成して確認する方法を確認する</block>
+  <block id="b01f37f1151c1eda43d977dc266311ad" category="list-text">アップグレードプランは、冗長なアップグレード手順を排除し、バックアウトプランを簡素化するように最適化されています。クラスタ内のすべてのノードで共通の手順が統合され、アップグレードプランの「一般情報」セクションに表示されます。 <block ref="818a7808067ecc2956de5a6af27e7278" category="inline-link-macro-rx"></block>。</block>
+  <block id="728961fac8324355b6e6e72caa3fcab4" category="paragraph">Sustainabilityダッシュボードは、ストレージシステムの環境の持続可能性に関する貴重なインサイトを提供します。持続可能性スコア、炭素緩和率、電力使用量の予測、直接炭素、熱などの情報を表示できます。特定のサイトの炭素緩和率を調整できます。持続可能性スコアはクラスタレベルでも確認できます。持続可能性のスコアに基づいて、ストレージシステム全体の効率を評価し、持続可能性を強化するためのネットアップの推奨アクションに合わせることができます。 <block ref="14f04672b3a078b1589b8f46c67500a4" category="inline-link-macro-rx"></block>。</block>
 </blocks>
