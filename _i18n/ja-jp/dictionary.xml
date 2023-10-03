@@ -108,7 +108,6 @@
   <block id="7954886e5818e91e397e0ca331d15d48" category="section-title">Optimus PSMを強化し、クラウドライセンスを構成</block>
   <block id="3bf86cee85be3992be11d6813b4f6b14" category="section-title">Optimus UI（Edge Configuration）のEdge Sync機能が強化され、接続されているすべてのクライアントが表示されるようになりました</block>
   <block id="0b17baeba205d071cc0142cf4aba9b76" category="paragraph">StorageGRID システムをBlueXPから直接検出できるようになりました。StorageGRID を検出すると、ハイブリッドマルチクラウド全体のデータを包括的に把握できます。</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">BlueXPのすべてのマニュアル</block>
   <block id="88268cce7d1b83c765c3f7010df80df5" category="section-title">2022年11月6日</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXPのブログ</block>
   <block id="6beb41a356d9287866f0b22c4b4eadcb" category="paragraph">BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します詳細については、を参照してください <block ref="1e9f4589e5d2713376df79f13fc9ba0a" category="inline-link-macro-rx"></block> 個々のサービスごと。</block>
@@ -271,25 +270,9 @@
   <block id="da20ff5e68ae0641ae1925c968ac0244" category="paragraph">BlueXPボリュームキャッシングを使用すると、特にAmazon FSx for NetApp ONTAP、Cloud Volumes ONTAP、オンプレミスの作業環境向けに、クラウド向けのキャッシュ機能を利用できます。</block>
   <block id="62f5b0396e259b44122ad3fd5f9581e0" category="inline-link-macro">BlueXPのボリュームキャッシュの詳細については、こちらをご覧ください</block>
   <block id="2ffe4affb627afa20f3783de7a26c8af" category="paragraph"><block ref="c926d704a05a7f256c6c14f4d9e77466" category="inline-link-macro-rx"></block>。</block>
-  <block id="96828273826a07fdc4f42f4998e536b2" category="section-title">2023年6月6日（バージョン1.23）</block>
-  <block id="04e04c61cd37ca8f12b83c892c2c46ea" category="section-title">データ主体名の検索で日本語がサポートされるようになりました</block>
-  <block id="3a3337f232548d40f54052862077499b" category="inline-link">Data Subject Access Request レポート</block>
-  <block id="931c126009c96d8f8ce9770df003478d" category="inline-link">[Data Investigation]ページの[Data Subject]フィルタ</block>
-  <block id="8b33a4571db736cc278b213820df9c13" category="paragraph">データ主体アクセス要求（DSAR）に応答して、被験者の名前を検索する際に日本語名を入力できるようになりました。を生成できます<block ref="8ff27ad1e3f1d885a2f0c0f257501bb1" category="inline-link-rx"></block> 結果の情報を使用して。に日本語の名前を入力することもできます<block ref="615fae5bff7ec48fe0ed5c47e50f199a" category="inline-link-rx"></block> サブジェクト名を含むファイルを識別します。</block>
-  <block id="988e5d1ef231d33d94784c928261f0aa" category="section-title">Ubuntuがサポート対象のLinuxディストリビューションになり、BlueXP分類をインストールできるようになりました</block>
-  <block id="bf62ea0cc2aa2f5ecb7f712ffcdafc64" category="inline-link">UbuntuがインストールされているホストにBlueXP分類をインストールする方法を参照してください</block>
-  <block id="eba7ad27f2a236389ef88102ad7e8e2e" category="section-title">新しいBlueXP分類のインストールでは、Red Hat Enterprise Linux 8.6および8.7はサポートされなくなりました</block>
-  <block id="5b1dc8e5b7717b205bb516bc41f51da7" category="paragraph">Red Hatでは前提条件であるDockerがサポートされなくなるため、新規導入ではこれらのバージョンはサポートされません。RHEL 8.6または8.7で既存のBlueXP分類マシンを実行している場合、NetAppでは引き続き構成がサポートされます。</block>
-  <block id="b5ba343fa4469021dbdf64181a67e909" category="section-title">BlueXPの分類は、ONTAPシステムからFPolicyイベントを受信するFPolicyコレクタとして設定できます</block>
-  <block id="88b2049c35386070297462047bca71cf" category="inline-link">ファイルアクセスイベントを監視および管理する方法を参照してください</block>
-  <block id="1c6f2c46440d2da9ff124f2379388cf8" category="paragraph">作業環境内のボリュームで検出されたファイルアクセスイベントについて、BlueXP分類システムでファイルアクセス監査ログの収集を有効にすることができます。BlueXPの分類では、次のタイプのFPolicyイベントと、ファイルに対してアクションを実行したユーザ（Create、Read、Write、Delete、Rename、 所有者/権限を変更し、SACL/DACLを変更します。<block ref="e525234fcf42827b85ebd3e0f842cd71" category="inline-link-rx"></block>。</block>
-  <block id="e1161f065b10936afc930fd3d9d0c76f" category="section-title">ダークサイトでData Sense BYOLライセンスがサポートされるようになりました</block>
-  <block id="1ab65443ec0af7e5e1aee32a3cf59dcc" category="inline-link">Data Sense BYOLライセンスの入手方法とアップロード方法をご確認ください</block>
-  <block id="645f5675426bc396b45b524635e93bc7" category="paragraph">ダークサイトのBlueXPデジタルウォレットにData Sense BYOLライセンスをアップロードして、ライセンスの残量が少なくなったときに通知を受け取ることができます。<block ref="bd823f9b4dce457c0ea2a8dcca6e749f" category="inline-link-rx"></block>。</block>
   <block id="26e3ab611e399c831d813cdff5745975" category="list-text">コネクタを使用して、BlueXPからAzureストレージアカウントを追加および管理できるようになりました。</block>
   <block id="8ffa5f25420a002d3aa8840ec0e7752f" category="inline-link">BlueXPからAzureサブスクリプションに新しいAzureストレージアカウントを追加する方法をご確認ください</block>
   <block id="6c6c819a667ba8ce8119b4bf796894fc" category="paragraph"><block ref="fef6d7c0add7436be78fa3e990371931" category="inline-link-rx"></block>。</block>
-  <block id="32bb143fdc5ad46423876511f8c73c77" category="paragraph">Ubuntu 22.04は、BlueXPのサポート対象オペレーティングシステムとして認定されています。BlueXP分類は、ネットワーク内のUbuntu Linuxホストにインストールすることも、バージョン1.23のインストーラを使用している場合はクラウドのLinuxホストにインストールすることもできます。<block ref="cc16f95732fa73dc357dabce46e4c311" category="inline-link-rx"></block>。</block>
   <block id="9b7d935c674579c8c8e305e2dcadc1b9" category="section-title">2023年6月11日</block>
   <block id="b18ac5fa90a568a24f98c73b9192cb6d" category="section-title">分単位での自動中止をサポートします</block>
   <block id="33c110842a0fe3f7891980d750e48fa2" category="paragraph">完了していないアクティブな同期は、*同期タイムアウト*機能を使用して15分後に中止できるようになりました。</block>
@@ -558,4 +541,10 @@
   <block id="9622c46ac664d07f743905654edd5f26" category="section-title">アップグレードプラン</block>
   <block id="bd3f220b24dc61548511364f320ec8ea" category="inline-link-macro">アップグレードプランを使用したONTAPのバージョンのアップグレード</block>
   <block id="62418fbf78b58ba84b3c5a6987815772" category="paragraph">アップグレードプランは、冗長なアップグレード手順を削除し、情報と警告を変更し、バックアウトプランを簡素化するように最適化されています。クラスタ内のすべてのノードで共通の手順が統合され、[General Information]セクションで使用できます。改善された計画を表示するには、に記載されている手順に従ってアップグレード計画を生成します。 <block ref="90927e731c81adade70cb7e4c40b43bd" category="inline-link-macro-rx"></block>。</block>
+  <block id="4b9f4d0e463502904f138e1d9f0014a4" category="section-title">10月4日（バージョン1.26）</block>
+  <block id="620a73262e6956695319caae21506289" category="section-title">RHELバージョン9を使用したオンプレミスインストールのサポート</block>
+  <block id="97e778415712a740a3bb71e9070c88c5" category="paragraph">Red Hat Enterprise Linuxバージョン8および9は、BlueXP分類のインストールに必要なDockerエンジンをサポートしていません。コンテナインフラとしてPodmanバージョン4以降を使用したRHEL 9.0、9.1、9.2へのインストールがサポートされるようになりました。最新バージョンのRHELを使用する必要がある環境では、Podmanを使用する際にBlueXP分類（バージョン1.26以降）をインストールできるようになりました。</block>
+  <block id="081ac57be4c35d4de4fc43c105089d8f" category="paragraph">現時点では、ダークサイトのインストールや分散スキャン環境（マスターおよびリモートスキャナノードを使用）はサポートされていません。</block>
+  <block id="db5b005cbaaba7a23899858892848a77" category="section-title">調査ページの結果には、項目の合計数に加えて合計サイズが表示されるようになりました。</block>
+  <block id="81b243d81f786faa99d42ef659adac3a" category="paragraph">[Investigation]ページでフィルタ処理された結果に、ファイルの合計数に加えてアイテムの合計サイズが表示されるようになりました。これは、ファイルの移動、ファイルの削除などを行うときに役立ちます。</block>
 </blocks>

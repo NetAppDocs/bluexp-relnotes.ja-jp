@@ -381,6 +381,24 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 
 
 
+=== 10月4日（バージョン1.26）
+
+
+
+==== RHELバージョン9を使用したオンプレミスインストールのサポート
+
+Red Hat Enterprise Linuxバージョン8および9は、BlueXP分類のインストールに必要なDockerエンジンをサポートしていません。コンテナインフラとしてPodmanバージョン4以降を使用したRHEL 9.0、9.1、9.2へのインストールがサポートされるようになりました。最新バージョンのRHELを使用する必要がある環境では、Podmanを使用する際にBlueXP分類（バージョン1.26以降）をインストールできるようになりました。
+
+現時点では、ダークサイトのインストールや分散スキャン環境（マスターおよびリモートスキャナノードを使用）はサポートされていません。
+
+
+
+==== 調査ページの結果には、項目の合計数に加えて合計サイズが表示されるようになりました。
+
+[Investigation]ページでフィルタ処理された結果に、ファイルの合計数に加えてアイテムの合計サイズが表示されるようになりました。これは、ファイルの移動、ファイルの削除などを行うときに役立ちます。
+
+
+
 === 9月5日（バージョン1.25）
 
 
@@ -436,40 +454,6 @@ https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categ
 BlueXP分類APIを使用すると、スキャンするデータに関する操作の実行、クエリの作成、情報のエクスポートを行うことができます。Swaggerを使用して対話型ドキュメントを利用できます。ドキュメントは、調査、コンプライアンス、ガバナンス、構成など、複数のカテゴリに分かれています。各カテゴリは、BlueXP分類用UIのタブを表しています。
 
 https://docs.netapp.com/us-en/bluexp-classification/api-classification.html["BlueXP分類APIの詳細"]。
-
-
-
-=== 2023年6月6日（バージョン1.23）
-
-
-
-==== データ主体名の検索で日本語がサポートされるようになりました
-
-データ主体アクセス要求（DSAR）に応答して、被験者の名前を検索する際に日本語名を入力できるようになりました。を生成できます https://docs.netapp.com/us-en/bluexp-classification/task-generating-compliance-reports.html#what-is-a-data-subject-access-request["Data Subject Access Request レポート"] 結果の情報を使用して。に日本語の名前を入力することもできます https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#filter-data-by-sensitivity-and-content["[Data Investigation]ページの[Data Subject]フィルタ"] サブジェクト名を含むファイルを識別します。
-
-
-
-==== Ubuntuがサポート対象のLinuxディストリビューションになり、BlueXP分類をインストールできるようになりました
-
-Ubuntu 22.04は、BlueXPのサポート対象オペレーティングシステムとして認定されています。BlueXP分類は、ネットワーク内のUbuntu Linuxホストにインストールすることも、バージョン1.23のインストーラを使用している場合はクラウドのLinuxホストにインストールすることもできます。 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["UbuntuがインストールされているホストにBlueXP分類をインストールする方法を参照してください"]。
-
-
-
-==== 新しいBlueXP分類のインストールでは、Red Hat Enterprise Linux 8.6および8.7はサポートされなくなりました
-
-Red Hatでは前提条件であるDockerがサポートされなくなるため、新規導入ではこれらのバージョンはサポートされません。RHEL 8.6または8.7で既存のBlueXP分類マシンを実行している場合、NetAppでは引き続き構成がサポートされます。
-
-
-
-==== BlueXPの分類は、ONTAPシステムからFPolicyイベントを受信するFPolicyコレクタとして設定できます
-
-作業環境内のボリュームで検出されたファイルアクセスイベントについて、BlueXP分類システムでファイルアクセス監査ログの収集を有効にすることができます。BlueXPの分類では、次のタイプのFPolicyイベントと、ファイルに対してアクションを実行したユーザ（Create、Read、Write、Delete、Rename、 所有者/権限を変更し、SACL/DACLを変更します。 https://docs.netapp.com/us-en/bluexp-classification/task-manage-file-access-events.html["ファイルアクセスイベントを監視および管理する方法を参照してください"]。
-
-
-
-==== ダークサイトでData Sense BYOLライセンスがサポートされるようになりました
-
-ダークサイトのBlueXPデジタルウォレットにData Sense BYOLライセンスをアップロードして、ライセンスの残量が少なくなったときに通知を受け取ることができます。 https://docs.netapp.com/us-en/bluexp-classification/task-licensing-datasense.html#obtain-your-bluexp-classification-license-file["Data Sense BYOLライセンスの入手方法とアップロード方法をご確認ください"]。
 
 
 
