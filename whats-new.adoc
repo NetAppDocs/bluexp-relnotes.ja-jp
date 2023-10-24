@@ -372,9 +372,37 @@ BlueXPの分類では、ファイルが50MB以上の場合にのみ重複ファ�
 
 
 
+=== 2023年11月10日
+
+コネクタの3.9.35リリースでは、次の変更が加えられました。
+
+
+
+==== ベルリンリージョンでGoogle Cloudがサポートされるようになりました
+
+ベルリン地域は、Google Cloud for Cloud Volumes ONTAP 9.12.1 GA以降でサポートされるようになりました。
+
+すべての地域のリストについては、 https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloudのグローバルリージョンマップ"^]。
+
+
+
+=== 2023年11月8日
+
+コネクタの3.9.35リリースでは、次の変更が加えられました。
+
+
+
+==== Tel AvivリージョンがAWSでサポートされるようになりました
+
+テルアビブリージョンは、Cloud Volumes ONTAP 9.12.1 GA以降でAWSでサポートされるようになりました。
+
+すべての地域のリストについては、 https://bluexp.netapp.com/cloud-volumes-global-regions["AWSのグローバルリージョンマップ"^]。
+
+
+
 === 2023年11月1日
 
-コネクタの3.9.34リリースでは、次の変更が導入されました。
+コネクタの3.9.34リリースでは、次の変更が加えられました。
 
 
 
@@ -383,44 +411,6 @@ BlueXPの分類では、ファイルが50MB以上の場合にのみ重複ファ�
 サウジアラビアリージョンは、Google Cloud for Cloud Volumes ONTAPおよびConnector for Cloud Volumes ONTAP 9.12.1 GA以降でサポートされるようになりました。
 
 すべての地域のリストについては、 https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloudのグローバルリージョンマップ"^]。
-
-
-
-=== 2023年10月23日
-
-コネクタの3.9.34リリースでは、次の変更が導入されました。
-
-
-
-==== AzureでのHAマルチアベイラビリティゾーン環境でサポートされる新しいリージョン
-
-Azureの次のリージョンでは、Cloud Volumes ONTAP 9.12.1 GA以降で可用性の高い複数アベイラビリティゾーン環境がサポートされるようになりました。
-
-* オーストラリア東部
-* 東アジア
-* フランス中部
-* 北ヨーロッパ
-* カタール中部
-* スウェーデン中部
-* 西ヨーロッパ
-* 西アメリカ 2
-
-
-複数のアベイラビリティゾーンをサポートするすべてのリージョンのリストについては、を参照してください https://bluexp.netapp.com/cloud-volumes-global-regions["Azureのグローバルリージョンマップ"^]。
-
-
-
-=== 2023年10月6日
-
-コネクタの3.9.34リリースでは、次の変更が導入されました。
-
-
-
-==== Cloud Volumes ONTAP 9.14.0
-
-BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.14.0 General Availabilityリリースを導入、管理できるようになりました。
-
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
 
 
 
@@ -785,6 +775,12 @@ BlueXPからEシリーズシステムを直接検出できるようになりま�
 
 
 == 経済効率
+
+
+
+=== 2023年11月8日
+
+今回リリースされたBlueXPの経済効率化機能には、資産を評価し、テクノロジの更新が推奨されるかどうかを確認する新しいオプションが含まれています。このサービスには、左側のナビゲーションにある新しい機器更改（Tech Refresh）オプションのほか、現在のワークロードと資産を評価するための新しいページ、推奨事項を記載したレポートが含まれています。
 
 
 
