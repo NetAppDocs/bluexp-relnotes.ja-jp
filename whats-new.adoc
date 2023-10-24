@@ -33,6 +33,16 @@ NetApp BlueXPは2022年11月1日にリリースされました。BlueXPは、Clo
 
 
 
+=== 2023年11月8日
+
+
+
+==== コネクタ3.9.35
+
+このリリースには、セキュリティのマイナーな改善とバグの修正が含まれています。
+
+
+
 === 2023年10月6日
 
 
@@ -54,118 +64,6 @@ NetApp BlueXPは2022年11月1日にリリースされました。BlueXPは、Clo
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-connector-aws-key-pair.png["BlueXPからAWSでコネクタを作成するときに[Network]ページに表示される[Key Pair]フィールドの検索オプションのスクリーンショット。"]
 
 * このアップデートにはバグ修正も含まれています。
-
-
-
-
-=== 2023年7月30日
-
-
-
-==== コネクタ3.9.32
-
-* BlueXP監査サービスAPIを使用して監査ログをエクスポートできるようになりました。
-+
-監査サービスには、BlueXPサービスで実行された処理に関する情報が記録されます。これには、ワークスペース、使用されているコネクタ、およびその他のテレメトリデータが含まれます。このデータを使用して、実行されたアクション、実行者、実行日時を確認できます。
-
-+
-https://docs.netapp.com/us-en/bluexp-automation/audit/overview.html["監査サービスAPIの使用に関する詳細情報"^]
-
-+
-このリンクには、BlueXPのユーザインターフェイスの[Timeline]ページからもアクセスできます。
-
-* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とオンプレミスONTAP クラスタの機能拡張も含まれています。
-+
-** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#30-july-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#30-july-2023["ONTAP オンプレミスクラスタの機能拡張について説明します"^]
-
-
-
-
-
-
-=== 2023年7月2日
-
-
-
-==== コネクタ3.9.31
-
-* [My estate]タブ（以前の[My Opportunities]）でオンプレミスのONTAPクラスタを検出できるようになりました。
-+
-https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster["クラスタを検出する方法については、[My estate]ページを参照してください"]。
-
-* Azure Governmentリージョンでコネクタを使用している場合は、コネクタが次のエンドポイントに接続できることを確認する必要があります。
-+
-\https://occmclientinfragov.azurecr.us
-
-+
-このエンドポイントは、コネクタを手動でインストールし、コネクタとそのDockerコンポーネントをアップグレードするために必要です。
-
-+
-この変更により、Azure Governmentリージョン内のコネクタは、次のエンドポイントに接続しなくなりました。
-
-+
-\https://cloudmanagerinfraprod.azurecr.io
-
-+
-このエンドポイントは、他のすべての制限モード設定および標準モードでは引き続き必要であることに注意してください。
-
-
-
-
-
-=== 2023年6月4日
-
-
-
-==== コネクタ3.9.30
-
-* サポートダッシュボードからNetAppサポートケースをオープンすると、BlueXPログインに関連付けられたNetApp Support Siteアカウントを使用してケースがオープンされるようになりました。以前は、BlueXPアカウント全体に関連付けられたNetApp Support Siteアカウントを使用していました。
-+
-この変更に伴い、BlueXPアカウントのサポート登録は、ユーザのBlueXPログインに関連付けられたNetApp Support Siteアカウントを使用して行われるようになりました。これまで、サポートの登録には、BlueXPアカウント全体に関連付けられたNSSアカウントを使用していました。そのため、BlueXPへのログインにNetApp Support Siteアカウントが関連付けられていない場合、他のBlueXPユーザには同じサポート登録ステータスが表示されません。以前にBlueXPアカウントをサポートに登録していても、登録ステータスは引き続き有効です。ステータスを確認するには、ユーザレベルのNSSアカウントを追加するだけです。
-
-+
-** https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#create-a-case-with-netapp-support["NetAppサポートでケースを作成する方法について説明します"]
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-user-credentials.html["BlueXPログインに関連付けられているクレデンシャルの管理方法について説明します"]
-** https://docs.netapp.com/us-en/bluexp-setup-admin/task-support-registration.html["サポートに登録する方法について説明します"]
-
-
-* BlueXPからドキュメントを検索できるようになりました。検索結果に、docs.netapp.comおよびkb.netapp.comのコンテンツへのリンクが表示されるようになりました。これは、質問を回答に送信するのに役立つ可能性があります。
-+
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search-docs.png["コンソールの上部に表示されるBlueXP検索のスクリーンショット。"]
-
-* コネクタを使用して、BlueXPからAzureストレージアカウントを追加および管理できるようになりました。
-+
-https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["BlueXPからAzureサブスクリプションに新しいAzureストレージアカウントを追加する方法をご確認ください"^]。
-
-* このコネクタが次のAWSリージョンでサポートされるようになりました。
-+
-** ハイデラバード（AP-south-2）
-** メルボルン（AP南東-4）
-** スペイン（EU-south-2）
-** アラブ首長国連邦（ME-CENTRAL-1）
-** チューリッヒ（EU-CENTRAL-2）
-
-
-* このコネクタは、次のAzureリージョンでサポートされるようになりました。
-+
-** ブラジル南部
-** フランス南部
-** インド中部出身
-** 西インド諸島出身
-** ポーランド中部
-** カタール中部
-
-
-* Connectorは、次のGoogle Cloudリージョンでサポートされるようになりました。
-+
-** コロンバス（us-east5）
-** ダラス（US -サウス1）
-
-
-+
-https://cloud.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
-
 
 
 
@@ -424,6 +322,18 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.ht
 
 
 
+=== 11月6日（バージョン1.26.3）
+
+
+
+==== このリリースで解決された問題は次のとおりです。
+
+* システムによってスキャンされたファイル数をダッシュボードに表示する際の不一致を修正しました。
+* 名前とメタデータに特殊文字が含まれるファイルとディレクトリを処理およびレポートすることで、スキャンの動作が改善されました。
+
+
+
+
 === 10月4日（バージョン1.26）
 
 
@@ -458,43 +368,21 @@ BlueXPの分類では、ファイルが50MB以上の場合にのみ重複ファ�
 
 
 
-=== 2023年7月17日（バージョン1.24）
-
-
-
-==== BlueXPの分類では、ドイツの2つの新しいタイプの個人データが特定されています。
-
-BlueXPの分類では、次のタイプのデータを含むファイルを特定して分類できます。
-
-* ドイツ語ID（Personalausweisnummer）
-* ドイツ社会保障番号（Sozialversicherungsnummer）
-
-
-https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["BlueXPの分類によってデータから特定できるすべてのタイプの個人データを確認できます"]。
-
-
-
-==== BlueXPの分類は制限モードとプライベートモードで完全にサポートされています。
-
-インターネットアクセスがないサイト（プライベートモード）とアウトバウンドのインターネットアクセスが制限されているサイト（制限モード）で、BlueXPの分類が完全にサポートされるようになりました。 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["コネクタのBlueXP導入モードの詳細"^]。
-
-
-
-==== BlueXP分類のプライベートモードインストールをアップグレードするときにバージョンをスキップする機能
-
-シーケンシャルでなくても、新しいバージョンのBlueXP分類にアップグレードできるようになりました。つまり、BlueXPの分類を1つのバージョンにアップグレードするという現行の制限は不要になりました。この機能は、バージョン1.24以降で該当します。
-
-
-
-==== BlueXP分類APIを利用できるようになりました
-
-BlueXP分類APIを使用すると、スキャンするデータに関する操作の実行、クエリの作成、情報のエクスポートを行うことができます。Swaggerを使用して対話型ドキュメントを利用できます。ドキュメントは、調査、コンプライアンス、ガバナンス、構成など、複数のカテゴリに分かれています。各カテゴリは、BlueXP分類用UIのタブを表しています。
-
-https://docs.netapp.com/us-en/bluexp-classification/api-classification.html["BlueXP分類APIの詳細"]。
-
-
-
 == Cloud Volumes ONTAP
+
+
+
+=== 2023年11月1日
+
+コネクタの3.9.34リリースでは、次の変更が導入されました。
+
+
+
+==== サウジアラビアリージョンでGoogle Cloudがサポートされるようになりました
+
+サウジアラビアリージョンは、Google Cloud for Cloud Volumes ONTAPおよびConnector for Cloud Volumes ONTAP 9.12.1 GA以降でサポートされるようになりました。
+
+すべての地域のリストについては、 https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloudのグローバルリージョンマップ"^]。
 
 
 
@@ -506,7 +394,7 @@ https://docs.netapp.com/us-en/bluexp-classification/api-classification.html["Blu
 
 ==== AzureでのHAマルチアベイラビリティゾーン環境でサポートされる新しいリージョン
 
-Azureの次のリージョンで、Cloud Volumes ONTAP 9.14.0以降の可用性の高い複数アベイラビリティゾーン環境がサポートされるようになりました。
+Azureの次のリージョンでは、Cloud Volumes ONTAP 9.12.1 GA以降で可用性の高い複数アベイラビリティゾーン環境がサポートされるようになりました。
 
 * オーストラリア東部
 * 東アジア
@@ -533,21 +421,6 @@ Azureの次のリージョンで、Cloud Volumes ONTAP 9.14.0以降の可用性�
 BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.14.0 General Availabilityリリースを導入、管理できるようになりました。
 
 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
-
-
-
-=== 2023年9月10日
-
-コネクタの3.9.33リリースでは、次の変更が導入されました。
-
-
-
-==== AzureでのLsv3シリーズVMのサポート
-
-AzureのCloud Volumes ONTAPでは、9.13.1リリース以降で、単一のアベイラビリティゾーンと複数のアベイラビリティゾーンに管理対象ディスクを共有するシングルノード環境とハイアベイラビリティペア環境で、L48s_v3とL64s_v3のインスタンスタイプがサポートされるようになりました。これらのインスタンスタイプでは、Flash Cacheがサポートされます。
-
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["AzureでサポートされるCloud Volumes ONTAP構成を確認する"^]
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["AzureでのCloud Volumes ONTAPのストレージ制限を表示"^]
 
 
 

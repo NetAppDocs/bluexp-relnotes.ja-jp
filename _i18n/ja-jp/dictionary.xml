@@ -122,8 +122,6 @@
   <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">2023年4月3日</block>
   <block id="380d0a0b2cec998dcd9f52b91b24304c" category="paragraph">通知を設定すると、BYOLライセンスの有効期限が近づいたとき（「警告」通知）、またはすでに有効期限が切れているとき（「エラー」通知）にEメール通知を受け取ることができます。</block>
   <block id="335e7f21f0fdfecbe9c04540dcb8cdd6" category="inline-link">Eメール通知の設定方法については、こちらをご覧ください</block>
-  <block id="3b61cbbfa7452cc07df9dbea0756d650" category="inline-link">サポートされているリージョンの完全なリストを表示します</block>
-  <block id="0ec2b2e4840acfd3f21b50b176ec45f1" category="paragraph"><block ref="0ec2b2e4840acfd3f21b50b176ec45f1" category="inline-link-rx"></block></block>
   <block id="723ffd15eb7b4453afd0fa0af42c04c3" category="section-title">経済効率</block>
   <block id="88c49608e723add593f5becc8bd9a968" category="section-title">2023年4月2日</block>
   <block id="efc0c4f71709b261c273fb935757cfae" category="section-title">運用の耐障害性</block>
@@ -152,8 +150,6 @@
   <block id="ba695b3cf8b635f89946173735838948" category="inline-link">エッジキャッシュ</block>
   <block id="282baca6aef56652f503adce6afa9f07" category="inline-link">修正</block>
   <block id="337c62c6b6eb7319bae58701105e889c" category="inline-link">階層化</block>
-  <block id="9fee27139efd09e005728f7dbfa349f2" category="paragraph">BlueXPの分類では、次のタイプのデータを含むファイルを特定して分類できます。</block>
-  <block id="22b67d0a50677e01d48389e716223457" category="inline-link">BlueXPの分類によってデータから特定できるすべてのタイプの個人データを確認できます</block>
   <block id="3d2e7e90fac12bab6a0d0736a593b5b4" category="section-title">デジタルアドバイザ</block>
   <block id="35c28a4f1250fc5c59dd5bfa5d9993ce" category="paragraph">新しいBlueXPの経済効率化サービスは、現在または予測されている容量が少ないストレージ資産を特定し、オンプレミスのAFF システムのデータ階層化や容量の追加に関する推奨事項を提供します。</block>
   <block id="345d0e0aeae5ae7cbf8cdd1fc138e5e6" category="inline-link-macro">BlueXPの経済性に関する詳細はこちらをご覧ください</block>
@@ -203,7 +199,6 @@
   <block id="a80baf4fa5d71b9ef418edfcaebd2759" category="list-text"><block ref="a80baf4fa5d71b9ef418edfcaebd2759" category="inline-link-rx"></block></block>
   <block id="45ee83d3cd24c8a79ff15330399da6a7" category="list-text"><block ref="45ee83d3cd24c8a79ff15330399da6a7" category="inline-link-rx"></block></block>
   <block id="50677882efe321e7fec19456f58faadc" category="paragraph"><block ref="536037d368170de6e6fbdb576d167663" category="inline-link-rx"></block>。</block>
-  <block id="7e1e73ad7e6d01345f57dc84d7cd2c47" category="paragraph"><block ref="8ab3022f8d373945c172f9e89b554e84" category="inline-link-rx"></block>。</block>
   <block id="9cb4f066718ada1a845659033318004c" category="paragraph"><block ref="19c68668f7d6a95b64e909c5da1cb9b0" category="inline-link-rx"></block>。</block>
   <block id="16364877a101c1787c34f2fe604ef9e9" category="paragraph"><block ref="16364877a101c1787c34f2fe604ef9e9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="77474efd411b7748abfa1c88a3e0137c" category="paragraph"><block ref="77474efd411b7748abfa1c88a3e0137c" category="inline-link-rx"></block></block>
@@ -221,35 +216,7 @@
   <block id="476789449c1574e5469c7d767f062c16" category="list-text"><block ref="476789449c1574e5469c7d767f062c16" category="inline-link-rx"></block></block>
   <block id="ff45d71e69fb5930de79de7c94326d7b" category="inline-link">ボリュームキャッシュ</block>
   <block id="1f3a8f72ba10116898e7bad8ce6779d9" category="list-text"><block ref="1f3a8f72ba10116898e7bad8ce6779d9" category="inline-link-rx"></block></block>
-  <block id="381c003443d0dbcf14a51f216a4e01dc" category="section-title">2023年6月4日</block>
-  <block id="5440676d566a261de836cdd1b9ea4e50" category="section-title">コネクタ3.9.30</block>
-  <block id="390bbe3d279d4d842ce6e1afdbef9cac" category="list-text">サポートダッシュボードからNetAppサポートケースをオープンすると、BlueXPログインに関連付けられたNetApp Support Siteアカウントを使用してケースがオープンされるようになりました。以前は、BlueXPアカウント全体に関連付けられたNetApp Support Siteアカウントを使用していました。</block>
-  <block id="cf4de1590dec786ba89a784b76abf972" category="paragraph">この変更に伴い、BlueXPアカウントのサポート登録は、ユーザのBlueXPログインに関連付けられたNetApp Support Siteアカウントを使用して行われるようになりました。これまで、サポートの登録には、BlueXPアカウント全体に関連付けられたNSSアカウントを使用していました。そのため、BlueXPへのログインにNetApp Support Siteアカウントが関連付けられていない場合、他のBlueXPユーザには同じサポート登録ステータスが表示されません。以前にBlueXPアカウントをサポートに登録していても、登録ステータスは引き続き有効です。ステータスを確認するには、ユーザレベルのNSSアカウントを追加するだけです。</block>
-  <block id="d0b3c9ce9c494292be2aeea8cdac5477" category="inline-link">NetAppサポートでケースを作成する方法について説明します</block>
-  <block id="250213b0170f8e0eeb3d961c487c6b3a" category="list-text"><block ref="250213b0170f8e0eeb3d961c487c6b3a" category="inline-link-rx"></block></block>
-  <block id="920fe1428c19533eda6222fe7e58efbe" category="inline-link">BlueXPログインに関連付けられているクレデンシャルの管理方法について説明します</block>
-  <block id="6f8efc0a43a600cb013d99abebf16ab9" category="list-text"><block ref="6f8efc0a43a600cb013d99abebf16ab9" category="inline-link-rx"></block></block>
-  <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link">サポートに登録する方法について説明します</block>
-  <block id="bb61baa9c30235edb535db843a463603" category="list-text"><block ref="bb61baa9c30235edb535db843a463603" category="inline-link-rx"></block></block>
-  <block id="1f6fb1fa08cb08df7303b38688c4c6b3" category="list-text">BlueXPからドキュメントを検索できるようになりました。検索結果に、docs.netapp.comおよびkb.netapp.comのコンテンツへのリンクが表示されるようになりました。これは、質問を回答に送信するのに役立つ可能性があります。</block>
-  <block id="73984711a5ba4c8d6f613d3ef2426680" category="inline-image-macro">コンソールの上部に表示されるBlueXP検索のスクリーンショット。</block>
-  <block id="ab5bec8a233948d36856ccc404fd3c23" category="paragraph"><block ref="ab5bec8a233948d36856ccc404fd3c23" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="11df2099d9f6c939c0429c564ec675f4" category="list-text">このコネクタが次のAWSリージョンでサポートされるようになりました。</block>
-  <block id="8f234407e396ab34fbd89b8c5353cb7b" category="list-text">ハイデラバード（AP-south-2）</block>
-  <block id="f8d001ab701ae408b7ff0bc7d7b4512e" category="list-text">メルボルン（AP南東-4）</block>
-  <block id="6f54a802584839b859866ceb5261cb0e" category="list-text">スペイン（EU-south-2）</block>
-  <block id="dd6d0b9c4a235603cc3dfd4485247c08" category="list-text">アラブ首長国連邦（ME-CENTRAL-1）</block>
-  <block id="4a23b3b65c9e625c9c42d143e90f5ac1" category="list-text">チューリッヒ（EU-CENTRAL-2）</block>
-  <block id="076b622c9d5055ea3d4f198f43cf14ae" category="list-text">このコネクタは、次のAzureリージョンでサポートされるようになりました。</block>
-  <block id="47b9af39407829080e9cfeee3607c39c" category="list-text">ブラジル南部</block>
-  <block id="e43a7f2cdea7d32ec2a39ac3429f6b21" category="list-text">フランス南部</block>
-  <block id="325f36b59bf936f690e2f1bb30dd035e" category="list-text">インド中部出身</block>
-  <block id="e1b23a90559a8f5be2ef065bba5568bc" category="list-text">西インド諸島出身</block>
-  <block id="26b4bdc11dfead08029a688129c42cf9" category="list-text">ポーランド中部</block>
   <block id="055ffb1451e38deb0c8ac651e32d77ec" category="list-text">カタール中部</block>
-  <block id="0a6b76c04095167ad3b2e08901195ca3" category="list-text">Connectorは、次のGoogle Cloudリージョンでサポートされるようになりました。</block>
-  <block id="db760e7471192daa123eed31bfba312d" category="list-text">コロンバス（us-east5）</block>
-  <block id="ad6033c8e4eda00017eca167a149ced4" category="list-text">ダラス（US -サウス1）</block>
   <block id="3bec690d07df1a3a36c8a3122654fc24" category="section-title">2023年6月5日</block>
   <block id="f9037e3eb23130835367334e3aa5a34b" category="section-title">BlueXPから新しいストレージアカウントを追加できるようになりました</block>
   <block id="a39e8d6ee8bc43ef75656b419fe7a86e" category="inline-link">新しいAzure BLOBストレージアカウントを追加する方法をご覧ください</block>
@@ -269,9 +236,6 @@
   <block id="da20ff5e68ae0641ae1925c968ac0244" category="paragraph">BlueXPボリュームキャッシングを使用すると、特にAmazon FSx for NetApp ONTAP、Cloud Volumes ONTAP、オンプレミスの作業環境向けに、クラウド向けのキャッシュ機能を利用できます。</block>
   <block id="62f5b0396e259b44122ad3fd5f9581e0" category="inline-link-macro">BlueXPのボリュームキャッシュの詳細については、こちらをご覧ください</block>
   <block id="2ffe4affb627afa20f3783de7a26c8af" category="paragraph"><block ref="c926d704a05a7f256c6c14f4d9e77466" category="inline-link-macro-rx"></block>。</block>
-  <block id="26e3ab611e399c831d813cdff5745975" category="list-text">コネクタを使用して、BlueXPからAzureストレージアカウントを追加および管理できるようになりました。</block>
-  <block id="8ffa5f25420a002d3aa8840ec0e7752f" category="inline-link">BlueXPからAzureサブスクリプションに新しいAzureストレージアカウントを追加する方法をご確認ください</block>
-  <block id="6c6c819a667ba8ce8119b4bf796894fc" category="paragraph"><block ref="fef6d7c0add7436be78fa3e990371931" category="inline-link-rx"></block>。</block>
   <block id="9b7d935c674579c8c8e305e2dcadc1b9" category="section-title">2023年6月11日</block>
   <block id="b18ac5fa90a568a24f98c73b9192cb6d" category="section-title">分単位での自動中止をサポートします</block>
   <block id="33c110842a0fe3f7891980d750e48fa2" category="paragraph">完了していないアクティブな同期は、*同期タイムアウト*機能を使用して15分後に中止できるようになりました。</block>
@@ -291,14 +255,6 @@
   <block id="4573c689742769edc01e3f45205fd784" category="paragraph">オンプレミスのONTAPクラスタを検出できるようになりました。これには、* Canvas &gt; My estate *から、BlueXPログインのEメールアドレスに関連付けられているONTAPクラスタに基づいてBlueXPが検出されたクラスタを選択します。</block>
   <block id="5a7621b5dce7d879d4fc86499c34c6e6" category="inline-link">クラスタを検出する方法については、[My estate]ページを参照してください</block>
   <block id="92adae4e241e70163adb8c5469771a82" category="paragraph"><block ref="24b3a807a9407b81f5101322f988421d" category="inline-link-rx"></block>。</block>
-  <block id="78ee56d07ea6442fbe0c88b1ea3be7ad" category="section-title">コネクタ3.9.31</block>
-  <block id="9f1d24d5ab10dd326cb52dffc172eea5" category="list-text">[My estate]タブ（以前の[My Opportunities]）でオンプレミスのONTAPクラスタを検出できるようになりました。</block>
-  <block id="6bdb2baa8fe05cff12c22f9f6f8e9e7f" category="list-text">Azure Governmentリージョンでコネクタを使用している場合は、コネクタが次のエンドポイントに接続できることを確認する必要があります。</block>
-  <block id="1f29f58c7cdabd46095c6ad242933991" category="paragraph">\https://occmclientinfragov.azurecr.us</block>
-  <block id="7cbd2e15c5d25612181f48c177cab04b" category="paragraph">このエンドポイントは、コネクタを手動でインストールし、コネクタとそのDockerコンポーネントをアップグレードするために必要です。</block>
-  <block id="49145759efbc79c21fc5ba75bb2aaf72" category="paragraph">この変更により、Azure Governmentリージョン内のコネクタは、次のエンドポイントに接続しなくなりました。</block>
-  <block id="9dcb0a1d3281e001a6085626a264be49" category="paragraph">\https://cloudmanagerinfraprod.azurecr.io</block>
-  <block id="979b0001d7bec41aff8509faf7b59bef" category="paragraph">このエンドポイントは、他のすべての制限モード設定および標準モードでは引き続き必要であることに注意してください。</block>
   <block id="28acda3f8bdb20220a5658f1cd81f226" category="section-title">2023年7月4日</block>
   <block id="f955a076eeae4df4466469593ff635ca" category="section-title">アクセス頻度の低いデータをオブジェクトストレージにアップロードする際の帯域幅を調整できるようになりました</block>
   <block id="1d59c82c13288b53f26d652175016f90" category="paragraph">BlueXP階層化をアクティブ化すると、ONTAPは無制限のネットワーク帯域幅を使用して、アクセス頻度の低いデータをクラスタ内のボリュームからオブジェクトストレージに転送できます。階層化トラフィックが通常のユーザワークロードに影響していることに気付いた場合は、転送中に使用できる帯域幅を調整できます。<block ref="bd661c8ba5ce12ee5a1adc1010618597" category="inline-link-rx"></block>。</block>
@@ -323,16 +279,6 @@
   <block id="5a6d96b9a020e520981bf7fe4c7af203" category="section-title">BlueXPから新しいバケットを追加したり、既存のバケットを管理したりできます</block>
   <block id="2706c3785e1f78099c28d555600c918b" category="inline-link">新しいGoogle Cloud Storageバケットを追加する方法をご覧ください</block>
   <block id="71d86d6b260e92b047d7453cd653bd4c" category="paragraph">BlueXPキャンバスでGoogle Cloud Storageのバケットを表示できるようになりました。BlueXPから直接、新しいバケットを追加したり、既存のバケットのプロパティを変更したりできるようになりました。<block ref="df1f25cc6ac4c2f26feeca1367b4ae92" category="inline-link-rx"></block>。</block>
-  <block id="0494d69152dc144f6691315fabf9af4d" category="section-title">2023年7月17日（バージョン1.24）</block>
-  <block id="025b17159c4d2dd28926bdc5b13436e2" category="section-title">BlueXPの分類では、ドイツの2つの新しいタイプの個人データが特定されています。</block>
-  <block id="e2f64dc02ab3f9d3b659d24b9503b545" category="list-text">ドイツ語ID（Personalausweisnummer）</block>
-  <block id="ac01084f4d5a1af5de639eaf04ad94ff" category="list-text">ドイツ社会保障番号（Sozialversicherungsnummer）</block>
-  <block id="cdbb87700ea6d8c32de7576d1ecb9987" category="section-title">BlueXPの分類は制限モードとプライベートモードで完全にサポートされています。</block>
-  <block id="7c4ed755305616a8a97076615e4aa1e5" category="inline-link">コネクタのBlueXP導入モードの詳細</block>
-  <block id="e7c3514a81618b80dab1e9591ba97368" category="paragraph">インターネットアクセスがないサイト（プライベートモード）とアウトバウンドのインターネットアクセスが制限されているサイト（制限モード）で、BlueXPの分類が完全にサポートされるようになりました。<block ref="7ee715aa70b4c6d819896ee955e59621" category="inline-link-rx"></block>。</block>
-  <block id="8dd6a265487e54146fb2bdfb3e5174a5" category="section-title">BlueXP分類のプライベートモードインストールをアップグレードするときにバージョンをスキップする機能</block>
-  <block id="241957d9f6c696915858d43476112454" category="paragraph">シーケンシャルでなくても、新しいバージョンのBlueXP分類にアップグレードできるようになりました。つまり、BlueXPの分類を1つのバージョンにアップグレードするという現行の制限は不要になりました。この機能は、バージョン1.24以降で該当します。</block>
-  <block id="167693b239be0e2939d61376cd3a5487" category="section-title">コネクタ3.9.32</block>
   <block id="7af14628b780746da1b2b7396f10a07e" category="list-text">BlueXP監査サービスAPIを使用して監査ログをエクスポートできるようになりました。</block>
   <block id="5a97fe4fe664c9e98d8ad88cdbf44d98" category="inline-link">監査サービスAPIの使用に関する詳細情報</block>
   <block id="23822bdcf5039c31a637229d8ca51ffa" category="paragraph"><block ref="23822bdcf5039c31a637229d8ca51ffa" category="inline-link-rx"></block></block>
@@ -399,8 +345,6 @@
   <block id="30fee46958559c602b944cc387c72292" category="paragraph">Amazon FSx for NetApp ONTAPファイルシステムは、ヨーロッパ（チューリッヒ）、ヨーロッパ（スペイン）、アジア太平洋（ハイデラバード）の3つの新しいAWSリージョンで作成できるようになりました。</block>
   <block id="4a105824b6f84a35559612caf12c452d" category="inline-link-macro">Amazon FSx for NetApp ONTAPは、さらに3つのリージョンで提供が開始されました。</block>
   <block id="e1203bb3756aaddbc1d40b7033d44bd1" category="paragraph">を参照してください <block ref="2ffac1c1fc93e8203aa3ebf9b3a6ff2d" category="inline-link-macro-rx"></block> 詳細については、</block>
-  <block id="c77d5103bf67167dd667762d984e1e14" category="section-title">BlueXP分類APIを利用できるようになりました</block>
-  <block id="95eaa41c2e7025ac80bcfafd1710ff57" category="paragraph">BlueXP分類APIを使用すると、スキャンするデータに関する操作の実行、クエリの作成、情報のエクスポートを行うことができます。Swaggerを使用して対話型ドキュメントを利用できます。ドキュメントは、調査、コンプライアンス、ガバナンス、構成など、複数のカテゴリに分かれています。各カテゴリは、BlueXP分類用UIのタブを表しています。</block>
   <block id="a57bb636c3624bebb972f007b21fd8fb" category="section-title">2023年8月6日</block>
   <block id="56a559acc9f9bd2fc9cf51154aef7ce5" category="section-title">データブローカーの作成時に既存のAzureセキュリティグループを使用する</block>
   <block id="bf4bc301ccb8b2b21ef394a22e4afef6" category="paragraph">データブローカーの作成時に既存のAzureセキュリティグループを使用できるようになりました。</block>
@@ -439,8 +383,6 @@
   <block id="04afa98530b9fa98eb8d1adf9da08f7f" category="paragraph">[Backup lifecycle（バックアップライフサイクル）]タイプフィルタの名前が[Retention（保持）]に変更されました。このフィルタを使用して、バックアップのライフサイクルを追跡し、すべてのバックアップコピーの有効期限を特定します。「保持」ジョブタイプには、BlueXPのバックアップとリカバリで保護されているボリュームで開始されたSnapshot削除ジョブがすべてキャプチャされます。</block>
   <block id="751f8afbc94898745cc6e2ea8a5ccd4c" category="inline-link">更新されたジョブモニタの詳細</block>
   <block id="bf6c8f020a512a9accf77240c1333a16" category="paragraph"><block ref="f412c2e0203811d72b16f88cf9eb5d19" category="inline-link-rx"></block>。</block>
-  <block id="d80e88cc1f3abb9239aa87a019057d8b" category="inline-link">BlueXP分類APIの詳細</block>
-  <block id="67a7c5f0403c8f58fe4ae70a6f761ae5" category="paragraph"><block ref="6c685f385b4749ef1d91fb7e0577272e" category="inline-link-rx"></block>。</block>
   <block id="645a84975202e30700b572b49a5ee29d" category="inline-link">ディザスタリカバリ</block>
   <block id="86e83f14193f6e90a917a08348a9b031" category="list-text"><block ref="86e83f14193f6e90a917a08348a9b031" category="inline-link-rx"></block></block>
   <block id="51c5a515e45f0732a46aadb31105d3df" category="list-text"><block ref="51c5a515e45f0732a46aadb31105d3df" category="inline-link-rx"></block></block>
@@ -584,4 +526,17 @@
   <block id="25d037b5df7f2e04a4d6a1a3bc33caa7" category="paragraph">BlueXPのディザスタリカバリは、ディザスタリカバリのワークフローを自動化する、クラウドベースのディザスタリカバリサービスです。当初は、BlueXPのディザスタリカバリプレビューで、NetAppストレージを実行するオンプレミスのNFSベースのVMwareワークロードを、Amazon FSx for ONTAPを使用してAWS上のVMware Cloud（VMC）に保護できます。</block>
   <block id="8060a341461a61edc489285d4c464062" category="paragraph">BlueXPからEシリーズシステムを直接検出できるようになりました。Eシリーズシステムを検出すると、ハイブリッドマルチクラウド全体のデータを包括的に把握できます。</block>
   <block id="75cbcf1dd82ddd4349696999b639377f" category="paragraph"><block ref="75cbcf1dd82ddd4349696999b639377f" category="inline-link-macro-rx"></block></block>
+  <block id="d64cd771f2e77e7c0e4209d28afed019" category="section-title">2023年11月8日</block>
+  <block id="82a9cd2bfcf44ef6090c93dcb2ee0451" category="section-title">コネクタ3.9.35</block>
+  <block id="77fe99ef9ead4490d30142892f6b5fec" category="paragraph">このリリースには、セキュリティのマイナーな改善とバグの修正が含まれています。</block>
+  <block id="abff2804f60c6da51fe02e78167abad1" category="section-title">11月6日（バージョン1.26.3）</block>
+  <block id="e25bae53fb1951841531279fa78ee63a" category="section-title">このリリースで解決された問題は次のとおりです。</block>
+  <block id="299ea648aaf9c598beed6ef12a6ef415" category="list-text">システムによってスキャンされたファイル数をダッシュボードに表示する際の不一致を修正しました。</block>
+  <block id="c6e9efb915fb85dd556a71294988c99a" category="list-text">名前とメタデータに特殊文字が含まれるファイルとディレクトリを処理およびレポートすることで、スキャンの動作が改善されました。</block>
+  <block id="499efcb2be11e80e5bdfc003278352e3" category="section-title">2023年11月1日</block>
+  <block id="992f57af99811ae146ed6df67eccc26f" category="section-title">サウジアラビアリージョンでGoogle Cloudがサポートされるようになりました</block>
+  <block id="9e06c986efeeff600f0b04c67d5d6354" category="paragraph">サウジアラビアリージョンは、Google Cloud for Cloud Volumes ONTAPおよびConnector for Cloud Volumes ONTAP 9.12.1 GA以降でサポートされるようになりました。</block>
+  <block id="2bc724993144e8002899059117620062" category="inline-link">Google Cloudのグローバルリージョンマップ</block>
+  <block id="6a050b5b1c64124ef335bf9dbf64e03f" category="paragraph">すべての地域のリストについては、<block ref="5328f934c7a30e2b8b67732fc162a525" category="inline-link-rx"></block>。</block>
+  <block id="e8b16e899245eb584f98d48e087aa975" category="paragraph">Azureの次のリージョンでは、Cloud Volumes ONTAP 9.12.1 GA以降で可用性の高い複数アベイラビリティゾーン環境がサポートされるようになりました。</block>
 </blocks>
