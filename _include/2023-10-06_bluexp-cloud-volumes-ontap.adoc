@@ -1,0 +1,13 @@
+= Cloud Volumes ONTAP 9.14.0
+:allow-uri-read: 
+
+
+コネクタの3.9.34リリースでは、次の変更が導入されました。
+
+
+
+=== Cloud Volumes ONTAP 9.14.0
+
+BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.14.0 General Availabilityリリースを導入、管理できるようになりました。
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。

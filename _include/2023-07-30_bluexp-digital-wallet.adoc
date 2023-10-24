@@ -1,0 +1,19 @@
+= 使用状況レポートの機能拡張
+:allow-uri-read: 
+
+
+
+
+=== 使用状況レポートの機能拡張
+
+Cloud Volumes ONTAP使用状況レポートにいくつかの改善点が追加されました。
+
+* TiB単位が列名に追加されました。
+* シリアル番号の新しい_node_fieldが追加されました。
+* [Storage VMs]使用状況レポートに新しい_Workload Type_columnが追加されました。
+* 作業環境の名前がStorage VMとボリュームの使用状況レポートに表示されるようになりました。
+* ボリュームタイプ_file_に_Primary（Read/Write）_というラベルが付けられます。
+* ボリュームタイプ_secondary_のラベルが_secondary（DP）_に変更されました。
+
+
+使用状況レポートの詳細については、を参照してください。 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html#download-usage-reports["使用状況レポートをダウンロードします"]。

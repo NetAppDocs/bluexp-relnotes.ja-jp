@@ -1,0 +1,21 @@
+= 小規模および中規模の導入が一時的に利用できない
+:allow-uri-read: 
+
+
+
+
+=== 小規模および中規模の導入が一時的に利用できない
+
+現時点では、BlueXP分類のインスタンスをAWSに導入する場合、*[Deploy]>[Configuration]*を選択してSmallまたはMedium sizedインスタンスを選択するオプションは使用できません。[Deploy]>[Deploy]*を選択して、大きなインスタンスサイズを使用してインスタンスを導入することもできます。
+
+
+
+=== [Investigation Results]ページから最大100,000項目にタグを適用
+
+これまでは、[Investigation Results]ページ（20項目）で一度に1つのページにタグを適用することしかできませんでした。[調査結果（Investigation Results）]ページで*すべての*項目を選択し、すべての項目（一度に最大100,000項目）にタグを適用できるようになりました。 https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html#assigning-tags-to-files["方法を参照してください"]。
+
+
+
+=== 最小ファイルサイズが1MBの重複ファイルを特定する
+
+BlueXPの分類では、ファイルが50MB以上の場合にのみ重複ファイルが特定されます。1MBで始まる重複ファイルを識別できるようになりました。[Investigation]ページフィルタの[File Size]と[Duplicates]を使用して、環境内で特定のサイズのファイルが重複しているかどうかを確認できます。

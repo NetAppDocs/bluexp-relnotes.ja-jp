@@ -280,6 +280,66 @@ BlueXP CanvasでAmazon S3バケットを表示できるようになりました�
 
 
 
+=== 2023年10月23日
+
+
+
+==== バックアップのアクティブ化中の3-2-1バックアップポリシーの作成
+
+これまでは、Snapshot、レプリケーション、またはバックアップを開始する前にカスタムポリシーを作成する必要がありました。BlueXPのバックアップとリカバリのUIを使用して、バックアップのアクティブ化プロセスでポリシーを作成できるようになりました。
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-create-policies-ontap.html["ポリシーの詳細"]。
+
+
+
+==== ONTAPボリュームのオンデマンドのクイックリストアのサポート
+
+BlueXPでは、クラウドストレージからCloud Volumes ONTAPシステムへボリュームの「クイックリストア」を実行できるようになりました。迅速なリストアは、ボリュームへのアクセスをできるだけ早く提供する必要があるディザスタリカバリ環境に最適です。クイックリストアでは、バックアップファイル全体をリストアするのではなく、バックアップファイルからボリュームにメタデータをリストアできます。
+
+Cloud Volumes ONTAPデスティネーションシステムでONTAPバージョン9.13.0以降が実行されている必要があります。 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["データのリストアに関する詳細情報"]。
+
+BlueXPのバックアップとリカバリのジョブモニタには、クイックリストアジョブの進捗状況も表示されます。
+
+
+
+=== 2023年10月13日
+
+
+
+==== BlueXPのアプリケーション向けバックアップとリカバリの機能拡張（クラウドネイティブ）
+
+* Microsoft SQL Serverデータベース
++
+** Amazon FSx for NetApp ONTAP上にあるMicrosoft SQL Serverデータベースのバックアップ、リストア、リカバリをサポート
+** すべての処理がREST APIでのみサポートされます。
+
+
+* SAP HANAシステム
++
+** システムの更新時に、スクリプトではなくワークフローを使用してボリュームの自動マウントおよびアンマウントが実行されます。
+** 追加、削除、編集、削除、保守、 UIヲシヨウシタフラクインホストノアツフクレエト
+
+
+
+
+
+
+==== アプリケーション向けのBlueXPのバックアップとリカバリの機能拡張（ハイブリッド）
+
+* データロックとランサムウェア対策をサポート
+* StorageGRIDからアーカイブ階層へのバックアップの移動をサポート
+* MongoDB、MySQL、PostgreSQLの各アプリケーションデータをオンプレミスのONTAPシステムからAmazon Web Services、Microsoft Azure、Google Cloud Platform、StorageGRIDにバックアップできます。必要に応じてデータをリストアできます。
+
+
+
+
+==== 仮想マシンのBlueXPバックアップとリカバリの機能拡張
+
+* コネクタプロキシ配置モデルのサポート
+
+
+
+
 === 2023年9月11日
 
 
@@ -300,6 +360,12 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.
 
 
 
+==== 最初に標準ストレージに書き込むのではなく、バックアップデータを即座にアーカイブ可能
+
+これで、データを標準のクラウドストレージに書き込む代わりに、バックアップファイルをすぐにアーカイブストレージに送信できます。これは、クラウドバックアップからデータにアクセスする必要がほとんどないユーザや、テープバックアップ環境に取って代わるユーザに特に役立ちます。
+
+
+
 ==== SnapLockボリュームのバックアップとリストアのサポートの追加
 
 バックアップとリカバリで、SnapLockコンプライアンスまたはSnapLockエンタープライズ保護モードを使用して設定されたFlexVolボリュームとFlexGroupボリュームの両方をバックアップできるようになりました。このサポートを実行するには、クラスタでONTAP 9.14以降が実行されている必要があります。ONTAPバージョン9.11.1以降では、SnapLock Enterpriseモードを使用したFlexVolボリュームのバックアップがサポートされています。以前のONTAPリリースでは、SnapLock保護ボリュームのバックアップはサポートされません。
@@ -312,9 +378,12 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-clo
 
 [IMPORTANT]
 ====
-重要なセキュリティ強化のため、パブリッククラウド環境内のバックアップとリカバリのリソースを管理するために、Connectorに追加のエンドポイントへのアウトバウンドインターネットアクセスが必要になりました。このエンドポイントがファイアウォールの[Allowed]リストに追加されていない場合は、UIに「Service Unavailable」または「Failed to determine service status」というエラーが表示されます。
-
+* 重要なセキュリティ強化のため、パブリッククラウド環境内のバックアップとリカバリのリソースを管理するために、Connectorに追加のエンドポイントへのアウトバウンドインターネットアクセスが必要になりました。このエンドポイントがファイアウォールの[Allowed]リストに追加されていない場合は、UIに「Service Unavailable」または「Failed to determine service status」というエラーが表示されます。
++
 \https://netapp-cloud-account.auth0.com
+
+* Cloud Volumes ONTAPとBlueXPのバックアップとリカバリをバンドルできる「CVO Professional」パッケージを使用する場合、バックアップとリカバリのPAYGOサブスクリプションが必要になりました。これは以前は必要ありませんでした。対象となるCloud Volumes ONTAPシステムのバックアップとリカバリのサブスクリプション料金は発生しませんが、新しいボリュームでバックアップを設定する場合は必要です。
+
 
 ====
 
@@ -351,42 +420,6 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.ht
 
 
 
-=== 2023年7月6日
-
-
-
-==== BlueXPのバックアップとリカバリに、Snapshotコピーとレプリケートされたボリュームのスケジュール設定と作成が追加されました
-
-BlueXPのバックアップとリカバリでは、3-2-1戦略を実装できるようになりました。この戦略では、ソースデータのコピーを2つのストレージシステムに3つ、クラウドに1つ配置できます。アクティベーションが完了すると、次のような状態になります。
-
-* ソースシステム上のボリュームのSnapshotコピー
-* 別のストレージシステムにレプリケートされたボリューム
-* オブジェクトストレージ内のボリュームのバックアップ
-
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html["新しいフルスペクトルバックアップおよびリストア機能の詳細については、こちらをご覧ください"]。
-
-この新機能は、環境リカバリ処理にも対応しています。リストア処理は、Snapshotコピー、レプリケートされたボリューム、またはクラウド内のバックアップファイルから実行できます。これにより、リカバリのコストや速度など、リカバリ要件を満たすバックアップファイルを柔軟に選択できます。
-
-この新機能とユーザインターフェイスは、ONTAP 9.8以降を実行するクラスタでのみサポートされます。クラスタに以前のバージョンのソフトウェアがインストールされている場合は、以前のバージョンのBlueXPバックアップとリカバリを引き続き使用できます。ただし、最新の機能を利用するには、サポートされているバージョンのONTAPにアップグレードすることを推奨します。古いバージョンのソフトウェアを引き続き使用するには、次の手順に従います。
-
-. [* Volumes （ボリューム） ] タブで、 [* Backup Settings （バックアップ設定） ] を選択します。
-. [_Backup Settings]ページで、*[Display the previous BlueXP backup and recovery version]*のラジオボタンをクリックします。
-+
-その後、以前のバージョンのソフトウェアを使用して古いクラスタを管理できます。
-
-
-
-
-
-==== オブジェクトストレージにバックアップするためのストレージコンテナを作成できます
-
-オブジェクトストレージにバックアップファイルを作成すると、デフォルトでは、バックアップおよびリカバリサービスによってオブジェクトストレージにバケットが作成されます。特定の名前を使用したり、特殊なプロパティを割り当てたりする場合は、バケットを自分で作成できます。独自のバケットを作成する場合は、アクティブ化ウィザードを開始する前にバケットを作成する必要があります。 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#do-you-want-to-create-your-own-object-storage-container["オブジェクトストレージバケットの作成方法について説明します"]。
-
-この機能は、StorageGRIDシステムにバックアップファイルを作成する場合は現在サポートされていません。
-
-
-
 == 分類
 
 
@@ -395,17 +428,11 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 
 
 
-==== RHELバージョン9を使用したオンプレミスインストールのサポート
+==== RHELバージョン9でのBlueXP分類のオンプレミスインストールのサポート
 
-Red Hat Enterprise Linuxバージョン8および9は、BlueXP分類のインストールに必要なDockerエンジンをサポートしていません。コンテナインフラとしてPodmanバージョン4以降を使用したRHEL 9.0、9.1、9.2へのインストールがサポートされるようになりました。最新バージョンのRHELを使用する必要がある環境では、Podmanを使用する際にBlueXP分類（バージョン1.26以降）をインストールできるようになりました。
+Red Hat Enterprise Linuxバージョン8および9は、BlueXP分類のインストールに必要なDockerエンジンをサポートしていません。コンテナインフラとしてPodmanバージョン4以降を使用したRHEL 9.0、9.1、9.2でのBlueXP分類のインストールがサポートされるようになりました。最新バージョンのRHELを使用する必要がある環境では、Podmanを使用する際にBlueXP分類（バージョン1.26以降）をインストールできるようになりました。
 
-現時点では、ダークサイトのインストールや分散スキャン環境（マスターおよびリモートスキャナノードを使用）はサポートされていません。
-
-
-
-==== 調査ページの結果には、項目の合計数に加えて合計サイズが表示されるようになりました。
-
-[Investigation]ページでフィルタ処理された結果に、ファイルの合計数に加えてアイテムの合計サイズが表示されるようになりました。これは、ファイルの移動、ファイルの削除などを行うときに役立ちます。
+現時点では、RHEL 9.xを使用している場合、ダークサイトのインストールや分散スキャン環境（マスターノードとリモートスキャナノードを使用）はサポートされていません。
 
 
 
@@ -471,6 +498,30 @@ https://docs.netapp.com/us-en/bluexp-classification/api-classification.html["Blu
 
 
 
+=== 2023年10月23日
+
+コネクタの3.9.34リリースでは、次の変更が導入されました。
+
+
+
+==== AzureでのHAマルチアベイラビリティゾーン環境でサポートされる新しいリージョン
+
+Azureの次のリージョンで、Cloud Volumes ONTAP 9.14.0以降の可用性の高い複数アベイラビリティゾーン環境がサポートされるようになりました。
+
+* オーストラリア東部
+* 東アジア
+* フランス中部
+* 北ヨーロッパ
+* カタール中部
+* スウェーデン中部
+* 西ヨーロッパ
+* 西アメリカ 2
+
+
+複数のアベイラビリティゾーンをサポートするすべてのリージョンのリストについては、を参照してください https://bluexp.netapp.com/cloud-volumes-global-regions["Azureのグローバルリージョンマップ"^]。
+
+
+
 === 2023年10月6日
 
 コネクタの3.9.34リリースでは、次の変更が導入されました。
@@ -495,46 +546,8 @@ link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["このリリ�
 
 AzureのCloud Volumes ONTAPでは、9.13.1リリース以降で、単一のアベイラビリティゾーンと複数のアベイラビリティゾーンに管理対象ディスクを共有するシングルノード環境とハイアベイラビリティペア環境で、L48s_v3とL64s_v3のインスタンスタイプがサポートされるようになりました。これらのインスタンスタイプでは、Flash Cacheがサポートされます。
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["AzureでサポートされるCloud Volumes ONTAP構成を確認する"]
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["AzureでのCloud Volumes ONTAPのストレージ制限を表示"]
-
-
-
-=== 2023年7月30日
-
-コネクタの3.9.32リリースでは、次の変更が導入されました。
-
-
-
-==== Google CloudでFlash Cacheと高速書き込み速度をサポート
-
-Google Cloud for Cloud Volumes ONTAP 9.13.1以降では、Flash Cacheと高速書き込み速度を個別に有効にすることができます。高速の書き込み速度は、サポートされているすべてのインスタンスタイプで使用できます。Flash Cacheは、次のインスタンスタイプでサポートされています。
-
-* N2-STANDARD-16
-* N2-STANDARD-32
-* N2-STANDARD-48
-* N2-STANDARD-64
-
-
-これらの機能は、シングルノード環境とハイアベイラビリティペア環境の両方で個別に使用することも、一緒に使用することもできます。
-
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["Google CloudでCloud Volumes ONTAP を起動します"]
-
-
-
-==== 使用状況レポートの機能拡張
-
-使用状況レポートに表示される情報に対するさまざまな改善が利用可能になりました。使用状況レポートの機能拡張は次のとおりです。
-
-* TiB単位が列名に追加されました。
-* シリアル番号の新しい「ノード」フィールドが追加されました。
-* [Storage VMs]使用状況レポートに新しい[Workload Type]列が追加されました。
-* 作業環境の名前がStorage VMとボリュームの使用状況レポートに表示されるようになりました。
-* ボリュームタイプ「file」のラベルが「Primary（Read/Write）」に変更されました。
-* ボリュームタイプ「secondary」のラベルが「Secondary（DP）」に変更されました。
-
-
-使用状況レポートの詳細については、を参照してください。 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html#download-usage-reports["使用状況レポートをダウンロードします"^]。
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["AzureでサポートされるCloud Volumes ONTAP構成を確認する"^]
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["AzureでのCloud Volumes ONTAPのストレージ制限を表示"^]
 
 
 
@@ -694,6 +707,16 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 
 
 
+=== 2023年10月4日
+
+
+
+==== [Planning]ウィジェット
+
+機器更改（Tech Refresh）の推奨数は、お客様レベルのダッシュボードの[Planning]ウィジェットに表示されます。これらの推奨事項は、ハードウェアのサポートがなくなるかサポート終了に近づいている場合に、ハードウェアの機器更改を計画するのに役立ちます。
+
+
+
 === 2023年9月27日
 
 
@@ -716,16 +739,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 * ラベル「Data Saved by Storage Efficiency」*の名前が「Data Reduction Savings」*に変更されます。
 * 機能の変更に伴い、[Snapshotバックアップなしの削減]*の名前が*[Snapshotコピーあり]*に変更されました。 link:https://docs.netapp.com/us-en/active-iq/reference_aiq_faq.html#storage-efficiency["詳細はこちら。"]。
 
-
-
-
-=== 2023年6月21日
-
-
-
-==== Sustainability Dashboard
-
-Sustainabilityダッシュボードは、ストレージシステムの環境の持続可能性に関する貴重なインサイトを提供します。持続可能性スコア、炭素緩和率、電力使用量の予測、直接炭素、熱などの情報を表示できます。特定のサイトの炭素緩和率を調整できます。持続可能性スコアはクラスタレベルでも確認できます。持続可能性のスコアに基づいて、ストレージシステム全体の効率を評価し、持続可能性を強化するためのネットアップの推奨アクションに合わせることができます。 link:https://docs.netapp.com/us-en/active-iq/learn_BlueXP_sustainability.html["詳細はこちら。"]。
 
 
 
@@ -803,22 +816,74 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-license
 
 
 
+=== 2023年10月20日
+
+今回のBlueXPディザスタリカバリプレビューリリースには、次の更新が含まれています。
+
+BlueXPディザスタリカバリを使用すると、オンプレミスのNFSベースのVMwareワークロードを、パブリッククラウドに加えてオンプレミスのNFSベースのVMware環境への災害から保護できます。BlueXPディザスタリカバリは、ディザスタリカバリ計画の完成をオーケストレーションします。
+
+
+NOTE: このプレビューサービスでは、NetAppは、一般提供前にサービスの詳細、内容、スケジュールを変更する権利を留保します。
+
+https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["BlueXPディザスタリカバリの詳細"]。
+
+
+
+=== 2023年9月27日
+
+今回のBlueXPディザスタリカバリプレビューリリースには、次の更新が含まれています。
+
+* *ダッシュボードの更新*:ダッシュボードのオプションをクリックできるようになり、情報をすばやく確認しやすくなりました。また、ダッシュボードにフェイルオーバーと移行のステータスが表示されるようになりました。
++
+を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/dashboard-view.html["ダッシュボードでディザスタリカバリプランの健全性を表示する"]。
+
+* *レプリケーションプランの更新*：
++
+** * RPO *：レプリケーションプランの[データストア]セクションに、目標復旧時点（RPO）と保持数を入力できるようになりました。これは、設定された時間より前に存在する必要があるデータの量を示します。たとえば、5分に設定した場合、災害が発生してもビジネスクリティカルなニーズに影響を与えることなく、システムのデータが最大5分失われる可能性があります。
++
+を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["レプリケーション計画の作成"]。
+
+** *ネットワークの機能拡張*：レプリケーション計画の仮想マシンセクションでソースとターゲットの場所間のネットワークをマッピングする際に、BlueXPディザスタリカバリでDHCPと静的IPの2つのオプションが提供されるようになりました。以前は、DHCPのみがサポートされていました。静的IPの場合は、サブネット、ゲートウェイ、およびDNSサーバを設定します。また、仮想マシンのクレデンシャルを入力できるようになりました。
++
+を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["レプリケーション計画の作成"]。
+
+** *スケジュールの編集*：レプリケーションプランのスケジュールを更新できるようになりました。
++
+を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["リソースの管理"]。
+
+** * SnapMirrorの自動化*：このリリースでレプリケーション計画を作成する際に、ソースボリュームとターゲットボリューム間のSnapMirror関係を次のいずれかの構成で定義できます。
++
+*** 1対1
+*** ファンアウトアーキテクチャで1対多
+*** コンシステンシグループとして多対1
+*** 多対多
++
+を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["レプリケーション計画の作成"]。
+
+
+
+
+
+
+
+
+
 === 2023年8月1日
 
-BlueXPディザスタリカバリベータ版は、ディザスタリカバリのワークフローを自動化するクラウドベースのディザスタリカバリサービスです。当初は、BlueXPディザスタリカバリベータ版を利用すれば、NetAppストレージを実行するオンプレミスのNFSベースのVMwareワークロードを、Amazon FSx for ONTAPを使用してAWS上のVMware Cloud（VMC）で保護できます。
+BlueXPディザスタリカバリプレビューは、ディザスタリカバリのワークフローを自動化する、クラウドベースのディザスタリカバリサービスです。当初は、BlueXPのディザスタリカバリプレビューで、NetAppストレージを実行するオンプレミスのNFSベースのVMwareワークロードを、Amazon FSx for ONTAPを使用してAWS上のVMware Cloud（VMC）に保護できます。
 
 
-NOTE: このベータ版の提供により、NetAppは一般提供前に提供内容、内容、スケジュールを変更する権利を留保します。
+NOTE: このプレビューサービスでは、NetAppは、一般提供前にサービスの詳細、内容、スケジュールを変更する権利を留保します。
 
-このリリースには、次の更新が含まれています。
+https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["BlueXPディザスタリカバリの詳細"]。
 
-* *リソースグループのブート順序の更新*:ディザスタリカバリ計画またはレプリケーション計画を作成するときに、仮想マシンを機能的なリソースグループに追加できます。リソースグループを使用すると、依存する一連の仮想マシンを、要件を満たす論理グループにまとめることができます。たとえば、リカバリ時に実行できるブート順序をグループに含めることができます。このリリースでは、各リソースグループに1つ以上の仮想マシンを含めることができます。仮想マシンは、計画に含める順序に基づいてパワーオンされます。を参照してください link:../use/drplan-create.html#select-applications-to-replicate-and-assign-resource-groups["レプリケートするアプリケーションの選択とリソースグループの割り当て"]。
-* *レプリケーションの検証*：ディザスタリカバリまたはレプリケーションの計画を作成し、ウィザードでその繰り返しを特定し、ディザスタリカバリサイトへのレプリケーションを開始すると、30分ごとにBlueXPのディザスタリカバリによって、計画どおりにレプリケーションが実際に実行されているかどうかが検証されます。進捗状況は[Job Monitor]ページで監視できます。を参照してください link:../use/replicate.html["アプリケーションを別のサイトにレプリケート"]。
-* *レプリケーションプランには、Recovery Point Objective（RPO；目標復旧時点）の転送スケジュールが表示されます*：ディザスタリカバリまたはレプリケーションプランを作成するときは、VMを選択します。このリリースでは、データストアまたはVMに関連付けられている各ボリュームに関連付けられているSnapMirrorを確認できるようになりました。SnapMirrorスケジュールに関連付けられているRPO転送スケジュールも確認できます。RPOは、災害発生後にリカバリするのに十分なバックアップスケジュールであるかどうかを判断するのに役立ちます。を参照してください link:../use/drplan-create.html["レプリケーション計画の作成"]。
-* *ジョブモニタの更新*：[ジョブモニタ]ページに[リフレッシュ]オプションが追加され、処理の最新ステータスを確認できるようになりました。を参照してください link:../use/monitor-jobs.html["ディザスタリカバリジョブを監視する"]。
+このリリースでは、次の更新が行われています。
 
+* *リソースグループのブート順序の更新*:ディザスタリカバリ計画またはレプリケーション計画を作成するときに、仮想マシンを機能的なリソースグループに追加できます。リソースグループを使用すると、依存する一連の仮想マシンを、要件を満たす論理グループにまとめることができます。たとえば、リカバリ時に実行できるブート順序をグループに含めることができます。このリリースでは、各リソースグループに1つ以上の仮想マシンを含めることができます。仮想マシンは、計画に含める順序に基づいてパワーオンされます。を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html#select-applications-to-replicate-and-assign-resource-groups["レプリケートするアプリケーションの選択とリソースグループの割り当て"]。
+* *レプリケーションの検証*：ディザスタリカバリまたはレプリケーションの計画を作成し、ウィザードでその繰り返しを特定し、ディザスタリカバリサイトへのレプリケーションを開始すると、30分ごとにBlueXPのディザスタリカバリによって、計画どおりにレプリケーションが実際に実行されているかどうかが検証されます。進捗状況は[Job Monitor]ページで監視できます。を参照してください  https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/replicate.html["アプリケーションを別のサイトにレプリケート"]。
+* *レプリケーションプランには、Recovery Point Objective（RPO；目標復旧時点）の転送スケジュールが表示されます*：ディザスタリカバリまたはレプリケーションプランを作成するときは、VMを選択します。このリリースでは、データストアまたはVMに関連付けられている各ボリュームに関連付けられているSnapMirrorを確認できるようになりました。SnapMirrorスケジュールに関連付けられているRPO転送スケジュールも確認できます。RPOは、災害発生後にリカバリするのに十分なバックアップスケジュールであるかどうかを判断するのに役立ちます。を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["レプリケーション計画の作成"]。
+* *ジョブモニタの更新*：[ジョブモニタ]ページに[リフレッシュ]オプションが追加され、処理の最新ステータスを確認できるようになりました。を参照してください  https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/monitor-jobs.html["ディザスタリカバリジョブを監視する"]。
 
-link:https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["BlueXPディザスタリカバリの詳細"]。
 
 
 
@@ -826,7 +891,7 @@ link:https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro
 
 これは、BlueXPディザスタリカバリの初版リリースです。
 
-BlueXPのディザスタリカバリは、ディザスタリカバリのワークフローを自動化する、クラウドベースのディザスタリカバリサービスです。当初は、BlueXPディザスタリカバリベータ版を利用すれば、NetAppストレージを実行するオンプレミスのNFSベースのVMwareワークロードを、Amazon FSx for ONTAPを使用してAWS上のVMware Cloud（VMC）で保護できます。
+BlueXPのディザスタリカバリは、ディザスタリカバリのワークフローを自動化する、クラウドベースのディザスタリカバリサービスです。当初は、BlueXPのディザスタリカバリプレビューで、NetAppストレージを実行するオンプレミスのNFSベースのVMwareワークロードを、Amazon FSx for ONTAPを使用してAWS上のVMware Cloud（VMC）に保護できます。
 
 link:https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["BlueXPディザスタリカバリの詳細"]。
 
@@ -842,7 +907,7 @@ link:https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro
 
 ==== Eシリーズのサポート
 
-Eシリーズストレージシステムは、BlueXPから直接検出できるようになりました。Eシリーズシステムを検出すると、ハイブリッドマルチクラウド全体のデータを包括的に把握できます。
+BlueXPからEシリーズシステムを直接検出できるようになりました。Eシリーズシステムを検出すると、ハイブリッドマルチクラウド全体のデータを包括的に把握できます。
 
 
 

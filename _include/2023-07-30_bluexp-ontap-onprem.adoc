@@ -1,0 +1,13 @@
+= FlexGroup ボリュームを作成します
+:allow-uri-read: 
+
+
+
+
+=== FlexGroup ボリュームを作成します
+
+コネクタでクラスタを管理している場合は、BlueXP APIを使用してFlexGroupボリュームを作成できるようになりました。
+
+* https://docs.netapp.com/us-en/bluexp-automation/cm/wf_onprem_flexgroup_ontap_create_vol.html["FlexGroupボリュームを作成する方法"^]
+* https://docs.netapp.com/us-en/ontap/flexgroup/definition-concept.html["FlexGroupボリュームとは"^]
+

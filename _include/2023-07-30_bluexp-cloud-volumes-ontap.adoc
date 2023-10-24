@@ -1,0 +1,37 @@
+= Google CloudでFlash Cacheと高速書き込み速度をサポート
+:allow-uri-read: 
+
+
+コネクタの3.9.32リリースでは、次の変更が導入されました。
+
+
+
+=== Google CloudでFlash Cacheと高速書き込み速度をサポート
+
+Google Cloud for Cloud Volumes ONTAP 9.13.1以降では、Flash Cacheと高速書き込み速度を個別に有効にすることができます。高速の書き込み速度は、サポートされているすべてのインスタンスタイプで使用できます。Flash Cacheは、次のインスタンスタイプでサポートされています。
+
+* N2-STANDARD-16
+* N2-STANDARD-32
+* N2-STANDARD-48
+* N2-STANDARD-64
+
+
+これらの機能は、シングルノード環境とハイアベイラビリティペア環境の両方で個別に使用することも、一緒に使用することもできます。
+
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["Google CloudでCloud Volumes ONTAP を起動します"^]
+
+
+
+=== 使用状況レポートの機能拡張
+
+使用状況レポートに表示される情報に対するさまざまな改善が利用可能になりました。使用状況レポートの機能拡張は次のとおりです。
+
+* TiB単位が列名に追加されました。
+* シリアル番号の新しい「ノード」フィールドが追加されました。
+* [Storage VMs]使用状況レポートに新しい[Workload Type]列が追加されました。
+* 作業環境の名前がStorage VMとボリュームの使用状況レポートに表示されるようになりました。
+* ボリュームタイプ「file」のラベルが「Primary（Read/Write）」に変更されました。
+* ボリュームタイプ「secondary」のラベルが「Secondary（DP）」に変更されました。
+
+
+使用状況レポートの詳細については、を参照してください。 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html#download-usage-reports["使用状況レポートをダウンロードします"^]。

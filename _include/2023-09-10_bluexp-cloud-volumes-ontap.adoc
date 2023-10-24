@@ -1,0 +1,14 @@
+= AzureでのLsv3シリーズVMのサポート
+:allow-uri-read: 
+
+
+コネクタの3.9.33リリースでは、次の変更が導入されました。
+
+
+
+=== AzureでのLsv3シリーズVMのサポート
+
+AzureのCloud Volumes ONTAPでは、9.13.1リリース以降で、単一のアベイラビリティゾーンと複数のアベイラビリティゾーンに管理対象ディスクを共有するシングルノード環境とハイアベイラビリティペア環境で、L48s_v3とL64s_v3のインスタンスタイプがサポートされるようになりました。これらのインスタンスタイプでは、Flash Cacheがサポートされます。
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["AzureでサポートされるCloud Volumes ONTAP構成を確認する"^]
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["AzureでのCloud Volumes ONTAPのストレージ制限を表示"^]

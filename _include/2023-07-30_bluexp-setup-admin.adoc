@@ -1,0 +1,25 @@
+= コネクタ3.9.32
+:allow-uri-read: 
+
+
+
+
+=== コネクタ3.9.32
+
+* BlueXP監査サービスAPIを使用して監査ログをエクスポートできるようになりました。
++
+監査サービスには、BlueXPサービスで実行された処理に関する情報が記録されます。これには、ワークスペース、使用されているコネクタ、およびその他のテレメトリデータが含まれます。このデータを使用して、実行されたアクション、実行者、実行日時を確認できます。
+
++
+https://docs.netapp.com/us-en/bluexp-automation/audit/overview.html["監査サービスAPIの使用に関する詳細情報"^]
+
++
+このリンクには、BlueXPのユーザインターフェイスの[Timeline]ページからもアクセスできます。
+
+* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とオンプレミスONTAP クラスタの機能拡張も含まれています。
++
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#30-july-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#30-july-2023["ONTAP オンプレミスクラスタの機能拡張について説明します"^]
+
+
+

@@ -1,0 +1,19 @@
+= 正規表現でファイルを除外
+:allow-uri-read: 
+
+
+
+
+=== 正規表現でファイルを除外
+
+ユーザはregexを使用してファイルを除外するオプションを使用できるようになりました。
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#create-other-types-of-sync-relationships["*ファイル拡張子を除外*機能の詳細については、こちらをご覧ください。"]
+
+
+
+=== Azureデータブローカー作成時にS3キーを追加
+
+Azureデータブローカーの作成時にAWS S3のアクセスキーとシークレットキーを追加できるようになりました。
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#creating-the-data-broker["Azureでデータブローカーを作成する方法については、こちらをご覧ください。"]

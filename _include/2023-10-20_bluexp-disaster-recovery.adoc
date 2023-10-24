@@ -1,0 +1,12 @@
+= 
+:allow-uri-read: 
+
+
+今回のBlueXPディザスタリカバリプレビューリリースには、次の更新が含まれています。
+
+BlueXPディザスタリカバリを使用すると、オンプレミスのNFSベースのVMwareワークロードを、パブリッククラウドに加えてオンプレミスのNFSベースのVMware環境への災害から保護できます。BlueXPディザスタリカバリは、ディザスタリカバリ計画の完成をオーケストレーションします。
+
+
+NOTE: このプレビューサービスでは、NetAppは、一般提供前にサービスの詳細、内容、スケジュールを変更する権利を留保します。
+
+https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["BlueXPディザスタリカバリの詳細"]。

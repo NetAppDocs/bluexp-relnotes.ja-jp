@@ -1,0 +1,7 @@
+= 
+:allow-uri-read: 
+
+
+* デフォルトの監視リストの[Upgrade Advisor]ページには、 link:https://activeiq.netapp.com/redirect/upgrade-advisor["Upgrade Advisor を使用します"^] リンク
+* アップグレードプランは、冗長なアップグレード手順を排除し、バックアウトプランを簡素化するように最適化されています。クラスタ内のすべてのノードで共通の手順が統合され、アップグレードプランの「一般情報」セクションに表示されます。 link:https://docs.netapp.com/us-en/active-iq/task_view_upgrade.html["アップグレードプランを生成して確認する方法を確認する"]。
+

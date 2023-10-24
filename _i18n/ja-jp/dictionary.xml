@@ -97,7 +97,6 @@
   <block id="560c5ee7b92d80b3ef198362d8323824" category="section-title">BlueXPの導入</block>
   <block id="87448a3fa35fafb362a06b4d17cc1328" category="paragraph">このセクションでは、BlueXPの管理機能に関連する新機能(アカウント、コネクタ、クラウドプロバイダの資格情報など)について説明します。</block>
   <block id="3831fedd132ba9d729ab12b97bb43833" category="paragraph">Cloud Volumes Service for Google CloudをBlueXPから直接管理できるようになりました。</block>
-  <block id="534171d3771a50398027a07275778b3e" category="paragraph">Eシリーズストレージシステムは、BlueXPから直接検出できるようになりました。Eシリーズシステムを検出すると、ハイブリッドマルチクラウド全体のデータを包括的に把握できます。</block>
   <block id="d88ec9141ca0f799220b70e6188c8c33" category="section-title">2022年10月24日（バージョン2.1）</block>
   <block id="51d465a61bb0f252b570a31acdf628be" category="section-title">グローバルファイルキャッシュは、任意の数のライセンスで使用できるようになりました</block>
   <block id="c4579941f945f9c013bc5d2b34483751" category="paragraph">これまでに必要だった10個のライセンス、つまり30 TBのストレージは削除されました。Global File Cacheライセンスは、3 TBのストレージごとに1つずつ発行されます。</block>
@@ -352,7 +351,6 @@
   <block id="7c347fcea29ffaea485ee6128a9d7a06" category="list-text">N2-STANDARD-64</block>
   <block id="0891ba6a1f7a37c01cb3698c692751bc" category="paragraph">これらの機能は、シングルノード環境とハイアベイラビリティペア環境の両方で個別に使用することも、一緒に使用することもできます。</block>
   <block id="5195e4b472b1871018c47fface61dc40" category="inline-link-macro">Google CloudでCloud Volumes ONTAP を起動します</block>
-  <block id="1e69916eaa563a1da0ccff3715e2342d" category="paragraph"><block ref="1e69916eaa563a1da0ccff3715e2342d" category="inline-link-macro-rx"></block></block>
   <block id="ee4272223579f1299444d14f2d185eb5" category="section-title">使用状況レポートの機能拡張</block>
   <block id="ec123c8f161f9dfe4383b8db1d8883c4" category="paragraph">使用状況レポートに表示される情報に対するさまざまな改善が利用可能になりました。使用状況レポートの機能拡張は次のとおりです。</block>
   <block id="4c63050f1e33aa32db50cc80b682e805" category="list-text">TiB単位が列名に追加されました。</block>
@@ -441,51 +439,24 @@
   <block id="04afa98530b9fa98eb8d1adf9da08f7f" category="paragraph">[Backup lifecycle（バックアップライフサイクル）]タイプフィルタの名前が[Retention（保持）]に変更されました。このフィルタを使用して、バックアップのライフサイクルを追跡し、すべてのバックアップコピーの有効期限を特定します。「保持」ジョブタイプには、BlueXPのバックアップとリカバリで保護されているボリュームで開始されたSnapshot削除ジョブがすべてキャプチャされます。</block>
   <block id="751f8afbc94898745cc6e2ea8a5ccd4c" category="inline-link">更新されたジョブモニタの詳細</block>
   <block id="bf6c8f020a512a9accf77240c1333a16" category="paragraph"><block ref="f412c2e0203811d72b16f88cf9eb5d19" category="inline-link-rx"></block>。</block>
-  <block id="f717b8ed4d751174af9f9438951b9a4f" category="section-title">2023年7月6日</block>
-  <block id="10ffd42b58d1ced7127bffaff7185e32" category="section-title">BlueXPのバックアップとリカバリに、Snapshotコピーとレプリケートされたボリュームのスケジュール設定と作成が追加されました</block>
-  <block id="a2e06093d677add4ecd73d26ade99d66" category="paragraph">BlueXPのバックアップとリカバリでは、3-2-1戦略を実装できるようになりました。この戦略では、ソースデータのコピーを2つのストレージシステムに3つ、クラウドに1つ配置できます。アクティベーションが完了すると、次のような状態になります。</block>
-  <block id="4dfb74d83687d8ca40ab05bac1885b0a" category="list-text">ソースシステム上のボリュームのSnapshotコピー</block>
-  <block id="00b4fe156d0b170f5196995dd8889b0d" category="list-text">別のストレージシステムにレプリケートされたボリューム</block>
-  <block id="809b026ec469d1b8bfa79721e15f539b" category="list-text">オブジェクトストレージ内のボリュームのバックアップ</block>
-  <block id="4ae5ef4008b68e98ae1878294a66c9d1" category="inline-link">新しいフルスペクトルバックアップおよびリストア機能の詳細については、こちらをご覧ください</block>
-  <block id="e1ddbe5fcbded46fffd577b7a64c82ef" category="paragraph"><block ref="c0ade183535ec842bf30c511bd86bbf6" category="inline-link-rx"></block>。</block>
-  <block id="1afa76124f2d71427832cd0846eefa31" category="paragraph">この新機能は、環境リカバリ処理にも対応しています。リストア処理は、Snapshotコピー、レプリケートされたボリューム、またはクラウド内のバックアップファイルから実行できます。これにより、リカバリのコストや速度など、リカバリ要件を満たすバックアップファイルを柔軟に選択できます。</block>
-  <block id="6d50e6cd9c195849ff4bcb523527fb42" category="paragraph">この新機能とユーザインターフェイスは、ONTAP 9.8以降を実行するクラスタでのみサポートされます。クラスタに以前のバージョンのソフトウェアがインストールされている場合は、以前のバージョンのBlueXPバックアップとリカバリを引き続き使用できます。ただし、最新の機能を利用するには、サポートされているバージョンのONTAPにアップグレードすることを推奨します。古いバージョンのソフトウェアを引き続き使用するには、次の手順に従います。</block>
-  <block id="fb74ece6972051de48e476af9e1e3b61" category="list-text">[* Volumes （ボリューム） ] タブで、 [* Backup Settings （バックアップ設定） ] を選択します。</block>
-  <block id="cbce457a0f1d693a7ec8fdef080284e8" category="list-text">[_Backup Settings]ページで、*[Display the previous BlueXP backup and recovery version]*のラジオボタンをクリックします。</block>
-  <block id="6ad80584a8fba3d1fc876fd412e2b184" category="paragraph">その後、以前のバージョンのソフトウェアを使用して古いクラスタを管理できます。</block>
-  <block id="e2f760131280f3fd361a50b428c7b92d" category="section-title">オブジェクトストレージにバックアップするためのストレージコンテナを作成できます</block>
-  <block id="414c40dd827c6738286ee0b333e39456" category="inline-link">オブジェクトストレージバケットの作成方法について説明します</block>
-  <block id="debda728f2e9b255111b127aed9dc8fd" category="paragraph">オブジェクトストレージにバックアップファイルを作成すると、デフォルトでは、バックアップおよびリカバリサービスによってオブジェクトストレージにバケットが作成されます。特定の名前を使用したり、特殊なプロパティを割り当てたりする場合は、バケットを自分で作成できます。独自のバケットを作成する場合は、アクティブ化ウィザードを開始する前にバケットを作成する必要があります。<block ref="2d2a00fa0eeaa888f8c689ec67e16ffe" category="inline-link-rx"></block>。</block>
-  <block id="ea600ff03360da539b9cf2f109798fac" category="paragraph">この機能は、StorageGRIDシステムにバックアップファイルを作成する場合は現在サポートされていません。</block>
   <block id="d80e88cc1f3abb9239aa87a019057d8b" category="inline-link">BlueXP分類APIの詳細</block>
   <block id="67a7c5f0403c8f58fe4ae70a6f761ae5" category="paragraph"><block ref="6c685f385b4749ef1d91fb7e0577272e" category="inline-link-rx"></block>。</block>
   <block id="645a84975202e30700b572b49a5ee29d" category="inline-link">ディザスタリカバリ</block>
   <block id="86e83f14193f6e90a917a08348a9b031" category="list-text"><block ref="86e83f14193f6e90a917a08348a9b031" category="inline-link-rx"></block></block>
   <block id="51c5a515e45f0732a46aadb31105d3df" category="list-text"><block ref="51c5a515e45f0732a46aadb31105d3df" category="inline-link-rx"></block></block>
-  <block id="cd0e5c36e226037e532c68c6f3cd3f6b" category="paragraph">BlueXPディザスタリカバリベータ版は、ディザスタリカバリのワークフローを自動化するクラウドベースのディザスタリカバリサービスです。当初は、BlueXPディザスタリカバリベータ版を利用すれば、NetAppストレージを実行するオンプレミスのNFSベースのVMwareワークロードを、Amazon FSx for ONTAPを使用してAWS上のVMware Cloud（VMC）で保護できます。</block>
-  <block id="50a97e09c76187cbcefa298e70a3afb1" category="admonition">このベータ版の提供により、NetAppは一般提供前に提供内容、内容、スケジュールを変更する権利を留保します。</block>
-  <block id="7db717e772156b4bb93598d5d823ae9f" category="paragraph">このリリースには、次の更新が含まれています。</block>
   <block id="08e4438284e48b3ad77e9a0d04037ea7" category="inline-link-macro">レプリケートするアプリケーションの選択とリソースグループの割り当て</block>
-  <block id="3d23f8b578249a5d053ce529d0f48f9b" category="list-text">*リソースグループのブート順序の更新*:ディザスタリカバリ計画またはレプリケーション計画を作成するときに、仮想マシンを機能的なリソースグループに追加できます。リソースグループを使用すると、依存する一連の仮想マシンを、要件を満たす論理グループにまとめることができます。たとえば、リカバリ時に実行できるブート順序をグループに含めることができます。このリリースでは、各リソースグループに1つ以上の仮想マシンを含めることができます。仮想マシンは、計画に含める順序に基づいてパワーオンされます。を参照してください <block ref="1f3777444374951667cb1bf3cf287ba7" category="inline-link-macro-rx"></block>。</block>
   <block id="847c11e2bf47a2c63ba2cf24f4cfa928" category="inline-link-macro">アプリケーションを別のサイトにレプリケート</block>
-  <block id="62cb227608f24cb15275f690d386de3d" category="list-text">*レプリケーションの検証*：ディザスタリカバリまたはレプリケーションの計画を作成し、ウィザードでその繰り返しを特定し、ディザスタリカバリサイトへのレプリケーションを開始すると、30分ごとにBlueXPのディザスタリカバリによって、計画どおりにレプリケーションが実際に実行されているかどうかが検証されます。進捗状況は[Job Monitor]ページで監視できます。を参照してください <block ref="ed1db02de11c4d365ac64a594dde8a8e" category="inline-link-macro-rx"></block>。</block>
   <block id="64bbb11437b30da2acf631c36bd785dd" category="inline-link-macro">レプリケーション計画の作成</block>
-  <block id="973abcfd1bd912231fdb7b2d3069fabb" category="list-text">*レプリケーションプランには、Recovery Point Objective（RPO；目標復旧時点）の転送スケジュールが表示されます*：ディザスタリカバリまたはレプリケーションプランを作成するときは、VMを選択します。このリリースでは、データストアまたはVMに関連付けられている各ボリュームに関連付けられているSnapMirrorを確認できるようになりました。SnapMirrorスケジュールに関連付けられているRPO転送スケジュールも確認できます。RPOは、災害発生後にリカバリするのに十分なバックアップスケジュールであるかどうかを判断するのに役立ちます。を参照してください <block ref="8aa3c94c171b2c9d7252afb28ee019a7" category="inline-link-macro-rx"></block>。</block>
   <block id="7fad1567be7a7caec7818041fdf4a9c6" category="inline-link-macro">ディザスタリカバリジョブを監視する</block>
-  <block id="ffdfae72897378c87d20f63c36a85c95" category="list-text">*ジョブモニタの更新*：[ジョブモニタ]ページに[リフレッシュ]オプションが追加され、処理の最新ステータスを確認できるようになりました。を参照してください <block ref="616b4ec313e92b15c3d84e62eae739b5" category="inline-link-macro-rx"></block>。</block>
   <block id="e1835ebe19023a9c7bf0e0e7dd756bf7" category="inline-link-macro">BlueXPディザスタリカバリの詳細</block>
   <block id="8454892d6268011bb79d98eedd4f8afb" category="paragraph"><block ref="10a687fb14a41a274bb5d883fcf5c124" category="inline-link-macro-rx"></block>。</block>
   <block id="405e835e0544bb4cc8bbd26a2c840b54" category="section-title">2023年5月18日</block>
   <block id="acff175f1bababdb2baa1348412d501d" category="paragraph">これは、BlueXPディザスタリカバリの初版リリースです。</block>
-  <block id="1ba37effd0ce32bb6cfe5ede3a761ee2" category="paragraph">BlueXPのディザスタリカバリは、ディザスタリカバリのワークフローを自動化する、クラウドベースのディザスタリカバリサービスです。当初は、BlueXPディザスタリカバリベータ版を利用すれば、NetAppストレージを実行するオンプレミスのNFSベースのVMwareワークロードを、Amazon FSx for ONTAPを使用してAWS上のVMware Cloud（VMC）で保護できます。</block>
   <block id="51f8ba1e739f07ed09f1ba20bff5e7fc" category="section-title">2023年7月16日</block>
   <block id="91b681e174a782226d26fb4056e14081" category="section-title">ストレージ効率</block>
   <block id="520e6a90f7dfce96c54641856d8584f2" category="list-text">削減比率を示すラベル* Storage Efficiency *の名前が* Data Reduction *に変更されます。</block>
   <block id="cc50d008d8b1e1f6ba13bbe127a1bf29" category="list-text">ラベル「Data Saved by Storage Efficiency」*の名前が「Data Reduction Savings」*に変更されます。</block>
   <block id="2a88859b894ead28756789553bc66754" category="list-text">機能の変更に伴い、[Snapshotバックアップなしの削減]*の名前が*[Snapshotコピーあり]*に変更されました。 <block ref="3a01d99aaa6c74ce8f92a2ac5ca4e5e9" category="inline-link-macro-rx"></block>。</block>
-  <block id="325e4e14529c96a60b99d9cecba4d5a6" category="section-title">2023年6月21日</block>
-  <block id="072d1a387472fb47fdfa33e48ff08ffd" category="section-title">Sustainability Dashboard</block>
   <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">2023年9月10日</block>
   <block id="f2d77c003fbfd61002c06e73a629086c" category="section-title">コネクタ3.9.33</block>
   <block id="d8465669650730f887acd3754f3dea9f" category="list-text">BlueXPからAWSでコネクタを作成するときに、[Key Pair]フィールド内を検索して、コネクタインスタンスで使用するキーペアを簡単に見つけることができるようになりました。</block>
@@ -525,19 +496,12 @@
   <block id="cc2bfd53f6bcbc23893aaa8fab8b1eb2" category="paragraph">AzureのCloud Volumes ONTAPでは、9.13.1リリース以降で、単一のアベイラビリティゾーンと複数のアベイラビリティゾーンに管理対象ディスクを共有するシングルノード環境とハイアベイラビリティペア環境で、L48s_v3とL64s_v3のインスタンスタイプがサポートされるようになりました。これらのインスタンスタイプでは、Flash Cacheがサポートされます。</block>
   <block id="c2af1dd6b400531e930c62dad5095f7d" category="inline-link-macro">AzureでサポートされるCloud Volumes ONTAP構成を確認する</block>
   <block id="bc3a07be852924fbf8ece67dbd310169" category="inline-link-macro">AzureでのCloud Volumes ONTAPのストレージ制限を表示</block>
-  <block id="7dd77d10e6ae3bee2c34fcea19d9c1ab" category="paragraph"><block ref="2e2ea5a0499f86c06503605a768ce8a2" category="inline-link-macro-rx"></block>
-<block ref="c1f4bd6aa6a7def50b28a0bec13e0184" category="inline-link-macro-rx"></block></block>
   <block id="6ce2a7f72f88b0710fcd4fd7c8040621" category="section-title">小規模および中規模の導入が一時的に利用できない</block>
   <block id="6c7040f055c36964a640c88c62785b1b" category="paragraph">現時点では、BlueXP分類のインスタンスをAWSに導入する場合、*[Deploy]&gt;[Configuration]*を選択してSmallまたはMedium sizedインスタンスを選択するオプションは使用できません。[Deploy]&gt;[Deploy]*を選択して、大きなインスタンスサイズを使用してインスタンスを導入することもできます。</block>
   <block id="a95484ffd76e2e97fc6d584af31d2888" category="paragraph">これまでは、[Investigation Results]ページ（20項目）で一度に1つのページにタグを適用することしかできませんでした。[調査結果（Investigation Results）]ページで*すべての*項目を選択し、すべての項目（一度に最大100,000項目）にタグを適用できるようになりました。<block ref="3e9397a24d29fef2aa895562fb0169fb" category="inline-link-rx"></block>。</block>
   <block id="0d2ad64b559232943585fd7b1d8a6a97" category="section-title">2023年9月27日</block>
   <block id="1e3c19e3742fbfc0e6dd22bb91d109a3" category="section-title">Upgrade Advisor を使用します</block>
   <block id="4b9f4d0e463502904f138e1d9f0014a4" category="section-title">10月4日（バージョン1.26）</block>
-  <block id="620a73262e6956695319caae21506289" category="section-title">RHELバージョン9を使用したオンプレミスインストールのサポート</block>
-  <block id="97e778415712a740a3bb71e9070c88c5" category="paragraph">Red Hat Enterprise Linuxバージョン8および9は、BlueXP分類のインストールに必要なDockerエンジンをサポートしていません。コンテナインフラとしてPodmanバージョン4以降を使用したRHEL 9.0、9.1、9.2へのインストールがサポートされるようになりました。最新バージョンのRHELを使用する必要がある環境では、Podmanを使用する際にBlueXP分類（バージョン1.26以降）をインストールできるようになりました。</block>
-  <block id="081ac57be4c35d4de4fc43c105089d8f" category="paragraph">現時点では、ダークサイトのインストールや分散スキャン環境（マスターおよびリモートスキャナノードを使用）はサポートされていません。</block>
-  <block id="db5b005cbaaba7a23899858892848a77" category="section-title">調査ページの結果には、項目の合計数に加えて合計サイズが表示されるようになりました。</block>
-  <block id="81b243d81f786faa99d42ef659adac3a" category="paragraph">[Investigation]ページでフィルタ処理された結果に、ファイルの合計数に加えてアイテムの合計サイズが表示されるようになりました。これは、ファイルの移動、ファイルの削除などを行うときに役立ちます。</block>
   <block id="69483d973a063c873a5a66f6edcc241c" category="section-title">2023年10月6日</block>
   <block id="ce408175c3b7eaf6c3dfc910f3547833" category="section-title">コネクタ3.9.34</block>
   <block id="0b440ac3de48c7d11ee5fad31e6b4f12" category="paragraph">このリリースには、マイナーな改善とバグ修正が含まれています。</block>
@@ -547,5 +511,77 @@
   <block id="f32be3299de249a0d2ea856582aaf567" category="list-text">デフォルトの監視リストの[Upgrade Advisor]ページには、 <block ref="2a9dc4897c9bae502dc40fd9fb7b1c92" category="inline-link-macro-rx"></block> リンク</block>
   <block id="d733f1a5970e5ea99d583388ac25e9cf" category="inline-link-macro">アップグレードプランを生成して確認する方法を確認する</block>
   <block id="b01f37f1151c1eda43d977dc266311ad" category="list-text">アップグレードプランは、冗長なアップグレード手順を排除し、バックアウトプランを簡素化するように最適化されています。クラスタ内のすべてのノードで共通の手順が統合され、アップグレードプランの「一般情報」セクションに表示されます。 <block ref="818a7808067ecc2956de5a6af27e7278" category="inline-link-macro-rx"></block>。</block>
-  <block id="728961fac8324355b6e6e72caa3fcab4" category="paragraph">Sustainabilityダッシュボードは、ストレージシステムの環境の持続可能性に関する貴重なインサイトを提供します。持続可能性スコア、炭素緩和率、電力使用量の予測、直接炭素、熱などの情報を表示できます。特定のサイトの炭素緩和率を調整できます。持続可能性スコアはクラスタレベルでも確認できます。持続可能性のスコアに基づいて、ストレージシステム全体の効率を評価し、持続可能性を強化するためのネットアップの推奨アクションに合わせることができます。 <block ref="14f04672b3a078b1589b8f46c67500a4" category="inline-link-macro-rx"></block>。</block>
+  <block id="fb2530f9293a4ba59cfd3ca6492bb972" category="section-title">2023年10月23日</block>
+  <block id="f1d5b892646c28fdb747b890f0787976" category="section-title">バックアップのアクティブ化中の3-2-1バックアップポリシーの作成</block>
+  <block id="1a169799fb63ccdda2e672c25d0ab2d2" category="paragraph">これまでは、Snapshot、レプリケーション、またはバックアップを開始する前にカスタムポリシーを作成する必要がありました。BlueXPのバックアップとリカバリのUIを使用して、バックアップのアクティブ化プロセスでポリシーを作成できるようになりました。</block>
+  <block id="09aac1469e7bc1d8f162de80ea67cdc3" category="section-title">ONTAPボリュームのオンデマンドのクイックリストアのサポート</block>
+  <block id="176b76bad16e5fd8729393946eb26540" category="paragraph">BlueXPでは、クラウドストレージからCloud Volumes ONTAPシステムへボリュームの「クイックリストア」を実行できるようになりました。迅速なリストアは、ボリュームへのアクセスをできるだけ早く提供する必要があるディザスタリカバリ環境に最適です。クイックリストアでは、バックアップファイル全体をリストアするのではなく、バックアップファイルからボリュームにメタデータをリストアできます。</block>
+  <block id="1d2fad969d5ec82be3bae65922e81ae0" category="paragraph">Cloud Volumes ONTAPデスティネーションシステムでONTAPバージョン9.13.0以降が実行されている必要があります。<block ref="b1f838c6239cc5d42e2bbd74d1b6c2a2" category="inline-link-rx"></block>。</block>
+  <block id="a508551aa743c3098667d5ae32149739" category="paragraph">BlueXPのバックアップとリカバリのジョブモニタには、クイックリストアジョブの進捗状況も表示されます。</block>
+  <block id="eb018f0a377269905eb589a99448cf57" category="section-title">2023年10月13日</block>
+  <block id="197747cde80c31576877de78be696240" category="section-title">BlueXPのアプリケーション向けバックアップとリカバリの機能拡張（クラウドネイティブ）</block>
+  <block id="d9a26494c95cbef43a71fa2585292af3" category="list-text">Microsoft SQL Serverデータベース</block>
+  <block id="270a06ed19fec772bcfb084931cae13d" category="list-text">Amazon FSx for NetApp ONTAP上にあるMicrosoft SQL Serverデータベースのバックアップ、リストア、リカバリをサポート</block>
+  <block id="d4da4ec044327991fbcd43ca1778c38f" category="list-text">すべての処理がREST APIでのみサポートされます。</block>
+  <block id="91abdc8faafafce1c7b76b1ecb8b37a6" category="list-text">SAP HANAシステム</block>
+  <block id="3b05cd173ffd47ef0b4346901ab9e0d3" category="list-text">システムの更新時に、スクリプトではなくワークフローを使用してボリュームの自動マウントおよびアンマウントが実行されます。</block>
+  <block id="29db6fe351e2079efe0622a1b5bd15f4" category="list-text">追加、削除、編集、削除、保守、 UIヲシヨウシタフラクインホストノアツフクレエト</block>
+  <block id="a1501619265b99c9d02aefcdb1128d6d" category="section-title">アプリケーション向けのBlueXPのバックアップとリカバリの機能拡張（ハイブリッド）</block>
+  <block id="b4445605950c5dae15c10f509d6f0f79" category="list-text">データロックとランサムウェア対策をサポート</block>
+  <block id="188502bd01986373f9c31291dc835e82" category="list-text">StorageGRIDからアーカイブ階層へのバックアップの移動をサポート</block>
+  <block id="541019d49feaf31b8000318aac636f92" category="list-text">MongoDB、MySQL、PostgreSQLの各アプリケーションデータをオンプレミスのONTAPシステムからAmazon Web Services、Microsoft Azure、Google Cloud Platform、StorageGRIDにバックアップできます。必要に応じてデータをリストアできます。</block>
+  <block id="11a3809c55f7c25dbda24854a827db05" category="section-title">仮想マシンのBlueXPバックアップとリカバリの機能拡張</block>
+  <block id="60a7ad592c196ecee9eebdab38d4ed7e" category="list-text">コネクタプロキシ配置モデルのサポート</block>
+  <block id="f63476943179d5dd83527cd0b9c7ade4" category="section-title">最初に標準ストレージに書き込むのではなく、バックアップデータを即座にアーカイブ可能</block>
+  <block id="cc702ed839181d5a4eb3655eba656f65" category="paragraph">これで、データを標準のクラウドストレージに書き込む代わりに、バックアップファイルをすぐにアーカイブストレージに送信できます。これは、クラウドバックアップからデータにアクセスする必要がほとんどないユーザや、テープバックアップ環境に取って代わるユーザに特に役立ちます。</block>
+  <block id="9aa936e4dd7e0d3efaa0a77d15dc632b" category="list-text">Cloud Volumes ONTAPとBlueXPのバックアップとリカバリをバンドルできる「CVO Professional」パッケージを使用する場合、バックアップとリカバリのPAYGOサブスクリプションが必要になりました。これは以前は必要ありませんでした。対象となるCloud Volumes ONTAPシステムのバックアップとリカバリのサブスクリプション料金は発生しませんが、新しいボリュームでバックアップを設定する場合は必要です。</block>
+  <block id="74246010013353726bd9ff99866fa7d4" category="section-title">RHELバージョン9でのBlueXP分類のオンプレミスインストールのサポート</block>
+  <block id="efbacc885d0798efa8b4d06d61cb578e" category="paragraph">Red Hat Enterprise Linuxバージョン8および9は、BlueXP分類のインストールに必要なDockerエンジンをサポートしていません。コンテナインフラとしてPodmanバージョン4以降を使用したRHEL 9.0、9.1、9.2でのBlueXP分類のインストールがサポートされるようになりました。最新バージョンのRHELを使用する必要がある環境では、Podmanを使用する際にBlueXP分類（バージョン1.26以降）をインストールできるようになりました。</block>
+  <block id="efe06748da92e661d7225cc7ec109b32" category="paragraph">現時点では、RHEL 9.xを使用している場合、ダークサイトのインストールや分散スキャン環境（マスターノードとリモートスキャナノードを使用）はサポートされていません。</block>
+  <block id="2bc953fcced4addf338156cc4681b683" category="section-title">AzureでのHAマルチアベイラビリティゾーン環境でサポートされる新しいリージョン</block>
+  <block id="13ff77e69df5acabc2f0da9e5ebc94b8" category="paragraph">Azureの次のリージョンで、Cloud Volumes ONTAP 9.14.0以降の可用性の高い複数アベイラビリティゾーン環境がサポートされるようになりました。</block>
+  <block id="cee3f0213dd8b7eb15d7b31824e01754" category="list-text">オーストラリア東部</block>
+  <block id="f74e1c0c8ee8410fa5bfe03676347257" category="list-text">東アジア</block>
+  <block id="bea1bd3d23555c539dab5f3f5426184c" category="list-text">フランス中部</block>
+  <block id="d0fe0e3b6520479f718b98f0d471b7d0" category="list-text">北ヨーロッパ</block>
+  <block id="7def8b46a24f875959130a855cd80918" category="list-text">スウェーデン中部</block>
+  <block id="8fb2033d01e3efa2825282a13f86c14e" category="list-text">西ヨーロッパ</block>
+  <block id="c349d3a26cf4231660785a0c5b4cb007" category="list-text">西アメリカ 2</block>
+  <block id="1453deb356953584c888fcae0040c1c6" category="inline-link">Azureのグローバルリージョンマップ</block>
+  <block id="9e8ed8cdd45e3d9bd3f546720545d06a" category="paragraph">複数のアベイラビリティゾーンをサポートするすべてのリージョンのリストについては、を参照してください<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>。</block>
+  <block id="500a97f33bcbe3073f32ba66331ac662" category="paragraph"><block ref="dc552a90a374cbb55f942fc8465d623a" category="inline-link-macro-rx"></block>
+<block ref="c6a2e575c9cd7913e0bdc96abdd66269" category="inline-link-macro-rx"></block></block>
+  <block id="d36a1ccbf2d01a1ff61c0e50416882e9" category="section-title">2023年10月4日</block>
+  <block id="ec795e7f7ea26d9d59bc0e1e031d4234" category="section-title">[Planning]ウィジェット</block>
+  <block id="cf75b31aeb339e309fa309a49a276a28" category="paragraph">機器更改（Tech Refresh）の推奨数は、お客様レベルのダッシュボードの[Planning]ウィジェットに表示されます。これらの推奨事項は、ハードウェアのサポートがなくなるかサポート終了に近づいている場合に、ハードウェアの機器更改を計画するのに役立ちます。</block>
+  <block id="2971377ab46c11db3998ef23731b52cf" category="section-title">2023年10月20日</block>
+  <block id="b56e223e6fc7ca1dfacb6233ed47b35e" category="paragraph">今回のBlueXPディザスタリカバリプレビューリリースには、次の更新が含まれています。</block>
+  <block id="af242308972c98cd4207cc26ee6edaa9" category="paragraph">BlueXPディザスタリカバリを使用すると、オンプレミスのNFSベースのVMwareワークロードを、パブリッククラウドに加えてオンプレミスのNFSベースのVMware環境への災害から保護できます。BlueXPディザスタリカバリは、ディザスタリカバリ計画の完成をオーケストレーションします。</block>
+  <block id="8fb7b8d770a994170f1c007a9255f124" category="admonition">このプレビューサービスでは、NetAppは、一般提供前にサービスの詳細、内容、スケジュールを変更する権利を留保します。</block>
+  <block id="d2821a0bfab67d1ac8b7770287a7e5fa" category="paragraph"><block ref="5e6f535f5269a2222938cba2b978dc6c" category="inline-link-rx"></block>。</block>
+  <block id="0c31e0b40d23036cf9c9e0c4345b96d6" category="paragraph">今回のBlueXPディザスタリカバリプレビューリリースには、次の更新が含まれています。</block>
+  <block id="83c8a47ea17763c3093bdee6c91d4c7c" category="list-text">*ダッシュボードの更新*:ダッシュボードのオプションをクリックできるようになり、情報をすばやく確認しやすくなりました。また、ダッシュボードにフェイルオーバーと移行のステータスが表示されるようになりました。</block>
+  <block id="be74a2f8b73ed15a46d21c202566b3bb" category="inline-link">ダッシュボードでディザスタリカバリプランの健全性を表示する</block>
+  <block id="d1181cbae4acc0d9feb9f608b3ee586f" category="paragraph">を参照してください<block ref="cdc1638a4873b7c2cfc1c5962a5d03ab" category="inline-link-rx"></block>。</block>
+  <block id="6285873a780e650e27e2cde2a54a7c13" category="list-text">*レプリケーションプランの更新*：</block>
+  <block id="056f6fba19f65e991a1c38d676e1c20d" category="list-text">* RPO *：レプリケーションプランの[データストア]セクションに、目標復旧時点（RPO）と保持数を入力できるようになりました。これは、設定された時間より前に存在する必要があるデータの量を示します。たとえば、5分に設定した場合、災害が発生してもビジネスクリティカルなニーズに影響を与えることなく、システムのデータが最大5分失われる可能性があります。</block>
+  <block id="6b4866d6790f0b6c044df7d2894f1313" category="paragraph">を参照してください<block ref="5cf2140f2775e5f1ccc24bb836a069a3" category="inline-link-rx"></block>。</block>
+  <block id="ff7e9f26eed12684568d409b38d71bcc" category="list-text">*ネットワークの機能拡張*：レプリケーション計画の仮想マシンセクションでソースとターゲットの場所間のネットワークをマッピングする際に、BlueXPディザスタリカバリでDHCPと静的IPの2つのオプションが提供されるようになりました。以前は、DHCPのみがサポートされていました。静的IPの場合は、サブネット、ゲートウェイ、およびDNSサーバを設定します。また、仮想マシンのクレデンシャルを入力できるようになりました。</block>
+  <block id="fe329f91281efd1c71c4145c82444ecd" category="list-text">*スケジュールの編集*：レプリケーションプランのスケジュールを更新できるようになりました。</block>
+  <block id="ecd36d02576c4fe28ab61b5c14fa69c4" category="inline-link">リソースの管理</block>
+  <block id="4cfb152ee6cdcd5bb952055f0451eb1e" category="paragraph">を参照してください<block ref="62052e6a6f987a8752e8d90cacdd602d" category="inline-link-rx"></block>。</block>
+  <block id="58adec32627fd44ceeefdcc62aeec6fc" category="list-text">* SnapMirrorの自動化*：このリリースでレプリケーション計画を作成する際に、ソースボリュームとターゲットボリューム間のSnapMirror関係を次のいずれかの構成で定義できます。</block>
+  <block id="92b7daac1d86d399dc5b1e009d09f0f5" category="list-text">1対1</block>
+  <block id="352d4f9f99cbd649fab2edc17c761e66" category="list-text">ファンアウトアーキテクチャで1対多</block>
+  <block id="7d2e89736c1e0a679ed3c86b8b5e6141" category="list-text">コンシステンシグループとして多対1</block>
+  <block id="f84b964a31258c14e682925c71bbbd80" category="list-text">多対多</block>
+  <block id="b1026ebb435e887031ec24334255046b" category="paragraph">BlueXPディザスタリカバリプレビューは、ディザスタリカバリのワークフローを自動化する、クラウドベースのディザスタリカバリサービスです。当初は、BlueXPのディザスタリカバリプレビューで、NetAppストレージを実行するオンプレミスのNFSベースのVMwareワークロードを、Amazon FSx for ONTAPを使用してAWS上のVMware Cloud（VMC）に保護できます。</block>
+  <block id="8f34806925352860a20b553ca661087f" category="paragraph">このリリースでは、次の更新が行われています。</block>
+  <block id="3c588cce706af28ae858573fe547adee" category="list-text">*リソースグループのブート順序の更新*:ディザスタリカバリ計画またはレプリケーション計画を作成するときに、仮想マシンを機能的なリソースグループに追加できます。リソースグループを使用すると、依存する一連の仮想マシンを、要件を満たす論理グループにまとめることができます。たとえば、リカバリ時に実行できるブート順序をグループに含めることができます。このリリースでは、各リソースグループに1つ以上の仮想マシンを含めることができます。仮想マシンは、計画に含める順序に基づいてパワーオンされます。を参照してください<block ref="290954acdd6fc55b493b2726d4197a5a" category="inline-link-rx"></block>。</block>
+  <block id="df189cdccc86fb97d3dabac525f1ea4a" category="list-text">*レプリケーションの検証*：ディザスタリカバリまたはレプリケーションの計画を作成し、ウィザードでその繰り返しを特定し、ディザスタリカバリサイトへのレプリケーションを開始すると、30分ごとにBlueXPのディザスタリカバリによって、計画どおりにレプリケーションが実際に実行されているかどうかが検証されます。進捗状況は[Job Monitor]ページで監視できます。を参照してください <block ref="e2d34ab7e7f8a76fb6ba2dcd38a58bb2" category="inline-link-rx"></block>。</block>
+  <block id="8b2ef00da71b5ca9de3b177a60a87cf4" category="list-text">*レプリケーションプランには、Recovery Point Objective（RPO；目標復旧時点）の転送スケジュールが表示されます*：ディザスタリカバリまたはレプリケーションプランを作成するときは、VMを選択します。このリリースでは、データストアまたはVMに関連付けられている各ボリュームに関連付けられているSnapMirrorを確認できるようになりました。SnapMirrorスケジュールに関連付けられているRPO転送スケジュールも確認できます。RPOは、災害発生後にリカバリするのに十分なバックアップスケジュールであるかどうかを判断するのに役立ちます。を参照してください<block ref="5cf2140f2775e5f1ccc24bb836a069a3" category="inline-link-rx"></block>。</block>
+  <block id="7a1d90df184c04b8d0dc0ca260e46e67" category="list-text">*ジョブモニタの更新*：[ジョブモニタ]ページに[リフレッシュ]オプションが追加され、処理の最新ステータスを確認できるようになりました。を参照してください <block ref="701085704c7bdf4268d7fbe3111fe8b9" category="inline-link-rx"></block>。</block>
+  <block id="25d037b5df7f2e04a4d6a1a3bc33caa7" category="paragraph">BlueXPのディザスタリカバリは、ディザスタリカバリのワークフローを自動化する、クラウドベースのディザスタリカバリサービスです。当初は、BlueXPのディザスタリカバリプレビューで、NetAppストレージを実行するオンプレミスのNFSベースのVMwareワークロードを、Amazon FSx for ONTAPを使用してAWS上のVMware Cloud（VMC）に保護できます。</block>
+  <block id="8060a341461a61edc489285d4c464062" category="paragraph">BlueXPからEシリーズシステムを直接検出できるようになりました。Eシリーズシステムを検出すると、ハイブリッドマルチクラウド全体のデータを包括的に把握できます。</block>
+  <block id="75cbcf1dd82ddd4349696999b639377f" category="paragraph"><block ref="75cbcf1dd82ddd4349696999b639377f" category="inline-link-macro-rx"></block></block>
 </blocks>

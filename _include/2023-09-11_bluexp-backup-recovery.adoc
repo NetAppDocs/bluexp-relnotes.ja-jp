@@ -1,0 +1,33 @@
+= ONTAPデータの新しいポリシー管理
+:allow-uri-read: 
+
+
+
+
+=== ONTAPデータの新しいポリシー管理
+
+このリリースには、UI内で、ONTAPデータのオブジェクトストレージへのバックアップ用のカスタムSnapshotポリシー、レプリケーションポリシー、およびポリシーを作成する機能が含まれています。
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-create-policies-ontap.html["ポリシーの詳細"]。
+
+
+
+=== ONTAP S3オブジェクトストレージ内のボリュームからのファイルとフォルダのリストアのサポート
+
+これまでは、ボリュームがONTAP S3オブジェクトストレージにバックアップされている場合、[Browse & Restore]機能を使用してファイルやフォルダをリストアすることはできませんでした。このリリースでは、この制限はなくなりました。
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["データのリストアに関する詳細情報"]。
+
+
+
+=== 最初に標準ストレージに書き込むのではなく、バックアップデータを即座にアーカイブ可能
+
+これで、データを標準のクラウドストレージに書き込む代わりに、バックアップファイルをすぐにアーカイブストレージに送信できます。これは、クラウドバックアップからデータにアクセスする必要がほとんどないユーザや、テープバックアップ環境に取って代わるユーザに特に役立ちます。
+
+
+
+=== SnapLockボリュームのバックアップとリストアのサポートの追加
+
+バックアップとリカバリで、SnapLockコンプライアンスまたはSnapLockエンタープライズ保護モードを使用して設定されたFlexVolボリュームとFlexGroupボリュームの両方をバックアップできるようになりました。このサポートを実行するには、クラスタでONTAP 9.14以降が実行されている必要があります。ONTAPバージョン9.11.1以降では、SnapLock Enterpriseモードを使用したFlexVolボリュームのバックアップがサポートされています。以前のONTAPリリースでは、SnapLock保護ボリュームのバックアップはサポートされません。
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["ONTAPデータの保護に関する詳細情報"]。

@@ -1,0 +1,18 @@
+= 
+:allow-uri-read: 
+
+
+BlueXPディザスタリカバリプレビューは、ディザスタリカバリのワークフローを自動化する、クラウドベースのディザスタリカバリサービスです。当初は、BlueXPのディザスタリカバリプレビューで、NetAppストレージを実行するオンプレミスのNFSベースのVMwareワークロードを、Amazon FSx for ONTAPを使用してAWS上のVMware Cloud（VMC）に保護できます。
+
+
+NOTE: このプレビューサービスでは、NetAppは、一般提供前にサービスの詳細、内容、スケジュールを変更する権利を留保します。
+
+https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["BlueXPディザスタリカバリの詳細"]。
+
+このリリースでは、次の更新が行われています。
+
+* *リソースグループのブート順序の更新*:ディザスタリカバリ計画またはレプリケーション計画を作成するときに、仮想マシンを機能的なリソースグループに追加できます。リソースグループを使用すると、依存する一連の仮想マシンを、要件を満たす論理グループにまとめることができます。たとえば、リカバリ時に実行できるブート順序をグループに含めることができます。このリリースでは、各リソースグループに1つ以上の仮想マシンを含めることができます。仮想マシンは、計画に含める順序に基づいてパワーオンされます。を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html#select-applications-to-replicate-and-assign-resource-groups["レプリケートするアプリケーションの選択とリソースグループの割り当て"]。
+* *レプリケーションの検証*：ディザスタリカバリまたはレプリケーションの計画を作成し、ウィザードでその繰り返しを特定し、ディザスタリカバリサイトへのレプリケーションを開始すると、30分ごとにBlueXPのディザスタリカバリによって、計画どおりにレプリケーションが実際に実行されているかどうかが検証されます。進捗状況は[Job Monitor]ページで監視できます。を参照してください  https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/replicate.html["アプリケーションを別のサイトにレプリケート"]。
+* *レプリケーションプランには、Recovery Point Objective（RPO；目標復旧時点）の転送スケジュールが表示されます*：ディザスタリカバリまたはレプリケーションプランを作成するときは、VMを選択します。このリリースでは、データストアまたはVMに関連付けられている各ボリュームに関連付けられているSnapMirrorを確認できるようになりました。SnapMirrorスケジュールに関連付けられているRPO転送スケジュールも確認できます。RPOは、災害発生後にリカバリするのに十分なバックアップスケジュールであるかどうかを判断するのに役立ちます。を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["レプリケーション計画の作成"]。
+* *ジョブモニタの更新*：[ジョブモニタ]ページに[リフレッシュ]オプションが追加され、処理の最新ステータスを確認できるようになりました。を参照してください  https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/monitor-jobs.html["ディザスタリカバリジョブを監視する"]。
+
