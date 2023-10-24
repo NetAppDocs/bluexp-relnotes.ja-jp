@@ -549,4 +549,9 @@
   <block id="8904b1f88c62ce8a8381c8474f2ccb42" category="paragraph">コネクタの3.9.34リリースでは、次の変更が加えられました。</block>
   <block id="41e96c41b82196674a6b6c99d0c0b8ad" category="section-title">2023年11月8日</block>
   <block id="c4cd570753ca79cf809d24d7723c0e82" category="paragraph">今回リリースされたBlueXPの経済効率化機能には、資産を評価し、テクノロジの更新が推奨されるかどうかを確認する新しいオプションが含まれています。このサービスには、左側のナビゲーションにある新しい機器更改（Tech Refresh）オプションのほか、現在のワークロードと資産を評価するための新しいページ、推奨事項を記載したレポートが含まれています。</block>
+  <block id="aa4c67fd3731395f4450c9686b20f799" category="section-title">ジョブモニタでのスケジュール済みジョブのサポート</block>
+  <block id="314b40130d46a229c3a19dc5e2e23aa4" category="paragraph">BlueXPのバックアップおよびリカバリジョブモニタでは、以前にスケジュールされたボリュームからオブジェクトストアへのバックアップおよびリストアジョブを監視しましたが、UIまたはAPIを使用してスケジュールされたローカルのSnapshot、レプリケーション、バックアップ、およびリストアジョブは監視しません。</block>
+  <block id="04c6b318fe9c7f19ae925a90e52c6569" category="paragraph">BlueXPのバックアップとリカバリのジョブモニタに、ローカルのSnapshot、レプリケーション、オブジェクトストレージへのバックアップに関するスケジュール済みジョブが追加されました。</block>
+  <block id="35214f9b3df21ed35db22cb765a9b147" category="section-title">2023年11月13日</block>
+  <block id="c14af667110ffb482c0adaaed623dbe2" category="paragraph">SMB / CIFSプロトコルを使用するボリュームのレポートを作成できるようになりました。</block>
 </blocks>
