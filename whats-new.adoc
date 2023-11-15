@@ -5,15 +5,12 @@ keywords: 'what"s new, features, new, release notes, enhancements, fixes, new fe
 summary: BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します詳細については、各サービスのすべてのリリースノートを参照してください。 
 ---
 = BlueXPの最近の変更点
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

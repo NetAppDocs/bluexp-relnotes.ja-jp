@@ -5,15 +5,12 @@ keywords: release notes
 summary: 個々のサービスごとにリリースノートの全セットを表示します。 
 ---
 = リリースノートインデックス
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
