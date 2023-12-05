@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
   <block id="ad49677f8bac8ede065e8839632b6f38" category="doc">リリースノートインデックス</block>
-  <block id="58c23c6ea3bae0f0d75bd2cd80d15108" category="paragraph">個々のサービスごとにリリースノートの全セットを表示します。</block>
   <block id="8c4aa541ee911e8d80451ef8cc304806" category="section-title">ストレージ</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link">Azure NetApp Files の特長</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link">ONTAP 対応の Amazon FSX</block>
@@ -236,15 +235,6 @@
   <block id="da20ff5e68ae0641ae1925c968ac0244" category="paragraph">BlueXPボリュームキャッシングを使用すると、特にAmazon FSx for NetApp ONTAP、Cloud Volumes ONTAP、オンプレミスの作業環境向けに、クラウド向けのキャッシュ機能を利用できます。</block>
   <block id="62f5b0396e259b44122ad3fd5f9581e0" category="inline-link-macro">BlueXPのボリュームキャッシュの詳細については、こちらをご覧ください</block>
   <block id="2ffe4affb627afa20f3783de7a26c8af" category="paragraph"><block ref="c926d704a05a7f256c6c14f4d9e77466" category="inline-link-macro-rx"></block>。</block>
-  <block id="9b7d935c674579c8c8e305e2dcadc1b9" category="section-title">2023年6月11日</block>
-  <block id="b18ac5fa90a568a24f98c73b9192cb6d" category="section-title">分単位での自動中止をサポートします</block>
-  <block id="33c110842a0fe3f7891980d750e48fa2" category="paragraph">完了していないアクティブな同期は、*同期タイムアウト*機能を使用して15分後に中止できるようになりました。</block>
-  <block id="44856e8753e0c19c0341499a434c7c97" category="inline-link">同期タイムアウト設定の詳細については、こちらを参照してください</block>
-  <block id="3266d16b8714caecb4f4231dca5dae65" category="paragraph"><block ref="bfd432c58dd0bb0c71b937c5a3336867" category="inline-link-rx"></block>。</block>
-  <block id="69540ae9a9da395711f1e900d88e4cc5" category="section-title">アクセス時間のメタデータをコピーします</block>
-  <block id="a706d4045e92e504f4aa9e79191d81f5" category="paragraph">ファイルシステムを含む関係では、* Copy for Objects *機能によってアクセス時間のメタデータがコピーされるようになりました。</block>
-  <block id="bac04a3b125486e43e5adcb9275b0cb7" category="inline-link">[オブジェクトのコピー]設定の詳細については、こちらを参照してください</block>
-  <block id="b9101f79b22863de2373d338b3f2fd49" category="paragraph"><block ref="61cd45fc857d1053eae8b58e970eda27" category="inline-link-rx"></block>。</block>
   <block id="942e802a236d6542c0c6f797428d8abb" category="section-title">2023年7月2日</block>
   <block id="d41b120a4f792ebe6195de3355c6309a" category="inline-link-macro">Storage VMを追加してください</block>
   <block id="ef4fe9904a05c0168f433db5ef979256" category="list-text">次の操作を実行できます。 <block ref="73429b7c98363ef2dcc9eca20bd224e7" category="inline-link-macro-rx"></block> BlueXPを使用してAmazon FSx for NetApp ONTAPファイルシステムに移行できます。</block>
@@ -264,17 +254,6 @@
   <block id="57f9b94b395c8e293b7f892fe5995ac7" category="paragraph">本通知は、システムの効率化とストレージコストの削減を目的とした「推奨事項」です。これにより、へのリンクが提供されます<block ref="c9d262883689ef94201e8739cb50c7f6" category="inline-link-rx"></block> コスト削減額の計算に役立ちます。</block>
   <block id="833c2c211a541e50ad94433664e4b5c1" category="inline-link">Google クラウドストレージ</block>
   <block id="68269a7fe7304a0e7d5a0232d5e7141b" category="list-text"><block ref="68269a7fe7304a0e7d5a0232d5e7141b" category="inline-link-rx"></block></block>
-  <block id="744c3e2d9eefd2af0d741a4bdf013531" category="section-title">2023年7月9日</block>
-  <block id="0d31f76acc0f0585c0ce6603aae95bf9" category="section-title">複数の同期関係を一度に削除</block>
-  <block id="86f4ab992201dfe7e7a91d9236676ea1" category="paragraph">ユーザがUIで一度に複数の同期関係を削除できるようになりました。</block>
-  <block id="f56872f7cec9149a7ac802d7a22773f7" category="inline-link">同期関係の削除の詳細については、こちらを参照してください。</block>
-  <block id="8841a5cc4fff05bb6e2a277bb234a5e9" category="paragraph"><block ref="8841a5cc4fff05bb6e2a277bb234a5e9" category="inline-link-rx"></block></block>
-  <block id="0bf8da16e84dc021192c3cce07860470" category="section-title">ACLのみをコピーします</block>
-  <block id="dda93ca03de99accfa039adc8007a91c" category="paragraph">CIF関係とNFS関係のACL情報をコピーするためのオプションが追加されました。同期関係を作成または管理する場合は、ファイルのみをコピー、ACL情報のみをコピー、ファイルとACL情報をコピーできます。</block>
-  <block id="75188372815d8c81aa145bb6bd881697" category="inline-link">ACLのコピーの詳細については、こちらをご覧ください。</block>
-  <block id="f14be32be1b0e46b478529e782afc130" category="paragraph"><block ref="f14be32be1b0e46b478529e782afc130" category="inline-link-rx"></block></block>
-  <block id="c3605c10e6753f736b31bbe56975b312" category="section-title">Node.js 20に更新</block>
-  <block id="62ace2991e0846010d9d30c14cb37645" category="paragraph">コピーと同期がNode.js 20に更新されました。使用可能なすべてのデータブローカーが更新されます。この更新プログラムと互換性のないオペレーティングシステムはインストールできません。互換性のない既存のシステムではパフォーマンスの問題が発生する可能性があります。</block>
   <block id="145634d473d937448dc7bdb5a6797ea7" category="section-title">2023年7月10日</block>
   <block id="5a6d96b9a020e520981bf7fe4c7af203" category="section-title">BlueXPから新しいバケットを追加したり、既存のバケットを管理したりできます</block>
   <block id="2706c3785e1f78099c28d555600c918b" category="inline-link">新しいGoogle Cloud Storageバケットを追加する方法をご覧ください</block>
@@ -394,13 +373,6 @@
   <block id="8454892d6268011bb79d98eedd4f8afb" category="paragraph"><block ref="10a687fb14a41a274bb5d883fcf5c124" category="inline-link-macro-rx"></block>。</block>
   <block id="405e835e0544bb4cc8bbd26a2c840b54" category="section-title">2023年5月18日</block>
   <block id="acff175f1bababdb2baa1348412d501d" category="paragraph">これは、BlueXPディザスタリカバリの初版リリースです。</block>
-  <block id="51f8ba1e739f07ed09f1ba20bff5e7fc" category="section-title">2023年7月16日</block>
-  <block id="91b681e174a782226d26fb4056e14081" category="section-title">ストレージ効率</block>
-  <block id="520e6a90f7dfce96c54641856d8584f2" category="list-text">削減比率を示すラベル* Storage Efficiency *の名前が* Data Reduction *に変更されます。</block>
-  <block id="cc50d008d8b1e1f6ba13bbe127a1bf29" category="list-text">ラベル「Data Saved by Storage Efficiency」*の名前が「Data Reduction Savings」*に変更されます。</block>
-  <block id="2a88859b894ead28756789553bc66754" category="list-text">機能の変更に伴い、[Snapshotバックアップなしの削減]*の名前が*[Snapshotコピーあり]*に変更されました。 <block ref="3a01d99aaa6c74ce8f92a2ac5ca4e5e9" category="inline-link-macro-rx"></block>。</block>
-  <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">2023年9月10日</block>
-  <block id="f2d77c003fbfd61002c06e73a629086c" category="section-title">コネクタ3.9.33</block>
   <block id="d8465669650730f887acd3754f3dea9f" category="list-text">BlueXPからAWSでコネクタを作成するときに、[Key Pair]フィールド内を検索して、コネクタインスタンスで使用するキーペアを簡単に見つけることができるようになりました。</block>
   <block id="5fa35188b7dd9c428afc77ce84eeb10b" category="inline-image-macro">BlueXPからAWSでコネクタを作成するときに[Network]ページに表示される[Key Pair]フィールドの検索オプションのスクリーンショット。</block>
   <block id="37570078060157a3624ff806701689b8" category="paragraph"><block ref="37570078060157a3624ff806701689b8" category="inline-image-macro-rx" type="image"></block></block>
@@ -495,7 +467,6 @@
 <block ref="c6a2e575c9cd7913e0bdc96abdd66269" category="inline-link-macro-rx"></block></block>
   <block id="d36a1ccbf2d01a1ff61c0e50416882e9" category="section-title">2023年10月4日</block>
   <block id="ec795e7f7ea26d9d59bc0e1e031d4234" category="section-title">[Planning]ウィジェット</block>
-  <block id="cf75b31aeb339e309fa309a49a276a28" category="paragraph">機器更改（Tech Refresh）の推奨数は、お客様レベルのダッシュボードの[Planning]ウィジェットに表示されます。これらの推奨事項は、ハードウェアのサポートがなくなるかサポート終了に近づいている場合に、ハードウェアの機器更改を計画するのに役立ちます。</block>
   <block id="2971377ab46c11db3998ef23731b52cf" category="section-title">2023年10月20日</block>
   <block id="b56e223e6fc7ca1dfacb6233ed47b35e" category="paragraph">今回のBlueXPディザスタリカバリプレビューリリースには、次の更新が含まれています。</block>
   <block id="af242308972c98cd4207cc26ee6edaa9" category="paragraph">BlueXPディザスタリカバリを使用すると、オンプレミスのNFSベースのVMwareワークロードを、パブリッククラウドに加えてオンプレミスのNFSベースのVMware環境への災害から保護できます。BlueXPディザスタリカバリは、ディザスタリカバリ計画の完成をオーケストレーションします。</block>
@@ -554,4 +525,32 @@
   <block id="04c6b318fe9c7f19ae925a90e52c6569" category="paragraph">BlueXPのバックアップとリカバリのジョブモニタに、ローカルのSnapshot、レプリケーション、オブジェクトストレージへのバックアップに関するスケジュール済みジョブが追加されました。</block>
   <block id="35214f9b3df21ed35db22cb765a9b147" category="section-title">2023年11月13日</block>
   <block id="c14af667110ffb482c0adaaed623dbe2" category="paragraph">SMB / CIFSプロトコルを使用するボリュームのレポートを作成できるようになりました。</block>
+  <block id="563cbb5befcc35d67fb204c94be0bffb" category="summary">BlueXPサービスごとにリリースノートをすべて確認できます。</block>
+  <block id="e8a0c291b754a75e0e91ecf69d567912" category="section-title">2023年12月5日</block>
+  <block id="1771e2f4014c6ccd829b84cf9e8c7d27" category="section-title">プライベートモードリリース</block>
+  <block id="5a78b457c661dc3d01c5125da794f0ed" category="paragraph">BlueXPで新しいプライベートモードリリースが見積もり可能になりました。このリリースには、コネクタのバージョン3.9.35と、2023年10月時点でプライベートモードでサポートされるBlueXPサービスのバージョンが含まれています。</block>
+  <block id="ec34e91164e39c9df1bfb906cff07162" category="paragraph">この新しいリリースは、NetApp Support Siteからダウンロードできます。</block>
+  <block id="2e57b160bcd31ccd527a6670d94879de" category="inline-link">プライベートモードに含まれるBlueXPサービスの詳細</block>
+  <block id="d51183b71ba843f2f97d0b54a084f7e8" category="list-text"><block ref="d51183b71ba843f2f97d0b54a084f7e8" category="inline-link-rx"></block></block>
+  <block id="8156defa13b44a36e67cab400c3b8bd4" category="inline-link">BlueXPのプライベートモードでの利用を開始する方法</block>
+  <block id="1183e1b8915696495b308d0bdfa59bd4" category="list-text"><block ref="1183e1b8915696495b308d0bdfa59bd4" category="inline-link-rx"></block></block>
+  <block id="b29a186d936b198dcafa3a0308485e2c" category="inline-link">プライベートモードの使用時にコネクタをアップグレードする方法について説明します。</block>
+  <block id="4e208e7f54024bf731fae02025ce34d9" category="list-text"><block ref="4e208e7f54024bf731fae02025ce34d9" category="inline-link-rx"></block></block>
+  <block id="a76b69f0eac891a6dad210c8c894f70c" category="section-title">2023年11月26日</block>
+  <block id="5dbbe39e8d4eedbcb5aafdf7e0e66a80" category="section-title">Azure Blobに対するコールドストレージクラスのサポート</block>
+  <block id="2be7473e47d2102f9d51ff1a3cd36305" category="paragraph">同期関係の作成時にコールドストレージのAzure Blob階層を使用できるようになりました。</block>
+  <block id="6e90305f3ad22c32d20c662a0bb06726" category="inline-link">同期関係の作成について詳しくは、こちらをご覧ください。</block>
+  <block id="2bfe6803528ed3d1b4758e7bc6eb4cb6" category="paragraph"><block ref="2bfe6803528ed3d1b4758e7bc6eb4cb6" category="inline-link-rx"></block></block>
+  <block id="e35f035cdd0e53d6ac8e57e89c9a3994" category="section-title">AWSデータブローカーでのTel Avivリージョンのサポート</block>
+  <block id="bc601240bd77a257f82ad29245da02ee" category="paragraph">AWSでデータブローカーを作成する際に、テルアビブがサポートされるリージョンになりました。</block>
+  <block id="f296e44bbf15ea94dfcce2d2a4649e6d" category="inline-link">AWSでデータブローカーを作成する方法については、こちらをご覧ください</block>
+  <block id="48938ec2ae208dc89827f9e55c8f1c41" category="paragraph"><block ref="42f00e873b388cac01d84d3ba1605497" category="inline-link-rx"></block>。</block>
+  <block id="e24f754057dce2d0f9791240fec7d494" category="section-title">データブローカーのノードバージョンの更新</block>
+  <block id="a020a6afcaa5c0d333b5cfb93c8d4d79" category="paragraph">これで、すべての新しいデータブローカーでノードバージョン21.2.0が使用されます。この更新プログラムと互換性のないデータブローカー（CentOS 7.0やUbuntu Server 18.0など）は、BlueXPのコピーと同期では使用できなくなります。</block>
+  <block id="20cc757c4cb0c9b6153ae0f56705ae36" category="section-title">2023年11月16日</block>
+  <block id="e057979f7791f37ec4a8704baa00923d" category="section-title">監視リスト</block>
+  <block id="20015eaa9dc8feb8cbf1eaadb95c6b20" category="paragraph">最大100個の監視リストを作成できるようになりました。</block>
+  <block id="752f0c78427b5fffe498798d609a58a7" category="list-text">機器更改に関する推奨事項が、監視リスト、サイト、グループの各ダッシュボードで利用できるようになりました。</block>
+  <block id="5abb66a3f2a4a3a5e6083eb0e9cb8016" category="list-text">機器更改の推奨数がゼロの場合に、潜在的な機器更改候補を表示できるようになりました。</block>
+  <block id="bd644bc36e5d6955b3d49189c83c45f3" category="paragraph">機器更改の推奨数は、お客様レベルのダッシュボードの[Planning]ウィジェットに表示されます。これらの推奨事項は、ハードウェアのサポートがなくなるかサポート終了に近づいている場合に、ハードウェア機器更改アクティビティを計画するのに役立ちます。</block>
 </blocks>
