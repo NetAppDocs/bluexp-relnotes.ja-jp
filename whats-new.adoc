@@ -566,7 +566,7 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/reference-requirements.html#googl
 
 
 
-=== Upgrade Advisor を使用します
+==== Upgrade Advisor を使用します
 
 Upgrade Advisorが強化され、単一のクラスタと複数のクラスタの無停止アップグレードプランが自動で提供されます。アップグレードの推奨事項は、リスクの概要、アップグレード前のチェックレポート、新機能や拡張機能に関する情報など、単一のクラスタについてのみ表示できます。 link:https://docs.netapp.com/us-en/active-iq/upgrade_advisor_overview.html["アップグレードの推奨事項を表示し、アップグレードプランを生成する方法について説明します。"]
 
@@ -576,7 +576,7 @@ Upgrade Advisorが強化され、単一のクラスタと複数のクラスタ�
 
 
 
-=== 監視リスト
+==== 監視リスト
 
 最大100個の監視リストを作成できるようになりました。
 
