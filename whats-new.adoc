@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, cloud manager, bluexp, google cloud, disaster recovery' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, cloud manager, bluexp, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, kubernetes, reports, ontap clusters' 
 summary: BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します詳細については、各サービスのすべてのリリースノートを参照してください。 
 ---
 = BlueXPの最近の変更点
@@ -30,6 +30,20 @@ NetApp BlueXPは2022年11月1日にリリースされました。BlueXPは、Clo
 
 
 
+=== 2024年1月11日
+
+
+
+==== コネクタ3.9.36
+
+このリリースには、以下のクラウドリージョンでマイナーな改善、バグ修正、コネクタのサポートが含まれています。
+
+* AWSのイスラエル（テルアビブ）リージョン
+* Google Cloudのサウジアラビアリージョン
+
+
+
+
 === 2023年12月5日
 
 
@@ -54,16 +68,6 @@ BlueXPで新しいプライベートモードリリースが見積もり可能�
 ==== コネクタ3.9.35
 
 このリリースには、セキュリティのマイナーな改善とバグの修正が含まれています。
-
-
-
-=== 2023年10月6日
-
-
-
-==== コネクタ3.9.34
-
-このリリースには、マイナーな改善とバグ修正が含まれています。
 
 
 
@@ -177,6 +181,39 @@ BlueXP CanvasでAmazon S3バケットを表示できるようになりました�
 
 
 
+=== 2023年12月15日
+
+
+
+==== ローカルSnapshotコピーとレプリケーションSnapshotコピーで使用できるレポート
+
+以前は、バックアップコピーに関するレポートのみを生成できました。ローカルSnapshotコピーとレプリケーションSnapshotコピーに関するレポートも作成できるようになりました。
+
+これらのレポートでは、次の操作を実行できます。
+
+* 重要なデータが組織のポリシーに従って保護されていることを確認します。
+* ボリュームグループのバックアップがスムーズに実行されたことを確認します。
+* 本番環境のデータに対する保護の証明を提供
+
+
+を参照してください https://docs.netapp.com/us-en/bluexp-backup-recovery/task-report-inventory.html["データ保護の適用範囲に関するレポートを作成します"]。
+
+
+
+==== ボリュームで並べ替えとフィルタリングに使用できるカスタムタグ付け
+
+ONTAP 9.13.1以降では、カスタムタグをボリュームに追加できるようになりました。これにより、複数の作業環境内および複数の作業環境間でボリュームをグループ化できます。これにより、BlueXPのバックアップとリカバリのUIページでボリュームをソートしたり、レポートでフィルタリングしたりできます。
+
+
+
+==== 30日間保持されるバックアップをカタログ化
+
+以前は、Catalog.zipのバックアップは7日間保持されていました。現在、それらは30日間保持されます。
+
+を参照してください https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-backup-cbs-db-in-dark-site.html["ダークサイトでのBlueXPのバックアップとリカバリデータのリストア"]。
+
+
+
 === 2023年10月23日
 
 
@@ -196,6 +233,14 @@ BlueXPでは、クラウドストレージからCloud Volumes ONTAPシステム�
 Cloud Volumes ONTAPデスティネーションシステムでONTAPバージョン9.13.0以降が実行されている必要があります。 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["データのリストアに関する詳細情報"]。
 
 BlueXPのバックアップとリカバリのジョブモニタには、クイックリストアジョブの進捗状況も表示されます。
+
+
+
+==== オンプレミスのONTAPデータのStorageGRIDバケットへのバックアップ保持数の増加
+
+StorageGRIDは、BlueXPのバックアップ/リカバリからオンプレミスのONTAPデータのバックアップを1つのバケットに最大30個保持できるようになりました。以前は、バケット内のバックアップの最大数は7でした。
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["オンプレミスのONTAP データをStorageGRID にバックアップする方法の詳細については、こちらをご覧ください"]。
 
 
 
@@ -247,87 +292,23 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.ht
 
 
 
-=== 2023年9月11日
-
-
-
-==== ONTAPデータの新しいポリシー管理
-
-このリリースには、UI内で、ONTAPデータのオブジェクトストレージへのバックアップ用のカスタムSnapshotポリシー、レプリケーションポリシー、およびポリシーを作成する機能が含まれています。
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-create-policies-ontap.html["ポリシーの詳細"]。
-
-
-
-==== ONTAP S3オブジェクトストレージ内のボリュームからのファイルとフォルダのリストアのサポート
-
-これまでは、ボリュームがONTAP S3オブジェクトストレージにバックアップされている場合、[Browse & Restore]機能を使用してファイルやフォルダをリストアすることはできませんでした。このリリースでは、この制限はなくなりました。
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["データのリストアに関する詳細情報"]。
-
-
-
-==== 最初に標準ストレージに書き込むのではなく、バックアップデータを即座にアーカイブ可能
-
-これで、データを標準のクラウドストレージに書き込む代わりに、バックアップファイルをすぐにアーカイブストレージに送信できます。これは、クラウドバックアップからデータにアクセスする必要がほとんどないユーザや、テープバックアップ環境に取って代わるユーザに特に役立ちます。
-
-
-
-==== SnapLockボリュームのバックアップとリストアのサポートの追加
-
-バックアップとリカバリで、SnapLockコンプライアンスまたはSnapLockエンタープライズ保護モードを使用して設定されたFlexVolボリュームとFlexGroupボリュームの両方をバックアップできるようになりました。このサポートを実行するには、クラスタでONTAP 9.14以降が実行されている必要があります。ONTAPバージョン9.11.1以降では、SnapLock Enterpriseモードを使用したFlexVolボリュームのバックアップがサポートされています。以前のONTAPリリースでは、SnapLock保護ボリュームのバックアップはサポートされません。
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["ONTAPデータの保護に関する詳細情報"]。
-
-
-
-=== 2023年8月1日
-
-[IMPORTANT]
-====
-* 重要なセキュリティ強化のため、パブリッククラウド環境内のバックアップとリカバリのリソースを管理するために、Connectorに追加のエンドポイントへのアウトバウンドインターネットアクセスが必要になりました。このエンドポイントがファイアウォールの[Allowed]リストに追加されていない場合は、UIに「Service Unavailable」または「Failed to determine service status」というエラーが表示されます。
-+
-\https://netapp-cloud-account.auth0.com
-
-* Cloud Volumes ONTAPとBlueXPのバックアップとリカバリをバンドルできる「CVO Professional」パッケージを使用する場合、バックアップとリカバリのPAYGOサブスクリプションが必要になりました。これは以前は必要ありませんでした。対象となるCloud Volumes ONTAPシステムのバックアップとリカバリのサブスクリプション料金は発生しませんが、新しいボリュームでバックアップを設定する場合は必要です。
-
-
-====
-
-
-==== S3に設定されたONTAPシステムでバケットへのボリュームのバックアップがサポートされるようになりました。
-
-Simple Storage Service（S3）用に設定されたONTAPシステムを使用して、オブジェクトストレージにボリュームをバックアップできるようになりました。これは、オンプレミスのONTAPシステムとCloud Volumes ONTAPシステムの両方でサポートされます。この構成は、クラウド環境およびインターネットアクセスのないオンプレミス環境（「プライベート」モード展開）でサポートされます。
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-ontap-s3.html["詳細はこちら。"]。
-
-
-
-==== 保護対象ボリュームの既存のSnapshotをバックアップファイルに含めることができるようになりました。
-
-これまでは、（最新のSnapshotコピーから始めるのではなく）最初のバックアップファイルに読み書き可能ボリュームの既存のSnapshotコピーを含めることができました。読み取り専用ボリューム（データ保護ボリューム）の既存のSnapshotコピーがバックアップファイルに含まれていませんでした。「DP」ボリュームのバックアップファイルに古いSnapshotコピーを含めるように選択できるようになりました。
-
-バックアップウィザードの最後に、これらの「既存のSnapshot」を選択するためのプロンプトが表示されます。
-
-
-
-==== BlueXPのバックアップとリカバリでは、今後追加されるボリュームの自動バックアップはサポートされなくなります。
-
-これまでは、バックアップウィザードのチェックボックスをオンにして、選択したバックアップポリシーをクラスタに追加するすべてのボリュームに適用できました。この機能は、ユーザーからのフィードバックとこの機能の使用不足に基づいて削除されました。クラスタに追加された新しいボリュームのバックアップは、手動で有効にする必要があります。
-
-
-
-==== ジョブ監視ページが更新され、新機能が追加されました。
-
-[Job Monitoring]ページに、3-2-1バックアップ戦略に関する詳細情報が表示されるようになりました。また、バックアップ戦略に関連する追加のアラート通知も提供されます。
-
-[Backup lifecycle（バックアップライフサイクル）]タイプフィルタの名前が[Retention（保持）]に変更されました。このフィルタを使用して、バックアップのライフサイクルを追跡し、すべてのバックアップコピーの有効期限を特定します。「保持」ジョブタイプには、BlueXPのバックアップとリカバリで保護されているボリュームで開始されたSnapshot削除ジョブがすべてキャプチャされます。
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html["更新されたジョブモニタの詳細"]。
-
-
-
 == 分類
+
+
+
+=== 1月10日（バージョン1.27）
+
+
+
+==== 調査ページの結果に、項目の合計数に加えて合計サイズが表示されるようになりました。
+
+[Investigation]ページでフィルタ処理された結果に、ファイルの合計数に加えてアイテムの合計サイズが表示されるようになりました。これは、ファイルの移動、ファイルの削除などを行うときに役立ちます。
+
+
+
+==== 追加のグループIDを[Open to Organization]として設定します。
+
+BlueXPの分類で、NFSのグループIDが最初にその権限で設定されていなかった場合に、直接「組織として開く」とみなされるようにNFSのグループIDを設定できるようになりました。方法を参照してください https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open["追加のグループIDを「組織にオープン」として追加"]。
 
 
 
@@ -381,6 +362,24 @@ BlueXPの分類では、ファイルが50MB以上の場合にのみ重複ファ�
 
 
 
+=== 2024年1月8日
+
+
+
+==== Azureの複数のアベイラビリティゾーン用の新しいVM
+
+Cloud Volumes ONTAP 9.13.1以降では、次のVMタイプで、新規および既存のハイアベイラビリティペア環境でAzureの複数のアベイラビリティゾーンがサポートされます。
+
+* L16s_v3
+* L32s_v3
+* L48s_v3
+* L64s_v3
+
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure でサポートされる構成"^]
+
+
+
 === 2023年12月6日
 
 
@@ -424,20 +423,6 @@ Azure for Cloud Volumes ONTAP 9.12.1 GA以降では、次のリージョンで�
 
 
 すべての地域のリストについては、 https://bluexp.netapp.com/cloud-volumes-global-regions["Azureのグローバルリージョンマップ"^]。
-
-
-
-=== 2023年11月10日
-
-コネクタの3.9.35リリースでは、次の変更が加えられました。
-
-
-
-==== ベルリンリージョンでGoogle Cloudがサポートされるようになりました
-
-ベルリン地域は、Google Cloud for Cloud Volumes ONTAP 9.12.1 GA以降でサポートされるようになりました。
-
-すべての地域のリストについては、 https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloudのグローバルリージョンマップ"^]。
 
 
 
@@ -577,6 +562,16 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/reference-requirements.html#googl
 
 
 
+=== 2024年1月3日
+
+
+
+=== Upgrade Advisor を使用します
+
+Upgrade Advisorが強化され、単一のクラスタと複数のクラスタの無停止アップグレードプランが自動で提供されます。アップグレードの推奨事項は、リスクの概要、アップグレード前のチェックレポート、新機能や拡張機能に関する情報など、単一のクラスタについてのみ表示できます。 link:https://docs.netapp.com/us-en/active-iq/upgrade_advisor_overview.html["アップグレードの推奨事項を表示し、アップグレードプランを生成する方法について説明します。"]
+
+
+
 === 2023年11月16日
 
 
@@ -602,18 +597,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/reference-requirements.html#googl
 ==== [Planning]ウィジェット
 
 機器更改の推奨数は、お客様レベルのダッシュボードの[Planning]ウィジェットに表示されます。これらの推奨事項は、ハードウェアのサポートがなくなるかサポート終了に近づいている場合に、ハードウェア機器更改アクティビティを計画するのに役立ちます。
-
-
-
-=== 2023年9月27日
-
-
-
-==== Upgrade Advisor を使用します
-
-* デフォルトの監視リストの[Upgrade Advisor]ページには、 link:https://activeiq.netapp.com/redirect/upgrade-advisor["Upgrade Advisor を使用します"^] リンク
-* アップグレードプランは、冗長なアップグレード手順を排除し、バックアウトプランを簡素化するように最適化されています。クラスタ内のすべてのノードで共通の手順が統合され、アップグレードプランの「一般情報」セクションに表示されます。 link:https://docs.netapp.com/us-en/active-iq/task_view_upgrade.html["アップグレードプランを生成して確認する方法を確認する"]。
-
 
 
 
