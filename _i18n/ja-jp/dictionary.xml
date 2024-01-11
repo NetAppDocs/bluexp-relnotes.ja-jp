@@ -15,11 +15,6 @@
   <block id="f3aae44c0ba1e9d5c7a46f4e224ea31e" category="section-title">管理機能</block>
   <block id="30136395f01879792198317c11831ea4" category="section-title">Kubernetes</block>
   <block id="dcf4ee5c8f297d1f5e0da7b22e359023" category="sidebar">最近の変更</block>
-  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新機能</block>
-  <block id="f5f7a4d1535be1d0940e398b2997dfc0" category="sidebar">サービス別リリースノート</block>
-  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">ブログコミュニティ</block>
-  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">ネットアップコミュニティ</block>
-  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">クラウドに関する Web セミナー</block>
   <block id="f7d121e2a54c62002dd74f6b9dac8069" category="inline-link">Cloud Volumes ONTAP のリリースノート</block>
   <block id="ca138f4890a80dcb981add74fa328598" category="list-text"><block ref="ca138f4890a80dcb981add74fa328598" category="inline-link-rx"></block></block>
   <block id="29c251ed5a57bbffe470654ccbbe714c" category="section-title">2021 年 4 月 11 日</block>
@@ -107,7 +102,6 @@
   <block id="3bf86cee85be3992be11d6813b4f6b14" category="section-title">Optimus UI（Edge Configuration）のEdge Sync機能が強化され、接続されているすべてのクライアントが表示されるようになりました</block>
   <block id="0b17baeba205d071cc0142cf4aba9b76" category="paragraph">StorageGRID システムをBlueXPから直接検出できるようになりました。StorageGRID を検出すると、ハイブリッドマルチクラウド全体のデータを包括的に把握できます。</block>
   <block id="88268cce7d1b83c765c3f7010df80df5" category="section-title">2022年11月6日</block>
-  <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXPのブログ</block>
   <block id="6beb41a356d9287866f0b22c4b4eadcb" category="paragraph">BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します詳細については、を参照してください <block ref="1e9f4589e5d2713376df79f13fc9ba0a" category="inline-link-macro-rx"></block> 個々のサービスごと。</block>
   <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">2023年3月5日</block>
   <block id="eea1e3b9ecdd5e32692761a0a78b9463" category="section-title">2023年3月5日</block>
@@ -539,21 +533,6 @@
   <block id="a037be7aafc2f071c4517e8f2c6e58e9" category="section-title">2023年12月6日</block>
   <block id="4a76045b19fb3233070f77ae414d5810" category="section-title">Cloud Volumes ONTAP 9.14.1 RC1</block>
   <block id="efb4d9478ba663f514e18b3310c2de65" category="paragraph">BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.14.1を導入、管理できるようになりました。</block>
-  <block id="1fdbf90814a4e25f5b9e765470846181" category="paragraph">次の変更が導入されました。</block>
-  <block id="de3678aecacdbfc2cde1f365589103a8" category="section-title">Azureでの新しいリージョンのサポート</block>
-  <block id="2d87524b148f67773bbd84eaceabd1a8" category="section-title">単一のアベイラビリティゾーンリージョンのサポート</block>
-  <block id="b778fb7051f3e08881d95bd99b033b37" category="paragraph">Azure for Cloud Volumes ONTAP 9.12.1 GA以降では、次のリージョンで可用性の高い単一アベイラビリティゾーンの導入がサポートされるようになりました。</block>
-  <block id="b5eed9442adc540b3e59ae08aa129632" category="list-text">テルアビブ</block>
-  <block id="437d461430ecc08e2d51abbcf5ce9b3c" category="list-text">ミラノ</block>
-  <block id="657afe0033330876ccc58b79bded6c83" category="section-title">複数のアベイラビリティゾーンリージョンのサポート</block>
-  <block id="20576a03f90633178b591a3e73ee5d59" category="paragraph">Azure for Cloud Volumes ONTAP 9.12.1 GA以降では、次のリージョンで可用性の高い複数アベイラビリティゾーンの導入がサポートされるようになりました。</block>
-  <block id="910918c80516a55b4ba940f0b485cea1" category="list-text">中央インド</block>
-  <block id="e57064b31b815fd4c1124aa7f2cc1fd4" category="list-text">ノルウェー東部</block>
-  <block id="524a897e665c757be360f9ceaca6b0a5" category="list-text">スイス北部</block>
-  <block id="d5daca31a462e138266141f6d01ca814" category="list-text">南アフリカ北部</block>
-  <block id="92e19d728517dc371c0f37ee23fa9d03" category="list-text">アラブ首長国連邦北部</block>
-  <block id="343c78956fe2e30b58a341de94a8673a" category="list-text">中国北部3</block>
-  <block id="ee39417afe0e7b7726a65f6235448846" category="paragraph">すべての地域のリストについては、<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>。</block>
   <block id="17c3c89f25f7684516a883f30f10b747" category="section-title">2024年1月11日</block>
   <block id="dfbe132af57c8e3ca0aa9a94fc940839" category="section-title">コネクタ3.9.36</block>
   <block id="c86344b833d64024dcd801a79f3f366e" category="paragraph">このリリースには、以下のクラウドリージョンでマイナーな改善、バグ修正、コネクタのサポートが含まれています。</block>
@@ -583,7 +562,6 @@
   <block id="81b243d81f786faa99d42ef659adac3a" category="paragraph">[Investigation]ページでフィルタ処理された結果に、ファイルの合計数に加えてアイテムの合計サイズが表示されるようになりました。これは、ファイルの移動、ファイルの削除などを行うときに役立ちます。</block>
   <block id="bb5b2f81c2aa7d8df9263c590efda3e6" category="section-title">追加のグループIDを[Open to Organization]として設定します。</block>
   <block id="617de59f0823cef046ababc40408cb92" category="inline-link">追加のグループIDを「組織にオープン」として追加</block>
-  <block id="f51c5ae20e9943d0b0e6e5c5fff847e4" category="paragraph">BlueXPの分類で、NFSのグループIDが最初にその権限で設定されていなかった場合に、直接「組織として開く」とみなされるようにNFSのグループIDを設定できるようになりました。方法を参照してください<block ref="a69630de08e764820516472e7391212c" category="inline-link-rx"></block>。</block>
   <block id="fd9107be3db2a4144e054c68a7eab15f" category="section-title">2024年1月8日</block>
   <block id="dba248d0d18e6170f9bd4a4286edda53" category="section-title">Azureの複数のアベイラビリティゾーン用の新しいVM</block>
   <block id="c8d113632e2ef2b901829a0843658f2c" category="paragraph">Cloud Volumes ONTAP 9.13.1以降では、次のVMタイプで、新規および既存のハイアベイラビリティペア環境でAzureの複数のアベイラビリティゾーンがサポートされます。</block>
@@ -596,4 +574,10 @@
   <block id="0850cf3036348eacfcb9da9c7e6dff71" category="section-title">2024年1月3日</block>
   <block id="9c818280eee76d75834ab648289ae85f" category="inline-link-macro">アップグレードの推奨事項を表示し、アップグレードプランを生成する方法について説明します。</block>
   <block id="bdc2200252b96cc6ed0c081012882ca8" category="paragraph">Upgrade Advisorが強化され、単一のクラスタと複数のクラスタの無停止アップグレードプランが自動で提供されます。アップグレードの推奨事項は、リスクの概要、アップグレード前のチェックレポート、新機能や拡張機能に関する情報など、単一のクラスタについてのみ表示できます。 <block ref="5432771afbfeb8bee17b110b384d0041" category="inline-link-macro-rx"></block></block>
+  <block id="a6523313c047adabe12f8226b1c17a58" category="paragraph">グループに最初にその権限が設定されていなかった場合に、BlueXPの分類から直接、NFSのグループIDを「Open to Organization」とみなされるように設定できるようになりました。これらのグループIDが添付されているファイルおよびフォルダは、[Investigation Details]ページで[Open to Organization]として表示されます。方法を参照してください<block ref="1de46bddc056a512b561c93990312fff" category="inline-link-rx"></block>。</block>
+  <block id="35588fa7f53bdbd040bfa9c96c87bf3d" category="section-title">2024年1月16日</block>
+  <block id="9ed7d4ae8d042664394e899e9c1f5e9a" category="section-title">BlueXPでのパッチリリース</block>
+  <block id="5c04c0351e9f1e168f13ca5689c21d92" category="paragraph">BlueXPでは、最新の3つのバージョンのCloud Volumes ONTAPに対してのみパッチリリースを提供しています。</block>
+  <block id="3a3843b2672bd389702bef2d50b13ac2" category="inline-link-macro">Cloud Volumes ONTAP をアップグレードします</block>
+  <block id="debc8fcbe9103b95d21857d1276dbb26" category="paragraph"><block ref="debc8fcbe9103b95d21857d1276dbb26" category="inline-link-macro-rx"></block></block>
 </blocks>
