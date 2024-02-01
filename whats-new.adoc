@@ -18,12 +18,6 @@ BlueXPプラットフォームの一部である クラウド サービス の�
 
 
 
-== BlueXPの導入
-
-NetApp BlueXPは2022年11月1日にリリースされました。BlueXPは、Cloud Managerが提供する機能を拡張、強化しています。 https://docs.netapp.com/us-en/bluexp-family/concept-overview.html["BlueXPの導入について詳しくは、こちらをご覧ください"^]
-
-
-
 == 管理機能
 
 このセクションでは、BlueXPの管理機能に関連する新機能(アカウント、コネクタ、クラウドプロバイダの資格情報など)について説明します。
@@ -333,28 +327,6 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.ht
 Red Hat Enterprise Linuxバージョン8および9は、BlueXP分類のインストールに必要なDockerエンジンをサポートしていません。コンテナインフラとしてPodmanバージョン4以降を使用したRHEL 9.0、9.1、9.2でのBlueXP分類のインストールがサポートされるようになりました。最新バージョンのRHELを使用する必要がある環境では、Podmanを使用する際にBlueXP分類（バージョン1.26以降）をインストールできるようになりました。
 
 現時点では、RHEL 9.xを使用している場合、ダークサイトのインストールや分散スキャン環境（マスターノードとリモートスキャナノードを使用）はサポートされていません。
-
-
-
-=== 9月5日（バージョン1.25）
-
-
-
-==== 小規模および中規模の導入が一時的に利用できない
-
-現時点では、BlueXP分類のインスタンスをAWSに導入する場合、*[Deploy]>[Configuration]*を選択してSmallまたはMedium sizedインスタンスを選択するオプションは使用できません。[Deploy]>[Deploy]*を選択して、大きなインスタンスサイズを使用してインスタンスを導入することもできます。
-
-
-
-==== [Investigation Results]ページから最大100,000項目にタグを適用
-
-これまでは、[Investigation Results]ページ（20項目）で一度に1つのページにタグを適用することしかできませんでした。[調査結果（Investigation Results）]ページで*すべての*項目を選択し、すべての項目（一度に最大100,000項目）にタグを適用できるようになりました。 https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html#assigning-tags-to-files["方法を参照してください"]。
-
-
-
-==== 最小ファイルサイズが1MBの重複ファイルを特定する
-
-BlueXPの分類では、ファイルが50MB以上の場合にのみ重複ファイルが特定されます。1MBで始まる重複ファイルを識別できるようになりました。[Investigation]ページフィルタの[File Size]と[Duplicates]を使用して、環境内で特定のサイズのファイルが重複しているかどうかを確認できます。
 
 
 
