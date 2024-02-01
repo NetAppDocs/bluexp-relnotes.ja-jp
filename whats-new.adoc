@@ -175,6 +175,18 @@ BlueXP CanvasでAmazon S3バケットを表示できるようになりました�
 
 
 
+=== 2024年2月1日
+
+
+
+==== 仮想マシンのBlueXPバックアップとリカバリの機能拡張
+
+* 代替保存場所への仮想マシンのリストアのサポート
+* データストアの保護解除のサポート
+
+
+
+
 === 2023年12月15日
 
 
@@ -230,14 +242,6 @@ BlueXPのバックアップとリカバリのジョブモニタには、クイ�
 
 
 
-==== オンプレミスのONTAPデータのStorageGRIDバケットへのバックアップ保持数の増加
-
-StorageGRIDは、BlueXPのバックアップ/リカバリからオンプレミスのONTAPデータのバックアップを1つのバケットに最大30個保持できるようになりました。以前は、バケット内のバックアップの最大数は7でした。
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["オンプレミスのONTAP データをStorageGRID にバックアップする方法の詳細については、こちらをご覧ください"]。
-
-
-
 ==== ジョブモニタでのスケジュール済みジョブのサポート
 
 BlueXPのバックアップおよびリカバリジョブモニタでは、以前にスケジュールされたボリュームからオブジェクトストアへのバックアップおよびリストアジョブを監視しましたが、UIまたはAPIを使用してスケジュールされたローカルのSnapshot、レプリケーション、バックアップ、およびリストアジョブは監視しません。
@@ -245,44 +249,6 @@ BlueXPのバックアップおよびリカバリジョブモニタでは、以�
 BlueXPのバックアップとリカバリのジョブモニタに、ローカルのSnapshot、レプリケーション、オブジェクトストレージへのバックアップに関するスケジュール済みジョブが追加されました。
 
 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html["更新されたジョブモニタの詳細"]。
-
-
-
-=== 2023年10月13日
-
-
-
-==== BlueXPのアプリケーション向けバックアップとリカバリの機能拡張（クラウドネイティブ）
-
-* Microsoft SQL Serverデータベース
-+
-** Amazon FSx for NetApp ONTAP上にあるMicrosoft SQL Serverデータベースのバックアップ、リストア、リカバリをサポート
-** すべての処理がREST APIでのみサポートされます。
-
-
-* SAP HANAシステム
-+
-** システムの更新時に、スクリプトではなくワークフローを使用してボリュームの自動マウントおよびアンマウントが実行されます。
-** 追加、削除、編集、削除、保守、 UIヲシヨウシタフラクインホストノアツフクレエト
-
-
-
-
-
-
-==== アプリケーション向けのBlueXPのバックアップとリカバリの機能拡張（ハイブリッド）
-
-* データロックとランサムウェア対策をサポート
-* StorageGRIDからアーカイブ階層へのバックアップの移動をサポート
-* MongoDB、MySQL、PostgreSQLの各アプリケーションデータをオンプレミスのONTAPシステムからAmazon Web Services、Microsoft Azure、Google Cloud Platform、StorageGRIDにバックアップできます。必要に応じてデータをリストアできます。
-
-
-
-
-==== 仮想マシンのBlueXPバックアップとリカバリの機能拡張
-
-* コネクタプロキシ配置モデルのサポート
-
 
 
 
@@ -334,6 +300,26 @@ Red Hat Enterprise Linuxバージョン8および9は、BlueXP分類のインス
 
 
 
+=== 2024年2月2日
+
+
+
+==== AzureでのEdv5シリーズVMのサポート
+
+Cloud Volumes ONTAP 9.14.1リリース以降では、次のEdv5シリーズVMがサポートされるようになりました。
+
+* E4ds_V5
+* E8ds_V5
+* E20s_V5
+* E32ds_V5
+* E48ds_V5
+* E64ds_V5
+
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure でサポートされる構成"^]
+
+
+
 === 2024年1月16日
 
 
@@ -361,16 +347,6 @@ Cloud Volumes ONTAP 9.13.1以降では、次のVMタイプで、新規および�
 
 
 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure でサポートされる構成"^]
-
-
-
-=== 2023年12月6日
-
-
-
-==== Cloud Volumes ONTAP 9.14.1 RC1
-
-BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.14.1を導入、管理できるようになりました。
 
 
 
