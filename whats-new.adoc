@@ -24,6 +24,36 @@ BlueXPプラットフォームの一部である クラウド サービス の�
 
 
 
+=== 2024年2月15日
+
+
+
+==== コネクタ3.9.37
+
+今回のリリースのBlueXP Connectorには、セキュリティが若干改善され、バグが修正されています。
+
+現時点では、3.9.37リリースは標準モードと制限モードで使用できます。
+
+
+
+==== 名前の編集
+
+NetAppのクラウドクレデンシャルを使用してBlueXPにログインすると、*[ユーザ設定]*で名前を編集できるようになりました。
+
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-edit-name.png["[User Settings]で名前を編集する機能を示すスクリーンショット。"]
+
+フェデレーテッド接続またはNetApp Support Siteアカウントでログインした場合、名前の編集はサポートされません。
+
+
+
+==== EC2インスタンスのIMDSv1要件
+
+AWSにコネクタソフトウェアを手動でインストールする前に、Amazon EC2インスタンスにInstance Metadata Service Version 1（IMDSv1）が必要であることに注意してください。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html["AWSでのIMDSv1の要件の詳細を確認する"]。
+
+
+
 === 2024年1月11日
 
 
@@ -256,7 +286,27 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.ht
 
 
 
-=== 1月10日（バージョン1.27）
+=== 2024年3月4日（バージョン1.29）
+
+
+
+==== 特定のデータソースディレクトリにあるスキャンデータを除外できるようになりました。
+
+BlueXPの分類で、特定のデータソースディレクトリにあるスキャンデータを除外する場合は、BlueXPの分類で処理する構成ファイルにこれらのディレクトリ名を追加します。この機能を使用すると、不要なディレクトリや、個人データの誤検出結果が返されるディレクトリのスキャンを回避できます。
+
+https://docs.netapp.com/us-en/bluexp-classification/task-exclude-scan-paths.html["詳細はこちら。"]。
+
+
+
+==== 6505788c29b47651fe2e94f0607a2ef7
+
+1647534ed4603d68f73fd3f261af9b65
+
+1b4f4b549e0860b1392190bfc2a23f81
+
+
+
+=== 2024年1月10日（バージョン1.27）
 
 
 
@@ -272,31 +322,30 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.ht
 
 
 
-=== 11月6日（バージョン1.26.3）
+=== 2023年12月14日（バージョン1.26.6）
 
+このリリースには、いくつかのマイナーな機能拡張が含まれ
 
+また、次のオプションも一時的に削除されました。
 
-==== このリリースで解決された問題は次のとおりです。
+* 監査ログ収集をアクティブ化するオプションが無効になりました。を参照してください link:task-manage-file-access-events.html["ファイルアクセスイベントを監視および管理します"]。
+* ディレクトリ調査中に、ディレクトリごとの個人識別情報（PII）データの数を計算するオプションは使用できません。を参照してください link:task-investigate-data.html#filter-data-by-sensitivity-and-content["組織に保存されているデータを調査します"]。
+* Azure Information Protection（AIP）ラベルを使用してデータを統合するオプションが無効になりました。を参照してください link:task-org-private-data.html["プライベートデータを整理します"]。
 
-* システムによってスキャンされたファイル数をダッシュボードに表示する際の不一致を修正しました。
-* 名前とメタデータに特殊文字が含まれるファイルとディレクトリを処理およびレポートすることで、スキャンの動作が改善されました。
-
-
-
-
-=== 10月4日（バージョン1.26）
-
-
-
-==== RHELバージョン9でのBlueXP分類のオンプレミスインストールのサポート
-
-Red Hat Enterprise Linuxバージョン8および9は、BlueXP分類のインストールに必要なDockerエンジンをサポートしていません。コンテナインフラとしてPodmanバージョン4以降を使用したRHEL 9.0、9.1、9.2でのBlueXP分類のインストールがサポートされるようになりました。最新バージョンのRHELを使用する必要がある環境では、Podmanを使用する際にBlueXP分類（バージョン1.26以降）をインストールできるようになりました。
-
-現時点では、RHEL 9.xを使用している場合、ダークサイトのインストールや分散スキャン環境（マスターノードとリモートスキャナノードを使用）はサポートされていません。
 
 
 
 == Cloud Volumes ONTAP
+
+
+
+=== 2024年3月5日
+
+
+
+==== Cloud Volumes ONTAP 9.14.1 GA
+
+BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.14.1 General Availabilityリリースを導入、管理できるようになりました。
 
 
 
@@ -329,24 +378,6 @@ link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-config
 BlueXPでは、最新の3つのバージョンのCloud Volumes ONTAPに対してのみパッチリリースを提供しています。
 
 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#patch-releases["Cloud Volumes ONTAP をアップグレードします"^]
-
-
-
-=== 2024年1月8日
-
-
-
-==== Azureの複数のアベイラビリティゾーン用の新しいVM
-
-Cloud Volumes ONTAP 9.13.1以降では、次のVMタイプで、新規および既存のハイアベイラビリティペア環境でAzureの複数のアベイラビリティゾーンがサポートされます。
-
-* L16s_v3
-* L32s_v3
-* L48s_v3
-* L64s_v3
-
-
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure でサポートされる構成"^]
 
 
 
@@ -404,6 +435,18 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 2024年2月11日
+
+
+
+==== 正規表現でディレクトリをフィルタリング
+
+ユーザはregexを使用してディレクトリをフィルタリングできるようになりました。
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#create-other-types-of-sync-relationships["*ディレクトリを除外*機能の詳細については、こちらを参照してください。"]
+
+
+
 === 2023年11月26日
 
 
@@ -450,39 +493,23 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#creati
 
 
 
-=== 2023年8月6日
-
-
-
-==== データブローカーの作成時に既存のAzureセキュリティグループを使用する
-
-データブローカーの作成時に既存のAzureセキュリティグループを使用できるようになりました。
-
-データブローカーの作成時に使用するサービスアカウントには、次の権限が必要です。
-
-* Microsoft.Network/networkSecurityGroups/securityRules/read"
-* Microsoft.Network/networkSecurityGroups/read"
-
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html["Azureでデータブローカーを作成する方法については、こちらをご覧ください。"]
-
-
-
-==== Google Storageへの同期時にデータを暗号化する
-
-Google Storageバケットをターゲットとする同期関係を作成するときに、ユーザが管理する暗号化キーを指定できるようになりました。キーは手動で入力することも、1つのリージョン内のキーのリストから選択することもできます。
-
-データブローカーの作成時に使用するサービスアカウントには、次の権限が必要です。
-
-* cloudkms.cryptoKeys.list
-* cloudkms.keyrings.list
-
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/reference-requirements.html#google-cloud-storage-bucket-requirements["Google Cloud Storageバケットの要件については、こちらをご覧ください。"]
-
-
-
 == デジタルアドバイザ
+
+
+
+=== 2024年2月8日
+
+
+
+==== Sustainability Dashboard
+
+デフォルトのダッシュボードまたは監視リストのSustainability指標に、 link:https://activeiq.netapp.com/redirect/sustainability["Sustainability Dashboard"^] リンク
+
+
+
+==== Cluster Viewer （クラスタビューア）
+
+これで、[Disk Summary]セクションにディスクRPM情報が表示されます。このセクションは、[Storage]タブおよびClusterViewerレポートに表示されます。
 
 
 
@@ -525,6 +552,18 @@ Upgrade Advisorが強化され、単一のクラスタと複数のクラスタ�
 
 
 == デジタルウォレット
+
+
+
+=== 2024年3月5日
+
+
+
+==== BlueXPディザスタリカバリ
+
+BlueXPのデジタルウォレットで、BlueXPディザスタリカバリのライセンスを管理できるようになりました。ライセンスの追加、ライセンスの更新、およびライセンス容量に関する詳細の表示を行うことができます。
+
+https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["BlueXPデータサービスのライセンスを管理する方法"]
 
 
 
@@ -598,6 +637,75 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-license
 
 
 
+=== 2024年3月5日
+
+これはBlueXPディザスタリカバリのGeneral Availabilityリリースであり、次の更新が含まれています。
+
+* *ライセンスの更新*：BlueXPディザスタリカバリを利用すると、90日間の無償トライアルにサインアップするか、NetApp営業担当から入手したNetAppライセンスファイル（NLF）であるお客様所有のライセンスを使用（BYOL）できます。ライセンスのシリアル番号を使用して、BlueXPデジタルウォレットでBYOLをアクティブ化できます。BlueXPディザスタリカバリの料金は、データストアのプロビジョニング済み容量に基づいて計算されます。
++
+BlueXPディザスタリカバリ用のライセンスのセットアップの詳細については、を参照してください。 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html["ライセンスをセットアップする"]。
+
++
+すべての* BlueXPサービスのライセンス管理の詳細については、 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["すべてのBlueXPサービスのライセンスを管理します。"^]。
+
+
+
+* *スケジュールの編集*：このリリースでは、コンプライアンステストとフェイルオーバーテストをテストするスケジュールを設定できるようになりました。これにより、必要に応じて正しく動作することを確認できます。
++
+詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["レプリケーション計画の作成"]。
+
+
+
+
+
+=== 2024年2月1日
+
+このBlueXPディザスタリカバリプレビューリリースには、次の更新が含まれています。
+
+* *ネットワークの強化*：このリリースでは、VMのCPU値とRAM値のサイズを変更できるようになりました。VMのネットワークDHCPまたは静的IPアドレスを選択することもできます。
++
+** DHCP：このオプションを選択した場合は、VMのクレデンシャルを指定します。
+** 静的IP：ソースVMと同じ情報または異なる情報を選択できます。ソースと同じを選択した場合は、クレデンシャルを入力する必要はありません。一方、ソースと異なる情報を使用する場合は、クレデンシャル、IPアドレス、サブネットマスク、DNS、およびゲートウェイの情報を指定できます。
++
+詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["レプリケーション計画の作成"]。
+
+
+
+* *フェイルオーバー後のプロセスとしてカスタムスクリプト*を含めることができるようになりました。カスタムスクリプトを使用すると、フェイルオーバープロセスのあとにBlueXPディザスタリカバリでスクリプトを実行できます。たとえば、フェイルオーバーの完了後にすべてのデータベーストランザクションを再開するカスタムスクリプトを使用できます。
++
+詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html["リモートサイトへのフェイルオーバー"]。
+
+* * SnapMirror関係*：レプリケーション計画の作成時にSnapMirror関係を作成できるようになりました。以前は、BlueXPのディザスタリカバリ以外で関係を作成する必要がありました。
++
+詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["レプリケーション計画の作成"]。
+
+* *整合グループ*：レプリケーション計画を作成する際に、異なるボリュームや異なるSVMのVMを含めることができます。BlueXPディザスタリカバリでは、すべてのボリュームを含めて整合グループSnapshotを作成し、すべてのセカンダリサイトを更新します。
++
+詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["レプリケーション計画の作成"]。
+
+* * VM電源投入遅延オプション*：レプリケーション計画を作成するときに、リソースグループにVMを追加できます。リソースグループを使用すると、各VMに遅延を設定して、遅延シーケンスで電源を投入することができます。
++
+詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["レプリケーション計画の作成"]。
+
+* *アプリケーションと整合性のあるSnapshotコピー*：アプリケーションと整合性のあるSnapshotコピーを作成するように指定できます。サービスはアプリケーションを休止し、Snapshotを作成してアプリケーションの整合性のある状態を取得します。
++
+詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["レプリケーション計画の作成"]。
+
+
+
+
+
+=== 2024年1月11日
+
+今回のBlueXPディザスタリカバリプレビューリリースには、次の更新が含まれています。
+
+* このリリースでは、ダッシュボードから他のページの情報にすばやくアクセスできます。
+
+
+https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["BlueXPディザスタリカバリの詳細"]。
+
+
+
 === 2023年10月20日
 
 今回のBlueXPディザスタリカバリプレビューリリースには、次の更新が含まれています。
@@ -608,74 +716,6 @@ BlueXPディザスタリカバリを使用すると、オンプレミスのNFS�
 NOTE: このプレビューサービスでは、NetAppは、一般提供前にサービスの詳細、内容、スケジュールを変更する権利を留保します。
 
 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["BlueXPディザスタリカバリの詳細"]。
-
-
-
-=== 2023年9月27日
-
-今回のBlueXPディザスタリカバリプレビューリリースには、次の更新が含まれています。
-
-* *ダッシュボードの更新*:ダッシュボードのオプションをクリックできるようになり、情報をすばやく確認しやすくなりました。また、ダッシュボードにフェイルオーバーと移行のステータスが表示されるようになりました。
-+
-を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/dashboard-view.html["ダッシュボードでディザスタリカバリプランの健全性を表示する"]。
-
-* *レプリケーションプランの更新*：
-+
-** * RPO *：レプリケーションプランの[データストア]セクションに、目標復旧時点（RPO）と保持数を入力できるようになりました。これは、設定された時間より前に存在する必要があるデータの量を示します。たとえば、5分に設定した場合、災害が発生してもビジネスクリティカルなニーズに影響を与えることなく、システムのデータが最大5分失われる可能性があります。
-+
-を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["レプリケーション計画の作成"]。
-
-** *ネットワークの機能拡張*：レプリケーション計画の仮想マシンセクションでソースとターゲットの場所間のネットワークをマッピングする際に、BlueXPディザスタリカバリでDHCPと静的IPの2つのオプションが提供されるようになりました。以前は、DHCPのみがサポートされていました。静的IPの場合は、サブネット、ゲートウェイ、およびDNSサーバを設定します。また、仮想マシンのクレデンシャルを入力できるようになりました。
-+
-を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["レプリケーション計画の作成"]。
-
-** *スケジュールの編集*：レプリケーションプランのスケジュールを更新できるようになりました。
-+
-を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["リソースの管理"]。
-
-** * SnapMirrorの自動化*：このリリースでレプリケーション計画を作成する際に、ソースボリュームとターゲットボリューム間のSnapMirror関係を次のいずれかの構成で定義できます。
-+
-*** 1対1
-*** ファンアウトアーキテクチャで1対多
-*** コンシステンシグループとして多対1
-*** 多対多
-+
-を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["レプリケーション計画の作成"]。
-
-
-
-
-
-
-
-
-
-=== 2023年8月1日
-
-BlueXPディザスタリカバリプレビューは、ディザスタリカバリのワークフローを自動化する、クラウドベースのディザスタリカバリサービスです。当初は、BlueXPのディザスタリカバリプレビューで、NetAppストレージを実行するオンプレミスのNFSベースのVMwareワークロードを、Amazon FSx for ONTAPを使用してAWS上のVMware Cloud（VMC）に保護できます。
-
-
-NOTE: このプレビューサービスでは、NetAppは、一般提供前にサービスの詳細、内容、スケジュールを変更する権利を留保します。
-
-https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["BlueXPディザスタリカバリの詳細"]。
-
-このリリースでは、次の更新が行われています。
-
-* *リソースグループのブート順序の更新*:ディザスタリカバリ計画またはレプリケーション計画を作成するときに、仮想マシンを機能的なリソースグループに追加できます。リソースグループを使用すると、依存する一連の仮想マシンを、要件を満たす論理グループにまとめることができます。たとえば、リカバリ時に実行できるブート順序をグループに含めることができます。このリリースでは、各リソースグループに1つ以上の仮想マシンを含めることができます。仮想マシンは、計画に含める順序に基づいてパワーオンされます。を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html#select-applications-to-replicate-and-assign-resource-groups["レプリケートするアプリケーションの選択とリソースグループの割り当て"]。
-* *レプリケーションの検証*：ディザスタリカバリまたはレプリケーションの計画を作成し、ウィザードでその繰り返しを特定し、ディザスタリカバリサイトへのレプリケーションを開始すると、30分ごとにBlueXPのディザスタリカバリによって、計画どおりにレプリケーションが実際に実行されているかどうかが検証されます。進捗状況は[Job Monitor]ページで監視できます。を参照してください  https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/replicate.html["アプリケーションを別のサイトにレプリケート"]。
-* *レプリケーションプランには、Recovery Point Objective（RPO；目標復旧時点）の転送スケジュールが表示されます*：ディザスタリカバリまたはレプリケーションプランを作成するときは、VMを選択します。このリリースでは、データストアまたはVMに関連付けられている各ボリュームに関連付けられているSnapMirrorを確認できるようになりました。SnapMirrorスケジュールに関連付けられているRPO転送スケジュールも確認できます。RPOは、災害発生後にリカバリするのに十分なバックアップスケジュールであるかどうかを判断するのに役立ちます。を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["レプリケーション計画の作成"]。
-* *ジョブモニタの更新*：[ジョブモニタ]ページに[リフレッシュ]オプションが追加され、処理の最新ステータスを確認できるようになりました。を参照してください  https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/monitor-jobs.html["ディザスタリカバリジョブを監視する"]。
-
-
-
-
-=== 2023年5月18日
-
-これは、BlueXPディザスタリカバリの初版リリースです。
-
-BlueXPのディザスタリカバリは、ディザスタリカバリのワークフローを自動化する、クラウドベースのディザスタリカバリサービスです。当初は、BlueXPのディザスタリカバリプレビューで、NetAppストレージを実行するオンプレミスのNFSベースのVMwareワークロードを、Amazon FSx for ONTAPを使用してAWS上のVMware Cloud（VMC）に保護できます。
-
-link:https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["BlueXPディザスタリカバリの詳細"]。
 
 
 
@@ -901,6 +941,48 @@ NOTE: コネクタがない場合は、ローカルマシンからは更新で�
 運用の耐障害性は、アラートとイベントを分析してサービスとソリューションの健全性、アップタイム、パフォーマンスを維持するのに役立つサービスです。
 
 link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/intro.html["BlueXPの運用耐障害性の詳細については、こちらをご覧ください"]。
+
+
+
+== ランサムウェアからの保護
+
+
+
+=== 2024年3月5日
+
+今回のBlueXPランサムウェア対策プレビューリリースには、次の更新が含まれています。
+
+* *保護ポリシーの管理*：事前定義されたポリシーの使用に加えて、ポリシーを作成、変更、削除できるようになりました。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["ポリシーの管理の詳細"]。
+* *セカンダリストレージの変更不可（DataLock）*：オブジェクトストアのNetApp DataLockテクノロジを使用して、セカンダリストレージのバックアップを変更不可にできるようになりました。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["保護ポリシーの作成に関する詳細情報"]。
+
+
+* * NetApp StorageGRIDへの自動バックアップ*：AWSを使用するだけでなく、バックアップ先としてStorageGRIDを選択できるようになりました。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["バックアップ先の設定に関する詳細情報"]。
+* *潜在的な攻撃を調査するための追加機能*:検出された潜在的な攻撃を調査するために、より多くのフォレンジックの詳細を表示できるようになりました。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["ランサムウェアのアラートが検出された場合の対応の詳細"]。
+* *リカバリプロセス*。回復プロセスが強化されました。ボリューム単位、ワークロードのすべてのボリューム、またはボリュームからいくつかのファイルを1つのワークフローでリカバリできるようになりました。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["ランサムウェア攻撃からのリカバリの詳細（インシデントの中和後）"]。
+
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["BlueXPランサムウェア対策の詳細をご確認ください"]。
+
+
+
+=== 2023年10月6日
+
+BlueXPランサムウェア対策サービスは、データの保護、潜在的な攻撃の検出、ランサムウェア攻撃からのデータのリカバリを行うSaaS解決策です。
+
+プレビュー版では、オンプレミスのNASストレージ上のOracle、MySQL、VMデータストア、ファイル共有のアプリケーションベースのワークロードと、BlueXPアカウント全体のCloud Volumes ONTAP on AWS（NFSプロトコルを使用）のアプリケーションベースのワークロードを個別に保護し、Amazon Web Servicesクラウドストレージにデータをバックアップします。
+
+BlueXPのランサムウェア対策サービスでは、複数のNetAppテクノロジをフルに活用できるため、データセキュリティ管理者やセキュリティ運用エンジニアは次の目標を達成できます。
+
+* すべてのワークロードに対するランサムウェア対策を一目で確認できます。
+* ランサムウェア対策に関する推奨事項を分析
+* BlueXPのランサムウェア対策に関する推奨事項に基づいて、保護態勢を強化
+* ランサムウェア対策ポリシーを割り当てて、主要なワークロードとハイリスクデータをランサムウェア攻撃から保護します。
+* ワークロードの健全性を監視してランサムウェア攻撃からデータの異常を検出
+* ランサムウェアのインシデントがワークロードに与える影響を迅速に評価します。
+* データをリストアし、保存されたデータからの再感染を防ぐことで、ランサムウェアのインシデントからインテリジェントにリカバリします。
+
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["BlueXPランサムウェア対策の詳細をご確認ください"]。
 
 
 

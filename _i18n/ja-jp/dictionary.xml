@@ -117,7 +117,6 @@
   <block id="723ffd15eb7b4453afd0fa0af42c04c3" category="section-title">経済効率</block>
   <block id="88c49608e723add593f5becc8bd9a968" category="section-title">2023年4月2日</block>
   <block id="efc0c4f71709b261c273fb935757cfae" category="section-title">運用の耐障害性</block>
-  <block id="7907a1fccb5b8aa9b8df8283d3705052" category="list-text"><block ref="7907a1fccb5b8aa9b8df8283d3705052" category="inline-link-rx"></block></block>
   <block id="207aaa44f72ba634c18fcc9bae44d655" category="inline-link">アカウントの使用済み容量を表示する方法について説明します</block>
   <block id="7786076739da628161f45de338cd6e69" category="inline-link-macro">Astra Tridentをアンインストールします</block>
   <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">[ライセンス]タブが削除されました</block>
@@ -315,7 +314,6 @@
   <block id="30fee46958559c602b944cc387c72292" category="paragraph">Amazon FSx for NetApp ONTAPファイルシステムは、ヨーロッパ（チューリッヒ）、ヨーロッパ（スペイン）、アジア太平洋（ハイデラバード）の3つの新しいAWSリージョンで作成できるようになりました。</block>
   <block id="4a105824b6f84a35559612caf12c452d" category="inline-link-macro">Amazon FSx for NetApp ONTAPは、さらに3つのリージョンで提供が開始されました。</block>
   <block id="e1203bb3756aaddbc1d40b7033d44bd1" category="paragraph">を参照してください <block ref="2ffac1c1fc93e8203aa3ebf9b3a6ff2d" category="inline-link-macro-rx"></block> 詳細については、</block>
-  <block id="a57bb636c3624bebb972f007b21fd8fb" category="section-title">2023年8月6日</block>
   <block id="56a559acc9f9bd2fc9cf51154aef7ce5" category="section-title">データブローカーの作成時に既存のAzureセキュリティグループを使用する</block>
   <block id="bf4bc301ccb8b2b21ef394a22e4afef6" category="paragraph">データブローカーの作成時に既存のAzureセキュリティグループを使用できるようになりました。</block>
   <block id="fd514a292e754d2839b0e90da5ac3514" category="paragraph">データブローカーの作成時に使用するサービスアカウントには、次の権限が必要です。</block>
@@ -337,7 +335,6 @@
   <block id="2d81e61b650e87c484f1701ff4c00053" category="section-title">すべてのBlueXPコネクタでクラスタを検索</block>
   <block id="6a3a27c0cd9c23985f6e8260846d58bc" category="paragraph">環境内のすべてのストレージシステムの管理に複数のコネクタを使用している場合は、階層化を実装する一部のクラスタが別 々 のコネクタに配置されている可能性があります。特定のクラスタを管理しているコネクタが不明な場合は、BlueXP階層化を使用してすべてのコネクタを検索できます。<block ref="017b0207cc8469b6ea246adade89f8e1" category="inline-link-rx"></block>。</block>
   <block id="857c228cf033cf46c4d3b643ed4db3a6" category="paragraph">監査サービスには、BlueXPサービスで実行された処理に関する情報が記録されます。これには、ワークスペース、使用されているコネクタ、およびその他のテレメトリデータが含まれます。このデータを使用して、実行されたアクション、実行者、実行日時を確認できます。</block>
-  <block id="ca8395d0f02816c74d48e7e263466096" category="section-title">2023年8月1日</block>
   <block id="94798620994cb827b675957027c80437" category="paragraph">重要なセキュリティ強化のため、パブリッククラウド環境内のバックアップとリカバリのリソースを管理するために、Connectorに追加のエンドポイントへのアウトバウンドインターネットアクセスが必要になりました。このエンドポイントがファイアウォールの[Allowed]リストに追加されていない場合は、UIに「Service Unavailable」または「Failed to determine service status」というエラーが表示されます。</block>
   <block id="300f031c227ed1b4448a8bb51abec2bb" category="paragraph">\https://netapp-cloud-account.auth0.com</block>
   <block id="e752fa0925615f823987d88e457d59fd" category="section-title">S3に設定されたONTAPシステムでバケットへのボリュームのバックアップがサポートされるようになりました。</block>
@@ -361,9 +358,6 @@
   <block id="64bbb11437b30da2acf631c36bd785dd" category="inline-link-macro">レプリケーション計画の作成</block>
   <block id="7fad1567be7a7caec7818041fdf4a9c6" category="inline-link-macro">ディザスタリカバリジョブを監視する</block>
   <block id="e1835ebe19023a9c7bf0e0e7dd756bf7" category="inline-link-macro">BlueXPディザスタリカバリの詳細</block>
-  <block id="8454892d6268011bb79d98eedd4f8afb" category="paragraph"><block ref="10a687fb14a41a274bb5d883fcf5c124" category="inline-link-macro-rx"></block>。</block>
-  <block id="405e835e0544bb4cc8bbd26a2c840b54" category="section-title">2023年5月18日</block>
-  <block id="acff175f1bababdb2baa1348412d501d" category="paragraph">これは、BlueXPディザスタリカバリの初版リリースです。</block>
   <block id="d8465669650730f887acd3754f3dea9f" category="list-text">BlueXPからAWSでコネクタを作成するときに、[Key Pair]フィールド内を検索して、コネクタインスタンスで使用するキーペアを簡単に見つけることができるようになりました。</block>
   <block id="5fa35188b7dd9c428afc77ce84eeb10b" category="inline-image-macro">BlueXPからAWSでコネクタを作成するときに[Network]ページに表示される[Key Pair]フィールドの検索オプションのスクリーンショット。</block>
   <block id="37570078060157a3624ff806701689b8" category="paragraph"><block ref="37570078060157a3624ff806701689b8" category="inline-image-macro-rx" type="image"></block></block>
@@ -402,9 +396,7 @@
   <block id="6ce2a7f72f88b0710fcd4fd7c8040621" category="section-title">小規模および中規模の導入が一時的に利用できない</block>
   <block id="6c7040f055c36964a640c88c62785b1b" category="paragraph">現時点では、BlueXP分類のインスタンスをAWSに導入する場合、*[Deploy]&gt;[Configuration]*を選択してSmallまたはMedium sizedインスタンスを選択するオプションは使用できません。[Deploy]&gt;[Deploy]*を選択して、大きなインスタンスサイズを使用してインスタンスを導入することもできます。</block>
   <block id="a95484ffd76e2e97fc6d584af31d2888" category="paragraph">これまでは、[Investigation Results]ページ（20項目）で一度に1つのページにタグを適用することしかできませんでした。[調査結果（Investigation Results）]ページで*すべての*項目を選択し、すべての項目（一度に最大100,000項目）にタグを適用できるようになりました。<block ref="3e9397a24d29fef2aa895562fb0169fb" category="inline-link-rx"></block>。</block>
-  <block id="0d2ad64b559232943585fd7b1d8a6a97" category="section-title">2023年9月27日</block>
   <block id="1e3c19e3742fbfc0e6dd22bb91d109a3" category="section-title">Upgrade Advisor を使用します</block>
-  <block id="4b9f4d0e463502904f138e1d9f0014a4" category="section-title">10月4日（バージョン1.26）</block>
   <block id="0b440ac3de48c7d11ee5fad31e6b4f12" category="paragraph">このリリースには、マイナーな改善とバグ修正が含まれています。</block>
   <block id="5612c729ea34f27969af31fd815184e0" category="paragraph">コネクタの3.9.34リリースでは、次の変更が導入されました。</block>
   <block id="44d133359b344c4542acdebe6209e101" category="section-title">Cloud Volumes ONTAP 9.14.0</block>
@@ -480,16 +472,11 @@
   <block id="df189cdccc86fb97d3dabac525f1ea4a" category="list-text">*レプリケーションの検証*：ディザスタリカバリまたはレプリケーションの計画を作成し、ウィザードでその繰り返しを特定し、ディザスタリカバリサイトへのレプリケーションを開始すると、30分ごとにBlueXPのディザスタリカバリによって、計画どおりにレプリケーションが実際に実行されているかどうかが検証されます。進捗状況は[Job Monitor]ページで監視できます。を参照してください <block ref="e2d34ab7e7f8a76fb6ba2dcd38a58bb2" category="inline-link-rx"></block>。</block>
   <block id="8b2ef00da71b5ca9de3b177a60a87cf4" category="list-text">*レプリケーションプランには、Recovery Point Objective（RPO；目標復旧時点）の転送スケジュールが表示されます*：ディザスタリカバリまたはレプリケーションプランを作成するときは、VMを選択します。このリリースでは、データストアまたはVMに関連付けられている各ボリュームに関連付けられているSnapMirrorを確認できるようになりました。SnapMirrorスケジュールに関連付けられているRPO転送スケジュールも確認できます。RPOは、災害発生後にリカバリするのに十分なバックアップスケジュールであるかどうかを判断するのに役立ちます。を参照してください<block ref="5cf2140f2775e5f1ccc24bb836a069a3" category="inline-link-rx"></block>。</block>
   <block id="7a1d90df184c04b8d0dc0ca260e46e67" category="list-text">*ジョブモニタの更新*：[ジョブモニタ]ページに[リフレッシュ]オプションが追加され、処理の最新ステータスを確認できるようになりました。を参照してください <block ref="701085704c7bdf4268d7fbe3111fe8b9" category="inline-link-rx"></block>。</block>
-  <block id="25d037b5df7f2e04a4d6a1a3bc33caa7" category="paragraph">BlueXPのディザスタリカバリは、ディザスタリカバリのワークフローを自動化する、クラウドベースのディザスタリカバリサービスです。当初は、BlueXPのディザスタリカバリプレビューで、NetAppストレージを実行するオンプレミスのNFSベースのVMwareワークロードを、Amazon FSx for ONTAPを使用してAWS上のVMware Cloud（VMC）に保護できます。</block>
   <block id="8060a341461a61edc489285d4c464062" category="paragraph">BlueXPからEシリーズシステムを直接検出できるようになりました。Eシリーズシステムを検出すると、ハイブリッドマルチクラウド全体のデータを包括的に把握できます。</block>
   <block id="75cbcf1dd82ddd4349696999b639377f" category="paragraph"><block ref="75cbcf1dd82ddd4349696999b639377f" category="inline-link-macro-rx"></block></block>
   <block id="d64cd771f2e77e7c0e4209d28afed019" category="section-title">2023年11月8日</block>
   <block id="82a9cd2bfcf44ef6090c93dcb2ee0451" category="section-title">コネクタ3.9.35</block>
   <block id="77fe99ef9ead4490d30142892f6b5fec" category="paragraph">このリリースには、セキュリティのマイナーな改善とバグの修正が含まれています。</block>
-  <block id="abff2804f60c6da51fe02e78167abad1" category="section-title">11月6日（バージョン1.26.3）</block>
-  <block id="e25bae53fb1951841531279fa78ee63a" category="section-title">このリリースで解決された問題は次のとおりです。</block>
-  <block id="299ea648aaf9c598beed6ef12a6ef415" category="list-text">システムによってスキャンされたファイル数をダッシュボードに表示する際の不一致を修正しました。</block>
-  <block id="c6e9efb915fb85dd556a71294988c99a" category="list-text">名前とメタデータに特殊文字が含まれるファイルとディレクトリを処理およびレポートすることで、スキャンの動作が改善されました。</block>
   <block id="41e96c41b82196674a6b6c99d0c0b8ad" category="section-title">2023年11月8日</block>
   <block id="c4cd570753ca79cf809d24d7723c0e82" category="paragraph">今回リリースされたBlueXPの経済効率化機能には、資産を評価し、テクノロジの更新が推奨されるかどうかを確認する新しいオプションが含まれています。このサービスには、左側のナビゲーションにある新しい機器更改（Tech Refresh）オプションのほか、現在のワークロードと資産を評価するための新しいページ、推奨事項を記載したレポートが含まれています。</block>
   <block id="aa4c67fd3731395f4450c9686b20f799" category="section-title">ジョブモニタでのスケジュール済みジョブのサポート</block>
@@ -545,18 +532,10 @@
   <block id="2a7d8d5d92a8e8110b2bc2ab71c0c002" category="paragraph">以前は、Catalog.zipのバックアップは7日間保持されていました。現在、それらは30日間保持されます。</block>
   <block id="16f6196e265bdbd3f9da022848c51d8a" category="inline-link">ダークサイトでのBlueXPのバックアップとリカバリデータのリストア</block>
   <block id="89b2c6f6be45f8f05d713b7bae69cd15" category="paragraph">を参照してください<block ref="5596168e45150b1d53148898addeba07" category="inline-link-rx"></block>。</block>
-  <block id="81c60fb26d30a0a1fa208bc6b7d14e6f" category="section-title">1月10日（バージョン1.27）</block>
   <block id="be8658cdca9524eb49f00560785f3ab7" category="section-title">調査ページの結果に、項目の合計数に加えて合計サイズが表示されるようになりました。</block>
   <block id="81b243d81f786faa99d42ef659adac3a" category="paragraph">[Investigation]ページでフィルタ処理された結果に、ファイルの合計数に加えてアイテムの合計サイズが表示されるようになりました。これは、ファイルの移動、ファイルの削除などを行うときに役立ちます。</block>
   <block id="bb5b2f81c2aa7d8df9263c590efda3e6" category="section-title">追加のグループIDを[Open to Organization]として設定します。</block>
   <block id="617de59f0823cef046ababc40408cb92" category="inline-link">追加のグループIDを「組織にオープン」として追加</block>
-  <block id="fd9107be3db2a4144e054c68a7eab15f" category="section-title">2024年1月8日</block>
-  <block id="dba248d0d18e6170f9bd4a4286edda53" category="section-title">Azureの複数のアベイラビリティゾーン用の新しいVM</block>
-  <block id="c8d113632e2ef2b901829a0843658f2c" category="paragraph">Cloud Volumes ONTAP 9.13.1以降では、次のVMタイプで、新規および既存のハイアベイラビリティペア環境でAzureの複数のアベイラビリティゾーンがサポートされます。</block>
-  <block id="ceac2355e7d70d7e31592bc8ded88ab3" category="list-text">L16s_v3</block>
-  <block id="2b89a58d3269391f70f9c7fb8d68f746" category="list-text">L32s_v3</block>
-  <block id="c7316b16841dc002d14d45c38a750287" category="list-text">L48s_v3</block>
-  <block id="b9f4aa39433f5232d4ce50f2a9a3c403" category="list-text">L64s_v3</block>
   <block id="e4b60b51b40a0907e38b3293d36780e6" category="inline-link-macro">Azure でサポートされる構成</block>
   <block id="22342037237200e034fd29c9cfd5bfd4" category="paragraph"><block ref="22342037237200e034fd29c9cfd5bfd4" category="inline-link-macro-rx"></block></block>
   <block id="0850cf3036348eacfcb9da9c7e6dff71" category="section-title">2024年1月3日</block>
@@ -580,4 +559,101 @@
   <block id="708880d509c52585ca0500cd17ef2166" category="list-text">E32ds_V5</block>
   <block id="843cc0b63b36e79d0bdf4097a1b84b6a" category="list-text">E48ds_V5</block>
   <block id="6ec5cb856eb24c85cf7368cdfd11627f" category="list-text">E64ds_V5</block>
+  <block id="5985540cd0cc5c0e58eaebe95659534e" category="section-title">2024年2月15日</block>
+  <block id="875cabf7fcb6d8f631b842029efd2117" category="section-title">コネクタ3.9.37</block>
+  <block id="33596391cf2ec8b74b76bf635ea4c6e2" category="paragraph">今回のリリースのBlueXP Connectorには、セキュリティが若干改善され、バグが修正されています。</block>
+  <block id="937efe0b961bcb892e05e19e0c147973" category="paragraph">現時点では、3.9.37リリースは標準モードと制限モードで使用できます。</block>
+  <block id="f1c2261d89d52febeed15edf1f34a5b7" category="section-title">名前の編集</block>
+  <block id="c42458c54134318669b685ee8730a478" category="paragraph">NetAppのクラウドクレデンシャルを使用してBlueXPにログインすると、*[ユーザ設定]*で名前を編集できるようになりました。</block>
+  <block id="ab15c21485050b3b0c09a3b7b31d97d7" category="inline-image-macro">[User Settings]で名前を編集する機能を示すスクリーンショット。</block>
+  <block id="daf15a33710ed6188d035a01c084bee9" category="paragraph"><block ref="daf15a33710ed6188d035a01c084bee9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4a784443543a41df794122c52fae1df7" category="paragraph">フェデレーテッド接続またはNetApp Support Siteアカウントでログインした場合、名前の編集はサポートされません。</block>
+  <block id="c7f67b21e0c8d093756f7b3a59e8d2e8" category="section-title">EC2インスタンスのIMDSv1要件</block>
+  <block id="09477b433fb18272d0d3ee6b7a7e23ad" category="paragraph">AWSにコネクタソフトウェアを手動でインストールする前に、Amazon EC2インスタンスにInstance Metadata Service Version 1（IMDSv1）が必要であることに注意してください。</block>
+  <block id="f8197842b4e7ad7b7b15ef36dcb4ae78" category="inline-link">AWSでのIMDSv1の要件の詳細を確認する</block>
+  <block id="ae1d4316f9a8104fa910e65fd2096cb3" category="paragraph"><block ref="3fb75bc46ec80b0989f43707450cda37" category="inline-link-rx"></block>。</block>
+  <block id="71dc9fd1ff423f10c9820171aaeabf3c" category="section-title">2024年3月4日（バージョン1.29）</block>
+  <block id="2155776a968fa3c23d5147a57832435f" category="section-title">特定のデータソースディレクトリにあるスキャンデータを除外できるようになりました。</block>
+  <block id="81e333e3a0fd82b01c14e8eb52437152" category="paragraph">BlueXPの分類で、特定のデータソースディレクトリにあるスキャンデータを除外する場合は、BlueXPの分類で処理する構成ファイルにこれらのディレクトリ名を追加します。この機能を使用すると、不要なディレクトリや、個人データの誤検出結果が返されるディレクトリのスキャンを回避できます。</block>
+  <block id="1566e9c70755185a01fd5ae6296dca7b" category="paragraph"><block ref="2b616ef681b794b63b03f66a13723ff8" category="inline-link-rx"></block>。</block>
+  <block id="402607c1b30a68385dcfbd12111327c1" category="section-title">2024年1月10日（バージョン1.27）</block>
+  <block id="7cda33697c25a4972bdbfab414004cc2" category="section-title">2023年12月14日（バージョン1.26.6）</block>
+  <block id="5cc6a6599bfa6671ce515940a0badce7" category="paragraph">このリリースには、いくつかのマイナーな機能拡張が含まれ</block>
+  <block id="176a42de7f70d82ff8506b6739d7b290" category="paragraph">また、次のオプションも一時的に削除されました。</block>
+  <block id="aebeafb9d6b45d6e3629685737b0b510" category="inline-link-macro">ファイルアクセスイベントを監視および管理します</block>
+  <block id="39b6848535d4f2679ee032ca465bba8c" category="list-text">監査ログ収集をアクティブ化するオプションが無効になりました。を参照してください <block ref="01ac4154b50639da0a94f22ce7059c7f" category="inline-link-macro-rx"></block>。</block>
+  <block id="499dd7659f4fa7b600ca3796c449e41b" category="inline-link-macro">組織に保存されているデータを調査します</block>
+  <block id="ea2bddf8f5366e4e19e9f92e993db900" category="list-text">ディレクトリ調査中に、ディレクトリごとの個人識別情報（PII）データの数を計算するオプションは使用できません。を参照してください <block ref="5f0cc912e1424f54004e4ab3376e7552" category="inline-link-macro-rx"></block>。</block>
+  <block id="e87b43c3f65a9e6b5fc0f778e155e091" category="inline-link-macro">プライベートデータを整理します</block>
+  <block id="95f502d77f0f99fc7fc8414116a3b796" category="list-text">Azure Information Protection（AIP）ラベルを使用してデータを統合するオプションが無効になりました。を参照してください <block ref="1f3e517a67b0b53387aa4b447bd4c674" category="inline-link-macro-rx"></block>。</block>
+  <block id="592997dde366d5775e7e052816854f74" category="section-title">2024年3月5日</block>
+  <block id="cf8f238c2116738b5ed3bacdbd527d14" category="section-title">Cloud Volumes ONTAP 9.14.1 GA</block>
+  <block id="fc0f9e3eef3a6eff3efe2fe7cf358466" category="paragraph">BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.14.1 General Availabilityリリースを導入、管理できるようになりました。</block>
+  <block id="4b51a8df678b7448fbc55b79ad365ed7" category="section-title">2024年2月11日</block>
+  <block id="66a743c4896414f00b485685ab377a19" category="section-title">正規表現でディレクトリをフィルタリング</block>
+  <block id="df5c4f17d479f00c828a9edc617f2277" category="paragraph">ユーザはregexを使用してディレクトリをフィルタリングできるようになりました。</block>
+  <block id="32d736bf69b032967c9ca2f284cd6218" category="inline-link">*ディレクトリを除外*機能の詳細については、こちらを参照してください。</block>
+  <block id="9afa1c757f9d9c1d7a951ff852629645" category="paragraph"><block ref="9afa1c757f9d9c1d7a951ff852629645" category="inline-link-rx"></block></block>
+  <block id="82e62a186bc8e1499e10d1400cd762e1" category="section-title">2024年2月8日</block>
+  <block id="072d1a387472fb47fdfa33e48ff08ffd" category="section-title">Sustainability Dashboard</block>
+  <block id="f66a566e9695faf3a9ac3f398a6e5dcd" category="inline-link-macro">Sustainability Dashboard</block>
+  <block id="abb657094a0038dadd2b0ad8a1f2644b" category="paragraph">デフォルトのダッシュボードまたは監視リストのSustainability指標に、 <block ref="3bfa14a7a0d533bd50f797d3680bb9e4" category="inline-link-macro-rx"></block> リンク</block>
+  <block id="8d1c3a552ad49163efb4753de2a95773" category="section-title">Cluster Viewer （クラスタビューア）</block>
+  <block id="3f0a64c1722e89371bae517923a9f798" category="paragraph">これで、[Disk Summary]セクションにディスクRPM情報が表示されます。このセクションは、[Storage]タブおよびClusterViewerレポートに表示されます。</block>
+  <block id="c08885153d0680dab7349b930f5310c4" category="section-title">BlueXPディザスタリカバリ</block>
+  <block id="1804830d648adf9126d51f4a827ca950" category="paragraph">BlueXPのデジタルウォレットで、BlueXPディザスタリカバリのライセンスを管理できるようになりました。ライセンスの追加、ライセンスの更新、およびライセンス容量に関する詳細の表示を行うことができます。</block>
+  <block id="85bdddc8ce218c6365f105f9d309d898" category="inline-link">BlueXPデータサービスのライセンスを管理する方法</block>
+  <block id="ca654cde28a00db1fb587b8b6bb82015" category="paragraph"><block ref="ca654cde28a00db1fb587b8b6bb82015" category="inline-link-rx"></block></block>
+  <block id="23f1adcf87ca650c2ac077f4be520c97" category="paragraph">これはBlueXPディザスタリカバリのGeneral Availabilityリリースであり、次の更新が含まれています。</block>
+  <block id="5751cbd481f2486866a7e6d4339df621" category="list-text">*ライセンスの更新*：BlueXPディザスタリカバリを利用すると、90日間の無償トライアルにサインアップするか、NetApp営業担当から入手したNetAppライセンスファイル（NLF）であるお客様所有のライセンスを使用（BYOL）できます。ライセンスのシリアル番号を使用して、BlueXPデジタルウォレットでBYOLをアクティブ化できます。BlueXPディザスタリカバリの料金は、データストアのプロビジョニング済み容量に基づいて計算されます。</block>
+  <block id="e907b41f5f3d7332bee5a43fbbf78a08" category="inline-link">ライセンスをセットアップする</block>
+  <block id="cba500373ea886a2bb3e508440756918" category="paragraph">BlueXPディザスタリカバリ用のライセンスのセットアップの詳細については、を参照してください。<block ref="7585b54fad00f1219b8233730153156f" category="inline-link-rx"></block>。</block>
+  <block id="c32aede135606fbfc51d8bd7581b4201" category="inline-link">すべてのBlueXPサービスのライセンスを管理します。</block>
+  <block id="4d2e644b683b6f34426a63ff3961ea9d" category="paragraph">すべての* BlueXPサービスのライセンス管理の詳細については、<block ref="834374a0b207d980c4d47827175a6637" category="inline-link-rx"></block>。</block>
+  <block id="5938c93734fbca9c12e3827aa5218ed8" category="list-text">*スケジュールの編集*：このリリースでは、コンプライアンステストとフェイルオーバーテストをテストするスケジュールを設定できるようになりました。これにより、必要に応じて正しく動作することを確認できます。</block>
+  <block id="4b2bfa262e877a668b7102f58d207f63" category="inline-link">レプリケーション計画の作成</block>
+  <block id="976dcedce9d4c9dc14db60abc49c5867" category="paragraph">詳細については、を参照してください<block ref="8026234d3eaba16fdffb266108c2804b" category="inline-link-rx"></block>。</block>
+  <block id="578e9059da07f7d858d4746bbf9af55a" category="section-title">2024年2月1日</block>
+  <block id="0468e5ced7eddf7112cb542d124a006f" category="paragraph">このBlueXPディザスタリカバリプレビューリリースには、次の更新が含まれています。</block>
+  <block id="c61970ed6417395a368e95032dbce932" category="list-text">*ネットワークの強化*：このリリースでは、VMのCPU値とRAM値のサイズを変更できるようになりました。VMのネットワークDHCPまたは静的IPアドレスを選択することもできます。</block>
+  <block id="bb3e5e687ab316872aaebfbeeb4a6605" category="list-text">DHCP：このオプションを選択した場合は、VMのクレデンシャルを指定します。</block>
+  <block id="302dd2d13eb7b51a95fccbe2fc1ba0b8" category="list-text">静的IP：ソースVMと同じ情報または異なる情報を選択できます。ソースと同じを選択した場合は、クレデンシャルを入力する必要はありません。一方、ソースと異なる情報を使用する場合は、クレデンシャル、IPアドレス、サブネットマスク、DNS、およびゲートウェイの情報を指定できます。</block>
+  <block id="1a390a4e18b059462c8f07ea2ea02106" category="paragraph">詳細については、を参照してください<block ref="5cf2140f2775e5f1ccc24bb836a069a3" category="inline-link-rx"></block>。</block>
+  <block id="18d156337647f6bf6b3408e6bf902c50" category="list-text">*フェイルオーバー後のプロセスとしてカスタムスクリプト*を含めることができるようになりました。カスタムスクリプトを使用すると、フェイルオーバープロセスのあとにBlueXPディザスタリカバリでスクリプトを実行できます。たとえば、フェイルオーバーの完了後にすべてのデータベーストランザクションを再開するカスタムスクリプトを使用できます。</block>
+  <block id="2652fb9c2d661c6e545a590071ac6a1f" category="inline-link">リモートサイトへのフェイルオーバー</block>
+  <block id="162522900f68ffca5220e53ec0e2c907" category="paragraph">詳細については、を参照してください<block ref="7cdfded96340b83fb1e5d3c286b13377" category="inline-link-rx"></block>。</block>
+  <block id="8d416397bb32c8298a01a75068b98f3c" category="list-text">* SnapMirror関係*：レプリケーション計画の作成時にSnapMirror関係を作成できるようになりました。以前は、BlueXPのディザスタリカバリ以外で関係を作成する必要がありました。</block>
+  <block id="1d73761c9dd4b9338f6974eee8d2a449" category="list-text">*整合グループ*：レプリケーション計画を作成する際に、異なるボリュームや異なるSVMのVMを含めることができます。BlueXPディザスタリカバリでは、すべてのボリュームを含めて整合グループSnapshotを作成し、すべてのセカンダリサイトを更新します。</block>
+  <block id="ed38b69c5713d5b42f77e9c3ec5872a8" category="list-text">* VM電源投入遅延オプション*：レプリケーション計画を作成するときに、リソースグループにVMを追加できます。リソースグループを使用すると、各VMに遅延を設定して、遅延シーケンスで電源を投入することができます。</block>
+  <block id="193634e2d37697e73e8a9d15d4dca73d" category="list-text">*アプリケーションと整合性のあるSnapshotコピー*：アプリケーションと整合性のあるSnapshotコピーを作成するように指定できます。サービスはアプリケーションを休止し、Snapshotを作成してアプリケーションの整合性のある状態を取得します。</block>
+  <block id="77a292951e2cd7ee0d1bc7d3db0020ec" category="list-text">このリリースでは、ダッシュボードから他のページの情報にすばやくアクセスできます。</block>
+  <block id="8fb6114a69ebd8d03454bf88226c2699" category="inline-link">BlueXPディザスタリカバリの詳細</block>
+  <block id="0f354958858456370fa7b64c5f2a913c" category="paragraph"><block ref="929628a652068d14da23775529f8803b" category="inline-link-rx"></block>。</block>
+  <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="section-title">ランサムウェアからの保護</block>
+  <block id="5a62a1aba4b0b7df087f145049f2b71f" category="paragraph">今回のBlueXPランサムウェア対策プレビューリリースには、次の更新が含まれています。</block>
+  <block id="cf69a03aa5287886f0e8d3de1a6334cc" category="inline-link">ポリシーの管理の詳細</block>
+  <block id="2c32a45feb7d83419121ac60cd93f581" category="list-text">*保護ポリシーの管理*：事前定義されたポリシーの使用に加えて、ポリシーを作成、変更、削除できるようになりました。<block ref="b9442a8e5462552f8e91e8150e2b9935" category="inline-link-rx"></block>。</block>
+  <block id="ac623dda99022aa586562b6804c2f1b8" category="inline-link">保護ポリシーの作成に関する詳細情報</block>
+  <block id="0fd4c934346a4b20a9b03012b080912b" category="list-text">*セカンダリストレージの変更不可（DataLock）*：オブジェクトストアのNetApp DataLockテクノロジを使用して、セカンダリストレージのバックアップを変更不可にできるようになりました。<block ref="a216e61ae0b0740b7be8287c615fa066" category="inline-link-rx"></block>。</block>
+  <block id="732b7b17a4dd9ae4a4359cee4b9b391d" category="inline-link">バックアップ先の設定に関する詳細情報</block>
+  <block id="6baf05b01e83bd3d4b8a2024f16a20f6" category="list-text">* NetApp StorageGRIDへの自動バックアップ*：AWSを使用するだけでなく、バックアップ先としてStorageGRIDを選択できるようになりました。<block ref="563323d59981c5d050897f7686a7f9d8" category="inline-link-rx"></block>。</block>
+  <block id="9e599e81fbf58f35a4e8ea8d4d14b0f6" category="inline-link">ランサムウェアのアラートが検出された場合の対応の詳細</block>
+  <block id="e3647ee6d2bf29ee74ee9f4e9ff4e201" category="list-text">*潜在的な攻撃を調査するための追加機能*:検出された潜在的な攻撃を調査するために、より多くのフォレンジックの詳細を表示できるようになりました。<block ref="707fb9c7332f6aa933e8445c28830d7a" category="inline-link-rx"></block>。</block>
+  <block id="bda01efb679b0ca92bc4e76a23294328" category="inline-link">ランサムウェア攻撃からのリカバリの詳細（インシデントの中和後）</block>
+  <block id="1661fc233cecf8b9c070d8d398293283" category="list-text">*リカバリプロセス*。回復プロセスが強化されました。ボリューム単位、ワークロードのすべてのボリューム、またはボリュームからいくつかのファイルを1つのワークフローでリカバリできるようになりました。<block ref="a36a14eacaa464cdf2747d859c29de55" category="inline-link-rx"></block>。</block>
+  <block id="8aea370efa0da7f8c985a03488d3b9a7" category="inline-link">BlueXPランサムウェア対策の詳細をご確認ください</block>
+  <block id="41e5a42a8cc2023ceb0f8dd06cce7a27" category="paragraph"><block ref="5a80707c96309e25f4c73aee7d2327b1" category="inline-link-rx"></block>。</block>
+  <block id="69483d973a063c873a5a66f6edcc241c" category="section-title">2023年10月6日</block>
+  <block id="ae98c30c78f5642e201d040b9e0b468c" category="paragraph">BlueXPランサムウェア対策サービスは、データの保護、潜在的な攻撃の検出、ランサムウェア攻撃からのデータのリカバリを行うSaaS解決策です。</block>
+  <block id="4c77961875ba555ef50d5063c1b6fad0" category="paragraph">プレビュー版では、オンプレミスのNASストレージ上のOracle、MySQL、VMデータストア、ファイル共有のアプリケーションベースのワークロードと、BlueXPアカウント全体のCloud Volumes ONTAP on AWS（NFSプロトコルを使用）のアプリケーションベースのワークロードを個別に保護し、Amazon Web Servicesクラウドストレージにデータをバックアップします。</block>
+  <block id="75b67029f102f7aa5f52d85fbaeb59b1" category="paragraph">BlueXPのランサムウェア対策サービスでは、複数のNetAppテクノロジをフルに活用できるため、データセキュリティ管理者やセキュリティ運用エンジニアは次の目標を達成できます。</block>
+  <block id="c97c8c1adb5529a50db916535c46fa2b" category="list-text">すべてのワークロードに対するランサムウェア対策を一目で確認できます。</block>
+  <block id="b6f8dc0dd7c16df94c4c9e61ea4c4dcf" category="list-text">ランサムウェア対策に関する推奨事項を分析</block>
+  <block id="39a3e38e85bba8b90ed1e5b7d1f36cb3" category="list-text">BlueXPのランサムウェア対策に関する推奨事項に基づいて、保護態勢を強化</block>
+  <block id="41315f1df6d709866390b219f4b1adac" category="list-text">ランサムウェア対策ポリシーを割り当てて、主要なワークロードとハイリスクデータをランサムウェア攻撃から保護します。</block>
+  <block id="0f1fe9be7b1943507afe2ef939f76423" category="list-text">ワークロードの健全性を監視してランサムウェア攻撃からデータの異常を検出</block>
+  <block id="12bcfe65b7fb19c1dbe60c374599be1e" category="list-text">ランサムウェアのインシデントがワークロードに与える影響を迅速に評価します。</block>
+  <block id="f4d7f013aee4ff8dd19b36611ba3f3c6" category="list-text">データをリストアし、保存されたデータからの再感染を防ぐことで、ランサムウェアのインシデントからインテリジェントにリカバリします。</block>
+  <block id="c615da36d364061ce672b091d8aa7d3b" category="list-text"><block ref="c615da36d364061ce672b091d8aa7d3b" category="inline-link-rx"></block></block>
+  <block id="19532230e3ff8a5fc0c27cc8389cac67" category="list-text"><block ref="19532230e3ff8a5fc0c27cc8389cac67" category="inline-link-rx"></block></block>
 </blocks>
