@@ -352,6 +352,18 @@ https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.htm
 
 
 
+=== 2024年3月8日
+
+
+
+==== Amazon Instant Metadata Service v2のサポート
+
+AWSでは、Cloud Volumes ONTAP、メディエーター、コネクタがすべての機能でAmazon Instant Metadata Service v2（IMDSv2）をサポートするようになりました。IMDSv2では、脆弱性に対する保護が強化されています。以前はIMDSv1のみがサポートされていました。
+
+セキュリティポリシーで必要な場合は、IMDSv2を使用するようにEC2インスタンスを設定できます。手順については、を参照してください link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances["既存のコネクタを管理するためのBlueXPのセットアップと管理に関するドキュメント"^]。
+
+
+
 === 2024年3月5日
 
 
@@ -379,18 +391,6 @@ Cloud Volumes ONTAP 9.14.1リリース以降では、次のEdv5シリーズVMが
 
 
 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure でサポートされる構成"^]
-
-
-
-=== 2024年1月16日
-
-
-
-==== BlueXPでのパッチリリース
-
-BlueXPでは、最新の3つのバージョンのCloud Volumes ONTAPに対してのみパッチリリースを提供しています。
-
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#patch-releases["Cloud Volumes ONTAP をアップグレードします"^]
 
 
 
