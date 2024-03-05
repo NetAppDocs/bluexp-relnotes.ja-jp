@@ -568,10 +568,6 @@
   <block id="ab15c21485050b3b0c09a3b7b31d97d7" category="inline-image-macro">[User Settings]で名前を編集する機能を示すスクリーンショット。</block>
   <block id="daf15a33710ed6188d035a01c084bee9" category="paragraph"><block ref="daf15a33710ed6188d035a01c084bee9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4a784443543a41df794122c52fae1df7" category="paragraph">フェデレーテッド接続またはNetApp Support Siteアカウントでログインした場合、名前の編集はサポートされません。</block>
-  <block id="c7f67b21e0c8d093756f7b3a59e8d2e8" category="section-title">EC2インスタンスのIMDSv1要件</block>
-  <block id="09477b433fb18272d0d3ee6b7a7e23ad" category="paragraph">AWSにコネクタソフトウェアを手動でインストールする前に、Amazon EC2インスタンスにInstance Metadata Service Version 1（IMDSv1）が必要であることに注意してください。</block>
-  <block id="f8197842b4e7ad7b7b15ef36dcb4ae78" category="inline-link">AWSでのIMDSv1の要件の詳細を確認する</block>
-  <block id="ae1d4316f9a8104fa910e65fd2096cb3" category="paragraph"><block ref="3fb75bc46ec80b0989f43707450cda37" category="inline-link-rx"></block>。</block>
   <block id="71dc9fd1ff423f10c9820171aaeabf3c" category="section-title">2024年3月4日（バージョン1.29）</block>
   <block id="2155776a968fa3c23d5147a57832435f" category="section-title">特定のデータソースディレクトリにあるスキャンデータを除外できるようになりました。</block>
   <block id="81e333e3a0fd82b01c14e8eb52437152" category="paragraph">BlueXPの分類で、特定のデータソースディレクトリにあるスキャンデータを除外する場合は、BlueXPの分類で処理する構成ファイルにこれらのディレクトリ名を追加します。この機能を使用すると、不要なディレクトリや、個人データの誤検出結果が返されるディレクトリのスキャンを回避できます。</block>
@@ -656,4 +652,33 @@
   <block id="f4d7f013aee4ff8dd19b36611ba3f3c6" category="list-text">データをリストアし、保存されたデータからの再感染を防ぐことで、ランサムウェアのインシデントからインテリジェントにリカバリします。</block>
   <block id="c615da36d364061ce672b091d8aa7d3b" category="list-text"><block ref="c615da36d364061ce672b091d8aa7d3b" category="inline-link-rx"></block></block>
   <block id="19532230e3ff8a5fc0c27cc8389cac67" category="list-text"><block ref="19532230e3ff8a5fc0c27cc8389cac67" category="inline-link-rx"></block></block>
+  <block id="4a1a05ee22994e328d9ec0402052b926" category="section-title">2024年3月8日</block>
+  <block id="00d14f718aca7db50368d8fc7008b41a" category="section-title">コネクタ3.9.38</block>
+  <block id="d39d3f642c13ecde9b0fc02889aa6386" category="paragraph">現時点では、3.9.38リリースは標準モードと制限モードで使用できます。このリリースでは、AWSでのIMDSv2とAWS権限の更新がサポートされます。</block>
+  <block id="b8048e9aa508d6c9379607c39c84e904" category="section-title">IMDSv2のサポート</block>
+  <block id="727615b8adbd72d276572a4469f7c09d" category="paragraph">BlueXPで、コネクタインスタンスとCloud Volumes ONTAPインスタンスでAmazon EC2インスタンスメタデータサービスバージョン2（IMDSv2）がサポートされるようになりました。IMDSv2では、脆弱性に対する保護が強化されています。以前はIMDSv1のみがサポートされていました。</block>
+  <block id="824e7fae55f361d08bb9bd5bdf494ff0" category="inline-link">AWSセキュリティブログでIMDSv2の詳細を確認する</block>
+  <block id="8035ec6377ab933cc4bc2a70b5416a29" category="paragraph"><block ref="8035ec6377ab933cc4bc2a70b5416a29" category="inline-link-rx"></block></block>
+  <block id="89f5243637c4f72512944130a95ee3e5" category="paragraph">インスタンスメタデータサービス（IMDS）は、EC2インスタンスで次のように有効になります。</block>
+  <block id="baebea4bbd59d6c8efcae96586b2e199" category="inline-link">Terraformスクリプト</block>
+  <block id="0b18bb2eadaff9912e9bbefb3accbc90" category="list-text">BlueXP、AWS Marketplace、または<block ref="d5789cbcfe02eb67db017173bcddbe49" category="inline-link-rx"></block>IMDSv2はEC2インスタンスでデフォルトで有効になっています。</block>
+  <block id="0319f9ec57f9eeb8250ac949896c30fd" category="list-text">AWSで新しいEC2インスタンスを起動し、コネクタソフトウェアを手動でインストールすると、IMDSv2もデフォルトで有効になります。</block>
+  <block id="1fac08ada9902743d92641fbbd32d13f" category="list-text">既存のコネクタについては、IMDSv1は引き続きサポートされますが、必要に応じて、EC2インスタンスでIMDSv2を手動で設定できます。</block>
+  <block id="d0371cc329d08bb54c28e8881cc93db7" category="list-text">Cloud Volumes ONTAPでは、新規および既存のインスタンスでIMDSv1がデフォルトで有効になっています。必要に応じて、EC2インスタンスでIMDSv2を手動で設定できます。</block>
+  <block id="e064a507c52bd5a195428edf98b8aecb" category="inline-link">既存のインスタンスでIMDSv2を設定する方法</block>
+  <block id="35caf9a212e382e214a82a5d75099530" category="paragraph"><block ref="2136f09eaf84594e894a08f345e725b8" category="inline-link-rx"></block>。</block>
+  <block id="4cc078461f1763cdb13efec9da8a6a3f" category="section-title">AWS権限の更新</block>
+  <block id="5b208d0b88475ec99f06a7e55104a566" category="paragraph">AWSのコネクタポリシーを更新して、「EC2：DescriptionAvailabilityZones」権限を追加しました。この権限は、今後のリリースで必要になります。リリースノートの詳細については、リリースノートを更新します。</block>
+  <block id="7595af352964f2b06057ab6310fdff44" category="inline-link">コネクタのAWS権限を表示する</block>
+  <block id="bad85d32b5f3e46e956809c13b502817" category="paragraph"><block ref="7e42187d6259f740c2e1915df5429efc" category="inline-link-rx"></block>。</block>
+  <block id="9796f4649a0c963c7b6019196c7f14f0" category="section-title">プロキシ設定とCloud Volumes ONTAP設定</block>
+  <block id="1697d0f8a0936757a7bb28b4fa2eacd1" category="paragraph">コネクターのプロキシサーバー設定は、*コネクターの管理*ページ（標準モード）または*コネクターの編集*ページ（制限モードおよびプライベートモード）から利用できるようになりました。</block>
+  <block id="50770490f832c2b93de5aff17e5102b5" category="inline-link">プロキシサーバを使用するようにコネクタを設定する方法について説明します。</block>
+  <block id="d58ba1e11f305c91632d6e86e3515966" category="paragraph"><block ref="f2fec40748e9e912170fdd2984d9b989" category="inline-link-rx"></block>。</block>
+  <block id="d560347c8aaf0de44ab17132b9923b1c" category="paragraph">また、*コネクター設定*ページの名前を* Cloud Volumes ONTAP設定*に変更しました。</block>
+  <block id="79c73187c699b08002880f70fb88a0a8" category="inline-image-macro">[Settings]メニューから使用できるCloud Volumes ONTAP Settings]オプションを示すスクリーンショット。</block>
+  <block id="1a1ed66dc9bfcad0fc9c0c7fa6b4f0ca" category="paragraph"><block ref="1a1ed66dc9bfcad0fc9c0c7fa6b4f0ca" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6505788c29b47651fe2e94f0607a2ef7" category="section-title">特大規模インスタンスのサポートが認定されました</block>
+  <block id="1647534ed4603d68f73fd3f261af9b65" category="paragraph">BlueXPの分類で2億5、000万を超えるファイルをスキャンする必要がある場合は、クラウド環境またはオンプレミス環境で特大規模なインスタンスを使用できます。このタイプのシステムは、最大5億個のファイルをスキャンできます。</block>
+  <block id="1b4f4b549e0860b1392190bfc2a23f81" category="paragraph"><block ref="1eef614f77c6908f78f84cb1847e2ab8" category="inline-link-rx"></block>。</block>
 </blocks>
