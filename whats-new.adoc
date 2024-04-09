@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, cloud manager, bluexp, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, kubernetes, reports, ontap clusters' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, kubernetes, reports, ontap clusters' 
 summary: BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します詳細については、各サービスのすべてのリリースノートを参照してください。 
 ---
 = BlueXPの最近の変更点
@@ -351,6 +351,40 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.ht
 
 
 
+=== 2024年4月1日（バージョン1.30）
+
+
+
+==== RHEL v8.8およびv9.3 BlueXPの分類のサポートの追加
+
+このリリースでは、以前サポートされていた9.xに加えて、Red Hat Enterprise Linux v8.8およびv9.3がサポートされます。9.xにはDockerエンジンではなくPodmanが必要です。これは、手動でオンプレミスにBlueXPをインストールした場合にも当てはまります。
+
+次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があります。また、BlueXP分類バージョン1.30以降（Red Hat Enterprise Linuxバージョン8.8、9.0、9.1、9.2、9.3）が必要です。
+
+の詳細を確認してください https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["BlueXPの分類環境の概要"]。
+
+
+
+==== 監査ログ収集をアクティブ化するオプションが削除されました
+
+監査ログ収集をアクティブ化するオプションが無効になりました。
+
+
+
+==== スキャン速度の向上
+
+セカンダリスキャナノードでのスキャンパフォーマンスが改善されました。スキャンの処理能力を高める必要がある場合は、スキャナノードを追加できます。詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["インターネットにアクセスできるホストにBlueXP分類をインストールします"]。
+
+
+
+==== ジドウアップグレード
+
+インターネットにアクセスできるシステムにBlueXP分類を導入している場合は、システムが自動的にアップグレードされます。以前は、最後のユーザアクティビティから特定の時間が経過したあとにアップグレードが実行されていました。このリリースでは、現地時間が午前1時から午前5時の場合、BlueXPの分類が自動的にアップグレードされます。ローカル時間がこの時間外の場合は、最後のユーザアクティビティから特定の時間が経過したあとにアップグレードが実行されます。詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["インターネットにアクセスできるLinuxホストにインストールします"]。
+
+インターネットアクセスを使用せずにBlueXP分類を導入した場合は、手動でアップグレードする必要があります。詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html["インターネットアクセスのないLinuxホストにBlueXP分類をインストールする"]。
+
+
+
 === 2024年3月4日（バージョン1.29）
 
 
@@ -384,19 +418,6 @@ https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.htm
 ==== 追加のグループIDを[Open to Organization]として設定します。
 
 グループに最初にその権限が設定されていなかった場合に、BlueXPの分類から直接、NFSのグループIDを「Open to Organization」とみなされるように設定できるようになりました。これらのグループIDが添付されているファイルおよびフォルダは、[Investigation Details]ページで[Open to Organization]として表示されます。方法を参照してください https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open.html["追加のグループIDを「組織にオープン」として追加"]。
-
-
-
-=== 2023年12月14日（バージョン1.26.6）
-
-このリリースには、いくつかのマイナーな機能拡張が含まれ
-
-また、次のオプションも一時的に削除されました。
-
-* 監査ログ収集をアクティブ化するオプションが無効になりました。を参照してください link:task-manage-file-access-events.html["ファイルアクセスイベントを監視および管理します"]。
-* ディレクトリ調査中に、ディレクトリごとの個人識別情報（PII）データの数を計算するオプションは使用できません。を参照してください link:task-investigate-data.html#filter-data-by-sensitivity-and-content["組織に保存されているデータを調査します"]。
-* Azure Information Protection（AIP）ラベルを使用してデータを統合するオプションが無効になりました。を参照してください link:task-org-private-data.html["プライベートデータを整理します"]。
-
 
 
 
@@ -500,6 +521,18 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 2024年4月8日
+
+
+
+==== RHEL 8.9のサポート
+
+データブローカーがRed Hat Enterprise Linux 8.9を実行するホストでサポートされるようになりました。
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#linux-host-requirements["Linuxホストの要件の表示"]。
+
+
+
 === 2024年2月11日
 
 
@@ -538,27 +571,17 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#creating
 
 
 
-=== 2023年9月3日
-
-
-
-==== 正規表現でファイルを除外
-
-ユーザはregexを使用してファイルを除外するオプションを使用できるようになりました。
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#create-other-types-of-sync-relationships["*ファイル拡張子を除外*機能の詳細については、こちらをご覧ください。"]
-
-
-
-==== Azureデータブローカー作成時にS3キーを追加
-
-Azureデータブローカーの作成時にAWS S3のアクセスキーとシークレットキーを追加できるようになりました。
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#creating-the-data-broker["Azureでデータブローカーを作成する方法については、こちらをご覧ください。"]
-
-
-
 == デジタルアドバイザ
+
+
+
+=== 2024年3月28日
+
+
+
+==== Upgrade Advisor を使用します
+
+古いバージョンのUpgrade Advisorは廃止されました。強化されたバージョンのUpgrade Advisorを使用すると、単一のクラスタおよび複数のクラスタのアップグレードプランを生成できます。 link:https://docs.netapp.com/us-en/active-iq/upgrade_advisor_overview.html["アップグレードの推奨事項を表示し、アップグレード計画を生成する方法について説明します。"]
 
 
 
@@ -587,22 +610,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#creati
 ==== 監視リスト
 
 Keystoneサブスクリプション番号に基づいて監視リストを作成し、サブスクリプション番号または監視リスト名の最初の3文字を使用してKeystoneサブスクリプションを検索できるようになりました。
-
-
-
-=== 2024年2月8日
-
-
-
-==== Sustainability Dashboard
-
-デフォルトのダッシュボードまたは監視リストのSustainability指標に、 link:https://activeiq.netapp.com/redirect/sustainability["Sustainability Dashboard"^] リンク
-
-
-
-==== Cluster Viewer （クラスタビューア）
-
-これで、[Disk Summary]セクションにディスクRPM情報が表示されます。このセクションは、[Storage]タブおよびClusterViewerレポートに表示されます。
 
 
 
