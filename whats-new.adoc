@@ -24,6 +24,18 @@ BlueXPプラットフォームの一部である クラウド サービス の�
 
 
 
+=== 2024年4月11日
+
+
+
+==== Docker Engineの更新
+
+Docker Engineの要件を更新して、コネクタでサポートされる最大バージョン（25.0.5）を指定しました。サポートされる最小バージョンは引き続き19.3.1です。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["コネクタホスト要件の表示"]。
+
+
+
 === 2024年3月26日
 
 
@@ -84,7 +96,7 @@ https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-pr
 
 インスタンスメタデータサービス（IMDS）は、EC2インスタンスで次のように有効になります。
 
-* BlueXP、AWS Marketplace、または https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Terraformスクリプト"^]IMDSv2はEC2インスタンスでデフォルトで有効になっています。
+* BlueXPから新規コネクタを導入する場合、または https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Terraformスクリプト"^]IMDSv2はEC2インスタンスでデフォルトで有効になっています。
 * AWSで新しいEC2インスタンスを起動し、コネクタソフトウェアを手動でインストールすると、IMDSv2もデフォルトで有効になります。
 * 既存のコネクタについては、IMDSv1は引き続きサポートされますが、必要に応じて、EC2インスタンスでIMDSv2を手動で設定できます。
 * Cloud Volumes ONTAPでは、新規および既存のインスタンスでIMDSv1がデフォルトで有効になっています。必要に応じて、EC2インスタンスでIMDSv2を手動で設定できます。
@@ -111,28 +123,6 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["�
 また、*コネクター設定*ページの名前を* Cloud Volumes ONTAP設定*に変更しました。
 
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-cvo-settings.png["[Settings]メニューから使用できるCloud Volumes ONTAP Settings]オプションを示すスクリーンショット。"]
-
-
-
-=== 2024年2月15日
-
-
-
-==== コネクタ3.9.37
-
-今回のリリースのBlueXP Connectorには、セキュリティが若干改善され、バグが修正されています。
-
-現時点では、3.9.37リリースは標準モードと制限モードで使用できます。
-
-
-
-==== 名前の編集
-
-NetAppのクラウドクレデンシャルを使用してBlueXPにログインすると、*[ユーザ設定]*で名前を編集できるようになりました。
-
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-edit-name.png["[User Settings]で名前を編集する機能を示すスクリーンショット。"]
-
-フェデレーテッド接続またはNetApp Support Siteアカウントでログインした場合、名前の編集はサポートされません。
 
 
 

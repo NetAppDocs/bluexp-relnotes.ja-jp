@@ -526,15 +526,6 @@
   <block id="708880d509c52585ca0500cd17ef2166" category="list-text">E32ds_V5</block>
   <block id="843cc0b63b36e79d0bdf4097a1b84b6a" category="list-text">E48ds_V5</block>
   <block id="6ec5cb856eb24c85cf7368cdfd11627f" category="list-text">E64ds_V5</block>
-  <block id="5985540cd0cc5c0e58eaebe95659534e" category="section-title">2024年2月15日</block>
-  <block id="875cabf7fcb6d8f631b842029efd2117" category="section-title">コネクタ3.9.37</block>
-  <block id="33596391cf2ec8b74b76bf635ea4c6e2" category="paragraph">今回のリリースのBlueXP Connectorには、セキュリティが若干改善され、バグが修正されています。</block>
-  <block id="937efe0b961bcb892e05e19e0c147973" category="paragraph">現時点では、3.9.37リリースは標準モードと制限モードで使用できます。</block>
-  <block id="f1c2261d89d52febeed15edf1f34a5b7" category="section-title">名前の編集</block>
-  <block id="c42458c54134318669b685ee8730a478" category="paragraph">NetAppのクラウドクレデンシャルを使用してBlueXPにログインすると、*[ユーザ設定]*で名前を編集できるようになりました。</block>
-  <block id="ab15c21485050b3b0c09a3b7b31d97d7" category="inline-image-macro">[User Settings]で名前を編集する機能を示すスクリーンショット。</block>
-  <block id="daf15a33710ed6188d035a01c084bee9" category="paragraph"><block ref="daf15a33710ed6188d035a01c084bee9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4a784443543a41df794122c52fae1df7" category="paragraph">フェデレーテッド接続またはNetApp Support Siteアカウントでログインした場合、名前の編集はサポートされません。</block>
   <block id="71dc9fd1ff423f10c9820171aaeabf3c" category="section-title">2024年3月4日（バージョン1.29）</block>
   <block id="2155776a968fa3c23d5147a57832435f" category="section-title">特定のデータソースディレクトリにあるスキャンデータを除外できるようになりました。</block>
   <block id="81e333e3a0fd82b01c14e8eb52437152" category="paragraph">BlueXPの分類で、特定のデータソースディレクトリにあるスキャンデータを除外する場合は、BlueXPの分類で処理する構成ファイルにこれらのディレクトリ名を追加します。この機能を使用すると、不要なディレクトリや、個人データの誤検出結果が返されるディレクトリのスキャンを回避できます。</block>
@@ -613,7 +604,6 @@
   <block id="8035ec6377ab933cc4bc2a70b5416a29" category="paragraph"><block ref="8035ec6377ab933cc4bc2a70b5416a29" category="inline-link-rx"></block></block>
   <block id="89f5243637c4f72512944130a95ee3e5" category="paragraph">インスタンスメタデータサービス（IMDS）は、EC2インスタンスで次のように有効になります。</block>
   <block id="baebea4bbd59d6c8efcae96586b2e199" category="inline-link">Terraformスクリプト</block>
-  <block id="0b18bb2eadaff9912e9bbefb3accbc90" category="list-text">BlueXP、AWS Marketplace、または<block ref="d5789cbcfe02eb67db017173bcddbe49" category="inline-link-rx"></block>IMDSv2はEC2インスタンスでデフォルトで有効になっています。</block>
   <block id="0319f9ec57f9eeb8250ac949896c30fd" category="list-text">AWSで新しいEC2インスタンスを起動し、コネクタソフトウェアを手動でインストールすると、IMDSv2もデフォルトで有効になります。</block>
   <block id="1fac08ada9902743d92641fbbd32d13f" category="list-text">既存のコネクタについては、IMDSv1は引き続きサポートされますが、必要に応じて、EC2インスタンスでIMDSv2を手動で設定できます。</block>
   <block id="d0371cc329d08bb54c28e8881cc93db7" category="list-text">Cloud Volumes ONTAPでは、新規および既存のインスタンスでIMDSv1がデフォルトで有効になっています。必要に応じて、EC2インスタンスでIMDSv2を手動で設定できます。</block>
@@ -704,4 +694,10 @@
   <block id="83c0915932deaf70b0873b6eb47c3a28" category="section-title">2024年3月28日</block>
   <block id="888059a12fa3532d54872d17517e780c" category="inline-link-macro">アップグレードの推奨事項を表示し、アップグレード計画を生成する方法について説明します。</block>
   <block id="9d10674ae163e749f65c1eeb852cdf2b" category="paragraph">古いバージョンのUpgrade Advisorは廃止されました。強化されたバージョンのUpgrade Advisorを使用すると、単一のクラスタおよび複数のクラスタのアップグレードプランを生成できます。 <block ref="b6cac2681a05b9a8dd19bf0553cd1066" category="inline-link-macro-rx"></block></block>
+  <block id="779956d8a8a5dbf08bbf655892abfefb" category="section-title">2024年4月11日</block>
+  <block id="b0672ad18e27e61949a210d3369455e0" category="section-title">Docker Engineの更新</block>
+  <block id="0427fd4cf4edaa5749da5792252fcd70" category="paragraph">Docker Engineの要件を更新して、コネクタでサポートされる最大バージョン（25.0.5）を指定しました。サポートされる最小バージョンは引き続き19.3.1です。</block>
+  <block id="a7d713b0c0233ee2a3bbb328d82ba606" category="inline-link">コネクタホスト要件の表示</block>
+  <block id="10f6464912ab27695ba4f7df57c14783" category="paragraph"><block ref="19b43e2419dde639b2fba3d57b5bca52" category="inline-link-rx"></block>。</block>
+  <block id="91c7ed7e9c640df79f6bf153c6642ae5" category="list-text">BlueXPから新規コネクタを導入する場合、または<block ref="d5789cbcfe02eb67db017173bcddbe49" category="inline-link-rx"></block>IMDSv2はEC2インスタンスでデフォルトで有効になっています。</block>
 </blocks>
