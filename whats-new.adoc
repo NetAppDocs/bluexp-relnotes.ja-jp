@@ -128,6 +128,16 @@ BlueXP CanvasでAzure Blob Storageを表示できるようになりました。B
 
 
 
+=== 2024年4月22日
+
+
+
+==== ボリュームテンプレートのサポートの廃止
+
+テンプレートからボリュームを作成することはできなくなりました。この操作はBlueXP修正サービスに関連付けられていましたが、このサービスは廃止されました。
+
+
+
 === 2021 年 4 月 11 日
 
 
@@ -151,26 +161,6 @@ BlueXP CanvasでAzure Blob Storageを表示できるようになりました。B
 ワークロードのニーズを満たし、コストを最適化するために、ボリュームのサービスレベルを動的に変更できるようになりました。ボリュームは、ボリュームに影響を及ぼすことなく、もう一方の容量プールに移動されます。
 
 https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html#change-the-volumes-service-level["ボリュームのサービスレベルを変更する方法について説明します"]。
-
-
-
-=== 2020 年 8 月 3 日
-
-
-
-==== Azure NetApp Files のセットアップと管理
-
-Azure NetApp Files は Cloud Manager から直接セットアップおよび管理できます。Azure NetApp Files 作業環境を作成したら、次の作業を実行できます。
-
-* NFS ボリュームと SMB ボリュームを作成
-* 容量プールとボリューム Snapshot を管理します
-+
-Cloud Manager では、ボリューム Snapshot を作成、削除、リストアできます。新しい容量プールを作成してそのサービスレベルを指定することもできます。
-
-* サイズを変更し、タグを管理してボリュームを編集します。
-
-
-以前のデータ移行機能は、 Cloud Manager から Azure NetApp Files を直接作成および管理できるようになりました。
 
 
 
@@ -353,6 +343,40 @@ https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.htm
 
 
 
+=== 2024年4月23日
+
+
+
+==== Azureの複数のアベイラビリティゾーン環境でサポートされる新しいリージョン
+
+Azure for Cloud Volumes ONTAP 9.12.1 GA以降では、次のリージョンでHA複数アベイラビリティゾーンの導入がサポートされるようになりました。
+
+* ドイツ・ウェスト・セントラル
+* ポーランド中部
+* 米国西部3
+* イスラエル中部
+* イタリア北部
+* カナダセントラル
+
+
+すべての地域のリストについては、 https://bluexp.netapp.com/cloud-volumes-global-regions["Azureのグローバルリージョンマップ"^]。
+
+
+
+==== ヨハネスブルグリージョンがGoogle Cloudでサポートされるようになりました
+
+ヨハネスブルグ地域 (`africa-south1` リージョン）は、Google Cloud for Cloud Volumes ONTAP 9.12.1 GA以降でサポートされるようになりました。
+
+すべての地域のリストについては、 https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloudのグローバルリージョンマップ"^]。
+
+
+
+==== ボリュームテンプレートとタグのサポートの廃止
+
+これ以降、テンプレートからボリュームを作成したり、ボリュームのタグを編集したりすることはできません。これらの操作はBlueXP修正サービスに関連付けられていましたが、このサービスは廃止されました。
+
+
+
 === 2024年3月8日
 
 
@@ -372,26 +396,6 @@ AWSでは、Cloud Volumes ONTAP、メディエーター、コネクタがすべ�
 ==== Cloud Volumes ONTAP 9.14.1 GA
 
 BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.14.1 General Availabilityリリースを導入、管理できるようになりました。
-
-
-
-=== 2024年2月2日
-
-
-
-==== AzureでのEdv5シリーズVMのサポート
-
-Cloud Volumes ONTAP 9.14.1リリース以降では、次のEdv5シリーズVMがサポートされるようになりました。
-
-* E4ds_V5
-* E8ds_V5
-* E20s_V5
-* E32ds_V5
-* E48ds_V5
-* E64ds_V5
-
-
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure でサポートされる構成"^]
 
 
 
@@ -889,6 +893,16 @@ link:https://docs.netapp.com/us-en/bluexp-reports/get-started/intro.html["BlueXP
 
 
 
+=== 2024年4月22日
+
+
+
+==== ボリュームテンプレートのサポートの廃止
+
+テンプレートからボリュームを作成することはできなくなりました。この操作はBlueXP修正サービスに関連付けられていましたが、このサービスは廃止されました。
+
+
+
 === 2023年7月30日
 
 
@@ -912,25 +926,6 @@ link:https://docs.netapp.com/us-en/bluexp-reports/get-started/intro.html["BlueXP
 オンプレミスのONTAPクラスタを検出できるようになりました。これには、* Canvas > My estate *から、BlueXPログインのEメールアドレスに関連付けられているONTAPクラスタに基づいてBlueXPが検出されたクラスタを選択します。
 
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster["クラスタを検出する方法については、[My estate]ページを参照してください"]。
-
-
-
-=== 2023年5月4日
-
-
-
-==== BlueXPのバックアップとリカバリを有効にする
-
-ONTAP 9.13.1以降では、コネクタを使用してクラスタを検出した場合、System Manager（アドバンストビュー）を使用してBlueXPのバックアップとリカバリを有効にすることができます。 link:https://docs.netapp.com/us-en/ontap/task_cloud_backup_data_using_cbs.html["BlueXPのバックアップとリカバリの有効化の詳細については、こちらをご覧ください"^]
-
-
-
-==== ONTAP のバージョンイメージとハードウェアファームウェアをアップグレードします
-
-ONTAP 9.10.1以降では、System Manager（アドバンストビュー）を使用してONTAP のバージョンイメージとハードウェアファームウェアをアップグレードできます。自動アップグレードを利用して最新の状態を維持することも、ローカルマシンやBlueXPを使用してアクセスできるサーバから手動で更新することもできます。 link:https://docs.netapp.com/us-en/ontap/task_admin_update_firmware.html#prepare-for-firmware-update["ONTAP とファームウェアのアップグレードの詳細については、こちらをご覧ください"^]
-
-
-NOTE: コネクタがない場合は、ローカルマシンからは更新できず、BlueXPを使用してアクセスできるサーバからのみ更新できます。
 
 
 
