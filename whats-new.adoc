@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, kubernetes, reports, ontap clusters' 
-summary: BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します詳細については、各サービスのすべてのリリースノートを参照してください。 
+summary: BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します完全なリリース履歴については、各サービスの完全なリリースノートを参照してください。 
 ---
 = BlueXPの最近の変更点
 :hardbreaks:
@@ -14,13 +14,59 @@ summary: BlueXPプラットフォームの一部である クラウド サービ
 
 
 [role="lead"]
-BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します詳細については、を参照してください link:release-notes-index.html["リリースノートの全セット"] 個々のサービスごと。
+BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します完全なリリース履歴については、 link:release-notes-index.html["リリースノートの全セット"] 個々のサービスごと。
 
 
 
 == 管理機能
 
 このセクションでは、BlueXPの管理機能に関連する新機能(アカウント、コネクタ、クラウドプロバイダの資格情報など)について説明します。
+
+
+
+=== 2024年5月17日
+
+
+
+==== コネクタ3.9.40
+
+今回のリリースのBlueXP Connectorには、オペレーティングシステムの追加サポート、セキュリティの若干の改善、バグの修正が含まれています。
+
+現時点では、3.9.40リリースは標準モードと制限モードで使用できます。
+
+
+
+===== RHEL 8および9のサポート
+
+このコネクタは、次のバージョンのRed Hat Enterprise Linux with _new_connectorインストールを実行しているホストでサポートされるようになりました。
+
+* 8.6～8.9
+* 9.1から9.3
+
+
+これらのオペレーティングシステムでは、コンテナオーケストレーションツールとしてPodmanが必要です。
+
+Podmanの要件、既知の制限事項、サポートされるオペレーティングシステムの概要、RHEL 7ホストを使用している場合の対処方法、開始方法などを確認しておく必要があります。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["コネクタを使用したRHEL 8および9のサポートについて"]。
+
+
+
+===== RHEL 7およびCentOS 7のサポート終了
+
+2024年6月30日に、RHEL 7はメンテナンス終了（EOM）になり、CentOS 7はサポート終了（EOL）になります。NetAppは、これらのLinuxディストリビューションでのコネクタのサポートを2024年6月30日まで継続します。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["RHEL 7またはCentOS 7で既存のコネクタが実行されている場合の対処方法について説明します。"]。
+
+
+
+===== AWS権限の更新
+
+3.9.38リリースでは、AWSのコネクタポリシーが更新され、「EC2：DescriptionAvailabilityZones」権限が追加されました。Cloud Volumes ONTAPでAWSローカルゾーンをサポートするには、この権限が必要になりました。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["コネクタのAWS権限を表示する"]。
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["AWSローカルゾーンのサポートに関する詳細情報"^]
+
 
 
 
@@ -65,48 +111,6 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-blue
 Docker Engineの要件を更新して、コネクタでサポートされる最大バージョン（25.0.5）を指定しました。サポートされる最小バージョンは引き続き19.3.1です。
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["コネクタホスト要件の表示"]。
-
-
-
-=== 2024年3月26日
-
-
-
-==== プライベートモードリリース（3.9.38）
-
-BlueXPで新しいプライベートモードリリースが見積もり可能になりました。このリリースには、プライベートモードでサポートされる次のバージョンのBlueXPサービスが含まれています。
-
-[cols="2*"]
-|===
-| サービス | 含まれるバージョン 
-
-
-| コネクタ | 3.9.38 
-
-
-| バックアップとリカバリ | 2024年3月12日 
-
-
-| 分類 | 2024年3月4日 
-
-
-| Cloud Volumes ONTAP管理 | 2024年3月8日 
-
-
-| デジタルウォレット | 2023年7月30日 
-
-
-| オンプレミスのONTAPクラスタ管理 | 2023年7月30日 
-
-
-| レプリケーション | 2022年9月18日 
-|===
-この新しいリリースは、NetApp Support Siteからダウンロードできます。
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["プライベートモードの詳細"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["BlueXPのプライベートモードでの利用を開始する方法"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["プライベートモードの使用時にコネクタをアップグレードする方法について説明します。"]
-
 
 
 
@@ -210,6 +214,25 @@ BlueXP CanvasでAmazon S3バケットを表示できるようになりました�
 
 
 
+=== 2024年4月30日
+
+
+
+==== ランサムウェアの定期的なスキャンを有効または無効にする機能
+
+以前は、ランサムウェアスキャンを有効または無効にすることはできましたが、スケジュールされたスキャンではこれを行うことはできませんでした。
+
+このリリースでは、[Advanced Settings]ページのオプションを使用して、最新のSnapshotコピーに対してスケジュールされたランサムウェアスキャンを有効または無効にできるようになりました。有効にすると、スキャンはデフォルトで毎週実行されます。このスケジュールを数日または数週間に変更したり、無効にしたりすることで、コストを節約できます。
+
+詳細については、次の情報を参照してください。
+
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-manage-backup-settings-ontap.html["バックアップ設定の管理"]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-create-policies-ontap.html["ONTAPボリュームのポリシーを管理します。"]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-cloud-backup-policies.html["オブジェクトへのバックアップポリシーの設定"]
+
+
+
+
 === 2024年4月4日
 
 
@@ -250,18 +273,6 @@ BlueXP CanvasでAmazon S3バケットを表示できるようになりました�
 以前は、AWS、Azure、Google Cloud Servicesのバックアップコピーからのみファイルとフォルダをリストアできました。ローカルSnapshotコピーとレプリケーションコピーからファイルとフォルダをリストアできるようになりました。
 
 この機能は、参照とリストアのプロセスではなく、検索とリストアのプロセスを使用して実行できます。
-
-
-
-=== 2024年2月1日
-
-
-
-==== 仮想マシンのBlueXPバックアップとリカバリの機能拡張
-
-* 代替保存場所への仮想マシンのリストアのサポート
-* データストアの保護解除のサポート
-
 
 
 
@@ -763,6 +774,12 @@ link:https://docs.netapp.com/us-en/bluexp-economic-efficiency/get-started/intro.
 
 
 
+=== 2024年5月6日（バージョン2.4）
+
+このリリースでは、いくつかのマイナーな問題が修正され更新されたソフトウェアパッケージは次のURLから入手できます。 https://docs.netapp.com/us-en/bluexp-edge-caching/download-gfc-resources.html#download-required-resources["このページです"]。
+
+
+
 === 2023年8月1日（バージョン2.3）
 
 このリリースでは、に記載されている問題が修正されています https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["修正された問題"]。更新されたソフトウェアパッケージは、から入手できます https://docs.netapp.com/us-en/bluexp-edge-caching/download-gfc-resources.html#download-required-resources["このページです"]。
@@ -788,38 +805,6 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#
 
 
 ==== Optimus PSMが拡張され、Edge Sync機能が構成されます
-
-
-
-=== 2022年10月24日（バージョン2.1）
-
-このリリースでは、以下に示す新機能が提供されます。また、に記載されている問題も修正されています https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["修正された問題"]。
-
-
-
-==== グローバルファイルキャッシュは、任意の数のライセンスで使用できるようになりました
-
-これまでに必要だった10個のライセンス、つまり30 TBのストレージは削除されました。Global File Cacheライセンスは、3 TBのストレージごとに1つずつ発行されます。
-
-
-
-==== オフラインライセンス管理サーバを使用するためのサポートが追加されました
-
-オフラインまたはダークサイトのライセンス管理サーバ（LMS）は、LMSがライセンスソースを使用したライセンス検証用のインターネット接続を備えていない場合に最も便利です。初期設定時には、インターネット接続とライセンスソースへの接続が必要です。設定が完了すると、LMSインスタンスが暗くなることがあります。ライセンスの継続的な検証のために、すべてのエッジ/コアはLMSと接続されている必要があります。
-
-
-
-==== エッジインスタンスは、追加の同時ユーザーをサポートできます
-
-1つのグローバルファイルキャッシュエッジインスタンスは、専用の物理エッジインスタンス1つにつき最大500ユーザー、専用の仮想配置で最大300ユーザーを処理できます。使用可能なユーザの最大数は、それぞれ400と200です。
-
-
-
-==== Optimus PSMを強化し、クラウドライセンスを構成
-
-
-
-==== Optimus UI（Edge Configuration）のEdge Sync機能が強化され、接続されているすべてのクライアントが表示されるようになりました
 
 
 
@@ -947,17 +932,59 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 
+=== 2024年5月14日
+
+このリリースは、BlueXPランサムウェア対策の一般提供リリースです。次の更新が含まれています。
+
+* *ライセンスの更新*: 90日間の無償トライアルにサインアップするか、Amazon Web Services Marketplaceで1年、2年、3年の従量課金制サブスクリプションを購入するか、お客様所有のNetAppライセンスを使用できます。
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["ライセンスの設定に関する詳細情報"]。
+
+* * CIFSプロトコル*：NFSプロトコルとCIFSプロトコルの両方を使用して、AWSの作業環境でオンプレミスのONTAPとCloud Volumes ONTAPがサポートされるようになりました。以前のリリースでは、NFSプロトコルのみがサポートされていました。
+* *ワークロードの詳細*：このリリースでは、ワークロード保護の評価を改善するために、[保護]ページのワークロード情報に詳細が表示されるようになりました。ワークロードの詳細から、ワークロード名の変更、ワークロードの重要度の変更、現在割り当てられているポリシーの確認、設定されているバックアップデスティネーションの確認を行うことができます。
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["[保護]ページでのワークロードの詳細の表示に関する詳細を確認する"]。
+
+* *アプリケーションと整合性のある保護とリカバリ*：NetApp SnapCenterソフトウェアを使用してアプリケーションと整合性のある保護を実行し、SnapCenter Plug-in for VMware vSphereを使用してVMと整合性のある保護を実行できるようになりました。休止状態と整合性のある状態を実現して、リカバリが必要になった場合のデータ損失を回避できます。リカバリが必要な場合は、アプリケーションまたはVMを以前の状態および最後のトランザクションにリストアできます。
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["ワークロードの保護に関する詳細情報"]。
+
+* *ランサムウェア対策戦略*：ワークロードにSnapshotポリシーまたはバックアップポリシーがない場合は、ランサムウェア対策戦略を作成できます。この戦略には、このサービスで作成する次のポリシーを含めることができます。
++
+** スナップショットポリシー
+** バックアップポリシー
+** 検出ポリシー
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["ワークロードの保護に関する詳細情報"]。
+
+
+
+* *脅威検出を有効にする*は、サードパーティのセキュリティおよびイベント管理（SIEM）システムを使用して利用できるようになりました。ダッシュボードに「脅威検出を有効にする」という新しい推奨事項が表示されるようになりました。これは、[設定]ページで設定できます。
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["設定オプションの設定の詳細"]。
+
+* *新しい検出ステータス*が[Protection]ページに表示され、ワークロードに適用されたランサムウェアの検出ステータスが示されます。
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["ワークロードの保護と保護ステータスの表示に関する詳細情報"]。
+
+* *[Dashboard]、[Protection]、[Alerts]、[Recovery]の各ページからCSVファイル*をダウンロードします。
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-reports.html["ダッシュボードおよびその他のページからのCSVファイルのダウンロードに関する詳細情報"]。
+
+* *ドキュメントを表示*リンクがUIに含まれるようになりました。このドキュメントには、Dasbhoard vertical * Actions *からアクセスできます。 image:button-actions-vertical.png["[垂直アクション]オプション"] オプション「What's new」*を選択して詳細をリリースノートに表示するか、*「Documentation」*を選択してBlueXPランサムウェア対策ドキュメントのホームページを表示します。
+
+
+
+
 === 2024年3月5日
 
 今回のBlueXPランサムウェア対策プレビューリリースには、次の更新が含まれています。
 
 * *保護ポリシーの管理*：事前定義されたポリシーの使用に加えて、ポリシーを作成、変更、削除できるようになりました。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["ポリシーの管理の詳細"]。
 * *セカンダリストレージの変更不可（DataLock）*：オブジェクトストアのNetApp DataLockテクノロジを使用して、セカンダリストレージのバックアップを変更不可にできるようになりました。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["保護ポリシーの作成に関する詳細情報"]。
-
-
 * * NetApp StorageGRIDへの自動バックアップ*：AWSを使用するだけでなく、バックアップ先としてStorageGRIDを選択できるようになりました。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["バックアップ先の設定に関する詳細情報"]。
 * *潜在的な攻撃を調査するための追加機能*:検出された潜在的な攻撃を調査するために、より多くのフォレンジックの詳細を表示できるようになりました。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["ランサムウェアのアラートが検出された場合の対応の詳細"]。
-* *リカバリプロセス*。回復プロセスが強化されました。ボリューム単位、ワークロードのすべてのボリューム、またはボリュームからいくつかのファイルを1つのワークフローでリカバリできるようになりました。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["ランサムウェア攻撃からのリカバリの詳細（インシデントの中和後）"]。
+* *リカバリプロセス*。回復プロセスが強化されました。1つのワークフローで、ボリューム単位、ワークロードのすべてのボリューム、またはボリュームからいくつかのファイルをリカバリできるようになりました。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["ランサムウェア攻撃からのリカバリの詳細（インシデントの中和後）"]。
 
 
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["BlueXPランサムウェア対策の詳細をご確認ください"]。

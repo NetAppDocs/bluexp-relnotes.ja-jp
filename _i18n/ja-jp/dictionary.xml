@@ -67,22 +67,11 @@
   <block id="dc8bb8905a6984d0c45a4ada9e618ace" category="section-title">StorageGRID のサポート</block>
   <block id="db502201c33ba3b3f867c8360cce228a" category="doc">BlueXPリリースノート</block>
   <block id="5bffab86d093605978b7c1efd3c0d337" category="inline-link">BlueXPでのCloud Volumes ONTAP 管理に関するリリースノート</block>
-  <block id="8d9e30572c7be0b05a6e777166ea7d0b" category="summary">BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します詳細については、各サービスのすべてのリリースノートを参照してください。</block>
   <block id="67d516de6d58e90ec46d8a36eecbf35a" category="doc">BlueXPの最近の変更点</block>
   <block id="87448a3fa35fafb362a06b4d17cc1328" category="paragraph">このセクションでは、BlueXPの管理機能に関連する新機能(アカウント、コネクタ、クラウドプロバイダの資格情報など)について説明します。</block>
   <block id="3831fedd132ba9d729ab12b97bb43833" category="paragraph">Cloud Volumes Service for Google CloudをBlueXPから直接管理できるようになりました。</block>
-  <block id="d88ec9141ca0f799220b70e6188c8c33" category="section-title">2022年10月24日（バージョン2.1）</block>
-  <block id="51d465a61bb0f252b570a31acdf628be" category="section-title">グローバルファイルキャッシュは、任意の数のライセンスで使用できるようになりました</block>
-  <block id="c4579941f945f9c013bc5d2b34483751" category="paragraph">これまでに必要だった10個のライセンス、つまり30 TBのストレージは削除されました。Global File Cacheライセンスは、3 TBのストレージごとに1つずつ発行されます。</block>
-  <block id="a05df94e25a3fdf3c6809915be7db21b" category="section-title">オフラインライセンス管理サーバを使用するためのサポートが追加されました</block>
-  <block id="9952545455211dde3dd54a36ff1e0fd9" category="paragraph">オフラインまたはダークサイトのライセンス管理サーバ（LMS）は、LMSがライセンスソースを使用したライセンス検証用のインターネット接続を備えていない場合に最も便利です。初期設定時には、インターネット接続とライセンスソースへの接続が必要です。設定が完了すると、LMSインスタンスが暗くなることがあります。ライセンスの継続的な検証のために、すべてのエッジ/コアはLMSと接続されている必要があります。</block>
-  <block id="c0e3f3bf15a62c059b94a8ed402b05a1" category="section-title">エッジインスタンスは、追加の同時ユーザーをサポートできます</block>
-  <block id="dac6d17442feba1d57f29d8031c05963" category="paragraph">1つのグローバルファイルキャッシュエッジインスタンスは、専用の物理エッジインスタンス1つにつき最大500ユーザー、専用の仮想配置で最大300ユーザーを処理できます。使用可能なユーザの最大数は、それぞれ400と200です。</block>
-  <block id="7954886e5818e91e397e0ca331d15d48" category="section-title">Optimus PSMを強化し、クラウドライセンスを構成</block>
-  <block id="3bf86cee85be3992be11d6813b4f6b14" category="section-title">Optimus UI（Edge Configuration）のEdge Sync機能が強化され、接続されているすべてのクライアントが表示されるようになりました</block>
   <block id="0b17baeba205d071cc0142cf4aba9b76" category="paragraph">StorageGRID システムをBlueXPから直接検出できるようになりました。StorageGRID を検出すると、ハイブリッドマルチクラウド全体のデータを包括的に把握できます。</block>
   <block id="88268cce7d1b83c765c3f7010df80df5" category="section-title">2022年11月6日</block>
-  <block id="6beb41a356d9287866f0b22c4b4eadcb" category="paragraph">BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します詳細については、を参照してください <block ref="1e9f4589e5d2713376df79f13fc9ba0a" category="inline-link-macro-rx"></block> 個々のサービスごと。</block>
   <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">2023年3月5日</block>
   <block id="eea1e3b9ecdd5e32692761a0a78b9463" category="section-title">2023年3月5日</block>
   <block id="3aea41413b60d0894823e739f01efcbb" category="paragraph">ユーザインターフェイスが改善され、ドキュメントのスクリーンショットが更新されました。</block>
@@ -461,9 +450,6 @@
   <block id="bb5b2f81c2aa7d8df9263c590efda3e6" category="section-title">追加のグループIDを[Open to Organization]として設定します。</block>
   <block id="617de59f0823cef046ababc40408cb92" category="inline-link">追加のグループIDを「組織にオープン」として追加</block>
   <block id="a6523313c047adabe12f8226b1c17a58" category="paragraph">グループに最初にその権限が設定されていなかった場合に、BlueXPの分類から直接、NFSのグループIDを「Open to Organization」とみなされるように設定できるようになりました。これらのグループIDが添付されているファイルおよびフォルダは、[Investigation Details]ページで[Open to Organization]として表示されます。方法を参照してください<block ref="1de46bddc056a512b561c93990312fff" category="inline-link-rx"></block>。</block>
-  <block id="4e1f7d458412b18adef0e5ff0db2eee8" category="section-title">2024年2月1日</block>
-  <block id="a409179aac0b12213b3fa77e0a22bd61" category="list-text">代替保存場所への仮想マシンのリストアのサポート</block>
-  <block id="9c75b0f26dddf07ed827e32aaf28bee9" category="list-text">データストアの保護解除のサポート</block>
   <block id="71dc9fd1ff423f10c9820171aaeabf3c" category="section-title">2024年3月4日（バージョン1.29）</block>
   <block id="2155776a968fa3c23d5147a57832435f" category="section-title">特定のデータソースディレクトリにあるスキャンデータを除外できるようになりました。</block>
   <block id="81e333e3a0fd82b01c14e8eb52437152" category="paragraph">BlueXPの分類で、特定のデータソースディレクトリにあるスキャンデータを除外する場合は、BlueXPの分類で処理する構成ファイルにこれらのディレクトリ名を追加します。この機能を使用すると、不要なディレクトリや、個人データの誤検出結果が返されるディレクトリのスキャンを回避できます。</block>
@@ -517,7 +503,6 @@
   <block id="9e599e81fbf58f35a4e8ea8d4d14b0f6" category="inline-link">ランサムウェアのアラートが検出された場合の対応の詳細</block>
   <block id="e3647ee6d2bf29ee74ee9f4e9ff4e201" category="list-text">*潜在的な攻撃を調査するための追加機能*:検出された潜在的な攻撃を調査するために、より多くのフォレンジックの詳細を表示できるようになりました。<block ref="707fb9c7332f6aa933e8445c28830d7a" category="inline-link-rx"></block>。</block>
   <block id="bda01efb679b0ca92bc4e76a23294328" category="inline-link">ランサムウェア攻撃からのリカバリの詳細（インシデントの中和後）</block>
-  <block id="1661fc233cecf8b9c070d8d398293283" category="list-text">*リカバリプロセス*。回復プロセスが強化されました。ボリューム単位、ワークロードのすべてのボリューム、またはボリュームからいくつかのファイルを1つのワークフローでリカバリできるようになりました。<block ref="a36a14eacaa464cdf2747d859c29de55" category="inline-link-rx"></block>。</block>
   <block id="8aea370efa0da7f8c985a03488d3b9a7" category="inline-link">BlueXPランサムウェア対策の詳細をご確認ください</block>
   <block id="41e5a42a8cc2023ceb0f8dd06cce7a27" category="paragraph"><block ref="5a80707c96309e25f4c73aee7d2327b1" category="inline-link-rx"></block>。</block>
   <block id="69483d973a063c873a5a66f6edcc241c" category="section-title">2023年10月6日</block>
@@ -541,24 +526,7 @@
   <block id="4ac5b49185bd4b8f8b0ef6b8869d149f" category="paragraph">AWSでは、Cloud Volumes ONTAP、メディエーター、コネクタがすべての機能でAmazon Instant Metadata Service v2（IMDSv2）をサポートするようになりました。IMDSv2では、脆弱性に対する保護が強化されています。以前はIMDSv1のみがサポートされていました。</block>
   <block id="7fcd14ee7d62b2a6f712b7ed775cdbc3" category="inline-link-macro">既存のコネクタを管理するためのBlueXPのセットアップと管理に関するドキュメント</block>
   <block id="6aec236f70c9d11e5073fa187bf36fd1" category="paragraph">セキュリティポリシーで必要な場合は、IMDSv2を使用するようにEC2インスタンスを設定できます。手順については、を参照してください <block ref="437fb94a00c6c9b10a9ad9095b6680bc" category="inline-link-macro-rx"></block>。</block>
-  <block id="fe8fcef9d0fdb328fbc812d42b4ca2e7" category="section-title">2024年3月26日</block>
-  <block id="3c16167b6c091087d9151aee3f52b379" category="section-title">プライベートモードリリース（3.9.38）</block>
-  <block id="b7070cb9b31e0d402b92f5c1d4efa401" category="paragraph">BlueXPで新しいプライベートモードリリースが見積もり可能になりました。このリリースには、プライベートモードでサポートされる次のバージョンのBlueXPサービスが含まれています。</block>
-  <block id="c2ba7e785c49050f48da9aacc45c2b85" category="cell">サービス</block>
-  <block id="b742a03d26cdd3a73daedbab8ce0898b" category="cell">含まれるバージョン</block>
-  <block id="edf21d7ecb364e8210ddd3dfaeca6fbf" category="cell">コネクタ</block>
-  <block id="0eff5e73304fb938a09633bd1b0cec70" category="cell">3.9.38</block>
   <block id="2d67cd05b64a3416bc8bae12b4ef5685" category="cell">2024年3月12日</block>
-  <block id="9ee51d75827fcf6a985ed40e7418fea6" category="cell">2024年3月4日</block>
-  <block id="20f71c84b5a0e44a35f3a8c4207c85a9" category="cell">Cloud Volumes ONTAP管理</block>
-  <block id="900dd8f50d2294930a102034524e26b7" category="cell">オンプレミスのONTAPクラスタ管理</block>
-  <block id="ec34e91164e39c9df1bfb906cff07162" category="paragraph">この新しいリリースは、NetApp Support Siteからダウンロードできます。</block>
-  <block id="a52b83d1b32a42f8a6aff3771048ba3c" category="inline-link">プライベートモードの詳細</block>
-  <block id="cdeb608610a882c24cefcb7daa878a1d" category="list-text"><block ref="cdeb608610a882c24cefcb7daa878a1d" category="inline-link-rx"></block></block>
-  <block id="8156defa13b44a36e67cab400c3b8bd4" category="inline-link">BlueXPのプライベートモードでの利用を開始する方法</block>
-  <block id="1183e1b8915696495b308d0bdfa59bd4" category="list-text"><block ref="1183e1b8915696495b308d0bdfa59bd4" category="inline-link-rx"></block></block>
-  <block id="b29a186d936b198dcafa3a0308485e2c" category="inline-link">プライベートモードの使用時にコネクタをアップグレードする方法について説明します。</block>
-  <block id="4e208e7f54024bf731fae02025ce34d9" category="list-text"><block ref="4e208e7f54024bf731fae02025ce34d9" category="inline-link-rx"></block></block>
   <block id="e713d6072685bf32f36150e9f76ce0c1" category="section-title">クラウドバックアップからオンプレミスのONTAPボリュームへの「迅速なリストア」が可能</block>
   <block id="5a9ee632cba573d0f7355f7d12d908ca" category="paragraph">クラウドストレージからオンプレミスのONTAPデスティネーションボリュームへのボリュームの_クイックリストア_を実行できるようになりました。以前は、Cloud Volumes ONTAPシステムにのみクイックリストアを実行できました。迅速なリストアは、ボリュームへのアクセスをできるだけ早く提供する必要があるディザスタリカバリ環境に最適です。迅速なリストアは、フルボリュームリストアよりもはるかに高速です。クラウドSnapshotからONTAPデスティネーションボリュームにメタデータをリストアします。ソースは、AWS S3、Azure Blob、Google Cloud Services、NetApp StorageGRIDのいずれかです。</block>
   <block id="07f61dfe973846130f7066ef7bc459ef" category="paragraph">オンプレミスのONTAPデスティネーションシステムでONTAPバージョン9.14.1以降が実行されている必要があります。</block>
@@ -654,4 +622,62 @@
   <block id="6a050b5b1c64124ef335bf9dbf64e03f" category="paragraph">すべての地域のリストについては、<block ref="5328f934c7a30e2b8b67732fc162a525" category="inline-link-rx"></block>。</block>
   <block id="ee94ea94211470599a81d49f8c4b586f" category="section-title">ボリュームテンプレートとタグのサポートの廃止</block>
   <block id="96b0b2a19dd9deb6b94e53f2e29f4387" category="paragraph">これ以降、テンプレートからボリュームを作成したり、ボリュームのタグを編集したりすることはできません。これらの操作はBlueXP修正サービスに関連付けられていましたが、このサービスは廃止されました。</block>
+  <block id="c13da60647a8b44e99d5352b1e2338e4" category="summary">BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します完全なリリース履歴については、各サービスの完全なリリースノートを参照してください。</block>
+  <block id="0a9bbb6e81dd21b77886235f2ce33af9" category="paragraph">BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します完全なリリース履歴については、 <block ref="1e9f4589e5d2713376df79f13fc9ba0a" category="inline-link-macro-rx"></block> 個々のサービスごと。</block>
+  <block id="188fd7f75e50a8a882a75c15dcb630a1" category="section-title">2024年5月17日</block>
+  <block id="81f58b484d838909a5fedb3486f3a8e2" category="section-title">コネクタ3.9.40</block>
+  <block id="32d1e3d3ebe78d37dbdfcf9933b0cf90" category="paragraph">今回のリリースのBlueXP Connectorには、オペレーティングシステムの追加サポート、セキュリティの若干の改善、バグの修正が含まれています。</block>
+  <block id="94f95548313e6f5528b5011a7d10e19f" category="paragraph">現時点では、3.9.40リリースは標準モードと制限モードで使用できます。</block>
+  <block id="a5dacfcdb1adb3167b081f091b368732" category="section-title">RHEL 8および9のサポート</block>
+  <block id="9788cee19c4b5d5971c7a99e340846e8" category="paragraph">このコネクタは、次のバージョンのRed Hat Enterprise Linux with _new_connectorインストールを実行しているホストでサポートされるようになりました。</block>
+  <block id="f335f00e1188cffe57c3d9416ce23c84" category="list-text">8.6～8.9</block>
+  <block id="d80ef147e70626ef64e723b33860d715" category="list-text">9.1から9.3</block>
+  <block id="00ed051332ed28fe5b1ab0a4ae7aa4f6" category="paragraph">これらのオペレーティングシステムでは、コンテナオーケストレーションツールとしてPodmanが必要です。</block>
+  <block id="3d007e1710eb9efcb8c51296efc8eb4f" category="paragraph">Podmanの要件、既知の制限事項、サポートされるオペレーティングシステムの概要、RHEL 7ホストを使用している場合の対処方法、開始方法などを確認しておく必要があります。</block>
+  <block id="4d3035dcb7b114e2c87c82e5ae7e626c" category="inline-link">コネクタを使用したRHEL 8および9のサポートについて</block>
+  <block id="5fb3739fbc4ea4c4f6ecf12db77ae604" category="paragraph"><block ref="a34a36a25f711a4d3e7acd813af66ea1" category="inline-link-rx"></block>。</block>
+  <block id="d9fb1337dfb6a869dd0a2630e14b4543" category="section-title">RHEL 7およびCentOS 7のサポート終了</block>
+  <block id="16051bd228f38a4877773f8f795d59a9" category="paragraph">2024年6月30日に、RHEL 7はメンテナンス終了（EOM）になり、CentOS 7はサポート終了（EOL）になります。NetAppは、これらのLinuxディストリビューションでのコネクタのサポートを2024年6月30日まで継続します。</block>
+  <block id="cc33fea72b72b4631424774600dd1785" category="inline-link">RHEL 7またはCentOS 7で既存のコネクタが実行されている場合の対処方法について説明します。</block>
+  <block id="ab95c14710d4a4d5d91375c4a1b3315b" category="paragraph"><block ref="079fd36262e0750841aa2ea8902cdc7a" category="inline-link-rx"></block>。</block>
+  <block id="4cc078461f1763cdb13efec9da8a6a3f" category="section-title">AWS権限の更新</block>
+  <block id="2f4b86d46e79a7a3f22d1c784c12799e" category="paragraph">3.9.38リリースでは、AWSのコネクタポリシーが更新され、「EC2：DescriptionAvailabilityZones」権限が追加されました。Cloud Volumes ONTAPでAWSローカルゾーンをサポートするには、この権限が必要になりました。</block>
+  <block id="7595af352964f2b06057ab6310fdff44" category="inline-link">コネクタのAWS権限を表示する</block>
+  <block id="bad85d32b5f3e46e956809c13b502817" category="list-text"><block ref="7e42187d6259f740c2e1915df5429efc" category="inline-link-rx"></block>。</block>
+  <block id="364a4ff52cd92f16374019cdedf6b91c" category="inline-link">AWSローカルゾーンのサポートに関する詳細情報</block>
+  <block id="3b1699510f585646e0c8a73fa1b820ae" category="list-text"><block ref="3b1699510f585646e0c8a73fa1b820ae" category="inline-link-rx"></block></block>
+  <block id="701c188698e8adc8e0dffa2a107bf9f4" category="section-title">2024年4月30日</block>
+  <block id="24c8d17b3d2e5d56e90675c0755252e0" category="section-title">ランサムウェアの定期的なスキャンを有効または無効にする機能</block>
+  <block id="1d5d9f598ed0ef9d579321fc5f2dea76" category="paragraph">以前は、ランサムウェアスキャンを有効または無効にすることはできましたが、スケジュールされたスキャンではこれを行うことはできませんでした。</block>
+  <block id="c05a6e1c401ef496decb0a82c8e569e3" category="paragraph">このリリースでは、[Advanced Settings]ページのオプションを使用して、最新のSnapshotコピーに対してスケジュールされたランサムウェアスキャンを有効または無効にできるようになりました。有効にすると、スキャンはデフォルトで毎週実行されます。このスケジュールを数日または数週間に変更したり、無効にしたりすることで、コストを節約できます。</block>
+  <block id="70d2aaea6b19d033a76faef23053a806" category="section-title">2024年5月6日（バージョン2.4）</block>
+  <block id="33ac6c6578bc8387b0ba6aaebc3f939a" category="paragraph">このリリースでは、いくつかのマイナーな問題が修正され更新されたソフトウェアパッケージは次のURLから入手できます。<block ref="89fd140dfa15c4587519958830d6000f" category="inline-link-rx"></block>。</block>
+  <block id="5e76a23879d0e6f7325f31678e623972" category="section-title">2024年5月14日</block>
+  <block id="8607002d4574854ad87d556bd31731f4" category="paragraph">このリリースは、BlueXPランサムウェア対策の一般提供リリースです。次の更新が含まれています。</block>
+  <block id="729537ed9af29f0ad92ade6f8dd22b9b" category="list-text">*ライセンスの更新*: 90日間の無償トライアルにサインアップするか、Amazon Web Services Marketplaceで1年、2年、3年の従量課金制サブスクリプションを購入するか、お客様所有のNetAppライセンスを使用できます。</block>
+  <block id="a0f248fceae83613cf99c651e3c24be5" category="inline-link">ライセンスの設定に関する詳細情報</block>
+  <block id="17f6ba003825118fb67d19c8c26be794" category="paragraph"><block ref="36f38233d2460bc4dacb6b4bd4fd46ab" category="inline-link-rx"></block>。</block>
+  <block id="66d53b21a4f1cbecf308bbb38b047ea6" category="list-text">* CIFSプロトコル*：NFSプロトコルとCIFSプロトコルの両方を使用して、AWSの作業環境でオンプレミスのONTAPとCloud Volumes ONTAPがサポートされるようになりました。以前のリリースでは、NFSプロトコルのみがサポートされていました。</block>
+  <block id="eddae5934fb0a404d8d56b1d10d268b5" category="list-text">*ワークロードの詳細*：このリリースでは、ワークロード保護の評価を改善するために、[保護]ページのワークロード情報に詳細が表示されるようになりました。ワークロードの詳細から、ワークロード名の変更、ワークロードの重要度の変更、現在割り当てられているポリシーの確認、設定されているバックアップデスティネーションの確認を行うことができます。</block>
+  <block id="e959f6b23824b1ea02ac36779938412d" category="inline-link">[保護]ページでのワークロードの詳細の表示に関する詳細を確認する</block>
+  <block id="f51a97d186491b354b8046c13692a070" category="paragraph"><block ref="59ecb8b9925d0039512c75c461b0b86c" category="inline-link-rx"></block>。</block>
+  <block id="6ec902543fa94dd3c38bb21e7402c153" category="list-text">*アプリケーションと整合性のある保護とリカバリ*：NetApp SnapCenterソフトウェアを使用してアプリケーションと整合性のある保護を実行し、SnapCenter Plug-in for VMware vSphereを使用してVMと整合性のある保護を実行できるようになりました。休止状態と整合性のある状態を実現して、リカバリが必要になった場合のデータ損失を回避できます。リカバリが必要な場合は、アプリケーションまたはVMを以前の状態および最後のトランザクションにリストアできます。</block>
+  <block id="ee689c35077ba98079c7b0a4f05a6dc5" category="inline-link">ワークロードの保護に関する詳細情報</block>
+  <block id="928fea0953d8c6c88422d673f9e9c5e3" category="paragraph"><block ref="140488255a280124a6e845e64767d54f" category="inline-link-rx"></block>。</block>
+  <block id="d041207e4dcdfed1283b155492e91f0e" category="list-text">*ランサムウェア対策戦略*：ワークロードにSnapshotポリシーまたはバックアップポリシーがない場合は、ランサムウェア対策戦略を作成できます。この戦略には、このサービスで作成する次のポリシーを含めることができます。</block>
+  <block id="4c0abf2d4c54820b8d33061abaf30759" category="list-text">スナップショットポリシー</block>
+  <block id="7759a4720271a1ab3b4e6b1c36a67058" category="list-text">バックアップポリシー</block>
+  <block id="bdadcbba411cf56b92967e5b0248cc77" category="list-text">検出ポリシー</block>
+  <block id="f536bb08e409e96a3949c3f12e8e392b" category="list-text">*脅威検出を有効にする*は、サードパーティのセキュリティおよびイベント管理（SIEM）システムを使用して利用できるようになりました。ダッシュボードに「脅威検出を有効にする」という新しい推奨事項が表示されるようになりました。これは、[設定]ページで設定できます。</block>
+  <block id="10bc4591a9635a8100fbcf18a580cc29" category="inline-link">設定オプションの設定の詳細</block>
+  <block id="119863034bfc7ae6b0e2d324ec3da549" category="paragraph"><block ref="fa172403ab7c635a07324b1168d8ce19" category="inline-link-rx"></block>。</block>
+  <block id="81a40dc02620f19a1a34a9edcd87f471" category="list-text">*新しい検出ステータス*が[Protection]ページに表示され、ワークロードに適用されたランサムウェアの検出ステータスが示されます。</block>
+  <block id="af255af71067c5961f87ea2321b69295" category="inline-link">ワークロードの保護と保護ステータスの表示に関する詳細情報</block>
+  <block id="df142910ec0f256cf3fe94834edd616c" category="paragraph"><block ref="2db9e604787e93c0ca53ebeb4c1a3e79" category="inline-link-rx"></block>。</block>
+  <block id="2a09f9149501945b53f1e79e28c98d97" category="list-text">*[Dashboard]、[Protection]、[Alerts]、[Recovery]の各ページからCSVファイル*をダウンロードします。</block>
+  <block id="ca8c09727e8b36d15981c9455d697516" category="inline-link">ダッシュボードおよびその他のページからのCSVファイルのダウンロードに関する詳細情報</block>
+  <block id="db81907bf6476a20c8b94b94556f627f" category="paragraph"><block ref="29cf990dea934b0f767d4567074aaff5" category="inline-link-rx"></block>。</block>
+  <block id="858c0eb001d380e6c1276da7ebebbd32" category="inline-image-macro">[垂直アクション]オプション</block>
+  <block id="cd336e06464d96c3b5ece4caa37cc727" category="list-text">*ドキュメントを表示*リンクがUIに含まれるようになりました。このドキュメントには、Dasbhoard vertical * Actions *からアクセスできます。 <block ref="03b376f37073f981f38dc4d6f450c046" category="inline-image-macro-rx" type="image"></block> オプション「What's new」*を選択して詳細をリリースノートに表示するか、*「Documentation」*を選択してBlueXPランサムウェア対策ドキュメントのホームページを表示します。</block>
+  <block id="d8689490b3697bc11eb889288d616515" category="list-text">*リカバリプロセス*。回復プロセスが強化されました。1つのワークフローで、ボリューム単位、ワークロードのすべてのボリューム、またはボリュームからいくつかのファイルをリカバリできるようになりました。<block ref="a36a14eacaa464cdf2747d859c29de55" category="inline-link-rx"></block>。</block>
 </blocks>
