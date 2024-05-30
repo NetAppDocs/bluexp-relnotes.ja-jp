@@ -482,6 +482,12 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 2024年6月2日
+
+BlueXPのコピーと同期サービスが更新され、いくつかのバグが修正されました。データブローカーも更新され、セキュリティの更新が適用されました。新しいデータブローカーのバージョンは1.0.52です。
+
+
+
 === 2024年4月8日
 
 
@@ -503,32 +509,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#linux-
 ユーザはregexを使用してディレクトリをフィルタリングできるようになりました。
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#create-other-types-of-sync-relationships["*ディレクトリを除外*機能の詳細については、こちらを参照してください。"]
-
-
-
-=== 2023年11月26日
-
-
-
-==== Azure Blobに対するコールドストレージクラスのサポート
-
-同期関係の作成時にコールドストレージのAzure Blob階層を使用できるようになりました。
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html["同期関係の作成について詳しくは、こちらをご覧ください。"]
-
-
-
-==== AWSデータブローカーでのTel Avivリージョンのサポート
-
-AWSでデータブローカーを作成する際に、テルアビブがサポートされるリージョンになりました。
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#creating-the-data-broker["AWSでデータブローカーを作成する方法については、こちらをご覧ください"]。
-
-
-
-==== データブローカーのノードバージョンの更新
-
-これで、すべての新しいデータブローカーでノードバージョン21.2.0が使用されます。この更新プログラムと互換性のないデータブローカー（CentOS 7.0やUbuntu Server 18.0など）は、BlueXPのコピーと同期では使用できなくなります。
 
 
 
@@ -783,6 +763,16 @@ link:https://docs.netapp.com/us-en/bluexp-economic-efficiency/get-started/intro.
 
 
 
+=== 2024年5月31日
+
+NetAppは、2024年5月31日をもってNetAppグローバルファイルキャッシュの販売終了（EOA）を発表しました。EOAは、すべてのNetAppグローバルファイルキャッシュ製品に影響します。これには、スタンドアロンのGlobal File Cacheソフトウェアサブスクリプションや、NetApp Cloud Volume Edge Cacheと呼ばれるNetApp Cloud Volumes ONTAPにバンドルされたソリューションが含まれます。
+
+NetAppは、既存のお客様に対するこれらの製品のサポートを最低3年間継続します。 https://mysupport.netapp.com/info/communications/CPC-00578.html["NetApp Global File Cacheの販売終了に関する詳細を確認する"^]。
+
+また、BlueXPユーザインターフェイスからGlobal File Cacheのコンポーネントを有効化、導入、管理する機能が削除されました。
+
+
+
 === 2024年5月6日（バージョン2.4）
 
 このリリースでは、いくつかのマイナーな問題が修正され更新されたソフトウェアパッケージは次のURLから入手できます。 https://docs.netapp.com/us-en/bluexp-edge-caching/download-gfc-resources.html#download-required-resources["このページです"]。
@@ -792,28 +782,6 @@ link:https://docs.netapp.com/us-en/bluexp-economic-efficiency/get-started/intro.
 === 2023年8月1日（バージョン2.3）
 
 このリリースでは、に記載されている問題が修正されています https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["修正された問題"]。更新されたソフトウェアパッケージは、から入手できます https://docs.netapp.com/us-en/bluexp-edge-caching/download-gfc-resources.html#download-required-resources["このページです"]。
-
-
-
-=== 2023年4月5日（バージョン2.2）
-
-このリリースでは、以下に示す新機能が提供されます。また、に記載されている問題も修正されています https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["修正された問題"]。
-
-
-
-==== Google Cloudに導入されたCloud Volumes ONTAP システムでグローバルファイルキャッシュがサポートされます
-
-Google CloudにCloud Volumes ONTAP システムを導入すると、新しい「エッジキャッシュ」ライセンスが利用可能になります。Cloud Volumes ONTAP システムの購入済み容量3TiBにつき、Global File Cache Edgeシステムを1つ導入できます。
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages["Edge Cacheライセンスパッケージの詳細については、こちらをご覧ください。"]
-
-
-
-==== セットアップウィザードとGFC設定UIが拡張され、ネットアップライセンスの登録が実行されるようになりました
-
-
-
-==== Optimus PSMが拡張され、Edge Sync機能が構成されます
 
 
 

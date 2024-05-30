@@ -51,7 +51,6 @@
   <block id="a720f7f5208abaac19d4db46d3bc0a7b" category="inline-link">修正された問題</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">詳細はこちら。</block>
-  <block id="6a749e3d1bafd02cdf9a303ba6375e66" category="inline-link">Edge Cacheライセンスパッケージの詳細については、こちらをご覧ください。</block>
   <block id="eb3b05e2bcc0acdca8f3706dc6168810" category="inline-link-macro">ストレージクラスを定義する</block>
   <block id="b42dff6de52c55fe0d6831817d6b309d" category="section-title">ONTAP のFSXをデータソースとして使用します</block>
   <block id="0f8ffeac5211fc4e0dfb43c430753ef2" category="paragraph">Amazon FSX for ONTAP ファイルシステムから次のデスティネーションにデータをレプリケートできるようになりました。</block>
@@ -91,11 +90,6 @@
   <block id="7786076739da628161f45de338cd6e69" category="inline-link-macro">Astra Tridentをアンインストールします</block>
   <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">[ライセンス]タブが削除されました</block>
   <block id="66a0b4752150538292b81c073ca0b83b" category="section-title">階層化タブの名前が変更され、内容が更新されました</block>
-  <block id="e0feab0ee26165da9cddab198d1f1422" category="section-title">2023年4月5日（バージョン2.2）</block>
-  <block id="b1bdb4b30cdf01fdd4fc306c24b3e449" category="section-title">Google Cloudに導入されたCloud Volumes ONTAP システムでグローバルファイルキャッシュがサポートされます</block>
-  <block id="a92c52030822934c670502facf8a8f31" category="paragraph">Google CloudにCloud Volumes ONTAP システムを導入すると、新しい「エッジキャッシュ」ライセンスが利用可能になります。Cloud Volumes ONTAP システムの購入済み容量3TiBにつき、Global File Cache Edgeシステムを1つ導入できます。</block>
-  <block id="89960279d43d6d504afb45e5a8dff137" category="section-title">セットアップウィザードとGFC設定UIが拡張され、ネットアップライセンスの登録が実行されるようになりました</block>
-  <block id="402a1502f5c39fb55ca79d59e3184a34" category="section-title">Optimus PSMが拡張され、Edge Sync機能が構成されます</block>
   <block id="ae74e3db3615f676968300b7cc6e8ae1" category="paragraph">運用の耐障害性は、アラートとイベントを分析してサービスとソリューションの健全性、アップタイム、パフォーマンスを維持するのに役立つサービスです。</block>
   <block id="6d924727c00a77a63749e2f8aa0860d4" category="summary">このリリースノートでは、BlueXPに含まれるクラウドサービスに関する最新の機能強化について説明します。個々のサービスごとにリリースノートの全セットへのリンクがあります。</block>
   <block id="bb50e2459e4e016aa4b14a56adb2358f" category="inline-link">セットアップと管理</block>
@@ -151,8 +145,6 @@
   <block id="50677882efe321e7fec19456f58faadc" category="paragraph"><block ref="536037d368170de6e6fbdb576d167663" category="inline-link-rx"></block>。</block>
   <block id="9cb4f066718ada1a845659033318004c" category="paragraph"><block ref="19c68668f7d6a95b64e909c5da1cb9b0" category="inline-link-rx"></block>。</block>
   <block id="16364877a101c1787c34f2fe604ef9e9" category="paragraph"><block ref="16364877a101c1787c34f2fe604ef9e9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="77474efd411b7748abfa1c88a3e0137c" category="paragraph"><block ref="77474efd411b7748abfa1c88a3e0137c" category="inline-link-rx"></block></block>
-  <block id="975b3327995267bde41cd6b4ce0c772d" category="paragraph">このリリースでは、以下に示す新機能が提供されます。また、に記載されている問題も修正されています<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>。</block>
   <block id="4e4ff5b7850bf0aae4966bf2353d2764" category="list-text">次の操作を実行できます。 <block ref="79330a9a9d35860d426f0d48c9f654a7" category="inline-link-macro-rx"></block> これは、TridentオペレータまたはBlueXPを使用してインストールしました。</block>
   <block id="08dbc554156c2764d1696fe55d768aed" category="paragraph">いつ <block ref="c5aa031d705396e63c7e52a97cf56f86" category="inline-link-macro-rx"></block>では、ブロックストレージやファイルシステムストレージに対して、ストレージクラスの経済性を実現できます。</block>
   <block id="51959da1122b405c90c18be52282f18f" category="paragraph"><block ref="1bc1e485e9f9d41e344f0d10f6ad3511" category="inline-link-rx"></block>。</block>
@@ -431,17 +423,6 @@
   <block id="35214f9b3df21ed35db22cb765a9b147" category="section-title">2023年11月13日</block>
   <block id="c14af667110ffb482c0adaaed623dbe2" category="paragraph">SMB / CIFSプロトコルを使用するボリュームのレポートを作成できるようになりました。</block>
   <block id="563cbb5befcc35d67fb204c94be0bffb" category="summary">BlueXPサービスごとにリリースノートをすべて確認できます。</block>
-  <block id="a76b69f0eac891a6dad210c8c894f70c" category="section-title">2023年11月26日</block>
-  <block id="5dbbe39e8d4eedbcb5aafdf7e0e66a80" category="section-title">Azure Blobに対するコールドストレージクラスのサポート</block>
-  <block id="2be7473e47d2102f9d51ff1a3cd36305" category="paragraph">同期関係の作成時にコールドストレージのAzure Blob階層を使用できるようになりました。</block>
-  <block id="6e90305f3ad22c32d20c662a0bb06726" category="inline-link">同期関係の作成について詳しくは、こちらをご覧ください。</block>
-  <block id="2bfe6803528ed3d1b4758e7bc6eb4cb6" category="paragraph"><block ref="2bfe6803528ed3d1b4758e7bc6eb4cb6" category="inline-link-rx"></block></block>
-  <block id="e35f035cdd0e53d6ac8e57e89c9a3994" category="section-title">AWSデータブローカーでのTel Avivリージョンのサポート</block>
-  <block id="bc601240bd77a257f82ad29245da02ee" category="paragraph">AWSでデータブローカーを作成する際に、テルアビブがサポートされるリージョンになりました。</block>
-  <block id="f296e44bbf15ea94dfcce2d2a4649e6d" category="inline-link">AWSでデータブローカーを作成する方法については、こちらをご覧ください</block>
-  <block id="48938ec2ae208dc89827f9e55c8f1c41" category="paragraph"><block ref="42f00e873b388cac01d84d3ba1605497" category="inline-link-rx"></block>。</block>
-  <block id="e24f754057dce2d0f9791240fec7d494" category="section-title">データブローカーのノードバージョンの更新</block>
-  <block id="a020a6afcaa5c0d333b5cfb93c8d4d79" category="paragraph">これで、すべての新しいデータブローカーでノードバージョン21.2.0が使用されます。この更新プログラムと互換性のないデータブローカー（CentOS 7.0やUbuntu Server 18.0など）は、BlueXPのコピーと同期では使用できなくなります。</block>
   <block id="e057979f7791f37ec4a8704baa00923d" category="section-title">監視リスト</block>
   <block id="71dc9fd1ff423f10c9820171aaeabf3c" category="section-title">2024年3月4日（バージョン1.29）</block>
   <block id="2155776a968fa3c23d5147a57832435f" category="section-title">特定のデータソースディレクトリにあるスキャンデータを除外できるようになりました。</block>
@@ -698,4 +679,11 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">ネットアップコミュニティ</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXPのブログ</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">クラウドに関する Web セミナー</block>
+  <block id="6849ea484f5664c887acc6f1ff990dfd" category="section-title">2024年6月2日</block>
+  <block id="cfa477f3b89d95c12ff30d6390b89dd9" category="paragraph">BlueXPのコピーと同期サービスが更新され、いくつかのバグが修正されました。データブローカーも更新され、セキュリティの更新が適用されました。新しいデータブローカーのバージョンは1.0.52です。</block>
+  <block id="fc31bdab270f34f9dbc1c826f879ec7a" category="section-title">2024年5月31日</block>
+  <block id="a38c9755f3e363e5fcc012f982f27744" category="paragraph">NetAppは、2024年5月31日をもってNetAppグローバルファイルキャッシュの販売終了（EOA）を発表しました。EOAは、すべてのNetAppグローバルファイルキャッシュ製品に影響します。これには、スタンドアロンのGlobal File Cacheソフトウェアサブスクリプションや、NetApp Cloud Volume Edge Cacheと呼ばれるNetApp Cloud Volumes ONTAPにバンドルされたソリューションが含まれます。</block>
+  <block id="fe85d677b887f84abb319ef4415495b6" category="inline-link">NetApp Global File Cacheの販売終了に関する詳細を確認する</block>
+  <block id="84037427a2c8d669a1e7b95e23492189" category="paragraph">NetAppは、既存のお客様に対するこれらの製品のサポートを最低3年間継続します。<block ref="c260bd0a32453373dfa997871e7c7312" category="inline-link-rx"></block>。</block>
+  <block id="ce6cf9ea6138c79aab74ff110d376b23" category="paragraph">また、BlueXPユーザインターフェイスからGlobal File Cacheのコンポーネントを有効化、導入、管理する機能が削除されました。</block>
 </blocks>
