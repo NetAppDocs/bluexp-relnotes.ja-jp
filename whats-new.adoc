@@ -85,7 +85,7 @@ BlueXPプラットフォームの一部である クラウド サービス の�
 
 ===== RHEL 8および9のサポート
 
-このコネクタは、次のバージョンのRed Hat Enterprise Linux with _new_connectorインストールを実行しているホストでサポートされるようになりました。
+BlueXPを標準モードまたは制限モードで使用している場合、次のバージョンのRed Hat Enterprise Linux with _new_connectorを実行しているホストでコネクタがサポートされるようになりました。
 
 * 8.6～8.9
 * 9.1から9.3
@@ -345,6 +345,48 @@ BlueXP Connectorバージョン3.9.40は、Red Hat Enterprise Linuxバージョ�
 
 
 
+=== 2024年6月5日（バージョン1.32）
+
+このリリースには、次の更新が含まれています。
+
+
+
+==== マッピングスキャンによるメタデータの収集
+
+マッピングスキャン中にファイルから次のメタデータが抽出され、Governance、Compliance、Investigationの各ダッシュボードに表示されます。
+
+* 作業環境
+* 作業環境のタイプ
+* ストレージリポジトリ
+* ファイルタイプ
+* 使用済み容量
+* ファイル数
+* ファイルサイズ
+* ファイル作成
+* ファイルの最終アクセス
+* ファイルの最終変更日
+* ファイル検出時刻
+* 権限の抽出
+
+
+
+
+==== タツシユホトノツイカテタ
+
+このリリースでは、マッピングスキャン中にGovernance、Compliance、およびInvestigationの各ダッシュボードに表示されるデータが更新されます。
+
+詳細については、 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["マッピングスキャンと分類スキャンの違い"]
+
+
+
+==== [Configuration]ページの新しい[Mapping status]列
+
+このリリースでは、[Configuration]ページに新しい[Mapping status]列が表示されるようになりました。新しい列では、マッピングが実行中、キューに登録済み、一時停止中、またはそれ以上であるかどうかを確認できます。
+
+ステータスの説明については、を参照してください https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html["スキャン設定を変更します"]。
+
+
+
 === 2024年5月15日（バージョン1.31）
 
 
@@ -390,26 +432,6 @@ BlueXPの分類は、オンプレミスのRHEL 8または9ホストにコネク�
 インターネットにアクセスできるシステムにBlueXP分類を導入している場合は、システムが自動的にアップグレードされます。以前は、最後のユーザアクティビティから特定の時間が経過したあとにアップグレードが実行されていました。このリリースでは、現地時間が午前1時から午前5時の場合、BlueXPの分類が自動的にアップグレードされます。ローカル時間がこの時間外の場合は、最後のユーザアクティビティから特定の時間が経過したあとにアップグレードが実行されます。詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["インターネットにアクセスできるLinuxホストにインストールします"]。
 
 インターネットアクセスを使用せずにBlueXP分類を導入した場合は、手動でアップグレードする必要があります。詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html["インターネットアクセスのないLinuxホストにBlueXP分類をインストールする"]。
-
-
-
-=== 2024年3月4日（バージョン1.29）
-
-
-
-==== 特定のデータソースディレクトリにあるスキャンデータを除外できるようになりました。
-
-BlueXPの分類で、特定のデータソースディレクトリにあるスキャンデータを除外する場合は、BlueXPの分類で処理する構成ファイルにこれらのディレクトリ名を追加します。この機能を使用すると、不要なディレクトリや、個人データの誤検出結果が返されるディレクトリのスキャンを回避できます。
-
-https://docs.netapp.com/us-en/bluexp-classification/task-exclude-scan-paths.html["詳細はこちら。"]。
-
-
-
-==== 特大規模インスタンスのサポートが認定されました
-
-BlueXPの分類で2億5、000万を超えるファイルをスキャンする必要がある場合は、クラウド環境またはオンプレミス環境で特大規模なインスタンスを使用できます。このタイプのシステムは、最大5億個のファイルをスキャンできます。
-
-https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#using-a-smaller-instance-type["詳細はこちら。"]。
 
 
 
@@ -563,6 +585,16 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 
 
 == デジタルアドバイザ
+
+
+
+=== 2024年5月15日
+
+
+
+==== Sustainability Dashboard
+
+EシリーズシステムとStorageGRIDシステムでサステナビリティがサポートされるようになりました。これらのシステムのSustainabilityダッシュボードでは、推奨される対処方法と環境指標のリストを表示して、電力、直接的な炭素使用量、熱の予測を表示できます。詳細については、を参照してください link:https://docs.netapp.com/us-en/active-iq/BlueXP_sustainability_dashboard_overview.html["Sustainabilityダッシュボードの概要"^]。
 
 
 
