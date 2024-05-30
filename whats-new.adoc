@@ -214,6 +214,24 @@ BlueXP CanvasでAmazon S3バケットを表示できるようになりました�
 
 
 
+=== 2024年5月17日
+
+
+
+==== RHEL 8およびRHEL 9をオンプレミスコネクタに使用する場合の制限事項
+
+BlueXP Connectorバージョン3.9.40は、Red Hat Enterprise Linuxバージョン8および9の特定のバージョンをサポートしており、コネクタソフトウェアをRHEL 8または9ホストに手動でインストールする際に、場所に関係なく、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-private-mode.html#step-3-review-host-requirements["ホストの要件"^]。これらの新しいバージョンのRHELでは、DockerエンジンではなくPodmanエンジンが必要です。現時点では、BlueXPのバックアップとリカバリでPodmanエンジンを使用する場合には2つの制限があります。
+
+を参照してください https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-limitations.html["バックアップとリストアの制限事項"] を参照してください。
+
+次の手順には、新しいPodmanの手順が含まれています。
+
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-restart-backup.html["BlueXPのバックアップとリカバリを再開します"]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-backup-cbs-db-in-dark-site.html["ダークサイトでBlueXPのバックアップとリカバリのデータをリストア"]
+
+
+
+
 === 2024年4月30日
 
 
@@ -280,6 +298,18 @@ BlueXP CanvasでAmazon S3バケットを表示できるようになりました�
 
 
 
+=== 2024年5月15日（バージョン1.31）
+
+
+
+==== BlueXPではコアサービスとして分類を利用可能
+
+BlueXPのコア機能として、最大500TiBのスキャンデータを追加料金なしでBlueXPの分類を利用できるようになりました。分類ライセンスや有料サブスクリプションは必要ありません。今回の新バージョンでは、BlueXPの分類機能をNetAppストレージシステムのスキャンに重点を置いているため、一部のレガシー機能は、以前にライセンス料金を支払ったお客様のみが利用できます。これらのレガシー機能の使用は、有料契約が終了日に達すると期限切れになります。
+
+link:reference-free-paid.html["廃止された機能の詳細"]。
+
+
+
 === 2024年4月1日（バージョン1.30）
 
 
@@ -291,6 +321,8 @@ BlueXP CanvasでAmazon S3バケットを表示できるようになりました�
 次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があります。また、BlueXP分類バージョン1.30以降（Red Hat Enterprise Linuxバージョン8.8、9.0、9.1、9.2、9.3）が必要です。
 
 の詳細を確認してください https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["BlueXPの分類環境の概要"]。
+
+BlueXPの分類は、オンプレミスのRHEL 8または9ホストにコネクタをインストールする場合にサポートされます。RHEL 8または9ホストがAWS、Azure、Google Cloudにある場合はサポートされません。
 
 
 
@@ -334,23 +366,19 @@ https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.htm
 
 
 
-=== 2024年1月10日（バージョン1.27）
-
-
-
-==== 調査ページの結果に、項目の合計数に加えて合計サイズが表示されるようになりました。
-
-[Investigation]ページでフィルタ処理された結果に、ファイルの合計数に加えてアイテムの合計サイズが表示されるようになりました。これは、ファイルの移動、ファイルの削除などを行うときに役立ちます。
-
-
-
-==== 追加のグループIDを[Open to Organization]として設定します。
-
-グループに最初にその権限が設定されていなかった場合に、BlueXPの分類から直接、NFSのグループIDを「Open to Organization」とみなされるように設定できるようになりました。これらのグループIDが添付されているファイルおよびフォルダは、[Investigation Details]ページで[Open to Organization]として表示されます。方法を参照してください https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open.html["追加のグループIDを「組織にオープン」として追加"]。
-
-
-
 == Cloud Volumes ONTAP
+
+
+
+=== 2024年5月17日
+
+
+
+==== Amazon Web Servicesのローカルゾーンのサポート
+
+Cloud Volumes ONTAP HA環境でAWSローカルゾーンがサポートされるようになりました。AWSローカルゾーンは、ストレージ、コンピューティング、データベース、その他の一部のAWSサービスが大都市や業界の近くに配置されているインフラ環境です。
+
+HA環境でのAWSローカルゾーンの詳細については、を参照してください。 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha.html#aws-local-zones["AWSローカルゾーン"^]。
 
 
 
@@ -397,16 +425,6 @@ Azure for Cloud Volumes ONTAP 9.12.1 GA以降では、次のリージョンでHA
 AWSでは、Cloud Volumes ONTAP、メディエーター、コネクタがすべての機能でAmazon Instant Metadata Service v2（IMDSv2）をサポートするようになりました。IMDSv2では、脆弱性に対する保護が強化されています。以前はIMDSv1のみがサポートされていました。
 
 セキュリティポリシーで必要な場合は、IMDSv2を使用するようにEC2インスタンスを設定できます。手順については、を参照してください link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances["既存のコネクタを管理するためのBlueXPのセットアップと管理に関するドキュメント"^]。
-
-
-
-=== 2024年3月5日
-
-
-
-==== Cloud Volumes ONTAP 9.14.1 GA
-
-BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.14.1 General Availabilityリリースを導入、管理できるようになりました。
 
 
 
@@ -642,6 +660,21 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-license
 
 
 
+=== 2024年5月15日
+
+このBlueXPディザスタリカバリリリースには、次の更新が含まれています。
+
+* * VMwareワークロードのオンプレミスからオンプレミスへのレプリケーション*が、一般提供機能としてリリースされました。以前は、機能が制限されたテクノロジプレビューでした。
+* *ライセンスの更新*： BlueXPディザスタリカバリでは、90日間の無償トライアルに登録するか、Amazon Marketplaceで従量課金制（PAYGO）サブスクリプションを購入するか、NetApp営業担当またはNetApp Support Site（NSS）から取得したNetAppライセンスファイル（NLF）であるお客様所有のライセンスを使用（BYOL）することができます。
++
+BlueXPディザスタリカバリ用のライセンスのセットアップの詳細については、を参照してください。 link:../get-started/dr-licensing.html["ライセンスをセットアップする"]。
+
+
+
+https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["BlueXPディザスタリカバリの詳細"]。
+
+
+
 === 2024年3月5日
 
 これはBlueXPディザスタリカバリのGeneral Availabilityリリースであり、次の更新が含まれています。
@@ -697,30 +730,6 @@ BlueXPディザスタリカバリ用のライセンスのセットアップの�
 詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["レプリケーション計画の作成"]。
 
 
-
-
-
-=== 2024年1月11日
-
-今回のBlueXPディザスタリカバリプレビューリリースには、次の更新が含まれています。
-
-* このリリースでは、ダッシュボードから他のページの情報にすばやくアクセスできます。
-
-
-https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["BlueXPディザスタリカバリの詳細"]。
-
-
-
-=== 2023年10月20日
-
-今回のBlueXPディザスタリカバリプレビューリリースには、次の更新が含まれています。
-
-BlueXPディザスタリカバリを使用すると、オンプレミスのNFSベースのVMwareワークロードを、パブリッククラウドに加えてオンプレミスのNFSベースのVMware環境への災害から保護できます。BlueXPディザスタリカバリは、ディザスタリカバリ計画の完成をオーケストレーションします。
-
-
-NOTE: このプレビューサービスでは、NetAppは、一般提供前にサービスの詳細、内容、スケジュールを変更する権利を留保します。
-
-https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["BlueXPディザスタリカバリの詳細"]。
 
 
 
