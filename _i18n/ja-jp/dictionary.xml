@@ -683,4 +683,6 @@
   <block id="9863ce048fc9f300b1fbc248aa66783e" category="list-text">*ドキュメントを表示*リンクがUIに含まれるようになりました。このドキュメントには、[ダッシュボード][垂直]*[アクション]*オプションからアクセスできます <block ref="03b376f37073f981f38dc4d6f450c046" category="inline-image-macro-rx" type="image"></block> 。「What's new」*を選択して詳細をリリースノートに表示するか、*「Documentation」*を選択してBlueXPランサムウェア対策ドキュメントのホームページを表示します。</block>
   <block id="ea8652a0fce10e4424e5611e6298f09b" category="list-text">*設定オプション*：BlueXPランサムウェア対策設定でバックアップ先を設定できるようになりました。</block>
   <block id="01a9b44907bcb1139b6868b9fe7073d0" category="paragraph">RHEL 8.10のサポートは、コネクタの3.9.40リリースから開始されました。</block>
+  <block id="9fc076386261ca80bfc67f7f57c641d3" category="section-title">2024年7月14日</block>
+  <block id="c18c776847f6d7588ddeab0632527364" category="paragraph">BlueXPのコピーおよび同期サービスとデータブローカーを更新し、いくつかのバグを修正しました。新しいデータブローカーのバージョンは1.0.53です。</block>
 </blocks>
