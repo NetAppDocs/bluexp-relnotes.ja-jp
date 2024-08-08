@@ -39,8 +39,6 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html["セットアッ
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/whats-new.html["Cloud Volumes Service for Google Cloud"^]
 * https://docs.netapp.com/us-en/bluexp-e-series/whats-new.html["Eシリーズシステム"^]
 * https://docs.netapp.com/us-en/bluexp-google-cloud-storage/whats-new.html["Google クラウドストレージ"^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/whats-new.html["Kubernetes クラスタ"^]
-* https://docs.netapp.com/us-en/bluexp-reports/release-notes/whats-new.html["移行レポート"^]
 * https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html["オンプレミスの ONTAP クラスタ"^]
 * https://docs.netapp.com/us-en/bluexp-storagegrid/whats-new.html["StorageGRID"^]
 
@@ -56,7 +54,6 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html["セットアッ
 * https://docs.netapp.com/us-en/bluexp-digital-wallet/index.html["デジタルウォレット"^]
 * https://docs.netapp.com/us-en/bluexp-disaster-recovery/release-notes/dr-whats-new.html["ディザスタリカバリ"^]
 * https://docs.netapp.com/us-en/bluexp-economic-efficiency/release-notes/whats-new.html["経済効率"^]
-* https://docs.netapp.com/us-en/bluexp-edge-caching/whats-new.html["エッジキャッシュ"^]
 * https://docs.netapp.com/us-en/bluexp-operational-resiliency/release-notes/whats-new.html["運用の耐障害性"^]
 * https://docs.netapp.com/us-en/bluexp-ransomware-protection/whats-new.html["ランサムウェアからの保護"^]
 * https://docs.netapp.com/us-en/bluexp-replication/whats-new.html["レプリケーション"^]
