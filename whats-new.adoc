@@ -24,6 +24,49 @@ BlueXPプラットフォームの一部である クラウド サービス の�
 
 
 
+=== 2024 年 8 月 8 日
+
+
+
+==== コネクタ3.9.43
+
+このリリースには、マイナーな改善、バグの修正、およびAzureの新しい権限の要件が含まれています。
+
+3.9.43リリースは、標準モードと制限モードで使用できます。
+
+
+
+==== CPUおよびRAMの要件の更新
+
+信頼性を高め、BlueXP  とコネクタのパフォーマンスを向上させるために、コネクタ仮想マシン用に追加のCPUとRAMが必要になりました。
+
+* CPU：8コアまたは8 vCPU（以前の要件は4）
+* RAM：32GB（以前の要件は14GB）
+
+
+この変更により、BlueXP  またはクラウドプロバイダのマーケットプレイスからコネクタを導入する際のデフォルトのVMインスタンスタイプは次のとおりです。
+
+* AWS：t3.2xlarge
+* Azure：Standard_D8s_v3
+* Google Cloud：n2-standard-8
+
+
+この要件は、新規および既存のコネクタに適用されます。
+
+
+
+==== RHEL 8.10でのPodman 4.9.4のサポート
+
+Red Hat Enterprise Linux 8.10ホストにコネクタをインストールする際に、Podmanバージョン4.9.4がサポートされるようになりました。
+
+
+
+==== アイデンティティフェデレーションのユーザ検証
+
+BlueXP  でアイデンティティフェデレーションを使用する場合は、BlueXP  に初めてログインした各ユーザが簡単なフォームに入力してIDを検証する必要があります。
+
+
+
 === 2024年7月31日
 
 
@@ -433,6 +476,38 @@ link:reference-free-paid.html["廃止された機能の詳細"]。
 
 
 
+=== 2024 年 8 月 8 日
+
+
+
+==== Edge Cacheライセンスパッケージの廃止
+
+Cloud Volumes ONTAPの今後の導入では、Edge Cache容量ベースのライセンスパッケージは利用できなくなります。ただし、APIを使用してこの機能を利用することはできます。
+
+
+
+==== AzureのFlash Cacheでサポートされる最小ONTAPバージョン
+
+AzureでFlash Cacheを設定するには、9.13.1 GA以上のONTAPバージョンが必要です。Azure用のCloud Volumes ONTAPシステムへのFlash Cacheの導入に使用できるのは、ONTAP 9.13.1 GA以降のバージョンのみです。
+
+サポートされる構成については、を参照してください https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#single-node-systems["Azure でサポートされる構成"^]。
+
+
+
+==== マーケットプレイスサブスクリプションの無償トライアルの廃止
+
+クラウドプロバイダのマーケットプレイスで提供される従量課金制サブスクリプションの30日間無償トライアルは、Cloud Volumes ONTAPではご利用いただけなくなります。あらゆるタイプのマーケットプレイスサブスクリプション（PAYGOまたは年間契約）の料金は、無料トライアル期間なしで最初の使用から有効になります。
+
+
+
+==== カナダ西部リージョンがAWSでサポートされるようになりました
+
+Cloud Volumes ONTAP 9.12.1 GA以降では、カナダ西部リージョンがAWSでサポートされるようになりました。
+
+すべてのリージョンのリストについては、を参照してください https://bluexp.netapp.com/cloud-volumes-global-regions["AWSのグローバルリージョンマップ"^]。
+
+
+
 === 2024年6月10日
 
 
@@ -457,40 +532,6 @@ Cloud Volumes ONTAP HA環境でAWSローカルゾーンがサポートされる�
 NOTE: AWSのローカルゾーンは、BlueXPを標準モードで使用している場合にサポートされます。現時点では、BlueXPを制限モードまたはプライベートモードで使用している場合、AWSローカルゾーンはサポートされていません。
 
 HA環境でのAWSローカルゾーンの詳細については、を参照してください。 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha.html#aws-local-zones["AWSローカルゾーン"^]。
-
-
-
-=== 2024年4月23日
-
-
-
-==== Azureの複数のアベイラビリティゾーン環境でサポートされる新しいリージョン
-
-Azure for Cloud Volumes ONTAP 9.12.1 GA以降では、次のリージョンでHA複数アベイラビリティゾーンの導入がサポートされるようになりました。
-
-* ドイツ・ウェスト・セントラル
-* ポーランド中部
-* 米国西部3
-* イスラエル中部
-* イタリア北部
-* カナダセントラル
-
-
-すべての地域のリストについては、 https://bluexp.netapp.com/cloud-volumes-global-regions["Azureのグローバルリージョンマップ"^]。
-
-
-
-==== ヨハネスブルグリージョンがGoogle Cloudでサポートされるようになりました
-
-ヨハネスブルグ地域 (`africa-south1` リージョン）は、Google Cloud for Cloud Volumes ONTAP 9.12.1 GA以降でサポートされるようになりました。
-
-すべての地域のリストについては、 https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloudのグローバルリージョンマップ"^]。
-
-
-
-==== ボリュームテンプレートとタグのサポートの廃止
-
-これ以降、テンプレートからボリュームを作成したり、ボリュームのタグを編集したりすることはできません。これらの操作はBlueXP修正サービスに関連付けられていましたが、このサービスは廃止されました。
 
 
 
@@ -1058,6 +1099,22 @@ https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["デ
 Cloud Volumes ONTAP システムまたはオンプレミスの ONTAP クラスタから ONTAP ファイルシステム用の Amazon FSX にデータをレプリケートできるようになりました。
 
 https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["データレプリケーションの設定方法について説明します"]。
+
+
+
+== ソフトウェアの更新
+
+
+
+=== 2024年8月7日
+
+
+
+==== ONTAPの更新
+
+BlueXP  ソフトウェアアップデートサービスは、リスクを軽減し、お客様がONTAPの機能を十分に活用できるようにすることで、シームレスなアップデートエクスペリエンスをユーザに提供します。
+
+詳細については、をご覧ください link:https://docs.netapp.com/us-en/bluexp-software-updates/get-started/software-updates.html["BlueXP  ソフトウェアアップデート"^]。
 
 
 
