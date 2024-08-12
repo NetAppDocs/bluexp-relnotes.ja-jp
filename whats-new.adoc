@@ -24,6 +24,30 @@ BlueXPプラットフォームの一部である クラウド サービス の�
 
 
 
+=== 2024年8月22日
+
+
+
+==== コネクタ3.9.43パッチ
+
+Cloud Volumes ONTAP 9.15.1リリースをサポートするようにコネクタを更新しました。
+
+このリリースのサポートには、Azure用コネクタポリシーの更新が含まれています。ポリシーに次の権限が追加されました。
+
+[source, json]
+----
+"Microsoft.Compute/virtualMachineScaleSets/write",
+"Microsoft.Compute/virtualMachineScaleSets/read",
+"Microsoft.Compute/virtualMachineScaleSets/delete"
+----
+これらの権限は、Cloud Volumes ONTAPが仮想マシンスケールセットをサポートするために必要です。既存のコネクタがあり、この新機能を使用する場合は、Azureクレデンシャルに関連付けられているカスタムロールにこれらの権限を追加する必要があります。
+
+* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["Cloud Volumes ONTAPによる仮想マシンスケールセットのサポートについて"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["コネクタのAzure権限を表示"]です。
+
+
+
+
 === 2024 年 8 月 8 日
 
 
@@ -476,6 +500,18 @@ link:reference-free-paid.html["廃止された機能の詳細"]。
 
 
 
+=== 2024 年 8 月 22 日
+
+
+
+==== Cloud Volumes ONTAP 9.15.1 GA
+
+BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.15.1 General Availabilityリリースを導入、管理できるようになりました。
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
+
+
+
 === 2024 年 8 月 8 日
 
 
@@ -488,7 +524,7 @@ Cloud Volumes ONTAPの今後の導入では、Edge Cache容量ベースのライ
 
 ==== AzureのFlash Cacheでサポートされる最小ONTAPバージョン
 
-AzureでFlash Cacheを設定するには、9.13.1 GA以上のONTAPバージョンが必要です。Azure用のCloud Volumes ONTAPシステムへのFlash Cacheの導入に使用できるのは、ONTAP 9.13.1 GA以降のバージョンのみです。
+AzureでFlash Cacheを設定するには、9.13.1 GA以上のONTAPバージョンが必要です。のCloud Volumes ONTAPシステムへの導入には、ONTAP 9 .13.1 GA以降のバージョンのみを使用できます。
 
 サポートされる構成については、を参照してください https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#single-node-systems["Azure でサポートされる構成"^]。
 
@@ -497,14 +533,6 @@ AzureでFlash Cacheを設定するには、9.13.1 GA以上のONTAPバージョ�
 ==== マーケットプレイスサブスクリプションの無償トライアルの廃止
 
 クラウドプロバイダのマーケットプレイスで提供される従量課金制サブスクリプションの30日間無償トライアルは、Cloud Volumes ONTAPではご利用いただけなくなります。あらゆるタイプのマーケットプレイスサブスクリプション（PAYGOまたは年間契約）の料金は、無料トライアル期間なしで最初の使用から有効になります。
-
-
-
-==== カナダ西部リージョンがAWSでサポートされるようになりました
-
-Cloud Volumes ONTAP 9.12.1 GA以降では、カナダ西部リージョンがAWSでサポートされるようになりました。
-
-すべてのリージョンのリストについては、を参照してください https://bluexp.netapp.com/cloud-volumes-global-regions["AWSのグローバルリージョンマップ"^]。
 
 
 
@@ -517,21 +545,6 @@ Cloud Volumes ONTAP 9.12.1 GA以降では、カナダ西部リージョンがAWS
 BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.15.0を導入して管理できるようになりました。
 
 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
-
-
-
-=== 2024年5月17日
-
-
-
-==== Amazon Web Servicesのローカルゾーンのサポート
-
-Cloud Volumes ONTAP HA環境でAWSローカルゾーンがサポートされるようになりました。AWSローカルゾーンは、ストレージ、コンピューティング、データベース、その他の一部のAWSサービスが大都市や業界の近くに配置されているインフラ環境です。
-
-
-NOTE: AWSのローカルゾーンは、BlueXPを標準モードで使用している場合にサポートされます。現時点では、BlueXPを制限モードまたはプライベートモードで使用している場合、AWSローカルゾーンはサポートされていません。
-
-HA環境でのAWSローカルゾーンの詳細については、を参照してください。 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha.html#aws-local-zones["AWSローカルゾーン"^]。
 
 
 
@@ -608,6 +621,16 @@ BlueXPのコピーと同期サービスが更新され、いくつかのバグ�
 
 
 == デジタルアドバイザ
+
+
+
+=== 2024年8月21日
+
+
+
+==== レポート
+
+7-Modeシステムの限定サポートが終了したため、* 7-Mode Upgrade Advisor Plans *レポートはご利用いただけなくなりました。詳細については、を参照してください link:https://mysupport.netapp.com/site/info/version-support["ソフトウェア バージョンのサポート"^]。詳細については、をご覧ください link:https://docs.netapp.com/a/ontap/7-mode/8.2.1/Upgrade-And-Revert-Or-Downgrade-Guide-For-7-Mode.pdf["Data ONTAP 7-Modeストレージシステムのアップグレード"^]。
 
 
 
