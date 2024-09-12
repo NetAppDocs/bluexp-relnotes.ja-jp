@@ -404,8 +404,6 @@
   <block id="ca654cde28a00db1fb587b8b6bb82015" category="paragraph"><block ref="ca654cde28a00db1fb587b8b6bb82015" category="inline-link-rx"></block></block>
   <block id="e907b41f5f3d7332bee5a43fbbf78a08" category="inline-link">ライセンスをセットアップする</block>
   <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="section-title">ランサムウェアからの保護</block>
-  <block id="8aea370efa0da7f8c985a03488d3b9a7" category="inline-link">BlueXPランサムウェア対策の詳細をご確認ください</block>
-  <block id="41e5a42a8cc2023ceb0f8dd06cce7a27" category="paragraph"><block ref="5a80707c96309e25f4c73aee7d2327b1" category="inline-link-rx"></block>。</block>
   <block id="c615da36d364061ce672b091d8aa7d3b" category="list-text"><block ref="c615da36d364061ce672b091d8aa7d3b" category="inline-link-rx"></block></block>
   <block id="19532230e3ff8a5fc0c27cc8389cac67" category="list-text"><block ref="19532230e3ff8a5fc0c27cc8389cac67" category="inline-link-rx"></block></block>
   <block id="2d67cd05b64a3416bc8bae12b4ef5685" category="cell">2024年3月12日</block>
@@ -463,11 +461,6 @@
   <block id="92617b18f6079084c5380cf97f72f43a" category="list-text"><block ref="92617b18f6079084c5380cf97f72f43a" category="inline-link-rx"></block></block>
   <block id="5e8c098d325749413b23d5eba5837aad" category="inline-link">ダークサイトでBlueXPのバックアップとリカバリのデータをリストア</block>
   <block id="b682afa0ff8a1d136b51d3115421ac1b" category="list-text"><block ref="b682afa0ff8a1d136b51d3115421ac1b" category="inline-link-rx"></block></block>
-  <block id="240debedb0b95c0376b930ba9355ecf4" category="section-title">2024年5月15日（バージョン1.31）</block>
-  <block id="d1e72f4d21bb915d180e5f6d1e9d4264" category="section-title">BlueXPではコアサービスとして分類を利用可能</block>
-  <block id="ac229efd3fa61c5457dcab252996be0b" category="paragraph">BlueXPのコア機能として、最大500TiBのスキャンデータを追加料金なしでBlueXPの分類を利用できるようになりました。分類ライセンスや有料サブスクリプションは必要ありません。今回の新バージョンでは、BlueXPの分類機能をNetAppストレージシステムのスキャンに重点を置いているため、一部のレガシー機能は、以前にライセンス料金を支払ったお客様のみが利用できます。これらのレガシー機能の使用は、有料契約が終了日に達すると期限切れになります。</block>
-  <block id="3607a722a9a09bb6d405f4d84609e858" category="inline-link-macro">廃止された機能の詳細</block>
-  <block id="1a50d9154328b370f6d9bbbab041964a" category="paragraph"><block ref="671322b9b43cc49264f86b21ef88a11d" category="inline-link-macro-rx"></block>。</block>
   <block id="93716955add4f66b2af685a33bac4789" category="section-title">2024年5月15日</block>
   <block id="9df62cb4d6f151b560e84723841bd523" category="paragraph">このBlueXPディザスタリカバリリリースには、次の更新が含まれています。</block>
   <block id="7f1d1e9df7ef6953a6e373e29826ca55" category="list-text">* VMwareワークロードのオンプレミスからオンプレミスへのレプリケーション*が、一般提供機能としてリリースされました。以前は、機能が制限されたテクノロジプレビューでした。</block>
@@ -479,9 +472,6 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">ネットアップコミュニティ</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXPのブログ</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">クラウドに関する Web セミナー</block>
-  <block id="6849ea484f5664c887acc6f1ff990dfd" category="section-title">2024年6月2日</block>
-  <block id="cfa477f3b89d95c12ff30d6390b89dd9" category="paragraph">BlueXPのコピーと同期サービスが更新され、いくつかのバグが修正されました。データブローカーも更新され、セキュリティの更新が適用されました。新しいデータブローカーのバージョンは1.0.52です。</block>
-  <block id="bf5237098b7bb15bc07f1d47863a9b8a" category="section-title">2024年6月5日（バージョン1.32）</block>
   <block id="b9620e9aadf9827ac9bb29001772b3f0" category="paragraph">このリリースには、次の更新が含まれています。</block>
   <block id="b83927d03444ee961e834ea1c3b0581b" category="section-title">マッピングスキャンによるメタデータの収集</block>
   <block id="6c7aa72b096dc637dbeefccf15ca45f8" category="paragraph">マッピングスキャン中にファイルから次のメタデータが抽出され、Governance、Compliance、Investigationの各ダッシュボードに表示されます。</block>
@@ -501,10 +491,6 @@
   <block id="43ac3190fe70b3bdb1f5d5b7083f374a" category="paragraph">このリリースでは、マッピングスキャン中にGovernance、Compliance、およびInvestigationの各ダッシュボードに表示されるデータが更新されます。</block>
   <block id="9b28a6e87457a6a3bfb03009dcd0b84a" category="inline-link">マッピングスキャンと分類スキャンの違い</block>
   <block id="c7fb92ca31125e81e2a4f2982bc6a806" category="paragraph">詳細については、<block ref="4062fc8e6e6df1b01a1de644d8a7eeca" category="inline-link-rx"></block></block>
-  <block id="7910c8307cac3d62eca8ac0d42301b38" category="section-title">[Configuration]ページの新しい[Mapping status]列</block>
-  <block id="cfbaa8108dcd3c438f032a03ea5c380b" category="paragraph">このリリースでは、[Configuration]ページに新しい[Mapping status]列が表示されるようになりました。新しい列では、マッピングが実行中、キューに登録済み、一時停止中、またはそれ以上であるかどうかを確認できます。</block>
-  <block id="6195c7a1534de8abb0c4706e15d24a3c" category="inline-link">スキャン設定を変更します</block>
-  <block id="2f94c0116c501abdbd5c76ddef86d94a" category="paragraph">ステータスの説明については、を参照してください<block ref="cacd3972a6d9bfb8b2d3cde3ba576e77" category="inline-link-rx"></block>。</block>
   <block id="072d1a387472fb47fdfa33e48ff08ffd" category="section-title">Sustainability Dashboard</block>
   <block id="8934fed115a0b826a4b438906a11bfa9" category="inline-link-macro">Sustainabilityダッシュボードの概要</block>
   <block id="73cb3e305b75665c1f29817b70dd8a1f" category="summary">BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します</block>
@@ -526,10 +512,7 @@
   <block id="3b08fbca8f3b3deaf466cedfd425cfc6" category="section-title">2024年7月1日（バージョン1.33）</block>
   <block id="d61892207457d808cffbfc18b9dcd8ad" category="section-title">Ubuntuのサポート</block>
   <block id="0db04e76c6afbdb79f128758ee937013" category="paragraph">このリリースでは、Ubuntu 24.04 Linuxプラットフォームがサポートされます。</block>
-  <block id="b660413c1fbf79ce31a119db078401fe" category="paragraph">このリリースには、次の更新が含まれています。</block>
   <block id="8009eebf05fd33b87750f8b4048986f7" category="section-title">2024年6月10日</block>
-  <block id="1601188d2b39087206296933e9255990" category="section-title">Cloud Volumes ONTAP 9.15.0</block>
-  <block id="c6ee0c74323b0d984d764b4be950bd87" category="paragraph">BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.15.0を導入して管理できるようになりました。</block>
   <block id="a6cba69e97a9115b21cbf35b24b33d83" category="section-title">2024年7月4日</block>
   <block id="5e63fb298525a46837cedfd7fc3c5002" category="paragraph">ストレージシステムの環境の健全性に関するインサイトを提供する環境指標により、高度な予測モデルに基づいて、予測される電力使用量、直接炭素使用量、および熱排出量のより正確な値が提供されるようになりました。詳細については、を参照して <block ref="8ef455a63dd9427c902954b8e3c7f21b" category="inline-link-macro-rx"></block>ください。</block>
   <block id="8352fdd61dbba9f97925bd7797c4eb47" category="paragraph">EシリーズシステムとStorageGRIDシステムでサステナビリティがサポートされるようになりました。これらのシステムのSustainabilityダッシュボードでは、推奨される対処方法と環境指標のリストを表示して、電力、直接的な炭素使用量、熱の予測を表示できます。詳細については、を参照して <block ref="8ef455a63dd9427c902954b8e3c7f21b" category="inline-link-macro-rx"></block>ください。</block>
@@ -563,15 +546,6 @@
   <block id="5bc0cd3e3204e2ab72bd03661373648f" category="inline-link">ワークロードの保護とランサムウェア対策戦略の管理の詳細</block>
   <block id="20eb1918e9de308789133c5a0b0cc2c4" category="paragraph"><block ref="88ddee768f79e382777baf84277fe57c" category="inline-link-rx"></block>です。</block>
   <block id="4c57408166809e028adf9be27b861c0a" category="paragraph">このリリースのBlueXPランサムウェア対策には、次の更新が含まれています。</block>
-  <block id="a88e0dc5892d64e5e1293fb97d10e870" category="list-text">*プライマリストレージでのSnapshotコピーロック*：このオプションを有効にすると、プライマリストレージでSnapshotコピーがロックされます。これにより、ランサムウェア攻撃がバックアップストレージのデスティネーションに侵入しても、一定期間変更や削除ができないようになります。</block>
-  <block id="693cf7ee0375c87d1ecc02615f651ebe" category="inline-link">ランサムウェア対策戦略におけるワークロードの保護とバックアップロックの有効化の詳細</block>
-  <block id="d9e97b4dacf8789a452df06f4739d3b7" category="paragraph"><block ref="691f168695c0ebf6c9e1bf6093933aac" category="inline-link-rx"></block>です。</block>
-  <block id="1c73f6fee4ed4d02eabef99de35666d2" category="list-text">*このリリースでは、Cloud Volumes ONTAP for AWSとオンプレミスのONTAP NASに加え、作業環境としてCloud Volumes ONTAP for Microsoft Azure *がサポートされます。</block>
-  <block id="6b9ec885733dcee16db8c4d8dde6312a" category="inline-link">Azure での Cloud Volumes ONTAP のクイックスタート</block>
-  <block id="17223b00f9d3a714622f5df95956564b" category="paragraph"><block ref="17223b00f9d3a714622f5df95956564b" category="inline-link-rx"></block></block>
-  <block id="2803032e22b35c4bdcf58b92d42735f5" category="list-text">*バックアップ先としてMicrosoft Azureが追加されました*。AWSおよびNetApp StorageGRIDとともに、バックアップ先としてMicrosoft Azureを追加できるようになりました。</block>
-  <block id="8e84b1daf78912b246a0f51f49a81be6" category="inline-link">保護設定の構成方法の詳細</block>
-  <block id="a5074ce00bd12388aded816f7d17bc0b" category="paragraph"><block ref="8490e5084c846c3f615579ffada71b2e" category="inline-link-rx"></block>です。</block>
   <block id="01a9b44907bcb1139b6868b9fe7073d0" category="paragraph">RHEL 8.10のサポートは、コネクタの3.9.40リリースから開始されました。</block>
   <block id="9fc076386261ca80bfc67f7f57c641d3" category="section-title">2024年7月14日</block>
   <block id="c18c776847f6d7588ddeab0632527364" category="paragraph">BlueXPのコピーおよび同期サービスとデータブローカーを更新し、いくつかのバグを修正しました。新しいデータブローカーのバージョンは1.0.53です。</block>
@@ -627,7 +601,6 @@
   <block id="abbf2484b45da9fd7be677fe96c511eb" category="inline-link-macro">参照と復元を使用したフォルダとファイルの復元</block>
   <block id="9b7af6cb2e410e55ce793003b7110047" category="paragraph">詳細については、を参照してください <block ref="07023d18b01371174abc5a157da41b99" category="inline-link-macro-rx"></block>。</block>
   <block id="707304f314bfa71975e8ffb352535092" category="paragraph">手動で有効にする方法については、を参照してください<block ref="7de2d0863d92330816fac8b7768edb68" category="inline-link-rx"></block>。</block>
-  <block id="e1de422d9b50a40fe1300cc8736bc7f0" category="section-title">2024年8月5日（バージョン1.34）</block>
   <block id="70d1ac1a529ac546d3e60b81ee464a1d" category="paragraph">このBlueXP  分類リリースには、次の更新が含まれています。</block>
   <block id="44a73383773bebac3194e73bd06397a8" category="section-title">CentOSからUbuntuへの変更</block>
   <block id="6a1611bc2c4a6c8c16154f81c0323dc2" category="paragraph">BlueXP  の分類により、Microsoft AzureおよびGoogle Cloud Platform (GCP)用のLinuxオペレーティングシステムがCentOS 7.9からUbuntu 22.04に更新されました。</block>
@@ -677,7 +650,6 @@
   <block id="7c26a70dd4c64672aaff5da10a3afaec" category="list-text"><block ref="7c26a70dd4c64672aaff5da10a3afaec" category="inline-link-rx"></block></block>
   <block id="9cc3df8e0a65f95d62b0d0dc557d0fa9" category="section-title">2024 年 8 月 8 日</block>
   <block id="34c56ac41d4e5a004cc5b7c87b0e2d87" category="section-title">コネクタ3.9.43</block>
-  <block id="be1b4db310d7b6590c7af9eb4751b6ce" category="paragraph">このリリースには、マイナーな改善、バグの修正、およびAzureの新しい権限の要件が含まれています。</block>
   <block id="05797637e0cfec59d8a5478eba1acfdf" category="paragraph">3.9.43リリースは、標準モードと制限モードで使用できます。</block>
   <block id="45c4fb485dfa6a5d0af975aa668648a9" category="section-title">CPUおよびRAMの要件の更新</block>
   <block id="07279af47b8b78d8d96257fb42d7c5d9" category="paragraph">信頼性を高め、BlueXP  とコネクタのパフォーマンスを向上させるために、コネクタ仮想マシン用に追加のCPUとRAMが必要になりました。</block>
@@ -687,18 +659,10 @@
   <block id="43a4336ace07071a0817d23211d30402" category="list-text">AWS：t3.2xlarge</block>
   <block id="70e7db9a896d903493a8716aa3885ee7" category="list-text">Azure：Standard_D8s_v3</block>
   <block id="1a0e003291457a847a85677ad5244c4e" category="list-text">Google Cloud：n2-standard-8</block>
-  <block id="7ef0b49c93a0c955c309b5fea693d698" category="paragraph">この要件は、新規および既存のコネクタに適用されます。</block>
   <block id="fecbdb7e41beb7c2b4125b62d71b116d" category="section-title">RHEL 8.10でのPodman 4.9.4のサポート</block>
   <block id="601e92646453def880eec16da18e4390" category="paragraph">Red Hat Enterprise Linux 8.10ホストにコネクタをインストールする際に、Podmanバージョン4.9.4がサポートされるようになりました。</block>
   <block id="18ecc589a4f329e3ba95ac4e285b4504" category="section-title">アイデンティティフェデレーションのユーザ検証</block>
   <block id="8b71299c32997f38948f7e56b11d69b8" category="paragraph">BlueXP  でアイデンティティフェデレーションを使用する場合は、BlueXP  に初めてログインした各ユーザが簡単なフォームに入力してIDを検証する必要があります。</block>
-  <block id="e84c1e70dc9a2186ec21e22a3e9cbda0" category="section-title">Edge Cacheライセンスパッケージの廃止</block>
-  <block id="882b50ca44d46bfb8d9502390cfeaf96" category="paragraph">Cloud Volumes ONTAPの今後の導入では、Edge Cache容量ベースのライセンスパッケージは利用できなくなります。ただし、APIを使用してこの機能を利用することはできます。</block>
-  <block id="a5729938408dc232ea97fb5d7d00b71c" category="section-title">AzureのFlash Cacheでサポートされる最小ONTAPバージョン</block>
-  <block id="e4b60b51b40a0907e38b3293d36780e6" category="inline-link">Azure でサポートされる構成</block>
-  <block id="2936dc7efe93e6248aca38d21b92cc62" category="paragraph">サポートされる構成については、を参照してください<block ref="10c1bb30d666a83202b9e687d7b06d1b" category="inline-link-rx"></block>。</block>
-  <block id="bc5af032a5cd69ef4ac57b8c2cd1f1d6" category="section-title">マーケットプレイスサブスクリプションの無償トライアルの廃止</block>
-  <block id="860dc5e7395e0f2c15a42ffdef98eca4" category="paragraph">クラウドプロバイダのマーケットプレイスで提供される従量課金制サブスクリプションの30日間無償トライアルは、Cloud Volumes ONTAPではご利用いただけなくなります。あらゆるタイプのマーケットプレイスサブスクリプション（PAYGOまたは年間契約）の料金は、無料トライアル期間なしで最初の使用から有効になります。</block>
   <block id="d6b2c344cefb2303b488f51358e47bad" category="section-title">2024年8月7日</block>
   <block id="a262e6e8b2140ed65b4662f6ea3826e9" category="section-title">ONTAPの更新</block>
   <block id="bfcca17c4ea8c7320a1a54960ce35444" category="paragraph">BlueXP  ソフトウェアアップデートサービスは、リスクを軽減し、お客様がONTAPの機能を十分に活用できるようにすることで、シームレスなアップデートエクスペリエンスをユーザに提供します。</block>
@@ -706,7 +670,6 @@
   <block id="3b51dbc206ff39db31b586cff27b62b6" category="paragraph">詳細については、をご覧ください <block ref="5932964ef1a5389f9863c988396d1e93" category="inline-link-macro-rx"></block>。</block>
   <block id="a5cfb1c769f5b79bb515811f8e2d3256" category="section-title">2024 年 8 月 11 日</block>
   <block id="91c579c47837abf6f4d04e29b24b1d72" category="paragraph">BlueXPのコピーおよび同期サービスとデータブローカーを更新し、いくつかのバグを修正しました。新しいデータブローカーのバージョンは1.0.54です。</block>
-  <block id="22e645000db07af6682e1c6517a3c82a" category="section-title">2024年8月22日</block>
   <block id="335b63351c39337de35ede84c3852d4d" category="section-title">コネクタ3.9.43パッチ</block>
   <block id="262115d0d4a65fe9bcd074ab5666018a" category="paragraph">Cloud Volumes ONTAP 9.15.1リリースをサポートするようにコネクタを更新しました。</block>
   <block id="ede74fed38968a6f0c0dcebc3102b859" category="paragraph">このリリースのサポートには、Azure用コネクタポリシーの更新が含まれています。ポリシーに次の権限が追加されました。</block>
@@ -716,7 +679,6 @@
   <block id="bfe1024d3c9f1a02aa5dd1d7e5dccb34" category="section-title">2024 年 8 月 22 日</block>
   <block id="cf153c7d2cb432b6e772832926525a09" category="section-title">Cloud Volumes ONTAP 9.15.1 GA</block>
   <block id="ffa2c93a775db2cb6243bf2a224cf240" category="paragraph">BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.15.1 General Availabilityリリースを導入、管理できるようになりました。</block>
-  <block id="5e5a8323b53f79c61a277215cb801b01" category="paragraph">AzureでFlash Cacheを設定するには、9.13.1 GA以上のONTAPバージョンが必要です。のCloud Volumes ONTAPシステムへの導入には、ONTAP 9 .13.1 GA以降のバージョンのみを使用できます。</block>
   <block id="788b77f1903c86b79d6ab3fa3aeac01e" category="section-title">2024年8月21日</block>
   <block id="c91c7b93c28cd18741b71f727ee81ee3" category="section-title">レポート</block>
   <block id="fc1d748db1b5b488ce7af7d17ea15d55" category="inline-link-macro">ソフトウェア バージョンのサポート</block>
@@ -729,4 +691,61 @@
   <block id="184c928c73aa00c7569ba55c0b9e0064" category="paragraph">Cloud Volumes ONTAP 9.12.1 GA以降では、カナダ西部リージョンがAWSでサポートされるようになりました。</block>
   <block id="0970aa81dd486fe1c8e03549b29f3d46" category="inline-link">AWSのグローバルリージョンマップ</block>
   <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">すべてのリージョンのリストについては、を参照してください<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>。</block>
+  <block id="c842acaca9e3ea9ec2dc61f28e69ea15" category="section-title">2024年9月9日</block>
+  <block id="2e5948b55d019081bde9b17268d72c2c" category="section-title">コネクタ3.9.44</block>
+  <block id="eef503d0bc4de5d76d47f4691b412e15" category="paragraph">このリリースでは、Docker Engine 26のサポート、SSL証明書の強化、およびバグの修正が含まれています。</block>
+  <block id="8e05f2728c2c4042bd5165b33b122aa7" category="paragraph">3.9.44リリースは、標準モードと制限モードで使用できます。</block>
+  <block id="15ba9bb026c53a148756b12826c46f8b" category="section-title">ローカルUIアクセス用のSSL証明書が更新されました</block>
+  <block id="b96edd49155123375756b26e44b38121" category="paragraph">BlueXP  を制限モードまたはプライベートモードで使用する場合、クラウドリージョンまたはオンプレミスに導入されているコネクタ仮想マシンからユーザーインターフェイスにアクセスできます。デフォルトでは、BlueXP  は自己署名SSL証明書を使用して、コネクタで実行されているWebベースのコンソールへのセキュアなHTTPSアクセスを提供します。</block>
+  <block id="2737440e84d6c8a13a097fa583a6e67a" category="paragraph">このリリースでは、新規および既存のコネクタのSSL証明書に変更を加えました。</block>
+  <block id="6cb49682fd1f125736d18f28cbce1f23" category="list-text">証明書の共通名が短いホスト名と一致するようになりました。</block>
+  <block id="982638142d38ac9441736ff5402f4e2a" category="list-text">Certificate Subject Alternative Nameは、ホストマシンのFully Qualified Domain Name（FQDN；完全修飾ドメイン名）です。</block>
+  <block id="44b53ed30a4c420b95b8adba575b84a6" category="section-title">RHEL 9.4のサポート</block>
+  <block id="70a7dd17e18fef168a9d377653df73ca" category="paragraph">BlueXP  を標準モードまたは制限モードで使用している場合、BlueXP  でRed Hat Enterprise Linux 9.4ホストへのコネクタのインストールがサポートされるようになりました。</block>
+  <block id="2ba7632ac1d83ea5ae8e4c11321eb1d3" category="paragraph">RHEL 9.4のサポートは、コネクタの3.9.40リリースから開始されました。</block>
+  <block id="d624d762d93c33c9dde16183d90a90e0" category="paragraph">標準モードおよび制限モードでサポートされるRHELのバージョンリストに、次のものが追加されました。</block>
+  <block id="94d03d842e38bfc8ebeb1cd5999b1321" category="list-text">9.1～9.4</block>
+  <block id="7a8260cd47a221886a3337b85ff2ec45" category="section-title">すべてのバージョンのRHELでのPodman 4.9.4のサポート</block>
+  <block id="3a5941c5e1e3e3c4cb703b2d9d78963c" category="paragraph">Podman 4.9.4は、Red Hat Enterprise Linuxのすべてのサポート対象バージョンでサポートされるようになりました。バージョン4.9.4は、これまでRHEL 8.10でのみサポートされていました。</block>
+  <block id="d0f584a070c78efb8fff64b377dbf729" category="paragraph">サポートされるPodmanバージョンの更新されたリストには、Red Hat Enterprise Linuxホストでの4.6.1および4.9.4が含まれています。</block>
+  <block id="fef89f8fc6e9d583565954d5abe02ec4" category="paragraph">コネクタの3.9.40リリース以降のRHELホストにはPodmanが必要です。</block>
+  <block id="842ce6e5c3bdb8cf81ffbd4f90a57649" category="section-title">AWSとAzureの権限が更新されました</block>
+  <block id="c1f46e9419a384f29f23682739cc8d58" category="paragraph">コネクタのAWSポリシーとAzureポリシーを更新し、不要になった権限を削除しました。この権限は、BlueXP  エッジのキャッシングとKubernetesクラスタの検出と管理に関連していましたが、2024年8月にサポートが終了しました。</block>
+  <block id="d201eff65f4516de2c618efea5a7edde" category="inline-link">AWSポリシーの変更点を確認する</block>
+  <block id="b0c050c316c776928b8b8bc0c327449e" category="list-text"><block ref="aff0e765a5d2f4e281feabd61d1dd500" category="inline-link-rx"></block>です。</block>
+  <block id="2f036a4385aa02ab7c67e7932bd4036f" category="inline-link">Azureポリシーの変更点を確認</block>
+  <block id="31fa3b726cc2ab8e192bc70a792168a7" category="list-text"><block ref="c65ef862e4776cf4a66f5e1d7163d89e" category="inline-link-rx"></block>です。</block>
+  <block id="d30916c53949113e97a8033f02e41364" category="paragraph">このリリースには、マイナーな改善とバグ修正が含まれています。</block>
+  <block id="9d97f1d57b6500707266656cdf2bf526" category="paragraph">更新されたCPUとRAMの要件は、すべての新しいコネクタに適用されます。既存のコネクタの場合は、パフォーマンスと信頼性を向上させるために、CPUとRAMを増やすことをお勧めします。</block>
+  <block id="597f26a63507bfee99f67909c68d5354" category="section-title">2024年9月2日（バージョン1.35）</block>
+  <block id="4f13d17cc7a60ec8546d7892c87e3acf" category="section-title">StorageGRIDデータのスキャン</block>
+  <block id="83bceb987dd495cde1a148944580e473" category="paragraph">BlueXP  分類でStorageGRIDのデータをスキャンできるようになりました。</block>
+  <block id="60c09f1a3afdb367fc787929a52bce2c" category="paragraph">詳細については、を参照してください <block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>。</block>
+  <block id="a5ac20c838605b872613985f5c302c61" category="section-title">2024年8月5日（バージョン1.34）</block>
+  <block id="cdd78645b017b927a25b5449e345f823" category="section-title">ワームとARPの機能は有料ではなくなりました。</block>
+  <block id="7fd6d2c43ef162414a32b6569dfcc99a" category="paragraph">WORM（Write Once Read Many）とARP（Autonomous Ransomware Protection）の組み込みのデータ保護機能とセキュリティ機能は、Cloud Volumes ONTAPライセンスで追加料金なしで提供されます。新しい価格モデルは、AWS、Azure、Google Cloudの新規および既存のBYOLおよびPAYGO / Marketplaceサブスクリプションの両方に適用されます。容量ベースとノードベースのどちらのライセンスにも、シングルノードとハイアベイラビリティ（HA）ペアを含むすべての構成用のARPとWORMが追加料金なしで含まれます。</block>
+  <block id="9dab6b96899670128353b1e92c2b8997" category="paragraph">シンプルな価格設定により、次のようなメリットが得られます。</block>
+  <block id="000f6c26eec43af35931bc5e6fbf9f49" category="list-text">現在、WORMとARPが含まれているアカウントでは、これらの機能の料金は発生しなくなります。今後は、この変更前と同様に、使用容量に関する料金のみが請求されます。ワームとARPは今後の請求書に含まれなくなります。</block>
+  <block id="3817bf50b7761fc5155c59e4a334d37a" category="list-text">現在のアカウントにこれらの機能が含まれていない場合は、追加料金なしでWORMとARPを選択できるようになりました。</block>
+  <block id="1974af11cb1ac87d0b58d8696f893e4d" category="list-text">新規アカウントのすべてのCloud Volumes ONTAPサービスには、WORMとARPの料金は含まれません。</block>
+  <block id="0e3986fb787ff1e55f1d15206f8b39d9" category="paragraph">これらの機能の詳細については、こちらをご覧ください。</block>
+  <block id="0c0c93dcca58dc6ba5a46ef2bf56980b" category="inline-link">ランサムウェアからの保護を強化</block>
+  <block id="a7cf7c6eee288b3a91bcae2e6522aa7a" category="list-text"><block ref="a7cf7c6eee288b3a91bcae2e6522aa7a" category="inline-link-rx"></block></block>
+  <block id="8aca368ccd90320c96e8a69a43545003" category="inline-link">WORMストレージ</block>
+  <block id="a100999de1d9ee815d7e13741acf163d" category="list-text"><block ref="a100999de1d9ee815d7e13741acf163d" category="inline-link-rx"></block></block>
+  <block id="ec6210d470db7cd7b6f5408f088e1c02" category="paragraph">BlueXP  の経済効率化機能の一部が一時的に無効になりました。</block>
+  <block id="d519fe60b31330425fdb5e1c21309f78" category="list-text">テクノロジの更新</block>
+  <block id="dbaae314ffc8b46919877d02b85696cb" category="list-text">容量の追加</block>
+  <block id="28dc8814bfe656bc8e29052d1508b999" category="section-title">2024年9月2日</block>
+  <block id="dddaa1ce44a2d4bbebf20d3f4563c0a4" category="paragraph">このリリースのBlueXP  ランサムウェア対策には、次の更新が含まれています。</block>
+  <block id="8817c21accd9fdcb9207397834af08f6" category="list-text">*デジタルアドバイザによるセキュリティリスク評価*：BlueXP  ランサムウェア対策は、NetAppデジタルアドバイザからクラスタに関連する高リスクおよび重大なセキュリティリスクに関する情報を収集するようになりました。リスクが検出された場合、BlueXP  ランサムウェア対策により、ダッシュボードの[推奨される操作]ペインに「クラスタ&lt;name&gt;の既知のセキュリティの脆弱性を修正する」という推奨事項が表示されます。ダッシュボードの推奨事項で、*[確認と修正]*をクリックすると、Digital AdvisorとCommon Vulnerability &amp; Exposure（CVE）の記事を確認してセキュリティリスクを解決するよう提案されます。複数のセキュリティリスクがある場合は、Digital Advisorで情報を確認します。</block>
+  <block id="ea7b2437ddd14dce6ba3f65494d634fd" category="inline-link">Digital Advisorのドキュメント</block>
+  <block id="9a42efab941e78c35ff03d2f3de7f294" category="paragraph">を参照してください<block ref="5d1aa2fae9958ef5ced45eec5d13d250" category="inline-link-rx"></block>。</block>
+  <block id="db99b952c4a66f69627f5f328e20f9d1" category="list-text">* Google Cloud Platformにバックアップ*：このリリースでは、Google Cloud Platformバケットにバックアップ先を設定できます。以前は、バックアップ先を追加できるのはNetApp StorageGRID、Amazon Web Services、Microsoft Azureのみでした。</block>
+  <block id="6296ba9154f4dc4d4403121335c812c9" category="list-text">* Google Cloud Platformのサポート*：このサービスでは、ストレージ保護のためにCloud Volumes ONTAP for Google Cloud Platformがサポートされるようになりました。以前は、Amazon Web ServicesとMicrosoft AzureのCloud Volumes ONTAPとオンプレミスのNASのみがサポートされていました。</block>
+  <block id="571e1080641fe631491306478d4572a1" category="inline-link">BlueXP  ランサムウェア対策、サポート対象のデータソース、バックアップ先、作業環境について説明します。</block>
+  <block id="5c6a145c454aef23e256b2459f8c4c75" category="paragraph"><block ref="e1153028bb0f55bf33080551a5d7f6f3" category="inline-link-rx"></block>です。</block>
+  <block id="98f1cb1ebd09ccf6e678d5bae1920213" category="list-text">*ロールベースアクセス制御*：ロールベースアクセス制御（RBAC）を使用して、特定のアクティビティへのアクセスを制限できるようになりました。BlueXP  ランサムウェア対策では、BlueXP  の2つのロール、BlueXP  アカウント管理者と非アカウント管理者（ビューア）を使用します。</block>
+  <block id="c7038711405bbbe2f0f37c53c5eb81ad" category="inline-link">ロールベースアクセス制御Privileges</block>
+  <block id="edf15150f2ed24145a29e67792372ecc" category="paragraph">各ロールで実行できるアクションの詳細については、を参照してください<block ref="03cd1069228e8895d221bed8eef34f69" category="inline-link-rx"></block>。</block>
 </blocks>

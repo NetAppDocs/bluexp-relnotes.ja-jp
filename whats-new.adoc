@@ -24,7 +24,79 @@ BlueXPプラットフォームの一部である クラウド サービス の�
 
 
 
-=== 2024年8月22日
+=== 2024年9月9日
+
+
+
+==== コネクタ3.9.44
+
+このリリースでは、Docker Engine 26のサポート、SSL証明書の強化、およびバグの修正が含まれています。
+
+3.9.44リリースは、標準モードと制限モードで使用できます。
+
+
+
+===== f258c97f55e85bfbd607e70e86d840dc
+
+5c968eab53d6065ccf63e9766935cb7b
+
+0e80b6146d7736683cb1292a9c1ba4af
+
+395f31b2f1bc9cb3993acbb14cf4fb1f
+
+
+
+===== ローカルUIアクセス用のSSL証明書が更新されました
+
+BlueXP  を制限モードまたはプライベートモードで使用する場合、クラウドリージョンまたはオンプレミスに導入されているコネクタ仮想マシンからユーザーインターフェイスにアクセスできます。デフォルトでは、BlueXP  は自己署名SSL証明書を使用して、コネクタで実行されているWebベースのコンソールへのセキュアなHTTPSアクセスを提供します。
+
+このリリースでは、新規および既存のコネクタのSSL証明書に変更を加えました。
+
+* 証明書の共通名が短いホスト名と一致するようになりました。
+* Certificate Subject Alternative Nameは、ホストマシンのFully Qualified Domain Name（FQDN；完全修飾ドメイン名）です。
+
+
+
+
+==== RHEL 9.4のサポート
+
+BlueXP  を標準モードまたは制限モードで使用している場合、BlueXP  でRed Hat Enterprise Linux 9.4ホストへのコネクタのインストールがサポートされるようになりました。
+
+RHEL 9.4のサポートは、コネクタの3.9.40リリースから開始されました。
+
+標準モードおよび制限モードでサポートされるRHELのバージョンリストに、次のものが追加されました。
+
+* 8.6～8.10
+* 9.1～9.4
+
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["コネクタを使用したRHEL 8および9のサポートについて"]。
+
+
+
+==== すべてのバージョンのRHELでのPodman 4.9.4のサポート
+
+Podman 4.9.4は、Red Hat Enterprise Linuxのすべてのサポート対象バージョンでサポートされるようになりました。バージョン4.9.4は、これまでRHEL 8.10でのみサポートされていました。
+
+サポートされるPodmanバージョンの更新されたリストには、Red Hat Enterprise Linuxホストでの4.6.1および4.9.4が含まれています。
+
+コネクタの3.9.40リリース以降のRHELホストにはPodmanが必要です。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["コネクタを使用したRHEL 8および9のサポートについて"]。
+
+
+
+==== AWSとAzureの権限が更新されました
+
+コネクタのAWSポリシーとAzureポリシーを更新し、不要になった権限を削除しました。この権限は、BlueXP  エッジのキャッシングとKubernetesクラスタの検出と管理に関連していましたが、2024年8月にサポートが終了しました。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html#change-log["AWSポリシーの変更点を確認する"]です。
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#change-log["Azureポリシーの変更点を確認"]です。
+
+
+
+
+=== 2024 年 8 月 22 日
 
 
 
@@ -54,7 +126,7 @@ Cloud Volumes ONTAP 9.15.1リリースをサポートするようにコネクタ
 
 ==== コネクタ3.9.43
 
-このリリースには、マイナーな改善、バグの修正、およびAzureの新しい権限の要件が含まれています。
+このリリースには、マイナーな改善とバグ修正が含まれています。
 
 3.9.43リリースは、標準モードと制限モードで使用できます。
 
@@ -75,7 +147,7 @@ Cloud Volumes ONTAP 9.15.1リリースをサポートするようにコネクタ
 * Google Cloud：n2-standard-8
 
 
-この要件は、新規および既存のコネクタに適用されます。
+更新されたCPUとRAMの要件は、すべての新しいコネクタに適用されます。既存のコネクタの場合は、パフォーマンスと信頼性を向上させるために、CPUとRAMを増やすことをお勧めします。
 
 
 
@@ -416,6 +488,20 @@ BlueXP Connectorバージョン3.9.40は、Red Hat Enterprise Linuxバージョ�
 
 
 
+=== 2024年9月2日（バージョン1.35）
+
+このBlueXP  分類リリースには、次の更新が含まれています。
+
+
+
+==== StorageGRIDデータのスキャン
+
+BlueXP  分類でStorageGRIDのデータをスキャンできるようになりました。
+
+詳細については、を参照してください link:task-scanning-storagegrid.html["StorageGRIDデータのスキャン"]。
+
+
+
 === 2024年8月5日（バージョン1.34）
 
 このBlueXP  分類リリースには、次の更新が含まれています。
@@ -470,33 +556,30 @@ BlueXP  の分類により、Microsoft AzureおよびGoogle Cloud Platform (GCP
 
 
 
-=== 2024年6月5日（バージョン1.32）
-
-このリリースには、次の更新が含まれています。
-
-
-
-==== [Configuration]ページの新しい[Mapping status]列
-
-このリリースでは、[Configuration]ページに新しい[Mapping status]列が表示されるようになりました。新しい列では、マッピングが実行中、キューに登録済み、一時停止中、またはそれ以上であるかどうかを確認できます。
-
-ステータスの説明については、を参照してください https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html["スキャン設定を変更します"]。
-
-
-
-=== 2024年5月15日（バージョン1.31）
-
-
-
-==== BlueXPではコアサービスとして分類を利用可能
-
-BlueXPのコア機能として、最大500TiBのスキャンデータを追加料金なしでBlueXPの分類を利用できるようになりました。分類ライセンスや有料サブスクリプションは必要ありません。今回の新バージョンでは、BlueXPの分類機能をNetAppストレージシステムのスキャンに重点を置いているため、一部のレガシー機能は、以前にライセンス料金を支払ったお客様のみが利用できます。これらのレガシー機能の使用は、有料契約が終了日に達すると期限切れになります。
-
-link:reference-free-paid.html["廃止された機能の詳細"]。
-
-
-
 == Cloud Volumes ONTAP
+
+
+
+=== 2024年9月9日
+
+
+
+==== ワームとARPの機能は有料ではなくなりました。
+
+WORM（Write Once Read Many）とARP（Autonomous Ransomware Protection）の組み込みのデータ保護機能とセキュリティ機能は、Cloud Volumes ONTAPライセンスで追加料金なしで提供されます。新しい価格モデルは、AWS、Azure、Google Cloudの新規および既存のBYOLおよびPAYGO / Marketplaceサブスクリプションの両方に適用されます。容量ベースとノードベースのどちらのライセンスにも、シングルノードとハイアベイラビリティ（HA）ペアを含むすべての構成用のARPとWORMが追加料金なしで含まれます。
+
+シンプルな価格設定により、次のようなメリットが得られます。
+
+* 現在、WORMとARPが含まれているアカウントでは、これらの機能の料金は発生しなくなります。今後は、この変更前と同様に、使用容量に関する料金のみが請求されます。ワームとARPは今後の請求書に含まれなくなります。
+* 現在のアカウントにこれらの機能が含まれていない場合は、追加料金なしでWORMとARPを選択できるようになりました。
+* 新規アカウントのすべてのCloud Volumes ONTAPサービスには、WORMとARPの料金は含まれません。
+
+
+これらの機能の詳細については、こちらをご覧ください。
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["ランサムウェアからの保護を強化"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["WORMストレージ"^]
+
 
 
 
@@ -519,42 +602,6 @@ Cloud Volumes ONTAP 9.12.1 GA以降では、カナダ西部リージョンがAWS
 ==== Cloud Volumes ONTAP 9.15.1 GA
 
 BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.15.1 General Availabilityリリースを導入、管理できるようになりました。
-
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
-
-
-
-=== 2024 年 8 月 8 日
-
-
-
-==== Edge Cacheライセンスパッケージの廃止
-
-Cloud Volumes ONTAPの今後の導入では、Edge Cache容量ベースのライセンスパッケージは利用できなくなります。ただし、APIを使用してこの機能を利用することはできます。
-
-
-
-==== AzureのFlash Cacheでサポートされる最小ONTAPバージョン
-
-AzureでFlash Cacheを設定するには、9.13.1 GA以上のONTAPバージョンが必要です。のCloud Volumes ONTAPシステムへの導入には、ONTAP 9 .13.1 GA以降のバージョンのみを使用できます。
-
-サポートされる構成については、を参照してください https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#single-node-systems["Azure でサポートされる構成"^]。
-
-
-
-==== マーケットプレイスサブスクリプションの無償トライアルの廃止
-
-クラウドプロバイダのマーケットプレイスで提供される従量課金制サブスクリプションの30日間無償トライアルは、Cloud Volumes ONTAPではご利用いただけなくなります。あらゆるタイプのマーケットプレイスサブスクリプション（PAYGOまたは年間契約）の料金は、無料トライアル期間なしで最初の使用から有効になります。
-
-
-
-=== 2024年6月10日
-
-
-
-==== Cloud Volumes ONTAP 9.15.0
-
-BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.15.0を導入して管理できるようになりました。
 
 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
 
@@ -614,6 +661,12 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 577f5f9474f1f4f6f56c1fb216328baf
+
+bc2c6ba9505b9e6d38d9f10c18186d1c
+
+
+
 === 2024 年 8 月 11 日
 
 BlueXPのコピーおよび同期サービスとデータブローカーを更新し、いくつかのバグを修正しました。新しいデータブローカーのバージョンは1.0.54です。
@@ -623,12 +676,6 @@ BlueXPのコピーおよび同期サービスとデータブローカーを更�
 === 2024年7月14日
 
 BlueXPのコピーおよび同期サービスとデータブローカーを更新し、いくつかのバグを修正しました。新しいデータブローカーのバージョンは1.0.53です。
-
-
-
-=== 2024年6月2日
-
-BlueXPのコピーと同期サービスが更新され、いくつかのバグが修正されました。データブローカーも更新され、セキュリティの更新が適用されました。新しいデータブローカーのバージョンは1.0.52です。
 
 
 
@@ -762,6 +809,24 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-license
 
 
 
+=== eaecda6db64f5346d5c63bfe0094e040
+
+ee811bd919a27bd2eb705f65ed45e4f6
+
+* b077aa4f9a421cc2e2782608fb5caf4f
++
+0eb65976c0b0c5ffa90b07d4a062e509
+
++
+** d671bd2f503deef1e03581ce8d516507
+** cf1967c6d778937fae37b9e43582b1b6
+** f3a37c3560d0027bc0f49abfab4ab0e3
+
+
+
+
+
+
 === 2024 年 8 月 2 日
 
 このBlueXPディザスタリカバリリリースには、次の更新が含まれています。
@@ -886,6 +951,16 @@ BlueXPからEシリーズシステムを直接検出できるようになりま�
 
 
 
+=== 2024年5月15日
+
+BlueXP  の経済効率化機能の一部が一時的に無効になりました。
+
+* テクノロジの更新
+* 容量の追加
+
+
+
+
 === 2024年3月14日
 
 既存の資産を運用していて、テクノロジの更新が必要かどうかを判断する場合は、BlueXPの経済性に関するテクノロジ更新オプションを利用できます。現在のワークロードの簡単な評価を確認して推奨事項を確認できます。また、過去90日以内にAutoSupportログをNetAppに送信した場合は、新しいハードウェアでのワークロードのパフォーマンスを確認するためのワークロードシミュレーションを提供できるようになりました。
@@ -1004,6 +1079,30 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 
+=== 2024年9月2日
+
+このリリースのBlueXP  ランサムウェア対策には、次の更新が含まれています。
+
+* *デジタルアドバイザによるセキュリティリスク評価*：BlueXP  ランサムウェア対策は、NetAppデジタルアドバイザからクラスタに関連する高リスクおよび重大なセキュリティリスクに関する情報を収集するようになりました。リスクが検出された場合、BlueXP  ランサムウェア対策により、ダッシュボードの[推奨される操作]ペインに「クラスタ<name>の既知のセキュリティの脆弱性を修正する」という推奨事項が表示されます。ダッシュボードの推奨事項で、*[確認と修正]*をクリックすると、Digital AdvisorとCommon Vulnerability & Exposure（CVE）の記事を確認してセキュリティリスクを解決するよう提案されます。複数のセキュリティリスクがある場合は、Digital Advisorで情報を確認します。
++
+を参照してください https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisorのドキュメント"^]。
+
+* * Google Cloud Platformにバックアップ*：このリリースでは、Google Cloud Platformバケットにバックアップ先を設定できます。以前は、バックアップ先を追加できるのはNetApp StorageGRID、Amazon Web Services、Microsoft Azureのみでした。
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["BlueXP  ランサムウェア対策の設定の詳細"]です。
+
+* * Google Cloud Platformのサポート*：このサービスでは、ストレージ保護のためにCloud Volumes ONTAP for Google Cloud Platformがサポートされるようになりました。以前は、Amazon Web ServicesとMicrosoft AzureのCloud Volumes ONTAPとオンプレミスのNASのみがサポートされていました。
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["BlueXP  ランサムウェア対策、サポート対象のデータソース、バックアップ先、作業環境について説明します。"]です。
+
+* *ロールベースアクセス制御*：ロールベースアクセス制御（RBAC）を使用して、特定のアクティビティへのアクセスを制限できるようになりました。BlueXP  ランサムウェア対策では、BlueXP  の2つのロール、BlueXP  アカウント管理者と非アカウント管理者（ビューア）を使用します。
++
+各ロールで実行できるアクションの詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["ロールベースアクセス制御Privileges"]。
+
+
+
+
+
 === 2024 年 8 月 5 日
 
 このリリースのBlueXP  ランサムウェア対策には、次の更新が含まれています。
@@ -1039,31 +1138,6 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["
 * *保護計画の削除*：このリリースでは、ランサムウェア対策戦略を削除できるようになりました。
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["ワークロードの保護とランサムウェア対策戦略の管理の詳細"]です。
-
-
-
-
-
-=== 2024年6月10日
-
-このリリースのBlueXPランサムウェア対策には、次の更新が含まれています。
-
-* *プライマリストレージでのSnapshotコピーロック*：このオプションを有効にすると、プライマリストレージでSnapshotコピーがロックされます。これにより、ランサムウェア攻撃がバックアップストレージのデスティネーションに侵入しても、一定期間変更や削除ができないようになります。
-+
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["ランサムウェア対策戦略におけるワークロードの保護とバックアップロックの有効化の詳細"]です。
-
-* *このリリースでは、Cloud Volumes ONTAP for AWSとオンプレミスのONTAP NASに加え、作業環境としてCloud Volumes ONTAP for Microsoft Azure *がサポートされます。
-+
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-azure.html["Azure での Cloud Volumes ONTAP のクイックスタート"^]
-
-+
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["BlueXPランサムウェア対策の詳細をご確認ください"]。
-
-
-
-* *バックアップ先としてMicrosoft Azureが追加されました*。AWSおよびNetApp StorageGRIDとともに、バックアップ先としてMicrosoft Azureを追加できるようになりました。
-+
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["保護設定の構成方法の詳細"]です。
 
 
 
