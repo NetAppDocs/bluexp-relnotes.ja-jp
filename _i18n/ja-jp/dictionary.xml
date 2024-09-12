@@ -748,4 +748,11 @@
   <block id="98f1cb1ebd09ccf6e678d5bae1920213" category="list-text">*ロールベースアクセス制御*：ロールベースアクセス制御（RBAC）を使用して、特定のアクティビティへのアクセスを制限できるようになりました。BlueXP  ランサムウェア対策では、BlueXP  の2つのロール、BlueXP  アカウント管理者と非アカウント管理者（ビューア）を使用します。</block>
   <block id="c7038711405bbbe2f0f37c53c5eb81ad" category="inline-link">ロールベースアクセス制御Privileges</block>
   <block id="edf15150f2ed24145a29e67792372ecc" category="paragraph">各ロールで実行できるアクションの詳細については、を参照してください<block ref="03cd1069228e8895d221bed8eef34f69" category="inline-link-rx"></block>。</block>
+  <block id="f258c97f55e85bfbd607e70e86d840dc" category="section-title">新規インストール時のDocker Engine 26のサポート</block>
+  <block id="5c968eab53d6065ccf63e9766935cb7b" category="paragraph">コネクタの3.9.44リリース以降では、Ubuntuホストでの_new_connectorのインストールでDocker Engine 26がサポートされるようになりました。</block>
+  <block id="0e80b6146d7736683cb1292a9c1ba4af" category="paragraph">3.9.44より前のリリースで作成された既存のコネクタがある場合、Docker Engine 25.0.5は引き続きUbuntuホストでサポートされる最大バージョンです。</block>
+  <block id="c64c773fbe16e4df6ae417c106a467ef" category="inline-link">Docker Engineの要件の詳細</block>
+  <block id="395f31b2f1bc9cb3993acbb14cf4fb1f" category="paragraph"><block ref="724b4d6e1bb3e6bea768572a2ce7c10e" category="inline-link-rx"></block>です。</block>
+  <block id="577f5f9474f1f4f6f56c1fb216328baf" category="section-title">2024年9月16日</block>
+  <block id="bc2c6ba9505b9e6d38d9f10c18186d1c" category="paragraph">BlueXPのコピーおよび同期サービスとデータブローカーを更新し、いくつかのバグを修正しました。新しいデータブローカーのバージョンは1.0.55です。</block>
 </blocks>
