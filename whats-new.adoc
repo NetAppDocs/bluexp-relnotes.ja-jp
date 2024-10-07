@@ -24,6 +24,16 @@ BlueXPプラットフォームの一部である クラウド サービス の�
 
 
 
+=== 2024年10月10日
+
+
+
+==== コネクタ3.9.45パッチ
+
+このパッチにはバグ修正が含まれています。
+
+
+
 === 2024年10月7日
 
 
@@ -174,78 +184,6 @@ https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_s
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["プライベートモードの詳細"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["BlueXPのプライベートモードでの利用を開始する方法"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["プライベートモードの使用時にコネクタをアップグレードする方法について説明します。"]
-
-
-
-
-=== 2024年9月9日
-
-
-
-==== コネクタ3.9.44
-
-このリリースでは、Docker Engine 26のサポート、SSL証明書の強化、およびバグの修正が含まれています。
-
-3.9.44リリースは、標準モードと制限モードで使用できます。
-
-
-
-===== 新規インストール時のDocker Engine 26のサポート
-
-コネクタの3.9.44リリース以降では、Ubuntuホストでの_new_connectorのインストールでDocker Engine 26がサポートされるようになりました。
-
-3.9.44より前のリリースで作成された既存のコネクタがある場合、Docker Engine 25.0.5は引き続きUbuntuホストでサポートされる最大バージョンです。
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["Docker Engineの要件の詳細"]です。
-
-
-
-===== ローカルUIアクセス用のSSL証明書が更新されました
-
-BlueXP  を制限モードまたはプライベートモードで使用する場合、クラウドリージョンまたはオンプレミスに導入されているコネクタ仮想マシンからユーザーインターフェイスにアクセスできます。デフォルトでは、BlueXP  は自己署名SSL証明書を使用して、コネクタで実行されているWebベースのコンソールへのセキュアなHTTPSアクセスを提供します。
-
-このリリースでは、新規および既存のコネクタのSSL証明書に変更を加えました。
-
-* 証明書の共通名が短いホスト名と一致するようになりました。
-* Certificate Subject Alternative Nameは、ホストマシンのFully Qualified Domain Name（FQDN；完全修飾ドメイン名）です。
-
-
-
-
-==== RHEL 9.4のサポート
-
-BlueXP  を標準モードまたは制限モードで使用している場合、BlueXP  でRed Hat Enterprise Linux 9.4ホストへのコネクタのインストールがサポートされるようになりました。
-
-RHEL 9.4のサポートは、コネクタの3.9.40リリースから開始されました。
-
-標準モードおよび制限モードでサポートされるRHELのバージョンリストに、次のものが追加されました。
-
-* 8.6～8.10
-* 9.1～9.4
-
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["コネクタを使用したRHEL 8および9のサポートについて"]。
-
-
-
-==== すべてのバージョンのRHELでのPodman 4.9.4のサポート
-
-Podman 4.9.4は、Red Hat Enterprise Linuxのすべてのサポート対象バージョンでサポートされるようになりました。バージョン4.9.4は、これまでRHEL 8.10でのみサポートされていました。
-
-サポートされるPodmanバージョンの更新されたリストには、Red Hat Enterprise Linuxホストでの4.6.1および4.9.4が含まれています。
-
-コネクタの3.9.40リリース以降のRHELホストにはPodmanが必要です。
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["コネクタを使用したRHEL 8および9のサポートについて"]。
-
-
-
-==== AWSとAzureの権限が更新されました
-
-コネクタのAWSポリシーとAzureポリシーを更新し、不要になった権限を削除しました。この権限は、BlueXP  エッジのキャッシングとKubernetesクラスタの検出と管理に関連していましたが、2024年8月にサポートが終了しました。
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html#change-log["AWSポリシーの変更点を確認する"]です。
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#change-log["Azureポリシーの変更点を確認"]です。
 
 
 
@@ -454,6 +392,28 @@ BlueXP Connectorバージョン3.9.40は、Red Hat Enterprise Linuxバージョ�
 
 
 == 分類
+
+
+
+=== 2024年10月10日（バージョン1.36）
+
+このBlueXP  分類リリースには、次の更新が含まれています。
+
+
+
+==== RHEL 9.4のサポート
+
+このリリースでは、以前のサポートバージョンに加えて、Red Hat Enterprise Linux v9.4もサポートされます。これは、ダークサイトの導入を含む、BlueXP  分類の手動オンプレミスインストールに適用されます。
+
+次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があります。また、BlueXP  分類バージョン1.30以降（Red Hat Enterprise Linuxバージョン8.8、9.0、9.1、9.2、9.3、9.4）が必要です。
+
+詳細については https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["BlueXPの分類環境の概要"]、をご覧ください。
+
+
+
+==== スキャンパフォーマンスの向上
+
+このリリースでは、スキャンパフォーマンスが向上しています。
 
 
 
