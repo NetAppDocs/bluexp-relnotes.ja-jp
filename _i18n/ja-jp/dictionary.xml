@@ -534,7 +534,6 @@
   <block id="a429eb8c690c0a48131f4ae1267eafd1" category="paragraph">このリリースでは、ONTAPで作成した1GB未満のボリュームをリストアできるようになりました。ONTAPを使用して作成できる最小ボリュームサイズは20MBです。</block>
   <block id="ccbf8c45039ba817be81bbf5fa2a7521" category="section-title">DataLockのコストを削減する方法のヒント</block>
   <block id="f959c5a51fb8f2a9e9c0063bbb8adb63" category="paragraph">DataLock機能は、指定された期間、バックアップファイルが変更または削除されないように保護します。これは、ランサムウェア攻撃からファイルを保護するのに役立ちます。</block>
-  <block id="4822bd9fd85c6d5438ecd9963b5c6897" category="paragraph">DataLockの詳細および関連コストを軽減する方法のヒントについては、を参照してください <block ref="d72e0969f8971a4b91ad44a04438bfb9" category="inline-link-macro-rx"></block>。</block>
   <block id="79cfacda817c1e599649823ffa32c8d7" category="section-title">AWS IAM Roles Anywhere統合</block>
   <block id="bebfb016f9defe9a78fff65f418f213b" category="paragraph">Amazon Web Services（AWS）Identity and Access Management（IAM）Roles Anywhereサービスを使用すると、workloads_on_awsにIAMロールを使用してAWS APIに安全にアクセスできるようになります。これは、workloads_on_awsにIAMロールを使用する場合と同じ方法です。IAM Roles Anywhereの秘密鍵インフラストラクチャとAWSトークンを使用する場合、長期的なAWSアクセスキーとシークレットキーは必要ありません。これにより、クレデンシャルをより頻繁にローテーションすることができ、セキュリティが向上します。</block>
   <block id="24c6cf6b2747b390a5d9eb672e1d54d4" category="paragraph">このリリースでは、AWS IAM Roles Anywhereサービスのサポートがテクノロジプレビューになります。</block>
@@ -544,7 +543,6 @@
   <block id="a821e6c079044462f6ffc9a01ed28fc9" category="paragraph">以前は、FlexVolボリュームはリストアできましたが、FlexGroupのフォルダやディレクトリはリストアできませんでした。ONTAP 9.15.1 p2では、[参照してリストア]オプションを使用してFlexGroupフォルダをリストアできます。</block>
   <block id="cd4619af82dfe7627dc934e29e85a6e9" category="paragraph">このリリースでは、FlexGroupフォルダのリストアがテクノロジプレビューとしてサポートされます。</block>
   <block id="abbf2484b45da9fd7be677fe96c511eb" category="inline-link-macro">参照と復元を使用したフォルダとファイルの復元</block>
-  <block id="9b7af6cb2e410e55ce793003b7110047" category="paragraph">詳細については、を参照してください <block ref="07023d18b01371174abc5a157da41b99" category="inline-link-macro-rx"></block>。</block>
   <block id="707304f314bfa71975e8ffb352535092" category="paragraph">手動で有効にする方法については、を参照してください<block ref="7de2d0863d92330816fac8b7768edb68" category="inline-link-rx"></block>。</block>
   <block id="70d1ac1a529ac546d3e60b81ee464a1d" category="paragraph">このBlueXP  分類リリースには、次の更新が含まれています。</block>
   <block id="44a73383773bebac3194e73bd06397a8" category="section-title">CentOSからUbuntuへの変更</block>
@@ -694,7 +692,6 @@
   <block id="c6bad3b272d5eeec569990b050d88123" category="paragraph">BlueXP  のバックアップとリカバリで、Podmanエンジンを使用したRed Hat Enterprise Linux（RHEL）バージョン8および9でのファイルとフォルダのリストアがサポートされるようになりました。これは、BlueXP  のバックアップとリカバリの参照とリストアの方法に適用されます。</block>
   <block id="f5d370ee9e029c4d62db915f308e04c0" category="paragraph">BlueXP  Connectorバージョン3.9.40では、に記載されているオペレーティングシステムに加えて、コネクタソフトウェアをRHEL 8または9ホストに手動でインストールする場合、Red Hat Enterprise Linuxバージョン8および9の特定のバージョンがサポートされ<block ref="9b2a96babeed2ab711a4327ec7f34b5c" category="inline-link-rx"></block>ます。これらの新しいバージョンのRHELでは、DockerエンジンではなくPodmanエンジンが必要です。これまで、BlueXP  のバックアップとリカバリには、Podmanエンジンを使用する場合に2つの制限がありました。これらの制限は削除されました。</block>
   <block id="6111aa812639d5e432842ceca200ea78" category="inline-link">バックアップファイルからのONTAPデータのリストアの詳細</block>
-  <block id="007a407431de4321913728dae6423904" category="paragraph"><block ref="056f97dce802386385ce3734740613e1" category="inline-link-rx"></block>です。</block>
   <block id="3abe4a789c1c33e285d9452cca8c493b" category="section-title">カタログのインデックス作成を高速化し、検索とリストアを向上</block>
   <block id="9353e94049314c6236b51712848f2572" category="paragraph">このリリースには、ベースラインインデックス作成をはるかに高速に完了する改善されたカタログインデックスが含まれています。インデックス作成を高速化すると、検索とリストア機能をより迅速に使用できるようになります。</block>
   <block id="eaecda6db64f5346d5c63bfe0094e040" category="section-title">2024年9月20日</block>
@@ -726,7 +723,6 @@
   <block id="402601978c4c05e28bf41ea74b2c118a" category="list-text">_コンプライアンスビューア_現在_分類ビューア_</block>
   <block id="396758cef44fe7d4ebed2010a8ee7761" category="list-text">[設定]では、BlueXP  IDとアクセス管理にアクセスして、これらの拡張機能を利用できます。</block>
   <block id="0909fc2dd5049052e70dfa0e18f7fbcf" category="inline-image-macro">BlueXP  のスクリーンショットは、インターフェイスの上部から選択可能な組織とプロジェクト、および[設定]メニューから使用できるIDとアクセスの管理を示しています。</block>
-  <block id="bc9b550d1734b431c662a14aa92c06df" category="paragraph"><block ref="bc9b550d1734b431c662a14aa92c06df" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">次の点に注意してください。</block>
   <block id="d9c4ef914f4f136c37c3df051aaedb70" category="list-text">既存のユーザや作業環境に変更はありません。</block>
   <block id="31243c2d285073a1e31df388c65d726f" category="list-text">ロールの名前は変更されていますが、権限の観点からは違いはありません。ユーザは以前と同じ作業環境に引き続きアクセスできます。</block>
@@ -739,9 +735,7 @@
   <block id="a737f6ac26156f3770a49e30a21f7d73" category="paragraph">BlueXP  IAMは、標準モードでBlueXP  を使用する場合にサポートされます。BlueXP  を制限モードまたはプライベートモードで使用している場合は、引き続きBlueXP  アカウント_を使用してワークスペース、ユーザー、リソースを管理します。</block>
   <block id="3163b3d4dc92f42d04ad4c79906dcdc3" category="section-title">次の手順</block>
   <block id="a5a81005322e1187e396e2f1252dca71" category="inline-link-macro">BlueXP  IAMの詳細</block>
-  <block id="0a3f88a939958973fc19097a4507c320" category="list-text"><block ref="0a3f88a939958973fc19097a4507c320" category="inline-link-macro-rx"></block></block>
   <block id="c12e8c3134a6d5ff2ec2657f6357e8ec" category="inline-link-macro">BlueXP  IAMの使用を開始する</block>
-  <block id="8e537ea51347d673ce98d63017478ab1" category="list-text"><block ref="8e537ea51347d673ce98d63017478ab1" category="inline-link-macro-rx"></block></block>
   <block id="52b3f16d7e534fa9f1eb5be8603ccd2e" category="section-title">コネクタ3.9.45</block>
   <block id="7cecac935b533838cda5bd0fc68012c1" category="paragraph">このリリースには、拡張されたオペレーティングシステムサポートとバグ修正が含まれています。</block>
   <block id="5a45d9d610a1bb698a260ef7f9494081" category="paragraph">3.9.45リリースは、標準モードと制限モードで使用できます。</block>
@@ -776,4 +770,10 @@
   <block id="2182ff9388484137699eb937c0df0141" category="inline-link">Cloud Volumes ONTAP ソフトウェアをアップグレードします</block>
   <block id="c2f5c6d8ccd2cc8bdc92db0ad0c79342" category="paragraph"><block ref="c2f5c6d8ccd2cc8bdc92db0ad0c79342" category="inline-link-rx"></block></block>
   <block id="c5686848892b4de33534dcc294c33fff" category="paragraph">WORM（Write Once Read Many）とARP（Autonomous Ransomware Protection）の組み込みのデータ保護機能とセキュリティ機能は、Cloud Volumes ONTAPライセンスで追加料金なしで提供されます。新しい価格モデルは、AWS、Azure、Google Cloudの新規および既存のBYOLおよびPAYGO / Marketplaceサブスクリプションの両方に適用されます。容量ベースとノードベースのどちらのライセンスにも、シングルノードとハイアベイラビリティ（HA）ペアを含むすべての構成用のARPとWORMが追加料金なしで含まれます。</block>
+  <block id="f08676e8a1e41f582ac0537747703230" category="paragraph"><block ref="f08676e8a1e41f582ac0537747703230" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4d3e366c7ef57f5c2037203fa77c103c" category="list-text"><block ref="4d3e366c7ef57f5c2037203fa77c103c" category="inline-link-rx"></block></block>
+  <block id="6b7b64b4bdd6080baf05e2c37372258a" category="list-text"><block ref="6b7b64b4bdd6080baf05e2c37372258a" category="inline-link-rx"></block></block>
+  <block id="84142ff06d4e9d4646fc2a3b18cc1d91" category="paragraph"><block ref="a21af64035213e0424a2bf24b7431646" category="inline-link-rx"></block>です。</block>
+  <block id="2f080abae9949a746e32fbd78d3382f7" category="paragraph">DataLockの詳細および関連コストを軽減する方法のヒントについては、を参照してください<block ref="116b2987b0e6fcf4c15ff7c1a1a47ed3" category="inline-link-rx"></block>。</block>
+  <block id="b1b12c3c76c5dc414df3c68e8a811c2a" category="paragraph">詳細については、を参照してください<block ref="ef40acf6b73cf65ed40d9b8f7f6be1c3" category="inline-link-rx"></block>。</block>
 </blocks>

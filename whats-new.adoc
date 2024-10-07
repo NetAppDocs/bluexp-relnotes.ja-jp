@@ -63,7 +63,7 @@ BlueXP  にログインすると、次の変更が表示されます。
 * [設定]では、BlueXP  IDとアクセス管理にアクセスして、これらの拡張機能を利用できます。
 
 
-image:screenshot-iam-introduction.png["BlueXP  のスクリーンショットは、インターフェイスの上部から選択可能な組織とプロジェクト、および[設定]メニューから使用できるIDとアクセスの管理を示しています。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-iam-introduction.png["BlueXP  のスクリーンショットは、インターフェイスの上部から選択可能な組織とプロジェクト、および[設定]メニューから使用できるIDとアクセスの管理を示しています。"]
 
 次の点に注意してください。
 
@@ -89,8 +89,8 @@ BlueXP  IAMは、標準モードでBlueXP  を使用する場合にサポー�
 
 ===== 次の手順
 
-* link:concept-identity-and-access-management.html["BlueXP  IAMの詳細"]
-* link:task-iam-get-started.html["BlueXP  IAMの使用を開始する"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-identity-and-access-management.html["BlueXP  IAMの詳細"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-get-started.html["BlueXP  IAMの使用を開始する"]
 
 
 
@@ -383,7 +383,7 @@ BlueXP  のバックアップとリカバリで、Podmanエンジンを使用�
 
 BlueXP  Connectorバージョン3.9.40では、に記載されているオペレーティングシステムに加えて、コネクタソフトウェアをRHEL 8または9ホストに手動でインストールする場合、Red Hat Enterprise Linuxバージョン8および9の特定のバージョンがサポートされ https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-private-mode.html#step-3-review-host-requirements["ホストの要件"^]ます。これらの新しいバージョンのRHELでは、DockerエンジンではなくPodmanエンジンが必要です。これまで、BlueXP  のバックアップとリカバリには、Podmanエンジンを使用する場合に2つの制限がありました。これらの制限は削除されました。
 
-https://review.docs.netapp.com/us-en/bluexp-backup-recovery_br-se-ja/task-restore-backups-ontap.html["バックアップファイルからのONTAPデータのリストアの詳細"]です。
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["バックアップファイルからのONTAPデータのリストアの詳細"]です。
 
 
 
@@ -391,7 +391,7 @@ https://review.docs.netapp.com/us-en/bluexp-backup-recovery_br-se-ja/task-restor
 
 このリリースには、ベースラインインデックス作成をはるかに高速に完了する改善されたカタログインデックスが含まれています。インデックス作成を高速化すると、検索とリストア機能をより迅速に使用できるようになります。
 
-https://review.docs.netapp.com/us-en/bluexp-backup-recovery_br-se-ja/task-restore-backups-ontap.html["バックアップファイルからのONTAPデータのリストアの詳細"]です。
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["バックアップファイルからのONTAPデータのリストアの詳細"]です。
 
 
 
@@ -409,7 +409,7 @@ https://review.docs.netapp.com/us-en/bluexp-backup-recovery_br-se-ja/task-restor
 
 DataLock機能は、指定された期間、バックアップファイルが変更または削除されないように保護します。これは、ランサムウェア攻撃からファイルを保護するのに役立ちます。
 
-DataLockの詳細および関連コストを軽減する方法のヒントについては、を参照してください link:concept-cloud-backup-policies.html["オブジェクトへのバックアップポリシーの設定"]。
+DataLockの詳細および関連コストを軽減する方法のヒントについては、を参照してください https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-cloud-backup-policies.html["オブジェクトへのバックアップポリシーの設定"]。
 
 
 
@@ -429,7 +429,7 @@ Amazon Web Services（AWS）Identity and Access Management（IAM）Roles Anywher
 
 このリリースでは、FlexGroupフォルダのリストアがテクノロジプレビューとしてサポートされます。
 
-詳細については、を参照してください link:task-restore-backups-ontap.html#restore-folders-and-files-using-browse-restore["参照と復元を使用したフォルダとファイルの復元"]。
+詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html#restore-ontap-data-using-browse-restore["参照と復元を使用したフォルダとファイルの復元"]。
 
 手動で有効にする方法については、を参照してください https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-July-2024-Release/ba-p/453993["BlueXPのバックアップとリカバリ：2024年7月リリースブログ"]。
 
