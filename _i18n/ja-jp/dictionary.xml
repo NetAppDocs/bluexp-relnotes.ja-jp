@@ -78,7 +78,6 @@
   <block id="efc0c4f71709b261c273fb935757cfae" category="section-title">運用の耐障害性</block>
   <block id="207aaa44f72ba634c18fcc9bae44d655" category="inline-link">アカウントの使用済み容量を表示する方法について説明します</block>
   <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">[ライセンス]タブが削除されました</block>
-  <block id="66a0b4752150538292b81c073ca0b83b" category="section-title">階層化タブの名前が変更され、内容が更新されました</block>
   <block id="ae74e3db3615f676968300b7cc6e8ae1" category="paragraph">運用の耐障害性は、アラートとイベントを分析してサービスとソリューションの健全性、アップタイム、パフォーマンスを維持するのに役立つサービスです。</block>
   <block id="6d924727c00a77a63749e2f8aa0860d4" category="summary">このリリースノートでは、BlueXPに含まれるクラウドサービスに関する最新の機能強化について説明します。個々のサービスごとにリリースノートの全セットへのリンクがあります。</block>
   <block id="bb50e2459e4e016aa4b14a56adb2358f" category="inline-link">セットアップと管理</block>
@@ -163,9 +162,7 @@
   <block id="5a7621b5dce7d879d4fc86499c34c6e6" category="inline-link">クラスタを検出する方法については、[My estate]ページを参照してください</block>
   <block id="92adae4e241e70163adb8c5469771a82" category="paragraph"><block ref="24b3a807a9407b81f5101322f988421d" category="inline-link-rx"></block>。</block>
   <block id="28acda3f8bdb20220a5658f1cd81f226" category="section-title">2023年7月4日</block>
-  <block id="f955a076eeae4df4466469593ff635ca" category="section-title">アクセス頻度の低いデータをオブジェクトストレージにアップロードする際の帯域幅を調整できるようになりました</block>
   <block id="1d59c82c13288b53f26d652175016f90" category="paragraph">BlueXP階層化をアクティブ化すると、ONTAPは無制限のネットワーク帯域幅を使用して、アクセス頻度の低いデータをクラスタ内のボリュームからオブジェクトストレージに転送できます。階層化トラフィックが通常のユーザワークロードに影響していることに気付いた場合は、転送中に使用できる帯域幅を調整できます。<block ref="bd661c8ba5ce12ee5a1adc1010618597" category="inline-link-rx"></block>。</block>
-  <block id="eb516d1f8f028dbd0333948ae6fc06a5" category="section-title">通知センターに「低階層化」の階層化イベントが表示されます</block>
   <block id="250f0923d20814211c14c5a6cd0e2643" category="paragraph">クラスタがコールドデータの20%未満（データを階層化しないクラスタを含む）を階層化しているときに、階層化イベント「Tier additional data from cluster &lt;name&gt; to object storage efficiency」が通知として表示されるようになりました。</block>
   <block id="3c23988fbf7c203a2c811a5ce84251c0" category="inline-link">BlueXP階層化サービス（TCO）とコスト削減試算ツールです</block>
   <block id="57f9b94b395c8e293b7f892fe5995ac7" category="paragraph">本通知は、システムの効率化とストレージコストの削減を目的とした「推奨事項」です。これにより、へのリンクが提供されます<block ref="c9d262883689ef94201e8739cb50c7f6" category="inline-link-rx"></block> コスト削減額の計算に役立ちます。</block>
@@ -756,8 +753,12 @@
   <block id="b7f7cb3b83ae19c923f62035dd4305fd" category="paragraph">詳細については<block ref="cea7a7dae9f7d88b97fa434e79201c9b" category="inline-link-rx"></block>、をご覧ください。</block>
   <block id="7062dd46798946172bc9078744756dfc" category="section-title">スキャンパフォーマンスの向上</block>
   <block id="8455b67ff73ad2f75c922d81e0449780" category="paragraph">このリリースでは、スキャンパフォーマンスが向上しています。</block>
-  <block id="d26c29507d869d48f4861c9b4bae1f6e" category="paragraph">標準モードまたはプライベートモードでBlueXP  を使用している場合、BlueXP  でNetApp ASA R2システムを検出できるようになりました。NetApp ASA R2システムを検出して作業環境を開くと、System Managerに直接移動します。</block>
   <block id="f2fba5567ec0d8ae5addf04c960ba6d0" category="paragraph">BlueXP  をプライベートモードで使用している場合、ASA R2システムの検出はサポートされません。</block>
   <block id="62bd7572081df25dd3f1f52151883c4a" category="inline-link">BlueXPの導入モードについて説明します</block>
   <block id="d3342e15149bfef7fd9289d7025e506e" category="list-text"><block ref="d3342e15149bfef7fd9289d7025e506e" category="inline-link-rx"></block></block>
+  <block id="0c02bcea354671c5372f06a37c547a7d" category="paragraph">標準モードまたは制限モードでBlueXP  を使用している場合、BlueXP  でNetApp ASA R2システムを検出できるようになりました。NetApp ASA R2システムを検出して作業環境を開くと、System Managerに直接移動します。</block>
+  <block id="101e8e97885c05702335faecd0fb3f50" category="section-title">バケット名にカスタムプレフィックスを使用する</block>
+  <block id="a4e53922ceec159164a3765ff05e1458" category="section-title">アクセス頻度の低いデータを転送するための帯域幅の調整</block>
+  <block id="904ea3c3aba6edae61ba696b01808a11" category="section-title">通知センターに表示される階層化イベント</block>
+  <block id="344a2fbdf46c3a4ef07e7c73566f42f3" category="section-title">階層化タブの名前変更と更新</block>
 </blocks>

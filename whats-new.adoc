@@ -970,7 +970,7 @@ BlueXP  移行レポートサービスは、2024年8月7日に削除されま�
 
 ==== ASA R2システムのサポート
 
-標準モードまたはプライベートモードでBlueXP  を使用している場合、BlueXP  でNetApp ASA R2システムを検出できるようになりました。NetApp ASA R2システムを検出して作業環境を開くと、System Managerに直接移動します。
+標準モードまたは制限モードでBlueXP  を使用している場合、BlueXP  でNetApp ASA R2システムを検出できるようになりました。NetApp ASA R2システムを検出して作業環境を開くと、System Managerに直接移動します。
 
 ASA R2システムでは、他の管理オプションは使用できません。[標準]ビューを使用したり、BlueXPサービスを有効にしたりすることはできません。
 
@@ -1217,7 +1217,7 @@ StorageGRID システムをBlueXPから直接検出できるようになりま�
 
 
 
-==== 階層化データを格納するバケット名にカスタムプレフィックスを使用する
+==== バケット名にカスタムプレフィックスを使用する
 
 以前は、バケット名を定義する際にデフォルトの「fabric-pool」プレフィックス（_fabric-pool-bucket1_など）を使用する必要がありました。バケットに名前を付けるときにカスタムプレフィックスを使用できるようになりました。この機能は、データをAmazon S3に階層化する場合にのみ使用できます。 https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#prepare-your-aws-environment["詳細はこちら。"]。
 
@@ -1233,13 +1233,13 @@ StorageGRID システムをBlueXPから直接検出できるようになりま�
 
 
 
-==== アクセス頻度の低いデータをオブジェクトストレージにアップロードする際の帯域幅を調整できるようになりました
+==== アクセス頻度の低いデータを転送するための帯域幅の調整
 
 BlueXP階層化をアクティブ化すると、ONTAPは無制限のネットワーク帯域幅を使用して、アクセス頻度の低いデータをクラスタ内のボリュームからオブジェクトストレージに転送できます。階層化トラフィックが通常のユーザワークロードに影響していることに気付いた場合は、転送中に使用できる帯域幅を調整できます。 https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#changing-the-network-bandwidth-available-to-upload-inactive-data-to-object-storage["詳細はこちら。"]。
 
 
 
-==== 通知センターに「低階層化」の階層化イベントが表示されます
+==== 通知センターに表示される階層化イベント
 
 クラスタがコールドデータの20%未満（データを階層化しないクラスタを含む）を階層化しているときに、階層化イベント「Tier additional data from cluster <name> to object storage efficiency」が通知として表示されるようになりました。
 
@@ -1257,7 +1257,7 @@ BlueXP階層化インターフェイスから[ライセンス]タブが削除さ
 
 
 
-==== 階層化タブの名前が変更され、内容が更新されました
+==== 階層化タブの名前変更と更新
 
 [Clusters Dashboard]タブの名前が[Clusters]に変更され、[On-Prem Overview]タブの名前が[On-Premises Dashboard]に変更されました。これらのページには、階層化構成を追加してストレージスペースを最適化できるかどうかを評価するための情報が追加されています。
 
