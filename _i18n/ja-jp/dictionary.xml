@@ -430,9 +430,6 @@
   <block id="b682afa0ff8a1d136b51d3115421ac1b" category="list-text"><block ref="b682afa0ff8a1d136b51d3115421ac1b" category="inline-link-rx"></block></block>
   <block id="93716955add4f66b2af685a33bac4789" category="section-title">2024年5月15日</block>
   <block id="9df62cb4d6f151b560e84723841bd523" category="paragraph">このBlueXPディザスタリカバリリリースには、次の更新が含まれています。</block>
-  <block id="7f1d1e9df7ef6953a6e373e29826ca55" category="list-text">* VMwareワークロードのオンプレミスからオンプレミスへのレプリケーション*が、一般提供機能としてリリースされました。以前は、機能が制限されたテクノロジプレビューでした。</block>
-  <block id="b7005516f0c1f875afae2146a2fb3617" category="list-text">*ライセンスの更新*： BlueXPディザスタリカバリでは、90日間の無償トライアルに登録するか、Amazon Marketplaceで従量課金制（PAYGO）サブスクリプションを購入するか、NetApp営業担当またはNetApp Support Site（NSS）から取得したNetAppライセンスファイル（NLF）であるお客様所有のライセンスを使用（BYOL）することができます。</block>
-  <block id="eb9506998f4dca4bcb82fe962448b79b" category="paragraph">BlueXPディザスタリカバリ用のライセンスのセットアップの詳細については、を参照してください。 <block ref="eaa54a57026891d12cbf928afd176564" category="inline-link-macro-rx"></block>。</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新機能</block>
   <block id="f5f7a4d1535be1d0940e398b2997dfc0" category="sidebar">サービス別リリースノート</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">ブログとコミュニティ</block>
@@ -475,23 +472,9 @@
   <block id="a6cba69e97a9115b21cbf35b24b33d83" category="section-title">2024年7月4日</block>
   <block id="5e63fb298525a46837cedfd7fc3c5002" category="paragraph">ストレージシステムの環境の健全性に関するインサイトを提供する環境指標により、高度な予測モデルに基づいて、予測される電力使用量、直接炭素使用量、および熱排出量のより正確な値が提供されるようになりました。詳細については、を参照して <block ref="8ef455a63dd9427c902954b8e3c7f21b" category="inline-link-macro-rx"></block>ください。</block>
   <block id="8352fdd61dbba9f97925bd7797c4eb47" category="paragraph">EシリーズシステムとStorageGRIDシステムでサステナビリティがサポートされるようになりました。これらのシステムのSustainabilityダッシュボードでは、推奨される対処方法と環境指標のリストを表示して、電力、直接的な炭素使用量、熱の予測を表示できます。詳細については、を参照して <block ref="8ef455a63dd9427c902954b8e3c7f21b" category="inline-link-macro-rx"></block>ください。</block>
-  <block id="d8e45589bc9d86b39aed3bcde52935ac" category="section-title">2024年7月5日</block>
-  <block id="7ee40b46e664d0d7baaad4da422c7457" category="list-text">* AFF Aシリーズのサポート*：このリリースでは、NetApp AFF Aシリーズハードウェアプラットフォームがサポートされます。</block>
-  <block id="a1961f9eb07acee12f93a3f0b929745e" category="list-text">*オンプレミスからオンプレミスのVMware VMFSデータストアのサポート*：このリリースには、オンプレミスストレージに保護されたVMware vSphere Virtual Machine File System（VMFS）データストアにマウントされたVMのサポートの_テクノロジプレビュー_が含まれています。このリリースでは、オンプレミスのVMwareワークロードからVMFSデータストアを使用するオンプレミスのVMware環境へのディザスタリカバリがテクノロジプレビューでサポートされます。</block>
   <block id="710abd7c1d5a2a3be1aa4c7dbff890cf" category="admonition">NetAppでは、プレビューしたワークロード容量に対して課金されることはありません。</block>
-  <block id="a1975f713c38b2cbf1c095ed7dbadabe" category="list-text">*レプリケーション計画の編集*:このリリースでは、フェイルオーバーマッピングページが強化され、わかりやすくなりました。</block>
-  <block id="e9558a079e21d43034f54a99b19f2ad7" category="inline-link">計画の管理</block>
-  <block id="583edef1d12ac8fcf925b864da2d76c6" category="paragraph">を参照してください<block ref="a8a4a23c947d3e2e3dc169027b7cac12" category="inline-link-rx"></block>。</block>
-  <block id="2343906acc207119786e118da0bbadf7" category="list-text">*仮想マシンの編集*：このリリースでは、仮想マシンの編集プロセスにUIが若干改善されました。</block>
-  <block id="5f1df9fa6d6ce95c36680ae870250af7" category="inline-link">VMの管理</block>
-  <block id="f7e4cafc0e54e03cc0ff738b39e333cb" category="paragraph">を参照してください<block ref="1d44a072309f2a4f38fd6e17ed7eb631" category="inline-link-rx"></block>。</block>
-  <block id="51c73608632a284eecfb3fce29106b26" category="list-text">*アップデートのフェイルオーバー*：フェイルオーバーを開始する前に、VMのステータスと電源がオンになっているかオフになっているかを確認できるようになりました。フェイルオーバープロセスでは、今すぐSnapshotを作成するか、またはSnapshotを選択できるようになりました。</block>
   <block id="b1fb5b4805d079fc23dedcbe4848437e" category="inline-link">リモートサイトへのアプリケーションのフェイルオーバー</block>
   <block id="ab132121a366abdd7667443cc98f3a69" category="paragraph">を参照してください<block ref="1cbf59ee3e77dd0082612a21b0900f81" category="inline-link-rx"></block>。</block>
-  <block id="66dacd6d538323484187ed3f8c9ef650" category="list-text">*フェイルオーバーテストスケジュール*：フェイルオーバーテストを編集し、フェイルオーバーテストの日次、週次、月次スケジュールを設定できるようになりました。</block>
-  <block id="42b40c3ce2e25adae8327795c655116d" category="list-text">*前提条件情報の更新*：BlueXPディザスタリカバリの前提条件情報が更新されました。</block>
-  <block id="ccf3c2f4a4ab48adb4cc5352e480655c" category="inline-link">BlueXPディザスタリカバリの前提条件</block>
-  <block id="8a62eb7f743049ce2523fe7eb67fb48f" category="paragraph">を参照してください<block ref="dfd63f4ad4adb15a66b44e212e2488b7" category="inline-link-rx"></block>。</block>
   <block id="16ec862fdbc31bf15f7d944ad60dd33f" category="section-title">2024年7月1日</block>
   <block id="fdb1f5ab91dd63ebda3ff72247aa7b2b" category="list-text">*お客様所有のライセンスを使用（BYOL）*：このリリースでは、NetApp営業担当から取得するNetAppライセンスファイル（NLF）であるBYOLライセンスを使用できます。</block>
   <block id="0c379e4399020bc48ac7da5510998e1a" category="list-text">*アプリケーションワークロードをファイルレベルでリストアする*：アプリケーションワークロードをファイルレベルでリストアする前に、攻撃の影響を受けた可能性のあるファイルのリストを表示し、リストアするファイルを特定できるようになりました。BlueXPランサムウェア対策でリストアするファイルを選択したり、アラートの影響を受けたすべてのファイルを記載したCSVファイルをアップロードしたり、リストアするファイルを手動で特定したりできます。</block>
@@ -544,24 +527,11 @@
   <block id="b9dbe1e85847c069664ebe888e76d35c" category="list-text">*ジョブのキャンセル*：このリリースでは、ジョブ監視UIでジョブをキャンセルできるようになりました。</block>
   <block id="4639d0e2e2909a747265c2f704128bca" category="inline-link">ジョブの監視</block>
   <block id="5ef55533619d84d0298304b37a76eeff" category="paragraph">を参照してください<block ref="786959fe8223b685d5c08f8e62246672" category="inline-link-rx"></block>。</block>
-  <block id="f4c84d2d214fb7f3e3cae921398c8e4a" category="section-title">2024年7月17日</block>
-  <block id="e96e73e43a84335e9de1d02f80f7d655" category="list-text">*フェイルオーバーテストスケジュール*：このリリースには、日次スケジュールと週次スケジュールをサポートするために必要なフェイルオーバーテストスケジュール構造の更新が含まれています。この更新では、新しい毎日および毎週のフェイルオーバーテストスケジュールを使用できるように、既存のレプリケーションプランをすべて無効にして再度有効にする必要があります。これは1回限りの要件です。</block>
   <block id="7043d4fb27c94bc9a206c106cef9d80c" category="paragraph">その方法は次のとおりです。</block>
   <block id="eff6d6d4d66ab65f33be5de8b62e16d3" category="list-text">トップメニューから*レプリケーションプラン*を選択します。</block>
   <block id="2ae04d8f24d0c8f552b0d3857c0953b3" category="list-text">計画を選択し、[Actions]アイコンを選択してドロップダウンメニューを表示します。</block>
   <block id="dbf8ea65a71d9e2042b03a97a0da4095" category="list-text">[*Disable*] を選択します。</block>
   <block id="9ffe587f372d96c9b0db66cfe333c0cf" category="list-text">数分後、*[有効化]*を選択します。</block>
-  <block id="dc6efda4f2a86706d886df508f873039" category="list-text">*レプリケーションプランの更新*：このリリースにはレプリケーションプランデータの更新が含まれており、「スナップショットが見つかりません」の問題を解決します。そのためには、すべてのレプリケーション計画の保持数を1に変更し、オンデマンドのSnapshotを開始する必要があります。このプロセスでは、新しいバックアップが作成され、古いバックアップがすべて削除されます。</block>
-  <block id="3d3e2652059a9417e7a9b8801e83b99d" category="list-text">レプリケーション計画を選択し、*[フェイルオーバーマッピング]*タブをクリックし、*[編集]*鉛筆アイコンをクリックします。</block>
-  <block id="f05351f8a712da4ff1e724d342c4670b" category="list-text">[Datastores]*の矢印をクリックして展開します。</block>
-  <block id="ee9e0fb0a09a468f33fa6f2dabc4ff49" category="inline-image-macro">[Edit failover mappings]ページ</block>
-  <block id="7cbc4647aa042fa4dbc711ee9aa94612" category="paragraph"><block ref="7cbc4647aa042fa4dbc711ee9aa94612" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0d59b78804ed5feec9399254629a60f1" category="list-text">レプリケーション計画の保持数の値をメモします。これらの手順が完了したら、この元の値を元に戻す必要があります。</block>
-  <block id="e9c686cd7f0fc0f9a24375142cf2639b" category="list-text">カウントを1に減らします。</block>
-  <block id="94eec0eecc897e0613b4dca05f1db3b5" category="list-text">オンデマンドのスナップショットを開始します。これを行うには、[Replication plan]ページでプランを選択し、[Actions]アイコンをクリックして*[Take snapshot now]*を選択します。</block>
-  <block id="4be920e5d3a5c6a1a13e6a9ed1ea0d96" category="list-text">Snapshotジョブが正常に完了したら、レプリケーションプランの数を、最初の手順でメモした元の値に戻します。</block>
-  <block id="fcf0bc475de9e6576c18ef6dcf5d7506" category="list-text">既存のすべてのレプリケーションプランについて、上記の手順を繰り返します。</block>
-  <block id="7967654ba38c10467e0d83677de0e180" category="list-text">*レプリケーションプランの更新*:[アプリケーション]ページのデータストアでVMをフィルタリングし、//を選択して、レプリケーションプランをより簡単に追加できます <block ref="8aa3c94c171b2c9d7252afb28ee019a7" category="inline-link-macro-rx"></block>。を参照してください<block ref="5cf2140f2775e5f1ccc24bb836a069a3" category="inline-link-rx"></block>。 ターゲットの詳細については、[Resource mapping]ページを参照してください。</block>
   <block id="9b4b29c7522dc70822a6513f530beb14" category="paragraph">BlueXP  エッジキャッシングサービスは、2024年8月7日に削除されました。</block>
   <block id="4ac75c7e9ef3301446bb1108a0761fd8" category="paragraph">Kubernetesクラスタの検出と管理のサポートが2024年8月7日に廃止されました。</block>
   <block id="2476ee901bdc6e29b6118470b13e2339" category="paragraph">BlueXP  移行レポートサービスは、2024年8月7日に削除されました。</block>
@@ -775,4 +745,23 @@
   <block id="648169096ce56c8569ce36a4abebe9c7" category="admonition">BlueXP  を制限モードで使用している場合、AWSローカルゾーンはサポートされません。</block>
   <block id="e0b08acf0828bf4594a0b9bd6411df1b" category="inline-link-macro">AWSローカルゾーン</block>
   <block id="b75accaa363606f733ab4203f45f8193" category="paragraph">HA環境でのAWSローカルゾーンの詳細については、を参照してください<block ref="6830ae69d7be576a68a954338edafef9" category="inline-link-macro-rx"></block>。</block>
+  <block id="1992f2f9fa5c0cbd3b61255b9dd507bd" category="section-title">2024年10月30日</block>
+  <block id="51ca1579fc5d4f066bdbf640a4814d76" category="list-text">*レポート*:このリリースでは、環境の分析に役立つレポートを生成およびダウンロードできるようになりました。事前設計されたレポートには、フェイルオーバーとフェイルバックの概要、すべてのサイトのレプリケーションの詳細、過去7日間のジョブの詳細が表示されます。</block>
+  <block id="054b753af44fc4eeee43c9ba6037caaa" category="inline-link">ディザスタリカバリレポートの作成</block>
+  <block id="023cf8170104660fc796a64fdad98afa" category="paragraph">を参照してください<block ref="cca93cc3cfc082fe882eefc731706487" category="inline-link-rx"></block>。</block>
+  <block id="978337672bd8dff65bfbecb42cf21f9d" category="list-text">*30日間の無償トライアル*:今回のリリースでは、BlueXP  ディザスタリカバリの30日間無償トライアルにサインアップできるようになりました。以前は、無料トライアルは90日間でした。</block>
+  <block id="1cb57fbf1f1452e87f62dd668ea03759" category="paragraph">を参照してください<block ref="7585b54fad00f1219b8233730153156f" category="inline-link-rx"></block>。</block>
+  <block id="7c63c33c2146d3ce95c7487c1ebbe27e" category="list-text">*レプリケーション計画の無効化と有効化*:以前のリリースには、毎日および毎週のスケジュールをサポートするために必要なフェイルオーバーテストスケジュール構造の更新が含まれていました。この更新では、新しい日次および週次フェイルオーバーテストスケジュールを使用できるように、既存のレプリケーションプランをすべて無効にして再度有効にする必要がありました。これは1回限りの要件です。</block>
+  <block id="128ecd2ba12e92192724c8e3ed360ffc" category="list-text">*フォルダマッピング*：レプリケーション計画を作成してコンピューティングリソースをマッピングするときに、フォルダをマッピングして、データセンター、クラスタ、およびホスト用に指定したフォルダにVMをリカバリできるようになりました。</block>
+  <block id="1a390a4e18b059462c8f07ea2ea02106" category="paragraph">詳細については、を参照してください<block ref="5cf2140f2775e5f1ccc24bb836a069a3" category="inline-link-rx"></block>。</block>
+  <block id="b7d245c9fa7100d1b04bb8e37530f630" category="list-text">*フェイルオーバー、フェイルバック、およびテストフェイルオーバーに使用できるVMの詳細*：障害が発生し、フェイルオーバーの開始、フェイルバックの実行、またはフェイルオーバーのテストを行う場合、VMの詳細を確認して、再起動しなかったVMを特定できるようになりました。</block>
+  <block id="5b7e4b08598b495e5e802015cfda0817" category="list-text">*順序付けられたブートシーケンスによるVMブート遅延*:レプリケーションプランを作成するときに、プラン内の各VMにブート遅延を設定できるようになりました。これにより、優先順位の高いすべてのVMが実行されてから、以降の優先順位の高いVMが起動されるように、VMの起動順序を設定できます。</block>
+  <block id="6bf75b2b973c4e4b2e97cb286b4a0b22" category="list-text">* VMオペレーティング・システム情報*:レプリケーション・プランを作成すると、プラン内の各VMのオペレーティング・システムが表示されるようになります。これは、VMを1つのリソースグループにグループ化する方法を決定する際に役立ちます。</block>
+  <block id="c216ae779db45238ce5f187a4e9efc0e" category="list-text">* VM名のエイリアス*：レプリケーションプランを作成するときに、ディザスタリカバリSITのVM名にプレフィックスとサフィックスを追加できるようになりました。これにより、プラン内のVMにわかりやすい名前を付けることができます。</block>
+  <block id="0b0c4a58a22974b8eb46383cdfabf354" category="list-text">*古いスナップショットのクリーンアップ*：このリリースでは、指定した保持数を超えて不要になったスナップショットを削除できます。Snapshotの保持数を減らすと、時間の経過とともにSnapshotが蓄積される可能性があります。削除してスペースを解放できるようになりました。これは、オンデマンドで、またはレプリケーションプランを削除するときにいつでも実行できます。</block>
+  <block id="3eddfb488d257605e7713c24d210beee" category="inline-link">サイト、リソースグループ、レプリケーションプラン、データストア、仮想マシンの情報を管理します。</block>
+  <block id="310c40c0ef022c90f1370d1fe91ca720" category="paragraph">詳細については、を参照してください<block ref="db7c318fcbcad8cfb9a44ac897b870b2" category="inline-link-rx"></block>。</block>
+  <block id="718c1087c683dccc1ea79ed6fa0fd10b" category="list-text">*スナップショットの調整*:このリリースでは、ソースとターゲットの間で同期されていないスナップショットを調整できるようになりました。これは、BlueXP  ディザスタリカバリ以外のターゲットでSnapshotが削除された場合に発生することがあります。サービスは、ソース上のスナップショットを24時間ごとに自動的に削除します。ただし、これはオンデマンドで実行できます。この機能を使用すると、すべてのサイトでSnapshotの整合性を確保できます。</block>
+  <block id="07851e0287e57a794c18de627c09e0e7" category="inline-link">レプリケーション計画の管理</block>
+  <block id="9a3a6422d384602f3e19e123263dc99f" category="paragraph">詳細については、を参照してください<block ref="59c3623215c45197e971057378c86d42" category="inline-link-rx"></block>。</block>
 </blocks>
