@@ -2,7 +2,7 @@
 indexpage:
   title: BlueXPリリースノート
   summary: このリリースノートでは、BlueXPに含まれるクラウドサービスに関する最新の機能強化について説明します。個々のサービスごとにリリースノートの全セットへのリンクがあります。
-  keywords: release notes, enhancements, cloud services, bluexp
+  keywords: release notes, enhancements, cloud services, bluexp, what's new
   lead: このリリースノートでは、BlueXPに含まれるクラウドサービスに関する最新の機能強化について説明します。個々のサービスごとにリリースノートの全セットへのリンクがあります。
   tiles:
   - title: 新機能

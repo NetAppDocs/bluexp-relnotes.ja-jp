@@ -47,7 +47,6 @@
   <block id="b42dff6de52c55fe0d6831817d6b309d" category="section-title">ONTAP のFSXをデータソースとして使用します</block>
   <block id="0f8ffeac5211fc4e0dfb43c430753ef2" category="paragraph">Amazon FSX for ONTAP ファイルシステムから次のデスティネーションにデータをレプリケートできるようになりました。</block>
   <block id="0ef90fde5440e5fbd859cb4d59f76f2c" category="list-text">オンプレミスの ONTAP クラスタ</block>
-  <block id="a67ce68ccac082ad54a552bdbcb6ecd7" category="section-title">Eメール通知</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022年9月18日</block>
   <block id="392d70ca39f31f10bd637936769788df" category="inline-link">StorageGRID</block>
   <block id="638be56d4cf930b576e6dc1300c7c33b" category="section-title">2022年9月18日</block>
@@ -66,22 +65,16 @@
   <block id="e27ba65d55db98b6fd6764580355edcf" category="list-text"><block ref="e27ba65d55db98b6fd6764580355edcf" category="inline-link-rx"></block></block>
   <block id="912b3a604a5106bda5b0c99ddaaf1364" category="section-title">BlueXPから新しいバケットを追加できるようになりました</block>
   <block id="c07c4e2e029d6d6eb829c29902cb63ff" category="inline-link">新しいAmazon S3バケットを追加する方法をご覧ください</block>
-  <block id="91402ca539ef196ec17265c55db694dc" category="paragraph">BlueXP CanvasでAmazon S3バケットを表示できるようになりました。BlueXPから直接、新しいバケットを追加したり、既存のバケットのプロパティを変更したりできるようになりました。<block ref="2c8909472f79d70b0988a1b1340a52c9" category="inline-link-rx"></block>。</block>
   <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">2023年4月3日</block>
-  <block id="380d0a0b2cec998dcd9f52b91b24304c" category="paragraph">通知を設定すると、BYOLライセンスの有効期限が近づいたとき（「警告」通知）、またはすでに有効期限が切れているとき（「エラー」通知）にEメール通知を受け取ることができます。</block>
-  <block id="335e7f21f0fdfecbe9c04540dcb8cdd6" category="inline-link">Eメール通知の設定方法については、こちらをご覧ください</block>
   <block id="723ffd15eb7b4453afd0fa0af42c04c3" category="section-title">経済効率</block>
   <block id="88c49608e723add593f5becc8bd9a968" category="section-title">2023年4月2日</block>
   <block id="efc0c4f71709b261c273fb935757cfae" category="section-title">運用の耐障害性</block>
-  <block id="207aaa44f72ba634c18fcc9bae44d655" category="inline-link">アカウントの使用済み容量を表示する方法について説明します</block>
   <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">[ライセンス]タブが削除されました</block>
   <block id="ae74e3db3615f676968300b7cc6e8ae1" category="paragraph">運用の耐障害性は、アラートとイベントを分析してサービスとソリューションの健全性、アップタイム、パフォーマンスを維持するのに役立つサービスです。</block>
   <block id="6d924727c00a77a63749e2f8aa0860d4" category="summary">このリリースノートでは、BlueXPに含まれるクラウドサービスに関する最新の機能強化について説明します。個々のサービスごとにリリースノートの全セットへのリンクがあります。</block>
   <block id="bb50e2459e4e016aa4b14a56adb2358f" category="inline-link">セットアップと管理</block>
   <block id="2049421a4e8e45e83cd7cf18ffc00a12" category="inline-link">デジタルウォレット</block>
   <block id="1d56c7b4c7e2384a1f75532fbd18626d" category="list-text"><block ref="1d56c7b4c7e2384a1f75532fbd18626d" category="inline-link-rx"></block></block>
-  <block id="164bf9dea8d8396a2e7501258b908616" category="section-title">Marketplaceのサブスクリプション用にライセンスされた容量</block>
-  <block id="1e9f781ad3dabc2f942313854ce94883" category="paragraph"><block ref="bcd8bf14da5e102dbc4b48dd0870869e" category="inline-link-rx"></block>。</block>
   <block id="be062cdcabbb3055334e8f19b4bdf378" category="inline-link">バックアップとリカバリ</block>
   <block id="5c9335b28e6277ddbe0137f04e5e58a7" category="inline-link">分類</block>
   <block id="5b942e8f71976a7f4120006aa3ac54cc" category="inline-link">クラウド運用</block>
@@ -90,14 +83,9 @@
   <block id="282baca6aef56652f503adce6afa9f07" category="inline-link">修正</block>
   <block id="337c62c6b6eb7319bae58701105e889c" category="inline-link">階層化</block>
   <block id="3d2e7e90fac12bab6a0d0736a593b5b4" category="section-title">デジタルアドバイザ</block>
-  <block id="35c28a4f1250fc5c59dd5bfa5d9993ce" category="paragraph">新しいBlueXPの経済効率化サービスは、現在または予測されている容量が少ないストレージ資産を特定し、オンプレミスのAFF システムのデータ階層化や容量の追加に関する推奨事項を提供します。</block>
-  <block id="345d0e0aeae5ae7cbf8cdd1fc138e5e6" category="inline-link-macro">BlueXPの経済性に関する詳細はこちらをご覧ください</block>
-  <block id="838d01d8bf08e23ff670a400ad2cb368" category="paragraph"><block ref="c4b58b1c24fbcd13ec6df8ee9e6c3a23" category="inline-link-macro-rx"></block>。</block>
   <block id="0a6c67d82675687d876fd5170168f147" category="paragraph">新しいBlueXPの運用耐障害性サービスとIT運用リスクの自動修復サービスを使用すると、システム停止や障害が発生する前に推奨される修正策を実装できます。</block>
   <block id="070849913b65c4cb130cf632f0ac2008" category="inline-link-macro">BlueXPの運用耐障害性の詳細については、こちらをご覧ください</block>
   <block id="6bea546ba36c0c8c8bed5d22ed6af63d" category="paragraph"><block ref="d51dda3e944cc19bf96c07e1874304d0" category="inline-link-macro-rx"></block>。</block>
-  <block id="d128bda2634e1051cc984231da065144" category="list-text">Eメール通知がBlueXPデジタルウォレットでサポートされるようになりました。</block>
-  <block id="016c818ed3128119f94a31cbec32bf1f" category="paragraph">Cloud Volumes ONTAP の容量単位のライセンスを表示する場合、BlueXPデジタルウォレットに、マーケットプレイスのプライベートオファーで購入したライセンス容量が表示されるようになりました。</block>
   <block id="71bff2737bdd059023a4784358e71a64" category="section-title">2023年5月7日</block>
   <block id="060a6559f6065c5058aca6b22d897bce" category="section-title">Google Cloudプライベートオファー</block>
   <block id="bfe876190faa5e7a4cd6d5029395b658" category="paragraph">BlueXPのデジタルウォレットに、プライベートオファーに関連付けられているGoogle Cloud Marketplaceサブスクリプションが表示され、サブスクリプションの終了日と期間が表示されるようになりました。この機能強化により、プライベートオファーが正常に受け入れられたことを確認し、その条件を検証できます。</block>
@@ -136,13 +124,11 @@
   <block id="3bec690d07df1a3a36c8a3122654fc24" category="section-title">2023年6月5日</block>
   <block id="f9037e3eb23130835367334e3aa5a34b" category="section-title">BlueXPから新しいストレージアカウントを追加できるようになりました</block>
   <block id="a39e8d6ee8bc43ef75656b419fe7a86e" category="inline-link">新しいAzure BLOBストレージアカウントを追加する方法をご覧ください</block>
-  <block id="34738f8a469a7971575b53ff1435539f" category="paragraph">BlueXP CanvasでAzure Blob Storageを表示できるようになりました。BlueXPから直接、新しいストレージアカウントを追加したり、既存のストレージアカウントのプロパティを変更したりできるようになりました。<block ref="7f415337c5df45cbb7bfeb019667a476" category="inline-link-rx"></block>。</block>
   <block id="a6aef5e3bbd8b059764f33a4044e30d6" category="section-title">2023年6月4日</block>
   <block id="b11363dc7ad08609dacf71adabc1e3d7" category="inline-link-macro">作業環境の作成</block>
   <block id="c21d5cf174dc36531d6990b13fe89573" category="list-text">いつ <block ref="ad9408e39808bf9ea4b07fa95cac5798" category="inline-link-macro-rx"></block>では、毎週の30分のメンテナンス時間の開始時間を指定して、メンテナンスが重要なビジネスアクティビティと競合しないようにすることができます。</block>
   <block id="e2ba73f0e5661996e4350de09efee512" category="inline-link-macro">ボリュームを作成しています</block>
   <block id="fabdf5de30f7e7084ae6656930904d1d" category="list-text">いつ <block ref="1bfb452ce23fdd4301ee99a62317a7a6" category="inline-link-macro-rx"></block>では、ボリューム間でデータを分散するFlexGroupを作成することで、データの最適化を有効にすることができます。</block>
-  <block id="6908c55ed2597c0891f949ee4c49f1df" category="paragraph"><block ref="6908c55ed2597c0891f949ee4c49f1df" category="inline-link-rx"></block></block>
   <block id="8f47a476ee12f068a45739014a319a65" category="paragraph">ONTAP 9ソフトウェアの機能であるボリュームキャッシングは、ファイル配信を簡易化し、ユーザやコンピューティングリソースの近くにリソースを配置することでWANレイテンシを低減し、WAN帯域幅のコストを削減するリモートキャッシング機能です。ボリュームキャッシングは、リモートの場所にある書き込み可能な永続的ボリュームを提供します。BlueXPのボリュームキャッシュを使用すると、データへのアクセスを高速化したり、アクセス頻度の高いボリュームのトラフィックをオフロードしたりできます。キャッシュボリュームは、特にクライアントが同じデータに繰り返しアクセスする必要がある場合に、読み取り処理が大量に発生するワークロードに最適です。</block>
   <block id="da20ff5e68ae0641ae1925c968ac0244" category="paragraph">BlueXPボリュームキャッシングを使用すると、特にAmazon FSx for NetApp ONTAP、Cloud Volumes ONTAP、オンプレミスの作業環境向けに、クラウド向けのキャッシュ機能を利用できます。</block>
   <block id="62f5b0396e259b44122ad3fd5f9581e0" category="inline-link-macro">BlueXPのボリュームキャッシュの詳細については、こちらをご覧ください</block>
@@ -151,12 +137,7 @@
   <block id="d41b120a4f792ebe6195de3355c6309a" category="inline-link-macro">Storage VMを追加してください</block>
   <block id="ef4fe9904a05c0168f433db5ef979256" category="list-text">次の操作を実行できます。 <block ref="73429b7c98363ef2dcc9eca20bd224e7" category="inline-link-macro-rx"></block> BlueXPを使用してAmazon FSx for NetApp ONTAPファイルシステムに移行できます。</block>
   <block id="c835313828dae8f6f2e19118949a05ce" category="list-text">** My Opportunities **タブが** My estate **になりました。ドキュメントが更新され、新しい名前が反映されます。</block>
-  <block id="f73b546b2cf111d3a080443f2cd3b97f" category="section-title">2023年7月2日</block>
   <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP</block>
-  <block id="11f4fef53a39b0e83d4fdb9f922e768e" category="section-title">My estateからクラスタを検出</block>
-  <block id="4573c689742769edc01e3f45205fd784" category="paragraph">オンプレミスのONTAPクラスタを検出できるようになりました。これには、* Canvas &gt; My estate *から、BlueXPログインのEメールアドレスに関連付けられているONTAPクラスタに基づいてBlueXPが検出されたクラスタを選択します。</block>
-  <block id="5a7621b5dce7d879d4fc86499c34c6e6" category="inline-link">クラスタを検出する方法については、[My estate]ページを参照してください</block>
-  <block id="92adae4e241e70163adb8c5469771a82" category="paragraph"><block ref="24b3a807a9407b81f5101322f988421d" category="inline-link-rx"></block>。</block>
   <block id="28acda3f8bdb20220a5658f1cd81f226" category="section-title">2023年7月4日</block>
   <block id="1d59c82c13288b53f26d652175016f90" category="paragraph">BlueXP階層化をアクティブ化すると、ONTAPは無制限のネットワーク帯域幅を使用して、アクセス頻度の低いデータをクラスタ内のボリュームからオブジェクトストレージに転送できます。階層化トラフィックが通常のユーザワークロードに影響していることに気付いた場合は、転送中に使用できる帯域幅を調整できます。<block ref="bd661c8ba5ce12ee5a1adc1010618597" category="inline-link-rx"></block>。</block>
   <block id="250f0923d20814211c14c5a6cd0e2643" category="paragraph">クラスタがコールドデータの20%未満（データを階層化しないクラスタを含む）を階層化しているときに、階層化イベント「Tier additional data from cluster &lt;name&gt; to object storage efficiency」が通知として表示されるようになりました。</block>
@@ -167,7 +148,6 @@
   <block id="145634d473d937448dc7bdb5a6797ea7" category="section-title">2023年7月10日</block>
   <block id="5a6d96b9a020e520981bf7fe4c7af203" category="section-title">BlueXPから新しいバケットを追加したり、既存のバケットを管理したりできます</block>
   <block id="2706c3785e1f78099c28d555600c918b" category="inline-link">新しいGoogle Cloud Storageバケットを追加する方法をご覧ください</block>
-  <block id="71d86d6b260e92b047d7453cd653bd4c" category="paragraph">BlueXPキャンバスでGoogle Cloud Storageのバケットを表示できるようになりました。BlueXPから直接、新しいバケットを追加したり、既存のバケットのプロパティを変更したりできるようになりました。<block ref="df1f25cc6ac4c2f26feeca1367b4ae92" category="inline-link-rx"></block>。</block>
   <block id="7af14628b780746da1b2b7396f10a07e" category="list-text">BlueXP監査サービスAPIを使用して監査ログをエクスポートできるようになりました。</block>
   <block id="5a97fe4fe664c9e98d8ad88cdbf44d98" category="inline-link">監査サービスAPIの使用に関する詳細情報</block>
   <block id="23822bdcf5039c31a637229d8ca51ffa" category="paragraph"><block ref="23822bdcf5039c31a637229d8ca51ffa" category="inline-link-rx"></block></block>
@@ -405,10 +385,6 @@
   <block id="7aea075f0d949c2526cea755a2dee13f" category="paragraph">これまでは、アセットの評価を受けて、テクノロジの更新が推奨されるかどうかを判断することしかできませんでした。</block>
   <block id="8006e6282233bdaa99ca3e9db65fc693" category="paragraph">この機能は、左側のナビゲーションの機器更改（Tech Refresh）オプションに含まれるようになりました。</block>
   <block id="33a9c4b5f0c522c38ff9b1b46ebd1498" category="inline-link-macro">テクノロジの更新を評価する</block>
-  <block id="914b4ad9ada7977f36d427a9664a4235" category="paragraph">の詳細については、を参照してください <block ref="4305c0855ed1712385868c1ca4414cc5" category="inline-link-macro-rx"></block>。</block>
-  <block id="83c0915932deaf70b0873b6eb47c3a28" category="section-title">2024年3月28日</block>
-  <block id="888059a12fa3532d54872d17517e780c" category="inline-link-macro">アップグレードの推奨事項を表示し、アップグレード計画を生成する方法について説明します。</block>
-  <block id="9d10674ae163e749f65c1eeb852cdf2b" category="paragraph">古いバージョンのUpgrade Advisorは廃止されました。強化されたバージョンのUpgrade Advisorを使用すると、単一のクラスタおよび複数のクラスタのアップグレードプランを生成できます。 <block ref="b6cac2681a05b9a8dd19bf0553cd1066" category="inline-link-macro-rx"></block></block>
   <block id="9d5b3307d5a7d5905623bf21ab049bdd" category="section-title">2024年4月22日</block>
   <block id="17c54e9ba828968f120b82b8cd07abfa" category="inline-link">オブジェクトへのバックアップポリシーの設定</block>
   <block id="4df3ea515a84d83efad2c0e3bc03c438" category="paragraph">2024年4月22日にBlueXP修正サービスが削除されました。</block>
@@ -416,8 +392,6 @@
   <block id="14b1c6bd63866971a4cd695c3c2a3d80" category="paragraph">テンプレートからボリュームを作成することはできなくなりました。この操作はBlueXP修正サービスに関連付けられていましたが、このサービスは廃止されました。</block>
   <block id="0a9bbb6e81dd21b77886235f2ce33af9" category="paragraph">BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します完全なリリース履歴については、 <block ref="1e9f4589e5d2713376df79f13fc9ba0a" category="inline-link-macro-rx"></block> 個々のサービスごと。</block>
   <block id="188fd7f75e50a8a882a75c15dcb630a1" category="section-title">2024年5月17日</block>
-  <block id="a0f248fceae83613cf99c651e3c24be5" category="inline-link">ライセンスの設定に関する詳細情報</block>
-  <block id="17f6ba003825118fb67d19c8c26be794" category="paragraph"><block ref="36f38233d2460bc4dacb6b4bd4fd46ab" category="inline-link-rx"></block>。</block>
   <block id="c817ad6139f116906ee3d7991cfdcba9" category="section-title">RHEL 8およびRHEL 9をオンプレミスコネクタに使用する場合の制限事項</block>
   <block id="5462103113dfca7582cf43f266db09a2" category="inline-link">ホストの要件</block>
   <block id="6aa3862f9073595cb60208eb918da431" category="paragraph">BlueXP Connectorバージョン3.9.40は、Red Hat Enterprise Linuxバージョン8および9の特定のバージョンをサポートしており、コネクタソフトウェアをRHEL 8または9ホストに手動でインストールする際に、場所に関係なく、<block ref="9b2a96babeed2ab711a4327ec7f34b5c" category="inline-link-rx"></block>。これらの新しいバージョンのRHELでは、DockerエンジンではなくPodmanエンジンが必要です。現時点では、BlueXPのバックアップとリカバリでPodmanエンジンを使用する場合には2つの制限があります。</block>
@@ -429,32 +403,12 @@
   <block id="5e8c098d325749413b23d5eba5837aad" category="inline-link">ダークサイトでBlueXPのバックアップとリカバリのデータをリストア</block>
   <block id="b682afa0ff8a1d136b51d3115421ac1b" category="list-text"><block ref="b682afa0ff8a1d136b51d3115421ac1b" category="inline-link-rx"></block></block>
   <block id="93716955add4f66b2af685a33bac4789" category="section-title">2024年5月15日</block>
-  <block id="9df62cb4d6f151b560e84723841bd523" category="paragraph">このBlueXPディザスタリカバリリリースには、次の更新が含まれています。</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新機能</block>
   <block id="f5f7a4d1535be1d0940e398b2997dfc0" category="sidebar">サービス別リリースノート</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">ブログとコミュニティ</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">ネットアップコミュニティ</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXPのブログ</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">クラウドに関する Web セミナー</block>
-  <block id="b9620e9aadf9827ac9bb29001772b3f0" category="paragraph">このリリースには、次の更新が含まれています。</block>
-  <block id="b83927d03444ee961e834ea1c3b0581b" category="section-title">マッピングスキャンによるメタデータの収集</block>
-  <block id="6c7aa72b096dc637dbeefccf15ca45f8" category="paragraph">マッピングスキャン中にファイルから次のメタデータが抽出され、Governance、Compliance、Investigationの各ダッシュボードに表示されます。</block>
-  <block id="16627cf42947f5240556f0586110db9b" category="list-text">作業環境</block>
-  <block id="6c63358fa61dbacebcb3b3cabf06b4f3" category="list-text">作業環境のタイプ</block>
-  <block id="8e1608d6951087912c426bcb53d12280" category="list-text">ストレージリポジトリ</block>
-  <block id="6622c14ce91b6b9683505626a5eebdd2" category="list-text">ファイルタイプ</block>
-  <block id="10fd66f5b4802aee3a88de2a537a57b4" category="list-text">使用済み容量</block>
-  <block id="18de356008c3efffac62590fd7849509" category="list-text">ファイル数</block>
-  <block id="1908624a0bca678cd26b99bfd405324e" category="list-text">ファイルサイズ</block>
-  <block id="50ec28434e3dc1b37a0577b6d3f9bfe6" category="list-text">ファイル作成</block>
-  <block id="cc7296b3deecc7ff6216732368393311" category="list-text">ファイルの最終アクセス</block>
-  <block id="a1870449a3811abcc8d02d43cec49cf2" category="list-text">ファイルの最終変更日</block>
-  <block id="5752d1aca2fb066ca51eb98052561289" category="list-text">ファイル検出時刻</block>
-  <block id="d9dc47834e451d5a23b2dd5638b1310b" category="list-text">権限の抽出</block>
-  <block id="240625d3ff2ba7b1a3949f7ddfb468d3" category="section-title">タツシユホトノツイカテタ</block>
-  <block id="43ac3190fe70b3bdb1f5d5b7083f374a" category="paragraph">このリリースでは、マッピングスキャン中にGovernance、Compliance、およびInvestigationの各ダッシュボードに表示されるデータが更新されます。</block>
-  <block id="9b28a6e87457a6a3bfb03009dcd0b84a" category="inline-link">マッピングスキャンと分類スキャンの違い</block>
-  <block id="c7fb92ca31125e81e2a4f2982bc6a806" category="paragraph">詳細については、<block ref="4062fc8e6e6df1b01a1de644d8a7eeca" category="inline-link-rx"></block></block>
   <block id="072d1a387472fb47fdfa33e48ff08ffd" category="section-title">Sustainability Dashboard</block>
   <block id="8934fed115a0b826a4b438906a11bfa9" category="inline-link-macro">Sustainabilityダッシュボードの概要</block>
   <block id="73cb3e305b75665c1f29817b70dd8a1f" category="summary">BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します</block>
@@ -466,28 +420,12 @@
   <block id="f1c8aee091d7af06827bd81ed4e56e5a" category="paragraph">現在BlueXPからAzure NetApp Filesを管理している場合は、以前に作成したMicrosoft Entraアプリケーションに関連付けられているカスタムロールにこの権限を追加する必要があります。</block>
   <block id="49cb664c5b71b8da627e27d37fe9de88" category="inline-link">Microsoft Entraアプリケーションをセットアップし、カスタムロール権限を表示する方法について説明します。</block>
   <block id="dd9368e78fe4f3483d324b6a988d2f87" category="paragraph"><block ref="aa8b5c9ebdcb57c9427e7bd28a70f7d0" category="inline-link-rx"></block>です。</block>
-  <block id="3b08fbca8f3b3deaf466cedfd425cfc6" category="section-title">2024年7月1日（バージョン1.33）</block>
-  <block id="d61892207457d808cffbfc18b9dcd8ad" category="section-title">Ubuntuのサポート</block>
-  <block id="0db04e76c6afbdb79f128758ee937013" category="paragraph">このリリースでは、Ubuntu 24.04 Linuxプラットフォームがサポートされます。</block>
   <block id="a6cba69e97a9115b21cbf35b24b33d83" category="section-title">2024年7月4日</block>
-  <block id="5e63fb298525a46837cedfd7fc3c5002" category="paragraph">ストレージシステムの環境の健全性に関するインサイトを提供する環境指標により、高度な予測モデルに基づいて、予測される電力使用量、直接炭素使用量、および熱排出量のより正確な値が提供されるようになりました。詳細については、を参照して <block ref="8ef455a63dd9427c902954b8e3c7f21b" category="inline-link-macro-rx"></block>ください。</block>
-  <block id="8352fdd61dbba9f97925bd7797c4eb47" category="paragraph">EシリーズシステムとStorageGRIDシステムでサステナビリティがサポートされるようになりました。これらのシステムのSustainabilityダッシュボードでは、推奨される対処方法と環境指標のリストを表示して、電力、直接的な炭素使用量、熱の予測を表示できます。詳細については、を参照して <block ref="8ef455a63dd9427c902954b8e3c7f21b" category="inline-link-macro-rx"></block>ください。</block>
   <block id="710abd7c1d5a2a3be1aa4c7dbff890cf" category="admonition">NetAppでは、プレビューしたワークロード容量に対して課金されることはありません。</block>
   <block id="b1fb5b4805d079fc23dedcbe4848437e" category="inline-link">リモートサイトへのアプリケーションのフェイルオーバー</block>
   <block id="ab132121a366abdd7667443cc98f3a69" category="paragraph">を参照してください<block ref="1cbf59ee3e77dd0082612a21b0900f81" category="inline-link-rx"></block>。</block>
-  <block id="16ec862fdbc31bf15f7d944ad60dd33f" category="section-title">2024年7月1日</block>
-  <block id="fdb1f5ab91dd63ebda3ff72247aa7b2b" category="list-text">*お客様所有のライセンスを使用（BYOL）*：このリリースでは、NetApp営業担当から取得するNetAppライセンスファイル（NLF）であるBYOLライセンスを使用できます。</block>
-  <block id="0c379e4399020bc48ac7da5510998e1a" category="list-text">*アプリケーションワークロードをファイルレベルでリストアする*：アプリケーションワークロードをファイルレベルでリストアする前に、攻撃の影響を受けた可能性のあるファイルのリストを表示し、リストアするファイルを特定できるようになりました。BlueXPランサムウェア対策でリストアするファイルを選択したり、アラートの影響を受けたすべてのファイルを記載したCSVファイルをアップロードしたり、リストアするファイルを手動で特定したりできます。</block>
-  <block id="f117dfa6c0387d743ec4a20f0d5de0bc" category="admonition">このリリースでは、アカウント内のすべてのBlueXPコネクタがPodmanを使用していない場合、単一ファイルのリストア機能が有効になります。それ以外の場合、そのアカウントでは無効になります。</block>
   <block id="f013b90a0fd96db59795b7cb0b9d2d1b" category="inline-link">ランサムウェア攻撃からのリカバリの詳細</block>
   <block id="48e006c40a370e7b0dcc3f4f1e42eda7" category="paragraph"><block ref="17c138513bf5a78d755bed4038999b20" category="inline-link-rx"></block>です。</block>
-  <block id="47882b8bc0a2b23d26218cd1691e4099" category="list-text">*ファイル・レベルでアプリケーション・ワークロードをリストアする前に、影響を受けるファイルのリスト*をダウンロードしてください。[Alerts]ページにアクセスして影響を受けるファイルのリストをCSVファイルにダウンロードし、[Recovery]ページを使用してCSVファイルをアップロードできるようになりました。</block>
-  <block id="eb7455ff51d7f3745fb801aa3ad0fb2a" category="inline-link">アプリケーションをリストアする前に影響を受けるファイルをダウンロードする方法の詳細</block>
-  <block id="2b133b12308ff6cab26bdc5342a3372d" category="paragraph"><block ref="008791716c908b75ddd12a1a3f620fa8" category="inline-link-rx"></block>です。</block>
-  <block id="1acc112f7ac5f0e2374f0e20883a6c5a" category="list-text">*保護計画の削除*：このリリースでは、ランサムウェア対策戦略を削除できるようになりました。</block>
-  <block id="5bc0cd3e3204e2ab72bd03661373648f" category="inline-link">ワークロードの保護とランサムウェア対策戦略の管理の詳細</block>
-  <block id="20eb1918e9de308789133c5a0b0cc2c4" category="paragraph"><block ref="88ddee768f79e382777baf84277fe57c" category="inline-link-rx"></block>です。</block>
-  <block id="4c57408166809e028adf9be27b861c0a" category="paragraph">このリリースのBlueXPランサムウェア対策には、次の更新が含まれています。</block>
   <block id="9fc076386261ca80bfc67f7f57c641d3" category="section-title">2024年7月14日</block>
   <block id="c18c776847f6d7588ddeab0632527364" category="paragraph">BlueXPのコピーおよび同期サービスとデータブローカーを更新し、いくつかのバグを修正しました。新しいデータブローカーのバージョンは1.0.53です。</block>
   <block id="5d515ef1c3774ed67ad6115621a1ca59" category="paragraph">新しいプライベートモードリリースがNetApp Support Siteからダウンロードできるようになりました。</block>
@@ -517,14 +455,7 @@
   <block id="cd4619af82dfe7627dc934e29e85a6e9" category="paragraph">このリリースでは、FlexGroupフォルダのリストアがテクノロジプレビューとしてサポートされます。</block>
   <block id="abbf2484b45da9fd7be677fe96c511eb" category="inline-link-macro">参照と復元を使用したフォルダとファイルの復元</block>
   <block id="707304f314bfa71975e8ffb352535092" category="paragraph">手動で有効にする方法については、を参照してください<block ref="7de2d0863d92330816fac8b7768edb68" category="inline-link-rx"></block>。</block>
-  <block id="70d1ac1a529ac546d3e60b81ee464a1d" category="paragraph">このBlueXP  分類リリースには、次の更新が含まれています。</block>
-  <block id="44a73383773bebac3194e73bd06397a8" category="section-title">CentOSからUbuntuへの変更</block>
-  <block id="6a1611bc2c4a6c8c16154f81c0323dc2" category="paragraph">BlueXP  の分類により、Microsoft AzureおよびGoogle Cloud Platform (GCP)用のLinuxオペレーティングシステムがCentOS 7.9からUbuntu 22.04に更新されました。</block>
-  <block id="d70ebaa1f93a5c2b07653dd485593661" category="inline-link">インターネットにアクセスできるLinuxホストにインストールし、Linuxホストシステムを準備する</block>
-  <block id="e6b6c1b590b016ecf7556d1571a4309e" category="paragraph">導入の詳細については、を参照して<block ref="ba79134a77255d2e97755d6f7b772847" category="inline-link-rx"></block>ください。</block>
   <block id="895b67d31a903fc743f186c56aeecff6" category="section-title">2024 年 8 月 2 日</block>
-  <block id="1ff3f27272f2855394e8e2cf0abfa836" category="list-text">*オンプレミスからオンプレミスのFC向けVMware VMFSデータストアのサポート*：このリリースには、FCでオンプレミスストレージに保護されたVMware vSphere Virtual Machine File System（VMFS）データストアにマウントされたVMの_テクノロジプレビュー_サポートが含まれています。以前は、iSCSI用のVMFSデータストアをサポートするテクノロジプレビューを提供していました。</block>
-  <block id="b9dbe1e85847c069664ebe888e76d35c" category="list-text">*ジョブのキャンセル*：このリリースでは、ジョブ監視UIでジョブをキャンセルできるようになりました。</block>
   <block id="4639d0e2e2909a747265c2f704128bca" category="inline-link">ジョブの監視</block>
   <block id="5ef55533619d84d0298304b37a76eeff" category="paragraph">を参照してください<block ref="786959fe8223b685d5c08f8e62246672" category="inline-link-rx"></block>。</block>
   <block id="7043d4fb27c94bc9a206c106cef9d80c" category="paragraph">その方法は次のとおりです。</block>
@@ -535,9 +466,7 @@
   <block id="9b4b29c7522dc70822a6513f530beb14" category="paragraph">BlueXP  エッジキャッシングサービスは、2024年8月7日に削除されました。</block>
   <block id="4ac75c7e9ef3301446bb1108a0761fd8" category="paragraph">Kubernetesクラスタの検出と管理のサポートが2024年8月7日に廃止されました。</block>
   <block id="2476ee901bdc6e29b6118470b13e2339" category="paragraph">BlueXP  移行レポートサービスは、2024年8月7日に削除されました。</block>
-  <block id="dd6b8bf5a56c8beb81b173991906c83e" category="section-title">2024 年 8 月 5 日</block>
   <block id="3660cbb805c1bf63e1967ed1339a3bbd" category="paragraph">このリリースのBlueXP  ランサムウェア対策には、次の更新が含まれています。</block>
-  <block id="11f5c2b9557e3c8b41afc65159260e17" category="list-text">* Splunk Cloudによる脅威の検出*：セキュリティおよびイベント管理システム（SIEM）にデータを自動的に送信し、脅威の分析と検出を行うことができます。以前のリリースでは、SIEMとしてAWS Security Hubのみを選択できました。このリリースでは、AWS Security HubまたはSplunk CloudをSIEMとして選択できます。</block>
   <block id="0d0fda3a15e7f6f6406a0dde3997c91f" category="inline-link">BlueXP  ランサムウェア対策の設定の詳細</block>
   <block id="5b0f75e0c31233c18e6f9318b8569cf7" category="paragraph"><block ref="25291e882ba76639fccc7a13f1838641" category="inline-link-rx"></block>です。</block>
   <block id="43371a1519dc6641cd8852962e536c3e" category="section-title">2024 年 8 月 7 日</block>
@@ -555,7 +484,6 @@
   <block id="a262e6e8b2140ed65b4662f6ea3826e9" category="section-title">ONTAPの更新</block>
   <block id="bfcca17c4ea8c7320a1a54960ce35444" category="paragraph">BlueXP  ソフトウェアアップデートサービスは、リスクを軽減し、お客様がONTAPの機能を十分に活用できるようにすることで、シームレスなアップデートエクスペリエンスをユーザに提供します。</block>
   <block id="8e28797de414b72e6beab6ed5932133f" category="inline-link-macro">BlueXP  ソフトウェアアップデート</block>
-  <block id="3b51dbc206ff39db31b586cff27b62b6" category="paragraph">詳細については、をご覧ください <block ref="5932964ef1a5389f9863c988396d1e93" category="inline-link-macro-rx"></block>。</block>
   <block id="a5cfb1c769f5b79bb515811f8e2d3256" category="section-title">2024 年 8 月 11 日</block>
   <block id="91c579c47837abf6f4d04e29b24b1d72" category="paragraph">BlueXPのコピーおよび同期サービスとデータブローカーを更新し、いくつかのバグを修正しました。新しいデータブローカーのバージョンは1.0.54です。</block>
   <block id="788b77f1903c86b79d6ab3fa3aeac01e" category="section-title">2024年8月21日</block>
@@ -565,11 +493,9 @@
   <block id="bebf3b3af19cc5d4d44b97e70e8b3ffb" category="paragraph">7-Modeシステムの限定サポートが終了したため、* 7-Mode Upgrade Advisor Plans *レポートはご利用いただけなくなりました。詳細については、を参照してください <block ref="20732c2f8b67b7236a6509e096709359" category="inline-link-macro-rx"></block>。詳細については、をご覧ください <block ref="ee2cd00409c56591f09249cc9e682f11" category="inline-link-macro-rx"></block>。</block>
   <block id="c842acaca9e3ea9ec2dc61f28e69ea15" category="section-title">2024年9月9日</block>
   <block id="44b53ed30a4c420b95b8adba575b84a6" category="section-title">RHEL 9.4のサポート</block>
-  <block id="597f26a63507bfee99f67909c68d5354" category="section-title">2024年9月2日（バージョン1.35）</block>
   <block id="4f13d17cc7a60ec8546d7892c87e3acf" category="section-title">StorageGRIDデータのスキャン</block>
   <block id="83bceb987dd495cde1a148944580e473" category="paragraph">BlueXP  分類でStorageGRIDのデータをスキャンできるようになりました。</block>
   <block id="60c09f1a3afdb367fc787929a52bce2c" category="paragraph">詳細については、を参照してください <block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>。</block>
-  <block id="a5ac20c838605b872613985f5c302c61" category="section-title">2024年8月5日（バージョン1.34）</block>
   <block id="cdd78645b017b927a25b5449e345f823" category="section-title">ワームとARPの機能は有料ではなくなりました。</block>
   <block id="9dab6b96899670128353b1e92c2b8997" category="paragraph">シンプルな価格設定により、次のようなメリットが得られます。</block>
   <block id="000f6c26eec43af35931bc5e6fbf9f49" category="list-text">現在、WORMとARPが含まれているアカウントでは、これらの機能の料金は発生しなくなります。今後は、この変更前と同様に、使用容量に関する料金のみが請求されます。ワームとARPは今後の請求書に含まれなくなります。</block>
@@ -577,9 +503,7 @@
   <block id="1974af11cb1ac87d0b58d8696f893e4d" category="list-text">新規アカウントのすべてのCloud Volumes ONTAPサービスには、WORMとARPの料金は含まれません。</block>
   <block id="0e3986fb787ff1e55f1d15206f8b39d9" category="paragraph">これらの機能の詳細については、こちらをご覧ください。</block>
   <block id="0c0c93dcca58dc6ba5a46ef2bf56980b" category="inline-link">ランサムウェアからの保護を強化</block>
-  <block id="a7cf7c6eee288b3a91bcae2e6522aa7a" category="list-text"><block ref="a7cf7c6eee288b3a91bcae2e6522aa7a" category="inline-link-rx"></block></block>
   <block id="8aca368ccd90320c96e8a69a43545003" category="inline-link">WORMストレージ</block>
-  <block id="a100999de1d9ee815d7e13741acf163d" category="list-text"><block ref="a100999de1d9ee815d7e13741acf163d" category="inline-link-rx"></block></block>
   <block id="ec6210d470db7cd7b6f5408f088e1c02" category="paragraph">BlueXP  の経済効率化機能の一部が一時的に無効になりました。</block>
   <block id="d519fe60b31330425fdb5e1c21309f78" category="list-text">テクノロジの更新</block>
   <block id="dbaae314ffc8b46919877d02b85696cb" category="list-text">容量の追加</block>
@@ -623,8 +547,6 @@
   <block id="3abe4a789c1c33e285d9452cca8c493b" category="section-title">カタログのインデックス作成を高速化し、検索とリストアを向上</block>
   <block id="9353e94049314c6236b51712848f2572" category="paragraph">このリリースには、ベースラインインデックス作成をはるかに高速に完了する改善されたカタログインデックスが含まれています。インデックス作成を高速化すると、検索とリストア機能をより迅速に使用できるようになります。</block>
   <block id="eaecda6db64f5346d5c63bfe0094e040" category="section-title">2024年9月20日</block>
-  <block id="ee811bd919a27bd2eb705f65ed45e4f6" category="paragraph">このBlueXP  ディザスタリカバリリリースには、次の更新が含まれています。</block>
-  <block id="b077aa4f9a421cc2e2782608fb5caf4f" category="list-text">*オンプレミスからオンプレミスのVMware VMFSデータストアのサポート*：このリリースには、VMware vSphere Virtual Machine File System（VMFS）データストアにマウントされたVMのサポートが含まれており、iSCSIおよびFCでオンプレミスのストレージに保護されています。以前は、iSCSIおよびFC用にVMFSデータストアをサポートするテクノロジpreview_supportingを提供していました。</block>
   <block id="0eb65976c0b0c5ffa90b07d4a062e509" category="paragraph">iSCSIプロトコルとFCプロトコルの両方に関するその他の考慮事項を次に示します。</block>
   <block id="d671bd2f503deef1e03581ce8d516507" category="list-text">FCは、レプリケーションではなく、クライアントフロントエンドプロトコルをサポートします。</block>
   <block id="cf1967c6d778937fae37b9e43582b1b6" category="list-text">BlueXP  ディザスタリカバリでは、各ONTAPでサポートされるLUNは1つだけです。ボリュームに複数のLUNを含めることはできません。</block>
@@ -678,7 +600,6 @@
   <block id="a86bab47fe0d1d4772388e14bf7532a0" category="inline-link">SELinuxの詳細</block>
   <block id="612eef26819f532944539f99d535f8c6" category="paragraph"><block ref="612eef26819f532944539f99d535f8c6" category="inline-link-rx"></block></block>
   <block id="67f165f48588df98eb8f59d8a7c512d8" category="section-title">2024年9月23日</block>
-  <block id="6a9f822bb587b015bf3224364464cbed" category="section-title">サポートサービス</block>
   <block id="65077e068c20e8afeca74c12711e893e" category="paragraph">NetApp SupportEdge Basicサービスには、SupportEdge AdvisorおよびSupportEdge Expertで使用できるすべてのデジタルアドバイザ機能が含まれるようになりました。ただし、フルスタックトポロジ（VMware）は、有効にしてもVMwareのフルスタック監視を可視化できません。</block>
   <block id="1e095c69621645fccc8f12cd7f35f6fc" category="section-title">ASA R2システムのサポート</block>
   <block id="d5861f4539296095cd7c9fdfd0c5a2c9" category="paragraph">ASA R2システムでは、他の管理オプションは使用できません。[標準]ビューを使用したり、BlueXPサービスを有効にしたりすることはできません。</block>
@@ -686,14 +607,11 @@
   <block id="a7c7539e11570decc041c60258667032" category="paragraph"><block ref="a7c7539e11570decc041c60258667032" category="inline-link-rx"></block></block>
   <block id="df583ae7ba964fd4806b55904da81813" category="inline-link">アラート</block>
   <block id="4f721f83f0a49dae4f329f77ae2221d5" category="list-text"><block ref="4f721f83f0a49dae4f329f77ae2221d5" category="inline-link-rx"></block></block>
-  <block id="32981b0c6558eec412787b4c28c9f7a5" category="paragraph">BlueXP  アラートのこの初期リリースには、次の機能が含まれています。</block>
-  <block id="335c0f5b63e966d180738ce07c85dc3f" category="list-text">*アラートの詳細*:アラートの詳細にドリルダウンして、推奨事項を見つけることができます。</block>
   <block id="d0f2765e5de3103a5c432ec160dff29f" category="inline-link">BlueXP  アラートの詳細</block>
   <block id="52db2fc7f4de1af0e1245bc3f891ce57" category="paragraph"><block ref="094e829cc75a913d98050fa15a3d0c12" category="inline-link-rx"></block>です。</block>
   <block id="1b658f77da3dfa84be0559359889c6d1" category="section-title">アップグレード時のバージョン選択におけるユーザエクスペリエンスの向上</block>
   <block id="76723ae6fdfacae29242fdb7085394b0" category="paragraph">このリリースから、BlueXP  通知を使用してCloud Volumes ONTAPをアップグレードしようとすると、使用するデフォルトのバージョン、最新のバージョン、および互換性のあるバージョンに関するガイダンスが表示されます。また、Cloud Volumes ONTAPインスタンスと互換性のある最新のパッチまたはメジャーバージョンを選択することも、アップグレードするバージョンを手動で入力することもできます。</block>
   <block id="2182ff9388484137699eb937c0df0141" category="inline-link">Cloud Volumes ONTAP ソフトウェアをアップグレードします</block>
-  <block id="c2f5c6d8ccd2cc8bdc92db0ad0c79342" category="paragraph"><block ref="c2f5c6d8ccd2cc8bdc92db0ad0c79342" category="inline-link-rx"></block></block>
   <block id="c5686848892b4de33534dcc294c33fff" category="paragraph">WORM（Write Once Read Many）とARP（Autonomous Ransomware Protection）の組み込みのデータ保護機能とセキュリティ機能は、Cloud Volumes ONTAPライセンスで追加料金なしで提供されます。新しい価格モデルは、AWS、Azure、Google Cloudの新規および既存のBYOLおよびPAYGO / Marketplaceサブスクリプションの両方に適用されます。容量ベースとノードベースのどちらのライセンスにも、シングルノードとハイアベイラビリティ（HA）ペアを含むすべての構成用のARPとWORMが追加料金なしで含まれます。</block>
   <block id="f08676e8a1e41f582ac0537747703230" category="paragraph"><block ref="f08676e8a1e41f582ac0537747703230" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4d3e366c7ef57f5c2037203fa77c103c" category="list-text"><block ref="4d3e366c7ef57f5c2037203fa77c103c" category="inline-link-rx"></block></block>
@@ -704,7 +622,6 @@
   <block id="a1fe52ea216874a5214f41ae7e5bbd63" category="section-title">2024年10月10日</block>
   <block id="9071c576479353103106b574601bd920" category="section-title">コネクタ3.9.45パッチ</block>
   <block id="d8497d3046f15c93d3e5c40856129331" category="paragraph">このパッチにはバグ修正が含まれています。</block>
-  <block id="e75804de09e19a35ad3cd360d45cd0fb" category="section-title">2024年10月10日（バージョン1.36）</block>
   <block id="e5450ac8535429efc574bc7d9388dd9a" category="paragraph">このBlueXP  分類リリースには、次の更新が含まれています。</block>
   <block id="409886e91bb1c98ce7537a6ea025aa8e" category="paragraph">このリリースでは、以前のサポートバージョンに加えて、Red Hat Enterprise Linux v9.4もサポートされます。これは、ダークサイトの導入を含む、BlueXP  分類の手動オンプレミスインストールに適用されます。</block>
   <block id="a851e95484895c6e743c9be7755facd2" category="paragraph">次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があります。また、BlueXP  分類バージョン1.30以降（Red Hat Enterprise Linuxバージョン8.8、9.0、9.1、9.2、9.3、9.4）が必要です。</block>
@@ -728,8 +645,6 @@
   <block id="4cdceaadddc0af73837f8fb074294edc" category="list-text"><block ref="4cdceaadddc0af73837f8fb074294edc" category="inline-link-rx"></block></block>
   <block id="f728ea34fcbb13e7fd98fc40d7498dfc" category="paragraph">次の制限事項に注意してください。</block>
   <block id="3ad7f37470dd6a33dee8070e9cccbeb4" category="list-text">Cloud Volumes ONTAPシステムの管理オペレーティングシステムでSELinuxが有効になっているコネクタではサポートされていません。</block>
-  <block id="221e1ce85a4c0e9e170e711608695972" category="list-text">* BlueXP  アラートのリストページ*：容量やパフォーマンスが低いONTAPクラスタをすばやく特定し、可用性の範囲を測定して、セキュリティリスクを特定できます。容量、パフォーマンス、保護、可用性、セキュリティ、構成に関連するアラートを表示できます。</block>
-  <block id="584c54dd31b512867535ecfbc6397a6f" category="list-text">* System Managerにリンクされたクラスタの詳細を表示*：BlueXP  アラートを使用すると、ONTAPストレージ環境に関連付けられているアラートを表示し、ONTAP System Managerにリンクされている詳細にドリルダウンできます。</block>
   <block id="479422755a82da93d381b0baab5f8fe7" category="section-title">3つのリージョンを追加サポート</block>
   <block id="4343b2bdc884cb638429641e12c0514c" category="section-title">Storage VMを追加してください</block>
   <block id="c63d5220743c53eaddaae4ea5f0511e7" category="section-title">**［機会］**タブが［マイ資産］**になりました。</block>
@@ -746,22 +661,82 @@
   <block id="e0b08acf0828bf4594a0b9bd6411df1b" category="inline-link-macro">AWSローカルゾーン</block>
   <block id="b75accaa363606f733ab4203f45f8193" category="paragraph">HA環境でのAWSローカルゾーンの詳細については、を参照してください<block ref="6830ae69d7be576a68a954338edafef9" category="inline-link-macro-rx"></block>。</block>
   <block id="1992f2f9fa5c0cbd3b61255b9dd507bd" category="section-title">2024年10月30日</block>
-  <block id="51ca1579fc5d4f066bdbf640a4814d76" category="list-text">*レポート*:このリリースでは、環境の分析に役立つレポートを生成およびダウンロードできるようになりました。事前設計されたレポートには、フェイルオーバーとフェイルバックの概要、すべてのサイトのレプリケーションの詳細、過去7日間のジョブの詳細が表示されます。</block>
   <block id="054b753af44fc4eeee43c9ba6037caaa" category="inline-link">ディザスタリカバリレポートの作成</block>
   <block id="023cf8170104660fc796a64fdad98afa" category="paragraph">を参照してください<block ref="cca93cc3cfc082fe882eefc731706487" category="inline-link-rx"></block>。</block>
-  <block id="978337672bd8dff65bfbecb42cf21f9d" category="list-text">*30日間の無償トライアル*:今回のリリースでは、BlueXP  ディザスタリカバリの30日間無償トライアルにサインアップできるようになりました。以前は、無料トライアルは90日間でした。</block>
   <block id="1cb57fbf1f1452e87f62dd668ea03759" category="paragraph">を参照してください<block ref="7585b54fad00f1219b8233730153156f" category="inline-link-rx"></block>。</block>
-  <block id="7c63c33c2146d3ce95c7487c1ebbe27e" category="list-text">*レプリケーション計画の無効化と有効化*:以前のリリースには、毎日および毎週のスケジュールをサポートするために必要なフェイルオーバーテストスケジュール構造の更新が含まれていました。この更新では、新しい日次および週次フェイルオーバーテストスケジュールを使用できるように、既存のレプリケーションプランをすべて無効にして再度有効にする必要がありました。これは1回限りの要件です。</block>
-  <block id="128ecd2ba12e92192724c8e3ed360ffc" category="list-text">*フォルダマッピング*：レプリケーション計画を作成してコンピューティングリソースをマッピングするときに、フォルダをマッピングして、データセンター、クラスタ、およびホスト用に指定したフォルダにVMをリカバリできるようになりました。</block>
   <block id="1a390a4e18b059462c8f07ea2ea02106" category="paragraph">詳細については、を参照してください<block ref="5cf2140f2775e5f1ccc24bb836a069a3" category="inline-link-rx"></block>。</block>
-  <block id="b7d245c9fa7100d1b04bb8e37530f630" category="list-text">*フェイルオーバー、フェイルバック、およびテストフェイルオーバーに使用できるVMの詳細*：障害が発生し、フェイルオーバーの開始、フェイルバックの実行、またはフェイルオーバーのテストを行う場合、VMの詳細を確認して、再起動しなかったVMを特定できるようになりました。</block>
-  <block id="5b7e4b08598b495e5e802015cfda0817" category="list-text">*順序付けられたブートシーケンスによるVMブート遅延*:レプリケーションプランを作成するときに、プラン内の各VMにブート遅延を設定できるようになりました。これにより、優先順位の高いすべてのVMが実行されてから、以降の優先順位の高いVMが起動されるように、VMの起動順序を設定できます。</block>
-  <block id="6bf75b2b973c4e4b2e97cb286b4a0b22" category="list-text">* VMオペレーティング・システム情報*:レプリケーション・プランを作成すると、プラン内の各VMのオペレーティング・システムが表示されるようになります。これは、VMを1つのリソースグループにグループ化する方法を決定する際に役立ちます。</block>
-  <block id="c216ae779db45238ce5f187a4e9efc0e" category="list-text">* VM名のエイリアス*：レプリケーションプランを作成するときに、ディザスタリカバリSITのVM名にプレフィックスとサフィックスを追加できるようになりました。これにより、プラン内のVMにわかりやすい名前を付けることができます。</block>
-  <block id="0b0c4a58a22974b8eb46383cdfabf354" category="list-text">*古いスナップショットのクリーンアップ*：このリリースでは、指定した保持数を超えて不要になったスナップショットを削除できます。Snapshotの保持数を減らすと、時間の経過とともにSnapshotが蓄積される可能性があります。削除してスペースを解放できるようになりました。これは、オンデマンドで、またはレプリケーションプランを削除するときにいつでも実行できます。</block>
   <block id="3eddfb488d257605e7713c24d210beee" category="inline-link">サイト、リソースグループ、レプリケーションプラン、データストア、仮想マシンの情報を管理します。</block>
   <block id="310c40c0ef022c90f1370d1fe91ca720" category="paragraph">詳細については、を参照してください<block ref="db7c318fcbcad8cfb9a44ac897b870b2" category="inline-link-rx"></block>。</block>
-  <block id="718c1087c683dccc1ea79ed6fa0fd10b" category="list-text">*スナップショットの調整*:このリリースでは、ソースとターゲットの間で同期されていないスナップショットを調整できるようになりました。これは、BlueXP  ディザスタリカバリ以外のターゲットでSnapshotが削除された場合に発生することがあります。サービスは、ソース上のスナップショットを24時間ごとに自動的に削除します。ただし、これはオンデマンドで実行できます。この機能を使用すると、すべてのサイトでSnapshotの整合性を確保できます。</block>
   <block id="07851e0287e57a794c18de627c09e0e7" category="inline-link">レプリケーション計画の管理</block>
   <block id="9a3a6422d384602f3e19e123263dc99f" category="paragraph">詳細については、を参照してください<block ref="59c3623215c45197e971057378c86d42" category="inline-link-rx"></block>。</block>
+  <block id="f4b2cfc6ddef927318d045f16b38d151" category="section-title">BlueXP  アラートリストページ</block>
+  <block id="3108a0619eec0e2ef9c6c5bd796bbf0d" category="paragraph">容量が少ないかパフォーマンスが低いONTAPクラスタをすばやく特定し、可用性の範囲を測定して、セキュリティリスクを特定できます。容量、パフォーマンス、保護、可用性、セキュリティ、構成に関連するアラートを表示できます。</block>
+  <block id="907b4f5ff0a11b28375c092b0b876c3e" category="section-title">アラートの詳細</block>
+  <block id="2c132bb868e25bdbc509ab83d2436d71" category="paragraph">アラートの詳細にドリルダウンして、推奨事項を確認できます。</block>
+  <block id="b361027502c50a2e2c7efbe96a5720bf" category="section-title">System Managerにリンクされたクラスタの詳細の表示</block>
+  <block id="a81101241f6ae4b53dda6f72078e1a84" category="paragraph">BlueXP  アラートを使用すると、ONTAPストレージ環境に関連付けられているアラートを表示し、ONTAP System Managerにリンクされている詳細にドリルダウンできます。</block>
+  <block id="7e4353e591e7ee71b0cc70a66b02ee7a" category="paragraph">BlueXP CanvasでAmazon S3バケットを表示できるようになりました。BlueXP  から直接、新しいバケットを追加したり、既存のバケットのプロパティを変更したりできるようになりました。<block ref="f5358cf9e8e537088a631ff4313d8401" category="inline-link-rx"></block>です。</block>
+  <block id="3e9d2d36df8c91d7e9151cc5775042a8" category="paragraph">BlueXP CanvasでAzure Blob Storageを表示できるようになりました。新しいストレージアカウントを追加したり、既存のストレージアカウントのプロパティをBlueXP  から直接変更したりできるようになりました。<block ref="432ae671c636de993f8b5290b51ad53f" category="inline-link-rx"></block>です。</block>
+  <block id="8339f3b73dd5a0afa74d7cfbebd1b2c2" category="section-title">2024年11月4日</block>
+  <block id="c1922490c576eff789b323f98c667589" category="section-title">バージョン1.37</block>
+  <block id="415b27bc5d78b639dc8c74a6e8f93e19" category="paragraph-title">RHEL 8.10のサポート</block>
+  <block id="52ff638e6cd24bd3aebc0578d753181c" category="paragraph">このリリースでは、以前のサポートバージョンに加えて、Red Hat Enterprise Linux v8.10もサポートされます。これは、ダークサイトの導入を含む、BlueXP  分類の手動オンプレミスインストールに適用されます。</block>
+  <block id="d4f80552d7e61deedef657200662a6be" category="paragraph">次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があり、BlueXP  分類バージョン1.30以降が必要です。Red Hat Enterprise Linuxバージョン8.8、8.10、9.0、9.1、9.2、9.3、および9.4。</block>
+  <block id="4cc849f381058f76f6b72a1c4279393d" category="inline-link">BlueXPの分類</block>
+  <block id="2b569c1a8e17ba534c2e1f57f9d1bbe9" category="paragraph">詳細については<block ref="491ed29a13fdb2b66f8e1bbeefef79a5" category="inline-link-rx"></block>、をご覧ください。</block>
+  <block id="a7e418c0221e06b9bb3fa8ebc082ece2" category="paragraph-title">NFS v4.1のサポート</block>
+  <block id="f1a9c2f106d86fe27271e4f8f0c0bd59" category="paragraph">このリリースでは、以前のサポートバージョンに加えて、NFS v4.1もサポートされます。</block>
+  <block id="5413a43995a4a97a249b7b24fbf3e785" category="section-title">バージョン1.36</block>
+  <block id="2808185c0a48de3cd5dcc0d92f453531" category="section-title">バージョン1.35</block>
+  <block id="448c087351c52cb72f971666e2159491" category="paragraph"><block ref="448c087351c52cb72f971666e2159491" category="inline-link-rx"></block></block>
+  <block id="7a73f560e215c4ff952d3384c5435ae9" category="list-text"><block ref="7a73f560e215c4ff952d3384c5435ae9" category="inline-link-rx"></block></block>
+  <block id="c8eac8ecc3bb9bb52e4fa6b3d34c3c38" category="list-text"><block ref="c8eac8ecc3bb9bb52e4fa6b3d34c3c38" category="inline-link-rx"></block></block>
+  <block id="2a81eb3b4a7f22fb1fdb159561b71f3f" category="section-title">バグ修正</block>
+  <block id="cd0b2a52b53e1925d55439a6132bad52" category="section-title">サポートサービス</block>
+  <block id="38d80ed5e3a33df19ee71c05059b6258" category="paragraph">ストレージシステムの環境の健全性に関するインサイトを提供する環境指標により、高度な予測モデルに基づいて、予測される電力使用量、直接炭素使用量、および熱排出量のより正確な値が提供されるようになりました。詳細については、を参照して <block ref="093aadbd7a28ff730cdbe5efbf5b8c02" category="inline-link-macro-rx"></block>ください。</block>
+  <block id="c5562ce2e22a86c247849904ecef3dc8" category="section-title">レポート作成</block>
+  <block id="5139de9c5a9b2b36569213d7e9b32f21" category="paragraph">環境の分析に役立つレポートを生成してダウンロードできるようになりました。事前設計されたレポートには、フェイルオーバーとフェイルバックの概要、すべてのサイトのレプリケーションの詳細、過去7日間のジョブの詳細が表示されます。</block>
+  <block id="5ef05167488611c5bd4ff0f410595ce4" category="section-title">30日間の無償トライアル</block>
+  <block id="7a9cfed0d96577c6b811d11dfc152202" category="paragraph">BlueXP  ディザスタリカバリの30日間無償トライアルに申し込むことができます。以前は、無料トライアルは90日間でした。</block>
+  <block id="3d1d28bb2a74cb6e16888dd71e05374a" category="section-title">レプリケーション計画の無効化と有効化</block>
+  <block id="6f963c01bb5a207fe21d3d9137892d53" category="paragraph">以前のリリースでは、日次スケジュールと週次スケジュールをサポートするために必要なフェイルオーバーテストスケジュールの構造が更新されていました。この更新では、新しい日次および週次フェイルオーバーテストスケジュールを使用できるように、既存のレプリケーションプランをすべて無効にして再度有効にする必要がありました。これは1回限りの要件です。</block>
+  <block id="2c4b676c68e03ba0114109310daeb0bb" category="section-title">フォルダマッピング</block>
+  <block id="3bdb4d4a16c6f952e581bc706b1882f1" category="paragraph">レプリケーション計画を作成してコンピューティングリソースをマッピングするときに、フォルダをマッピングして、データセンター、クラスタ、およびホスト用に指定したフォルダにVMをリカバリできるようになりました。</block>
+  <block id="ddf914c371b7feb4383b7444a99b5fd7" category="section-title">フェイルオーバー、フェイルバック、テストフェイルオーバーに使用できるVMの詳細</block>
+  <block id="363712ac31c5614bfddfdcfad95b6a12" category="paragraph">障害が発生し、フェイルオーバーの開始、フェイルバックの実行、またはフェイルオーバーのテストを行うときに、VMの詳細を確認し、再起動しなかったVMを特定できるようになりました。</block>
+  <block id="5f20b8908706e397cd745a0bb1264de2" category="section-title">順序付けされた起動順序でのVM起動遅延</block>
+  <block id="7e15dbae84fa8dee12ba906ffe20a1d1" category="paragraph">レプリケーションプランを作成するときに、プラン内の各VMにブート遅延を設定できるようになりました。これにより、優先順位の高いすべてのVMが実行されてから、以降の優先順位の高いVMが起動されるように、VMの起動順序を設定できます。</block>
+  <block id="bb121112267374f0e2c29742b8091ab6" category="section-title">VMオペレーティングシステム情報</block>
+  <block id="1df70ff252045f8a47784f3a1371818c" category="paragraph">レプリケーションプランを作成すると、プラン内の各VMのオペレーティングシステムが表示されるようになります。これは、VMを1つのリソースグループにグループ化する方法を決定する際に役立ちます。</block>
+  <block id="09a63cfb0d6c3a3392c3872099b3fba5" category="section-title">VM名のエイリアス設定</block>
+  <block id="dcdfd42c566ed1c481f3c772573f39e0" category="paragraph">レプリケーション計画を作成するときに、ディザスタリカバリSITでVM名にプレフィックスとサフィックスを追加できるようになりました。これにより、プラン内のVMにわかりやすい名前を付けることができます。</block>
+  <block id="126e7b7b7fdb43e70f3e1542c1f0b51a" category="section-title">古いSnapshotをクリーンアップ</block>
+  <block id="61a7f53a93554e648fe2eb9ad8dd6468" category="paragraph">指定した保持数を超えて不要になったSnapshotは削除できます。Snapshotの保持数を減らすと、時間の経過とともにSnapshotが蓄積される可能性があります。削除してスペースを解放できるようになりました。これは、オンデマンドで、またはレプリケーションプランを削除するときにいつでも実行できます。</block>
+  <block id="8cd43e146a4fc163d690bdc8bdc47fc6" category="section-title">スナップショットの調整</block>
+  <block id="4472d2b5ab8a2ba1ff5429790d72930f" category="paragraph">ソースとターゲットの間で同期されていないスナップショットを調整できるようになりました。これは、BlueXP  ディザスタリカバリ以外のターゲットでSnapshotが削除された場合に発生することがあります。サービスは、ソース上のスナップショットを24時間ごとに自動的に削除します。ただし、これはオンデマンドで実行できます。この機能を使用すると、すべてのサイトでSnapshotの整合性を確保できます。</block>
+  <block id="5d95f17e7ddbf703465910039fd80c35" category="section-title">オンプレミスからオンプレミスへのVMware VMFSデータストアのサポート</block>
+  <block id="089160f6b14935d2f39adf9a95c5da5a" category="paragraph">このリリースでは、オンプレミスストレージに保護されたiSCSIおよびFC用に、VMware vSphere Virtual Machine File System（VMFS）データストアにマウントされたVMがサポートされます。以前は、iSCSIおよびFC用にVMFSデータストアをサポートするテクノロジpreview_supportingを提供していました。</block>
+  <block id="b4f4dc0bb14114cf289b66587d52c9a4" category="section-title">FCに対応したオンプレミスからオンプレミスのVMware VMFSデータストアのサポート</block>
+  <block id="e0b7491fa7ed8915c350ab7831389ebf" category="paragraph">このリリースには、FCをオンプレミスストレージに保護するために、VMware vSphere Virtual Machine File System（VMFS）データストアにマウントされたVMの_ technology preview_ofのサポートが含まれています。以前は、iSCSI用のVMFSデータストアをサポートするテクノロジプレビューを提供していました。</block>
+  <block id="8b0a520b04093a504975b99493c33a06" category="section-title">ジョブのキャンセル</block>
+  <block id="e37d535f557154a6dd6ed413e0e7782c" category="paragraph">このリリースでは、Job Monitor UIでジョブをキャンセルできるようになりました。</block>
+  <block id="ba568c6eda754bba155b9d0f187ee2cd" category="section-title">無効な機能</block>
+  <block id="6d060bbb2a63ad6b1466ad80fcfc6275" category="section-title">テクノロジ更新オプション</block>
+  <block id="bff48bc8f1cd9f08f36e8d0c4fa810ff" category="paragraph">の詳細については、を<block ref="a53ad2061326060987afe3d1fd22d00d" category="inline-link-rx"></block>参照してください。</block>
+  <block id="4d1dd60706cede8204b5a6edb14f8ff5" category="paragraph">BlueXPキャンバスでGoogle Cloud Storageのバケットを表示できるようになりました。BlueXP  から直接、新しいバケットを追加したり、既存のバケットのプロパティを変更したりできるようになりました。<block ref="a727375f2b80e544cee46379a3fbce4b" category="inline-link-rx"></block>です。</block>
+  <block id="ee97d7a6f8cd51410930ad6fd6c7d715" category="section-title">BlueXP  運用耐障害性サービス</block>
+  <block id="21e938043b4ef6be41f16e95f7f5aaaa" category="section-title">2024年11月7日</block>
+  <block id="7d02192f3436d747f16f0854f54cd837" category="list-text">*データ分類を有効にし、個人識別情報（PII）をスキャンする*：このリリースでは、BlueXP  ファミリのコアコンポーネントであるBlueXP  分類を有効にして、ファイル共有ワークロードのデータをスキャンおよび分類することができます。データを分類することで、データに個人情報が含まれているかどうかを特定し、セキュリティリスクを高めることができます。このプロセスは、ワークロードの重要性にも影響し、適切なレベルの保護でワークロードを保護するのに役立ちます。</block>
+  <block id="f3da95789fee3d76f39c270803b7c7df" category="paragraph">BlueXP  ランサムウェア対策でのPIIデータのスキャンは、BlueX分類を導入したお客様が一般的に利用できます。BlueXP  の分類は、BlueXP  プラットフォームの一部として追加料金なしで利用でき、オンプレミスまたはお客様のクラウドに導入できます。</block>
+  <block id="c2cb37c5316be80c5de2706c50799610" category="paragraph">BlueXP  分類は、テクノロジプレビューの一部としてSaaSモデルとして導入することもできます。プレビュー機能を有効にするには、BlueXP  ransomware protection * Settings *オプションを使用します。[Preview]を有効にすると、[Protection]ページの[* Privacy exposure]列の横に、他の場所とともに[Preview]ラベルが表示されます。</block>
+  <block id="006f40c12cb6b543cd40a6cd5a750b98" category="inline-link">BlueXPのランサムウェア対策の設定</block>
+  <block id="14712989ac072dc4b44e9acf1def5f1f" category="paragraph">を参照してください<block ref="a5026777e609bf5c1f12922a89f75f5b" category="inline-link-rx"></block>。</block>
+  <block id="dc2ee5afb67051a37353df40cc16729a" category="paragraph">スキャンを開始するには、[Protection]ページで、[Privacy exposure]列の*[Identify exposure]*をクリックします。</block>
+  <block id="e7d05f872780d58e08011a44ce4be77b" category="inline-link">BlueXP  分類を使用して、個人を特定できる機密データをスキャン</block>
+  <block id="4dc0491313939f9597e6bce367054443" category="paragraph"><block ref="0e7ea879583dcbdf58a2050df8592221" category="inline-link-rx"></block>です。</block>
+  <block id="41e1ecfc5a85ff11563226784ee15ba6" category="list-text">*次のプレビュー機能をリリース前に試す*：「プレビュー」というラベルの付いた機能をリリース前に試すことができるようになりました。これを行うには、*設定*オプションを使用して、「プレビュー」ラベルでタグ付けされたこれらの機能を表示します。</block>
+  <block id="7a5ad35792efc88c3a5c05a313202699" category="list-text">* SIEMとMicrosoft Sentinelの統合*：Microsoft Sentinelを使用して脅威の分析と検出のために、セキュリティおよびイベント管理システム（SIEM）にデータを送信できるようになりました。以前は、AWS Security HubまたはSplunk CloudをSIEMとして選択できました。</block>
+  <block id="9d163bfc4f18cfe82e5ab58246fe3e03" category="list-text">*今すぐ無償トライアル*：このリリースでは、BlueXP  ランサムウェア対策の新規導入に30日間の無償トライアルが提供されるようになりました。以前は、BlueXP  ランサムウェア対策は90日間の無償トライアルを提供していました。すでに90日間の無償トライアルを利用している場合は、90日間継続されます。</block>
+  <block id="2f5cba8ef7e3d3ce9ca484acfa021d1e" category="list-text">* Podmanのファイルレベルでアプリケーションワークロードをリストアする*：アプリケーションワークロードをファイルレベルでリストアする前に、攻撃の影響を受けた可能性のあるファイルのリストを表示し、リストアするファイルを特定できるようになりました。以前は、組織（以前はアカウント）のBlueXP  コネクタがPodmanを使用していた場合、この機能は無効になっていました。これでPodmanで有効になりました。BlueXPランサムウェア対策でリストアするファイルを選択したり、アラートの影響を受けたすべてのファイルを記載したCSVファイルをアップロードしたり、リストアするファイルを手動で特定したりできます。</block>
+  <block id="cf3625b0846a5497dd36ab2220da602a" category="paragraph">詳細については、をご覧ください <block ref="4ef0c81e219f07a508ae115770245e4e" category="inline-link-macro-rx"></block>。</block>
 </blocks>

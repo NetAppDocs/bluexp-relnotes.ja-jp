@@ -55,10 +55,7 @@ BlueXP  IAMでは、リソースと権限をよりきめ細かく管理でき�
 
 これらの機能拡張により、ユーザが実行できるアクションとユーザがアクセスできるリソースをより適切に制御できるようになります。
 
-
-
-===== BlueXP  IAMが既存アカウントに与える影響
-
+.BlueXP  IAMが既存アカウントに与える影響
 BlueXP  にログインすると、次の変更が表示されます。
 
 * あなたの_アカウント_が_組織_と呼ばれるようになりました
@@ -83,22 +80,13 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 * 複数のBlueXP  アカウントを使用している場合は、複数のBlueXP  組織が存在することになります。
 
 
-
-
-===== BlueXP  IAM用API
-
+.BlueXP  IAM用API
 この変更により、BlueXP  IAM用の新しいAPIが導入されましたが、以前のテナンシーAPIと下位互換性があります。 https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["BlueXP  IAM向けAPIの詳細"^]
 
-
-
-===== サポートされる展開モード
-
+.サポートされる展開モード
 BlueXP  IAMは、標準モードでBlueXP  を使用する場合にサポートされます。BlueXP  を制限モードまたはプライベートモードで使用している場合は、引き続きBlueXP  アカウント_を使用してワークスペース、ユーザー、リソースを管理します。
 
-
-
-===== 次の手順
-
+.次の手順
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-identity-and-access-management.html["BlueXP  IAMの詳細"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-get-started.html["BlueXP  IAMの使用を開始する"]
 
@@ -111,10 +99,7 @@ BlueXP  IAMは、標準モードでBlueXP  を使用する場合にサポー�
 
 3.9.45リリースは、標準モードと制限モードで使用できます。
 
-
-
-===== Ubuntu 24.04 LTSのサポート
-
+.Ubuntu 24.04 LTSのサポート
 3.9.45リリース以降、BlueXP  では、BlueXP  を標準モードまたは制限モードで使用する場合、Ubuntu 24.04 LTSホストへのコネクタの新規インストールがサポートされるようになりました。
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["コネクタホスト要件の表示"]です。
@@ -198,12 +183,23 @@ https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_s
 
 === 2024年10月7日
 
-BlueXP  アラートのこの初期リリースには、次の機能が含まれています。
 
-* * BlueXP  アラートのリストページ*：容量やパフォーマンスが低いONTAPクラスタをすばやく特定し、可用性の範囲を測定して、セキュリティリスクを特定できます。容量、パフォーマンス、保護、可用性、セキュリティ、構成に関連するアラートを表示できます。
-* *アラートの詳細*:アラートの詳細にドリルダウンして、推奨事項を見つけることができます。
-* * System Managerにリンクされたクラスタの詳細を表示*：BlueXP  アラートを使用すると、ONTAPストレージ環境に関連付けられているアラートを表示し、ONTAP System Managerにリンクされている詳細にドリルダウンできます。
 
+==== BlueXP  アラートリストページ
+
+容量が少ないかパフォーマンスが低いONTAPクラスタをすばやく特定し、可用性の範囲を測定して、セキュリティリスクを特定できます。容量、パフォーマンス、保護、可用性、セキュリティ、構成に関連するアラートを表示できます。
+
+
+
+==== アラートの詳細
+
+アラートの詳細にドリルダウンして、推奨事項を確認できます。
+
+
+
+==== System Managerにリンクされたクラスタの詳細の表示
+
+BlueXP  アラートを使用すると、ONTAPストレージ環境に関連付けられているアラートを表示し、ONTAP System Managerにリンクされている詳細にドリルダウンできます。
 
 https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["BlueXP  アラートの詳細"]です。
 
@@ -267,7 +263,7 @@ Amazon FSx for NetApp ONTAPファイルシステムは、ヨーロッパ（チ�
 
 ==== BlueXPから新しいバケットを追加できるようになりました
 
-BlueXP CanvasでAmazon S3バケットを表示できるようになりました。BlueXPから直接、新しいバケットを追加したり、既存のバケットのプロパティを変更したりできるようになりました。 https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["新しいAmazon S3バケットを追加する方法をご覧ください"^]。
+BlueXP CanvasでAmazon S3バケットを表示できるようになりました。BlueXP  から直接、新しいバケットを追加したり、既存のバケットのプロパティを変更したりできるようになりました。 https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["新しいAmazon S3バケットを追加する方法をご覧ください"]です。
 
 
 
@@ -281,7 +277,7 @@ BlueXP CanvasでAmazon S3バケットを表示できるようになりました�
 
 ==== BlueXPから新しいストレージアカウントを追加できるようになりました
 
-BlueXP CanvasでAzure Blob Storageを表示できるようになりました。BlueXPから直接、新しいストレージアカウントを追加したり、既存のストレージアカウントのプロパティを変更したりできるようになりました。 https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["新しいAzure BLOBストレージアカウントを追加する方法をご覧ください"^]。
+BlueXP CanvasでAzure Blob Storageを表示できるようになりました。新しいストレージアカウントを追加したり、既存のストレージアカウントのプロパティをBlueXP  から直接変更したりできるようになりました。 https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["新しいAzure BLOBストレージアカウントを追加する方法をご覧ください"]です。
 
 
 
@@ -419,93 +415,56 @@ BlueXP Connectorバージョン3.9.40は、Red Hat Enterprise Linuxバージョ�
 
 
 
-=== 2024年10月10日（バージョン1.36）
+=== 2024年11月4日
+
+
+
+==== バージョン1.37
 
 このBlueXP  分類リリースには、次の更新が含まれています。
 
+.RHEL 8.10のサポート
+このリリースでは、以前のサポートバージョンに加えて、Red Hat Enterprise Linux v8.10もサポートされます。これは、ダークサイトの導入を含む、BlueXP  分類の手動オンプレミスインストールに適用されます。
+
+次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があり、BlueXP  分類バージョン1.30以降が必要です。Red Hat Enterprise Linuxバージョン8.8、8.10、9.0、9.1、9.2、9.3、および9.4。
+
+詳細については https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXPの分類"]、をご覧ください。
+
+.NFS v4.1のサポート
+このリリースでは、以前のサポートバージョンに加えて、NFS v4.1もサポートされます。
+
+詳細については https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXPの分類"]、をご覧ください。
 
 
-==== RHEL 9.4のサポート
 
+=== 2024年10月10日
+
+
+
+==== バージョン1.36
+
+.RHEL 9.4のサポート
 このリリースでは、以前のサポートバージョンに加えて、Red Hat Enterprise Linux v9.4もサポートされます。これは、ダークサイトの導入を含む、BlueXP  分類の手動オンプレミスインストールに適用されます。
 
 次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があります。また、BlueXP  分類バージョン1.30以降（Red Hat Enterprise Linuxバージョン8.8、9.0、9.1、9.2、9.3、9.4）が必要です。
 
 詳細については https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["BlueXPの分類環境の概要"]、をご覧ください。
 
-
-
-==== スキャンパフォーマンスの向上
-
+.スキャンパフォーマンスの向上
 このリリースでは、スキャンパフォーマンスが向上しています。
 
 
 
-=== 2024年9月2日（バージョン1.35）
-
-このBlueXP  分類リリースには、次の更新が含まれています。
+=== 2024年9月2日
 
 
 
-==== StorageGRIDデータのスキャン
+==== バージョン1.35
 
+.StorageGRIDデータのスキャン
 BlueXP  分類でStorageGRIDのデータをスキャンできるようになりました。
 
 詳細については、を参照してください link:task-scanning-storagegrid.html["StorageGRIDデータのスキャン"]。
-
-
-
-=== 2024年8月5日（バージョン1.34）
-
-このBlueXP  分類リリースには、次の更新が含まれています。
-
-
-
-==== CentOSからUbuntuへの変更
-
-BlueXP  の分類により、Microsoft AzureおよびGoogle Cloud Platform (GCP)用のLinuxオペレーティングシステムがCentOS 7.9からUbuntu 22.04に更新されました。
-
-導入の詳細については、を参照して https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html#prepare-the-linux-host-system["インターネットにアクセスできるLinuxホストにインストールし、Linuxホストシステムを準備する"]ください。
-
-
-
-=== 2024年7月1日（バージョン1.33）
-
-このリリースには、次の更新が含まれています。
-
-
-
-==== Ubuntuのサポート
-
-このリリースでは、Ubuntu 24.04 Linuxプラットフォームがサポートされます。
-
-
-
-==== マッピングスキャンによるメタデータの収集
-
-マッピングスキャン中にファイルから次のメタデータが抽出され、Governance、Compliance、Investigationの各ダッシュボードに表示されます。
-
-* 作業環境
-* 作業環境のタイプ
-* ストレージリポジトリ
-* ファイルタイプ
-* 使用済み容量
-* ファイル数
-* ファイルサイズ
-* ファイル作成
-* ファイルの最終アクセス
-* ファイルの最終変更日
-* ファイル検出時刻
-* 権限の抽出
-
-
-
-
-==== タツシユホトノツイカテタ
-
-このリリースでは、マッピングスキャン中にGovernance、Compliance、およびInvestigationの各ダッシュボードに表示されるデータが更新されます。
-
-詳細については、 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["マッピングスキャンと分類スキャンの違い"]
 
 
 
@@ -544,7 +503,7 @@ HA環境でのAWSローカルゾーンの詳細については、を参照して
 
 このリリースから、BlueXP  通知を使用してCloud Volumes ONTAPをアップグレードしようとすると、使用するデフォルトのバージョン、最新のバージョン、および互換性のあるバージョンに関するガイダンスが表示されます。また、Cloud Volumes ONTAPインスタンスと互換性のある最新のパッチまたはメジャーバージョンを選択することも、アップグレードするバージョンを手動で入力することもできます。
 
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-from-bluexp-notifications["Cloud Volumes ONTAP ソフトウェアをアップグレードします"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-from-bluexp-notifications["Cloud Volumes ONTAP ソフトウェアをアップグレードします"]
 
 
 
@@ -565,8 +524,8 @@ WORM（Write Once Read Many）とARP（Autonomous Ransomware Protection）の組
 
 これらの機能の詳細については、こちらをご覧ください。
 
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["ランサムウェアからの保護を強化"^]
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["WORMストレージ"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["ランサムウェアからの保護を強化"]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["WORMストレージ"]
 
 
 
@@ -627,17 +586,29 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 === 2024年9月16日
 
+
+
+==== バグ修正
+
 BlueXPのコピーおよび同期サービスとデータブローカーを更新し、いくつかのバグを修正しました。新しいデータブローカーのバージョンは1.0.55です。
 
 
 
 === 2024 年 8 月 11 日
 
+
+
+==== バグ修正
+
 BlueXPのコピーおよび同期サービスとデータブローカーを更新し、いくつかのバグを修正しました。新しいデータブローカーのバージョンは1.0.54です。
 
 
 
 === 2024年7月14日
+
+
+
+==== バグ修正
 
 BlueXPのコピーおよび同期サービスとデータブローカーを更新し、いくつかのバグを修正しました。新しいデータブローカーのバージョンは1.0.53です。
 
@@ -673,27 +644,7 @@ NetApp SupportEdge Basicサービスには、SupportEdge AdvisorおよびSupport
 
 ==== Sustainability Dashboard
 
-ストレージシステムの環境の健全性に関するインサイトを提供する環境指標により、高度な予測モデルに基づいて、予測される電力使用量、直接炭素使用量、および熱排出量のより正確な値が提供されるようになりました。詳細については、を参照して link:https://docs.netapp.com/us-en/active-iq/BlueXP_sustainability_dashboard_overview.html["Sustainabilityダッシュボードの概要"^]ください。
-
-
-
-=== 2024年5月15日
-
-
-
-==== Sustainability Dashboard
-
-EシリーズシステムとStorageGRIDシステムでサステナビリティがサポートされるようになりました。これらのシステムのSustainabilityダッシュボードでは、推奨される対処方法と環境指標のリストを表示して、電力、直接的な炭素使用量、熱の予測を表示できます。詳細については、を参照して link:https://docs.netapp.com/us-en/active-iq/BlueXP_sustainability_dashboard_overview.html["Sustainabilityダッシュボードの概要"^]ください。
-
-
-
-=== 2024年3月28日
-
-
-
-==== Upgrade Advisor を使用します
-
-古いバージョンのUpgrade Advisorは廃止されました。強化されたバージョンのUpgrade Advisorを使用すると、単一のクラスタおよび複数のクラスタのアップグレードプランを生成できます。 link:https://docs.netapp.com/us-en/active-iq/upgrade_advisor_overview.html["アップグレードの推奨事項を表示し、アップグレード計画を生成する方法について説明します。"]
+ストレージシステムの環境の健全性に関するインサイトを提供する環境指標により、高度な予測モデルに基づいて、予測される電力使用量、直接炭素使用量、および熱排出量のより正確な値が提供されるようになりました。詳細については、を参照して link:https://docs.netapp.com/us-en/active-iq/BlueXP_sustainability_dashboard_overview.html["Sustainabilityダッシュボードの概要"]ください。
 
 
 
@@ -757,119 +708,135 @@ BlueXPのデジタルウォレットに、プライベートオファーに関�
 
 
 
-=== 2023年4月3日
-
-
-
-==== Eメール通知
-
-Eメール通知がBlueXPデジタルウォレットでサポートされるようになりました。
-
-通知を設定すると、BYOLライセンスの有効期限が近づいたとき（「警告」通知）、またはすでに有効期限が切れているとき（「エラー」通知）にEメール通知を受け取ることができます。
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["Eメール通知の設定方法については、こちらをご覧ください"^]
-
-
-
-==== Marketplaceのサブスクリプション用にライセンスされた容量
-
-Cloud Volumes ONTAP の容量単位のライセンスを表示する場合、BlueXPデジタルウォレットに、マーケットプレイスのプライベートオファーで購入したライセンス容量が表示されるようになりました。
-
-https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["アカウントの使用済み容量を表示する方法について説明します"]。
-
-
-
 == ディザスタリカバリ
 
 
 
 === 2024年10月30日
 
-このBlueXPディザスタリカバリリリースには、次の更新が含まれています。
 
-* *レポート*:このリリースでは、環境の分析に役立つレポートを生成およびダウンロードできるようになりました。事前設計されたレポートには、フェイルオーバーとフェイルバックの概要、すべてのサイトのレプリケーションの詳細、過去7日間のジョブの詳細が表示されます。
-+
+
+==== レポート作成
+
+環境の分析に役立つレポートを生成してダウンロードできるようになりました。事前設計されたレポートには、フェイルオーバーとフェイルバックの概要、すべてのサイトのレプリケーションの詳細、過去7日間のジョブの詳細が表示されます。
+
 を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/reports.html["ディザスタリカバリレポートの作成"]。
 
-* *30日間の無償トライアル*:今回のリリースでは、BlueXP  ディザスタリカバリの30日間無償トライアルにサインアップできるようになりました。以前は、無料トライアルは90日間でした。
-+
+
+
+==== 30日間の無償トライアル
+
+BlueXP  ディザスタリカバリの30日間無償トライアルに申し込むことができます。以前は、無料トライアルは90日間でした。
+
 を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html["ライセンスをセットアップする"]。
 
-* *レプリケーション計画の無効化と有効化*:以前のリリースには、毎日および毎週のスケジュールをサポートするために必要なフェイルオーバーテストスケジュール構造の更新が含まれていました。この更新では、新しい日次および週次フェイルオーバーテストスケジュールを使用できるように、既存のレプリケーションプランをすべて無効にして再度有効にする必要がありました。これは1回限りの要件です。
-+
+
+
+==== レプリケーション計画の無効化と有効化
+
+以前のリリースでは、日次スケジュールと週次スケジュールをサポートするために必要なフェイルオーバーテストスケジュールの構造が更新されていました。この更新では、新しい日次および週次フェイルオーバーテストスケジュールを使用できるように、既存のレプリケーションプランをすべて無効にして再度有効にする必要がありました。これは1回限りの要件です。
+
 その方法は次のとおりです。
 
-+
-.. トップメニューから*レプリケーションプラン*を選択します。
-.. 計画を選択し、[Actions]アイコンを選択してドロップダウンメニューを表示します。
-.. [*Disable*] を選択します。
-.. 数分後、*[有効化]*を選択します。
+. トップメニューから*レプリケーションプラン*を選択します。
+. 計画を選択し、[Actions]アイコンを選択してドロップダウンメニューを表示します。
+. [*Disable*] を選択します。
+. 数分後、*[有効化]*を選択します。
 
 
-* *フォルダマッピング*：レプリケーション計画を作成してコンピューティングリソースをマッピングするときに、フォルダをマッピングして、データセンター、クラスタ、およびホスト用に指定したフォルダにVMをリカバリできるようになりました。
-+
+
+
+==== フォルダマッピング
+
+レプリケーション計画を作成してコンピューティングリソースをマッピングするときに、フォルダをマッピングして、データセンター、クラスタ、およびホスト用に指定したフォルダにVMをリカバリできるようになりました。
+
 詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["レプリケーション計画の作成"]。
 
-* *フェイルオーバー、フェイルバック、およびテストフェイルオーバーに使用できるVMの詳細*：障害が発生し、フェイルオーバーの開始、フェイルバックの実行、またはフェイルオーバーのテストを行う場合、VMの詳細を確認して、再起動しなかったVMを特定できるようになりました。
-+
+
+
+==== フェイルオーバー、フェイルバック、テストフェイルオーバーに使用できるVMの詳細
+
+障害が発生し、フェイルオーバーの開始、フェイルバックの実行、またはフェイルオーバーのテストを行うときに、VMの詳細を確認し、再起動しなかったVMを特定できるようになりました。
+
 を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html["リモートサイトへのアプリケーションのフェイルオーバー"]。
 
-* *順序付けられたブートシーケンスによるVMブート遅延*:レプリケーションプランを作成するときに、プラン内の各VMにブート遅延を設定できるようになりました。これにより、優先順位の高いすべてのVMが実行されてから、以降の優先順位の高いVMが起動されるように、VMの起動順序を設定できます。
-+
+
+
+==== 順序付けされた起動順序でのVM起動遅延
+
+レプリケーションプランを作成するときに、プラン内の各VMにブート遅延を設定できるようになりました。これにより、優先順位の高いすべてのVMが実行されてから、以降の優先順位の高いVMが起動されるように、VMの起動順序を設定できます。
+
 詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["レプリケーション計画の作成"]。
 
-* * VMオペレーティング・システム情報*:レプリケーション・プランを作成すると、プラン内の各VMのオペレーティング・システムが表示されるようになります。これは、VMを1つのリソースグループにグループ化する方法を決定する際に役立ちます。
-+
+
+
+==== VMオペレーティングシステム情報
+
+レプリケーションプランを作成すると、プラン内の各VMのオペレーティングシステムが表示されるようになります。これは、VMを1つのリソースグループにグループ化する方法を決定する際に役立ちます。
+
 詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["レプリケーション計画の作成"]。
 
-* * VM名のエイリアス*：レプリケーションプランを作成するときに、ディザスタリカバリSITのVM名にプレフィックスとサフィックスを追加できるようになりました。これにより、プラン内のVMにわかりやすい名前を付けることができます。
-+
+
+
+==== VM名のエイリアス設定
+
+レプリケーション計画を作成するときに、ディザスタリカバリSITでVM名にプレフィックスとサフィックスを追加できるようになりました。これにより、プラン内のVMにわかりやすい名前を付けることができます。
+
 詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["レプリケーション計画の作成"]。
 
-* *古いスナップショットのクリーンアップ*：このリリースでは、指定した保持数を超えて不要になったスナップショットを削除できます。Snapshotの保持数を減らすと、時間の経過とともにSnapshotが蓄積される可能性があります。削除してスペースを解放できるようになりました。これは、オンデマンドで、またはレプリケーションプランを削除するときにいつでも実行できます。
-+
+
+
+==== 古いSnapshotをクリーンアップ
+
+指定した保持数を超えて不要になったSnapshotは削除できます。Snapshotの保持数を減らすと、時間の経過とともにSnapshotが蓄積される可能性があります。削除してスペースを解放できるようになりました。これは、オンデマンドで、またはレプリケーションプランを削除するときにいつでも実行できます。
+
 詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["サイト、リソースグループ、レプリケーションプラン、データストア、仮想マシンの情報を管理します。"]。
 
-* *スナップショットの調整*:このリリースでは、ソースとターゲットの間で同期されていないスナップショットを調整できるようになりました。これは、BlueXP  ディザスタリカバリ以外のターゲットでSnapshotが削除された場合に発生することがあります。サービスは、ソース上のスナップショットを24時間ごとに自動的に削除します。ただし、これはオンデマンドで実行できます。この機能を使用すると、すべてのサイトでSnapshotの整合性を確保できます。
-+
+
+
+==== スナップショットの調整
+
+ソースとターゲットの間で同期されていないスナップショットを調整できるようになりました。これは、BlueXP  ディザスタリカバリ以外のターゲットでSnapshotが削除された場合に発生することがあります。サービスは、ソース上のスナップショットを24時間ごとに自動的に削除します。ただし、これはオンデマンドで実行できます。この機能を使用すると、すべてのサイトでSnapshotの整合性を確保できます。
+
 詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["レプリケーション計画の管理"]。
-
-
 
 
 
 === 2024年9月20日
 
-このBlueXP  ディザスタリカバリリリースには、次の更新が含まれています。
 
-* *オンプレミスからオンプレミスのVMware VMFSデータストアのサポート*：このリリースには、VMware vSphere Virtual Machine File System（VMFS）データストアにマウントされたVMのサポートが含まれており、iSCSIおよびFCでオンプレミスのストレージに保護されています。以前は、iSCSIおよびFC用にVMFSデータストアをサポートするテクノロジpreview_supportingを提供していました。
-+
+
+==== オンプレミスからオンプレミスへのVMware VMFSデータストアのサポート
+
+このリリースでは、オンプレミスストレージに保護されたiSCSIおよびFC用に、VMware vSphere Virtual Machine File System（VMFS）データストアにマウントされたVMがサポートされます。以前は、iSCSIおよびFC用にVMFSデータストアをサポートするテクノロジpreview_supportingを提供していました。
+
 iSCSIプロトコルとFCプロトコルの両方に関するその他の考慮事項を次に示します。
 
-+
-** FCは、レプリケーションではなく、クライアントフロントエンドプロトコルをサポートします。
-** BlueXP  ディザスタリカバリでは、各ONTAPでサポートされるLUNは1つだけです。ボリュームに複数のLUNを含めることはできません。
-** レプリケーション計画については、デスティネーションONTAPボリュームで、保護対象VMをホストしているソースONTAPボリュームと同じプロトコルを使用する必要があります。たとえば、ソースでFCプロトコルを使用している場合は、デスティネーションでもFCを使用する必要があります。
-
-
+* FCは、レプリケーションではなく、クライアントフロントエンドプロトコルをサポートします。
+* BlueXP  ディザスタリカバリでは、各ONTAPでサポートされるLUNは1つだけです。ボリュームに複数のLUNを含めることはできません。
+* レプリケーション計画については、デスティネーションONTAPボリュームで、保護対象VMをホストしているソースONTAPボリュームと同じプロトコルを使用する必要があります。たとえば、ソースでFCプロトコルを使用している場合は、デスティネーションでもFCを使用する必要があります。
 
 
 
 
 === 2024 年 8 月 2 日
 
-このBlueXPディザスタリカバリリリースには、次の更新が含まれています。
 
-* *オンプレミスからオンプレミスのFC向けVMware VMFSデータストアのサポート*：このリリースには、FCでオンプレミスストレージに保護されたVMware vSphere Virtual Machine File System（VMFS）データストアにマウントされたVMの_テクノロジプレビュー_サポートが含まれています。以前は、iSCSI用のVMFSデータストアをサポートするテクノロジプレビューを提供していました。
-+
+
+==== FCに対応したオンプレミスからオンプレミスのVMware VMFSデータストアのサポート
+
+このリリースには、FCをオンプレミスストレージに保護するために、VMware vSphere Virtual Machine File System（VMFS）データストアにマウントされたVMの_ technology preview_ofのサポートが含まれています。以前は、iSCSI用のVMFSデータストアをサポートするテクノロジプレビューを提供していました。
+
 
 NOTE: NetAppでは、プレビューしたワークロード容量に対して課金されることはありません。
 
-* *ジョブのキャンセル*：このリリースでは、ジョブ監視UIでジョブをキャンセルできるようになりました。
-+
+
+
+==== ジョブのキャンセル
+
+このリリースでは、Job Monitor UIでジョブをキャンセルできるようになりました。
+
 を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/monitor-jobs.html["ジョブの監視"]。
-
-
 
 
 
@@ -893,6 +860,10 @@ BlueXPからEシリーズシステムを直接検出できるようになりま�
 
 === 2024年5月15日
 
+
+
+==== 無効な機能
+
 BlueXP  の経済効率化機能の一部が一時的に無効になりました。
 
 * テクノロジの更新
@@ -903,6 +874,10 @@ BlueXP  の経済効率化機能の一部が一時的に無効になりまし�
 
 === 2024年3月14日
 
+
+
+==== テクノロジ更新オプション
+
 既存の資産を運用していて、テクノロジの更新が必要かどうかを判断する場合は、BlueXPの経済性に関するテクノロジ更新オプションを利用できます。現在のワークロードの簡単な評価を確認して推奨事項を確認できます。また、過去90日以内にAutoSupportログをNetAppに送信した場合は、新しいハードウェアでのワークロードのパフォーマンスを確認するためのワークロードシミュレーションを提供できるようになりました。
 
 ワークロードを追加して、既存のワークロードをシミュレーションから除外することもできます。
@@ -911,21 +886,17 @@ BlueXP  の経済効率化機能の一部が一時的に無効になりまし�
 
 この機能は、左側のナビゲーションの機器更改（Tech Refresh）オプションに含まれるようになりました。
 
-の詳細については、を参照してください link:../use/tech-refresh.html["テクノロジの更新を評価する"]。
+の詳細については、を https://docs.netapp.com/us-en/bluexp-economic-efficiency/use/tech-refresh.html["テクノロジの更新を評価する"]参照してください。
 
 
 
 === 2023年11月8日
 
+
+
+==== テクノロジの更新
+
 今回リリースされたBlueXPの経済効率化機能には、資産を評価し、テクノロジの更新が推奨されるかどうかを確認する新しいオプションが含まれています。このサービスには、左側のナビゲーションにある新しい機器更改（Tech Refresh）オプションのほか、現在のワークロードと資産を評価するための新しいページ、推奨事項を記載したレポートが含まれています。
-
-
-
-=== 2023年4月2日
-
-新しいBlueXPの経済効率化サービスは、現在または予測されている容量が少ないストレージ資産を特定し、オンプレミスのAFF システムのデータ階層化や容量の追加に関する推奨事項を提供します。
-
-link:https://docs.netapp.com/us-en/bluexp-economic-efficiency/get-started/intro.html["BlueXPの経済性に関する詳細はこちらをご覧ください"]。
 
 
 
@@ -945,7 +916,7 @@ BlueXP  エッジキャッシングサービスは、2024年8月7日に削除�
 
 ==== BlueXPから新しいバケットを追加したり、既存のバケットを管理したりできます
 
-BlueXPキャンバスでGoogle Cloud Storageのバケットを表示できるようになりました。BlueXPから直接、新しいバケットを追加したり、既存のバケットのプロパティを変更したりできるようになりました。 https://docs.netapp.com/us-en/bluexp-google-cloud-storage/task-add-gcp-bucket.html["新しいGoogle Cloud Storageバケットを追加する方法をご覧ください"^]。
+BlueXPキャンバスでGoogle Cloud Storageのバケットを表示できるようになりました。BlueXP  から直接、新しいバケットを追加したり、既存のバケットのプロパティを変更したりできるようになりました。 https://docs.netapp.com/us-en/bluexp-google-cloud-storage/task-add-gcp-bucket.html["新しいGoogle Cloud Storageバケットを追加する方法をご覧ください"]です。
 
 
 
@@ -1007,23 +978,15 @@ BlueXP  をプライベートモードで使用している場合、ASA R2シ�
 
 
 
-=== 2023年7月2日
-
-
-
-==== My estateからクラスタを検出
-
-オンプレミスのONTAPクラスタを検出できるようになりました。これには、* Canvas > My estate *から、BlueXPログインのEメールアドレスに関連付けられているONTAPクラスタに基づいてBlueXPが検出されたクラスタを選択します。
-
-https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster["クラスタを検出する方法については、[My estate]ページを参照してください"]。
-
-
-
 == 運用の耐障害性
 
 
 
 === 2023年4月2日
+
+
+
+==== BlueXP  運用耐障害性サービス
 
 新しいBlueXPの運用耐障害性サービスとIT運用リスクの自動修復サービスを使用すると、システム停止や障害が発生する前に推奨される修正策を実装できます。
 
@@ -1034,6 +997,45 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 == ランサムウェアからの保護
+
+
+
+=== 2024年11月7日
+
+このリリースのBlueXP  ランサムウェア対策には、次の更新が含まれています。
+
+* *データ分類を有効にし、個人識別情報（PII）をスキャンする*：このリリースでは、BlueXP  ファミリのコアコンポーネントであるBlueXP  分類を有効にして、ファイル共有ワークロードのデータをスキャンおよび分類することができます。データを分類することで、データに個人情報が含まれているかどうかを特定し、セキュリティリスクを高めることができます。このプロセスは、ワークロードの重要性にも影響し、適切なレベルの保護でワークロードを保護するのに役立ちます。
++
+BlueXP  ランサムウェア対策でのPIIデータのスキャンは、BlueX分類を導入したお客様が一般的に利用できます。BlueXP  の分類は、BlueXP  プラットフォームの一部として追加料金なしで利用でき、オンプレミスまたはお客様のクラウドに導入できます。
+
++
+BlueXP  分類は、テクノロジプレビューの一部としてSaaSモデルとして導入することもできます。プレビュー機能を有効にするには、BlueXP  ransomware protection * Settings *オプションを使用します。[Preview]を有効にすると、[Protection]ページの[* Privacy exposure]列の横に、他の場所とともに[Preview]ラベルが表示されます。
+
++
+を参照してください https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["BlueXPのランサムウェア対策の設定"]。
+
++
+スキャンを開始するには、[Protection]ページで、[Privacy exposure]列の*[Identify exposure]*をクリックします。
+
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["BlueXP  分類を使用して、個人を特定できる機密データをスキャン"]です。
+
+* *次のプレビュー機能をリリース前に試す*：「プレビュー」というラベルの付いた機能をリリース前に試すことができるようになりました。これを行うには、*設定*オプションを使用して、「プレビュー」ラベルでタグ付けされたこれらの機能を表示します。
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["BlueXP  ランサムウェア対策の設定の詳細"]です。
+
+* * SIEMとMicrosoft Sentinelの統合*：Microsoft Sentinelを使用して脅威の分析と検出のために、セキュリティおよびイベント管理システム（SIEM）にデータを送信できるようになりました。以前は、AWS Security HubまたはSplunk CloudをSIEMとして選択できました。
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["BlueXP  ランサムウェア対策の設定の詳細"]です。
+
+
+
+* *今すぐ無償トライアル*：このリリースでは、BlueXP  ランサムウェア対策の新規導入に30日間の無償トライアルが提供されるようになりました。以前は、BlueXP  ランサムウェア対策は90日間の無償トライアルを提供していました。すでに90日間の無償トライアルを利用している場合は、90日間継続されます。
+* * Podmanのファイルレベルでアプリケーションワークロードをリストアする*：アプリケーションワークロードをファイルレベルでリストアする前に、攻撃の影響を受けた可能性のあるファイルのリストを表示し、リストアするファイルを特定できるようになりました。以前は、組織（以前はアカウント）のBlueXP  コネクタがPodmanを使用していた場合、この機能は無効になっていました。これでPodmanで有効になりました。BlueXPランサムウェア対策でリストアするファイルを選択したり、アラートの影響を受けたすべてのファイルを記載したCSVファイルをアップロードしたり、リストアするファイルを手動で特定したりできます。
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["ランサムウェア攻撃からのリカバリの詳細"]です。
+
+
 
 
 
@@ -1065,46 +1067,6 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-pr
 * *ロールベースアクセス制御*：ロールベースアクセス制御（RBAC）を使用して、特定のアクティビティへのアクセスを制限できるようになりました。BlueXP  ランサムウェア対策では、BlueXP  の2つのロール、BlueXP  アカウント管理者と非アカウント管理者（ビューア）を使用します。
 +
 各ロールで実行できるアクションの詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["ロールベースアクセス制御Privileges"]。
-
-
-
-
-
-=== 2024 年 8 月 5 日
-
-このリリースのBlueXP  ランサムウェア対策には、次の更新が含まれています。
-
-* * Splunk Cloudによる脅威の検出*：セキュリティおよびイベント管理システム（SIEM）にデータを自動的に送信し、脅威の分析と検出を行うことができます。以前のリリースでは、SIEMとしてAWS Security Hubのみを選択できました。このリリースでは、AWS Security HubまたはSplunk CloudをSIEMとして選択できます。
-+
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["BlueXP  ランサムウェア対策の設定の詳細"]です。
-
-
-
-
-
-=== 2024年7月1日
-
-このリリースのBlueXPランサムウェア対策には、次の更新が含まれています。
-
-* *お客様所有のライセンスを使用（BYOL）*：このリリースでは、NetApp営業担当から取得するNetAppライセンスファイル（NLF）であるBYOLライセンスを使用できます。
-+
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["ライセンスの設定に関する詳細情報"]。
-
-* *アプリケーションワークロードをファイルレベルでリストアする*：アプリケーションワークロードをファイルレベルでリストアする前に、攻撃の影響を受けた可能性のあるファイルのリストを表示し、リストアするファイルを特定できるようになりました。BlueXPランサムウェア対策でリストアするファイルを選択したり、アラートの影響を受けたすべてのファイルを記載したCSVファイルをアップロードしたり、リストアするファイルを手動で特定したりできます。
-+
-
-NOTE: このリリースでは、アカウント内のすべてのBlueXPコネクタがPodmanを使用していない場合、単一ファイルのリストア機能が有効になります。それ以外の場合、そのアカウントでは無効になります。
-
-+
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["ランサムウェア攻撃からのリカバリの詳細"]です。
-
-* *ファイル・レベルでアプリケーション・ワークロードをリストアする前に、影響を受けるファイルのリスト*をダウンロードしてください。[Alerts]ページにアクセスして影響を受けるファイルのリストをCSVファイルにダウンロードし、[Recovery]ページを使用してCSVファイルをアップロードできるようになりました。
-+
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["アプリケーションをリストアする前に影響を受けるファイルをダウンロードする方法の詳細"]です。
-
-* *保護計画の削除*：このリリースでは、ランサムウェア対策戦略を削除できるようになりました。
-+
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["ワークロードの保護とランサムウェア対策戦略の管理の詳細"]です。
 
 
 
@@ -1172,7 +1134,7 @@ https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["デ
 
 BlueXP  ソフトウェアアップデートサービスは、リスクを軽減し、お客様がONTAPの機能を十分に活用できるようにすることで、シームレスなアップデートエクスペリエンスをユーザに提供します。
 
-詳細については、をご覧ください link:https://docs.netapp.com/us-en/bluexp-software-updates/get-started/software-updates.html["BlueXP  ソフトウェアアップデート"^]。
+詳細については、をご覧ください link:https://docs.netapp.com/us-en/bluexp-software-updates/get-started/software-updates.html["BlueXP  ソフトウェアアップデート"]。
 
 
 
@@ -1269,6 +1231,10 @@ BlueXP階層化インターフェイスから[ライセンス]タブが削除さ
 
 
 === 2023年6月4日
+
+
+
+==== ボリュームキャッシュ
 
 ONTAP 9ソフトウェアの機能であるボリュームキャッシングは、ファイル配信を簡易化し、ユーザやコンピューティングリソースの近くにリソースを配置することでWANレイテンシを低減し、WAN帯域幅のコストを削減するリモートキャッシング機能です。ボリュームキャッシングは、リモートの場所にある書き込み可能な永続的ボリュームを提供します。BlueXPのボリュームキャッシュを使用すると、データへのアクセスを高速化したり、アクセス頻度の高いボリュームのトラフィックをオフロードしたりできます。キャッシュボリュームは、特にクライアントが同じデータに繰り返しアクセスする必要がある場合に、読み取り処理が大量に発生するワークロードに最適です。
 
