@@ -24,6 +24,29 @@ BlueXPプラットフォームの一部である クラウド サービス の�
 
 
 
+=== 2024年12月9日
+
+
+
+==== コネクタ3.9.47
+
+このリリースのBlueXP  Connectorには、バグの修正と、コネクタのインストール時に通知されるエンドポイントの変更が含まれています。
+
+現時点では、3.9.47リリースは標準モードと制限モードで使用できます。
+
+.インストール時にNetAppサポートに連絡するエンドポイント
+コネクタを手動でインストールすると、インストーラは\https://support NetApp .comに接続しなくなります。
+
+インストーラは引き続き\ https://mysupport . NetApp . comにアクセスします。
+
+
+
+==== BlueXP  IDおよびアクセス管理
+
+[Connectors]ページには、現在使用可能なコネクタのみが表示されます削除したコネクタは表示されなくなります。
+
+
+
 === 2024年11月26日
 
 
@@ -59,7 +82,7 @@ BlueXP  デジタルウォレットとBlueXP  レプリケーションもプ�
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["プライベートモードの詳細"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["BlueXPのプライベートモードでの利用を開始する方法"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["プライベートモードの使用時にコネクタをアップグレードする方法について説明します。"]S
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["プライベートモードの使用時にコネクタをアップグレードする方法について説明します。"]
 
 
 
@@ -81,16 +104,6 @@ BlueXP  デジタルウォレットとBlueXP  レプリケーションもプ�
 BlueXP  IDおよびアクセス管理からプロジェクトのIDを表示できるようになりました。このIDは、API呼び出しの実行時に必要になる場合があります。
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-folders-projects.html#project-id["プロジェクトのIDを取得する方法"]です。
-
-
-
-=== 2024年10月10日
-
-
-
-==== コネクタ3.9.45パッチ
-
-このパッチにはバグ修正が含まれています。
 
 
 
@@ -401,6 +414,18 @@ BlueXP  分類でStorageGRIDのデータをスキャンできるようになり
 
 
 
+=== 2024年12月9日
+
+
+
+==== ベストプラクティスに準拠するようにAzure向けに更新されたサポート対象VMのリスト
+
+AzureにCloud Volumes ONTAPの新しいインスタンスを導入する場合、DS_v2およびES_v3マシンファミリーはBlueXP  で選択できなくなりました。これらのファミリーは、既存の古いシステムでのみ保持およびサポートされます。Cloud Volumes ONTAPの新規導入は、Azureでサポートされるのは9.12.1リリース以降のみです。ES_v4またはCloud Volumes ONTAP 9.12.1以降と互換性のある他のシリーズに切り替えることをお勧めします。ただし、DS_v2およびES_v3シリーズマシンは、APIを使用した新しい展開で使用できます。
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure でサポートされる構成"^]
+
+
+
 === 2024年11月11日
 
 
@@ -459,7 +484,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html#enabl
 
 
 
-==== N1シリーズマシンはBlueXP  で選択できません
+==== ベストプラクティスに準拠するようにGoogle Cloud向けに更新されたサポート対象VMのリスト
 
 Google CloudにCloud Volumes ONTAPの新しいインスタンスを導入する際に、BlueXP  でn1シリーズマシンを選択できなくなりました。n1シリーズのマシンは、既存の古いシステムでのみ保持およびサポートされます。Cloud Volumes ONTAPの新規導入は、Google Cloud 9.8リリース以降でのみサポートされます。Cloud Volumes ONTAP 9.8以降と互換性のあるn2シリーズマシンタイプに切り替えることをお勧めします。ただし、n1シリーズマシンは、APIを介して実行される新しい導入に使用できます。
 
@@ -475,18 +500,6 @@ BlueXP  では、AWSローカルゾーンがサポートされるようにな�
 NOTE: BlueXP  を制限モードで使用している場合、AWSローカルゾーンはサポートされません。
 
 HA環境でのAWSローカルゾーンの詳細については、を参照してくださいlink:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha.html#aws-local-zones["AWSローカルゾーン"^]。
-
-
-
-=== 2024年10月7日
-
-
-
-==== アップグレード時のバージョン選択におけるユーザエクスペリエンスの向上
-
-このリリースから、BlueXP  通知を使用してCloud Volumes ONTAPをアップグレードしようとすると、使用するデフォルトのバージョン、最新のバージョン、および互換性のあるバージョンに関するガイダンスが表示されます。また、Cloud Volumes ONTAPインスタンスと互換性のある最新のパッチまたはメジャーバージョンを選択することも、アップグレードするバージョンを手動で入力することもできます。
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-from-bluexp-notifications["Cloud Volumes ONTAP ソフトウェアをアップグレードします"]
 
 
 
@@ -968,23 +981,13 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 このリリースでは、BlueXP  ファミリーのコアコンポーネントであるBlueXP  分類を有効にして、ファイル共有ワークロードのデータをスキャンして分類することができます。データを分類することで、データに個人情報が含まれているかどうかを特定し、セキュリティリスクを高めることができます。このプロセスは、ワークロードの重要性にも影響し、適切なレベルの保護でワークロードを保護するのに役立ちます。
 
-BlueXP  ランサムウェア対策でのPIIデータのスキャンは、BlueX分類を導入したお客様が一般的に利用できます。BlueXP  の分類は、BlueXP  プラットフォームの一部として追加料金なしで利用でき、オンプレミスまたはお客様のクラウドに導入できます。
-
-BlueXP  分類は、テクノロジプレビューの一部としてSaaSモデルとして導入することもできます。プレビュー機能を有効にするには、BlueXP  ransomware protection * Settings *オプションを使用します。[Preview]を有効にすると、[Protection]ページの[* Privacy exposure]列の横に、他の場所とともに[Preview]ラベルが表示されます。
+BlueXP  ランサムウェア対策でのPIIデータのスキャンは、BlueXP  分類を導入したお客様が一般に利用できます。BlueXP  の分類は、BlueXP  プラットフォームの一部として追加料金なしで利用でき、オンプレミスまたはお客様のクラウドに導入できます。
 
 を参照してください https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["BlueXPのランサムウェア対策の設定"]。
 
 スキャンを開始するには、[Protection]ページで、[Privacy exposure]列の*[Identify exposure]*をクリックします。
 
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["BlueXP  分類を使用して、個人を特定できる機密データをスキャン"]です。
-
-
-
-==== リリース前に次のプレビュー機能を試す
-
-これで、リリース前に「プレビュー」というラベルの付いたいくつかの機能を試すことができます。これを行うには、*設定*オプションを使用して、「プレビュー」ラベルでタグ付けされたこれらの機能を表示します。
-
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["BlueXP  ランサムウェア対策の設定の詳細"]です。
 
 
 
