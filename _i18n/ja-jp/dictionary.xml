@@ -385,17 +385,7 @@
   <block id="2d177a5ce778fe0e6f460ac5e9449f84" category="section-title">ボリュームテンプレートのサポートの廃止</block>
   <block id="14b1c6bd63866971a4cd695c3c2a3d80" category="paragraph">テンプレートからボリュームを作成することはできなくなりました。この操作はBlueXP修正サービスに関連付けられていましたが、このサービスは廃止されました。</block>
   <block id="0a9bbb6e81dd21b77886235f2ce33af9" category="paragraph">BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します完全なリリース履歴については、 <block ref="1e9f4589e5d2713376df79f13fc9ba0a" category="inline-link-macro-rx"></block> 個々のサービスごと。</block>
-  <block id="188fd7f75e50a8a882a75c15dcb630a1" category="section-title">2024年5月17日</block>
-  <block id="c817ad6139f116906ee3d7991cfdcba9" category="section-title">RHEL 8およびRHEL 9をオンプレミスコネクタに使用する場合の制限事項</block>
   <block id="5462103113dfca7582cf43f266db09a2" category="inline-link">ホストの要件</block>
-  <block id="6aa3862f9073595cb60208eb918da431" category="paragraph">BlueXP Connectorバージョン3.9.40は、Red Hat Enterprise Linuxバージョン8および9の特定のバージョンをサポートしており、コネクタソフトウェアをRHEL 8または9ホストに手動でインストールする際に、場所に関係なく、<block ref="9b2a96babeed2ab711a4327ec7f34b5c" category="inline-link-rx"></block>。これらの新しいバージョンのRHELでは、DockerエンジンではなくPodmanエンジンが必要です。現時点では、BlueXPのバックアップとリカバリでPodmanエンジンを使用する場合には2つの制限があります。</block>
-  <block id="9e767927964c6ec4f221f081786309ff" category="inline-link">バックアップとリストアの制限事項</block>
-  <block id="a12249435e2897b8262bf872eceb315c" category="paragraph">を参照してください<block ref="b39c49af0833241002651f8610590fbf" category="inline-link-rx"></block> を参照してください。</block>
-  <block id="c6472844da6003c7b7e74ed16527d122" category="paragraph">次の手順には、新しいPodmanの手順が含まれています。</block>
-  <block id="64d3d37e27efd6f22e6fa648ce465b2e" category="inline-link">BlueXPのバックアップとリカバリを再開します</block>
-  <block id="92617b18f6079084c5380cf97f72f43a" category="list-text"><block ref="92617b18f6079084c5380cf97f72f43a" category="inline-link-rx"></block></block>
-  <block id="5e8c098d325749413b23d5eba5837aad" category="inline-link">ダークサイトでBlueXPのバックアップとリカバリのデータをリストア</block>
-  <block id="b682afa0ff8a1d136b51d3115421ac1b" category="list-text"><block ref="b682afa0ff8a1d136b51d3115421ac1b" category="inline-link-rx"></block></block>
   <block id="93716955add4f66b2af685a33bac4789" category="section-title">2024年5月15日</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新機能</block>
   <block id="f5f7a4d1535be1d0940e398b2997dfc0" category="sidebar">サービス別リリースノート</block>
@@ -501,51 +491,6 @@
   <block id="f3a37c3560d0027bc0f49abfab4ab0e3" category="list-text">レプリケーション計画については、デスティネーションONTAPボリュームで、保護対象VMをホストしているソースONTAPボリュームと同じプロトコルを使用する必要があります。たとえば、ソースでFCプロトコルを使用している場合は、デスティネーションでもFCを使用する必要があります。</block>
   <block id="a1c75029051cebc5ca5ea85a84cfc065" category="inline-link">ランサムウェア対策戦略におけるファイル共有ワークロードのグループ化の詳細</block>
   <block id="e5182edc3707e8e354c40ab7fa819f39" category="section-title">2024年10月7日</block>
-  <block id="3d725c77d5fb40a1e06f0ec1f3adb6bf" category="section-title">BlueXP  IDおよびアクセス管理</block>
-  <block id="cfb96b15394efa48725d4b6de4d3529b" category="paragraph">BlueXP  IDおよびアクセス管理（IAM）は、標準モードでBlueXP  を使用するときにBlueXP  アカウントが提供する以前の機能を置き換え、強化する新しいリソースおよびアクセス管理モデルです。</block>
-  <block id="3a3009b65a0b76e5f313a7be507a533e" category="paragraph">BlueXP  IAMでは、リソースと権限をよりきめ細かく管理できます。</block>
-  <block id="97bcbb158b23b5f59aa77340528d8c84" category="list-text">最上位の_organization_を使用すると、さまざまな_projects_のアクセスを管理できます。</block>
-  <block id="9b574c17fafa6f5e59e653eedc50bdfa" category="list-text">_Folders_関連するプロジェクトをグループ化できます。</block>
-  <block id="0c2ed2a0d470adb6e0ba50cfe426d09a" category="list-text">強化されたリソース管理により、リソースを1つ以上のフォルダまたはプロジェクトに関連付けることができます。</block>
-  <block id="5b61ed8de2f8ed0eccd9e6f8653cc6aa" category="paragraph">たとえば、Cloud Volumes ONTAPシステムを複数のプロジェクトに関連付けることができます。</block>
-  <block id="8113bddacffcd2a7f7d52f8c0403f7fc" category="list-text">強化されたアクセス管理により、組織階層のさまざまなレベルのメンバーにロールを割り当てることができます。</block>
-  <block id="a1bd1f0136afa3d8ee4ccdec799667f8" category="paragraph">これらの機能拡張により、ユーザが実行できるアクションとユーザがアクセスできるリソースをより適切に制御できるようになります。</block>
-  <block id="32fe53941bc1e6c5b14aa6ac28b141f9" category="section-title">BlueXP  IAMが既存アカウントに与える影響</block>
-  <block id="18b2a40b23f88190866bbbf028cac95c" category="paragraph">BlueXP  にログインすると、次の変更が表示されます。</block>
-  <block id="33d31192b5c1247904766afc81b1ef60" category="list-text">あなたの_アカウント_が_組織_と呼ばれるようになりました</block>
-  <block id="2a235898ea8ace7ac6030edb3a2e88de" category="list-text">your_workspaces_が_projects_と呼ばれるようになりました。</block>
-  <block id="ba6e308134546bb71f87228ecaaef82c" category="list-text">ユーザロールの名前が変更されました。</block>
-  <block id="b8c7132579d69d219fb874942670a635" category="list-text">アカウント管理者_が現在_組織管理者_である_</block>
-  <block id="27fd174b0e5c48a667a61eb059ff2ad8" category="list-text">_Workspace admin_現在_フォルダまたはプロジェクト管理_</block>
-  <block id="402601978c4c05e28bf41ea74b2c118a" category="list-text">_コンプライアンスビューア_現在_分類ビューア_</block>
-  <block id="396758cef44fe7d4ebed2010a8ee7761" category="list-text">[設定]では、BlueXP  IDとアクセス管理にアクセスして、これらの拡張機能を利用できます。</block>
-  <block id="0909fc2dd5049052e70dfa0e18f7fbcf" category="inline-image-macro">BlueXP  のスクリーンショットは、インターフェイスの上部から選択可能な組織とプロジェクト、および[設定]メニューから使用できるIDとアクセスの管理を示しています。</block>
-  <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">次の点に注意してください。</block>
-  <block id="d9c4ef914f4f136c37c3df051aaedb70" category="list-text">既存のユーザや作業環境に変更はありません。</block>
-  <block id="31243c2d285073a1e31df388c65d726f" category="list-text">ロールの名前は変更されていますが、権限の観点からは違いはありません。ユーザは以前と同じ作業環境に引き続きアクセスできます。</block>
-  <block id="694ce83c478c161c3ac05490450e107e" category="list-text">BlueXP  へのログイン方法に変更はありません。BlueXP  IAMは、BlueXP  アカウントと同様に、NetAppクラウドログイン、NetAppサポートサイトのクレデンシャル、フェデレーテッド接続と連携します。</block>
-  <block id="dfc4954338c7ff2d3998dbe991b1e115" category="list-text">複数のBlueXP  アカウントを使用している場合は、複数のBlueXP  組織が存在することになります。</block>
-  <block id="733cd47965367380792385cdc0bf4492" category="section-title">BlueXP  IAM用API</block>
-  <block id="2047b2bd03a68b861064ed837a1828ad" category="inline-link">BlueXP  IAM向けAPIの詳細</block>
-  <block id="ed819704d51143ca1736581a234a1365" category="paragraph">この変更により、BlueXP  IAM用の新しいAPIが導入されましたが、以前のテナンシーAPIと下位互換性があります。<block ref="100827e03f9a10b65527b59fa5323ff6" category="inline-link-rx"></block></block>
-  <block id="8e3876adf8f21b1509ebcb0486d5bc9c" category="section-title">サポートされる展開モード</block>
-  <block id="a737f6ac26156f3770a49e30a21f7d73" category="paragraph">BlueXP  IAMは、標準モードでBlueXP  を使用する場合にサポートされます。BlueXP  を制限モードまたはプライベートモードで使用している場合は、引き続きBlueXP  アカウント_を使用してワークスペース、ユーザー、リソースを管理します。</block>
-  <block id="3163b3d4dc92f42d04ad4c79906dcdc3" category="section-title">次の手順</block>
-  <block id="a5a81005322e1187e396e2f1252dca71" category="inline-link-macro">BlueXP  IAMの詳細</block>
-  <block id="c12e8c3134a6d5ff2ec2657f6357e8ec" category="inline-link-macro">BlueXP  IAMの使用を開始する</block>
-  <block id="52b3f16d7e534fa9f1eb5be8603ccd2e" category="section-title">コネクタ3.9.45</block>
-  <block id="7cecac935b533838cda5bd0fc68012c1" category="paragraph">このリリースには、拡張されたオペレーティングシステムサポートとバグ修正が含まれています。</block>
-  <block id="5a45d9d610a1bb698a260ef7f9494081" category="paragraph">3.9.45リリースは、標準モードと制限モードで使用できます。</block>
-  <block id="6c2d90476cc3623edfaa0c9e3a4266e2" category="section-title">Ubuntu 24.04 LTSのサポート</block>
-  <block id="1c774c8907085ea9b2475fb3bce13a77" category="paragraph">3.9.45リリース以降、BlueXP  では、BlueXP  を標準モードまたは制限モードで使用する場合、Ubuntu 24.04 LTSホストへのコネクタの新規インストールがサポートされるようになりました。</block>
-  <block id="a7d713b0c0233ee2a3bbb328d82ba606" category="inline-link">コネクタホスト要件の表示</block>
-  <block id="10f6464912ab27695ba4f7df57c14783" category="paragraph"><block ref="19b43e2419dde639b2fba3d57b5bca52" category="inline-link-rx"></block>です。</block>
-  <block id="f560a10aaa5bd96f550a8cbc7a892bc0" category="section-title">RHELホストでのSELinuxのサポート</block>
-  <block id="7fba1f5b73846f256d223e6eac8ba54d" category="paragraph">BlueXP  では、強制モードまたは許可モードのいずれかでSELinuxが有効になっているRed Hat Enterprise Linuxホストでコネクタがサポートされるようになりました。</block>
-  <block id="dcfe6274f3d2ae157aaa8d48b7f48951" category="paragraph">SELinuxのサポートは、標準モードと制限モードの3.9.40リリースから開始され、プライベートモードの3.9.42リリースから開始されます。</block>
-  <block id="69613b7c17d10062f3fcc9393553d449" category="paragraph">BlueXP  では、UbuntuホストでのSELinuxはサポートされません。</block>
-  <block id="a86bab47fe0d1d4772388e14bf7532a0" category="inline-link">SELinuxの詳細</block>
-  <block id="612eef26819f532944539f99d535f8c6" category="paragraph"><block ref="612eef26819f532944539f99d535f8c6" category="inline-link-rx"></block></block>
   <block id="67f165f48588df98eb8f59d8a7c512d8" category="section-title">2024年9月23日</block>
   <block id="65077e068c20e8afeca74c12711e893e" category="paragraph">NetApp SupportEdge Basicサービスには、SupportEdge AdvisorおよびSupportEdge Expertで使用できるすべてのデジタルアドバイザ機能が含まれるようになりました。ただし、フルスタックトポロジ（VMware）は、有効にしてもVMwareのフルスタック監視を可視化できません。</block>
   <block id="1e095c69621645fccc8f12cd7f35f6fc" category="section-title">ASA R2システムのサポート</block>
@@ -559,9 +504,6 @@
   <block id="1b658f77da3dfa84be0559359889c6d1" category="section-title">アップグレード時のバージョン選択におけるユーザエクスペリエンスの向上</block>
   <block id="76723ae6fdfacae29242fdb7085394b0" category="paragraph">このリリースから、BlueXP  通知を使用してCloud Volumes ONTAPをアップグレードしようとすると、使用するデフォルトのバージョン、最新のバージョン、および互換性のあるバージョンに関するガイダンスが表示されます。また、Cloud Volumes ONTAPインスタンスと互換性のある最新のパッチまたはメジャーバージョンを選択することも、アップグレードするバージョンを手動で入力することもできます。</block>
   <block id="2182ff9388484137699eb937c0df0141" category="inline-link">Cloud Volumes ONTAP ソフトウェアをアップグレードします</block>
-  <block id="f08676e8a1e41f582ac0537747703230" category="paragraph"><block ref="f08676e8a1e41f582ac0537747703230" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4d3e366c7ef57f5c2037203fa77c103c" category="list-text"><block ref="4d3e366c7ef57f5c2037203fa77c103c" category="inline-link-rx"></block></block>
-  <block id="6b7b64b4bdd6080baf05e2c37372258a" category="list-text"><block ref="6b7b64b4bdd6080baf05e2c37372258a" category="inline-link-rx"></block></block>
   <block id="84142ff06d4e9d4646fc2a3b18cc1d91" category="paragraph"><block ref="a21af64035213e0424a2bf24b7431646" category="inline-link-rx"></block>です。</block>
   <block id="2f080abae9949a746e32fbd78d3382f7" category="paragraph">DataLockの詳細および関連コストを軽減する方法のヒントについては、を参照してください<block ref="116b2987b0e6fcf4c15ff7c1a1a47ed3" category="inline-link-rx"></block>。</block>
   <block id="b1b12c3c76c5dc414df3c68e8a811c2a" category="paragraph">詳細については、を参照してください<block ref="ef40acf6b73cf65ed40d9b8f7f6be1c3" category="inline-link-rx"></block>。</block>
@@ -589,8 +531,6 @@
   <block id="d7a02621d52c29a3c5f7895e817cba5b" category="inline-link">自動化カタログ</block>
   <block id="4201d45b889a30d645c44cd087e150b0" category="list-text"><block ref="4201d45b889a30d645c44cd087e150b0" category="inline-link-rx"></block></block>
   <block id="4cdceaadddc0af73837f8fb074294edc" category="list-text"><block ref="4cdceaadddc0af73837f8fb074294edc" category="inline-link-rx"></block></block>
-  <block id="f728ea34fcbb13e7fd98fc40d7498dfc" category="paragraph">次の制限事項に注意してください。</block>
-  <block id="3ad7f37470dd6a33dee8070e9cccbeb4" category="list-text">Cloud Volumes ONTAPシステムの管理オペレーティングシステムでSELinuxが有効になっているコネクタではサポートされていません。</block>
   <block id="479422755a82da93d381b0baab5f8fe7" category="section-title">3つのリージョンを追加サポート</block>
   <block id="4343b2bdc884cb638429641e12c0514c" category="section-title">Storage VMを追加してください</block>
   <block id="c63d5220743c53eaddaae4ea5f0511e7" category="section-title">**［機会］**タブが［マイ資産］**になりました。</block>
@@ -700,7 +640,6 @@
   <block id="66cff4f3970f46872862ee60b7f0a832" category="paragraph"><block ref="66cff4f3970f46872862ee60b7f0a832" category="inline-image-macro-rx" type="image"></block></block>
   <block id="059b6fdd2ea839d9327c322a4c87e168" category="section-title">ノードベースライセンスの販売終了</block>
   <block id="73dfeef5d38f87e4c1d9e4b6417db109" category="paragraph">NetAppでは、Cloud Volumes ONTAPノードベースライセンスの販売終了（EOA）とサポート終了（EOS）を計画しています。2024年11月11日より、ノードベースライセンスの限定的な可用性が終了しました。ノードベースのライセンスのサポートは2024年12月31日に終了します。ノードベースライセンスのEOAが完了したら、BlueXP  ライセンス変換ツールを使用して容量ベースのライセンスに移行する必要があります。</block>
-  <block id="412842ace3db013f5cc3f99342aac206" category="paragraph">年間契約または長期契約の場合は、NetApp EOA日またはライセンスの有効期限前にNetApp担当者に連絡して、移行の前提条件が満たされていることを確認することを推奨します。Cloud Volumes ONTAPノードの長期契約がなく、オンデマンドのPAYGOサブスクリプションに対してシステムを運用している場合は、EOS日までに変換を計画することが重要です。長期契約とPAYGOサブスクリプションの両方で、BlueXP  ライセンス変換ツールを使用してシームレスな変換を行うことができます。</block>
   <block id="90df487d076cd9295a7192268b4439ee" category="inline-link">ノードベースライセンスの販売終了</block>
   <block id="342dcce6bda294bb4b60fc9333bcafbe" category="inline-link">ノードベースライセンスから容量ベースライセンスへの変換</block>
   <block id="2293617fe352e42e5a1e5d757463cb39" category="paragraph"><block ref="677ce77d69762bd9f63d8a2760e6a0c4" category="inline-link-rx"></block> <block ref="5987d844b1ad687ea551a96a31c7c0df" category="inline-link-rx"></block></block>
@@ -720,7 +659,6 @@
   <block id="390a3dfacd9551e05363b9eb09a0464c" category="inline-link">セキュリティグループのルール</block>
   <block id="69e89afe4b2013c34ff51df883ddc022" category="paragraph"><block ref="9064ea2dae3c9dc76b91a834ab88d8bf" category="inline-link-rx"></block>です。</block>
   <block id="f87269f0bcffd4dd379148db58c41b11" category="section-title">Cloud Volumes ONTAP導入後のWORM有効化</block>
-  <block id="8d9d085ab6acd5074907258fafcff341" category="paragraph">これまでは、BlueXP  でCloud Volumes ONTAP作業環境を作成するときにWORMストレージを有効にすることができました。現在は、作成時にWORMが有効になっていなかった場合でも、BlueXP  で作業環境でWORMを有効にするオプションが提供されています。一度有効にすると、WORMを無効にすることはできません。</block>
   <block id="664bf259381c1fa1513c4c79450fb0f4" category="inline-link">Cloud Volumes ONTAP作業環境でのWORMの有効化</block>
   <block id="42009eda159da22132429f44bf400e6c" category="paragraph"><block ref="42009eda159da22132429f44bf400e6c" category="inline-link-rx"></block></block>
   <block id="2cce67162f5e7dda1e726a6c1514801d" category="paragraph">BlueXP  を使用してAmazon FSx for NetApp ONTAPファイルシステムにStorage VMを追加できるようになりました。</block>
@@ -748,4 +686,52 @@
   <block id="1a5bbf622fa944b888ced1dd36e43b20" category="paragraph">このサービスでは、ストレージ保護のためにCloud Volumes ONTAP for Google Cloud Platformがサポートされるようになりました。以前は、Amazon Web ServicesとMicrosoft AzureのCloud Volumes ONTAPとオンプレミスのNASのみがサポートされていました。</block>
   <block id="01ab8fe0565c01eb93456b579d969d66" category="section-title">ロールベースアクセス制御</block>
   <block id="1431c64521322df79808c76466af3b70" category="paragraph">Role-Based Access Control（RBAC；ロールベースアクセス制御）を使用して、特定のアクティビティにアクセスを制限できるようになりました。BlueXP  ランサムウェア対策では、BlueXP  の2つのロール、BlueXP  アカウント管理者と非アカウント管理者（ビューア）を使用します。</block>
+  <block id="d415b73567ff8e090cdf21c20afeaa64" category="section-title">2024年11月26日</block>
+  <block id="64a7a8a4f820d38dc5cedd70930717c0" category="section-title">プライベートモードリリース（3.9.46）</block>
+  <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetAppサポートサイト</block>
+  <block id="d9d2db6c6792de5c6f6f1c11280bd993" category="paragraph">新しいプライベートモードリリースをからダウンロードできるようになりました。<block ref="d2aa03057485a1ee4125d2121e05288d" category="inline-link-rx"></block></block>
+  <block id="579c9c5aad40c47e8203472b55439941" category="paragraph">3.9.46リリースでは、BlueXP  の次のコンポーネントとサービスが更新されています。</block>
+  <block id="394b364c6ed61ed167a4f14316ef5ffc" category="cell">コンポーネントまたはサービス</block>
+  <block id="2f9dd95401f68032a97298d35b87f433" category="cell">このリリースに含まれるバージョン</block>
+  <block id="5431c829b8b64da3908e102d64527909" category="cell">前回のプライベートモードリリースからの変更点</block>
+  <block id="edf21d7ecb364e8210ddd3dfaeca6fbf" category="cell">コネクタ</block>
+  <block id="3d93fe525e5005a3aa89376ce36eaf7d" category="cell">3.9.46</block>
+  <block id="2e6f33758bf126679d5a0225c22673d3" category="cell">セキュリティのマイナーな改善とバグの修正</block>
+  <block id="008c6d012aabba0e44e2b94f8259635c" category="cell">2024年11月22日</block>
+  <block id="57d300ca1fdd6058fd2a0882b05ba831" category="inline-link">BlueXP  バックアップ/リカバリページの新機能</block>
+  <block id="cc73bd495467f0768e5ab6fbca8c9fc3" category="cell">に移動し<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block>、2024年11月リリースに含まれる変更点を確認します。</block>
+  <block id="d9865720c88f775c3c7aa2407f42807e" category="cell">2024年11月4日（バージョン1.37）</block>
+  <block id="79d6fb7fcd1197d45638c77f96548314" category="inline-link">BlueXP  分類ページの新機能</block>
+  <block id="3634786b3e46e41488029a1f5adcfb51" category="cell">にアクセス<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block>し、1.32リリースから1.37リリースへの変更点を確認します。</block>
+  <block id="20f71c84b5a0e44a35f3a8c4207c85a9" category="cell">Cloud Volumes ONTAP管理</block>
+  <block id="5cee96e11788b0260fca227a2882f413" category="inline-link">Cloud Volumes ONTAP管理ページの新機能</block>
+  <block id="2b06273c345679e8396f450bec75502c" category="cell">に移動し<block ref="90e3b44730452fe495e75ab6e2b7eb58" category="inline-link-rx"></block>、2024年10月および2024年11月のリリースに含まれる変更点を確認します。</block>
+  <block id="900dd8f50d2294930a102034524e26b7" category="cell">オンプレミスのONTAPクラスタ管理</block>
+  <block id="4f2f9aa2e4b010fbcd8cded5bf523370" category="inline-link">オンプレミスのONTAPクラスタ管理ページの新機能</block>
+  <block id="bad4efa38c7fe2023ac7a25606d5f186" category="cell">に移動し<block ref="bb047968fd3a98ed3e45ad4e39500b8b" category="inline-link-rx"></block>、2024年11月リリースに含まれる変更点を確認します。</block>
+  <block id="93c9916354f3f5fa45f4019fd081f12a" category="paragraph">BlueXP  デジタルウォレットとBlueXP  レプリケーションもプライベートモードに含まれていますが、以前のプライベートモードリリースから変更はありません。</block>
+  <block id="6aa6935f7c0067aba2624a4ad2862e39" category="paragraph">アップグレード方法を含むプライベートモードの詳細については、次を参照してください。</block>
+  <block id="a52b83d1b32a42f8a6aff3771048ba3c" category="inline-link">プライベートモードの詳細</block>
+  <block id="cdeb608610a882c24cefcb7daa878a1d" category="list-text"><block ref="cdeb608610a882c24cefcb7daa878a1d" category="inline-link-rx"></block></block>
+  <block id="8156defa13b44a36e67cab400c3b8bd4" category="inline-link">BlueXPのプライベートモードでの利用を開始する方法</block>
+  <block id="1183e1b8915696495b308d0bdfa59bd4" category="list-text"><block ref="1183e1b8915696495b308d0bdfa59bd4" category="inline-link-rx"></block></block>
+  <block id="b29a186d936b198dcafa3a0308485e2c" category="inline-link">プライベートモードの使用時にコネクタをアップグレードする方法について説明します。</block>
+  <block id="cd33b497651f0d35a9b546fed113bac9" category="list-text"><block ref="e5d325f390c70091b07096d63ab8f353" category="inline-link-rx"></block>S</block>
+  <block id="3c97d3b45dd14b2958c1e0e304230aa0" category="paragraph">このBlueXP  バックアップ/リカバリリリースには、次の更新が含まれています。</block>
+  <block id="517624d736bd2a385ee8cda71584112f" category="section-title">SnapLock ComplianceおよびSnapLock Enterprise保護モード</block>
+  <block id="139da935670a9f985194d3241917c359" category="paragraph">BlueXP  バックアップ/リカバリで、SnapLock ComplianceまたはSnapLock Enterprise保護モードを使用して設定されたオンプレミスのFlexVolボリュームとFlexGroupボリュームの両方をバックアップできるようになりました。このサポートを実行するには、クラスタでONTAP 9.14以降が実行されている必要があります。ONTAPバージョン9.11.1以降では、SnapLock Enterpriseモードを使用したFlexVolボリュームのバックアップがサポートされています。以前のONTAPリリースでは、SnapLock保護ボリュームのバックアップはサポートされません。</block>
+  <block id="ba48140a3394818b661e6fd497e203a7" category="inline-link">BlueXPのバックアップとリカバリについて説明します</block>
+  <block id="9ddb3e6714694f5c7f619d474fec8169" category="paragraph">でサポートされるボリュームの一覧を参照してください<block ref="9e68a582cc487ad29425f5a4796c9e45" category="inline-link-rx"></block>。</block>
+  <block id="fec92c3dfb6a0b3db498488c7f4d2f29" category="section-title">[ボリューム]ページでの検索とリストアプロセスのインデックス作成</block>
+  <block id="20d3b0b7cfe7a9f3dcfdb0faa9398efd" category="paragraph">検索とリストアを使用する前に、ボリュームデータのリストア元となる各ソース作業環境でインデックスの作成を有効にする必要があります。これにより、インデックス付きカタログで各ボリュームのバックアップファイルを追跡できます。[Volumes]ページにインデックスのステータスが表示されます。</block>
+  <block id="cd9b31737e78e0a0a755acc12151f766" category="list-text">Indexed：ボリュームにインデックスが作成されました。</block>
+  <block id="02e4eb80c967f3b9add2ba16a690eef2" category="list-text">実行中</block>
+  <block id="838534d879f74e7af515a7de57e72b71" category="list-text">インデックスなし</block>
+  <block id="73d4d0de3c5f56849f3c1a290a6681f2" category="list-text">インデックスを一時停止しました</block>
+  <block id="902b0d55fddef6f8d651fe1035b7d4bd" category="list-text">エラー</block>
+  <block id="cb48cbf342305a9ae53e02e21fcb644c" category="list-text">無効</block>
+  <block id="ff98fd719f758a17955852024475db39" category="paragraph">年間契約または長期契約の場合は、NetApp EOA日またはライセンスの有効期限前にNetApp担当者に連絡して、移行の前提条件が満たされていることを確認することを推奨します。Cloud Volumes ONTAPノードの長期契約がなく、オンデマンドの従量課金制（PAYGO）サブスクリプションに対してシステムを運用している場合は、EOS日までに変換を計画することが重要です。長期契約とPAYGOサブスクリプションの両方で、BlueXP  ライセンス変換ツールを使用してシームレスな変換を行うことができます。</block>
+  <block id="6ecba12db0576e8891316b6674fda716" category="paragraph">BlueXP  を使用して、既存のCloud Volumes ONTAPシステムでWrite Once Read Many（WORM）ストレージをアクティブ化できるようになりました。この機能を使用すると、作成時にWORMが有効になっていなかった場合でも、作業環境でWORMを柔軟に有効にできます。有効にすると、WORMを無効にすることはできません。</block>
+  <block id="613fbbb3f2dbf238c8527a537252e8ed" category="section-title">プライベートモードを使用するASA R2システムのサポート</block>
+  <block id="0d9e2244b8fb5d13651efe34b9723803" category="paragraph">BlueXP  をプライベートモードで使用しているときに、NetApp ASA R2システムを検出できるようになりました。このサポートは、BlueXP  の3.9.46プライベートモードリリース以降で利用できます。</block>
 </blocks>

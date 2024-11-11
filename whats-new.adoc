@@ -24,6 +24,46 @@ BlueXPプラットフォームの一部である クラウド サービス の�
 
 
 
+=== 2024年11月26日
+
+
+
+==== プライベートモードリリース（3.9.46）
+
+新しいプライベートモードリリースをからダウンロードできるようになりました。 https://mysupport.netapp.com/site/downloads["NetAppサポートサイト"^]
+
+3.9.46リリースでは、BlueXP  の次のコンポーネントとサービスが更新されています。
+
+[cols="3*"]
+|===
+| コンポーネントまたはサービス | このリリースに含まれるバージョン | 前回のプライベートモードリリースからの変更点 
+
+
+| コネクタ | 3.9.46 | セキュリティのマイナーな改善とバグの修正 
+
+
+| バックアップとリカバリ | 2024年11月22日 | に移動し https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP  バックアップ/リカバリページの新機能"^]、2024年11月リリースに含まれる変更点を確認します。 
+
+
+| 分類 | 2024年11月4日（バージョン1.37） | にアクセス https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXP  分類ページの新機能"^]し、1.32リリースから1.37リリースへの変更点を確認します。 
+
+
+| Cloud Volumes ONTAP管理 | 2024年11月11日 | に移動し https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Cloud Volumes ONTAP管理ページの新機能"^]、2024年10月および2024年11月のリリースに含まれる変更点を確認します。 
+
+
+| オンプレミスのONTAPクラスタ管理 | 2024年11月26日 | に移動し https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html["オンプレミスのONTAPクラスタ管理ページの新機能"^]、2024年11月リリースに含まれる変更点を確認します。 
+|===
+BlueXP  デジタルウォレットとBlueXP  レプリケーションもプライベートモードに含まれていますが、以前のプライベートモードリリースから変更はありません。
+
+アップグレード方法を含むプライベートモードの詳細については、次を参照してください。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["プライベートモードの詳細"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["BlueXPのプライベートモードでの利用を開始する方法"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["プライベートモードの使用時にコネクタをアップグレードする方法について説明します。"]S
+
+
+
+
 === 2024年11月11日
 
 
@@ -51,94 +91,6 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-folders-project
 ==== コネクタ3.9.45パッチ
 
 このパッチにはバグ修正が含まれています。
-
-
-
-=== 2024年10月7日
-
-
-
-==== BlueXP  IDおよびアクセス管理
-
-BlueXP  IDおよびアクセス管理（IAM）は、標準モードでBlueXP  を使用するときにBlueXP  アカウントが提供する以前の機能を置き換え、強化する新しいリソースおよびアクセス管理モデルです。
-
-BlueXP  IAMでは、リソースと権限をよりきめ細かく管理できます。
-
-* 最上位の_organization_を使用すると、さまざまな_projects_のアクセスを管理できます。
-* _Folders_関連するプロジェクトをグループ化できます。
-* 強化されたリソース管理により、リソースを1つ以上のフォルダまたはプロジェクトに関連付けることができます。
-+
-たとえば、Cloud Volumes ONTAPシステムを複数のプロジェクトに関連付けることができます。
-
-* 強化されたアクセス管理により、組織階層のさまざまなレベルのメンバーにロールを割り当てることができます。
-
-
-これらの機能拡張により、ユーザが実行できるアクションとユーザがアクセスできるリソースをより適切に制御できるようになります。
-
-.BlueXP  IAMが既存アカウントに与える影響
-BlueXP  にログインすると、次の変更が表示されます。
-
-* あなたの_アカウント_が_組織_と呼ばれるようになりました
-* your_workspaces_が_projects_と呼ばれるようになりました。
-* ユーザロールの名前が変更されました。
-+
-** アカウント管理者_が現在_組織管理者_である_
-** _Workspace admin_現在_フォルダまたはプロジェクト管理_
-** _コンプライアンスビューア_現在_分類ビューア_
-
-
-* [設定]では、BlueXP  IDとアクセス管理にアクセスして、これらの拡張機能を利用できます。
-
-
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-iam-introduction.png["BlueXP  のスクリーンショットは、インターフェイスの上部から選択可能な組織とプロジェクト、および[設定]メニューから使用できるIDとアクセスの管理を示しています。"]
-
-次の点に注意してください。
-
-* 既存のユーザや作業環境に変更はありません。
-* ロールの名前は変更されていますが、権限の観点からは違いはありません。ユーザは以前と同じ作業環境に引き続きアクセスできます。
-* BlueXP  へのログイン方法に変更はありません。BlueXP  IAMは、BlueXP  アカウントと同様に、NetAppクラウドログイン、NetAppサポートサイトのクレデンシャル、フェデレーテッド接続と連携します。
-* 複数のBlueXP  アカウントを使用している場合は、複数のBlueXP  組織が存在することになります。
-
-
-.BlueXP  IAM用API
-この変更により、BlueXP  IAM用の新しいAPIが導入されましたが、以前のテナンシーAPIと下位互換性があります。 https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["BlueXP  IAM向けAPIの詳細"^]
-
-.サポートされる展開モード
-BlueXP  IAMは、標準モードでBlueXP  を使用する場合にサポートされます。BlueXP  を制限モードまたはプライベートモードで使用している場合は、引き続きBlueXP  アカウント_を使用してワークスペース、ユーザー、リソースを管理します。
-
-.次の手順
-* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-identity-and-access-management.html["BlueXP  IAMの詳細"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-get-started.html["BlueXP  IAMの使用を開始する"]
-
-
-
-
-==== コネクタ3.9.45
-
-このリリースには、拡張されたオペレーティングシステムサポートとバグ修正が含まれています。
-
-3.9.45リリースは、標準モードと制限モードで使用できます。
-
-.Ubuntu 24.04 LTSのサポート
-3.9.45リリース以降、BlueXP  では、BlueXP  を標準モードまたは制限モードで使用する場合、Ubuntu 24.04 LTSホストへのコネクタの新規インストールがサポートされるようになりました。
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["コネクタホスト要件の表示"]です。
-
-
-
-==== RHELホストでのSELinuxのサポート
-
-BlueXP  では、強制モードまたは許可モードのいずれかでSELinuxが有効になっているRed Hat Enterprise Linuxホストでコネクタがサポートされるようになりました。
-
-SELinuxのサポートは、標準モードと制限モードの3.9.40リリースから開始され、プライベートモードの3.9.42リリースから開始されます。
-
-次の制限事項に注意してください。
-
-* BlueXP  では、UbuntuホストでのSELinuxはサポートされません。
-* Cloud Volumes ONTAPシステムの管理オペレーティングシステムでSELinuxが有効になっているコネクタではサポートされていません。
-
-
-https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux["SELinuxの詳細"^]
 
 
 
@@ -296,7 +248,37 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-set-up-azure-ad.htm
 
 
 
+=== 2024年11月22日
+
+このBlueXP  バックアップ/リカバリリリースには、次の更新が含まれています。
+
+
+
+==== SnapLock ComplianceおよびSnapLock Enterprise保護モード
+
+BlueXP  バックアップ/リカバリで、SnapLock ComplianceまたはSnapLock Enterprise保護モードを使用して設定されたオンプレミスのFlexVolボリュームとFlexGroupボリュームの両方をバックアップできるようになりました。このサポートを実行するには、クラスタでONTAP 9.14以降が実行されている必要があります。ONTAPバージョン9.11.1以降では、SnapLock Enterpriseモードを使用したFlexVolボリュームのバックアップがサポートされています。以前のONTAPリリースでは、SnapLock保護ボリュームのバックアップはサポートされません。
+
+でサポートされるボリュームの一覧を参照してください https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["BlueXPのバックアップとリカバリについて説明します"]。
+
+
+
+==== [ボリューム]ページでの検索とリストアプロセスのインデックス作成
+
+検索とリストアを使用する前に、ボリュームデータのリストア元となる各ソース作業環境でインデックスの作成を有効にする必要があります。これにより、インデックス付きカタログで各ボリュームのバックアップファイルを追跡できます。[Volumes]ページにインデックスのステータスが表示されます。
+
+* Indexed：ボリュームにインデックスが作成されました。
+* 実行中
+* インデックスなし
+* インデックスを一時停止しました
+* エラー
+* 無効
+
+
+
+
 === 2024年9月27日
+
+このBlueXP  バックアップ/リカバリリリースには、次の更新が含まれています。
 
 
 
@@ -355,24 +337,6 @@ Amazon Web Services（AWS）Identity and Access Management（IAM）Roles Anywher
 詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html#restore-ontap-data-using-browse-restore["参照と復元を使用したフォルダとファイルの復元"]。
 
 手動で有効にする方法については、を参照してください https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-July-2024-Release/ba-p/453993["BlueXPのバックアップとリカバリ：2024年7月リリースブログ"]。
-
-
-
-=== 2024年5月17日
-
-
-
-==== RHEL 8およびRHEL 9をオンプレミスコネクタに使用する場合の制限事項
-
-BlueXP Connectorバージョン3.9.40は、Red Hat Enterprise Linuxバージョン8および9の特定のバージョンをサポートしており、コネクタソフトウェアをRHEL 8または9ホストに手動でインストールする際に、場所に関係なく、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-private-mode.html#step-3-review-host-requirements["ホストの要件"^]。これらの新しいバージョンのRHELでは、DockerエンジンではなくPodmanエンジンが必要です。現時点では、BlueXPのバックアップとリカバリでPodmanエンジンを使用する場合には2つの制限があります。
-
-を参照してください https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-limitations.html["バックアップとリストアの制限事項"] を参照してください。
-
-次の手順には、新しいPodmanの手順が含まれています。
-
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-restart-backup.html["BlueXPのバックアップとリカバリを再開します"]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-backup-cbs-db-in-dark-site.html["ダークサイトでBlueXPのバックアップとリカバリのデータをリストア"]
-
 
 
 
@@ -445,7 +409,7 @@ BlueXP  分類でStorageGRIDのデータをスキャンできるようになり
 
 NetAppでは、Cloud Volumes ONTAPノードベースライセンスの販売終了（EOA）とサポート終了（EOS）を計画しています。2024年11月11日より、ノードベースライセンスの限定的な可用性が終了しました。ノードベースのライセンスのサポートは2024年12月31日に終了します。ノードベースライセンスのEOAが完了したら、BlueXP  ライセンス変換ツールを使用して容量ベースのライセンスに移行する必要があります。
 
-年間契約または長期契約の場合は、NetApp EOA日またはライセンスの有効期限前にNetApp担当者に連絡して、移行の前提条件が満たされていることを確認することを推奨します。Cloud Volumes ONTAPノードの長期契約がなく、オンデマンドのPAYGOサブスクリプションに対してシステムを運用している場合は、EOS日までに変換を計画することが重要です。長期契約とPAYGOサブスクリプションの両方で、BlueXP  ライセンス変換ツールを使用してシームレスな変換を行うことができます。
+年間契約または長期契約の場合は、NetApp EOA日またはライセンスの有効期限前にNetApp担当者に連絡して、移行の前提条件が満たされていることを確認することを推奨します。Cloud Volumes ONTAPノードの長期契約がなく、オンデマンドの従量課金制（PAYGO）サブスクリプションに対してシステムを運用している場合は、EOS日までに変換を計画することが重要です。長期契約とPAYGOサブスクリプションの両方で、BlueXP  ライセンス変換ツールを使用してシームレスな変換を行うことができます。
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["ノードベースライセンスの販売終了"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-convert-node-capacity.html["ノードベースライセンスから容量ベースライセンスへの変換"^]
 
@@ -485,7 +449,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-az
 
 ==== Cloud Volumes ONTAP導入後のWORM有効化
 
-これまでは、BlueXP  でCloud Volumes ONTAP作業環境を作成するときにWORMストレージを有効にすることができました。現在は、作成時にWORMが有効になっていなかった場合でも、BlueXP  で作業環境でWORMを有効にするオプションが提供されています。一度有効にすると、WORMを無効にすることはできません。
+BlueXP  を使用して、既存のCloud Volumes ONTAPシステムでWrite Once Read Many（WORM）ストレージをアクティブ化できるようになりました。この機能を使用すると、作成時にWORMが有効になっていなかった場合でも、作業環境でWORMを柔軟に有効にできます。有効にすると、WORMを無効にすることはできません。
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html#enabling-worm-on-a-cloud-volumes-ontap-working-environment["Cloud Volumes ONTAP作業環境でのWORMの有効化"^]
 
@@ -932,6 +896,20 @@ BlueXP  移行レポートサービスは、2024年8月7日に削除されま�
 
 
 
+=== 2024年11月26日
+
+
+
+==== プライベートモードを使用するASA R2システムのサポート
+
+BlueXP  をプライベートモードで使用しているときに、NetApp ASA R2システムを検出できるようになりました。このサポートは、BlueXP  の3.9.46プライベートモードリリース以降で利用できます。
+
+* https://docs.netapp.com/us-en/asa-r2/index.html["ASA R2システムの詳細"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["BlueXPの導入モードについて説明します"^]
+
+
+
+
 === 2024年10月7日
 
 
@@ -957,20 +935,6 @@ BlueXP  をプライベートモードで使用している場合、ASA R2シ�
 ==== ボリュームテンプレートのサポートの廃止
 
 テンプレートからボリュームを作成することはできなくなりました。この操作はBlueXP修正サービスに関連付けられていましたが、このサービスは廃止されました。
-
-
-
-=== 2023年7月30日
-
-
-
-==== FlexGroup ボリュームを作成します
-
-コネクタでクラスタを管理している場合は、BlueXP APIを使用してFlexGroupボリュームを作成できるようになりました。
-
-* https://docs.netapp.com/us-en/bluexp-automation/cm/wf_onprem_flexgroup_ontap_create_vol.html["FlexGroupボリュームを作成する方法"^]
-* https://docs.netapp.com/us-en/ontap/flexgroup/definition-concept.html["FlexGroupボリュームとは"^]
-
 
 
 
