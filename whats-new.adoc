@@ -184,6 +184,10 @@ https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["BlueXP  アラ
 
 link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html#features["BlueXP  ワークロードファクトリでのFSx for ONTAPの機能についてご確認ください"^]
 
+ONTAPシステムマネージャを使用してFSx for ONTAPファイルシステムを管理できる_advanced view_optionを探している場合、作業環境を選択すると、BlueXP  キャンバスにそのオプションが表示されるようになりました。
+
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-fsx-ontap/main/media/screenshot-system-manager.png["作業環境を選択したあとのBlueXP  キャンバスの右側パネルのスクリーンショット。[System Manager]オプションが表示されます。"]
+
 
 
 === 2023年7月30日
@@ -459,6 +463,60 @@ BlueXP  分類でStorageGRIDのデータをスキャンできるようになり
 
 
 
+=== 2024年11月11日
+
+
+
+==== ノードベースライセンスの販売終了
+
+NetAppでは、Cloud Volumes ONTAPノードベースライセンスの販売終了（EOA）とサポート終了（EOS）を計画しています。2024年11月11日より、ノードベースライセンスの限定的な可用性が終了しました。ノードベースのライセンスのサポートは2024年12月31日に終了します。ノードベースライセンスのEOAが完了したら、BlueXP  ライセンス変換ツールを使用して容量ベースのライセンスに移行する必要があります。
+
+年間契約または長期契約の場合は、NetApp EOA日またはライセンスの有効期限前にNetApp担当者に連絡して、移行の前提条件が満たされていることを確認することを推奨します。Cloud Volumes ONTAPノードの長期契約がなく、オンデマンドのPAYGOサブスクリプションに対してシステムを運用している場合は、EOS日までに変換を計画することが重要です。長期契約とPAYGOサブスクリプションの両方で、BlueXP  ライセンス変換ツールを使用してシームレスな変換を行うことができます。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["ノードベースライセンスの販売終了"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-convert-node-capacity.html["ノードベースライセンスから容量ベースライセンスへの変換"^]
+
+
+
+==== BlueXP  からのノードベースの導入の削除
+
+ノードベースのライセンスを使用してCloud Volumes ONTAPシステムを導入するオプションは、BlueXP  では廃止されました。いくつかの特別なケースを除き、どのクラウドプロバイダのCloud Volumes ONTAP環境にもノードベースのライセンスを使用できません。
+
+NetAppは、契約上の義務および運用上のニーズに準拠して、次の固有のライセンス要件を認識し、このような状況でも引き続きノードベースのライセンスをサポートします。
+
+* USPSのお客様
+* プライベートモードでの導入
+* AWSでのCloud Volumes ONTAPの中国リージョン導入
+* ノード単位で有効期限が切れていない場合は、お客様所有のライセンスを使用（BYOLライセンス）
+
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["ノードベースライセンスの販売終了"^]
+
+
+
+==== Azure BLOBストレージにCloud Volumes ONTAPデータ用のコールド階層を追加
+
+BlueXP  で、コールド階層を選択してアクセス頻度の低い大容量階層のデータをAzure BLOBストレージに格納できるようになりました。既存のホット階層とクール階層にコールド階層を追加すると、より手頃な価格のストレージオプションが提供され、コスト効率が向上します。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html#data-tiering-in-azure["Azure のデータ階層化"^]
+
+
+
+==== Azureのストレージアカウントへのパブリックアクセスを制限するオプション
+
+Azure上のCloud Volumes ONTAPシステムのストレージアカウントへのパブリックアクセスを制限できるようになりました。アクセスを無効にすると、組織のセキュリティポリシーに準拠する必要がある場合に、同じVNet内であってもプライベートIPアドレスが公開されないように保護できます。このオプションは、Cloud Volumes ONTAPシステムのデータ階層化も無効になり、シングルノードペアとハイアベイラビリティペアの両方に適用されます。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-azure.html#security-group-rules["セキュリティグループのルール"^]です。
+
+
+
+==== Cloud Volumes ONTAP導入後のWORM有効化
+
+これまでは、BlueXP  でCloud Volumes ONTAP作業環境を作成するときにWORMストレージを有効にすることができました。現在は、作成時にWORMが有効になっていなかった場合でも、BlueXP  で作業環境でWORMを有効にするオプションが提供されています。一度有効にすると、WORMを無効にすることはできません。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html#enabling-worm-on-a-cloud-volumes-ontap-working-environment["Cloud Volumes ONTAP作業環境でのWORMの有効化"^]
+
+
+
 === 2024年10月25日
 
 
@@ -491,29 +549,6 @@ HA環境でのAWSローカルゾーンの詳細については、を参照して
 このリリースから、BlueXP  通知を使用してCloud Volumes ONTAPをアップグレードしようとすると、使用するデフォルトのバージョン、最新のバージョン、および互換性のあるバージョンに関するガイダンスが表示されます。また、Cloud Volumes ONTAPインスタンスと互換性のある最新のパッチまたはメジャーバージョンを選択することも、アップグレードするバージョンを手動で入力することもできます。
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-from-bluexp-notifications["Cloud Volumes ONTAP ソフトウェアをアップグレードします"]
-
-
-
-=== 2024年9月9日
-
-
-
-==== ワームとARPの機能は有料ではなくなりました。
-
-WORM（Write Once Read Many）とARP（Autonomous Ransomware Protection）の組み込みのデータ保護機能とセキュリティ機能は、Cloud Volumes ONTAPライセンスで追加料金なしで提供されます。新しい価格モデルは、AWS、Azure、Google Cloudの新規および既存のBYOLおよびPAYGO / Marketplaceサブスクリプションの両方に適用されます。容量ベースとノードベースのどちらのライセンスにも、シングルノードとハイアベイラビリティ（HA）ペアを含むすべての構成用のARPとWORMが追加料金なしで含まれます。
-
-シンプルな価格設定により、次のようなメリットが得られます。
-
-* 現在、WORMとARPが含まれているアカウントでは、これらの機能の料金は発生しなくなります。今後は、この変更前と同様に、使用容量に関する料金のみが請求されます。ワームとARPは今後の請求書に含まれなくなります。
-* 現在のアカウントにこれらの機能が含まれていない場合は、追加料金なしでWORMとARPを選択できるようになりました。
-* 新規アカウントのすべてのCloud Volumes ONTAPサービスには、WORMとARPの料金は含まれません。
-
-
-これらの機能の詳細については、こちらをご覧ください。
-
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["ランサムウェアからの保護を強化"]
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["WORMストレージ"]
-
 
 
 
