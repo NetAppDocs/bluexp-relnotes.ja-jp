@@ -420,8 +420,6 @@
   <block id="ab132121a366abdd7667443cc98f3a69" category="paragraph">を参照してください<block ref="1cbf59ee3e77dd0082612a21b0900f81" category="inline-link-rx"></block>。</block>
   <block id="f013b90a0fd96db59795b7cb0b9d2d1b" category="inline-link">ランサムウェア攻撃からのリカバリの詳細</block>
   <block id="48e006c40a370e7b0dcc3f4f1e42eda7" category="paragraph"><block ref="17c138513bf5a78d755bed4038999b20" category="inline-link-rx"></block>です。</block>
-  <block id="9fc076386261ca80bfc67f7f57c641d3" category="section-title">2024年7月14日</block>
-  <block id="c18c776847f6d7588ddeab0632527364" category="paragraph">BlueXPのコピーおよび同期サービスとデータブローカーを更新し、いくつかのバグを修正しました。新しいデータブローカーのバージョンは1.0.53です。</block>
   <block id="ba874eb3ffbdba518b95ce26bc81a861" category="section-title">2024年7月22日</block>
   <block id="9d5f0e2f1682000ac365243e21301823" category="section-title">1GB未満のボリュームをリストア</block>
   <block id="a429eb8c690c0a48131f4ae1267eafd1" category="paragraph">このリリースでは、ONTAPで作成した1GB未満のボリュームをリストアできるようになりました。ONTAPを使用して作成できる最小ボリュームサイズは20MBです。</block>
@@ -448,7 +446,6 @@
   <block id="9b4b29c7522dc70822a6513f530beb14" category="paragraph">BlueXP  エッジキャッシングサービスは、2024年8月7日に削除されました。</block>
   <block id="4ac75c7e9ef3301446bb1108a0761fd8" category="paragraph">Kubernetesクラスタの検出と管理のサポートが2024年8月7日に廃止されました。</block>
   <block id="2476ee901bdc6e29b6118470b13e2339" category="paragraph">BlueXP  移行レポートサービスは、2024年8月7日に削除されました。</block>
-  <block id="3660cbb805c1bf63e1967ed1339a3bbd" category="paragraph">このリリースのBlueXP  ランサムウェア対策には、次の更新が含まれています。</block>
   <block id="0d0fda3a15e7f6f6406a0dde3997c91f" category="inline-link">BlueXP  ランサムウェア対策の設定の詳細</block>
   <block id="5b0f75e0c31233c18e6f9318b8569cf7" category="paragraph"><block ref="25291e882ba76639fccc7a13f1838641" category="inline-link-rx"></block>です。</block>
   <block id="43371a1519dc6641cd8852962e536c3e" category="section-title">2024 年 8 月 7 日</block>
@@ -481,15 +478,10 @@
   <block id="d519fe60b31330425fdb5e1c21309f78" category="list-text">テクノロジの更新</block>
   <block id="dbaae314ffc8b46919877d02b85696cb" category="list-text">容量の追加</block>
   <block id="28dc8814bfe656bc8e29052d1508b999" category="section-title">2024年9月2日</block>
-  <block id="dddaa1ce44a2d4bbebf20d3f4563c0a4" category="paragraph">このリリースのBlueXP  ランサムウェア対策には、次の更新が含まれています。</block>
-  <block id="8817c21accd9fdcb9207397834af08f6" category="list-text">*デジタルアドバイザによるセキュリティリスク評価*：BlueXP  ランサムウェア対策は、NetAppデジタルアドバイザからクラスタに関連する高リスクおよび重大なセキュリティリスクに関する情報を収集するようになりました。リスクが検出された場合、BlueXP  ランサムウェア対策により、ダッシュボードの[推奨される操作]ペインに「クラスタ&lt;name&gt;の既知のセキュリティの脆弱性を修正する」という推奨事項が表示されます。ダッシュボードの推奨事項で、*[確認と修正]*をクリックすると、Digital AdvisorとCommon Vulnerability &amp; Exposure（CVE）の記事を確認してセキュリティリスクを解決するよう提案されます。複数のセキュリティリスクがある場合は、Digital Advisorで情報を確認します。</block>
   <block id="ea7b2437ddd14dce6ba3f65494d634fd" category="inline-link">Digital Advisorのドキュメント</block>
   <block id="9a42efab941e78c35ff03d2f3de7f294" category="paragraph">を参照してください<block ref="5d1aa2fae9958ef5ced45eec5d13d250" category="inline-link-rx"></block>。</block>
-  <block id="db99b952c4a66f69627f5f328e20f9d1" category="list-text">* Google Cloud Platformにバックアップ*：このリリースでは、Google Cloud Platformバケットにバックアップ先を設定できます。以前は、バックアップ先を追加できるのはNetApp StorageGRID、Amazon Web Services、Microsoft Azureのみでした。</block>
-  <block id="6296ba9154f4dc4d4403121335c812c9" category="list-text">* Google Cloud Platformのサポート*：このサービスでは、ストレージ保護のためにCloud Volumes ONTAP for Google Cloud Platformがサポートされるようになりました。以前は、Amazon Web ServicesとMicrosoft AzureのCloud Volumes ONTAPとオンプレミスのNASのみがサポートされていました。</block>
   <block id="571e1080641fe631491306478d4572a1" category="inline-link">BlueXP  ランサムウェア対策、サポート対象のデータソース、バックアップ先、作業環境について説明します。</block>
   <block id="5c6a145c454aef23e256b2459f8c4c75" category="paragraph"><block ref="e1153028bb0f55bf33080551a5d7f6f3" category="inline-link-rx"></block>です。</block>
-  <block id="98f1cb1ebd09ccf6e678d5bae1920213" category="list-text">*ロールベースアクセス制御*：ロールベースアクセス制御（RBAC）を使用して、特定のアクティビティへのアクセスを制限できるようになりました。BlueXP  ランサムウェア対策では、BlueXP  の2つのロール、BlueXP  アカウント管理者と非アカウント管理者（ビューア）を使用します。</block>
   <block id="c7038711405bbbe2f0f37c53c5eb81ad" category="inline-link">ロールベースアクセス制御Privileges</block>
   <block id="edf15150f2ed24145a29e67792372ecc" category="paragraph">各ロールで実行できるアクションの詳細については、を参照してください<block ref="03cd1069228e8895d221bed8eef34f69" category="inline-link-rx"></block>。</block>
   <block id="577f5f9474f1f4f6f56c1fb216328baf" category="section-title">2024年9月16日</block>
@@ -508,7 +500,6 @@
   <block id="cf1967c6d778937fae37b9e43582b1b6" category="list-text">BlueXP  ディザスタリカバリでは、各ONTAPでサポートされるLUNは1つだけです。ボリュームに複数のLUNを含めることはできません。</block>
   <block id="f3a37c3560d0027bc0f49abfab4ab0e3" category="list-text">レプリケーション計画については、デスティネーションONTAPボリュームで、保護対象VMをホストしているソースONTAPボリュームと同じプロトコルを使用する必要があります。たとえば、ソースでFCプロトコルを使用している場合は、デスティネーションでもFCを使用する必要があります。</block>
   <block id="a1c75029051cebc5ca5ea85a84cfc065" category="inline-link">ランサムウェア対策戦略におけるファイル共有ワークロードのグループ化の詳細</block>
-  <block id="1784b8aa983497f6e69069b3b862287f" category="list-text">*ファイル共有ワークロードのカスタムグループ化*：このリリースでは、ファイル共有をグループにグループ化して、データ資産を簡単に保護できるようになりました。グループ内のすべてのボリュームを同時に保護できます。以前は、各ボリュームを個別に保護する必要がありました。<block ref="8790005620a6e0339d9d5a6985b6f062" category="inline-link-rx"></block>です。</block>
   <block id="e5182edc3707e8e354c40ab7fa819f39" category="section-title">2024年10月7日</block>
   <block id="3d725c77d5fb40a1e06f0ec1f3adb6bf" category="section-title">BlueXP  IDおよびアクセス管理</block>
   <block id="cfb96b15394efa48725d4b6de4d3529b" category="paragraph">BlueXP  IDおよびアクセス管理（IAM）は、標準モードでBlueXP  を使用するときにBlueXP  アカウントが提供する以前の機能を置き換え、強化する新しいリソースおよびアクセス管理モデルです。</block>
@@ -677,7 +668,6 @@
   <block id="4d1dd60706cede8204b5a6edb14f8ff5" category="paragraph">BlueXPキャンバスでGoogle Cloud Storageのバケットを表示できるようになりました。BlueXP  から直接、新しいバケットを追加したり、既存のバケットのプロパティを変更したりできるようになりました。<block ref="a727375f2b80e544cee46379a3fbce4b" category="inline-link-rx"></block>です。</block>
   <block id="ee97d7a6f8cd51410930ad6fd6c7d715" category="section-title">BlueXP  運用耐障害性サービス</block>
   <block id="21e938043b4ef6be41f16e95f7f5aaaa" category="section-title">2024年11月7日</block>
-  <block id="7d02192f3436d747f16f0854f54cd837" category="list-text">*データ分類を有効にし、個人識別情報（PII）をスキャンする*：このリリースでは、BlueXP  ファミリのコアコンポーネントであるBlueXP  分類を有効にして、ファイル共有ワークロードのデータをスキャンおよび分類することができます。データを分類することで、データに個人情報が含まれているかどうかを特定し、セキュリティリスクを高めることができます。このプロセスは、ワークロードの重要性にも影響し、適切なレベルの保護でワークロードを保護するのに役立ちます。</block>
   <block id="f3da95789fee3d76f39c270803b7c7df" category="paragraph">BlueXP  ランサムウェア対策でのPIIデータのスキャンは、BlueX分類を導入したお客様が一般的に利用できます。BlueXP  の分類は、BlueXP  プラットフォームの一部として追加料金なしで利用でき、オンプレミスまたはお客様のクラウドに導入できます。</block>
   <block id="c2cb37c5316be80c5de2706c50799610" category="paragraph">BlueXP  分類は、テクノロジプレビューの一部としてSaaSモデルとして導入することもできます。プレビュー機能を有効にするには、BlueXP  ransomware protection * Settings *オプションを使用します。[Preview]を有効にすると、[Protection]ページの[* Privacy exposure]列の横に、他の場所とともに[Preview]ラベルが表示されます。</block>
   <block id="006f40c12cb6b543cd40a6cd5a750b98" category="inline-link">BlueXPのランサムウェア対策の設定</block>
@@ -685,10 +675,6 @@
   <block id="dc2ee5afb67051a37353df40cc16729a" category="paragraph">スキャンを開始するには、[Protection]ページで、[Privacy exposure]列の*[Identify exposure]*をクリックします。</block>
   <block id="e7d05f872780d58e08011a44ce4be77b" category="inline-link">BlueXP  分類を使用して、個人を特定できる機密データをスキャン</block>
   <block id="4dc0491313939f9597e6bce367054443" category="paragraph"><block ref="0e7ea879583dcbdf58a2050df8592221" category="inline-link-rx"></block>です。</block>
-  <block id="41e1ecfc5a85ff11563226784ee15ba6" category="list-text">*次のプレビュー機能をリリース前に試す*：「プレビュー」というラベルの付いた機能をリリース前に試すことができるようになりました。これを行うには、*設定*オプションを使用して、「プレビュー」ラベルでタグ付けされたこれらの機能を表示します。</block>
-  <block id="7a5ad35792efc88c3a5c05a313202699" category="list-text">* SIEMとMicrosoft Sentinelの統合*：Microsoft Sentinelを使用して脅威の分析と検出のために、セキュリティおよびイベント管理システム（SIEM）にデータを送信できるようになりました。以前は、AWS Security HubまたはSplunk CloudをSIEMとして選択できました。</block>
-  <block id="9d163bfc4f18cfe82e5ab58246fe3e03" category="list-text">*今すぐ無償トライアル*：このリリースでは、BlueXP  ランサムウェア対策の新規導入に30日間の無償トライアルが提供されるようになりました。以前は、BlueXP  ランサムウェア対策は90日間の無償トライアルを提供していました。すでに90日間の無償トライアルを利用している場合は、90日間継続されます。</block>
-  <block id="2f5cba8ef7e3d3ce9ca484acfa021d1e" category="list-text">* Podmanのファイルレベルでアプリケーションワークロードをリストアする*：アプリケーションワークロードをファイルレベルでリストアする前に、攻撃の影響を受けた可能性のあるファイルのリストを表示し、リストアするファイルを特定できるようになりました。以前は、組織（以前はアカウント）のBlueXP  コネクタがPodmanを使用していた場合、この機能は無効になっていました。これでPodmanで有効になりました。BlueXPランサムウェア対策でリストアするファイルを選択したり、アラートの影響を受けたすべてのファイルを記載したCSVファイルをアップロードしたり、リストアするファイルを手動で特定したりできます。</block>
   <block id="cf3625b0846a5497dd36ab2220da602a" category="paragraph">詳細については、をご覧ください <block ref="4ef0c81e219f07a508ae115770245e4e" category="inline-link-macro-rx"></block>。</block>
   <block id="35ccbae2ce9b9594b9af9196a3bed361" category="inline-link">ワークロードファクトリ</block>
   <block id="0b672c7e4b6adbcc5d61df4659dfc304" category="list-text"><block ref="0b672c7e4b6adbcc5d61df4659dfc304" category="inline-link-rx"></block></block>
@@ -704,19 +690,6 @@
   <block id="dc13de95ece93019b115a46e9259730f" category="paragraph">ボリュームの追加、ファイルシステムの容量の拡張、Storage VMの管理など、FSx for ONTAPのファイルシステム管理タスクは、NetAppとAmazon FSx for NetApp ONTAPが提供する新しいサービスであるBlueXP  ワークロード工場で管理されるようになりました。以前と同様に、既存のクレデンシャルと権限を使用できます。違いは、BlueXP  ワークロードファクトリでファイルシステムを管理できるようになったことです。BlueXP  キャンバスからFSx for ONTAP作業環境を開くと、直接BlueXP  ワークロード工場に移動します。</block>
   <block id="67c7aeb67508aad4a1a5b35bdab67864" category="inline-link-macro">BlueXP  ワークロードファクトリでのFSx for ONTAPの機能についてご確認ください</block>
   <block id="9043e597fd1a3537f95cd09a004d83dc" category="paragraph"><block ref="9043e597fd1a3537f95cd09a004d83dc" category="inline-link-macro-rx"></block></block>
-  <block id="07c8845dbdef949b860ebfc99bd558ac" category="section-title">2024年11月6日</block>
-  <block id="a5fd9c132798873e9eb6aafb58e50034" category="section-title">SnapLock ComplianceおよびSnapLock Enterprise保護モード</block>
-  <block id="139da935670a9f985194d3241917c359" category="paragraph">BlueXP  バックアップ/リカバリで、SnapLock ComplianceまたはSnapLock Enterprise保護モードを使用して設定されたオンプレミスのFlexVolボリュームとFlexGroupボリュームの両方をバックアップできるようになりました。このサポートを実行するには、クラスタでONTAP 9.14以降が実行されている必要があります。ONTAPバージョン9.11.1以降では、SnapLock Enterpriseモードを使用したFlexVolボリュームのバックアップがサポートされています。以前のONTAPリリースでは、SnapLock保護ボリュームのバックアップはサポートされません。</block>
-  <block id="ba48140a3394818b661e6fd497e203a7" category="inline-link">BlueXPのバックアップとリカバリについて説明します</block>
-  <block id="9ddb3e6714694f5c7f619d474fec8169" category="paragraph">でサポートされるボリュームの一覧を参照してください<block ref="9e68a582cc487ad29425f5a4796c9e45" category="inline-link-rx"></block>。</block>
-  <block id="fec92c3dfb6a0b3db498488c7f4d2f29" category="section-title">[ボリューム]ページでの検索とリストアプロセスのインデックス作成</block>
-  <block id="20d3b0b7cfe7a9f3dcfdb0faa9398efd" category="paragraph">検索とリストアを使用する前に、ボリュームデータのリストア元となる各ソース作業環境でインデックスの作成を有効にする必要があります。これにより、インデックス付きカタログで各ボリュームのバックアップファイルを追跡できます。[Volumes]ページにインデックスのステータスが表示されます。</block>
-  <block id="cd9b31737e78e0a0a755acc12151f766" category="list-text">Indexed：ボリュームにインデックスが作成されました。</block>
-  <block id="02e4eb80c967f3b9add2ba16a690eef2" category="list-text">実行中</block>
-  <block id="838534d879f74e7af515a7de57e72b71" category="list-text">インデックスなし</block>
-  <block id="73d4d0de3c5f56849f3c1a290a6681f2" category="list-text">インデックスを一時停止しました</block>
-  <block id="902b0d55fddef6f8d651fe1035b7d4bd" category="list-text">エラー</block>
-  <block id="cb48cbf342305a9ae53e02e21fcb644c" category="list-text">無効</block>
   <block id="dfc4a97a3fe947a314ae908cf036cbfe" category="section-title">BlueXP  コンソールにワークロードを工場出荷時に統合</block>
   <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link-macro">BlueXPコンソール</block>
   <block id="d2feef96259a41a7842dc5e7af577d63" category="paragraph">これで、からワークロードファクトリを使用できるようになり<block ref="391de7a3bac2bc77fa53dffb3f53801a" category="inline-link-macro-rx"></block>ます。BlueXP  コンソールエクスペリエンスは、ワークロードファクトリコンソールと同じ機能を提供します。</block>
@@ -734,7 +707,6 @@
   <block id="a4b4a128b8ea43df8551a18d37b0bfcd" category="section-title">BlueXP  からのノードベースの導入の削除</block>
   <block id="04b144a0be31129b4ac9a0f2751271d9" category="paragraph">ノードベースのライセンスを使用してCloud Volumes ONTAPシステムを導入するオプションは、BlueXP  では廃止されました。いくつかの特別なケースを除き、どのクラウドプロバイダのCloud Volumes ONTAP環境にもノードベースのライセンスを使用できません。</block>
   <block id="11c97a8e296f1428a1d4c9a2253b1bfb" category="paragraph">NetAppは、契約上の義務および運用上のニーズに準拠して、次の固有のライセンス要件を認識し、このような状況でも引き続きノードベースのライセンスをサポートします。</block>
-  <block id="57389c1aef6c1264d9ad4bbe74640b2e" category="list-text">USPSのお客様</block>
   <block id="43b1a7bfd4243a44cf321f03e7878ffd" category="list-text">プライベートモードでの導入</block>
   <block id="bbef1435f544b56bbed0e1c536c2515e" category="list-text">AWSでのCloud Volumes ONTAPの中国リージョン導入</block>
   <block id="e6eb4bcca3ad358d710ea99dd5c577d1" category="list-text">ノード単位で有効期限が切れていない場合は、お客様所有のライセンスを使用（BYOLライセンス）</block>
@@ -752,4 +724,28 @@
   <block id="664bf259381c1fa1513c4c79450fb0f4" category="inline-link">Cloud Volumes ONTAP作業環境でのWORMの有効化</block>
   <block id="42009eda159da22132429f44bf400e6c" category="paragraph"><block ref="42009eda159da22132429f44bf400e6c" category="inline-link-rx"></block></block>
   <block id="2cce67162f5e7dda1e726a6c1514801d" category="paragraph">BlueXP  を使用してAmazon FSx for NetApp ONTAPファイルシステムにStorage VMを追加できるようになりました。</block>
+  <block id="500984bae07aedc6c662b31a3039d462" category="list-text">米国公共機関のお客様</block>
+  <block id="b6eaf938209a57174cf0c8478fbb177d" category="section-title">2024年10月27日</block>
+  <block id="43cb17f8c706e2a2a7e4c81a5cb2d17b" category="paragraph">BlueXPのコピーおよび同期サービスとデータブローカーを更新し、いくつかのバグを修正しました。新しいデータブローカーのバージョンは1.0.56です。</block>
+  <block id="86510b95a05ce4c22c6d48d2fd9228a9" category="section-title">データの分類を有効にし、個人識別情報（PII）をスキャンする</block>
+  <block id="d599e3d1b6a5137e404ea89f314a22e4" category="paragraph">このリリースでは、BlueXP  ファミリーのコアコンポーネントであるBlueXP  分類を有効にして、ファイル共有ワークロードのデータをスキャンして分類することができます。データを分類することで、データに個人情報が含まれているかどうかを特定し、セキュリティリスクを高めることができます。このプロセスは、ワークロードの重要性にも影響し、適切なレベルの保護でワークロードを保護するのに役立ちます。</block>
+  <block id="4d4b17a43409a8c299995a21ddaef39b" category="section-title">リリース前に次のプレビュー機能を試す</block>
+  <block id="c86f9a52cdb00d7109bfa8ee10b48074" category="paragraph">これで、リリース前に「プレビュー」というラベルの付いたいくつかの機能を試すことができます。これを行うには、*設定*オプションを使用して、「プレビュー」ラベルでタグ付けされたこれらの機能を表示します。</block>
+  <block id="a2c442ceb4053f2fbfe23023529b9acb" category="section-title">SIEMとMicrosoft Sentinelの統合</block>
+  <block id="5148a0988dead45b54188f22121bb178" category="paragraph">Microsoft Sentinelを使用して脅威の分析と検出のために、セキュリティおよびイベント管理システム(SIEM)にデータを送信できるようになりました。以前は、AWS Security HubまたはSplunk CloudをSIEMとして選択できました。</block>
+  <block id="178324624f63d3f322bedd1a0cf9e6fc" category="section-title">30日間の無償トライアル</block>
+  <block id="31e5266d7eefb6e39e445571b556a4b6" category="paragraph">このリリースでは、BlueXP  ランサムウェア対策の新規導入に30日間の無償トライアルが提供されるようになりました。以前は、BlueXP  ランサムウェア対策は90日間の無償トライアルを提供していました。すでに90日間の無償トライアルを利用している場合は、90日間継続されます。</block>
+  <block id="131dcf966228f0c4a90e6e64618c8def" category="section-title">Podmanのアプリケーションワークロードをファイルレベルでリストア</block>
+  <block id="b4a1818e2de3da83b0e71c710c96525c" category="paragraph">アプリケーションワークロードをファイルレベルでリストアする前に、攻撃の影響を受けた可能性があるファイルのリストを表示し、リストアするファイルを特定できるようになりました。以前は、組織（以前はアカウント）のBlueXP  コネクタがPodmanを使用していた場合、この機能は無効になっていました。これでPodmanで有効になりました。BlueXPランサムウェア対策でリストアするファイルを選択したり、アラートの影響を受けたすべてのファイルを記載したCSVファイルをアップロードしたり、リストアするファイルを手動で特定したりできます。</block>
+  <block id="4d330e714e6183f0c61932d7c00a8ff3" category="section-title">ファイル共有ワークロードのカスタムグループ化</block>
+  <block id="52a2bb712de6112a9a5d29a047f3a073" category="paragraph">このリリースでは、ファイル共有をグループにグループ化して、データ資産を簡単に保護できるようになりました。グループ内のすべてのボリュームを同時に保護できます。以前は、各ボリュームを個別に保護する必要がありました。</block>
+  <block id="9a2ed93898be76fbc237cf9fca13d650" category="paragraph"><block ref="8790005620a6e0339d9d5a6985b6f062" category="inline-link-rx"></block>です。</block>
+  <block id="997bcd377ced78770953e6e3775b8ef8" category="section-title">Digital Advisorによるセキュリティリスク評価</block>
+  <block id="ca38b24749c1b379aa526166d650709c" category="paragraph">BlueXP  ランサムウェア対策では、クラスタに関連する高リスクと重大なセキュリティリスクに関する情報がNetAppデジタルアドバイザから収集されるようになりました。リスクが検出された場合、BlueXP  ランサムウェア対策により、ダッシュボードの[推奨される操作]ペインに「クラスタ&lt;name&gt;の既知のセキュリティの脆弱性を修正する」という推奨事項が表示されます。ダッシュボードの推奨事項で、*[確認と修正]*をクリックすると、Digital AdvisorとCommon Vulnerability &amp; Exposure（CVE）の記事を確認してセキュリティリスクを解決するよう提案されます。複数のセキュリティリスクがある場合は、Digital Advisorで情報を確認します。</block>
+  <block id="d6e1df3f33358ae7e917c338cf462ca0" category="section-title">Google Cloud Platformにバックアップ</block>
+  <block id="a789dfb53f35524e96878624b0f44be1" category="paragraph">このリリースでは、バックアップ先をGoogle Cloud Platformバケットに設定できます。以前は、バックアップ先を追加できるのはNetApp StorageGRID、Amazon Web Services、Microsoft Azureのみでした。</block>
+  <block id="be2bdfb658850d167c76f763879faa2f" category="section-title">Google Cloud Platformのサポート</block>
+  <block id="1a5bbf622fa944b888ced1dd36e43b20" category="paragraph">このサービスでは、ストレージ保護のためにCloud Volumes ONTAP for Google Cloud Platformがサポートされるようになりました。以前は、Amazon Web ServicesとMicrosoft AzureのCloud Volumes ONTAPとオンプレミスのNASのみがサポートされていました。</block>
+  <block id="01ab8fe0565c01eb93456b579d969d66" category="section-title">ロールベースアクセス制御</block>
+  <block id="1431c64521322df79808c76466af3b70" category="paragraph">Role-Based Access Control（RBAC；ロールベースアクセス制御）を使用して、特定のアクティビティにアクセスを制限できるようになりました。BlueXP  ランサムウェア対策では、BlueXP  の2つのロール、BlueXP  アカウント管理者と非アカウント管理者（ビューア）を使用します。</block>
 </blocks>
