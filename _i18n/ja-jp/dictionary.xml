@@ -130,8 +130,6 @@
   <block id="62f5b0396e259b44122ad3fd5f9581e0" category="inline-link-macro">BlueXPのボリュームキャッシュの詳細については、こちらをご覧ください</block>
   <block id="2ffe4affb627afa20f3783de7a26c8af" category="paragraph"><block ref="c926d704a05a7f256c6c14f4d9e77466" category="inline-link-macro-rx"></block>。</block>
   <block id="942e802a236d6542c0c6f797428d8abb" category="section-title">2023年7月2日</block>
-  <block id="d41b120a4f792ebe6195de3355c6309a" category="inline-link-macro">Storage VMを追加してください</block>
-  <block id="ef4fe9904a05c0168f433db5ef979256" category="list-text">次の操作を実行できます。 <block ref="73429b7c98363ef2dcc9eca20bd224e7" category="inline-link-macro-rx"></block> BlueXPを使用してAmazon FSx for NetApp ONTAPファイルシステムに移行できます。</block>
   <block id="c835313828dae8f6f2e19118949a05ce" category="list-text">** My Opportunities **タブが** My estate **になりました。ドキュメントが更新され、新しい名前が反映されます。</block>
   <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP</block>
   <block id="28acda3f8bdb20220a5658f1cd81f226" category="section-title">2023年7月4日</block>
@@ -753,4 +751,5 @@
   <block id="8d9d085ab6acd5074907258fafcff341" category="paragraph">これまでは、BlueXP  でCloud Volumes ONTAP作業環境を作成するときにWORMストレージを有効にすることができました。現在は、作成時にWORMが有効になっていなかった場合でも、BlueXP  で作業環境でWORMを有効にするオプションが提供されています。一度有効にすると、WORMを無効にすることはできません。</block>
   <block id="664bf259381c1fa1513c4c79450fb0f4" category="inline-link">Cloud Volumes ONTAP作業環境でのWORMの有効化</block>
   <block id="42009eda159da22132429f44bf400e6c" category="paragraph"><block ref="42009eda159da22132429f44bf400e6c" category="inline-link-rx"></block></block>
+  <block id="2cce67162f5e7dda1e726a6c1514801d" category="paragraph">BlueXP  を使用してAmazon FSx for NetApp ONTAPファイルシステムにStorage VMを追加できるようになりました。</block>
 </blocks>

@@ -208,7 +208,7 @@ Amazon FSx for NetApp ONTAPファイルシステムは、ヨーロッパ（チ�
 
 ==== Storage VMを追加してください
 
-次の操作を実行できます。 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-svm.html["Storage VMを追加してください"] BlueXPを使用してAmazon FSx for NetApp ONTAPファイルシステムに移行できます。
+BlueXP  を使用してAmazon FSx for NetApp ONTAPファイルシステムにStorage VMを追加できるようになりました。
 
 
 
