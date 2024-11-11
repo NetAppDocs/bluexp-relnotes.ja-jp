@@ -59,4 +59,5 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html["セットアッ
 * https://docs.netapp.com/us-en/bluexp-software-updates/release-notes/whats-new.html["ソフトウェアの更新"^]
 * https://docs.netapp.com/us-en/bluexp-tiering/whats-new.html["階層化"^]
 * https://docs.netapp.com/us-en/bluexp-volume-caching/release-notes/cache-whats-new.html["ボリュームキャッシュ"^]
+* https://docs.netapp.com/us-en/workload-relnotes/whats-new.html["ワークロードファクトリ"^]
 

@@ -24,6 +24,26 @@ BlueXPプラットフォームの一部である クラウド サービス の�
 
 
 
+=== 2024年11月11日
+
+
+
+==== コネクタ3.9.46
+
+今回のリリースのBlueXP Connectorには、セキュリティが若干改善され、バグが修正されています。
+
+現時点では、3.9.46リリースは標準モードと制限モードで使用できます。
+
+
+
+==== IAMプロジェクトのID
+
+BlueXP  IDおよびアクセス管理からプロジェクトのIDを表示できるようになりました。このIDは、API呼び出しの実行時に必要になる場合があります。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-folders-projects.html#project-id["プロジェクトのIDを取得する方法"]です。
+
+
+
 === 2024年10月10日
 
 
@@ -122,61 +142,6 @@ https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_s
 
 
 
-=== 2024年9月30日
-
-
-
-==== プライベートモードリリース（3.9.44）
-
-新しいプライベートモードリリースがNetApp Support Siteからダウンロードできるようになりました。
-
-このリリースには、プライベートモードでサポートされる次のバージョンのBlueXP  コンポーネントとサービスが含まれています。
-
-[cols="2*"]
-|===
-| サービス | 含まれるバージョン 
-
-
-| コネクタ | 3.9.44 
-
-
-| バックアップとリカバリ | 2024年9月27日 
-
-
-| 分類 | 2024年5月15日（バージョン1.31） 
-
-
-| Cloud Volumes ONTAP管理 | 2024年9月9日 
-
-
-| デジタルウォレット | 2023年7月30日 
-
-
-| オンプレミスのONTAPクラスタ管理 | 2024年4月22日 
-
-
-| レプリケーション | 2022年9月18日 
-|===
-コネクタの3.9.44プライベートモードリリースには、2024年8月および2024年9月のリリースで導入されたアップデートが含まれています。特に注目すべきは、Red Hat Enterprise Linux 9.4のサポートです。
-
-これらのBlueXP  コンポーネントおよびサービスのバージョンに含まれる内容の詳細については、各BlueXP  サービスのリリースノートを参照してください。
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#9-september-2024["コネクタの2024年9月リリースの新機能"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#8-august-2024["コネクタの2024年8月リリースの新機能"]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP  バックアップ/リカバリの新機能"^]
-* https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXP  分類の新機能"^]
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["BlueXP  のCloud Volumes ONTAP管理の新機能"^]
-
-
-アップグレード方法を含むプライベートモードの詳細については、次を参照してください。
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["プライベートモードの詳細"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["BlueXPのプライベートモードでの利用を開始する方法"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["プライベートモードの使用時にコネクタをアップグレードする方法について説明します。"]
-
-
-
-
 == アラート
 
 
@@ -209,6 +174,18 @@ https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["BlueXP  アラ
 
 
 
+=== 2024年11月11日
+
+
+
+==== FSx for ONTAPはBlueXP  ワークロード工場のストレージと統合
+
+ボリュームの追加、ファイルシステムの容量の拡張、Storage VMの管理など、FSx for ONTAPのファイルシステム管理タスクは、NetAppとAmazon FSx for NetApp ONTAPが提供する新しいサービスであるBlueXP  ワークロード工場で管理されるようになりました。以前と同様に、既存のクレデンシャルと権限を使用できます。違いは、BlueXP  ワークロードファクトリでファイルシステムを管理できるようになったことです。BlueXP  キャンバスからFSx for ONTAP作業環境を開くと、直接BlueXP  ワークロード工場に移動します。
+
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html#features["BlueXP  ワークロードファクトリでのFSx for ONTAPの機能についてご確認ください"^]
+
+
+
 === 2023年7月30日
 
 
@@ -234,22 +211,6 @@ Amazon FSx for NetApp ONTAPファイルシステムは、ヨーロッパ（チ�
 ==== **［機会］**タブが［マイ資産］**になりました。
 
 ** My Opportunities **タブが** My estate **になりました。ドキュメントが更新され、新しい名前が反映されます。
-
-
-
-=== 2023年6月4日
-
-
-
-==== メンテナンス時間の開始時間
-
-いつ link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["作業環境の作成"]では、毎週の30分のメンテナンス時間の開始時間を指定して、メンテナンスが重要なビジネスアクティビティと競合しないようにすることができます。
-
-
-
-==== FlexGroupを使用したボリュームデータの分散
-
-いつ link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html["ボリュームを作成しています"]では、ボリューム間でデータを分散するFlexGroupを作成することで、データの最適化を有効にすることができます。
 
 
 
@@ -328,6 +289,32 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-set-up-azure-ad.htm
 
 
 == バックアップとリカバリ
+
+
+
+=== 2024年11月6日
+
+
+
+==== SnapLock ComplianceおよびSnapLock Enterprise保護モード
+
+BlueXP  バックアップ/リカバリで、SnapLock ComplianceまたはSnapLock Enterprise保護モードを使用して設定されたオンプレミスのFlexVolボリュームとFlexGroupボリュームの両方をバックアップできるようになりました。このサポートを実行するには、クラスタでONTAP 9.14以降が実行されている必要があります。ONTAPバージョン9.11.1以降では、SnapLock Enterpriseモードを使用したFlexVolボリュームのバックアップがサポートされています。以前のONTAPリリースでは、SnapLock保護ボリュームのバックアップはサポートされません。
+
+でサポートされるボリュームの一覧を参照してください https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["BlueXPのバックアップとリカバリについて説明します"]。
+
+
+
+==== [ボリューム]ページでの検索とリストアプロセスのインデックス作成
+
+検索とリストアを使用する前に、ボリュームデータのリストア元となる各ソース作業環境でインデックスの作成を有効にする必要があります。これにより、インデックス付きカタログで各ボリュームのバックアップファイルを追跡できます。[Volumes]ページにインデックスのステータスが表示されます。
+
+* Indexed：ボリュームにインデックスが作成されました。
+* 実行中
+* インデックスなし
+* インデックスを一時停止しました
+* エラー
+* 無効
+
 
 
 
@@ -1241,3 +1228,19 @@ ONTAP 9ソフトウェアの機能であるボリュームキャッシングは�
 BlueXPボリュームキャッシングを使用すると、特にAmazon FSx for NetApp ONTAP、Cloud Volumes ONTAP、オンプレミスの作業環境向けに、クラウド向けのキャッシュ機能を利用できます。
 
 link:https://docs.netapp.com/us-en/bluexp-volume-caching/get-started/cache-intro.html["BlueXPのボリュームキャッシュの詳細については、こちらをご覧ください"]。
+
+
+
+== ワークロードファクトリ
+
+
+
+=== 2024年11月11日
+
+
+
+==== BlueXP  コンソールにワークロードを工場出荷時に統合
+
+これで、からワークロードファクトリを使用できるようになりlink:https://console.bluexp.netapp.com["BlueXPコンソール"^]ます。BlueXP  コンソールエクスペリエンスは、ワークロードファクトリコンソールと同じ機能を提供します。
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["BlueXP  コンソールからワークロードファクトリにアクセスする方法"]

@@ -125,10 +125,6 @@
   <block id="f9037e3eb23130835367334e3aa5a34b" category="section-title">BlueXPから新しいストレージアカウントを追加できるようになりました</block>
   <block id="a39e8d6ee8bc43ef75656b419fe7a86e" category="inline-link">新しいAzure BLOBストレージアカウントを追加する方法をご覧ください</block>
   <block id="a6aef5e3bbd8b059764f33a4044e30d6" category="section-title">2023年6月4日</block>
-  <block id="b11363dc7ad08609dacf71adabc1e3d7" category="inline-link-macro">作業環境の作成</block>
-  <block id="c21d5cf174dc36531d6990b13fe89573" category="list-text">いつ <block ref="ad9408e39808bf9ea4b07fa95cac5798" category="inline-link-macro-rx"></block>では、毎週の30分のメンテナンス時間の開始時間を指定して、メンテナンスが重要なビジネスアクティビティと競合しないようにすることができます。</block>
-  <block id="e2ba73f0e5661996e4350de09efee512" category="inline-link-macro">ボリュームを作成しています</block>
-  <block id="fabdf5de30f7e7084ae6656930904d1d" category="list-text">いつ <block ref="1bfb452ce23fdd4301ee99a62317a7a6" category="inline-link-macro-rx"></block>では、ボリューム間でデータを分散するFlexGroupを作成することで、データの最適化を有効にすることができます。</block>
   <block id="8f47a476ee12f068a45739014a319a65" category="paragraph">ONTAP 9ソフトウェアの機能であるボリュームキャッシングは、ファイル配信を簡易化し、ユーザやコンピューティングリソースの近くにリソースを配置することでWANレイテンシを低減し、WAN帯域幅のコストを削減するリモートキャッシング機能です。ボリュームキャッシングは、リモートの場所にある書き込み可能な永続的ボリュームを提供します。BlueXPのボリュームキャッシュを使用すると、データへのアクセスを高速化したり、アクセス頻度の高いボリュームのトラフィックをオフロードしたりできます。キャッシュボリュームは、特にクライアントが同じデータに繰り返しアクセスする必要がある場合に、読み取り処理が大量に発生するワークロードに最適です。</block>
   <block id="da20ff5e68ae0641ae1925c968ac0244" category="paragraph">BlueXPボリュームキャッシングを使用すると、特にAmazon FSx for NetApp ONTAP、Cloud Volumes ONTAP、オンプレミスの作業環境向けに、クラウド向けのキャッシュ機能を利用できます。</block>
   <block id="62f5b0396e259b44122ad3fd5f9581e0" category="inline-link-macro">BlueXPのボリュームキャッシュの詳細については、こちらをご覧ください</block>
@@ -428,18 +424,6 @@
   <block id="48e006c40a370e7b0dcc3f4f1e42eda7" category="paragraph"><block ref="17c138513bf5a78d755bed4038999b20" category="inline-link-rx"></block>です。</block>
   <block id="9fc076386261ca80bfc67f7f57c641d3" category="section-title">2024年7月14日</block>
   <block id="c18c776847f6d7588ddeab0632527364" category="paragraph">BlueXPのコピーおよび同期サービスとデータブローカーを更新し、いくつかのバグを修正しました。新しいデータブローカーのバージョンは1.0.53です。</block>
-  <block id="5d515ef1c3774ed67ad6115621a1ca59" category="paragraph">新しいプライベートモードリリースがNetApp Support Siteからダウンロードできるようになりました。</block>
-  <block id="c2ba7e785c49050f48da9aacc45c2b85" category="cell">サービス</block>
-  <block id="b742a03d26cdd3a73daedbab8ce0898b" category="cell">含まれるバージョン</block>
-  <block id="edf21d7ecb364e8210ddd3dfaeca6fbf" category="cell">コネクタ</block>
-  <block id="20f71c84b5a0e44a35f3a8c4207c85a9" category="cell">Cloud Volumes ONTAP管理</block>
-  <block id="900dd8f50d2294930a102034524e26b7" category="cell">オンプレミスのONTAPクラスタ管理</block>
-  <block id="a52b83d1b32a42f8a6aff3771048ba3c" category="inline-link">プライベートモードの詳細</block>
-  <block id="cdeb608610a882c24cefcb7daa878a1d" category="list-text"><block ref="cdeb608610a882c24cefcb7daa878a1d" category="inline-link-rx"></block></block>
-  <block id="8156defa13b44a36e67cab400c3b8bd4" category="inline-link">BlueXPのプライベートモードでの利用を開始する方法</block>
-  <block id="1183e1b8915696495b308d0bdfa59bd4" category="list-text"><block ref="1183e1b8915696495b308d0bdfa59bd4" category="inline-link-rx"></block></block>
-  <block id="b29a186d936b198dcafa3a0308485e2c" category="inline-link">プライベートモードの使用時にコネクタをアップグレードする方法について説明します。</block>
-  <block id="e5d325f390c70091b07096d63ab8f353" category="list-text"><block ref="e5d325f390c70091b07096d63ab8f353" category="inline-link-rx"></block></block>
   <block id="ba874eb3ffbdba518b95ce26bc81a861" category="section-title">2024年7月22日</block>
   <block id="9d5f0e2f1682000ac365243e21301823" category="section-title">1GB未満のボリュームをリストア</block>
   <block id="a429eb8c690c0a48131f4ae1267eafd1" category="paragraph">このリリースでは、ONTAPで作成した1GB未満のボリュームをリストアできるようになりました。ONTAPを使用して作成できる最小ボリュームサイズは20MBです。</block>
@@ -522,24 +506,7 @@
   <block id="577f5f9474f1f4f6f56c1fb216328baf" category="section-title">2024年9月16日</block>
   <block id="bc2c6ba9505b9e6d38d9f10c18186d1c" category="paragraph">BlueXPのコピーおよび同期サービスとデータブローカーを更新し、いくつかのバグを修正しました。新しいデータブローカーのバージョンは1.0.55です。</block>
   <block id="964635dcf6206ebb279b58d13cf69a92" category="section-title">2024年9月30日</block>
-  <block id="0beb94109608ff82d313b33947162f96" category="section-title">プライベートモードリリース（3.9.44）</block>
-  <block id="f1fb6fd189345cf04ef77974b58bcbfc" category="paragraph">このリリースには、プライベートモードでサポートされる次のバージョンのBlueXP  コンポーネントとサービスが含まれています。</block>
-  <block id="8dd8dbe371973ff01954f1d0db6a6c30" category="cell">3.9.44</block>
   <block id="5fcc5d3ffc4bbbcf6d018ab4a9639205" category="cell">2024年9月27日</block>
-  <block id="918de91f5332dad6620331712ef5c21d" category="cell">2024年5月15日（バージョン1.31）</block>
-  <block id="48f2931f061b9d56d7805eddf6969cea" category="paragraph">コネクタの3.9.44プライベートモードリリースには、2024年8月および2024年9月のリリースで導入されたアップデートが含まれています。特に注目すべきは、Red Hat Enterprise Linux 9.4のサポートです。</block>
-  <block id="288ce8ff800de0648500c62f0658b96c" category="paragraph">これらのBlueXP  コンポーネントおよびサービスのバージョンに含まれる内容の詳細については、各BlueXP  サービスのリリースノートを参照してください。</block>
-  <block id="65439cdb7546ae11a93a141421129d1a" category="inline-link">コネクタの2024年9月リリースの新機能</block>
-  <block id="46c02b08a8d12f7b5b9a43c01b252fe0" category="list-text"><block ref="46c02b08a8d12f7b5b9a43c01b252fe0" category="inline-link-rx"></block></block>
-  <block id="c531086859410bbf7d79b1d007644e8c" category="inline-link">コネクタの2024年8月リリースの新機能</block>
-  <block id="3447cde4c00b98b6428bff77da46fd8c" category="list-text"><block ref="3447cde4c00b98b6428bff77da46fd8c" category="inline-link-rx"></block></block>
-  <block id="116a2755907d33cc76c6cdc442c467b0" category="inline-link">BlueXP  バックアップ/リカバリの新機能</block>
-  <block id="4e02af58c02d9f0704b79eb4e000eb20" category="list-text"><block ref="4e02af58c02d9f0704b79eb4e000eb20" category="inline-link-rx"></block></block>
-  <block id="cdcec1bb4c8f6524979a702b1691d4f7" category="inline-link">BlueXP  分類の新機能</block>
-  <block id="9212eddb7e41302606e7873d754ab3aa" category="list-text"><block ref="9212eddb7e41302606e7873d754ab3aa" category="inline-link-rx"></block></block>
-  <block id="00dc7f0b165829f9f81bfaf12a8db2e4" category="inline-link">BlueXP  のCloud Volumes ONTAP管理の新機能</block>
-  <block id="941cdb6d27c83c929d4abe28f2321665" category="list-text"><block ref="941cdb6d27c83c929d4abe28f2321665" category="inline-link-rx"></block></block>
-  <block id="6aa6935f7c0067aba2624a4ad2862e39" category="paragraph">アップグレード方法を含むプライベートモードの詳細については、次を参照してください。</block>
   <block id="aa6a53998d98bae73a6913ff1c2eecbc" category="section-title">参照とリストアを使用したRHEL 8または9でのPodmanのサポート</block>
   <block id="c6bad3b272d5eeec569990b050d88123" category="paragraph">BlueXP  のバックアップとリカバリで、Podmanエンジンを使用したRed Hat Enterprise Linux（RHEL）バージョン8および9でのファイルとフォルダのリストアがサポートされるようになりました。これは、BlueXP  のバックアップとリカバリの参照とリストアの方法に適用されます。</block>
   <block id="f5d370ee9e029c4d62db915f308e04c0" category="paragraph">BlueXP  Connectorバージョン3.9.40では、に記載されているオペレーティングシステムに加えて、コネクタソフトウェアをRHEL 8または9ホストに手動でインストールする場合、Red Hat Enterprise Linuxバージョン8および9の特定のバージョンがサポートされ<block ref="9b2a96babeed2ab711a4327ec7f34b5c" category="inline-link-rx"></block>ます。これらの新しいバージョンのRHELでは、DockerエンジンではなくPodmanエンジンが必要です。これまで、BlueXP  のバックアップとリカバリには、Podmanエンジンを使用する場合に2つの制限がありました。これらの制限は削除されました。</block>
@@ -648,8 +615,6 @@
   <block id="479422755a82da93d381b0baab5f8fe7" category="section-title">3つのリージョンを追加サポート</block>
   <block id="4343b2bdc884cb638429641e12c0514c" category="section-title">Storage VMを追加してください</block>
   <block id="c63d5220743c53eaddaae4ea5f0511e7" category="section-title">**［機会］**タブが［マイ資産］**になりました。</block>
-  <block id="c0fde7a894f20194ba5123471f8cf7e7" category="section-title">メンテナンス時間の開始時間</block>
-  <block id="12ad4af5f024e558448bad702ec7ef28" category="section-title">FlexGroupを使用したボリュームデータの分散</block>
   <block id="2bb8a9ed1433f0f845b92c7da5440dea" category="section-title">2024年10月25日</block>
   <block id="dc1815932afdea52f1a4c12d73f2eed0" category="section-title">N1シリーズマシンはBlueXP  で選択できません</block>
   <block id="1bb0d11a534c8ee967cd62e4d75e3da3" category="paragraph">Google CloudにCloud Volumes ONTAPの新しいインスタンスを導入する際に、BlueXP  でn1シリーズマシンを選択できなくなりました。n1シリーズのマシンは、既存の古いシステムでのみ保持およびサポートされます。Cloud Volumes ONTAPの新規導入は、Google Cloud 9.8リリース以降でのみサポートされます。Cloud Volumes ONTAP 9.8以降と互換性のあるn2シリーズマシンタイプに切り替えることをお勧めします。ただし、n1シリーズマシンは、APIを介して実行される新しい導入に使用できます。</block>
@@ -739,4 +704,36 @@
   <block id="9d163bfc4f18cfe82e5ab58246fe3e03" category="list-text">*今すぐ無償トライアル*：このリリースでは、BlueXP  ランサムウェア対策の新規導入に30日間の無償トライアルが提供されるようになりました。以前は、BlueXP  ランサムウェア対策は90日間の無償トライアルを提供していました。すでに90日間の無償トライアルを利用している場合は、90日間継続されます。</block>
   <block id="2f5cba8ef7e3d3ce9ca484acfa021d1e" category="list-text">* Podmanのファイルレベルでアプリケーションワークロードをリストアする*：アプリケーションワークロードをファイルレベルでリストアする前に、攻撃の影響を受けた可能性のあるファイルのリストを表示し、リストアするファイルを特定できるようになりました。以前は、組織（以前はアカウント）のBlueXP  コネクタがPodmanを使用していた場合、この機能は無効になっていました。これでPodmanで有効になりました。BlueXPランサムウェア対策でリストアするファイルを選択したり、アラートの影響を受けたすべてのファイルを記載したCSVファイルをアップロードしたり、リストアするファイルを手動で特定したりできます。</block>
   <block id="cf3625b0846a5497dd36ab2220da602a" category="paragraph">詳細については、をご覧ください <block ref="4ef0c81e219f07a508ae115770245e4e" category="inline-link-macro-rx"></block>。</block>
+  <block id="35ccbae2ce9b9594b9af9196a3bed361" category="inline-link">ワークロードファクトリ</block>
+  <block id="0b672c7e4b6adbcc5d61df4659dfc304" category="list-text"><block ref="0b672c7e4b6adbcc5d61df4659dfc304" category="inline-link-rx"></block></block>
+  <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">2024年11月11日</block>
+  <block id="54eca49362b96a7e1899f1d9f7fbdeef" category="section-title">コネクタ3.9.46</block>
+  <block id="33596391cf2ec8b74b76bf635ea4c6e2" category="paragraph">今回のリリースのBlueXP Connectorには、セキュリティが若干改善され、バグが修正されています。</block>
+  <block id="5b7c2a7de0cce99684e946ddad5735bd" category="paragraph">現時点では、3.9.46リリースは標準モードと制限モードで使用できます。</block>
+  <block id="37e5831d4c68f17f87dd40b6ea95f2bc" category="section-title">IAMプロジェクトのID</block>
+  <block id="102aeb225438210afe20dc2776fb6870" category="paragraph">BlueXP  IDおよびアクセス管理からプロジェクトのIDを表示できるようになりました。このIDは、API呼び出しの実行時に必要になる場合があります。</block>
+  <block id="5c8ebe245f66e84eaef1ca801f274ee3" category="inline-link">プロジェクトのIDを取得する方法</block>
+  <block id="db31ae4dc32d9d514625710dfb24ee0a" category="paragraph"><block ref="52c305e9fd97fc371c1991c1470ed96b" category="inline-link-rx"></block>です。</block>
+  <block id="844ae8089b7faaed0a2b7abc588969d9" category="section-title">FSx for ONTAPはBlueXP  ワークロード工場のストレージと統合</block>
+  <block id="dc13de95ece93019b115a46e9259730f" category="paragraph">ボリュームの追加、ファイルシステムの容量の拡張、Storage VMの管理など、FSx for ONTAPのファイルシステム管理タスクは、NetAppとAmazon FSx for NetApp ONTAPが提供する新しいサービスであるBlueXP  ワークロード工場で管理されるようになりました。以前と同様に、既存のクレデンシャルと権限を使用できます。違いは、BlueXP  ワークロードファクトリでファイルシステムを管理できるようになったことです。BlueXP  キャンバスからFSx for ONTAP作業環境を開くと、直接BlueXP  ワークロード工場に移動します。</block>
+  <block id="67c7aeb67508aad4a1a5b35bdab67864" category="inline-link-macro">BlueXP  ワークロードファクトリでのFSx for ONTAPの機能についてご確認ください</block>
+  <block id="9043e597fd1a3537f95cd09a004d83dc" category="paragraph"><block ref="9043e597fd1a3537f95cd09a004d83dc" category="inline-link-macro-rx"></block></block>
+  <block id="07c8845dbdef949b860ebfc99bd558ac" category="section-title">2024年11月6日</block>
+  <block id="a5fd9c132798873e9eb6aafb58e50034" category="section-title">SnapLock ComplianceおよびSnapLock Enterprise保護モード</block>
+  <block id="139da935670a9f985194d3241917c359" category="paragraph">BlueXP  バックアップ/リカバリで、SnapLock ComplianceまたはSnapLock Enterprise保護モードを使用して設定されたオンプレミスのFlexVolボリュームとFlexGroupボリュームの両方をバックアップできるようになりました。このサポートを実行するには、クラスタでONTAP 9.14以降が実行されている必要があります。ONTAPバージョン9.11.1以降では、SnapLock Enterpriseモードを使用したFlexVolボリュームのバックアップがサポートされています。以前のONTAPリリースでは、SnapLock保護ボリュームのバックアップはサポートされません。</block>
+  <block id="ba48140a3394818b661e6fd497e203a7" category="inline-link">BlueXPのバックアップとリカバリについて説明します</block>
+  <block id="9ddb3e6714694f5c7f619d474fec8169" category="paragraph">でサポートされるボリュームの一覧を参照してください<block ref="9e68a582cc487ad29425f5a4796c9e45" category="inline-link-rx"></block>。</block>
+  <block id="fec92c3dfb6a0b3db498488c7f4d2f29" category="section-title">[ボリューム]ページでの検索とリストアプロセスのインデックス作成</block>
+  <block id="20d3b0b7cfe7a9f3dcfdb0faa9398efd" category="paragraph">検索とリストアを使用する前に、ボリュームデータのリストア元となる各ソース作業環境でインデックスの作成を有効にする必要があります。これにより、インデックス付きカタログで各ボリュームのバックアップファイルを追跡できます。[Volumes]ページにインデックスのステータスが表示されます。</block>
+  <block id="cd9b31737e78e0a0a755acc12151f766" category="list-text">Indexed：ボリュームにインデックスが作成されました。</block>
+  <block id="02e4eb80c967f3b9add2ba16a690eef2" category="list-text">実行中</block>
+  <block id="838534d879f74e7af515a7de57e72b71" category="list-text">インデックスなし</block>
+  <block id="73d4d0de3c5f56849f3c1a290a6681f2" category="list-text">インデックスを一時停止しました</block>
+  <block id="902b0d55fddef6f8d651fe1035b7d4bd" category="list-text">エラー</block>
+  <block id="cb48cbf342305a9ae53e02e21fcb644c" category="list-text">無効</block>
+  <block id="dfc4a97a3fe947a314ae908cf036cbfe" category="section-title">BlueXP  コンソールにワークロードを工場出荷時に統合</block>
+  <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link-macro">BlueXPコンソール</block>
+  <block id="d2feef96259a41a7842dc5e7af577d63" category="paragraph">これで、からワークロードファクトリを使用できるようになり<block ref="391de7a3bac2bc77fa53dffb3f53801a" category="inline-link-macro-rx"></block>ます。BlueXP  コンソールエクスペリエンスは、ワークロードファクトリコンソールと同じ機能を提供します。</block>
+  <block id="717f9c6475fbb39a24ab9942c1a903c0" category="inline-link-macro">BlueXP  コンソールからワークロードファクトリにアクセスする方法</block>
+  <block id="1a34f743bd98b1658401ce2f8206ff9a" category="paragraph"><block ref="1a34f743bd98b1658401ce2f8206ff9a" category="inline-link-macro-rx"></block></block>
 </blocks>
