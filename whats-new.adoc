@@ -24,6 +24,40 @@ BlueXPプラットフォームの一部である クラウド サービス の�
 
 
 
+=== 2025年1月13日
+
+
+
+==== コネクタ3.9.48
+
+今回のリリースのBlueXP Connectorには、セキュリティが若干改善され、バグが修正されています。
+
+現時点では、3.9.48リリースは標準モードと制限モードで使用できます。
+
+
+
+==== BlueXP  IDおよびアクセス管理
+
+* [Resources]ページに未検出のリソースが表示されるようになりました。未検出のリソースは、BlueXP  で認識されているが作業環境を作成していないストレージリソースです。たとえば、まだ作業環境がないデジタルアドバイザに表示されるリソースは、[リソース]ページに検出されていないリソースとして表示されます。
+* Amazon FSx for NetApp ONTAPリソースは、IAMロールに関連付けることができないため、IAMリソースページに表示されません。これらのリソースは、それぞれのキャンバスまたはワークロードで表示できます。
+
+
+
+
+==== 追加のBlueXP  サービスのサポートケースを作成
+
+BlueXP  をサポートに登録したら、BlueXP  Webベースのコンソールから直接サポートケースを作成できます。ケースを作成するときは、問題が関連付けられているサービスを選択する必要があります。
+
+このリリースから、サポートケースを作成して、追加のBlueXP  サービスに関連付けることができるようになりました。
+
+* BlueXPディザスタリカバリ
+* BlueXPのランサムウェア対策
+
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html["サポートケースの作成に関する詳細情報"]です。
+
+
+
 === 2024年12月16日
 
 
@@ -88,46 +122,6 @@ BlueXPプラットフォームの一部である クラウド サービス の�
 
 
 
-=== 2024年11月26日
-
-
-
-==== プライベートモードリリース（3.9.46）
-
-新しいプライベートモードリリースをからダウンロードできるようになりました。 https://mysupport.netapp.com/site/downloads["NetAppサポートサイト"^]
-
-3.9.46リリースでは、BlueXP  の次のコンポーネントとサービスが更新されています。
-
-[cols="3*"]
-|===
-| コンポーネントまたはサービス | このリリースに含まれるバージョン | 前回のプライベートモードリリースからの変更点 
-
-
-| コネクタ | 3.9.46 | セキュリティのマイナーな改善とバグの修正 
-
-
-| バックアップとリカバリ | 2024年11月22日 | に移動し https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP  バックアップ/リカバリページの新機能"^]、2024年11月リリースに含まれる変更点を確認します。 
-
-
-| 分類 | 2024年11月4日（バージョン1.37） | にアクセス https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXP  分類ページの新機能"^]し、1.32リリースから1.37リリースへの変更点を確認します。 
-
-
-| Cloud Volumes ONTAP管理 | 2024年11月11日 | に移動し https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Cloud Volumes ONTAP管理ページの新機能"^]、2024年10月および2024年11月のリリースに含まれる変更点を確認します。 
-
-
-| オンプレミスのONTAPクラスタ管理 | 2024年11月26日 | に移動し https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html["オンプレミスのONTAPクラスタ管理ページの新機能"^]、2024年11月リリースに含まれる変更点を確認します。 
-|===
-BlueXP  デジタルウォレットとBlueXP  レプリケーションもプライベートモードに含まれていますが、以前のプライベートモードリリースから変更はありません。
-
-アップグレード方法を含むプライベートモードの詳細については、次を参照してください。
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["プライベートモードの詳細"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["BlueXPのプライベートモードでの利用を開始する方法"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["プライベートモードの使用時にコネクタをアップグレードする方法について説明します。"]
-
-
-
-
 == アラート
 
 
@@ -160,6 +154,18 @@ https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["BlueXP  アラ
 
 
 
+=== 2025年1月6日
+
+
+
+==== NetAppが追加のCloudFormationリソースをリリース
+
+NetAppは、AWSコンソール内で公開されていない高度なONTAPコンポーネントを利用できるCloudFormationリソースを提供するようになりました。CloudFormationは、AWS向けのコードとしてのインフラメカニズムです。レプリケーション関係、CIFS共有、NFSエクスポートポリシー、Snapshotなどを作成できます。
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html["CloudFormationを使用したAmazon FSx for NetApp ONTAPファイルシステムの管理"]
+
+
+
 === 2024年11月11日
 
 
@@ -185,22 +191,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-fsx-ontap/main/media/s
 Amazon FSx for NetApp ONTAPファイルシステムは、ヨーロッパ（チューリッヒ）、ヨーロッパ（スペイン）、アジア太平洋（ハイデラバード）の3つの新しいAWSリージョンで作成できるようになりました。
 
 を参照してください link:https://aws.amazon.com/about-aws/whats-new/2023/04/amazon-fsx-netapp-ontap-three-regions/#:~:text=Customers%20can%20now%20create%20Amazon,file%20systems%20in%20the%20cloud["Amazon FSx for NetApp ONTAPは、さらに3つのリージョンで提供が開始されました。"^] 詳細については、
-
-
-
-=== 2023年7月2日
-
-
-
-==== Storage VMを追加してください
-
-BlueXP  を使用してAmazon FSx for NetApp ONTAPファイルシステムにStorage VMを追加できるようになりました。
-
-
-
-==== **［機会］**タブが［マイ資産］**になりました。
-
-** My Opportunities **タブが** My estate **になりました。ドキュメントが更新され、新しい名前が反映されます。
 
 
 
@@ -236,6 +226,16 @@ BlueXP CanvasでAzure Blob Storageを表示できるようになりました。�
 
 
 
+=== 2025年1月13日
+
+
+
+==== BlueXP  でのネットワーク機能のサポート
+
+BlueXP  からAzure NetApp Filesでボリュームを設定する際に、ネットワーク機能を指定できるようになりました。これは、ネイティブのAzure NetApp Filesで利用可能な機能と連動しています。
+
+
+
 === 2024年6月12日
 
 
@@ -261,20 +261,6 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-set-up-azure-ad.htm
 ==== ボリュームテンプレートのサポートの廃止
 
 テンプレートからボリュームを作成することはできなくなりました。この操作はBlueXP修正サービスに関連付けられていましたが、このサービスは廃止されました。
-
-
-
-=== 2021 年 4 月 11 日
-
-
-
-==== ボリュームテンプレートのサポート
-
-新しいアプリケーションテンプレートサービスを使用すると、 Azure NetApp Files のボリュームテンプレートを設定できます。テンプレートを使用すると、容量プール、サイズ、プロトコル、 VNet 、ボリュームを配置するサブネットなど、一部のボリュームパラメータがテンプレートにすでに定義されているため、ジョブの簡易化に役立ちます。パラメータがすでに事前定義されている場合は、次のボリュームパラメータに進みます。
-
-* https://docs.netapp.com/us-en/bluexp-remediation/concept-resource-templates.html["アプリケーションテンプレートと、環境での使用方法について説明します"^]
-* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-volumes.html["テンプレートから Azure NetApp Files ボリュームを作成する方法について説明します"]
-
 
 
 
@@ -619,6 +605,16 @@ BlueXPのコピーおよび同期サービスとデータブローカーを更�
 
 
 
+=== 2024年12月4日
+
+
+
+==== AutoSupportウィジェット
+
+AutoSupportウィジェットがダッシュボードのメイン画面に追加され、AutoSupportのステータス関連の問題についてお客様に通知されるようになりました。
+
+
+
 === 2024年9月23日
 
 
@@ -626,16 +622,6 @@ BlueXPのコピーおよび同期サービスとデータブローカーを更�
 ==== サポートサービス
 
 NetApp SupportEdge Basicサービスには、SupportEdge AdvisorおよびSupportEdge Expertで使用できるすべてのデジタルアドバイザ機能が含まれるようになりました。ただし、フルスタックトポロジ（VMware）は、有効にしてもVMwareのフルスタック監視を可視化できません。
-
-
-
-=== 2024年8月21日
-
-
-
-==== レポート
-
-7-Modeシステムの限定サポートが終了したため、* 7-Mode Upgrade Advisor Plans *レポートはご利用いただけなくなりました。詳細については、を参照してください link:https://mysupport.netapp.com/site/info/version-support["ソフトウェア バージョンのサポート"^]。詳細については、をご覧ください link:https://docs.netapp.com/a/ontap/7-mode/8.2.1/Upgrade-And-Revert-Or-Downgrade-Guide-For-7-Mode.pdf["Data ONTAP 7-Modeストレージシステムのアップグレード"^]。
 
 
 
@@ -991,6 +977,35 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 
+=== 2024年12月16日
+
+
+
+==== Data Infrastructure Insights Storage Workload Securityを使用してユーザの異常な行動を検出
+
+このリリースでは、Data Infrastructure Insights Storage Workload Securityを使用して、ストレージワークロードの異常なユーザ行動を検出できます。この機能を使用すると、潜在的なセキュリティ脅威を特定し、悪意のあるユーザをブロックしてデータを保護できます。
+
+詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["検出されたランサムウェアに関するアラートに対応"]。
+
+Data Infrastructure Insights Storage Workload Securityを使用して異常なユーザ行動を検出するには、事前にBlueXP  ransomware protection * Settings *オプションを使用してオプションを設定する必要があります。
+
+を参照してください https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["BlueXPのランサムウェア対策の設定"]。
+
+
+
+==== 検出して保護するワークロードを選択
+
+このリリースでは、次の操作を実行できます。
+
+* 各コネクタで、ワークロードを検出する作業環境を選択します。この機能は、環境内の特定のワークロードを保護し、他のワークロードを保護する必要がない場合に役立ちます。
+* ワークロードの検出時に、コネクタごとにワークロードの自動検出を有効にすることができます。保護するワークロードを選択できます。
+* 以前に選択した作業環境用に新しく作成されたワークロードを検出します。
+
+
+を参照してください https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["ワークロードを検出"]。
+
+
+
 === 2024年11月7日
 
 
@@ -1040,42 +1055,6 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["
 このリリースでは、ファイル共有をグループにグループ化して、データ資産を簡単に保護できるようになりました。グループ内のすべてのボリュームを同時に保護できます。以前は、各ボリュームを個別に保護する必要がありました。
 
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["ランサムウェア対策戦略におけるファイル共有ワークロードのグループ化の詳細"]です。
-
-
-
-=== 2024年9月2日
-
-
-
-==== Digital Advisorによるセキュリティリスク評価
-
-BlueXP  ランサムウェア対策では、クラスタに関連する高リスクと重大なセキュリティリスクに関する情報がNetAppデジタルアドバイザから収集されるようになりました。リスクが検出された場合、BlueXP  ランサムウェア対策により、ダッシュボードの[推奨される操作]ペインに「クラスタ<name>の既知のセキュリティの脆弱性を修正する」という推奨事項が表示されます。ダッシュボードの推奨事項で、*[確認と修正]*をクリックすると、Digital AdvisorとCommon Vulnerability & Exposure（CVE）の記事を確認してセキュリティリスクを解決するよう提案されます。複数のセキュリティリスクがある場合は、Digital Advisorで情報を確認します。
-
-を参照してください https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisorのドキュメント"^]。
-
-
-
-==== Google Cloud Platformにバックアップ
-
-このリリースでは、バックアップ先をGoogle Cloud Platformバケットに設定できます。以前は、バックアップ先を追加できるのはNetApp StorageGRID、Amazon Web Services、Microsoft Azureのみでした。
-
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["BlueXP  ランサムウェア対策の設定の詳細"]です。
-
-
-
-==== Google Cloud Platformのサポート
-
-このサービスでは、ストレージ保護のためにCloud Volumes ONTAP for Google Cloud Platformがサポートされるようになりました。以前は、Amazon Web ServicesとMicrosoft AzureのCloud Volumes ONTAPとオンプレミスのNASのみがサポートされていました。
-
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["BlueXP  ランサムウェア対策、サポート対象のデータソース、バックアップ先、作業環境について説明します。"]です。
-
-
-
-==== ロールベースアクセス制御
-
-Role-Based Access Control（RBAC；ロールベースアクセス制御）を使用して、特定のアクティビティにアクセスを制限できるようになりました。BlueXP  ランサムウェア対策では、BlueXP  の2つのロール、BlueXP  アカウント管理者と非アカウント管理者（ビューア）を使用します。
-
-各ロールで実行できるアクションの詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["ロールベースアクセス制御Privileges"]。
 
 
 
@@ -1252,6 +1231,18 @@ link:https://docs.netapp.com/us-en/bluexp-volume-caching/get-started/cache-intro
 
 
 == ワークロードファクトリ
+
+
+
+=== 2025年1月5日
+
+
+
+==== BlueXP  Workload Factoryでのサービスアカウントのサポート
+
+BlueXP  ワークロードファクトリでサービスアカウントがサポートされるようになりました。サービスアカウントを作成して、インフラの運用を自動化するマシンユーザとして機能させることができます。
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/manage-service-accounts.html["サービスアカウントを作成および管理します"]
 
 
 
