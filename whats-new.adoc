@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, ontap clusters, alerts' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, ontap clusters, alerts, identity and access management, iam' 
 summary: BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します 
 ---
 = BlueXPの最近の変更点
@@ -21,6 +21,47 @@ BlueXPプラットフォームの一部である クラウド サービス の�
 == 管理機能
 
 このセクションでは、BlueXPの管理機能に関連する新機能(アカウント、コネクタ、クラウドプロバイダの資格情報など)について説明します。
+
+
+
+=== 2024年12月16日
+
+
+
+==== コネクタイメージを取得するための新しいセキュアエンドポイント
+
+コネクタをインストールするとき、または自動アップグレードが発生すると、コネクタはリポジトリに接続してインストールまたはアップグレード用のイメージをダウンロードします。デフォルトでは、コネクタは常に次のエンドポイントに接続しています。
+
+* \ https://*.blob.core.windows.net
+* \ https://cloudmanagerinfraprod.azurecr.io
+
+
+最初のエンドポイントには、最終的な場所を指定できないため、ワイルドカードが含まれています。リポジトリのロードバランシングはサービスプロバイダーによって管理されます。つまり、ダウンロードはさまざまなエンドポイントから実行できます。
+
+セキュリティを強化するために、コネクタは専用エンドポイントからインストールイメージとアップグレードイメージをダウンロードできるようになりました。
+
+* \https://bluexpinfraprod.eastus2.data.azurecr.io
+* \https://bluexpinfraprod.azurecr.io
+
+
+これらの新しいエンドポイントの使用を開始するには、ファイアウォールルールから既存のエンドポイントを削除し、新しいエンドポイントを許可することを推奨します。
+
+これらの新しいエンドポイントは、コネクタの3.9.47リリース以降でサポートされています。以前のリリースのコネクタとの下位互換性はありません。
+
+次の点に注意してください。
+
+* 既存のエンドポイントは引き続きサポートされます。新しいエンドポイントを使用しない場合は、変更は必要ありません。
+* コネクタは最初に既存のエンドポイントに接続します。これらのエンドポイントにアクセスできない場合、コネクタは自動的に新しいエンドポイントに接続します。
+* 新しいエンドポイントは、次のシナリオではサポートされません。
++
+** コネクタが政府機関地域に設置されている場合。
+** BlueXP  のバックアップとリカバリまたはBlueXP  ランサムウェア対策でコネクタを使用する場合。
+
+
++
+どちらの場合も、既存のエンドポイントを引き続き使用できます。
+
+
 
 
 
@@ -84,26 +125,6 @@ BlueXP  デジタルウォレットとBlueXP  レプリケーションもプ�
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["BlueXPのプライベートモードでの利用を開始する方法"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["プライベートモードの使用時にコネクタをアップグレードする方法について説明します。"]
 
-
-
-
-=== 2024年11月11日
-
-
-
-==== コネクタ3.9.46
-
-今回のリリースのBlueXP Connectorには、セキュリティが若干改善され、バグが修正されています。
-
-現時点では、3.9.46リリースは標準モードと制限モードで使用できます。
-
-
-
-==== IAMプロジェクトのID
-
-BlueXP  IDおよびアクセス管理からプロジェクトのIDを表示できるようになりました。このIDは、API呼び出しの実行時に必要になる場合があります。
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-folders-projects.html#project-id["プロジェクトのIDを取得する方法"]です。
 
 
 
@@ -357,6 +378,16 @@ Amazon Web Services（AWS）Identity and Access Management（IAM）Roles Anywher
 
 
 
+=== 2024年12月16日
+
+
+
+==== バージョン1.38
+
+このBlueXP  分類リリースには、全般的な改善とバグ修正が含まれています。
+
+
+
 === 2024年11月4日
 
 
@@ -394,19 +425,6 @@ Amazon Web Services（AWS）Identity and Access Management（IAM）Roles Anywher
 
 .スキャンパフォーマンスの向上
 このリリースでは、スキャンパフォーマンスが向上しています。
-
-
-
-=== 2024年9月2日
-
-
-
-==== バージョン1.35
-
-.StorageGRIDデータのスキャン
-BlueXP  分類でStorageGRIDのデータをスキャンできるようになりました。
-
-詳細については、を参照してください link:task-scanning-storagegrid.html["StorageGRIDデータのスキャン"]。
 
 
 
@@ -591,6 +609,16 @@ BlueXPのコピーおよび同期サービスとデータブローカーを更�
 
 
 
+=== 2024年12月12日
+
+
+
+==== Upgrade Advisor を使用します
+
+更新に推奨されるストレージファームウェア、SP / BMCファームウェア、およびAutonomous Ransomware Package（ARP）を確認できるようになりました。link:https://docs.netapp.com/us-en/active-iq/view-firmware-update-recommendations.html["ファームウェアアップデートの推奨事項を表示する方法"]です。
+
+
+
 === 2024年9月23日
 
 
@@ -608,16 +636,6 @@ NetApp SupportEdge Basicサービスには、SupportEdge AdvisorおよびSupport
 ==== レポート
 
 7-Modeシステムの限定サポートが終了したため、* 7-Mode Upgrade Advisor Plans *レポートはご利用いただけなくなりました。詳細については、を参照してください link:https://mysupport.netapp.com/site/info/version-support["ソフトウェア バージョンのサポート"^]。詳細については、をご覧ください link:https://docs.netapp.com/a/ontap/7-mode/8.2.1/Upgrade-And-Revert-Or-Downgrade-Guide-For-7-Mode.pdf["Data ONTAP 7-Modeストレージシステムのアップグレード"^]。
-
-
-
-=== 2024年7月4日
-
-
-
-==== Sustainability Dashboard
-
-ストレージシステムの環境の健全性に関するインサイトを提供する環境指標により、高度な予測モデルに基づいて、予測される電力使用量、直接炭素使用量、および熱排出量のより正確な値が提供されるようになりました。詳細については、を参照して link:https://docs.netapp.com/us-en/active-iq/BlueXP_sustainability_dashboard_overview.html["Sustainabilityダッシュボードの概要"]ください。
 
 
 
