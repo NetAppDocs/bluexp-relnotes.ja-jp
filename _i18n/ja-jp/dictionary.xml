@@ -787,4 +787,33 @@
   <block id="bbc4e3ff648912e4a892f88fcb03c65b" category="list-text">バックアップ（整合グループ）処理（SnapMirrorの自動化など）</block>
   <block id="7e13cc5491f076161e0aefc0728bf351" category="paragraph">BlueXP  ディザスタリカバリでのASA R2のサポートには、ONTAP 9.16.1が使用されます。</block>
   <block id="60a0836359d058db16981cf45c24594f" category="paragraph">データストアはONTAPボリュームまたはASA R2ストレージユニットにマウントできますが、BlueXP  ディザスタリカバリのリソースグループにONTAPのデータストアとASA R2のデータストアの両方を含めることはできません。リソースグループには、ONTAPのデータストアまたはASA R2のデータストアを選択できます。</block>
+  <block id="09d7c2dac047caa965175fead07159aa" category="section-title">2025年2月21日</block>
+  <block id="9126fc20b93ed61d342990460cdaaa43" category="section-title">高性能な索引付け</block>
+  <block id="c31a2ae5c0b165eb1cee78223b508907" category="paragraph">BlueXP  のバックアップとリカバリでは、ソース作業環境上のデータのインデックス作成を効率化する、更新されたインデックス作成機能が導入されています。新しいインデックス作成機能には、UIの更新、データをリストアするSearch &amp; Restore方式のパフォーマンスの向上、グローバル検索機能のアップグレード、拡張性の向上が含まれています。</block>
+  <block id="135dcb5e7fddaabc736ce2d72074e3bf" category="paragraph">改善点の内訳は次のとおりです。</block>
+  <block id="2fd910d863c39557d994a40fedd27b38" category="list-text">*フォルダ統合*:更新されたバージョンでは、特定の識別子を含む名前を使用してフォルダがグループ化されるため、インデックス作成プロセスがスムーズになります。</block>
+  <block id="415e39ccfe49c5161a2a27cbc19cbaac" category="list-text">*寄木細工ファイルの圧縮*:更新されたバージョンは、各ボリュームのインデックス作成に使用されるファイルの数を減らし、プロセスを簡素化し、余分なデータベースを必要としません。</block>
+  <block id="c53ca191fcf89c8c42d05fd203ce3d03" category="list-text">*より多くのセッションでスケールアウト*：新しいバージョンでは、インデックス作成タスクを処理するためのセッションが追加され、プロセスが高速化されます。</block>
+  <block id="9ad2108ab54a2f84cdce51c70aedf218" category="list-text">*複数のインデックスコンテナのサポート*：新しいバージョンでは、複数のコンテナを使用してインデックスタスクの管理と分散を強化しています。</block>
+  <block id="4a3dba07ec28235aef40beaad924f29a" category="list-text">*インデックスの分割ワークフロー*:新しいバージョンでは、インデックス作成プロセスが2つの部分に分割され、効率が向上しています。</block>
+  <block id="4524da26c6e536d9203dad25cbe67e46" category="list-text">*同時実行性の向上*:新しいバージョンでは、ディレクトリの削除や移動を同時に行うことができるため、インデックス作成プロセスが高速化されます。</block>
+  <block id="4cd005b9bd7832f2f50d7bfa9ef8c5bd" category="paragraph-title">この機能を利用できるのは誰ですか？</block>
+  <block id="c0b0a9d9f7b65ce3e277b13bce1241d3" category="paragraph">新しいインデックス作成機能は、すべての新規顧客が利用できます。</block>
+  <block id="eb3dc66c3f5547559da4bd69622b70f1" category="paragraph-title">インデックス作成を有効にするにはどうすればよいですか。</block>
+  <block id="1928ef25d05266e1052541c930f2737c" category="paragraph">データのリストアにSearch &amp; Restore方式を使用する前に、ボリュームまたはファイルのリストア元となる各ソース作業環境で[Indexing]を有効にする必要があります。これにより、インデックスカタログはすべてのボリュームとすべてのバックアップファイルを追跡できるため、検索が迅速かつ効率的になります。</block>
+  <block id="d28994d1a9691ce26fcae71b9a05d1bc" category="paragraph">検索とリストアの実行時に[Enable Indexing]オプションを選択して、ソースの作業環境でインデックス作成を有効にします。</block>
+  <block id="6b14c6e0d643870ea727335d7739df30" category="inline-link">検索と復元を使用してONTAPデータを復元する方法</block>
+  <block id="9031cfd1bcd3de043cd6391f098dc91b" category="paragraph">詳細については、のドキュメントを参照して<block ref="7ae860a58fb7c028461eb3a0f3043711" category="inline-link-rx"></block>ください。</block>
+  <block id="2d31667baed414ccd330141663dac284" category="paragraph-title">サポートされるスケール</block>
+  <block id="b2ec30cb49afbacbac6cc89a95133887" category="paragraph">新しいインデックス作成機能では、次の機能がサポートされています。</block>
+  <block id="3201cddda2c272104ed2ef30674f361a" category="list-text">3分未満でグローバル検索を効率化</block>
+  <block id="5386e74ecf10139fea9af2308674b2f3" category="list-text">最大50億個のファイル</block>
+  <block id="ed6f4100c4fab2301cff975ad76b4882" category="list-text">クラスタあたり最大5、000個のボリューム</block>
+  <block id="1154c1f5439a3f20019e89d49f3ba075" category="list-text">ボリュームあたり最大100Kのスナップショット</block>
+  <block id="bca4b5a9086c6c17f64be092486e45ad" category="list-text">ベースラインインデックス作成の最大時間は7日未満です。実際の時間は環境によって異なります。</block>
+  <block id="783d72b35e6b2ea46fd074f6f0960e45" category="section-title">グローバル検索のパフォーマンスの向上</block>
+  <block id="66fba34c17d26bb2c0e9b396915f9a4f" category="paragraph">このリリースでは、グローバル検索のパフォーマンスも強化されています。これで、進行状況インジケータと、ファイルの数や検索にかかった時間など、より詳細な検索結果が表示されます。検索とインデックス作成用の専用コンテナにより、グローバル検索が5分以内に完了します。</block>
+  <block id="ba7df4741bd77385c236fcf981dd357a" category="paragraph">グローバル検索に関連する次の考慮事項に注意してください。</block>
+  <block id="03602fc4621dad9ee00f9e5d533ff5ea" category="list-text">新しいインデックスは、hourlyとラベル付けされたスナップショットでは実行されません。</block>
+  <block id="2bacd7c8c96302172c5d0324d784cf03" category="list-text">新しいインデックス機能は、FlexVol上のSnapshotに対してのみ機能し、FlexGroup上のSnapshotに対しては機能しません。</block>
 </blocks>
