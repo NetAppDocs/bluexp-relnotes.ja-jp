@@ -208,6 +208,18 @@ https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["BlueXP  アラ
 
 
 
+=== 2025年3月2日
+
+
+
+==== TrackerのCloudShellイベント
+
+CloudShellを使用してBlueXP  ワークロードからFSx for ONTAPの処理を実行すると、イベントがトラッカーに表示されます。
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-monitor-operations.html["BlueXP  でFSx for ONTAPの運用を監視および追跡する方法をご確認ください"^]
+
+
+
 === 2025年2月2日
 
 
@@ -253,22 +265,6 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/use-cloudshell.html["Clo
 NetAppは、AWSコンソール内で公開されていない高度なONTAPコンポーネントを利用できるCloudFormationリソースを提供するようになりました。CloudFormationは、AWS向けのコードとしてのインフラメカニズムです。レプリケーション関係、CIFS共有、NFSエクスポートポリシー、Snapshotなどを作成できます。
 
 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html["CloudFormationを使用したAmazon FSx for NetApp ONTAPファイルシステムの管理"]
-
-
-
-=== 2024年11月11日
-
-
-
-==== FSx for ONTAPはBlueXP  ワークロード工場のストレージと統合
-
-ボリュームの追加、ファイルシステムの容量の拡張、Storage VMの管理など、FSx for ONTAPのファイルシステム管理タスクは、NetAppとAmazon FSx for NetApp ONTAPが提供する新しいサービスであるBlueXP  ワークロード工場で管理されるようになりました。以前と同様に、既存のクレデンシャルと権限を使用できます。違いは、BlueXP  ワークロードファクトリでファイルシステムを管理できるようになったことです。BlueXP  キャンバスからFSx for ONTAP作業環境を開くと、直接BlueXP  ワークロード工場に移動します。
-
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html#features["BlueXP  ワークロードファクトリでのFSx for ONTAPの機能についてご確認ください"^]
-
-ONTAPシステムマネージャを使用してFSx for ONTAPファイルシステムを管理できる_advanced view_optionを探している場合、作業環境を選択すると、BlueXP  キャンバスにそのオプションが表示されるようになりました。
-
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-fsx-ontap/main/media/screenshot-system-manager.png["作業環境を選択したあとのBlueXP  キャンバスの右側パネルのスクリーンショット。[System Manager]オプションが表示されます。"]
 
 
 
@@ -585,6 +581,18 @@ Data Investigationレポートからのデータのエクスポートには、�
 
 
 
+=== 2025 年 3 月 3 日
+
+
+
+==== ニュージーランド北部リージョンがAzureでサポートされるようになりました
+
+ニュージーランド北部リージョンは、Cloud Volumes ONTAP 9.12.1 GA以降のシングルノードおよびハイアベイラビリティ（HA）構成でAzureでサポートされるようになりました。このリージョンでは、Lsv3インスタンスタイプはサポートされていないことに注意してください。
+
+サポートされているすべてのリージョンのリストについては、を参照して https://bluexp.netapp.com/cloud-volumes-global-regions["Azureのグローバルリージョンマップ"^]ください。
+
+
+
 === 2025年2月18日
 
 
@@ -629,18 +637,6 @@ BlueXP  デジタルウォレット内の改善されたナビゲーション�
 
 
 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["容量ベースのライセンスを管理します"^]です。
-
-
-
-=== 2024年12月9日
-
-
-
-==== ベストプラクティスに準拠するようにAzure向けに更新されたサポート対象VMのリスト
-
-AzureにCloud Volumes ONTAPの新しいインスタンスを導入する場合、DS_v2およびES_v3マシンファミリーはBlueXP  で選択できなくなりました。これらのファミリーは、既存の古いシステムでのみ保持およびサポートされます。Cloud Volumes ONTAPの新規導入は、Azureでサポートされるのは9.12.1リリース以降のみです。ES_v4またはCloud Volumes ONTAP 9.12.1以降と互換性のある他のシリーズに切り替えることをお勧めします。ただし、DS_v2およびES_v3シリーズマシンは、APIを使用した新しい展開で使用できます。
-
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure でサポートされる構成"^]
 
 
 
