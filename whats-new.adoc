@@ -536,6 +536,9 @@ BlueXP  分類では、失敗したすべてのスキャンをバッチ再試�
 . 失敗したスキャンをすべて再試行するには、*[すべてのスキャンを再試行]*を選択します。
 
 
+.カテゴリ化モデルの精度の向上
+の機械学習モデルの精度はlink:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-sensitive-personal-datapredefined-categories["事前定義されたカテゴリ"]11%向上しました。
+
 
 
 === 2025年1月22日
