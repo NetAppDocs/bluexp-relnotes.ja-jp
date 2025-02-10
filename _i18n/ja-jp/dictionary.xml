@@ -422,22 +422,7 @@
   <block id="cb48cbf342305a9ae53e02e21fcb644c" category="list-text">無効</block>
   <block id="0d9e2244b8fb5d13651efe34b9723803" category="paragraph">BlueXP  をプライベートモードで使用しているときに、NetApp ASA R2システムを検出できるようになりました。このサポートは、BlueXP  の3.9.46プライベートモードリリース以降で利用できます。</block>
   <block id="3406306d1e826f71d49547332136491d" category="paragraph">BlueXP  ランサムウェア対策でのPIIデータのスキャンは、BlueXP  分類を導入したお客様が一般に利用できます。BlueXP  の分類は、BlueXP  プラットフォームの一部として追加料金なしで利用でき、オンプレミスまたはお客様のクラウドに導入できます。</block>
-  <block id="78efdac7339a3a2a767f54e63e415b79" category="paragraph">コネクタをインストールするとき、または自動アップグレードが発生すると、コネクタはリポジトリに接続してインストールまたはアップグレード用のイメージをダウンロードします。デフォルトでは、コネクタは常に次のエンドポイントに接続しています。</block>
-  <block id="f55e31da35f47937201bdbf54e964315" category="list-text">\ https://*.blob.core.windows.net</block>
-  <block id="9dcb0a1d3281e001a6085626a264be49" category="list-text">\ https://cloudmanagerinfraprod.azurecr.io</block>
-  <block id="e5eb8016a9764345b2f3dd5672e2f245" category="paragraph">最初のエンドポイントには、最終的な場所を指定できないため、ワイルドカードが含まれています。リポジトリのロードバランシングはサービスプロバイダーによって管理されます。つまり、ダウンロードはさまざまなエンドポイントから実行できます。</block>
-  <block id="5a04f5940b391aa471ffcf2f682f6390" category="paragraph">セキュリティを強化するために、コネクタは専用エンドポイントからインストールイメージとアップグレードイメージをダウンロードできるようになりました。</block>
-  <block id="534d469c55031860cef85b868a9332d8" category="list-text">\https://bluexpinfraprod.eastus2.data.azurecr.io</block>
-  <block id="a86a33f4f6d9c203eb747987b6d104ca" category="list-text">\https://bluexpinfraprod.azurecr.io</block>
-  <block id="6265c6aedeb8e4c15d99cb681317d569" category="paragraph">これらの新しいエンドポイントの使用を開始するには、ファイアウォールルールから既存のエンドポイントを削除し、新しいエンドポイントを許可することを推奨します。</block>
-  <block id="0569478319ea7c217c7aeaef42de04a2" category="paragraph">これらの新しいエンドポイントは、コネクタの3.9.47リリース以降でサポートされています。以前のリリースのコネクタとの下位互換性はありません。</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">次の点に注意してください。</block>
-  <block id="b7045cdc7261ab3a7b9e78efb0461bfa" category="list-text">既存のエンドポイントは引き続きサポートされます。新しいエンドポイントを使用しない場合は、変更は必要ありません。</block>
-  <block id="4cd508d6b82e76524216714f78d79d2c" category="list-text">コネクタは最初に既存のエンドポイントに接続します。これらのエンドポイントにアクセスできない場合、コネクタは自動的に新しいエンドポイントに接続します。</block>
-  <block id="a5f507c0714656865b1f8986b83613de" category="list-text">新しいエンドポイントは、次のシナリオではサポートされません。</block>
-  <block id="6b4d63c99144b38df035c167f8c99b23" category="list-text">コネクタが政府機関地域に設置されている場合。</block>
-  <block id="b90e6d21a82e89d9e93683b887fce78e" category="list-text">BlueXP  のバックアップとリカバリまたはBlueXP  ランサムウェア対策でコネクタを使用する場合。</block>
-  <block id="8ad91183ee4d83d215423d96651219b3" category="paragraph">どちらの場合も、既存のエンドポイントを引き続き使用できます。</block>
   <block id="39ca8580b0e6a065fa25faac2a2acc86" category="inline-link-macro">ファームウェアアップデートの推奨事項を表示する方法</block>
   <block id="33596391cf2ec8b74b76bf635ea4c6e2" category="paragraph">今回のリリースのBlueXP Connectorには、セキュリティが若干改善され、バグが修正されています。</block>
   <block id="4d83c70b301d09d322c3d604e361a689" category="paragraph">現時点では、3.9.48リリースは標準モードと制限モードで使用できます。</block>
@@ -466,7 +451,6 @@
   <block id="8e64dfb0168516c0e7f7880ae745072a" category="section-title">コネクタ3.9.49</block>
   <block id="f5c64d3f640238b8d1e1ed7062c5561f" category="paragraph">現時点では、3.9.49リリースは標準モードと制限モードで使用できます。</block>
   <block id="99acbaa3cb87e4fe6650072fa6b0a905" category="section-title">BlueXP  IDおよびアクセス管理（IAM）</block>
-  <block id="36cef198e9fac4b4a194f5e01017b8d1" category="list-text">1人のユーザに複数のロールを割り当てることができます。</block>
   <block id="4fafa85612a8b2fff96d593213d6a0ec" category="paragraph">BlueXP  IDおよびアクセス管理（IAM）が制限モードで使用されるようになりました。</block>
   <block id="2f73a8cbcbf617bd5a78738929bbe5b3" category="paragraph">BlueXP  IDおよびアクセス管理（IAM）は、標準モードおよび制限モードでBlueXP  を使用するときにBlueXP  アカウントが提供する以前の機能を置き換え、強化するリソースおよびアクセス管理モデルです。</block>
   <block id="30f60d67f457bb040dffde52197a54da" category="list-title">関連情報</block>
@@ -521,13 +505,6 @@
   <block id="9720aabb6c8d5eb9cfcffd189ef86ed1" category="list-text">100万レコードの輸出には約35分かかると予想されている。</block>
   <block id="e7b42111154b9b878df538017c7943a0" category="inline-link">組織に保存されているデータの調査</block>
   <block id="e771ad044e30754f4af0addbc217531d" category="paragraph">データ調査とレポートの詳細については、を参照してください<block ref="5490a248bca38f18b55b559976dbad47" category="inline-link-rx"></block>。</block>
-  <block id="850fbc77665f926253af01767262460f" category="inline-link-macro">System Managerを使用したCloud Volumes ONTAPの管理</block>
-  <block id="58250d8c5d6f1e1a4d093e353f99e712" category="paragraph"><block ref="e2de8aa0d2ccd88dfc6febee51855766" category="inline-link-macro-rx"></block>です。</block>
-  <block id="c89199b5a7b291ade2b859c6b2e0e726" category="list-text">Cloud Volumes ONTAPライセンス情報には、*ガバナンス&gt;デジタルウォレット&gt;概要/データサービスライセンス*タブから簡単にアクセスできます。</block>
-  <block id="e174e60d72b9816750ae5ea0588ea579" category="list-text">[Cloud Volume ONTAP ]パネルの*[Overview]*タブで*[View]*をクリックすると、容量ベースライセンスの全体像を確認できます。この詳細ビューには、ライセンスとサブスクリプションに関する詳細な情報が表示されます。</block>
-  <block id="210fb26ce941226a0e2a9726db671e8a" category="list-text">以前のインターフェイスを使用する場合は、*[Switch to legacy view]*ボタンをクリックして、ライセンスの詳細をタイプ別に表示したり、ライセンスの課金方法を変更したりできます。</block>
-  <block id="56a50532d8da2bebb09d6190c126140c" category="inline-link-macro">容量ベースのライセンスを管理します</block>
-  <block id="62c835233e6bcf50084b7f7f3bfe8ee0" category="paragraph"><block ref="5aa81dcb1871cc4d565005ce5abe331d" category="inline-link-macro-rx"></block>です。</block>
   <block id="403a870c3777a3434883cf3338197e1e" category="inline-link">Linuxホストの要件の表示</block>
   <block id="33437394afeba112bc78a89e1164345e" category="paragraph"><block ref="bddca2b75222059ea164cace70f493c0" category="inline-link-rx"></block>です。</block>
   <block id="2004b4ad1feb57e1e4505f5888cfbb60" category="paragraph"><block ref="2004b4ad1feb57e1e4505f5888cfbb60" category="inline-link-macro-rx"></block></block>
@@ -543,7 +520,6 @@
   <block id="3d725c77d5fb40a1e06f0ec1f3adb6bf" category="section-title">BlueXP  IDおよびアクセス管理</block>
   <block id="441419ddc3a341f3081b481a3084eef7" category="section-title">追加のBlueXP  サービスのサポートケースを作成</block>
   <block id="c33f35ab44944cc0d09e5bb702125592" category="section-title">2024年12月16日</block>
-  <block id="ab83866f9abfe93d14a14fa21b156b05" category="section-title">コネクタイメージを取得するための新しいセキュアエンドポイント</block>
   <block id="e5182edc3707e8e354c40ab7fa819f39" category="section-title">2024年10月7日</block>
   <block id="f4b2cfc6ddef927318d045f16b38d151" category="section-title">BlueXP  アラートリストページ</block>
   <block id="3108a0619eec0e2ef9c6c5bd796bbf0d" category="paragraph">容量が少ないかパフォーマンスが低いONTAPクラスタをすばやく特定し、可用性の範囲を測定して、セキュリティリスクを特定できます。容量、パフォーマンス、保護、可用性、セキュリティ、構成に関連するアラートを表示できます。</block>
@@ -593,12 +569,6 @@
   <block id="5ae300808387123005a76abbd5a99f46" category="section-title">バージョン1.38</block>
   <block id="074f06822cc9864b1be34066c52ec21d" category="paragraph">このBlueXP  分類リリースには、全般的な改善とバグ修正が含まれています。</block>
   <block id="e5450ac8535429efc574bc7d9388dd9a" category="paragraph">このBlueXP  分類リリースには、次の更新が含まれています。</block>
-  <block id="f196d25aadb7411a1f827c0ca0317cfb" category="section-title">BlueXP  からSystem Managerにアクセスするためのユーザ認証が有効</block>
-  <block id="7a44ab81762cf5f3e018d99190cfe8ac" category="paragraph">BlueXP  管理者は、BlueXP  からONTAP System ManagerにアクセスするONTAPユーザの認証をアクティブ化できるようになりました。このオプションを有効にするには、BlueXP  Connectorの設定を編集します。このオプションは、標準モードとプライベートモードで使用できます。</block>
-  <block id="0f52c9a8aa841036bf7aaae893336a9b" category="section-title">BlueXP  アドバンストビューの名前をSystem Managerに変更</block>
-  <block id="d34aa8cf529fee89c49e6c7c38dbf1e7" category="paragraph">BlueXP  からONTAPシステムマネージャを使用してCloud Volumes ONTAPを高度に管理するオプションの名前が*アドバンストビュー*から*システムマネージャ*に変更されました。</block>
-  <block id="75b76b021da36b8e8bf9678596449aa4" category="section-title">BlueXP  デジタルウォレットでライセンス管理を簡易化</block>
-  <block id="5fbce01b2fa5bcad467f74186949bef5" category="paragraph">BlueXP  デジタルウォレット内の改善されたナビゲーションポイントを使用して、Cloud Volumes ONTAPライセンスの管理を簡易化できるようになりました。</block>
   <block id="a633f0835832cc75f5a83248a8aa2ba8" category="section-title">2020年9月9日</block>
   <block id="8751230100c974b7c3ae5adae22c0f7c" category="section-title">Cloud Volumes Service for Google Cloud のサポート</block>
   <block id="7ee45649520b61796809750e472a8000" category="section-title">2020年12月7日</block>
@@ -805,7 +775,25 @@
   <block id="fd8693cf8f6802fd1c7d50d5742a4c71" category="section-title">TrackerのCloudShellイベント</block>
   <block id="de57e19ed3d5b873e357689269de25a1" category="paragraph">CloudShellを使用してBlueXP  ワークロードからFSx for ONTAPの処理を実行すると、イベントがトラッカーに表示されます。</block>
   <block id="4fbdcdf3c2d8694d5e358b3175b867da" category="section-title">2025 年 3 月 3 日</block>
-  <block id="62c9277e75aee50ddfb792de79bd94d3" category="section-title">ニュージーランド北部リージョンがAzureでサポートされるようになりました</block>
   <block id="81ae8423a213b8c9bbcb79aee6ae0af8" category="paragraph">ニュージーランド北部リージョンは、Cloud Volumes ONTAP 9.12.1 GA以降のシングルノードおよびハイアベイラビリティ（HA）構成でAzureでサポートされるようになりました。このリージョンでは、Lsv3インスタンスタイプはサポートされていないことに注意してください。</block>
   <block id="b717ddfb2f9a28b7e4673751144693cc" category="paragraph">サポートされているすべてのリージョンのリストについては、を参照して<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>ください。</block>
+  <block id="278edfabbac204688aa13f79c6f52497" category="section-title">2025年3月6日</block>
+  <block id="66a5f69d070814deb69bf917dd07a6af" category="section-title">コネクタ3.9.49アップデート</block>
+  <block id="00d64ff7da906ec5530c4e990fb334cb" category="section-title">BlueXP  テコネクタヲシヨウスルシヨウコウノONTAP System Managerヘノアクセス</block>
+  <block id="b539e86fbaa7eae465366a0142624ec2" category="paragraph">BlueXP  管理者（Organization adminロールを持つユーザ）は、ONTAPシステムマネージャにアクセスするためにONTAPクレデンシャルの入力を求めるようにBlueXP  を設定できます。この設定を有効にすると、BlueXP  に保存されないため、ユーザは毎回ONTAPクレデンシャルを入力する必要があります。</block>
+  <block id="990a2328425e217648ea5dd2ae370ffb" category="inline-link-macro">クレデンシャルを設定する方法について説明します。</block>
+  <block id="65ac46c0fd2260c1febd841aed98d599" category="paragraph">この機能は、コネクタバージョン3.9.49以降で使用できます。<block ref="3a5e8b35a098e08d607fb27978dec106" category="inline-link-macro-rx"></block>です。</block>
+  <block id="a03c6dfbb1d64911f1090d54175ff8d3" category="section-title">コネクタ3.9.48アップデート</block>
+  <block id="1697b2b05dc5c7ad63e22e713e94ba7c" category="section-title">コネクタの自動アップグレード設定を無効にする機能</block>
+  <block id="91f4c340492e583f80db57f970516c1f" category="paragraph">コネクタの自動アップグレード機能を無効にすることができます。</block>
+  <block id="459e65cb3fcf9e226149b023791951b2" category="paragraph">BlueXP  を標準モードまたは制限モードで使用すると、コネクタにソフトウェアの更新を取得するためのアウトバウンドインターネットアクセスがある限り、BlueXP  はコネクタを自動的に最新リリースにアップグレードします。コネクタのアップグレード時に手動で管理する必要がある場合は、標準モードまたは制限モードの自動アップグレードを無効にできるようになりました。</block>
+  <block id="01d6125faf020265bf432216c335698c" category="admonition">この変更は、コネクタを常に自分でアップグレードする必要があるBlueXP  プライベートモードには影響しません。</block>
+  <block id="0e9ee8d377b683ca8ac77de05c3539d9" category="paragraph">この機能は、コネクタバージョン3.9.48以降で使用できます。</block>
+  <block id="355c51d49cd780f57fe417fdede5f61c" category="inline-link-macro">コネクタの自動アップグレードを無効にする方法について説明します。</block>
+  <block id="530a13d3dc2fccc16ebe8e25a47286a1" category="paragraph"><block ref="530a13d3dc2fccc16ebe8e25a47286a1" category="inline-link-macro-rx"></block></block>
+  <block id="4bbf2de0e52eb20a42e04cf23bdb1683" category="list-text">BlueXP  ユーザへの複数のロールの割り当てがサポートされます。</block>
+  <block id="0608305ed5721ad4a69c3643b176e371" category="list-text">BlueXP  組織（Org/フォルダ/プロジェクト）の複数のリソースへの役割の割り当てのサポート</block>
+  <block id="5781bb449b503c5fcaefb20bfaa81cc4" category="section-title">Cloud Volumes ONTAP 9.16.1 GA</block>
+  <block id="efa5e5522cbd4457ef4e551fb5d60491" category="paragraph">BlueXP  を使用して、AzureとGoogle CloudでCloud Volumes ONTAP 9.16.1 General Availabilityリリースを導入、管理できるようになりました。ただし、このバージョンは、AWSでの導入およびアップグレードには使用できません。</block>
+  <block id="e622e2ddfce6c06eca3078953e9e6186" category="section-title">Azureでのニュージーランド北部リージョンのサポート</block>
 </blocks>
