@@ -81,15 +81,6 @@
   <block id="0a6c67d82675687d876fd5170168f147" category="paragraph">新しいBlueXPの運用耐障害性サービスとIT運用リスクの自動修復サービスを使用すると、システム停止や障害が発生する前に推奨される修正策を実装できます。</block>
   <block id="070849913b65c4cb130cf632f0ac2008" category="inline-link-macro">BlueXPの運用耐障害性の詳細については、こちらをご覧ください</block>
   <block id="6bea546ba36c0c8c8bed5d22ed6af63d" category="paragraph"><block ref="d51dda3e944cc19bf96c07e1874304d0" category="inline-link-macro-rx"></block>。</block>
-  <block id="71bff2737bdd059023a4784358e71a64" category="section-title">2023年5月7日</block>
-  <block id="060a6559f6065c5058aca6b22d897bce" category="section-title">Google Cloudプライベートオファー</block>
-  <block id="bfe876190faa5e7a4cd6d5029395b658" category="paragraph">BlueXPのデジタルウォレットに、プライベートオファーに関連付けられているGoogle Cloud Marketplaceサブスクリプションが表示され、サブスクリプションの終了日と期間が表示されるようになりました。この機能強化により、プライベートオファーが正常に受け入れられたことを確認し、その条件を検証できます。</block>
-  <block id="2cd5985150a2728c0c6295c5162b2b1d" category="section-title">充電使用量の内訳</block>
-  <block id="d0f5a029263e80e902caf444fa5e9080" category="paragraph">容量ベースのライセンスにサブスクライブしたときに課金される料金を確認できるようになりました。次のタイプの使用状況レポートは、BlueXPデジタルウォレットからダウンロードできます。使用状況レポートには、サブスクリプションの容量の詳細と、Cloud Volumes ONTAP サブスクリプションのリソースに対する課金状況が表示されます。ダウンロード可能なレポートは、他のユーザーと簡単に共有できます。</block>
-  <block id="ed54fb55b53f11e61f612ff99520f4bc" category="list-text">Cloud Volumes ONTAP パッケージの使用状況</block>
-  <block id="160ba974abba347f5e939a1a0acd5982" category="list-text">使用状況の概要</block>
-  <block id="bf951096cc9eea5fae867ec94f06dfa3" category="list-text">Storage VMの使用状況</block>
-  <block id="3c5979c173a0a4fe3ff27e0e6185a693" category="list-text">ボリュームの使用状況</block>
   <block id="6e3d9df489c437a2601f627a5b8935c9" category="paragraph">BlueXP階層化インターフェイスから[ライセンス]タブが削除されました。従量課金制（PAYGO）サブスクリプションのすべてのライセンスに、BlueXP階層化オンプレミスダッシュボードからアクセスできるようになりました。また、このページからBlueXPのデジタルウォレットへのリンクもあり、BlueXP階層化サービスのお客様所有のライセンスの使用（BYOL）を表示および管理できます。</block>
   <block id="f6e3b39522072e9cb3b0ffb8cecf9b0b" category="paragraph">[Clusters Dashboard]タブの名前が[Clusters]に変更され、[On-Prem Overview]タブの名前が[On-Premises Dashboard]に変更されました。これらのページには、階層化構成を追加してストレージスペースを最適化できるかどうかを評価するための情報が追加されています。</block>
   <block id="b2bc6f51638406715d089920f0b12029" category="paragraph"><block ref="b2bc6f51638406715d089920f0b12029" category="inline-link-rx"></block></block>
@@ -793,4 +784,13 @@
   <block id="5291909ce92037a20a37f7a0c86dd921" category="paragraph">ストレージ環境の検出から、ストレージ内のファイルシステムや 生成AIワークロードのナレッジベースなどのAWSリソースの導入まで、BlueXP  ワークロードファクトリでさまざまな処理を実行するために使用される権限を確認できるようになりました。ストレージ、データベース、VMware、生成AIの各ワークロードのIAMポリシーと権限を表示できます。</block>
   <block id="f157db6a1ae10e7a29a28440d21f5cb8" category="paragraph"><block ref="f157db6a1ae10e7a29a28440d21f5cb8" category="inline-link-macro-rx"></block></block>
   <block id="bd901b05034bb9be1d918012998e8f7b" category="section-title">2025年1月5日</block>
+  <block id="3aff149422876e5f443408fd802b4fb2" category="paragraph">BlueXP  デジタルウォレットは使いやすさを考慮して再設計され、追加のサブスクリプションとライセンス管理が可能になりました。</block>
+  <block id="abbf3397e656c62394e67cdc1337be3c" category="section-title">新しい概要ダッシュボード</block>
+  <block id="890f7a0157ba95ff799f6f457d82439a" category="paragraph">デジタルウォレットのホームページには、NetAppライセンスとMarketplaceサブスクリプションの更新されたダッシュボードがあり、特定のサービス、ライセンスタイプ、必要なアクションをドリルダウンできます。</block>
+  <block id="f0d1256b3b97280543cbb16be1fea4b3" category="section-title">クレデンシャルへのサブスクリプションの設定</block>
+  <block id="a2aa4487721a3b63f1893d33bdb67c28" category="paragraph">BlueXP  デジタルウォレットで、プロバイダーの資格情報へのサブスクリプションを構成できるようになりました。通常は、Marketplaceのサブスクリプションまたは年間契約を最初にサブスクライブするときに実行します。以前は、サブスクリプションのクレデンシャルを変更するには、[Credentials]ページを使用する必要がありました。</block>
+  <block id="175fca0ca5f306258c490378dc2367db" category="section-title">サブスクリプションと組織の関連付け</block>
+  <block id="a5f7678a307b711643d239d80564147c" category="paragraph">サブスクリプションが関連付けられている組織をデジタルウォレットから直接更新できるようになりました。</block>
+  <block id="e8545e234450bbc06ae95bfd7828cfcd" category="section-title">Cloud Volume ONTAPライセンスの管理</block>
+  <block id="78ab02ef4a4fa36c21e9d7181ab77517" category="paragraph">ホームページまたは*データサービスライセンス*タブでCloud Volumes ONTAPライセンスを管理できるようになりました。[Marketplace subscriptions]タブを使用して、サブスクリプション情報を表示します。</block>
 </blocks>
