@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, licenses, digital wallet, subscriptions, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, ontap clusters, alerts, identity and access management, iam' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features,cloud manager, bluexp, cloud volumes ontap, licenses, digital wallet, subscriptions, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, ontap clusters, alerts, identity and access management, iam' 
 summary: BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します 
 ---
 = BlueXPの最近の変更点
@@ -21,6 +21,24 @@ BlueXPプラットフォームの一部である クラウド サービス の�
 == 管理機能
 
 このセクションでは、BlueXPの管理機能に関連する新機能(アカウント、コネクタ、クラウドプロバイダの資格情報など)について説明します。
+
+
+
+=== 2025年3月10日
+
+
+
+==== 23b3b711859803a815b81aca1cc4811c
+
+今回のリリースのBlueXP Connectorには、セキュリティが若干改善され、バグが修正されています。
+
+現時点では、3.9.50リリースは標準モードと制限モードで使用できます。
+
+
+
+==== BlueXP  でNetApp Keystoneベータ版を利用可能
+
+NetApp Keystoneは近日中にBlueXP  から利用可能になり、ベータ版として提供されます。NetApp Keystoneベータ版のサインアップページには、BlueXP  の左側のナビゲーションバーからアクセスできます。
 
 
 
@@ -591,6 +609,34 @@ Data Investigationレポートからのデータのエクスポートには、�
 
 
 
+=== 0de5f5ade75808b90faefd69873b4b3c
+
+
+
+==== a2fefc65df2136938b995f8abbe643c2
+
+0cc914ed23f0f7d6bc902ae731843213
+
+* 2e168141b8f719cbd37e6beec663b599
+* 7a6df46ff8e25ac610f60f312512afa4
+
+
+91aba3afcaafb3ecbed8f358c30b8a7a
+
+
+
+=== 2025年3月10日
+
+
+
+==== 322a339b221056f32120ffd18077d44d
+
+aa1c2167957b1092da7e43e77867748c
+
+5fc68a139fdd05790792b12eb853e84d
+
+
+
 === 2025年3月6日
 
 
@@ -600,32 +646,6 @@ Data Investigationレポートからのデータのエクスポートには、�
 BlueXP  を使用して、AzureとGoogle CloudでCloud Volumes ONTAP 9.16.1 General Availabilityリリースを導入、管理できるようになりました。ただし、このバージョンは、AWSでの導入およびアップグレードには使用できません。
 
 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
-
-
-
-=== 2025 年 3 月 3 日
-
-
-
-==== Azureでのニュージーランド北部リージョンのサポート
-
-ニュージーランド北部リージョンは、Cloud Volumes ONTAP 9.12.1 GA以降のシングルノードおよびハイアベイラビリティ（HA）構成でAzureでサポートされるようになりました。このリージョンでは、Lsv3インスタンスタイプはサポートされていないことに注意してください。
-
-サポートされているすべてのリージョンのリストについては、を参照して https://bluexp.netapp.com/cloud-volumes-global-regions["Azureのグローバルリージョンマップ"^]ください。
-
-
-
-=== 2025年2月18日
-
-
-
-==== Azure Marketplaceの導入：直接導入
-
-Azure Marketplaceの直接導入を利用して、Cloud Volumes ONTAPをAzure Marketplaceから簡単かつ迅速に直接導入できるようになりました。この合理的な方法を使用すると、BlueXP  Connectorをセットアップしたり、BlueXP  を使用したCloud Volumes ONTAPの導入に必要なその他のオンボーディング基準を満たしたりすることなく、環境内のCloud Volumes ONTAPのコア機能を確認できます。
-
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-azure-mktplace-direct.html["AzureでのCloud Volumes ONTAP導入オプションの詳細"^]
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploy-cvo-azure-mktplc.html["Azure MarketplaceからCloud Volumes ONTAPを導入"^]
-
 
 
 
@@ -750,6 +770,22 @@ NetApp SupportEdge Basicサービスには、SupportEdge AdvisorおよびSupport
 
 
 == デジタルウォレット
+
+
+
+=== 2025年3月10日
+
+
+
+==== サブスクリプションを削除する機能
+
+サブスクリプションを解除した場合は、デジタルウォレットからサブスクリプションを削除できるようになりました。
+
+
+
+==== Marketplaceサブスクリプションの消費容量を表示
+
+PAYGOサブスクリプションを表示するときに、サブスクリプションの消費容量を表示できるようになりました。
 
 
 
@@ -1108,6 +1144,40 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 
+=== 2025年3月10日
+
+
+
+==== ad84f24c65dd6930a049e0903256dc97
+
+6cadf1d9d5289622136d042488809e73
+
+9b1eb2dbe181e9f7b73db8a0785c0419
+
+
+
+==== d36ca1f9466b055dd6adb80de5cce7d4
+
+61541c0b99aec5f11fccef5bcb3fe5a1
+
+* cb3c0a83218c46d38ab0842ce49a7e6e
+* 6a4c9cc76f7f432efa274c3ff0dae3dd
+* 3b7810e8427f006590b006af43d016ef
+* 28573ff4f820730a3eeae9cdd51b54d4
+
+
+98e6e30b63e5242616c686684a17c03b
+
+
+
+==== d957d0c80017f235b131c557ae0876b1
+
+8c8c1a747835015c86248b11a2097c02
+
+詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["検出されたランサムウェアに関するアラートに対応"]。
+
+
+
 === 2024年12月16日
 
 
@@ -1174,18 +1244,6 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[
 アプリケーションワークロードをファイルレベルでリストアする前に、攻撃の影響を受けた可能性があるファイルのリストを表示し、リストアするファイルを特定できるようになりました。以前は、組織（以前はアカウント）のBlueXP  コネクタがPodmanを使用していた場合、この機能は無効になっていました。これでPodmanで有効になりました。BlueXPランサムウェア対策でリストアするファイルを選択したり、アラートの影響を受けたすべてのファイルを記載したCSVファイルをアップロードしたり、リストアするファイルを手動で特定したりできます。
 
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["ランサムウェア攻撃からのリカバリの詳細"]です。
-
-
-
-=== 2024年9月30日
-
-
-
-==== ファイル共有ワークロードのカスタムグループ化
-
-このリリースでは、ファイル共有をグループにグループ化して、データ資産を簡単に保護できるようになりました。グループ内のすべてのボリュームを同時に保護できます。以前は、各ボリュームを個別に保護する必要がありました。
-
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["ランサムウェア対策戦略におけるファイル共有ワークロードのグループ化の詳細"]です。
 
 
 
