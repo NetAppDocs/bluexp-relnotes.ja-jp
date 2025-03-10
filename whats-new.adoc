@@ -24,6 +24,38 @@ BlueXPプラットフォームの一部である クラウド サービス の�
 
 
 
+=== 2025年3月28日
+
+
+
+==== プライベートモードリリース（3.9.50）
+
+新しいプライベートモードリリースをからダウンロードできるようになりました。 https://mysupport.netapp.com/site/downloads["NetAppサポートサイト"^]
+
+3.9.50リリースでは、BlueXP  の次のコンポーネントとサービスが更新されています。
+
+[cols="3*"]
+|===
+| コンポーネントまたはサービス | このリリースに含まれるバージョン | 前回のプライベートモードリリースからの変更点 
+
+
+| コネクタ | 3.9.50、3.9.49 | を参照 https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-50["BlueXP  Connectorページの新機能"]し、バージョン3.9.50および3.9.49に含まれている変更を参照してください。 
+
+
+| バックアップとリカバリ | 2025年3月17日 | に移動し https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP  バックアップ/リカバリページの新機能"^]、2024年3月リリースに含まれる変更点を参照してください。 
+
+
+| 分類 | 2025年3月10日（バージョン1.41） | にアクセス https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXP  分類ページの新機能"^]し、1.38リリースから1.371.41リリースに含まれる変更点を参照してください。 
+|===
+アップグレード方法を含むプライベートモードの詳細については、次を参照してください。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["プライベートモードの詳細"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["BlueXPのプライベートモードでの利用を開始する方法"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["プライベートモードの使用時にコネクタをアップグレードする方法について説明します。"]
+
+
+
+
 === 2025年3月10日
 
 
@@ -506,7 +538,7 @@ BlueXP  分類では、ボリューム上の_initial_mappingスキャンと分�
 
 優先度は1回だけ付与されます。マッピングデータの自動再スキャンは、デフォルトの順序で実行されます。
 
-優先順位付けはに限定されlink:concept-cloud-compliance.md#whats-the-difference-between-mapping-and-classification-scans["マッピングのみのスキャン"]、マップスキャンおよび分類スキャンでは使用できません。
+優先順位付けはに限定されlink:concept-cloud-compliance.html["マッピングのみのスキャン"]、マップスキャンおよび分類スキャンでは使用できません。
 
 優先度を変更するには：
 
@@ -575,6 +607,18 @@ Data Investigationレポートからのデータのエクスポートには、�
 
 
 
+=== 2025年3月28日
+
+
+
+==== Cloud Volumes ONTAP 9.14.1でイネーブルになっているプライベートモード展開
+
+Cloud Volumes ONTAP 9.14.1をプライベートモードでAWS、Azure、Google Cloudに導入できるようになりました。プライベートモードは、Cloud Volumes ONTAP 9.14.1のシングルノード環境とハイアベイラビリティ（HA）環境の両方で有効になります。
+
+プライベートモード配置の詳細については、を参照してくださいhttps://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#restricted-mode["BlueXPの導入モードについて説明します"^]。
+
+
+
 === 2025年3月12日
 
 
@@ -599,19 +643,7 @@ Azure for Cloud Volumes ONTAP 9.12.1 GA以降では、次のリージョンでHA
 
 BlueXP  APIを使用して、AzureでCloud Volumes ONTAP用に追加データを提供するStorage VMを作成、名前変更、削除できるようになりました。Storage VMを管理目的で使用する必要がある場合は、APIを使用すると、必要なネットワークインターフェイス、LIF、管理LIFの設定など、Storage VMの作成プロセスが自動化されます。
 
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-azure.html["Azure で Cloud Volumes ONTAP 用のデータ提供用 Storage VM を作成します"^]
-
-
-
-=== 2025年3月6日
-
-
-
-==== Cloud Volumes ONTAP 9.16.1 GA
-
-BlueXP  を使用して、AzureとGoogle CloudでCloud Volumes ONTAP 9.16.1 General Availabilityリリースを導入、管理できるようになりました。ただし、このバージョンは、AWSでの導入およびアップグレードには使用できません。
-
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-azure.html["AzureのCloud Volumes ONTAP用のデータ提供用Storage VMを管理します。"^]
 
 
 
@@ -637,31 +669,7 @@ Cloud Volumes Service for Google CloudをBlueXPから直接管理できるよう
 
 == クラウド運用
 
-
-
-=== 2020年12月7日
-
-
-
-==== Cloud Manager と Spot の間のナビゲーション
-
-Cloud Manager と Spot の間の移動が簡単になりました。
-
-Spot の新しい「 * ストレージ運用 * 」セクションでは、 Cloud Manager に直接移動できます。作業が完了したら、 Cloud Manager の * Compute * タブから Spot に戻ることができます。
-
-
-
-=== 2020年10月18日
-
-
-
-==== コンピューティングサービスの概要
-
-を活用して https://spot.io/products/cloud-analyzer/["Spot の Cloud Analyzer の略"^]Cloud Manager では、クラウドコンピューティング関連のコストを高水準で分析し、コスト削減の可能性を特定できるようになりました。この情報は、 Cloud Manager の * Compute * サービスから入手できます。
-
-https://docs.netapp.com/us-en/bluexp-cloud-ops/concept-compute.html["コンピューティングサービスの詳細については、こちらをご覧ください"]。
-
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/screenshot_compute_dashboard.gif["Cloud Manager のコスト分析ページを示すスクリーンショット。"]
+<stdin>の未解決のディレクティブ- Include :: https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/whats-new.adoc[tag=whats-new,leveloffset=+1]
 
 
 
@@ -705,6 +713,18 @@ BlueXPのコピーおよび同期サービスとデータブローカーを更�
 
 
 
+=== 2025年3月5日
+
+
+
+==== Upgrade Advisor を使用します
+
+* Disk Qualification Package（DQP）を使用して、事前に定義された健常性とパフォーマンスの条件に従って、ディスクコントローラとストレージデバイスファームウェアを自動的に更新できるようになりました。これにより、潜在的な障害が減少し、システム全体の信頼性が向上します。
+* システムと最新のタイムゾーン定義の整合性を自動的に維持するために、タイムゾーンデータベース（DB）が導入されました。これにより、タイムゾーンルールが変更された場合でも、時間依存の操作がスムーズに継続されます。
+
+
+
+
 === 2024年12月12日
 
 
@@ -722,16 +742,6 @@ BlueXPのコピーおよび同期サービスとデータブローカーを更�
 ==== AutoSupportウィジェット
 
 AutoSupportウィジェットがダッシュボードのメイン画面に追加され、AutoSupportのステータス関連の問題についてお客様に通知されるようになりました。
-
-
-
-=== 2024年9月23日
-
-
-
-==== サポートサービス
-
-NetApp SupportEdge Basicサービスには、SupportEdge AdvisorおよびSupportEdge Expertで使用できるすべてのデジタルアドバイザ機能が含まれるようになりました。ただし、フルスタックトポロジ（VMware）は、有効にしてもVMwareのフルスタック監視を可視化できません。
 
 
 
@@ -1131,7 +1141,7 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 * これらの検出プロセスは、最初の検出プロセス中に実行することも、設定オプション内で実行することもできます。
 
 
-詳細については、およびを https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["[Settings]オプションを使用してフェターを設定します。"]参照して https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["以前に選択した作業環境用に新しく作成されたワークロードを検出する"]ください。
+詳細については、およびを https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["設定オプションを使用した機能の設定"]参照して https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["以前に選択した作業環境用に新しく作成されたワークロードを検出する"]ください。
 
 
 
@@ -1388,6 +1398,26 @@ link:https://docs.netapp.com/us-en/bluexp-volume-caching/get-started/cache-intro
 
 
 
+=== 2025年3月30日
+
+
+
+==== ONTAP CLIコマンドについて、AIによって生成されたエラー応答がCloudShellで報告される
+
+CloudShellを使用している場合、ONTAP CLIコマンドを発行してエラーが発生するたびに、失敗の説明、失敗の原因、詳細な解決策を含むAI生成のエラー応答を取得できます。
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/use-cloudshell.html["CloudShellを使用"]
+
+
+
+==== IAM：SimulatePermissionPolicy権限の更新
+
+AWSアカウントのクレデンシャルを追加したり、生成AIワークロードなどの新しいワークロード機能を追加したりするときに、ワークロードファクトリコンソールから権限を管理できるようになりまし `iam:SimulatePrincipalPolicy`た。
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html#change-log["アクセス権参照変更ログ"]
+
+
+
 === 2025年2月2日
 
 
@@ -1417,15 +1447,3 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.ht
 ストレージ環境の検出から、ストレージ内のファイルシステムや 生成AIワークロードのナレッジベースなどのAWSリソースの導入まで、BlueXP  ワークロードファクトリでさまざまな処理を実行するために使用される権限を確認できるようになりました。ストレージ、データベース、VMware、生成AIの各ワークロードのIAMポリシーと権限を表示できます。
 
 link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["BlueXP  ワークロードの工場出荷時の権限"]
-
-
-
-=== 2025年1月5日
-
-
-
-==== BlueXP  Workload Factoryでのサービスアカウントのサポート
-
-BlueXP  ワークロードファクトリでサービスアカウントがサポートされるようになりました。サービスアカウントを作成して、インフラの運用を自動化するマシンユーザとして機能させることができます。
-
-link:https://docs.netapp.com/us-en/workload-setup-admin/manage-service-accounts.html["サービスアカウントを作成および管理します"]
