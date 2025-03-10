@@ -1148,31 +1148,31 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 
-==== ad84f24c65dd6930a049e0903256dc97
+==== 攻撃のシミュレーションと対応
 
-6cadf1d9d5289622136d042488809e73
+このリリースでは、ランサムウェア攻撃をシミュレートして、ランサムウェアアラートへの対応をテストします。アラート通知、対応、リカバリの各プロセスをテストすることで、ランサムウェア攻撃が実際に発生した場合に備えておくことができます。
 
-9b1eb2dbe181e9f7b73db8a0785c0419
-
-
-
-==== d36ca1f9466b055dd6adb80de5cce7d4
-
-61541c0b99aec5f11fccef5bcb3fe5a1
-
-* cb3c0a83218c46d38ab0842ce49a7e6e
-* 6a4c9cc76f7f432efa274c3ff0dae3dd
-* 3b7810e8427f006590b006af43d016ef
-* 28573ff4f820730a3eeae9cdd51b54d4
-
-
-98e6e30b63e5242616c686684a17c03b
+詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["ランサムウェア攻撃への備えの訓練を実施"]。
 
 
 
-==== d957d0c80017f235b131c557ae0876b1
+==== 検出プロセスの機能拡張
 
-8c8c1a747835015c86248b11a2097c02
+このリリースでは、選択的な検出プロセスと再検出プロセスが強化されています。
+
+* このリリースでは、以前に選択した作業環境に追加された新たに作成されたワークロードを検出できます。
+* このリリースでは、_new_working environmentsを選択することもできます。この機能は、環境に追加される新しいワークロードを保護するのに役立ちます。
+* 検出されたすべてのワークロードを選択する場合は、*[すべて選択]*オプションを使用して選択できます。
+* これらの検出プロセスは、最初の検出プロセス中に実行することも、設定オプション内で実行することもできます。
+
+
+詳細については、およびを https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["[Settings]オプションを使用してフェターを設定します。"]参照して https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["以前に選択した作業環境用に新しく作成されたワークロードを検出する"]ください。
+
+
+
+==== 高い暗号化が検出されたときに生成されるアラート
+
+このリリースでは、高いファイル拡張子が変更されていなくても、ワークロードで高い暗号化が検出されたときにアラートを表示できます。ONTAP Autonomous Ransomware Protection（ARP）AIを使用するこの機能は、ランサムウェア攻撃のリスクがあるワークロードを特定するのに役立ちます。この機能を使用して、影響を受けるファイルのリスト全体をダウンロードし、拡張子を変更するかどうかを指定します。
 
 詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["検出されたランサムウェアに関するアラートに対応"]。
 
