@@ -313,11 +313,9 @@
   <block id="7aea075f0d949c2526cea755a2dee13f" category="paragraph">これまでは、アセットの評価を受けて、テクノロジの更新が推奨されるかどうかを判断することしかできませんでした。</block>
   <block id="8006e6282233bdaa99ca3e9db65fc693" category="paragraph">この機能は、左側のナビゲーションの機器更改（Tech Refresh）オプションに含まれるようになりました。</block>
   <block id="33a9c4b5f0c522c38ff9b1b46ebd1498" category="inline-link-macro">テクノロジの更新を評価する</block>
-  <block id="17c54e9ba828968f120b82b8cd07abfa" category="inline-link">オブジェクトへのバックアップポリシーの設定</block>
   <block id="4df3ea515a84d83efad2c0e3bc03c438" category="paragraph">2024年4月22日にBlueXP修正サービスが削除されました。</block>
   <block id="14b1c6bd63866971a4cd695c3c2a3d80" category="paragraph">テンプレートからボリュームを作成することはできなくなりました。この操作はBlueXP修正サービスに関連付けられていましたが、このサービスは廃止されました。</block>
   <block id="0a9bbb6e81dd21b77886235f2ce33af9" category="paragraph">BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します完全なリリース履歴については、 <block ref="1e9f4589e5d2713376df79f13fc9ba0a" category="inline-link-macro-rx"></block> 個々のサービスごと。</block>
-  <block id="5462103113dfca7582cf43f266db09a2" category="inline-link">ホストの要件</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新機能</block>
   <block id="f5f7a4d1535be1d0940e398b2997dfc0" category="sidebar">サービス別リリースノート</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">ブログとコミュニティ</block>
@@ -335,15 +333,6 @@
   <block id="ab132121a366abdd7667443cc98f3a69" category="paragraph">を参照してください<block ref="1cbf59ee3e77dd0082612a21b0900f81" category="inline-link-rx"></block>。</block>
   <block id="f013b90a0fd96db59795b7cb0b9d2d1b" category="inline-link">ランサムウェア攻撃からのリカバリの詳細</block>
   <block id="48e006c40a370e7b0dcc3f4f1e42eda7" category="paragraph"><block ref="17c138513bf5a78d755bed4038999b20" category="inline-link-rx"></block>です。</block>
-  <block id="a429eb8c690c0a48131f4ae1267eafd1" category="paragraph">このリリースでは、ONTAPで作成した1GB未満のボリュームをリストアできるようになりました。ONTAPを使用して作成できる最小ボリュームサイズは20MBです。</block>
-  <block id="f959c5a51fb8f2a9e9c0063bbb8adb63" category="paragraph">DataLock機能は、指定された期間、バックアップファイルが変更または削除されないように保護します。これは、ランサムウェア攻撃からファイルを保護するのに役立ちます。</block>
-  <block id="bebfb016f9defe9a78fff65f418f213b" category="paragraph">Amazon Web Services（AWS）Identity and Access Management（IAM）Roles Anywhereサービスを使用すると、workloads_on_awsにIAMロールを使用してAWS APIに安全にアクセスできるようになります。これは、workloads_on_awsにIAMロールを使用する場合と同じ方法です。IAM Roles Anywhereの秘密鍵インフラストラクチャとAWSトークンを使用する場合、長期的なAWSアクセスキーとシークレットキーは必要ありません。これにより、クレデンシャルをより頻繁にローテーションすることができ、セキュリティが向上します。</block>
-  <block id="24c6cf6b2747b390a5d9eb672e1d54d4" category="paragraph">このリリースでは、AWS IAM Roles Anywhereサービスのサポートがテクノロジプレビューになります。</block>
-  <block id="ddc7fe4301c8a4aa6a14e1843c25f30b" category="inline-link">BlueXPのバックアップとリカバリ：2024年7月リリースブログ</block>
-  <block id="f1db3a8ee789ee9607754f5f8a9871b1" category="paragraph">を参照してください<block ref="7de2d0863d92330816fac8b7768edb68" category="inline-link-rx"></block>。</block>
-  <block id="cd4619af82dfe7627dc934e29e85a6e9" category="paragraph">このリリースでは、FlexGroupフォルダのリストアがテクノロジプレビューとしてサポートされます。</block>
-  <block id="abbf2484b45da9fd7be677fe96c511eb" category="inline-link-macro">参照と復元を使用したフォルダとファイルの復元</block>
-  <block id="707304f314bfa71975e8ffb352535092" category="paragraph">手動で有効にする方法については、を参照してください<block ref="7de2d0863d92330816fac8b7768edb68" category="inline-link-rx"></block>。</block>
   <block id="7043d4fb27c94bc9a206c106cef9d80c" category="paragraph">その方法は次のとおりです。</block>
   <block id="eff6d6d4d66ab65f33be5de8b62e16d3" category="list-text">トップメニューから*レプリケーションプラン*を選択します。</block>
   <block id="2ae04d8f24d0c8f552b0d3857c0953b3" category="list-text">計画を選択し、[Actions]アイコンを選択してドロップダウンメニューを表示します。</block>
@@ -363,8 +352,6 @@
   <block id="8e28797de414b72e6beab6ed5932133f" category="inline-link-macro">BlueXP  ソフトウェアアップデート</block>
   <block id="d519fe60b31330425fdb5e1c21309f78" category="list-text">テクノロジの更新</block>
   <block id="dbaae314ffc8b46919877d02b85696cb" category="list-text">容量の追加</block>
-  <block id="f5d370ee9e029c4d62db915f308e04c0" category="paragraph">BlueXP  Connectorバージョン3.9.40では、に記載されているオペレーティングシステムに加えて、コネクタソフトウェアをRHEL 8または9ホストに手動でインストールする場合、Red Hat Enterprise Linuxバージョン8および9の特定のバージョンがサポートされ<block ref="9b2a96babeed2ab711a4327ec7f34b5c" category="inline-link-rx"></block>ます。これらの新しいバージョンのRHELでは、DockerエンジンではなくPodmanエンジンが必要です。これまで、BlueXP  のバックアップとリカバリには、Podmanエンジンを使用する場合に2つの制限がありました。これらの制限は削除されました。</block>
-  <block id="6111aa812639d5e432842ceca200ea78" category="inline-link">バックアップファイルからのONTAPデータのリストアの詳細</block>
   <block id="0eb65976c0b0c5ffa90b07d4a062e509" category="paragraph">iSCSIプロトコルとFCプロトコルの両方に関するその他の考慮事項を次に示します。</block>
   <block id="d671bd2f503deef1e03581ce8d516507" category="list-text">FCは、レプリケーションではなく、クライアントフロントエンドプロトコルをサポートします。</block>
   <block id="cf1967c6d778937fae37b9e43582b1b6" category="list-text">BlueXP  ディザスタリカバリでは、各ONTAPでサポートされるLUNは1つだけです。ボリュームに複数のLUNを含めることはできません。</block>
@@ -376,9 +363,6 @@
   <block id="4f721f83f0a49dae4f329f77ae2221d5" category="list-text"><block ref="4f721f83f0a49dae4f329f77ae2221d5" category="inline-link-rx"></block></block>
   <block id="d0f2765e5de3103a5c432ec160dff29f" category="inline-link">BlueXP  アラートの詳細</block>
   <block id="52db2fc7f4de1af0e1245bc3f891ce57" category="paragraph"><block ref="094e829cc75a913d98050fa15a3d0c12" category="inline-link-rx"></block>です。</block>
-  <block id="84142ff06d4e9d4646fc2a3b18cc1d91" category="paragraph"><block ref="a21af64035213e0424a2bf24b7431646" category="inline-link-rx"></block>です。</block>
-  <block id="2f080abae9949a746e32fbd78d3382f7" category="paragraph">DataLockの詳細および関連コストを軽減する方法のヒントについては、を参照してください<block ref="116b2987b0e6fcf4c15ff7c1a1a47ed3" category="inline-link-rx"></block>。</block>
-  <block id="b1b12c3c76c5dc414df3c68e8a811c2a" category="paragraph">詳細については、を参照してください<block ref="ef40acf6b73cf65ed40d9b8f7f6be1c3" category="inline-link-rx"></block>。</block>
   <block id="f2fba5567ec0d8ae5addf04c960ba6d0" category="paragraph">BlueXP  をプライベートモードで使用している場合、ASA R2システムの検出はサポートされません。</block>
   <block id="62bd7572081df25dd3f1f52151883c4a" category="inline-link">BlueXPの導入モードについて説明します</block>
   <block id="d3342e15149bfef7fd9289d7025e506e" category="list-text"><block ref="d3342e15149bfef7fd9289d7025e506e" category="inline-link-rx"></block></block>
@@ -550,17 +534,6 @@
   <block id="517624d736bd2a385ee8cda71584112f" category="section-title">SnapLock ComplianceおよびSnapLock Enterprise保護モード</block>
   <block id="fec92c3dfb6a0b3db498488c7f4d2f29" category="section-title">[ボリューム]ページでの検索とリストアプロセスのインデックス作成</block>
   <block id="20d3b0b7cfe7a9f3dcfdb0faa9398efd" category="paragraph">検索とリストアを使用する前に、ボリュームデータのリストア元となる各ソース作業環境でインデックスの作成を有効にする必要があります。これにより、インデックス付きカタログで各ボリュームのバックアップファイルを追跡できます。[Volumes]ページにインデックスのステータスが表示されます。</block>
-  <block id="5fcc5d3ffc4bbbcf6d018ab4a9639205" category="section-title">2024年9月27日</block>
-  <block id="aa6a53998d98bae73a6913ff1c2eecbc" category="section-title">参照とリストアを使用したRHEL 8または9でのPodmanのサポート</block>
-  <block id="c6bad3b272d5eeec569990b050d88123" category="paragraph">BlueXP  のバックアップとリカバリで、Podmanエンジンを使用したRed Hat Enterprise Linux（RHEL）バージョン8および9でのファイルとフォルダのリストアがサポートされるようになりました。これは、BlueXP  のバックアップとリカバリの参照とリストアの方法に適用されます。</block>
-  <block id="3abe4a789c1c33e285d9452cca8c493b" category="section-title">カタログのインデックス作成を高速化し、検索とリストアを向上</block>
-  <block id="9353e94049314c6236b51712848f2572" category="paragraph">このリリースには、ベースラインインデックス作成をはるかに高速に完了する改善されたカタログインデックスが含まれています。インデックス作成を高速化すると、検索とリストア機能をより迅速に使用できるようになります。</block>
-  <block id="ba874eb3ffbdba518b95ce26bc81a861" category="section-title">2024年7月22日</block>
-  <block id="9d5f0e2f1682000ac365243e21301823" category="section-title">1GB未満のボリュームをリストア</block>
-  <block id="ccbf8c45039ba817be81bbf5fa2a7521" category="section-title">DataLockのコストを削減する方法のヒント</block>
-  <block id="79cfacda817c1e599649823ffa32c8d7" category="section-title">AWS IAM Roles Anywhere統合</block>
-  <block id="5ab4d79a28b46b39467c24096b99316f" category="section-title">FlexGroupフォルダまたはディレクトリのリストアを利用できるようになりました</block>
-  <block id="a821e6c079044462f6ffc9a01ed28fc9" category="paragraph">以前は、FlexVolボリュームはリストアできましたが、FlexGroupのフォルダやディレクトリはリストアできませんでした。ONTAP 9.15.1 p2では、[参照してリストア]オプションを使用してFlexGroupフォルダをリストアできます。</block>
   <block id="009d2060a609114df262eff04e83f241" category="section-title">2025年1月22日</block>
   <block id="0a401367ec8a2cd84bb197e6d12c99af" category="section-title">バージョン1.39</block>
   <block id="1a58f9988f87b599ed71b9c7430034c2" category="paragraph">このBlueXP  分類リリースでは、データ調査レポートのエクスポートプロセスが更新されます。このエクスポートの更新は、データに対して追加の分析を実行したり、データに追加の視覚化を作成したり、データ調査の結果を他のユーザーと共有したりするのに役立ちます。</block>
@@ -801,7 +774,6 @@
   <block id="61541c0b99aec5f11fccef5bcb3fe5a1" category="paragraph">このリリースでは、選択的な検出プロセスと再検出プロセスが強化されています。</block>
   <block id="cb3c0a83218c46d38ab0842ce49a7e6e" category="list-text">このリリースでは、以前に選択した作業環境に追加された新たに作成されたワークロードを検出できます。</block>
   <block id="6a4c9cc76f7f432efa274c3ff0dae3dd" category="list-text">このリリースでは、_new_working environmentsを選択することもできます。この機能は、環境に追加される新しいワークロードを保護するのに役立ちます。</block>
-  <block id="3b7810e8427f006590b006af43d016ef" category="list-text">検出されたすべてのワークロードを選択する場合は、*[すべて選択]*オプションを使用して選択できます。</block>
   <block id="28573ff4f820730a3eeae9cdd51b54d4" category="list-text">これらの検出プロセスは、最初の検出プロセス中に実行することも、設定オプション内で実行することもできます。</block>
   <block id="33e99171183cf72ac66db77d8dd5792a" category="inline-link">以前に選択した作業環境用に新しく作成されたワークロードを検出する</block>
   <block id="16e3b92f9b1f5d1c29b18c748e6a228e" category="inline-link">[Settings]オプションを使用してフェターを設定します。</block>
@@ -815,4 +787,17 @@
   <block id="2e168141b8f719cbd37e6beec663b599" category="list-text">米国中部</block>
   <block id="7a6df46ff8e25ac610f60f312512afa4" category="list-text">US Gov Virginia（米国政府地域-バージニア州）</block>
   <block id="91aba3afcaafb3ecbed8f358c30b8a7a" category="paragraph">すべてのリージョンのリストについては、を参照して<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>ください。</block>
+  <block id="499d067ffbbd553e23809aa38aa67bfa" category="section-title">2025年3月17日</block>
+  <block id="30ba4ee29fda0b7285b4297943459cf9" category="section-title">SMB Snapshotの参照</block>
+  <block id="024bc4989e66777454fa98cbaf9a7d3e" category="paragraph">このBlueXP  のバックアップとリカバリに関する更新では、SMB環境でローカルSnapshotを参照できないという問題が解決されました。</block>
+  <block id="151a83fcfdad3b420d256dbc19095068" category="section-title">AWS GovCloud環境の更新</block>
+  <block id="c4ff0af994997811a9867969c1b26bf3" category="paragraph">このBlueXP  のバックアップとリカバリの更新で、TLS証明書エラーが原因でUIがAWS GovCloud環境に接続できない問題が修正されました。この問題は、IPアドレスではなくBlueXP  Connectorホスト名を使用することで解決されました。</block>
+  <block id="a758068ed72f0a6858316a7ff791b4ba" category="section-title">バックアップポリシー保持の制限</block>
+  <block id="7937af8bb9aecdab11a666bfc7946c61" category="paragraph">以前は、BlueXP  のバックアップとリカバリのUIではバックアップコピー数が999個に制限されていましたが、CLIではそれより多くのコピーを実行できました。これで、1つのバックアップポリシーに最大4、000個のボリューム（バックアップポリシーに関連付けられていない1、018個のボリューム）を関連付けることができます。このアップデートには、これらの制限を超えないようにする追加の検証が含まれています。</block>
+  <block id="d5479e738a91b3a64956ed9f9e81bc5a" category="section-title">SnapMirrorクラウドの再同期</block>
+  <block id="06476618a5631fabf79c4d5ebe8b60b0" category="paragraph">この更新により、SnapMirror関係の削除後にサポートされていないバージョンのONTAPについては、BlueXP  バックアップおよびリカバリからSnapMirrorクラウドの再同期を開始できなくなります。</block>
+  <block id="322a339b221056f32120ffd18077d44d" category="section-title">AzureのAPIを使用してStorage VMを自動作成</block>
+  <block id="aa1c2167957b1092da7e43e77867748c" category="paragraph">BlueXP  APIを使用して、AzureでCloud Volumes ONTAP用に追加データを提供するStorage VMを作成、名前変更、削除できるようになりました。Storage VMを管理目的で使用する必要がある場合は、APIを使用すると、必要なネットワークインターフェイス、LIF、管理LIFの設定など、Storage VMの作成プロセスが自動化されます。</block>
+  <block id="65cc3fef2113d2e1d1f636ab8cb02386" category="inline-link">Azure で Cloud Volumes ONTAP 用のデータ提供用 Storage VM を作成します</block>
+  <block id="5fc68a139fdd05790792b12eb853e84d" category="paragraph"><block ref="5fc68a139fdd05790792b12eb853e84d" category="inline-link-rx"></block></block>
 </blocks>

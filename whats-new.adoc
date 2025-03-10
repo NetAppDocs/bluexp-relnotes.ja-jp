@@ -355,6 +355,36 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-set-up-azure-ad.htm
 
 
 
+=== 2025年3月17日
+
+このBlueXP  バックアップ/リカバリリリースには、次の更新が含まれています。
+
+
+
+==== SMB Snapshotの参照
+
+このBlueXP  のバックアップとリカバリに関する更新では、SMB環境でローカルSnapshotを参照できないという問題が解決されました。
+
+
+
+==== AWS GovCloud環境の更新
+
+このBlueXP  のバックアップとリカバリの更新で、TLS証明書エラーが原因でUIがAWS GovCloud環境に接続できない問題が修正されました。この問題は、IPアドレスではなくBlueXP  Connectorホスト名を使用することで解決されました。
+
+
+
+==== バックアップポリシー保持の制限
+
+以前は、BlueXP  のバックアップとリカバリのUIではバックアップコピー数が999個に制限されていましたが、CLIではそれより多くのコピーを実行できました。これで、1つのバックアップポリシーに最大4、000個のボリューム（バックアップポリシーに関連付けられていない1、018個のボリューム）を関連付けることができます。このアップデートには、これらの制限を超えないようにする追加の検証が含まれています。
+
+
+
+==== SnapMirrorクラウドの再同期
+
+この更新により、SnapMirror関係の削除後にサポートされていないバージョンのONTAPについては、BlueXP  バックアップおよびリカバリからSnapMirrorクラウドの再同期を開始できなくなります。
+
+
+
 === 2025年2月21日
 
 このBlueXP  バックアップ/リカバリリリースには、次の更新が含まれています。
@@ -434,70 +464,6 @@ BlueXP  バックアップ/リカバリで、SnapLock ComplianceまたはSnapLo
 * エラー
 * 無効
 
-
-
-
-=== 2024年9月27日
-
-このBlueXP  バックアップ/リカバリリリースには、次の更新が含まれています。
-
-
-
-==== 参照とリストアを使用したRHEL 8または9でのPodmanのサポート
-
-BlueXP  のバックアップとリカバリで、Podmanエンジンを使用したRed Hat Enterprise Linux（RHEL）バージョン8および9でのファイルとフォルダのリストアがサポートされるようになりました。これは、BlueXP  のバックアップとリカバリの参照とリストアの方法に適用されます。
-
-BlueXP  Connectorバージョン3.9.40では、に記載されているオペレーティングシステムに加えて、コネクタソフトウェアをRHEL 8または9ホストに手動でインストールする場合、Red Hat Enterprise Linuxバージョン8および9の特定のバージョンがサポートされ https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-private-mode.html#step-3-review-host-requirements["ホストの要件"^]ます。これらの新しいバージョンのRHELでは、DockerエンジンではなくPodmanエンジンが必要です。これまで、BlueXP  のバックアップとリカバリには、Podmanエンジンを使用する場合に2つの制限がありました。これらの制限は削除されました。
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["バックアップファイルからのONTAPデータのリストアの詳細"]です。
-
-
-
-==== カタログのインデックス作成を高速化し、検索とリストアを向上
-
-このリリースには、ベースラインインデックス作成をはるかに高速に完了する改善されたカタログインデックスが含まれています。インデックス作成を高速化すると、検索とリストア機能をより迅速に使用できるようになります。
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["バックアップファイルからのONTAPデータのリストアの詳細"]です。
-
-
-
-=== 2024年7月22日
-
-
-
-==== 1GB未満のボリュームをリストア
-
-このリリースでは、ONTAPで作成した1GB未満のボリュームをリストアできるようになりました。ONTAPを使用して作成できる最小ボリュームサイズは20MBです。
-
-
-
-==== DataLockのコストを削減する方法のヒント
-
-DataLock機能は、指定された期間、バックアップファイルが変更または削除されないように保護します。これは、ランサムウェア攻撃からファイルを保護するのに役立ちます。
-
-DataLockの詳細および関連コストを軽減する方法のヒントについては、を参照してください https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-cloud-backup-policies.html["オブジェクトへのバックアップポリシーの設定"]。
-
-
-
-==== AWS IAM Roles Anywhere統合
-
-Amazon Web Services（AWS）Identity and Access Management（IAM）Roles Anywhereサービスを使用すると、workloads_on_awsにIAMロールを使用してAWS APIに安全にアクセスできるようになります。これは、workloads_on_awsにIAMロールを使用する場合と同じ方法です。IAM Roles Anywhereの秘密鍵インフラストラクチャとAWSトークンを使用する場合、長期的なAWSアクセスキーとシークレットキーは必要ありません。これにより、クレデンシャルをより頻繁にローテーションすることができ、セキュリティが向上します。
-
-このリリースでは、AWS IAM Roles Anywhereサービスのサポートがテクノロジプレビューになります。
-
-を参照してください https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-July-2024-Release/ba-p/453993["BlueXPのバックアップとリカバリ：2024年7月リリースブログ"]。
-
-
-
-==== FlexGroupフォルダまたはディレクトリのリストアを利用できるようになりました
-
-以前は、FlexVolボリュームはリストアできましたが、FlexGroupのフォルダやディレクトリはリストアできませんでした。ONTAP 9.15.1 p2では、[参照してリストア]オプションを使用してFlexGroupフォルダをリストアできます。
-
-このリリースでは、FlexGroupフォルダのリストアがテクノロジプレビューとしてサポートされます。
-
-詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html#restore-ontap-data-using-browse-restore["参照と復元を使用したフォルダとファイルの復元"]。
-
-手動で有効にする方法については、を参照してください https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-July-2024-Release/ba-p/453993["BlueXPのバックアップとリカバリ：2024年7月リリースブログ"]。
 
 
 
@@ -629,11 +595,11 @@ Azure for Cloud Volumes ONTAP 9.12.1 GA以降では、次のリージョンでHA
 
 
 
-==== 322a339b221056f32120ffd18077d44d
+==== AzureのAPIを使用してStorage VMを自動作成
 
-aa1c2167957b1092da7e43e77867748c
+BlueXP  APIを使用して、AzureでCloud Volumes ONTAP用に追加データを提供するStorage VMを作成、名前変更、削除できるようになりました。Storage VMを管理目的で使用する必要がある場合は、APIを使用すると、必要なネットワークインターフェイス、LIF、管理LIFの設定など、Storage VMの作成プロセスが自動化されます。
 
-5fc68a139fdd05790792b12eb853e84d
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-azure.html["Azure で Cloud Volumes ONTAP 用のデータ提供用 Storage VM を作成します"^]
 
 
 
@@ -1162,7 +1128,6 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 * このリリースでは、以前に選択した作業環境に追加された新たに作成されたワークロードを検出できます。
 * このリリースでは、_new_working environmentsを選択することもできます。この機能は、環境に追加される新しいワークロードを保護するのに役立ちます。
-* 検出されたすべてのワークロードを選択する場合は、*[すべて選択]*オプションを使用して選択できます。
 * これらの検出プロセスは、最初の検出プロセス中に実行することも、設定オプション内で実行することもできます。
 
 
