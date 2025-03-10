@@ -808,4 +808,11 @@
   <block id="98e6e30b63e5242616c686684a17c03b" category="paragraph">詳細については、およびを<block ref="026d9da5e400c1054ac1084b0f63056d" category="inline-link-rx"></block>参照して<block ref="7d31e5b11cc548279f7c20a9569ec8fc" category="inline-link-rx"></block>ください。</block>
   <block id="d957d0c80017f235b131c557ae0876b1" category="section-title">高い暗号化が検出されたときに生成されるアラート</block>
   <block id="8c8c1a747835015c86248b11a2097c02" category="paragraph">このリリースでは、高いファイル拡張子が変更されていなくても、ワークロードで高い暗号化が検出されたときにアラートを表示できます。ONTAP Autonomous Ransomware Protection（ARP）AIを使用するこの機能は、ランサムウェア攻撃のリスクがあるワークロードを特定するのに役立ちます。この機能を使用して、影響を受けるファイルのリスト全体をダウンロードし、拡張子を変更するかどうかを指定します。</block>
+  <block id="23b3b711859803a815b81aca1cc4811c" category="section-title">コネクタ3.9.50</block>
+  <block id="0de5f5ade75808b90faefd69873b4b3c" category="section-title">2025年3月12日</block>
+  <block id="a2fefc65df2136938b995f8abbe643c2" category="section-title">Azureの複数のアベイラビリティゾーン環境でサポートされる新しいリージョン</block>
+  <block id="0cc914ed23f0f7d6bc902ae731843213" category="paragraph">Azure for Cloud Volumes ONTAP 9.12.1 GA以降では、次のリージョンでHA複数アベイラビリティゾーンの導入がサポートされるようになりました。</block>
+  <block id="2e168141b8f719cbd37e6beec663b599" category="list-text">米国中部</block>
+  <block id="7a6df46ff8e25ac610f60f312512afa4" category="list-text">US Gov Virginia（米国政府地域-バージニア州）</block>
+  <block id="91aba3afcaafb3ecbed8f358c30b8a7a" category="paragraph">すべてのリージョンのリストについては、を参照して<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>ください。</block>
 </blocks>

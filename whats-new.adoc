@@ -28,7 +28,7 @@ BlueXPプラットフォームの一部である クラウド サービス の�
 
 
 
-==== 23b3b711859803a815b81aca1cc4811c
+==== コネクタ3.9.50
 
 今回のリリースのBlueXP Connectorには、セキュリティが若干改善され、バグが修正されています。
 
@@ -609,19 +609,19 @@ Data Investigationレポートからのデータのエクスポートには、�
 
 
 
-=== 0de5f5ade75808b90faefd69873b4b3c
+=== 2025年3月12日
 
 
 
-==== a2fefc65df2136938b995f8abbe643c2
+==== Azureの複数のアベイラビリティゾーン環境でサポートされる新しいリージョン
 
-0cc914ed23f0f7d6bc902ae731843213
+Azure for Cloud Volumes ONTAP 9.12.1 GA以降では、次のリージョンでHA複数アベイラビリティゾーンの導入がサポートされるようになりました。
 
-* 2e168141b8f719cbd37e6beec663b599
-* 7a6df46ff8e25ac610f60f312512afa4
+* 米国中部
+* US Gov Virginia（米国政府地域-バージニア州）
 
 
-91aba3afcaafb3ecbed8f358c30b8a7a
+すべてのリージョンのリストについては、を参照して https://bluexp.netapp.com/cloud-volumes-global-regions["Azureのグローバルリージョンマップ"^]ください。
 
 
 
