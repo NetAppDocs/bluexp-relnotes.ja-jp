@@ -340,10 +340,6 @@
   <block id="8e28797de414b72e6beab6ed5932133f" category="inline-link-macro">BlueXP  ソフトウェアアップデート</block>
   <block id="d519fe60b31330425fdb5e1c21309f78" category="list-text">テクノロジの更新</block>
   <block id="dbaae314ffc8b46919877d02b85696cb" category="list-text">容量の追加</block>
-  <block id="0eb65976c0b0c5ffa90b07d4a062e509" category="paragraph">iSCSIプロトコルとFCプロトコルの両方に関するその他の考慮事項を次に示します。</block>
-  <block id="d671bd2f503deef1e03581ce8d516507" category="list-text">FCは、レプリケーションではなく、クライアントフロントエンドプロトコルをサポートします。</block>
-  <block id="cf1967c6d778937fae37b9e43582b1b6" category="list-text">BlueXP  ディザスタリカバリでは、各ONTAPでサポートされるLUNは1つだけです。ボリュームに複数のLUNを含めることはできません。</block>
-  <block id="f3a37c3560d0027bc0f49abfab4ab0e3" category="list-text">レプリケーション計画については、デスティネーションONTAPボリュームで、保護対象VMをホストしているソースONTAPボリュームと同じプロトコルを使用する必要があります。たとえば、ソースでFCプロトコルを使用している場合は、デスティネーションでもFCを使用する必要があります。</block>
   <block id="d5861f4539296095cd7c9fdfd0c5a2c9" category="paragraph">ASA R2システムでは、他の管理オプションは使用できません。[標準]ビューを使用したり、BlueXPサービスを有効にしたりすることはできません。</block>
   <block id="989977a18a476a92018e04dd60ec37c1" category="inline-link">ASA R2システムの詳細</block>
   <block id="a7c7539e11570decc041c60258667032" category="paragraph"><block ref="a7c7539e11570decc041c60258667032" category="inline-link-rx"></block></block>
@@ -510,9 +506,6 @@
   <block id="61a7f53a93554e648fe2eb9ad8dd6468" category="paragraph">指定した保持数を超えて不要になったSnapshotは削除できます。Snapshotの保持数を減らすと、時間の経過とともにSnapshotが蓄積される可能性があります。削除してスペースを解放できるようになりました。これは、オンデマンドで、またはレプリケーションプランを削除するときにいつでも実行できます。</block>
   <block id="8cd43e146a4fc163d690bdc8bdc47fc6" category="section-title">スナップショットの調整</block>
   <block id="4472d2b5ab8a2ba1ff5429790d72930f" category="paragraph">ソースとターゲットの間で同期されていないスナップショットを調整できるようになりました。これは、BlueXP  ディザスタリカバリ以外のターゲットでSnapshotが削除された場合に発生することがあります。サービスは、ソース上のスナップショットを24時間ごとに自動的に削除します。ただし、これはオンデマンドで実行できます。この機能を使用すると、すべてのサイトでSnapshotの整合性を確保できます。</block>
-  <block id="eaecda6db64f5346d5c63bfe0094e040" category="section-title">2024年9月20日</block>
-  <block id="5d95f17e7ddbf703465910039fd80c35" category="section-title">オンプレミスからオンプレミスへのVMware VMFSデータストアのサポート</block>
-  <block id="089160f6b14935d2f39adf9a95c5da5a" category="paragraph">このリリースでは、オンプレミスストレージに保護されたiSCSIおよびFC用に、VMware vSphere Virtual Machine File System（VMFS）データストアにマウントされたVMがサポートされます。以前は、iSCSIおよびFC用にVMFSデータストアをサポートするテクノロジpreview_supportingを提供していました。</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022年9月18日</block>
   <block id="532b36a42fa02f3df85b0e70d519a9ac" category="section-title">Eシリーズのサポート</block>
   <block id="8060a341461a61edc489285d4c464062" category="paragraph">BlueXPからEシリーズシステムを直接検出できるようになりました。Eシリーズシステムを検出すると、ハイブリッドマルチクラウド全体のデータを包括的に把握できます。</block>
@@ -718,7 +711,6 @@
   <block id="1fa6d342759ba5c5a8f23c210cac048c" category="section-title">コネクタ3.9.51</block>
   <block id="44cd288eedf76c78c5b3b26935538537" category="paragraph">現時点では、3.9.51リリースは標準モードと制限モードで使用できます。</block>
   <block id="5c4a2c71456e5295a9492bb06d95be3d" category="section-title">BlueXP  IDおよびアクセス管理（IAM）</block>
-  <block id="38469cab8f7065ff2b3a663e28381c62" category="list-text">Org管理者、フォルダ管理者、プロジェクト管理者がいないユーザにランサムウェアからの保護にアクセスするには、ランサムウェアからの保護ロールが割り当てられている必要があります。ユーザには、Ransomware protection adminまたはRansomware protection viewerのいずれかのロールを割り当てることができます。</block>
   <block id="a9632ee5411be0309684063f13ba77a8" category="list-text">組織管理者、フォルダ管理者、プロジェクト管理者がいないユーザにKeystoneにアクセスするには、Keystoneロールが割り当てられている必要があります。ユーザには、Keystone管理者またはKeystoneビューアのいずれかのロールを割り当てることができます。</block>
   <block id="c86bd67be80794fcaa3f1d91aa8b2899" category="inline-link-macro">アクセスロールについて説明します。</block>
   <block id="5a4d408bd57f7cf7efbd6cf878c737a7" category="paragraph"><block ref="5a4d408bd57f7cf7efbd6cf878c737a7" category="inline-link-macro-rx"></block></block>
@@ -757,4 +749,21 @@
   <block id="47388f68695ab5799ff2adfb33bca00d" category="section-title">2025年4月2日</block>
   <block id="f50a226c5a51111405309ae78236d95d" category="section-title">軽減されたリスク</block>
   <block id="66fa090892a2bd81c896ab6fbf156b19" category="paragraph">BlueXP  ソフトウェア更新プログラムの概要セクションに、オペレーティングシステムの更新によって軽減できるリスクの総数が表示されるようになりました。これにより、インストールベースのセキュリティと安定性の向上を評価できます。</block>
+  <block id="198726f3c4a7290d3254fd163158a5d0" category="list-text">Org管理者、フォルダ管理者、プロジェクト管理者がいないユーザにランサムウェア対策にアクセスするには、ランサムウェア対策ロールが割り当てられている必要があります。ユーザには、Ransomware protection adminまたはRansomware protection viewerのいずれかのロールを割り当てることができます。</block>
+  <block id="801c0fa0d304ca22d8afec06189bcf93" category="section-title">2025年4月16日</block>
+  <block id="e1b61136672bccd13e6828fe7987e4f6" category="paragraph">バージョン4.3</block>
+  <block id="f2265cb494c0b6dc346cf3703718b766" category="section-title">VMのスケジュールされた検出</block>
+  <block id="a1cc1dbaf027adca720112f5a8c48e4d" category="paragraph">BlueXP  ディザスタリカバリでは、24時間に1回検出が実行されます。このリリースでは、ニーズに合わせて調査スケジュールをカスタマイズし、必要なときにパフォーマンスへの影響を軽減できるようになりました。たとえば、VMの数が多い場合は、検出スケジュールを48時間ごとに実行するように設定できます。VMの数が少ない場合は、検出スケジュールを12時間ごとに実行するように設定できます。</block>
+  <block id="7e2d4377602fe8c7a718d5ef8759c008" category="paragraph">検出をスケジュールしない場合は、スケジュールされた検出オプションを無効にして、いつでも手動で検出を更新できます。</block>
+  <block id="d04fa3ae362a3ea46fde26bdba81b204" category="inline-link">vCenterサーバサイトを追加</block>
+  <block id="0002b275859484d6cdca867fbab8e165" category="paragraph">詳細については、を参照してください<block ref="54555db921feb31b73553520fa282341" category="inline-link-rx"></block>。</block>
+  <block id="84307a139104b06aba6c6de9c728b2ff" category="section-title">リソースグループデータストアのサポート</block>
+  <block id="ed0d134f0d7b751b80633ad848722c7a" category="paragraph">これまでは、VMごとにのみリソースグループを作成できました。このリリースでは、データストア別にリソースグループを作成できます。レプリケーション計画を作成し、その計画のリソースグループを作成すると、データストア内のすべてのVMが一覧表示されます。これは、多数のVMがあり、それらをデータストアでグループ化する場合に便利です。</block>
+  <block id="84ae8aaf40a4b59fed9a4fa741ccf225" category="paragraph">データストアを含むリソースグループは、次の方法で作成できます。</block>
+  <block id="ee64b17e5379b689c5eb4ab50027f625" category="list-text">データストアを使用してリソースグループを追加する場合は、データストアのリストが表示されます。1つ以上のデータストアを選択してリソースグループを作成できます。</block>
+  <block id="3043e1ee38988e4248b9d1966e6dd1a4" category="list-text">レプリケーション計画を作成し、その計画内にリソースグループを作成すると、データストア内のVMが表示されます。</block>
+  <block id="f7a1d657a7b8993c917f63602c0774a1" category="section-title">無償トライアルまたはライセンスの有効期限に関する通知</block>
+  <block id="38a9b45e86982c8330edcb875da55284" category="paragraph">このリリースでは、ライセンスを取得する時間を確保するために、無料トライアルが60日後に期限切れになることを通知します。また、このリリースでは、ライセンスの有効期限が切れる日に通知が送信されます。</block>
+  <block id="5d940e67e8d433508306c751ff0ea678" category="section-title">サービス更新の通知</block>
+  <block id="9bdd52eb995b6f47a02ffa6aa4318399" category="paragraph">このリリースでは、サービスがアップグレードされ、サービスがメンテナンスモードになったことを示すバナーが上部に表示されます。バナーはサービスのアップグレード中に表示され、アップグレードが完了すると消えます。アップグレードの進行中もUIで作業を続行できますが、新しいジョブを送信することはできません。スケジュールされたジョブは、更新が完了してサービスが本番モードに戻ると実行されます。</block>
 </blocks>
