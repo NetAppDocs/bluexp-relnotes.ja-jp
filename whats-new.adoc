@@ -88,6 +88,12 @@ link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-r
 
 今回のリリースのBlueXP Connectorには、セキュリティが若干改善され、バグが修正されています。
 
+* Cloud Volumes ONTAPシステムの管理は、オペレーティングシステムでSELinuxが有効になっているコネクタでサポートされるようになりました。
++
+https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux["SELinuxの詳細"^]
+
+
+
 現時点では、3.9.50リリースは標準モードと制限モードで使用できます。
 
 
@@ -270,12 +276,6 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-set-up-azure-ad.htm
 
 
 
-==== ボリュームダッシュボードの強化（プレビュー）
-
-ボリュームダッシュボードが10秒未満でロードされるようになり、インターフェイスの速度と効率が大幅に向上しました。このプレビュー版は一部のお客様にご利用いただけ、これらの改善点をいち早くご紹介しています。
-
-
-
 ==== UIの改善
 
 このリリースでは、インターフェイスが簡素化され、操作性が向上しています。
@@ -289,6 +289,12 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-set-up-azure-ad.htm
 
 
 
+==== ボリュームダッシュボードの強化（プレビュー）
+
+ボリュームダッシュボードが10秒未満でロードされるようになり、インターフェイスの速度と効率が大幅に向上しました。このプレビュー版は一部のお客様にご利用いただけ、これらの改善点をいち早くご紹介しています。
+
+
+
 ==== サードパーティ製Wasabiオブジェクトストアのサポート（プレビュー）
 
 BlueXP  のバックアップとリカバリでは、Wasabiを中心にサードパーティのオブジェクトストアのサポートが拡張されました。この新しいプレビュー機能を使用すると、バックアップとリカバリのニーズに合わせてS3互換オブジェクトストアを活用できます。
@@ -297,7 +303,30 @@ BlueXP  のバックアップとリカバリでは、Wasabiを中心にサー�
 
 ===== Wasabiの使用を開始する
 
-この機能の使用を開始するには、BlueXP  UIでフラグを有効にする必要があります。その後、サードパーティオブジェクトストアの接続の詳細を入力し、バックアップとリカバリのワークフローに統合できます。
+サードパーティ製ストレージをオブジェクトストアとして使用するには、BlueXP  Connectorでフラグを有効にする必要があります。その後、サードパーティオブジェクトストアの接続の詳細を入力し、バックアップとリカバリのワークフローに統合できます。
+
+.手順
+. コネクタにSSH接続します。
+. BlueXP  バックアップとリカバリのCBSサーバコンテナに移動します。
++
+[listing]
+----
+docker exec -it cloudmanager_cbs sh
+----
+. Vimまたはその他のエディタを使用して、フォルダ内のファイルを `config`開き `default.json`ます。
++
+[listing]
+----
+vi default.json
+----
+. 「：false」を「true」に `allow-s3-compatible`変更し `allow-s3-compatible`ます。
+. 変更を保存します。
+. コンテナを終了します。
+. BlueXP  バックアップおよびリカバリCBSサーバコンテナを再起動します。
+
+
+.結果
+コンテナが再びオンになったら、BlueXP  バックアップとリカバリのUIを開きます。バックアップを開始するか、バックアップ戦略を編集すると、新しいプロバイダ「S3 Compatible」が、AWS、Microsoft Azure、Google Cloud、StorageGRID、ONTAP S3の他のバックアッププロバイダとともにリストされます。
 
 
 
@@ -522,6 +551,22 @@ Data Investigationレポートからのデータのエクスポートには、�
 
 
 
+=== 2025年4月16日
+
+
+
+==== Azureでサポートされる新しいリージョン
+
+Cloud Volumes ONTAP 9.12.1 GA以降は、次のリージョンのAzureの単一または複数のアベイラビリティゾーンに導入できるようになりました。これには、シングルノード環境とハイアベイラビリティ（HA）環境の両方がサポートされます。
+
+* スペイン中部
+* メキシコ中部
+
+
+すべてのリージョンのリストについては、を参照して https://bluexp.netapp.com/cloud-volumes-global-regions["Azureのグローバルリージョンマップ"^]ください。
+
+
+
 === 2025年4月14日
 
 
@@ -534,31 +579,15 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.
 
 
 
-=== 2025年3月28日
+=== 2025年4月3日
 
 
 
-==== Cloud Volumes ONTAP 9.14.1でイネーブルになっているプライベートモード展開
+==== AWSでのCloud Volumes ONTAP 9.13.1の中国リージョンのサポート
 
-Cloud Volumes ONTAP 9.14.1をプライベートモードでAWS、Azure、Google Cloudに導入できるようになりました。プライベートモードは、Cloud Volumes ONTAP 9.14.1のシングルノード環境とハイアベイラビリティ（HA）環境の両方で有効になります。
+中国リージョンのAWSにCloud Volumes ONTAP 9.13.1を導入できるようになりました。これには、シングルノード環境とハイアベイラビリティ（HA）環境の両方がサポートされます。Cloud Volumes ONTAP 9.13.1を導入したら、それ以降のバージョンにアップグレードできます。NetAppから直接購入したライセンスのみがサポートされます。
 
-プライベートモード配置の詳細については、を参照してくださいhttps://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#restricted-mode["BlueXPの導入モードについて説明します"^]。
-
-
-
-=== 2025年3月12日
-
-
-
-==== Azureの複数のアベイラビリティゾーン環境でサポートされる新しいリージョン
-
-Azure for Cloud Volumes ONTAP 9.12.1 GA以降では、次のリージョンでHA複数アベイラビリティゾーンの導入がサポートされるようになりました。
-
-* 米国中部
-* US Gov Virginia（米国政府地域-バージニア州）
-
-
-すべてのリージョンのリストについては、を参照して https://bluexp.netapp.com/cloud-volumes-global-regions["Azureのグローバルリージョンマップ"^]ください。
+地域によって利用可能な場合は、を参照して https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP のグローバルリージョンマップ"^]ください。
 
 
 
@@ -1051,6 +1080,33 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 == ランサムウェアからの保護
+
+
+
+=== 2025年4月29日
+
+
+
+==== Amazon FSx for NetApp ONTAP をサポートします
+
+このリリースでは、Amazon FSx for NetApp ONTAPがサポートされます。この機能は、BlueXP  ランサムウェア対策でFSx for ONTAPワークロードを保護するのに役立ちます。
+
+FSx for ONTAPは、NetApp ONTAPストレージのパワーをクラウドで提供するフルマネージドサービスです。オンプレミスと同じ機能、パフォーマンス、管理機能を、AWSネイティブサービスの即応性と拡張性で提供します。
+
+BlueXP  ランサムウェア対策のワークフローに次の変更が加えられました。
+
+* 検出には、FSx for ONTAP 9.15作業環境のワークロードが含まれます。
+* [Protection]タブには、FSx for ONTAP環境のワークロードが表示されます。この環境では、FSx for ONTAPバックアップサービスを使用してバックアップ処理を実行する必要があります。これらのワークロードは、BlueXP  ランサムウェア対策のSnapshotを使用してリストアできます。
++
+
+TIP: FSx for ONTAPで実行されるワークロードのバックアップポリシーは、BlueXP  では設定できません。Amazon FSx for NetApp ONTAPで設定されている既存のバックアップポリシーは変更されません。
+
+* アラートインシデントには、新しいFSx for ONTAP作業環境が表示されます。
+
+
+詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["BlueXP  ランサムウェア対策と作業環境の詳細"]。
+
+サポートされるオプションについては、を参照して https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-limitations.html["BlueXP  ランサムウェア対策の制限事項"]ください。
 
 
 
