@@ -24,6 +24,31 @@ BlueXPプラットフォームの一部である クラウド サービス の�
 
 
 
+=== 2025年4月14日
+
+
+
+==== コネクタ3.9.51
+
+今回のリリースのBlueXP Connectorには、セキュリティが若干改善され、バグが修正されています。
+
+現時点では、3.9.51リリースは標準モードと制限モードで使用できます。
+
+
+
+==== BlueXP  IDおよびアクセス管理（IAM）
+
+* Org管理者、フォルダ管理者、プロジェクト管理者がいないユーザにランサムウェアからの保護にアクセスするには、ランサムウェアからの保護ロールが割り当てられている必要があります。ユーザには、Ransomware protection adminまたはRansomware protection viewerのいずれかのロールを割り当てることができます。
+* 組織管理者、フォルダ管理者、プロジェクト管理者がいないユーザにKeystoneにアクセスするには、Keystoneロールが割り当てられている必要があります。ユーザには、Keystone管理者またはKeystoneビューアのいずれかのロールを割り当てることができます。
+
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["アクセスロールについて説明します。"^]
+
+* Org管理者、フォルダ管理者、またはプロジェクト管理者のロールがある場合は、KeystoneサブスクリプションをIAMプロジェクトに関連付けることができるようになりました。KeystoneサブスクリプションをIAMプロジェクトに関連付けると、BlueXP  内でKeystoneへのアクセスを制御できます。
+
+
+
+
 === 2025年3月28日
 
 
@@ -39,7 +64,7 @@ BlueXPプラットフォームの一部である クラウド サービス の�
 | コンポーネントまたはサービス | このリリースに含まれるバージョン | 前回のプライベートモードリリースからの変更点 
 
 
-| コネクタ | 3.9.50、3.9.49 | を参照 https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-50["BlueXP  Connectorページの新機能"]し、バージョン3.9.50および3.9.49に含まれている変更を参照してください。 
+| コネクタ | 3.9.50、3.9.49 | にアクセス https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-50["BlueXP  Connectorページの新機能"]し、バージョン3.9.50および3.9.49の変更点を参照してください。 
 
 
 | バックアップとリカバリ | 2025年3月17日 | に移動し https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP  バックアップ/リカバリページの新機能"^]、2024年3月リリースに含まれる変更点を参照してください。 
@@ -74,153 +99,6 @@ NetApp Keystoneは近日中にBlueXP  から利用可能になり、ベータ�
 
 
 
-=== 2025年3月6日
-
-
-
-==== コネクタ3.9.49アップデート
-
-
-
-===== BlueXP  テコネクタヲシヨウスルシヨウコウノONTAP System Managerヘノアクセス
-
-BlueXP  管理者（Organization adminロールを持つユーザ）は、ONTAPシステムマネージャにアクセスするためにONTAPクレデンシャルの入力を求めるようにBlueXP  を設定できます。この設定を有効にすると、BlueXP  に保存されないため、ユーザは毎回ONTAPクレデンシャルを入力する必要があります。
-
-この機能は、コネクタバージョン3.9.49以降で使用できます。link:task-ontap-access-connector.html["クレデンシャルを設定する方法について説明します。"^]です。
-
-
-
-==== コネクタ3.9.48アップデート
-
-
-
-===== コネクタの自動アップグレード設定を無効にする機能
-
-コネクタの自動アップグレード機能を無効にすることができます。
-
-BlueXP  を標準モードまたは制限モードで使用すると、コネクタにソフトウェアの更新を取得するためのアウトバウンドインターネットアクセスがある限り、BlueXP  はコネクタを自動的に最新リリースにアップグレードします。コネクタのアップグレード時に手動で管理する必要がある場合は、標準モードまたは制限モードの自動アップグレードを無効にできるようになりました。
-
-
-NOTE: この変更は、コネクタを常に自分でアップグレードする必要があるBlueXP  プライベートモードには影響しません。
-
-この機能は、コネクタバージョン3.9.48以降で使用できます。
-
-link:task-upgrade-connector.html["コネクタの自動アップグレードを無効にする方法について説明します。"^]
-
-
-
-=== 2025年2月10日
-
-
-
-==== コネクタ3.9.49
-
-今回のリリースのBlueXP Connectorには、セキュリティが若干改善され、バグが修正されています。
-
-現時点では、3.9.49リリースは標準モードと制限モードで使用できます。
-
-
-
-==== BlueXP  IDおよびアクセス管理（IAM）
-
-* BlueXP  ユーザへの複数のロールの割り当てがサポートされます。
-* BlueXP  組織（Org/フォルダ/プロジェクト）の複数のリソースへの役割の割り当てのサポート
-* ロールがプラットフォームとデータサービスの2つのカテゴリのいずれかに関連付けられるようになりました。
-
-
-
-
-===== 制限モードでBlueXP  IAMが使用されるようになりました
-
-BlueXP  IDおよびアクセス管理（IAM）が制限モードで使用されるようになりました。
-
-BlueXP  IDおよびアクセス管理（IAM）は、標準モードおよび制限モードでBlueXP  を使用するときにBlueXP  アカウントが提供する以前の機能を置き換え、強化するリソースおよびアクセス管理モデルです。
-
-.関連情報
-* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-identity-and-access-management.html["BlueXP  IAMの詳細"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-get-started.html["BlueXP  IAMの使用を開始する"]
-
-
-BlueXP  IAMでは、リソースと権限をよりきめ細かく管理できます。
-
-* 最上位の_organization_を使用すると、さまざまな_projects_のアクセスを管理できます。
-* _Folders_関連するプロジェクトをグループ化できます。
-* 強化されたリソース管理により、リソースを1つ以上のフォルダまたはプロジェクトに関連付けることができます。
-+
-たとえば、Cloud Volumes ONTAPシステムを複数のプロジェクトに関連付けることができます。
-
-* 強化されたアクセス管理により、組織階層のさまざまなレベルのメンバーにロールを割り当てることができます。
-
-
-これらの機能拡張により、ユーザが実行できるアクションとユーザがアクセスできるリソースをより適切に制御できるようになります。
-
-.制限モードでの既存アカウントへのBlueXP  IAMの影響
-BlueXP  にログインすると、次の変更が表示されます。
-
-* あなたの_アカウント_が_組織_と呼ばれるようになりました
-* your_workspaces_が_projects_と呼ばれるようになりました。
-* ユーザロールの名前が変更されました。
-+
-** アカウント管理者_が現在_組織管理者_である_
-** _Workspace admin_現在_フォルダまたはプロジェクト管理_
-** _コンプライアンスビューア_現在_分類ビューア_
-
-
-* [設定]では、BlueXP  IDとアクセス管理にアクセスして、これらの拡張機能を利用できます。
-
-
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-iam-introduction.png["BlueXP  のスクリーンショットは、インターフェイスの上部から選択可能な組織とプロジェクト、および[設定]メニューから使用できるIDとアクセスの管理を示しています。"]
-
-次の点に注意してください。
-
-* 既存のユーザや作業環境に変更はありません。
-* ロールの名前は変更されていますが、権限の観点からは違いはありません。ユーザは以前と同じ作業環境に引き続きアクセスできます。
-* BlueXP  へのログイン方法に変更はありません。BlueXP  IAMは、BlueXP  アカウントと同様に、NetAppクラウドログイン、NetAppサポートサイトのクレデンシャル、フェデレーテッド接続と連携します。
-* 複数のBlueXP  アカウントを使用している場合は、複数のBlueXP  組織が存在することになります。
-
-
-.BlueXP  IAM用API
-この変更により、BlueXP  IAM用の新しいAPIが導入されましたが、以前のテナンシーAPIと下位互換性があります。 https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["BlueXP  IAM向けAPIの詳細"^]
-
-.サポートされる展開モード
-BlueXP  IAMは、BlueXP  を標準モードおよび制限モードで使用する場合にサポートされます。BlueXP  をプライベートモードで使用している場合は、引き続きBlueXP  アカウント_を使用してワークスペース、ユーザー、リソースを管理します。
-
-
-
-=== 2025年1月13日
-
-
-
-==== コネクタ3.9.48
-
-今回のリリースのBlueXP Connectorには、セキュリティが若干改善され、バグが修正されています。
-
-現時点では、3.9.48リリースは標準モードと制限モードで使用できます。
-
-
-
-==== BlueXP  IDおよびアクセス管理
-
-* [Resources]ページに未検出のリソースが表示されるようになりました。未検出のリソースは、BlueXP  で認識されているが作業環境を作成していないストレージリソースです。たとえば、まだ作業環境がないデジタルアドバイザに表示されるリソースは、[リソース]ページに検出されていないリソースとして表示されます。
-* Amazon FSx for NetApp ONTAPリソースは、IAMロールに関連付けることができないため、IAMリソースページに表示されません。これらのリソースは、それぞれのキャンバスまたはワークロードで表示できます。
-
-
-
-
-==== 追加のBlueXP  サービスのサポートケースを作成
-
-BlueXP  をサポートに登録したら、BlueXP  Webベースのコンソールから直接サポートケースを作成できます。ケースを作成するときは、問題が関連付けられているサービスを選択する必要があります。
-
-このリリースから、サポートケースを作成して、追加のBlueXP  サービスに関連付けることができるようになりました。
-
-* BlueXPディザスタリカバリ
-* BlueXPのランサムウェア対策
-
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html["サポートケースの作成に関する詳細情報"]です。
-
-
-
 == アラート
 
 
@@ -250,6 +128,18 @@ https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["BlueXP  アラ
 
 
 == ONTAP 対応の Amazon FSX
+
+
+
+=== 2025年3月30日
+
+
+
+==== IAM：SimulatePermissionPolicy権限の更新
+
+管理できるようになりまし `iam:SimulatePrincipalPolicy`AWSアカウントのクレデンシャルを追加したり、生成AIワークロードなどの新しいワークロード機能を追加したりするときに、BlueXP  コンソールから権限をた。
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html#change-log["アクセス権参照変更ログ"^]
 
 
 
@@ -298,18 +188,6 @@ link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-monitor-operations.
 CloudShellは、BlueXP  コンソール内でBlueXP  ワークロードを実行している場合に使用できます。CloudShellを使用すると、BlueXP  アカウントで提供したAWSとONTAPのクレデンシャルを使用して、シェルに似た環境でAWS CLIコマンドまたはONTAP CLIコマンドを実行できます。
 
 link:https://docs.netapp.com/us-en/workload-setup-admin/use-cloudshell.html["CloudShellを使用"^]
-
-
-
-=== 2025年1月6日
-
-
-
-==== NetAppが追加のCloudFormationリソースをリリース
-
-NetAppは、AWSコンソール内で公開されていない高度なONTAPコンポーネントを利用できるCloudFormationリソースを提供するようになりました。CloudFormationは、AWS向けのコードとしてのインフラメカニズムです。レプリケーション関係、CIFS共有、NFSエクスポートポリシー、Snapshotなどを作成できます。
-
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html["CloudFormationを使用したAmazon FSx for NetApp ONTAPファイルシステムの管理"]
 
 
 
@@ -503,6 +381,24 @@ BlueXP  バックアップ/リカバリで、SnapLock ComplianceまたはSnapLo
 
 
 
+=== 2025年4月14日
+
+
+
+==== バージョン1.42
+
+このBlueXP  分類リリースの内容は次のとおりです。
+
+.作業環境の一括スキャン
+BlueXP  の分類で、作業環境の一括操作がサポートされるようになりました。マッピングスキャンの有効化、スキャンのマッピングと分類の有効化、スキャンの無効化、または作業環境内のボリューム間でのカスタム構成の作成を選択できます。個 々 のボリュームを選択した場合は、一括選択よりも優先されます。一括操作を実行するには'**Configuration**ページに移動して選択します
+
+.調査レポートをローカルにダウンロード
+BlueXP  分類では、データ調査レポートをローカルにダウンロードしてブラウザで表示できるようになりました。ローカルオプションを選択した場合、データ調査はCSV形式でのみ使用でき、最初の10,000行のデータのみが表示されます。
+
+詳細については、を参照してください link:task-investigate-data.html#create-the-data-investigation-report["BlueXP  分類を使用して、組織に保存されているデータを調査する"]。
+
+
+
 === 2025年3月10日
 
 
@@ -531,7 +427,7 @@ BlueXP  分類では、ボリューム上の_initial_mappingスキャンと分�
 
 次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があり、BlueXP  分類バージョン1.30以降が必要です。Red Hat Enterprise Linuxバージョン8.8、8.10、9.0、9.1、9.2、9.3、9.4、9.5。
 
-.スキャンの優先順位付け
+.マッピングのみのスキャンの優先順位付け
 マッピングのみのスキャンを実行する場合は、最も重要なスキャンに優先順位を付けることができます。この機能は、多数の作業環境があり、優先度の高いスキャンを先に完了させたい場合に役立ちます。
 
 デフォルトでは、スキャンは開始順序に基づいてキューに入れられます。スキャンに優先順位を付ける機能により、スキャンをキューの先頭に移動できるようになりました。複数のスキャンに優先順位を付けることができます。優先順位は、先入れ先出し順で指定されます。つまり、最初に優先順位を付けたスキャンがキューの先頭に移動し、2番目に優先順位を付けたスキャンがキューの2番目に移動します。
@@ -540,12 +436,7 @@ BlueXP  分類では、ボリューム上の_initial_mappingスキャンと分�
 
 優先順位付けはに限定されlink:concept-cloud-compliance.html["マッピングのみのスキャン"]、マップスキャンおよび分類スキャンでは使用できません。
 
-優先度を変更するには：
-
-. BlueXP  分類メニューから*設定*を選択します。
-. 優先順位を付けるリソースを選択します。
-. [Actions...]オプションから、*[Prioritize scan]*を選択します。
-
+詳細については、を参照してください link:task-managing-repo-scanning.html#prioritize-scans["スキャンの優先順位付け"]。
 
 .すべてのスキャンを再試行
 BlueXP  分類では、失敗したすべてのスキャンをバッチ再試行できるようになりました。
@@ -607,6 +498,18 @@ Data Investigationレポートからのデータのエクスポートには、�
 
 
 
+=== 2025年4月14日
+
+
+
+==== Google CloudのAPIを使用してStorage VMの作成を自動化
+
+BlueXP  APIを使用して、Google CloudでのStorage VMの作成を自動化できるようになりました。この機能は、Cloud Volumes ONTAPのハイアベイラビリティ（HA）構成で使用してきましたが、シングルノード環境でも使用できるようになりました。BlueXP  APIを使用すると、追加データを提供するStorage VMをGoogle Cloud環境で簡単に作成、名前変更、および削除できます。必要なネットワークインターフェイス、LIF、管理LIFを手動で設定する必要はありません。この自動化により、Storage VMの管理プロセスが簡易化されます。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.html["Google CloudでCloud Volumes ONTAP用のデータ提供用Storage VMを管理します。"^]
+
+
+
 === 2025年3月28日
 
 
@@ -635,18 +538,6 @@ Azure for Cloud Volumes ONTAP 9.12.1 GA以降では、次のリージョンでHA
 
 
 
-=== 2025年3月10日
-
-
-
-==== AzureのAPIを使用してStorage VMを自動作成
-
-BlueXP  APIを使用して、AzureでCloud Volumes ONTAP用に追加データを提供するStorage VMを作成、名前変更、削除できるようになりました。Storage VMを管理目的で使用する必要がある場合は、APIを使用すると、必要なネットワークインターフェイス、LIF、管理LIFの設定など、Storage VMの作成プロセスが自動化されます。
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-azure.html["AzureのCloud Volumes ONTAP用のデータ提供用Storage VMを管理します。"^]
-
-
-
 == Cloud Volumes Service for Google Cloud
 
 
@@ -664,12 +555,6 @@ Cloud Volumes Service for Google CloudをBlueXPから直接管理できるよう
 * Windows クライアント用に SMB 3.x ボリュームを作成して管理します
 * ボリューム Snapshot を作成、削除、およびリストアします
 
-
-
-
-== クラウド運用
-
-<stdin>の未解決のディレクティブ- Include :: https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/whats-new.adoc[tag=whats-new,leveloffset=+1]
 
 
 
@@ -791,7 +676,7 @@ BlueXP  デジタルウォレットで、プロバイダーの資格情報へ�
 
 ==== Cloud Volume ONTAPライセンスの管理
 
-ホームページまたは*データサービスライセンス*タブでCloud Volumes ONTAPライセンスを管理できるようになりました。[Marketplace subscriptions]タブを使用して、サブスクリプション情報を表示します。
+ホームページまたは*直接ライセンス*タブでCloud Volumes ONTAPライセンスを管理できるようになりました。[Marketplace subscriptions]タブを使用して、サブスクリプション情報を表示します。
 
 
 
@@ -1120,6 +1005,38 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 
+=== 2025年4月14日
+
+
+
+==== 準備状況ドリルレポート
+
+このリリースでは、ランサムウェア攻撃の準備状況を示すドリルレポートを確認できます。準備のためのドリルでは、新しく作成したサンプルワークロードに対するランサムウェア攻撃をシミュレートできます。次に、シミュレートされた攻撃を調査し、サンプルワークロードをリカバリします。アラート通知、対応、リカバリの各プロセスをテストすることで、ランサムウェア攻撃が実際に発生した場合に備えておくことができます。
+
+詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["ランサムウェア攻撃への備えの訓練を実施"]。
+
+
+
+==== 新しいロールベースアクセス制御のロールと権限
+
+これまでは、ユーザの責任に基づいてロールと権限をユーザに割り当てることができました。これは、BlueXP  ランサムウェア対策へのユーザアクセスの管理に役立ちます。このリリースでは、BlueXP  ランサムウェア対策に固有の2つの新しいロールが追加され、権限が更新されました。新しいロールは次のとおりです。
+
+* ランサムウェア対策管理者
+* ランサムウェア対策ツール
+
+
+権限の詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["BlueXP  ランサムウェア対策機能へのロールベースアクセス"]。
+
+
+
+==== 支払いの改善
+
+このリリースには、支払いプロセスのいくつかの改善が含まれています。
+
+詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["ライセンスと支払いのオプションを設定する"]。
+
+
+
 === 2025年3月10日
 
 
@@ -1182,46 +1099,6 @@ Data Infrastructure Insights Storage Workload Securityを使用して異常な�
 
 
 
-=== 2024年11月7日
-
-
-
-==== データの分類を有効にし、個人識別情報（PII）をスキャンする
-
-このリリースでは、BlueXP  ファミリーのコアコンポーネントであるBlueXP  分類を有効にして、ファイル共有ワークロードのデータをスキャンして分類することができます。データを分類することで、データに個人情報が含まれているかどうかを特定し、セキュリティリスクを高めることができます。このプロセスは、ワークロードの重要性にも影響し、適切なレベルの保護でワークロードを保護するのに役立ちます。
-
-BlueXP  ランサムウェア対策でのPIIデータのスキャンは、BlueXP  分類を導入したお客様が一般に利用できます。BlueXP  の分類は、BlueXP  プラットフォームの一部として追加料金なしで利用でき、オンプレミスまたはお客様のクラウドに導入できます。
-
-を参照してください https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["BlueXPのランサムウェア対策の設定"]。
-
-スキャンを開始するには、[Protection]ページで、[Privacy exposure]列の*[Identify exposure]*をクリックします。
-
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["BlueXP  分類を使用して、個人を特定できる機密データをスキャン"]です。
-
-
-
-==== SIEMとMicrosoft Sentinelの統合
-
-Microsoft Sentinelを使用して脅威の分析と検出のために、セキュリティおよびイベント管理システム(SIEM)にデータを送信できるようになりました。以前は、AWS Security HubまたはSplunk CloudをSIEMとして選択できました。
-
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["BlueXP  ランサムウェア対策の設定の詳細"]です。
-
-
-
-==== 30日間の無償トライアル
-
-このリリースでは、BlueXP  ランサムウェア対策の新規導入に30日間の無償トライアルが提供されるようになりました。以前は、BlueXP  ランサムウェア対策は90日間の無償トライアルを提供していました。すでに90日間の無償トライアルを利用している場合は、90日間継続されます。
-
-
-
-==== Podmanのアプリケーションワークロードをファイルレベルでリストア
-
-アプリケーションワークロードをファイルレベルでリストアする前に、攻撃の影響を受けた可能性があるファイルのリストを表示し、リストアするファイルを特定できるようになりました。以前は、組織（以前はアカウント）のBlueXP  コネクタがPodmanを使用していた場合、この機能は無効になっていました。これでPodmanで有効になりました。BlueXPランサムウェア対策でリストアするファイルを選択したり、アラートの影響を受けたすべてのファイルを記載したCSVファイルをアップロードしたり、リストアするファイルを手動で特定したりできます。
-
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["ランサムウェア攻撃からのリカバリの詳細"]です。
-
-
-
 == シユウフク
 
 2024年4月22日にBlueXP修正サービスが削除されました。
@@ -1273,6 +1150,16 @@ https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["デ
 
 
 == ソフトウェアの更新
+
+
+
+=== 2025年4月2日
+
+
+
+==== 軽減されたリスク
+
+BlueXP  ソフトウェア更新プログラムの概要セクションに、オペレーティングシステムの更新によって軽減できるリスクの総数が表示されるようになりました。これにより、インストールベースのセキュリティと安定性の向上を評価できます。
 
 
 

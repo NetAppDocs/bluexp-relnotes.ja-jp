@@ -323,8 +323,6 @@
   <block id="dd9368e78fe4f3483d324b6a988d2f87" category="paragraph"><block ref="aa8b5c9ebdcb57c9427e7bd28a70f7d0" category="inline-link-rx"></block>です。</block>
   <block id="b1fb5b4805d079fc23dedcbe4848437e" category="inline-link">リモートサイトへのアプリケーションのフェイルオーバー</block>
   <block id="ab132121a366abdd7667443cc98f3a69" category="paragraph">を参照してください<block ref="1cbf59ee3e77dd0082612a21b0900f81" category="inline-link-rx"></block>。</block>
-  <block id="f013b90a0fd96db59795b7cb0b9d2d1b" category="inline-link">ランサムウェア攻撃からのリカバリの詳細</block>
-  <block id="48e006c40a370e7b0dcc3f4f1e42eda7" category="paragraph"><block ref="17c138513bf5a78d755bed4038999b20" category="inline-link-rx"></block>です。</block>
   <block id="7043d4fb27c94bc9a206c106cef9d80c" category="paragraph">その方法は次のとおりです。</block>
   <block id="eff6d6d4d66ab65f33be5de8b62e16d3" category="list-text">トップメニューから*レプリケーションプラン*を選択します。</block>
   <block id="2ae04d8f24d0c8f552b0d3857c0953b3" category="list-text">計画を選択し、[Actions]アイコンを選択してドロップダウンメニューを表示します。</block>
@@ -333,8 +331,6 @@
   <block id="9b4b29c7522dc70822a6513f530beb14" category="paragraph">BlueXP  エッジキャッシングサービスは、2024年8月7日に削除されました。</block>
   <block id="4ac75c7e9ef3301446bb1108a0761fd8" category="paragraph">Kubernetesクラスタの検出と管理のサポートが2024年8月7日に廃止されました。</block>
   <block id="2476ee901bdc6e29b6118470b13e2339" category="paragraph">BlueXP  移行レポートサービスは、2024年8月7日に削除されました。</block>
-  <block id="0d0fda3a15e7f6f6406a0dde3997c91f" category="inline-link">BlueXP  ランサムウェア対策の設定の詳細</block>
-  <block id="5b0f75e0c31233c18e6f9318b8569cf7" category="paragraph"><block ref="25291e882ba76639fccc7a13f1838641" category="inline-link-rx"></block>です。</block>
   <block id="af7b48fef3ac95547bce2972839785af" category="inline-link">アドバンストビューを使用したStorageGRIDの管理方法</block>
   <block id="71bde38d3a1a0761ad0419a2db79d0c4" category="paragraph"><block ref="bcae03490ee8ad952aee993e2ae5e7eb" category="inline-link-rx"></block>です。</block>
   <block id="4a314d3b77101d6faf44fa4063c45276" category="inline-link">システム検出時にサーバ証明書を確認および承認する方法について説明します。</block>
@@ -378,9 +374,6 @@
   <block id="bff48bc8f1cd9f08f36e8d0c4fa810ff" category="paragraph">の詳細については、を<block ref="a53ad2061326060987afe3d1fd22d00d" category="inline-link-rx"></block>参照してください。</block>
   <block id="006f40c12cb6b543cd40a6cd5a750b98" category="inline-link">BlueXPのランサムウェア対策の設定</block>
   <block id="14712989ac072dc4b44e9acf1def5f1f" category="paragraph">を参照してください<block ref="a5026777e609bf5c1f12922a89f75f5b" category="inline-link-rx"></block>。</block>
-  <block id="dc2ee5afb67051a37353df40cc16729a" category="paragraph">スキャンを開始するには、[Protection]ページで、[Privacy exposure]列の*[Identify exposure]*をクリックします。</block>
-  <block id="e7d05f872780d58e08011a44ce4be77b" category="inline-link">BlueXP  分類を使用して、個人を特定できる機密データをスキャン</block>
-  <block id="4dc0491313939f9597e6bce367054443" category="paragraph"><block ref="0e7ea879583dcbdf58a2050df8592221" category="inline-link-rx"></block>です。</block>
   <block id="cf3625b0846a5497dd36ab2220da602a" category="paragraph">詳細については、をご覧ください <block ref="4ef0c81e219f07a508ae115770245e4e" category="inline-link-macro-rx"></block>。</block>
   <block id="35ccbae2ce9b9594b9af9196a3bed361" category="inline-link">ワークロードファクトリ</block>
   <block id="0b672c7e4b6adbcc5d61df4659dfc304" category="list-text"><block ref="0b672c7e4b6adbcc5d61df4659dfc304" category="inline-link-rx"></block></block>
@@ -395,20 +388,8 @@
   <block id="902b0d55fddef6f8d651fe1035b7d4bd" category="list-text">エラー</block>
   <block id="cb48cbf342305a9ae53e02e21fcb644c" category="list-text">無効</block>
   <block id="0d9e2244b8fb5d13651efe34b9723803" category="paragraph">BlueXP  をプライベートモードで使用しているときに、NetApp ASA R2システムを検出できるようになりました。このサポートは、BlueXP  の3.9.46プライベートモードリリース以降で利用できます。</block>
-  <block id="3406306d1e826f71d49547332136491d" category="paragraph">BlueXP  ランサムウェア対策でのPIIデータのスキャンは、BlueXP  分類を導入したお客様が一般に利用できます。BlueXP  の分類は、BlueXP  プラットフォームの一部として追加料金なしで利用でき、オンプレミスまたはお客様のクラウドに導入できます。</block>
-  <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">次の点に注意してください。</block>
   <block id="39ca8580b0e6a065fa25faac2a2acc86" category="inline-link-macro">ファームウェアアップデートの推奨事項を表示する方法</block>
   <block id="33596391cf2ec8b74b76bf635ea4c6e2" category="paragraph">今回のリリースのBlueXP Connectorには、セキュリティが若干改善され、バグが修正されています。</block>
-  <block id="4d83c70b301d09d322c3d604e361a689" category="paragraph">現時点では、3.9.48リリースは標準モードと制限モードで使用できます。</block>
-  <block id="a8afa3393166930c13f7426758547bca" category="list-text">[Resources]ページに未検出のリソースが表示されるようになりました。未検出のリソースは、BlueXP  で認識されているが作業環境を作成していないストレージリソースです。たとえば、まだ作業環境がないデジタルアドバイザに表示されるリソースは、[リソース]ページに検出されていないリソースとして表示されます。</block>
-  <block id="7e797bc936bc19649c91fa90509a82a9" category="list-text">Amazon FSx for NetApp ONTAPリソースは、IAMロールに関連付けることができないため、IAMリソースページに表示されません。これらのリソースは、それぞれのキャンバスまたはワークロードで表示できます。</block>
-  <block id="ac9424bee543a4a40d453b3ffa72ca64" category="paragraph">BlueXP  をサポートに登録したら、BlueXP  Webベースのコンソールから直接サポートケースを作成できます。ケースを作成するときは、問題が関連付けられているサービスを選択する必要があります。</block>
-  <block id="c16acacf37243c052df936e1994e4488" category="paragraph">このリリースから、サポートケースを作成して、追加のBlueXP  サービスに関連付けることができるようになりました。</block>
-  <block id="67ecb6c0a19888100e5352d06f886856" category="list-text">BlueXPのランサムウェア対策</block>
-  <block id="6b8568e4d37788a668f2c72ae872b9a0" category="inline-link">サポートケースの作成に関する詳細情報</block>
-  <block id="704c39cac41bd3edb3c4d1fc1b619590" category="paragraph"><block ref="8380621c8f80b9213ea8e8be1675d5a4" category="inline-link-rx"></block>です。</block>
-  <block id="01d4e72c68c36e8905e55eeb7f8aff0c" category="inline-link-macro">CloudFormationを使用したAmazon FSx for NetApp ONTAPファイルシステムの管理</block>
-  <block id="f883109f2802c104ac9ae2e21a56b762" category="paragraph"><block ref="f883109f2802c104ac9ae2e21a56b762" category="inline-link-macro-rx"></block></block>
   <block id="4b9b02f7da7210970cff1fcbe2d8369e" category="paragraph">このリリースでは、Data Infrastructure Insights Storage Workload Securityを使用して、ストレージワークロードの異常なユーザ行動を検出できます。この機能を使用すると、潜在的なセキュリティ脅威を特定し、悪意のあるユーザをブロックしてデータを保護できます。</block>
   <block id="839e0e7efb1b67f6416081c6e82a4aa9" category="inline-link">検出されたランサムウェアに関するアラートに対応</block>
   <block id="51713ddd834a60df7d06db728cf08e05" category="paragraph">詳細については、を参照してください<block ref="7a6c0b2db283aa3c348e6e1a2f1f32b0" category="inline-link-rx"></block>。</block>
@@ -420,43 +401,6 @@
   <block id="bd03ede87c82adb65c788a5ae08c50b6" category="inline-link">ワークロードを検出</block>
   <block id="9ac7153dab130e828e160c247e5ccb61" category="paragraph">を参照してください<block ref="24a34ebfc2a0852de6406d8f5a18bd02" category="inline-link-rx"></block>。</block>
   <block id="c523b074da0b63e607578686184d5981" category="section-title">2025年2月10日</block>
-  <block id="8e64dfb0168516c0e7f7880ae745072a" category="section-title">コネクタ3.9.49</block>
-  <block id="f5c64d3f640238b8d1e1ed7062c5561f" category="paragraph">現時点では、3.9.49リリースは標準モードと制限モードで使用できます。</block>
-  <block id="99acbaa3cb87e4fe6650072fa6b0a905" category="section-title">BlueXP  IDおよびアクセス管理（IAM）</block>
-  <block id="4fafa85612a8b2fff96d593213d6a0ec" category="paragraph">BlueXP  IDおよびアクセス管理（IAM）が制限モードで使用されるようになりました。</block>
-  <block id="2f73a8cbcbf617bd5a78738929bbe5b3" category="paragraph">BlueXP  IDおよびアクセス管理（IAM）は、標準モードおよび制限モードでBlueXP  を使用するときにBlueXP  アカウントが提供する以前の機能を置き換え、強化するリソースおよびアクセス管理モデルです。</block>
-  <block id="30f60d67f457bb040dffde52197a54da" category="list-title">関連情報</block>
-  <block id="a5a81005322e1187e396e2f1252dca71" category="inline-link">BlueXP  IAMの詳細</block>
-  <block id="4d3e366c7ef57f5c2037203fa77c103c" category="list-text"><block ref="4d3e366c7ef57f5c2037203fa77c103c" category="inline-link-rx"></block></block>
-  <block id="c12e8c3134a6d5ff2ec2657f6357e8ec" category="inline-link">BlueXP  IAMの使用を開始する</block>
-  <block id="6b7b64b4bdd6080baf05e2c37372258a" category="list-text"><block ref="6b7b64b4bdd6080baf05e2c37372258a" category="inline-link-rx"></block></block>
-  <block id="3a3009b65a0b76e5f313a7be507a533e" category="paragraph">BlueXP  IAMでは、リソースと権限をよりきめ細かく管理できます。</block>
-  <block id="97bcbb158b23b5f59aa77340528d8c84" category="list-text">最上位の_organization_を使用すると、さまざまな_projects_のアクセスを管理できます。</block>
-  <block id="9b574c17fafa6f5e59e653eedc50bdfa" category="list-text">_Folders_関連するプロジェクトをグループ化できます。</block>
-  <block id="0c2ed2a0d470adb6e0ba50cfe426d09a" category="list-text">強化されたリソース管理により、リソースを1つ以上のフォルダまたはプロジェクトに関連付けることができます。</block>
-  <block id="5b61ed8de2f8ed0eccd9e6f8653cc6aa" category="paragraph">たとえば、Cloud Volumes ONTAPシステムを複数のプロジェクトに関連付けることができます。</block>
-  <block id="8113bddacffcd2a7f7d52f8c0403f7fc" category="list-text">強化されたアクセス管理により、組織階層のさまざまなレベルのメンバーにロールを割り当てることができます。</block>
-  <block id="a1bd1f0136afa3d8ee4ccdec799667f8" category="paragraph">これらの機能拡張により、ユーザが実行できるアクションとユーザがアクセスできるリソースをより適切に制御できるようになります。</block>
-  <block id="029ade287eade250f2c9612d148e1fad" category="paragraph-title">制限モードでの既存アカウントへのBlueXP  IAMの影響</block>
-  <block id="18b2a40b23f88190866bbbf028cac95c" category="paragraph">BlueXP  にログインすると、次の変更が表示されます。</block>
-  <block id="33d31192b5c1247904766afc81b1ef60" category="list-text">あなたの_アカウント_が_組織_と呼ばれるようになりました</block>
-  <block id="2a235898ea8ace7ac6030edb3a2e88de" category="list-text">your_workspaces_が_projects_と呼ばれるようになりました。</block>
-  <block id="ba6e308134546bb71f87228ecaaef82c" category="list-text">ユーザロールの名前が変更されました。</block>
-  <block id="b8c7132579d69d219fb874942670a635" category="list-text">アカウント管理者_が現在_組織管理者_である_</block>
-  <block id="27fd174b0e5c48a667a61eb059ff2ad8" category="list-text">_Workspace admin_現在_フォルダまたはプロジェクト管理_</block>
-  <block id="402601978c4c05e28bf41ea74b2c118a" category="list-text">_コンプライアンスビューア_現在_分類ビューア_</block>
-  <block id="396758cef44fe7d4ebed2010a8ee7761" category="list-text">[設定]では、BlueXP  IDとアクセス管理にアクセスして、これらの拡張機能を利用できます。</block>
-  <block id="0909fc2dd5049052e70dfa0e18f7fbcf" category="inline-image-macro">BlueXP  のスクリーンショットは、インターフェイスの上部から選択可能な組織とプロジェクト、および[設定]メニューから使用できるIDとアクセスの管理を示しています。</block>
-  <block id="f08676e8a1e41f582ac0537747703230" category="paragraph"><block ref="f08676e8a1e41f582ac0537747703230" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d9c4ef914f4f136c37c3df051aaedb70" category="list-text">既存のユーザや作業環境に変更はありません。</block>
-  <block id="31243c2d285073a1e31df388c65d726f" category="list-text">ロールの名前は変更されていますが、権限の観点からは違いはありません。ユーザは以前と同じ作業環境に引き続きアクセスできます。</block>
-  <block id="694ce83c478c161c3ac05490450e107e" category="list-text">BlueXP  へのログイン方法に変更はありません。BlueXP  IAMは、BlueXP  アカウントと同様に、NetAppクラウドログイン、NetAppサポートサイトのクレデンシャル、フェデレーテッド接続と連携します。</block>
-  <block id="dfc4954338c7ff2d3998dbe991b1e115" category="list-text">複数のBlueXP  アカウントを使用している場合は、複数のBlueXP  組織が存在することになります。</block>
-  <block id="733cd47965367380792385cdc0bf4492" category="paragraph-title">BlueXP  IAM用API</block>
-  <block id="2047b2bd03a68b861064ed837a1828ad" category="inline-link">BlueXP  IAM向けAPIの詳細</block>
-  <block id="ed819704d51143ca1736581a234a1365" category="paragraph">この変更により、BlueXP  IAM用の新しいAPIが導入されましたが、以前のテナンシーAPIと下位互換性があります。<block ref="100827e03f9a10b65527b59fa5323ff6" category="inline-link-rx"></block></block>
-  <block id="8e3876adf8f21b1509ebcb0486d5bc9c" category="paragraph-title">サポートされる展開モード</block>
-  <block id="8f2f21c16dc203c77301e868fae6ff8c" category="paragraph">BlueXP  IAMは、BlueXP  を標準モードおよび制限モードで使用する場合にサポートされます。BlueXP  をプライベートモードで使用している場合は、引き続きBlueXP  アカウント_を使用してワークスペース、ユーザー、リソースを管理します。</block>
   <block id="4716735cca1c0ec4ab6acb97d14dcaa7" category="inline-link-macro">NetAppサポートでケースを作成</block>
   <block id="f0100d47b49cbe11e6a325bdee8db6ff" category="paragraph">既存のFSx for ONTAPファイルシステムがワークスペースに関連付けられていない場合は、BlueXP  でワークスペースに関連付けられるようお手伝いします。BlueXP  コンソール内から実行できます<block ref="d0e0ce62131d959daa6f062d97c0d6a8" category="inline-link-macro-rx"></block>。サービスとして*[Workload Factory]*を選択します。</block>
   <block id="181840612e9e637bf9dbbc740a738a45" category="inline-link-macro">BlueXP  のワークスペースからFSx for ONTAPファイルシステムを削除する方法</block>
@@ -485,12 +429,7 @@
   <block id="ca475a2b63c70fedcf8f6650024d480b" category="section-title">BlueXP  ワークロードの工場出荷時の権限</block>
   <block id="f157db6a1ae10e7a29a28440d21f5cb8" category="paragraph"><block ref="f157db6a1ae10e7a29a28440d21f5cb8" category="inline-link-macro-rx"></block></block>
   <block id="3aff149422876e5f443408fd802b4fb2" category="paragraph">BlueXP  デジタルウォレットは使いやすさを考慮して再設計され、追加のサブスクリプションとライセンス管理が可能になりました。</block>
-  <block id="5a1f7548d3f8b383dfe658d26f915cce" category="list-text">ロールがプラットフォームとデータサービスの2つのカテゴリのいずれかに関連付けられるようになりました。</block>
-  <block id="2a3e7caa563b2592e27f3890e8d21765" category="section-title">制限モードでBlueXP  IAMが使用されるようになりました</block>
   <block id="2b513ec32615ab736c1cab315db516f8" category="section-title">2025年1月13日</block>
-  <block id="19cb29a89a6fbf6d87da92950ea8482c" category="section-title">コネクタ3.9.48</block>
-  <block id="3d725c77d5fb40a1e06f0ec1f3adb6bf" category="section-title">BlueXP  IDおよびアクセス管理</block>
-  <block id="441419ddc3a341f3081b481a3084eef7" category="section-title">追加のBlueXP  サービスのサポートケースを作成</block>
   <block id="c33f35ab44944cc0d09e5bb702125592" category="section-title">2024年12月16日</block>
   <block id="e5182edc3707e8e354c40ab7fa819f39" category="section-title">2024年10月7日</block>
   <block id="f4b2cfc6ddef927318d045f16b38d151" category="section-title">BlueXP  アラートリストページ</block>
@@ -506,9 +445,6 @@
   <block id="ea3d4df6f8aff21b2dfe549c5ecf9775" category="section-title">運用の監視と追跡に使用可能なトラッカー</block>
   <block id="ce9be95deabee3be9356a5b5de8e7b0b" category="paragraph">新しい監視機能であるTrackerがBlueXP  Amazon FSx for NetApp ONTAPで利用可能になりました。Trackerを使用して、クレデンシャル、ストレージ、およびリンク処理の進捗状況とステータスの監視と追跡、処理タスクとサブタスクの詳細の確認、問題や障害の診断、失敗した処理のパラメータの編集、失敗した処理の再試行を行うことができます。</block>
   <block id="27a901c04d21dffe48f2fc38150f7c5c" category="section-title">BlueXP  ワークロードで利用可能なCloudShell</block>
-  <block id="13ac5039f81a1aa4ae7419bf17b5b6a0" category="section-title">2025年1月6日</block>
-  <block id="16e305f77c7a0272aceac8c95312d98a" category="section-title">NetAppが追加のCloudFormationリソースをリリース</block>
-  <block id="c043b3439543ebfc027a3c1fcb5613a5" category="paragraph">NetAppは、AWSコンソール内で公開されていない高度なONTAPコンポーネントを利用できるCloudFormationリソースを提供するようになりました。CloudFormationは、AWS向けのコードとしてのインフラメカニズムです。レプリケーション関係、CIFS共有、NFSエクスポートポリシー、Snapshotなどを作成できます。</block>
   <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">2023年3月5日</block>
   <block id="912b3a604a5106bda5b0c99ddaaf1364" category="section-title">BlueXPから新しいバケットを追加できるようになりました</block>
   <block id="3bec690d07df1a3a36c8a3122654fc24" category="section-title">2023年6月5日</block>
@@ -551,7 +487,6 @@
   <block id="175fca0ca5f306258c490378dc2367db" category="section-title">サブスクリプションと組織の関連付け</block>
   <block id="a5f7678a307b711643d239d80564147c" category="paragraph">サブスクリプションが関連付けられている組織をデジタルウォレットから直接更新できるようになりました。</block>
   <block id="e8545e234450bbc06ae95bfd7828cfcd" category="section-title">Cloud Volume ONTAPライセンスの管理</block>
-  <block id="78ab02ef4a4fa36c21e9d7181ab77517" category="paragraph">ホームページまたは*データサービスライセンス*タブでCloud Volumes ONTAPライセンスを管理できるようになりました。[Marketplace subscriptions]タブを使用して、サブスクリプション情報を表示します。</block>
   <block id="592997dde366d5775e7e052816854f74" category="section-title">2024年3月5日</block>
   <block id="c94e28d852ce517312825c9ed339fc1d" category="section-title">2023年7月30日</block>
   <block id="1992f2f9fa5c0cbd3b61255b9dd507bd" category="section-title">2024年10月30日</block>
@@ -603,15 +538,6 @@
   <block id="0a6c67d82675687d876fd5170168f147" category="paragraph">新しいBlueXPの運用耐障害性サービスとIT運用リスクの自動修復サービスを使用すると、システム停止や障害が発生する前に推奨される修正策を実装できます。</block>
   <block id="e6ecd439699f8fefa13e20f9536a72a6" category="section-title">Data Infrastructure Insights Storage Workload Securityを使用してユーザの異常な行動を検出</block>
   <block id="ae65c0d044427130470e493bcfa5e9a3" category="section-title">検出して保護するワークロードを選択</block>
-  <block id="21e938043b4ef6be41f16e95f7f5aaaa" category="section-title">2024年11月7日</block>
-  <block id="86510b95a05ce4c22c6d48d2fd9228a9" category="section-title">データの分類を有効にし、個人識別情報（PII）をスキャンする</block>
-  <block id="d599e3d1b6a5137e404ea89f314a22e4" category="paragraph">このリリースでは、BlueXP  ファミリーのコアコンポーネントであるBlueXP  分類を有効にして、ファイル共有ワークロードのデータをスキャンして分類することができます。データを分類することで、データに個人情報が含まれているかどうかを特定し、セキュリティリスクを高めることができます。このプロセスは、ワークロードの重要性にも影響し、適切なレベルの保護でワークロードを保護するのに役立ちます。</block>
-  <block id="a2c442ceb4053f2fbfe23023529b9acb" category="section-title">SIEMとMicrosoft Sentinelの統合</block>
-  <block id="5148a0988dead45b54188f22121bb178" category="paragraph">Microsoft Sentinelを使用して脅威の分析と検出のために、セキュリティおよびイベント管理システム(SIEM)にデータを送信できるようになりました。以前は、AWS Security HubまたはSplunk CloudをSIEMとして選択できました。</block>
-  <block id="178324624f63d3f322bedd1a0cf9e6fc" category="section-title">30日間の無償トライアル</block>
-  <block id="31e5266d7eefb6e39e445571b556a4b6" category="paragraph">このリリースでは、BlueXP  ランサムウェア対策の新規導入に30日間の無償トライアルが提供されるようになりました。以前は、BlueXP  ランサムウェア対策は90日間の無償トライアルを提供していました。すでに90日間の無償トライアルを利用している場合は、90日間継続されます。</block>
-  <block id="131dcf966228f0c4a90e6e64618c8def" category="section-title">Podmanのアプリケーションワークロードをファイルレベルでリストア</block>
-  <block id="b4a1818e2de3da83b0e71c710c96525c" category="paragraph">アプリケーションワークロードをファイルレベルでリストアする前に、攻撃の影響を受けた可能性があるファイルのリストを表示し、リストアするファイルを特定できるようになりました。以前は、組織（以前はアカウント）のBlueXP  コネクタがPodmanを使用していた場合、この機能は無効になっていました。これでPodmanで有効になりました。BlueXPランサムウェア対策でリストアするファイルを選択したり、アラートの影響を受けたすべてのファイルを記載したCSVファイルをアップロードしたり、リストアするファイルを手動で特定したりできます。</block>
   <block id="282baca6aef56652f503adce6afa9f07" category="section-title">シユウフク</block>
   <block id="638be56d4cf930b576e6dc1300c7c33b" category="section-title">2022年9月18日</block>
   <block id="168c5915eb40be2beb0ac04f286489ba" category="section-title">FSX for ONTAP to Cloud Volumes ONTAP の略</block>
@@ -658,14 +584,10 @@
   <block id="1d26b47b0bf4a8a52ca8e66bcb8661dc" category="paragraph">このリリースでは、以前のサポートバージョンに加えて、Red Hat Enterprise Linux v9.5もサポートされます。これは、ダークサイトの導入を含む、BlueXP  分類の手動オンプレミスインストールに適用されます。</block>
   <block id="3461c6d70dff5780cf443e0892f0b5af" category="paragraph">次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があり、BlueXP  分類バージョン1.30以降が必要です。Red Hat Enterprise Linuxバージョン8.8、8.10、9.0、9.1、9.2、9.3、9.4、9.5。</block>
   <block id="ce7ca903497eb6081e95129584ddf094" category="paragraph-title">スキャンの優先順位付け</block>
-  <block id="c05a4c0b45b0c78ba3771a3530738f78" category="paragraph">マッピングのみのスキャンを実行する場合は、最も重要なスキャンに優先順位を付けることができます。この機能は、多数の作業環境があり、優先度の高いスキャンを先に完了させたい場合に役立ちます。</block>
   <block id="03b61f1818fbb0c7e0a356c942abdc31" category="paragraph">デフォルトでは、スキャンは開始順序に基づいてキューに入れられます。スキャンに優先順位を付ける機能により、スキャンをキューの先頭に移動できるようになりました。複数のスキャンに優先順位を付けることができます。優先順位は、先入れ先出し順で指定されます。つまり、最初に優先順位を付けたスキャンがキューの先頭に移動し、2番目に優先順位を付けたスキャンがキューの2番目に移動します。</block>
   <block id="e04ee48d980fd3722fe28400afcc0416" category="paragraph">優先度は1回だけ付与されます。マッピングデータの自動再スキャンは、デフォルトの順序で実行されます。</block>
   <block id="c92ddb2e7e35e5bd406e62b822c22b14" category="inline-link-macro">マッピングのみのスキャン</block>
-  <block id="42968807986d9cd74ea7703d63bf3408" category="paragraph">優先度を変更するには：</block>
   <block id="09d7e52dfc68f84cd7ef45e3c26a0389" category="list-text">BlueXP  分類メニューから*設定*を選択します。</block>
-  <block id="9ad22d134d0b57050c5d4d4a8e861bf9" category="list-text">優先順位を付けるリソースを選択します。</block>
-  <block id="dde93fd6ebd9f31996e0ca6a50869101" category="list-text">[Actions...]オプションから、*[Prioritize scan]*を選択します。</block>
   <block id="c3f4889bec03e0a3ba10184db92b3b07" category="paragraph-title">すべてのスキャンを再試行</block>
   <block id="06243660aeb549bac73e7c160d2d2a70" category="paragraph">BlueXP  分類では、失敗したすべてのスキャンをバッチ再試行できるようになりました。</block>
   <block id="18dfe95c4c66dde6d275ff14f1c99ea9" category="paragraph">**すべて再試行**機能を使用して、バッチ操作でスキャンを再試行できるようになりました。ネットワークの停止などの一時的な問題が原因で分類スキャンが失敗した場合は、個 々 に再試行するのではなく、ボタン1つですべてのスキャンを同時に再試行できます。スキャンは必要に応じて何度でも再試行できます。</block>
@@ -714,22 +636,6 @@
   <block id="2d5a4b914acb6c2f03d312067c73ce32" category="section-title">2025年3月2日</block>
   <block id="fd8693cf8f6802fd1c7d50d5742a4c71" category="section-title">TrackerのCloudShellイベント</block>
   <block id="de57e19ed3d5b873e357689269de25a1" category="paragraph">CloudShellを使用してBlueXP  ワークロードからFSx for ONTAPの処理を実行すると、イベントがトラッカーに表示されます。</block>
-  <block id="278edfabbac204688aa13f79c6f52497" category="section-title">2025年3月6日</block>
-  <block id="66a5f69d070814deb69bf917dd07a6af" category="section-title">コネクタ3.9.49アップデート</block>
-  <block id="00d64ff7da906ec5530c4e990fb334cb" category="section-title">BlueXP  テコネクタヲシヨウスルシヨウコウノONTAP System Managerヘノアクセス</block>
-  <block id="b539e86fbaa7eae465366a0142624ec2" category="paragraph">BlueXP  管理者（Organization adminロールを持つユーザ）は、ONTAPシステムマネージャにアクセスするためにONTAPクレデンシャルの入力を求めるようにBlueXP  を設定できます。この設定を有効にすると、BlueXP  に保存されないため、ユーザは毎回ONTAPクレデンシャルを入力する必要があります。</block>
-  <block id="990a2328425e217648ea5dd2ae370ffb" category="inline-link-macro">クレデンシャルを設定する方法について説明します。</block>
-  <block id="65ac46c0fd2260c1febd841aed98d599" category="paragraph">この機能は、コネクタバージョン3.9.49以降で使用できます。<block ref="3a5e8b35a098e08d607fb27978dec106" category="inline-link-macro-rx"></block>です。</block>
-  <block id="a03c6dfbb1d64911f1090d54175ff8d3" category="section-title">コネクタ3.9.48アップデート</block>
-  <block id="1697b2b05dc5c7ad63e22e713e94ba7c" category="section-title">コネクタの自動アップグレード設定を無効にする機能</block>
-  <block id="91f4c340492e583f80db57f970516c1f" category="paragraph">コネクタの自動アップグレード機能を無効にすることができます。</block>
-  <block id="459e65cb3fcf9e226149b023791951b2" category="paragraph">BlueXP  を標準モードまたは制限モードで使用すると、コネクタにソフトウェアの更新を取得するためのアウトバウンドインターネットアクセスがある限り、BlueXP  はコネクタを自動的に最新リリースにアップグレードします。コネクタのアップグレード時に手動で管理する必要がある場合は、標準モードまたは制限モードの自動アップグレードを無効にできるようになりました。</block>
-  <block id="01d6125faf020265bf432216c335698c" category="admonition">この変更は、コネクタを常に自分でアップグレードする必要があるBlueXP  プライベートモードには影響しません。</block>
-  <block id="0e9ee8d377b683ca8ac77de05c3539d9" category="paragraph">この機能は、コネクタバージョン3.9.48以降で使用できます。</block>
-  <block id="355c51d49cd780f57fe417fdede5f61c" category="inline-link-macro">コネクタの自動アップグレードを無効にする方法について説明します。</block>
-  <block id="530a13d3dc2fccc16ebe8e25a47286a1" category="paragraph"><block ref="530a13d3dc2fccc16ebe8e25a47286a1" category="inline-link-macro-rx"></block></block>
-  <block id="4bbf2de0e52eb20a42e04cf23bdb1683" category="list-text">BlueXP  ユーザへの複数のロールの割り当てがサポートされます。</block>
-  <block id="0608305ed5721ad4a69c3643b176e371" category="list-text">BlueXP  組織（Org/フォルダ/プロジェクト）の複数のリソースへの役割の割り当てのサポート</block>
   <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">2025年3月10日</block>
   <block id="4fce1192bdd8d2ff506dd6d380e85fdd" category="section-title">バージョン1.41</block>
   <block id="3bc103100363af5c774f4610f1cd7eec" category="paragraph">このBlueXP  分類リリースには、全般的な改善とバグ修正が含まれています。次の内容も含まれます。</block>
@@ -771,8 +677,6 @@
   <block id="7937af8bb9aecdab11a666bfc7946c61" category="paragraph">以前は、BlueXP  のバックアップとリカバリのUIではバックアップコピー数が999個に制限されていましたが、CLIではそれより多くのコピーを実行できました。これで、1つのバックアップポリシーに最大4、000個のボリューム（バックアップポリシーに関連付けられていない1、018個のボリューム）を関連付けることができます。このアップデートには、これらの制限を超えないようにする追加の検証が含まれています。</block>
   <block id="d5479e738a91b3a64956ed9f9e81bc5a" category="section-title">SnapMirrorクラウドの再同期</block>
   <block id="06476618a5631fabf79c4d5ebe8b60b0" category="paragraph">この更新により、SnapMirror関係の削除後にサポートされていないバージョンのONTAPについては、BlueXP  バックアップおよびリカバリからSnapMirrorクラウドの再同期を開始できなくなります。</block>
-  <block id="322a339b221056f32120ffd18077d44d" category="section-title">AzureのAPIを使用してStorage VMを自動作成</block>
-  <block id="aa1c2167957b1092da7e43e77867748c" category="paragraph">BlueXP  APIを使用して、AzureでCloud Volumes ONTAP用に追加データを提供するStorage VMを作成、名前変更、削除できるようになりました。Storage VMを管理目的で使用する必要がある場合は、APIを使用すると、必要なネットワークインターフェイス、LIF、管理LIFの設定など、Storage VMの作成プロセスが自動化されます。</block>
   <block id="5f2734b84896bdabcf7fd3574325d116" category="section-title">2025年3月28日</block>
   <block id="4da9a5d0cff1ab5f795fbdd68c2eedc2" category="section-title">プライベートモードリリース（3.9.50）</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetAppサポートサイト</block>
@@ -784,7 +688,6 @@
   <block id="edf21d7ecb364e8210ddd3dfaeca6fbf" category="cell">コネクタ</block>
   <block id="5820ebbb1da4e36bc0eb0db564450b99" category="cell">3.9.50、3.9.49</block>
   <block id="03f247630aa241e4b15df35baf8f5fd1" category="inline-link">BlueXP  Connectorページの新機能</block>
-  <block id="e411690e8dc95cbf79272f1e53cce845" category="cell">を参照<block ref="291fbb881b3918f162f476bad9d0c478" category="inline-link-rx"></block>し、バージョン3.9.50および3.9.49に含まれている変更を参照してください。</block>
   <block id="57d300ca1fdd6058fd2a0882b05ba831" category="inline-link">BlueXP  バックアップ/リカバリページの新機能</block>
   <block id="0e231d3391a335865e696150143618bc" category="cell">に移動し<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block>、2024年3月リリースに含まれる変更点を参照してください。</block>
   <block id="10c518409c3dfbdd5e9839d2076ed5da" category="cell">2025年3月10日（バージョン1.41）</block>
@@ -801,9 +704,6 @@
   <block id="5920daf334ecef8057dd1e1d15f6124e" category="section-title">Cloud Volumes ONTAP 9.14.1でイネーブルになっているプライベートモード展開</block>
   <block id="f2035db09bb2be2db0508915fa584149" category="paragraph">Cloud Volumes ONTAP 9.14.1をプライベートモードでAWS、Azure、Google Cloudに導入できるようになりました。プライベートモードは、Cloud Volumes ONTAP 9.14.1のシングルノード環境とハイアベイラビリティ（HA）環境の両方で有効になります。</block>
   <block id="dc748283e7593515df9e8f2759a85349" category="paragraph">プライベートモード配置の詳細については、を参照してください<block ref="312f421b6dd5cf62286ecf6a82a8132e" category="inline-link-rx"></block>。</block>
-  <block id="4a688a36b1b8761ed6587867f87a2cc3" category="inline-link">AzureのCloud Volumes ONTAP用のデータ提供用Storage VMを管理します。</block>
-  <block id="efef8f9f364ee7668a530080a3464383" category="paragraph"><block ref="efef8f9f364ee7668a530080a3464383" category="inline-link-rx"></block></block>
-  <block id="3bc16ca089e94f59f68f327af0c3b646" category="paragraph">&lt;stdin&gt;の未解決のディレクティブ- Include :: https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/whats-new.adoc[tag=whats-new,leveloffset=+1]</block>
   <block id="1b4189ae198caba09051ca2138497fc7" category="section-title">2025年3月5日</block>
   <block id="5542dbcb72159ed44fa6bf922b45c1e8" category="list-text">Disk Qualification Package（DQP）を使用して、事前に定義された健常性とパフォーマンスの条件に従って、ディスクコントローラとストレージデバイスファームウェアを自動的に更新できるようになりました。これにより、潜在的な障害が減少し、システム全体の信頼性が向上します。</block>
   <block id="90dd6f07c096c3965dc62d991f80f7fd" category="list-text">システムと最新のタイムゾーン定義の整合性を自動的に維持するために、タイムゾーンデータベース（DB）が導入されました。これにより、タイムゾーンルールが変更された場合でも、時間依存の操作がスムーズに継続されます。</block>
@@ -814,4 +714,47 @@
   <block id="3450754e7ec63bd0a961376c9928752a" category="paragraph">CloudShellを使用している場合、ONTAP CLIコマンドを発行してエラーが発生するたびに、失敗の説明、失敗の原因、詳細な解決策を含むAI生成のエラー応答を取得できます。</block>
   <block id="4ef50e373522b91f7df59d5cba69a8b7" category="section-title">IAM：SimulatePermissionPolicy権限の更新</block>
   <block id="906699741ebd9905a07af900abcfd438" category="paragraph">AWSアカウントのクレデンシャルを追加したり、生成AIワークロードなどの新しいワークロード機能を追加したりするときに、ワークロードファクトリコンソールから権限を管理できるようになりまし<block ref="19f5de89e4c667692a153296018e225f" prefix=" " category="inline-code"></block>た。</block>
+  <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">2025年4月14日</block>
+  <block id="1fa6d342759ba5c5a8f23c210cac048c" category="section-title">コネクタ3.9.51</block>
+  <block id="44cd288eedf76c78c5b3b26935538537" category="paragraph">現時点では、3.9.51リリースは標準モードと制限モードで使用できます。</block>
+  <block id="5c4a2c71456e5295a9492bb06d95be3d" category="section-title">BlueXP  IDおよびアクセス管理（IAM）</block>
+  <block id="38469cab8f7065ff2b3a663e28381c62" category="list-text">Org管理者、フォルダ管理者、プロジェクト管理者がいないユーザにランサムウェアからの保護にアクセスするには、ランサムウェアからの保護ロールが割り当てられている必要があります。ユーザには、Ransomware protection adminまたはRansomware protection viewerのいずれかのロールを割り当てることができます。</block>
+  <block id="a9632ee5411be0309684063f13ba77a8" category="list-text">組織管理者、フォルダ管理者、プロジェクト管理者がいないユーザにKeystoneにアクセスするには、Keystoneロールが割り当てられている必要があります。ユーザには、Keystone管理者またはKeystoneビューアのいずれかのロールを割り当てることができます。</block>
+  <block id="c86bd67be80794fcaa3f1d91aa8b2899" category="inline-link-macro">アクセスロールについて説明します。</block>
+  <block id="5a4d408bd57f7cf7efbd6cf878c737a7" category="paragraph"><block ref="5a4d408bd57f7cf7efbd6cf878c737a7" category="inline-link-macro-rx"></block></block>
+  <block id="d4d44165c3ece93b64c24e52e61879a3" category="list-text">Org管理者、フォルダ管理者、またはプロジェクト管理者のロールがある場合は、KeystoneサブスクリプションをIAMプロジェクトに関連付けることができるようになりました。KeystoneサブスクリプションをIAMプロジェクトに関連付けると、BlueXP  内でKeystoneへのアクセスを制御できます。</block>
+  <block id="f16867c24816cbe638e99bd00c5d371b" category="cell">にアクセス<block ref="291fbb881b3918f162f476bad9d0c478" category="inline-link-rx"></block>し、バージョン3.9.50および3.9.49の変更点を参照してください。</block>
+  <block id="b84cda7d6006e8abb6e6264e292b13c0" category="paragraph">管理できるようになりまし<block ref="19f5de89e4c667692a153296018e225f" prefix=" " category="inline-code"></block>AWSアカウントのクレデンシャルを追加したり、生成AIワークロードなどの新しいワークロード機能を追加したりするときに、BlueXP  コンソールから権限をた。</block>
+  <block id="8ee0913e940253bb841c1a05228d81e5" category="paragraph"><block ref="8ee0913e940253bb841c1a05228d81e5" category="inline-link-macro-rx"></block></block>
+  <block id="33fc2a8f6921fec02571495993aa2c6c" category="section-title">バージョン1.42</block>
+  <block id="83962582dc3c189ba60063fe7990755c" category="paragraph">このBlueXP  分類リリースの内容は次のとおりです。</block>
+  <block id="2dcf334efa4f886393cac0e44ff5a917" category="paragraph-title">作業環境の一括スキャン</block>
+  <block id="57e954d06c81eea089fcb04e61b1c429" category="paragraph">BlueXP  の分類で、作業環境の一括操作がサポートされるようになりました。マッピングスキャンの有効化、スキャンのマッピングと分類の有効化、スキャンの無効化、または作業環境内のボリューム間でのカスタム構成の作成を選択できます。個 々 のボリュームを選択した場合は、一括選択よりも優先されます。一括操作を実行するには'**Configuration**ページに移動して選択します</block>
+  <block id="7c021042892d25e3e5d4271749e03344" category="paragraph-title">調査レポートをローカルにダウンロード</block>
+  <block id="a8539b02096aea65d2e102c01a482c71" category="paragraph">BlueXP  分類では、データ調査レポートをローカルにダウンロードしてブラウザで表示できるようになりました。ローカルオプションを選択した場合、データ調査はCSV形式でのみ使用でき、最初の10,000行のデータのみが表示されます。</block>
+  <block id="6b41c846432704bbeebdc71cd92e0ac2" category="inline-link-macro">BlueXP  分類を使用して、組織に保存されているデータを調査する</block>
+  <block id="95403a677c140fea03f157c2edb41c85" category="paragraph">詳細については、を参照してください <block ref="55ff936b35b23a6f6693627bfb444c62" category="inline-link-macro-rx"></block>。</block>
+  <block id="9340ce8741905e7d6ff4c0ca07a7a39a" category="paragraph-title">マッピングのみのスキャンの優先順位付け</block>
+  <block id="bc19fc1fb9d36ac2eec32fb81f6e5cca" category="paragraph">マッピングのみのスキャンを実行する場合は、最も重要なスキャンに優先順位を付けることができます。この機能は、多数の作業環境があり、優先度の高いスキャンを先に完了させたい場合に役立ちます。</block>
+  <block id="2e41eb33226717a4730fa2131336dc5a" category="paragraph">詳細については、を参照してください <block ref="9493b318b51f384796e93c6ba74f5935" category="inline-link-macro-rx"></block>。</block>
+  <block id="d0ae6326de6f7742cd369aae9832406f" category="section-title">Google CloudのAPIを使用してStorage VMの作成を自動化</block>
+  <block id="1bf898a189d08a92d24b9432b7db4ed0" category="paragraph">BlueXP  APIを使用して、Google CloudでのStorage VMの作成を自動化できるようになりました。この機能は、Cloud Volumes ONTAPのハイアベイラビリティ（HA）構成で使用してきましたが、シングルノード環境でも使用できるようになりました。BlueXP  APIを使用すると、追加データを提供するStorage VMをGoogle Cloud環境で簡単に作成、名前変更、および削除できます。必要なネットワークインターフェイス、LIF、管理LIFを手動で設定する必要はありません。この自動化により、Storage VMの管理プロセスが簡易化されます。</block>
+  <block id="914fe95f5aa6c2bb4ed60cded696ac13" category="inline-link">Google CloudでCloud Volumes ONTAP用のデータ提供用Storage VMを管理します。</block>
+  <block id="cb90b26778c86b6622460939076514de" category="paragraph"><block ref="cb90b26778c86b6622460939076514de" category="inline-link-rx"></block></block>
+  <block id="0bc14678dfe9cde6019256774c92b34e" category="paragraph">ホームページまたは*直接ライセンス*タブでCloud Volumes ONTAPライセンスを管理できるようになりました。[Marketplace subscriptions]タブを使用して、サブスクリプション情報を表示します。</block>
+  <block id="4fe331eaa4881ca37fd2ff947e6b8bec" category="section-title">準備状況ドリルレポート</block>
+  <block id="e78c37e0abce1f032a2a34eda9e02a54" category="paragraph">このリリースでは、ランサムウェア攻撃の準備状況を示すドリルレポートを確認できます。準備のためのドリルでは、新しく作成したサンプルワークロードに対するランサムウェア攻撃をシミュレートできます。次に、シミュレートされた攻撃を調査し、サンプルワークロードをリカバリします。アラート通知、対応、リカバリの各プロセスをテストすることで、ランサムウェア攻撃が実際に発生した場合に備えておくことができます。</block>
+  <block id="cc61bd0d76dc349aa4d70e26ca03704d" category="section-title">新しいロールベースアクセス制御のロールと権限</block>
+  <block id="a9e4a39d54899a1c668bdab8048e1dc5" category="paragraph">これまでは、ユーザの責任に基づいてロールと権限をユーザに割り当てることができました。これは、BlueXP  ランサムウェア対策へのユーザアクセスの管理に役立ちます。このリリースでは、BlueXP  ランサムウェア対策に固有の2つの新しいロールが追加され、権限が更新されました。新しいロールは次のとおりです。</block>
+  <block id="a95fe9e5a7b678fa4abc81ea69f1e257" category="list-text">ランサムウェア対策管理者</block>
+  <block id="6a05decc7d63f19c1d5812a3c728ce8a" category="list-text">ランサムウェア対策ツール</block>
+  <block id="51871ed75f741b0dab90d2d1612f6499" category="inline-link">BlueXP  ランサムウェア対策機能へのロールベースアクセス</block>
+  <block id="b42fe8f702412cfa14541d3fab58efa6" category="paragraph">権限の詳細については、を参照してください<block ref="01046b99aab91b10679a0fac299864df" category="inline-link-rx"></block>。</block>
+  <block id="25ccc48b022e2433d5b379cc51530139" category="section-title">支払いの改善</block>
+  <block id="a3d54846581a4bb8314f87602a4ba2c0" category="paragraph">このリリースには、支払いプロセスのいくつかの改善が含まれています。</block>
+  <block id="7ffb0c59c068d14b0ee6581cde479463" category="inline-link">ライセンスと支払いのオプションを設定する</block>
+  <block id="52a7f2b6af87f28195cf6badbad6c667" category="paragraph">詳細については、を参照してください<block ref="a8b1ada7f83ee5659f868a512032628f" category="inline-link-rx"></block>。</block>
+  <block id="47388f68695ab5799ff2adfb33bca00d" category="section-title">2025年4月2日</block>
+  <block id="f50a226c5a51111405309ae78236d95d" category="section-title">軽減されたリスク</block>
+  <block id="66fa090892a2bd81c896ab6fbf156b19" category="paragraph">BlueXP  ソフトウェア更新プログラムの概要セクションに、オペレーティングシステムの更新によって軽減できるリスクの総数が表示されるようになりました。これにより、インストールベースのセキュリティと安定性の向上を評価できます。</block>
 </blocks>
