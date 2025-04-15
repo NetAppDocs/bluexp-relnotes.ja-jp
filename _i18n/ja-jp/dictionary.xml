@@ -812,10 +812,7 @@
   <block id="dcc61fc6bf6aa17ea807ec107b3f9682" category="paragraph-title">[保存済み検索]タブ</block>
   <block id="1005b3a447fe9caf1ce373cf96b4dc01" category="inline-xref-macro">**保存された検索**</block>
   <block id="619964fa6c4dc175f106697cd53cd93b" category="paragraph">**Policies**タブの名前が変更されました<block ref="57cf69bfb5ee6dec8716152c342ad94c" category="inline-xref-macro-rx"></block>。機能は同じです。</block>
-  <block id="260ad9aa0619e900a957ec4498a7084d" category="paragraph-title">スキャンイベントを監査ログに送信</block>
   <block id="decaf26b476fc5aad56ba857036660b7" category="inline-link-macro">BlueXP  のタイムライン</block>
-  <block id="7d71019726dccc04ceb52b94f892b7f6" category="inline-xref-macro">監査ログ</block>
-  <block id="1c6653b6dfd13a16237efa3ea5c87e2a" category="paragraph">BlueXP  スキャンイベントをに送信できるようになりました<block ref="e7616c9e5375866db0d455d96b016998" category="inline-xref-macro-rx"></block>。BlueXP  分類では、への分類イベント（スキャンの開始時と終了時）の送信もサポートされています<block ref="bf2e0502217ecef5db4e8e3a077fc733" category="inline-link-macro-rx"></block>。分類スキャンイベントのBlueXP  タイムラインへの送信は、作業環境でのみサポートされています。</block>
   <block id="ddba4621d4e9a4c39c38ef2131834760" category="list-title">セキュリティの更新</block>
   <block id="0a39c7bc14a0f00de22f1ead79c18b0c" category="list-text">Kerasパッケージが更新され、脆弱性（BDSA-2025-0107およびBDSA-2025-1984）が緩和されました。</block>
   <block id="408f8b982d641a307784a27c0fb6d9c9" category="list-text">Dockerコンテナの設定が更新されました。コンテナは、未加工のネットワークパケットを作成するためのホストのネットワークインターフェイスにアクセスできなくなります。不要なアクセスを減らすことで、潜在的なセキュリティリスクを軽減します。</block>
@@ -846,4 +843,6 @@
   <block id="b618f30aeca114d464120de119b19ced" category="paragraph">を参照してください<block ref="5f37f8bd4230e4b629c60b7dc23a5850" category="inline-link-rx"></block></block>
   <block id="74d516ef8dfa098bb4cd92313c403475" category="section-title">CloudShellオートコンプリートのサポート</block>
   <block id="df96b6f4ceabb5c4dbc915475fd821fe" category="paragraph">BlueXP  ワークロードファクトリCloudShellを使用している場合は、コマンドの入力を開始してTabキーを押すと、使用可能なオプションが表示されます。複数の候補が存在する場合は、CLIに候補のリストが表示されます。この機能は、エラーを最小限に抑え、コマンド実行を高速化することで、生産性を向上させます。</block>
+  <block id="17fd2e7ebeeede6a03f9340d8abb7cb1" category="paragraph-title">スキャンイベントをBlueXP  タイムラインに送信</block>
+  <block id="2fb6ac863fbf4be01901268bf08e147f" category="paragraph">BlueXP  分類では、への分類イベント（スキャンの開始時と終了時）の送信がサポートされるようになりました<block ref="bf2e0502217ecef5db4e8e3a077fc733" category="inline-link-macro-rx"></block>。</block>
 </blocks>

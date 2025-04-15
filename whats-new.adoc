@@ -464,8 +464,8 @@ BlueXP  分類では、MapおよびClassifyスキャンのカスタム分類が
 .[保存済み検索]タブ
 **Policies**タブの名前が変更されましたxref:task-using-policies.html[**保存された検索**]。機能は同じです。
 
-.スキャンイベントを監査ログに送信
-BlueXP  スキャンイベントをに送信できるようになりましたxref:task-audit-data-sense-actions.html[監査ログ]。BlueXP  分類では、への分類イベント（スキャンの開始時と終了時）の送信もサポートされていますlink:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["BlueXP  のタイムライン"^]。分類スキャンイベントのBlueXP  タイムラインへの送信は、作業環境でのみサポートされています。
+.スキャンイベントをBlueXP  タイムラインに送信
+BlueXP  分類では、への分類イベント（スキャンの開始時と終了時）の送信がサポートされるようになりましたlink:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["BlueXP  のタイムライン"^]。
 
 .セキュリティの更新
 * Kerasパッケージが更新され、脆弱性（BDSA-2025-0107およびBDSA-2025-1984）が緩和されました。
