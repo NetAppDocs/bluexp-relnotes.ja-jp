@@ -136,6 +136,46 @@ https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["BlueXP  アラ
 
 
 
+=== 2025年5月4日
+
+
+
+==== トラッカー応答サポート
+
+TrackerでAPI応答が返されるようになり、タスクに関連するREST API出力を確認できるようになりました。
+
+
+
+==== AWS Secrets Managerのリンク認証のサポート
+
+AWS Secrets Managerのシークレットを使用してリンクを認証できるようになり、BlueXP  ワークロードに保存されているクレデンシャルを使用する必要がなくなりました。
+
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["LambdaリンクでFSx for ONTAPファイルシステムに接続"]
+
+
+
+==== FSx for ONTAPファイルシステムのベストプラクティスを実装
+
+BlueXP  ワークロードは、ファイルシステム構成の適切な設計ステータスを確認できるダッシュボードを提供します。この分析を活用して、FSx for ONTAPファイルシステムのベストプラクティスを実装できます。ファイルシステム構成の分析には、SSD容量のしきい値、スケジュールされたローカルスナップショット、FSx for ONTAPのスケジュールされたバックアップ、データ階層化、リモートデータレプリケーションなどの構成が含まれます。
+
+* link:https://docs.netapp.com/us-en/workload-fsx-ontap/configuration-analysis.html["ファイルシステム構成の適切に設計された分析をご紹介します"]
+* link:https://review.docs.netapp.com/us-en/workload-fsx-ontap_well-architected/improve-configurations.html["ファイルシステムのベストプラクティスの実装"]
+
+
+
+
+==== ファイルシステムの問題に対する適切に設計された通知
+
+BlueXP  コンソールで、適切に設計された問題があるFSx for ONTAPファイルシステムに、ファイルシステムに修正が必要な問題があることを示す通知がキャンバスに表示されるようになりました。
+
+
+
+==== 権限に関する用語を更新
+
+ワークロードファクトリのユーザインターフェイスとドキュメントでは、読み取り権限を「読み取り専用」に、自動権限を「読み取り/書き込み」に指定するようになりました。
+
+
+
 === 2025年3月30日
 
 
@@ -157,42 +197,6 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.ht
 CloudShellを使用してBlueXP  ワークロードからFSx for ONTAPの処理を実行すると、イベントがトラッカーに表示されます。
 
 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-monitor-operations.html["BlueXP  でFSx for ONTAPの運用を監視および追跡する方法をご確認ください"^]
-
-
-
-=== 2025年2月2日
-
-
-
-==== FSx for ONTAPファイルシステムをBlueXP  のワークスペースに関連付ける
-
-2024年11月のBlueXP  統合後、新しく作成したFSx for ONTAPファイルシステムは、BlueXP  内の1つのワークスペースに関連付けられませんでした。FSx for ONTAPファイルシステムを作成または検出すると、それらのファイルシステムはBlueXP  アカウント内の1つのワークスペースに関連付けられます。
-
-既存のFSx for ONTAPファイルシステムがワークスペースに関連付けられていない場合は、BlueXP  でワークスペースに関連付けられるようお手伝いします。BlueXP  コンソール内から実行できますlink:https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#create-a-case-with-netapp-support["NetAppサポートでケースを作成"^]。サービスとして*[Workload Factory]*を選択します。
-
-
-
-==== BlueXP  カンバスカラノファイルシステムノサクジョ
-
-BlueXP  キャンバスのワークスペースからFSx for ONTAPファイルシステムを削除できるようになりました。この操作を実行すると、ファイルシステムとワークスペースの関連付けが解除され、同じBlueXP  アカウント内の別のワークスペースにファイルシステムを関連付けることができます。
-
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-remove-filesystem.html["BlueXP  のワークスペースからFSx for ONTAPファイルシステムを削除する方法"^]
-
-
-
-==== 運用の監視と追跡に使用可能なトラッカー
-
-新しい監視機能であるTrackerがBlueXP  Amazon FSx for NetApp ONTAPで利用可能になりました。Trackerを使用して、クレデンシャル、ストレージ、およびリンク処理の進捗状況とステータスの監視と追跡、処理タスクとサブタスクの詳細の確認、問題や障害の診断、失敗した処理のパラメータの編集、失敗した処理の再試行を行うことができます。
-
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-monitor-operations.html["BlueXP  でFSx for ONTAPの運用を監視および追跡する方法をご確認ください"^]
-
-
-
-==== BlueXP  ワークロードで利用可能なCloudShell
-
-CloudShellは、BlueXP  コンソール内でBlueXP  ワークロードを実行している場合に使用できます。CloudShellを使用すると、BlueXP  アカウントで提供したAWSとONTAPのクレデンシャルを使用して、シェルに似た環境でAWS CLIコマンドまたはONTAP CLIコマンドを実行できます。
-
-link:https://docs.netapp.com/us-en/workload-setup-admin/use-cloudshell.html["CloudShellを使用"^]
 
 
 
@@ -434,6 +438,48 @@ BlueXP  のバックアップとリカバリでは、ソース作業環境上�
 
 
 
+=== 2025年5月12日
+
+
+
+==== バージョン1.43
+
+このBlueXP  分類リリースの内容は次のとおりです。
+
+.分類スキャンの優先順位付け
+BlueXP  分類では、マッピングのみのスキャンに加えて、マップの優先順位付けとスキャンの分類がサポートされるようになり、最初に完了するスキャンを選択できるようになりました。MapおよびClassifyスキャンの優先順位付けは、スキャンの開始中および開始前にサポートされます。進行中のスキャンに優先順位を付けることを選択した場合は、マッピングスキャンと分類スキャンの両方に優先順位が付けられます。
+
+詳細については、を参照してください link:task-managing-repo-scanning.html#prioritize-scans["スキャンの優先順位付け"]。
+
+.カナダの個人識別情報（PII）データカテゴリのサポート
+BlueXP  分類スキャンでは、すべての州と地域の銀行情報、パスポート番号、社会保険番号、運転免許証番号、健康カード番号について、カナダのPIIデータカテゴリを特定できるようになりました。
+
+詳細については、を参照してくださいxref:reference-private-data-categories.adoc#types-of-personal-data[個人データのカテゴリ]。
+
+.カスタム分類（プレビュー）
+BlueXP  分類では、MapおよびClassifyスキャンのカスタム分類がサポートされるようになりました。カスタム分類を使用すると、組織固有のデータをキャプチャするようにBlueXP  スキャンを調整して、正規表現への準拠を確保できます。この機能は現在プレビュー中です。
+
+詳細については、を参照してください xref:task-custom-classification.adoc[カスタム分類の追加]。
+
+.[保存済み検索]タブ
+**Policies**タブの名前が変更されましたxref:task-using-policies.html[**保存された検索**]。機能は同じです。
+
+.スキャンイベントを監査ログに送信
+BlueXP  スキャンイベントをに送信できるようになりましたxref:task-audit-data-sense-actions.html[監査ログ]。BlueXP  分類では、への分類イベント（スキャンの開始時と終了時）の送信もサポートされていますlink:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["BlueXP  のタイムライン"^]。分類スキャンイベントのBlueXP  タイムラインへの送信は、作業環境でのみサポートされています。
+
+.セキュリティの更新
+* Kerasパッケージが更新され、脆弱性（BDSA-2025-0107およびBDSA-2025-1984）が緩和されました。
+* Dockerコンテナの設定が更新されました。コンテナは、未加工のネットワークパケットを作成するためのホストのネットワークインターフェイスにアクセスできなくなります。不要なアクセスを減らすことで、潜在的なセキュリティリスクを軽減します。
+
+
+.パフォーマンスの強化
+RAMの使用量を削減し、BlueXP  分類の全体的なパフォーマンスを向上させるために、コードの拡張が実装されています。
+
+.バグ修正
+StorageGRIDスキャンが失敗する原因となったバグ、調査ページのフィルタオプションがロードされない問題、および大量評価のためにダウンロードされないデータ検出評価が修正されました。
+
+
+
 === 2025年4月14日
 
 
@@ -551,6 +597,26 @@ Data Investigationレポートからのデータのエクスポートには、�
 
 
 
+=== 2025年5月12日
+
+
+
+==== Azure Marketplaceを通じたBlueXP  の導入環境の調査
+
+BlueXP  では、Azure Marketplaceから直接導入されたCloud Volumes ONTAPシステムを検出できるようになりました。つまり、これらのシステムを他のCloud Volumes ONTAPシステムと同様に、BlueXP  で作業環境として追加および管理できるようになりました。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploy-cvo-azure-mktplc.html["Azure MarketplaceからCloud Volumes ONTAPを導入"^]
+
+
+
+==== Azureテナントのデータを階層化する機能
+
+Cloud Volumes ONTAP作業環境をあるテナントで作成し、BlueXP  Connectorを別のテナントで作成するシナリオで、Azureテナントの階層化を有効にできるようになりました。この機能を使用すると、同じコネクタを使用して複数のAzureテナントのデータを階層化できます。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html#requirements-to-tier-data-for-an-azure-tenant["Azureテナントのデータを階層化するための要件"^]
+
+
+
 === 2025年4月16日
 
 
@@ -576,18 +642,6 @@ Cloud Volumes ONTAP 9.12.1 GA以降は、次のリージョンのAzureの単一�
 BlueXP  APIを使用して、Google CloudでのStorage VMの作成を自動化できるようになりました。この機能は、Cloud Volumes ONTAPのハイアベイラビリティ（HA）構成で使用してきましたが、シングルノード環境でも使用できるようになりました。BlueXP  APIを使用すると、追加データを提供するStorage VMをGoogle Cloud環境で簡単に作成、名前変更、および削除できます。必要なネットワークインターフェイス、LIF、管理LIFを手動で設定する必要はありません。この自動化により、Storage VMの管理プロセスが簡易化されます。
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.html["Google CloudでCloud Volumes ONTAP用のデータ提供用Storage VMを管理します。"^]
-
-
-
-=== 2025年4月3日
-
-
-
-==== AWSでのCloud Volumes ONTAP 9.13.1の中国リージョンのサポート
-
-中国リージョンのAWSにCloud Volumes ONTAP 9.13.1を導入できるようになりました。これには、シングルノード環境とハイアベイラビリティ（HA）環境の両方がサポートされます。Cloud Volumes ONTAP 9.13.1を導入したら、それ以降のバージョンにアップグレードできます。NetAppから直接購入したライセンスのみがサポートされます。
-
-地域によって利用可能な場合は、を参照して https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP のグローバルリージョンマップ"^]ください。
 
 
 
@@ -771,7 +825,7 @@ Cloud Volumes ONTAP使用状況レポートにいくつかの改善点が追加�
 
 === 2025年4月16日
 
-バージョン4.3
+バージョン4.2.2
 
 
 
@@ -808,6 +862,34 @@ BlueXP  ディザスタリカバリでは、24時間に1回検出が実行さ�
 ==== サービス更新の通知
 
 このリリースでは、サービスがアップグレードされ、サービスがメンテナンスモードになったことを示すバナーが上部に表示されます。バナーはサービスのアップグレード中に表示され、アップグレードが完了すると消えます。アップグレードの進行中もUIで作業を続行できますが、新しいジョブを送信することはできません。スケジュールされたジョブは、更新が完了してサービスが本番モードに戻ると実行されます。
+
+
+
+=== 2025年3月10日
+
+バージョン4.2.1
+
+
+
+==== インテリジェントなプロキシサポート
+
+BlueXP  Connectorはインテリジェントプロキシをサポートしています。インテリジェントプロキシは、オンプレミス環境をBlueXP  サービスに接続するための、軽量で安全で効率的な方法です。VPNや直接インターネットアクセスを必要とせずに、環境とBlueXP  サービスの間に安全な接続を提供します。この最適化されたプロキシ実装により、ローカルネットワーク内のAPIトラフィックがオフロードされます。
+
+プロキシが設定されている場合、BlueXP  ディザスタリカバリはVMwareまたはONTAPとの直接通信を試み、直接通信に失敗した場合は設定されたプロキシを使用します。
+
+BlueXP  ディザスタリカバリプロキシを実装するには、HTTPSプロトコルを使用してコネクタとvCenter ServerおよびONTAPアレイをポート443で通信する必要があります。コネクタ内のBlueXP  ディザスタリカバリエージェントは、アクションの実行時にVMware vSphere、VC、またはONTAPと直接通信します。
+
+BlueXP  ディザスタリカバリ用のインテリジェントプロキシの詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-setup.html["BlueXPディザスタリカバリのためのインフラのセットアップ"]。
+
+BlueXP  で設定される一般的なプロキシの詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["プロキシサーバを使用するようにコネクタを設定します"^]。
+
+
+
+==== 無償トライアルをいつでも終了
+
+無料トライアルはいつでも停止することも、期限が切れるまで待つこともできます。
+
+を参照してください https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html#end-the-free-trial["無償トライアルを終了する"]
 
 
 
@@ -1390,6 +1472,22 @@ link:https://docs.netapp.com/us-en/bluexp-volume-caching/get-started/cache-intro
 
 
 
+=== 2025年5月4日
+
+
+
+==== CloudShellオートコンプリートのサポート
+
+BlueXP  ワークロードファクトリCloudShellを使用している場合は、コマンドの入力を開始してTabキーを押すと、使用可能なオプションが表示されます。複数の候補が存在する場合は、CLIに候補のリストが表示されます。この機能は、エラーを最小限に抑え、コマンド実行を高速化することで、生産性を向上させます。
+
+
+
+==== 権限に関する用語を更新
+
+ワークロードファクトリのユーザインターフェイスとドキュメントでは、読み取り権限を「読み取り専用」に、自動権限を「読み取り/書き込み」に指定するようになりました。
+
+
+
 === 2025年3月30日
 
 
@@ -1427,15 +1525,3 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/use-cloudshell.html["Clo
 データベースの_read_modeで次の権限を使用できるようになりました `iam:SimulatePrincipalPolicy`。
 
 link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html#change-log["アクセス権参照変更ログ"]
-
-
-
-=== 2025年1月22日
-
-
-
-==== BlueXP  ワークロードの工場出荷時の権限
-
-ストレージ環境の検出から、ストレージ内のファイルシステムや 生成AIワークロードのナレッジベースなどのAWSリソースの導入まで、BlueXP  ワークロードファクトリでさまざまな処理を実行するために使用される権限を確認できるようになりました。ストレージ、データベース、VMware、生成AIの各ワークロードのIAMポリシーと権限を表示できます。
-
-link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["BlueXP  ワークロードの工場出荷時の権限"]
