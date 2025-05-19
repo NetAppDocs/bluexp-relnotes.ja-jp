@@ -445,9 +445,6 @@
   <block id="bc2c6ba9505b9e6d38d9f10c18186d1c" category="paragraph">BlueXPのコピーおよび同期サービスとデータブローカーを更新し、いくつかのバグを修正しました。新しいデータブローカーのバージョンは1.0.55です。</block>
   <block id="e3f867c1e04dce86520c139a0ae60b18" category="section-title">2024年12月12日</block>
   <block id="af79dd5dc56c84e383198dba47e6f6fe" category="paragraph">更新に推奨されるストレージファームウェア、SP / BMCファームウェア、およびAutonomous Ransomware Package（ARP）を確認できるようになりました。<block ref="bb189956f648b21665d5198deffedcc8" category="inline-link-macro-rx"></block>です。</block>
-  <block id="4b546cad2ee01a6cbf9ccc96b97242b6" category="section-title">2024年12月4日</block>
-  <block id="998e01ff2383d2b9e06b55738a27346b" category="section-title">AutoSupportウィジェット</block>
-  <block id="526c3ba007bad7c7b6408ba4672f5f6e" category="paragraph">AutoSupportウィジェットがダッシュボードのメイン画面に追加され、AutoSupportのステータス関連の問題についてお客様に通知されるようになりました。</block>
   <block id="abbf3397e656c62394e67cdc1337be3c" category="section-title">新しい概要ダッシュボード</block>
   <block id="890f7a0157ba95ff799f6f457d82439a" category="paragraph">デジタルウォレットのホームページには、NetAppライセンスとMarketplaceサブスクリプションの更新されたダッシュボードがあり、特定のサービス、ライセンスタイプ、必要なアクションをドリルダウンできます。</block>
   <block id="f0d1256b3b97280543cbb16be1fea4b3" category="section-title">クレデンシャルへのサブスクリプションの設定</block>
@@ -548,13 +545,10 @@
   <block id="1d26b47b0bf4a8a52ca8e66bcb8661dc" category="paragraph">このリリースでは、以前のサポートバージョンに加えて、Red Hat Enterprise Linux v9.5もサポートされます。これは、ダークサイトの導入を含む、BlueXP  分類の手動オンプレミスインストールに適用されます。</block>
   <block id="3461c6d70dff5780cf443e0892f0b5af" category="paragraph">次のオペレーティングシステムでは、Podmanコンテナエンジンを使用する必要があり、BlueXP  分類バージョン1.30以降が必要です。Red Hat Enterprise Linuxバージョン8.8、8.10、9.0、9.1、9.2、9.3、9.4、9.5。</block>
   <block id="ce7ca903497eb6081e95129584ddf094" category="paragraph-title">スキャンの優先順位付け</block>
-  <block id="03b61f1818fbb0c7e0a356c942abdc31" category="paragraph">デフォルトでは、スキャンは開始順序に基づいてキューに入れられます。スキャンに優先順位を付ける機能により、スキャンをキューの先頭に移動できるようになりました。複数のスキャンに優先順位を付けることができます。優先順位は、先入れ先出し順で指定されます。つまり、最初に優先順位を付けたスキャンがキューの先頭に移動し、2番目に優先順位を付けたスキャンがキューの2番目に移動します。</block>
   <block id="e04ee48d980fd3722fe28400afcc0416" category="paragraph">優先度は1回だけ付与されます。マッピングデータの自動再スキャンは、デフォルトの順序で実行されます。</block>
   <block id="c92ddb2e7e35e5bd406e62b822c22b14" category="inline-link-macro">マッピングのみのスキャン</block>
   <block id="09d7e52dfc68f84cd7ef45e3c26a0389" category="list-text">BlueXP  分類メニューから*設定*を選択します。</block>
   <block id="c3f4889bec03e0a3ba10184db92b3b07" category="paragraph-title">すべてのスキャンを再試行</block>
-  <block id="06243660aeb549bac73e7c160d2d2a70" category="paragraph">BlueXP  分類では、失敗したすべてのスキャンをバッチ再試行できるようになりました。</block>
-  <block id="18dfe95c4c66dde6d275ff14f1c99ea9" category="paragraph">**すべて再試行**機能を使用して、バッチ操作でスキャンを再試行できるようになりました。ネットワークの停止などの一時的な問題が原因で分類スキャンが失敗した場合は、個 々 に再試行するのではなく、ボタン1つですべてのスキャンを同時に再試行できます。スキャンは必要に応じて何度でも再試行できます。</block>
   <block id="c50aaae687f0c98cc88e1445aecee2d4" category="paragraph">すべてのスキャンを再試行するには：</block>
   <block id="8e66898002589c26f968e6fd94a57988" category="list-text">失敗したスキャンをすべて再試行するには、*[すべてのスキャンを再試行]*を選択します。</block>
   <block id="c3687f641cfdd19b41b8fe6f7cb68897" category="paragraph">バージョン4.2</block>
@@ -604,7 +598,6 @@
   <block id="4fce1192bdd8d2ff506dd6d380e85fdd" category="section-title">バージョン1.41</block>
   <block id="3bc103100363af5c774f4610f1cd7eec" category="paragraph">このBlueXP  分類リリースには、全般的な改善とバグ修正が含まれています。次の内容も含まれます。</block>
   <block id="52c386a5357f2ccbc556ebac8ae2b5f2" category="paragraph-title">スキャンステータス</block>
-  <block id="9f4be2ee88f8d600b3db6a9021b88d97" category="paragraph">BlueXP  分類では、ボリューム上の_initial_mappingスキャンと分類スキャンのリアルタイムの進行状況が追跡されるようになりました。個別のプログレッシブバーはマッピングスキャンと分類スキャンを追跡し、スキャンされたファイルの割合を示します。進行状況バーにカーソルを合わせると、スキャンされたファイル数と合計ファイル数を表示することもできます。スキャンのステータスを追跡することで、スキャンの進捗状況をより詳細に把握できるため、スキャンの計画やリソースの割り当てをより適切に把握できます。</block>
   <block id="dea24de819351c63f66685576d21ee25" category="paragraph">スキャンのステータスを表示するには、BlueXP  分類で** Configuration **に移動し、** Working Environment構成**を選択します。進行状況はボリュームごとに1行に表示されます。</block>
   <block id="626a42c4b175379d9d0e723ada0cf740" category="section-title">サブスクリプションを削除する機能</block>
   <block id="0d4a9d16793bcc1fc3c4982137275a77" category="paragraph">サブスクリプションを解除した場合は、デジタルウォレットからサブスクリプションを削除できるようになりました。</block>
@@ -680,9 +673,7 @@
   <block id="33fc2a8f6921fec02571495993aa2c6c" category="section-title">バージョン1.42</block>
   <block id="83962582dc3c189ba60063fe7990755c" category="paragraph">このBlueXP  分類リリースの内容は次のとおりです。</block>
   <block id="2dcf334efa4f886393cac0e44ff5a917" category="paragraph-title">作業環境の一括スキャン</block>
-  <block id="57e954d06c81eea089fcb04e61b1c429" category="paragraph">BlueXP  の分類で、作業環境の一括操作がサポートされるようになりました。マッピングスキャンの有効化、スキャンのマッピングと分類の有効化、スキャンの無効化、または作業環境内のボリューム間でのカスタム構成の作成を選択できます。個 々 のボリュームを選択した場合は、一括選択よりも優先されます。一括操作を実行するには'**Configuration**ページに移動して選択します</block>
   <block id="7c021042892d25e3e5d4271749e03344" category="paragraph-title">調査レポートをローカルにダウンロード</block>
-  <block id="a8539b02096aea65d2e102c01a482c71" category="paragraph">BlueXP  分類では、データ調査レポートをローカルにダウンロードしてブラウザで表示できるようになりました。ローカルオプションを選択した場合、データ調査はCSV形式でのみ使用でき、最初の10,000行のデータのみが表示されます。</block>
   <block id="6b41c846432704bbeebdc71cd92e0ac2" category="inline-link-macro">BlueXP  分類を使用して、組織に保存されているデータを調査する</block>
   <block id="95403a677c140fea03f157c2edb41c85" category="paragraph">詳細については、を参照してください <block ref="55ff936b35b23a6f6693627bfb444c62" category="inline-link-macro-rx"></block>。</block>
   <block id="9340ce8741905e7d6ff4c0ca07a7a39a" category="paragraph-title">マッピングのみのスキャンの優先順位付け</block>
@@ -793,13 +784,9 @@
   <block id="e48502083eb8949c8f65b2ccddd5adec" category="section-title">2025年5月12日</block>
   <block id="67840d2b3ccd99d7c6db2904273f95ef" category="section-title">バージョン1.43</block>
   <block id="3e05db4c28329af069ba30406ce8330c" category="paragraph-title">分類スキャンの優先順位付け</block>
-  <block id="0dc348cb820b479010800e3c6cddc127" category="paragraph">BlueXP  分類では、マッピングのみのスキャンに加えて、マップの優先順位付けとスキャンの分類がサポートされるようになり、最初に完了するスキャンを選択できるようになりました。MapおよびClassifyスキャンの優先順位付けは、スキャンの開始中および開始前にサポートされます。進行中のスキャンに優先順位を付けることを選択した場合は、マッピングスキャンと分類スキャンの両方に優先順位が付けられます。</block>
   <block id="d58e3b3044e314bd5b914f8e22d6a0a8" category="paragraph-title">カナダの個人識別情報（PII）データカテゴリのサポート</block>
-  <block id="25afe4e8f395663d2442297e33aa8a20" category="paragraph">BlueXP  分類スキャンでは、すべての州と地域の銀行情報、パスポート番号、社会保険番号、運転免許証番号、健康カード番号について、カナダのPIIデータカテゴリを特定できるようになりました。</block>
   <block id="841ba72ee4bfb55c34ecc91bca130388" category="inline-xref-macro">個人データのカテゴリ</block>
-  <block id="8ac2e225945f40bbf038dd67449b1841" category="paragraph">詳細については、を参照してください<block ref="918fde1c1c3c4433556923cc965488af" category="inline-xref-macro-rx"></block>。</block>
   <block id="0faf34dc58fa8cc3526b8a0a51850b2b" category="paragraph-title">カスタム分類（プレビュー）</block>
-  <block id="e43dc9231ca750651c1b2d09176b0bc3" category="paragraph">BlueXP  分類では、MapおよびClassifyスキャンのカスタム分類がサポートされるようになりました。カスタム分類を使用すると、組織固有のデータをキャプチャするようにBlueXP  スキャンを調整して、正規表現への準拠を確保できます。この機能は現在プレビュー中です。</block>
   <block id="68fcca37a232a8993c6b392c92803de3" category="inline-xref-macro">カスタム分類の追加</block>
   <block id="293ef51708e6a5ff00afa3b03fc38173" category="paragraph">詳細については、を参照してください <block ref="5c3ba05e723fa646f41c75d6d8a263d3" category="inline-xref-macro-rx"></block>。</block>
   <block id="dcc61fc6bf6aa17ea807ec107b3f9682" category="paragraph-title">[保存済み検索]タブ</block>
@@ -837,7 +824,6 @@
   <block id="74d516ef8dfa098bb4cd92313c403475" category="section-title">CloudShellオートコンプリートのサポート</block>
   <block id="df96b6f4ceabb5c4dbc915475fd821fe" category="paragraph">BlueXP  ワークロードファクトリCloudShellを使用している場合は、コマンドの入力を開始してTabキーを押すと、使用可能なオプションが表示されます。複数の候補が存在する場合は、CLIに候補のリストが表示されます。この機能は、エラーを最小限に抑え、コマンド実行を高速化することで、生産性を向上させます。</block>
   <block id="17fd2e7ebeeede6a03f9340d8abb7cb1" category="paragraph-title">スキャンイベントをBlueXP  タイムラインに送信</block>
-  <block id="2fb6ac863fbf4be01901268bf08e147f" category="paragraph">BlueXP  分類では、への分類イベント（スキャンの開始時と終了時）の送信がサポートされるようになりました<block ref="bf2e0502217ecef5db4e8e3a077fc733" category="inline-link-macro-rx"></block>。</block>
   <block id="f4136fdf902ca32b4530c7a614c0ed71" category="section-title">コネクタ3.9.52</block>
   <block id="aa9f9a6b10a3fcd2209035620051306c" category="paragraph">このリリースのBlueXP  Connectorには、セキュリティのマイナーな改善とバグの修正、およびいくつかの追加アップデートが含まれています。</block>
   <block id="6f9b6bb76caa4f1e59bff34c9ae037fe" category="paragraph">現時点では、3.9.52リリースは標準モードと制限モードで使用できます。</block>
@@ -893,4 +879,25 @@
   <block id="670b6a838a9eab9baafd717669b2bcc5" category="paragraph">検出ワークフローで、BlueXP  ランサムウェア対策でサポート対象またはサポート対象外のワークロードにカーソルを合わせると、詳細が報告されます。これは、一部のワークロードがBlueXP  ランサムウェア対策サービスで検出されない理由を理解するのに役立ちます。</block>
   <block id="960c5f3106f70ebe4000fa5d5121f60f" category="paragraph">サービスで作業環境がサポートされない理由は数多くあります。たとえば、作業環境のONTAPバージョンが必要なバージョンよりも低い場合などです。サポートされていない作業環境にカーソルを合わせると、ツールチップに理由が表示されます。</block>
   <block id="e7aba228bdeba9407e415c5afb1137a2" category="paragraph">初期検出時にサポートされていない作業環境を表示し、その結果をダウンロードすることもできます。検出結果は、[設定]ページの*[ワークロード検出]*オプションでも確認できます。</block>
+  <block id="7dd4f26252edc5554ac1671370b55f2e" category="section-title">コネクタのダウンロード用のセキュアなエンドポイントが、バックアップとリカバリとランサムウェア対策でサポートされるようになりました。</block>
+  <block id="fa3ad4e82d26203dad8cb93a91e5c448" category="inline-link-macro">コネクタのダウンロード用のセキュアなエンドポイントについて説明します。</block>
+  <block id="65a207edfe2ea4576ceb53eb1d7a6caa" category="paragraph">Backup and RecoveryまたはRansomware Protectionを使用している場合は、コネクタのダウンロードにセキュアなエンドポイントを使用できるようになりました。 <block ref="037b27fad48ee4136808e628650ebfff" category="inline-link-macro-rx"></block></block>
+  <block id="36df48405a6f112e4df550bf1db8906b" category="paragraph">BlueXP  分類では、マッピングのみのスキャンに加えて、マップスキャンとスキャンの分類を優先する機能がサポートされており、最初に完了するスキャンを選択できます。MapおよびClassifyスキャンの優先順位付けは、スキャンの開始中および開始前にサポートされます。進行中のスキャンに優先順位を付けることを選択した場合は、マッピングスキャンと分類スキャンの両方に優先順位が付けられます。</block>
+  <block id="162e654adac435300128c485423d9e97" category="paragraph">BlueXP  分類スキャンは、カナダのPIIデータカテゴリを識別します。これらのカテゴリには、カナダのすべての州と地域の銀行情報、パスポート番号、社会保険番号、運転免許証番号、健康カード番号が含まれます。</block>
+  <block id="24b795aa1c931b8beb71a1bad521912d" category="paragraph">詳細については、を参照してください <block ref="918fde1c1c3c4433556923cc965488af" category="inline-xref-macro-rx"></block>。</block>
+  <block id="779a8744af84c09c0b82c029307690b7" category="paragraph">BlueXP  分類では、MapおよびClassifyスキャンのカスタム分類がサポートされます。カスタム分類を使用すると、正規表現を使用して組織固有のデータをキャプチャするようにBlueXP  スキャンを調整できます。この機能は現在プレビュー中です。</block>
+  <block id="ef37a49c1c224f5d438865198ffa4329" category="paragraph">BlueXP  分類では、への分類イベント（スキャンの開始時と終了時）の送信がサポートされます<block ref="bf2e0502217ecef5db4e8e3a077fc733" category="inline-link-macro-rx"></block>。</block>
+  <block id="530bfca85ebf27593e2eac002245d941" category="paragraph">BlueXP  の分類では、作業環境の一括操作がサポートされます。マッピングスキャンの有効化、スキャンのマッピングと分類の有効化、スキャンの無効化、または作業環境内のボリューム間でのカスタム構成の作成を選択できます。個 々 のボリュームを選択した場合は、一括選択よりも優先されます。一括操作を実行するには'**Configuration**ページに移動して選択します</block>
+  <block id="5914525550e0efce454828b3fc5f9313" category="paragraph">BlueXP  分類では、データ調査レポートをローカルにダウンロードしてブラウザで表示する機能がサポートされています。ローカルオプションを選択した場合、データ調査はCSV形式でのみ使用でき、最初の10,000行のデータのみが表示されます。</block>
+  <block id="6a5c0bfd72f9b6c51f4f17f0d32a0bf5" category="paragraph">BlueXP  分類は、ボリューム上の_initial_mappingスキャンと分類スキャンのリアルタイムの進行状況を追跡します。個別のプログレッシブバーはマッピングスキャンと分類スキャンを追跡し、スキャンされたファイルの割合を示します。進行状況バーにカーソルを合わせると、スキャンされたファイル数と合計ファイル数を表示することもできます。スキャンのステータスを追跡することで、スキャンの進捗状況をより詳細に把握できるため、スキャンの計画やリソースの割り当てをより適切に把握できます。</block>
+  <block id="cb79cf2c786ed3992ebf9c4489793af5" category="paragraph">デフォルトでは、スキャンは開始順序に基づいてキューに入れられます。スキャンに優先順位を付ける機能を使用すると、スキャンをキューの先頭に移動できます。複数のスキャンに優先順位を付けることができます。優先順位は、先入れ先出し順で指定されます。つまり、最初に優先順位を付けたスキャンがキューの先頭に移動し、2番目に優先順位を付けたスキャンがキューの2番目に移動します。</block>
+  <block id="fc758db0d443b9a8e3de231c43de89d5" category="paragraph">BlueXP  分類では、失敗したすべてのスキャンをバッチ再試行する機能がサポートされています。</block>
+  <block id="ce19c0b7b750b810547f423b2290cfd8" category="paragraph">**すべて再試行**機能を使用して、バッチ操作でスキャンを再試行できます。ネットワークの停止などの一時的な問題が原因で分類スキャンが失敗した場合は、個 々 に再試行するのではなく、ボタン1つですべてのスキャンを同時に再試行できます。スキャンは必要に応じて何度でも再試行できます。</block>
+  <block id="9b6594622a22e82296250ca296e7a0b3" category="section-title">2025年5月8日</block>
+  <block id="4503a1a889a3b7c3dc4f3af490b089c6" category="section-title">AutoSupportウィジェット</block>
+  <block id="41e1c349288a8b454c83244a4a28b8f7" category="paragraph">AutoSupportウィジェットが拡張され、AutoSupportデータの送信を停止したシステムの詳細を示すポップアップが表示されるようになりました。AutoSupportを有効にすることで、ダウンタイムのリスクを軽減し、プロアクティブなシステム健全性管理をサポート</block>
+  <block id="dc82c5b795e4118bc2472e86475bf5da" category="section-title">サポート契約レポート</block>
+  <block id="6877ece75d4d613c107eed29f14b3975" category="paragraph">サポート契約レポートが強化され、新しいASP/LSGフラグフィールドが追加されました。このフィールドでは、認定サポートパートナー（ライフサイクルサービス認定）の対象となるシステムをフィルタして特定できます。</block>
+  <block id="072d1a387472fb47fdfa33e48ff08ffd" category="section-title">Sustainability Dashboard</block>
+  <block id="80604874cd369ef578265c67a223d997" category="paragraph">サステナビリティプレゼンテーションに含まれているリンクを使用して、Sustainabilityダッシュボードを起動できるようになりました。</block>
 </blocks>

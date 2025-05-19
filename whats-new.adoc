@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features,cloud manager, bluexp, cloud volumes ontap, licenses, digital wallet, subscriptions, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, ontap clusters, alerts, identity and access management, iam' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features,cloud manager, bluexp, cloud volumes ontap, licenses, digital wallet, subscriptions, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, ontap clusters, alerts, identity and access management, iam, recovery' 
 summary: BlueXPプラットフォームの一部である クラウド サービス の最新の変更点について説明します 
 ---
 = BlueXPの最近の変更点
@@ -57,6 +57,12 @@ BlueXP  のNetApp Keystoneベータ版では、Keystone管理機能へのアク
 今回のリリースのBlueXP Connectorには、セキュリティが若干改善され、バグが修正されています。
 
 現時点では、3.9.51リリースは標準モードと制限モードで使用できます。
+
+
+
+===== コネクタのダウンロード用のセキュアなエンドポイントが、バックアップとリカバリとランサムウェア対策でサポートされるようになりました。
+
+Backup and RecoveryまたはRansomware Protectionを使用している場合は、コネクタのダウンロードにセキュアなエンドポイントを使用できるようになりました。 link:https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#new-secure-endpoints-to-obtain-connector-images["コネクタのダウンロード用のセキュアなエンドポイントについて説明します。"^]
 
 
 
@@ -494,17 +500,17 @@ BlueXP  のバックアップとリカバリでは、ソース作業環境上�
 このBlueXP  分類リリースの内容は次のとおりです。
 
 .分類スキャンの優先順位付け
-BlueXP  分類では、マッピングのみのスキャンに加えて、マップの優先順位付けとスキャンの分類がサポートされるようになり、最初に完了するスキャンを選択できるようになりました。MapおよびClassifyスキャンの優先順位付けは、スキャンの開始中および開始前にサポートされます。進行中のスキャンに優先順位を付けることを選択した場合は、マッピングスキャンと分類スキャンの両方に優先順位が付けられます。
+BlueXP  分類では、マッピングのみのスキャンに加えて、マップスキャンとスキャンの分類を優先する機能がサポートされており、最初に完了するスキャンを選択できます。MapおよびClassifyスキャンの優先順位付けは、スキャンの開始中および開始前にサポートされます。進行中のスキャンに優先順位を付けることを選択した場合は、マッピングスキャンと分類スキャンの両方に優先順位が付けられます。
 
 詳細については、を参照してください link:task-managing-repo-scanning.html#prioritize-scans["スキャンの優先順位付け"]。
 
 .カナダの個人識別情報（PII）データカテゴリのサポート
-BlueXP  分類スキャンでは、すべての州と地域の銀行情報、パスポート番号、社会保険番号、運転免許証番号、健康カード番号について、カナダのPIIデータカテゴリを特定できるようになりました。
+BlueXP  分類スキャンは、カナダのPIIデータカテゴリを識別します。これらのカテゴリには、カナダのすべての州と地域の銀行情報、パスポート番号、社会保険番号、運転免許証番号、健康カード番号が含まれます。
 
-詳細については、を参照してくださいxref:reference-private-data-categories.adoc#types-of-personal-data[個人データのカテゴリ]。
+詳細については、を参照してください xref:reference-private-data-categories.adoc#types-of-personal-data[個人データのカテゴリ]。
 
 .カスタム分類（プレビュー）
-BlueXP  分類では、MapおよびClassifyスキャンのカスタム分類がサポートされるようになりました。カスタム分類を使用すると、組織固有のデータをキャプチャするようにBlueXP  スキャンを調整して、正規表現への準拠を確保できます。この機能は現在プレビュー中です。
+BlueXP  分類では、MapおよびClassifyスキャンのカスタム分類がサポートされます。カスタム分類を使用すると、正規表現を使用して組織固有のデータをキャプチャするようにBlueXP  スキャンを調整できます。この機能は現在プレビュー中です。
 
 詳細については、を参照してください xref:task-custom-classification.adoc[カスタム分類の追加]。
 
@@ -512,7 +518,7 @@ BlueXP  分類では、MapおよびClassifyスキャンのカスタム分類が
 **Policies**タブの名前が変更されましたxref:task-using-policies.html[**保存された検索**]。機能は同じです。
 
 .スキャンイベントをBlueXP  タイムラインに送信
-BlueXP  分類では、への分類イベント（スキャンの開始時と終了時）の送信がサポートされるようになりましたlink:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["BlueXP  のタイムライン"^]。
+BlueXP  分類では、への分類イベント（スキャンの開始時と終了時）の送信がサポートされますlink:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["BlueXP  のタイムライン"^]。
 
 .セキュリティの更新
 * Kerasパッケージが更新され、脆弱性（BDSA-2025-0107およびBDSA-2025-1984）が緩和されました。
@@ -536,10 +542,10 @@ StorageGRIDスキャンが失敗する原因となったバグ、調査ページ
 このBlueXP  分類リリースの内容は次のとおりです。
 
 .作業環境の一括スキャン
-BlueXP  の分類で、作業環境の一括操作がサポートされるようになりました。マッピングスキャンの有効化、スキャンのマッピングと分類の有効化、スキャンの無効化、または作業環境内のボリューム間でのカスタム構成の作成を選択できます。個 々 のボリュームを選択した場合は、一括選択よりも優先されます。一括操作を実行するには'**Configuration**ページに移動して選択します
+BlueXP  の分類では、作業環境の一括操作がサポートされます。マッピングスキャンの有効化、スキャンのマッピングと分類の有効化、スキャンの無効化、または作業環境内のボリューム間でのカスタム構成の作成を選択できます。個 々 のボリュームを選択した場合は、一括選択よりも優先されます。一括操作を実行するには'**Configuration**ページに移動して選択します
 
 .調査レポートをローカルにダウンロード
-BlueXP  分類では、データ調査レポートをローカルにダウンロードしてブラウザで表示できるようになりました。ローカルオプションを選択した場合、データ調査はCSV形式でのみ使用でき、最初の10,000行のデータのみが表示されます。
+BlueXP  分類では、データ調査レポートをローカルにダウンロードしてブラウザで表示する機能がサポートされています。ローカルオプションを選択した場合、データ調査はCSV形式でのみ使用でき、最初の10,000行のデータのみが表示されます。
 
 詳細については、を参照してください link:task-investigate-data.html#create-the-data-investigation-report["BlueXP  分類を使用して、組織に保存されているデータを調査する"]。
 
@@ -554,7 +560,7 @@ BlueXP  分類では、データ調査レポートをローカルにダウン�
 このBlueXP  分類リリースには、全般的な改善とバグ修正が含まれています。次の内容も含まれます。
 
 .スキャンステータス
-BlueXP  分類では、ボリューム上の_initial_mappingスキャンと分類スキャンのリアルタイムの進行状況が追跡されるようになりました。個別のプログレッシブバーはマッピングスキャンと分類スキャンを追跡し、スキャンされたファイルの割合を示します。進行状況バーにカーソルを合わせると、スキャンされたファイル数と合計ファイル数を表示することもできます。スキャンのステータスを追跡することで、スキャンの進捗状況をより詳細に把握できるため、スキャンの計画やリソースの割り当てをより適切に把握できます。
+BlueXP  分類は、ボリューム上の_initial_mappingスキャンと分類スキャンのリアルタイムの進行状況を追跡します。個別のプログレッシブバーはマッピングスキャンと分類スキャンを追跡し、スキャンされたファイルの割合を示します。進行状況バーにカーソルを合わせると、スキャンされたファイル数と合計ファイル数を表示することもできます。スキャンのステータスを追跡することで、スキャンの進捗状況をより詳細に把握できるため、スキャンの計画やリソースの割り当てをより適切に把握できます。
 
 スキャンのステータスを表示するには、BlueXP  分類で** Configuration **に移動し、** Working Environment構成**を選択します。進行状況はボリュームごとに1行に表示されます。
 
@@ -576,7 +582,7 @@ BlueXP  分類では、ボリューム上の_initial_mappingスキャンと分�
 .マッピングのみのスキャンの優先順位付け
 マッピングのみのスキャンを実行する場合は、最も重要なスキャンに優先順位を付けることができます。この機能は、多数の作業環境があり、優先度の高いスキャンを先に完了させたい場合に役立ちます。
 
-デフォルトでは、スキャンは開始順序に基づいてキューに入れられます。スキャンに優先順位を付ける機能により、スキャンをキューの先頭に移動できるようになりました。複数のスキャンに優先順位を付けることができます。優先順位は、先入れ先出し順で指定されます。つまり、最初に優先順位を付けたスキャンがキューの先頭に移動し、2番目に優先順位を付けたスキャンがキューの2番目に移動します。
+デフォルトでは、スキャンは開始順序に基づいてキューに入れられます。スキャンに優先順位を付ける機能を使用すると、スキャンをキューの先頭に移動できます。複数のスキャンに優先順位を付けることができます。優先順位は、先入れ先出し順で指定されます。つまり、最初に優先順位を付けたスキャンがキューの先頭に移動し、2番目に優先順位を付けたスキャンがキューの2番目に移動します。
 
 優先度は1回だけ付与されます。マッピングデータの自動再スキャンは、デフォルトの順序で実行されます。
 
@@ -585,9 +591,9 @@ BlueXP  分類では、ボリューム上の_initial_mappingスキャンと分�
 詳細については、を参照してください link:task-managing-repo-scanning.html#prioritize-scans["スキャンの優先順位付け"]。
 
 .すべてのスキャンを再試行
-BlueXP  分類では、失敗したすべてのスキャンをバッチ再試行できるようになりました。
+BlueXP  分類では、失敗したすべてのスキャンをバッチ再試行する機能がサポートされています。
 
-**すべて再試行**機能を使用して、バッチ操作でスキャンを再試行できるようになりました。ネットワークの停止などの一時的な問題が原因で分類スキャンが失敗した場合は、個 々 に再試行するのではなく、ボタン1つですべてのスキャンを同時に再試行できます。スキャンは必要に応じて何度でも再試行できます。
+**すべて再試行**機能を使用して、バッチ操作でスキャンを再試行できます。ネットワークの停止などの一時的な問題が原因で分類スキャンが失敗した場合は、個 々 に再試行するのではなく、ボタン1つですべてのスキャンを同時に再試行できます。スキャンは必要に応じて何度でも再試行できます。
 
 すべてのスキャンを再試行するには：
 
@@ -752,6 +758,28 @@ BlueXPのコピーおよび同期サービスとデータブローカーを更�
 
 
 
+=== 2025年5月8日
+
+
+
+==== AutoSupportウィジェット
+
+AutoSupportウィジェットが拡張され、AutoSupportデータの送信を停止したシステムの詳細を示すポップアップが表示されるようになりました。AutoSupportを有効にすることで、ダウンタイムのリスクを軽減し、プロアクティブなシステム健全性管理をサポート
+
+
+
+==== サポート契約レポート
+
+サポート契約レポートが強化され、新しいASP/LSGフラグフィールドが追加されました。このフィールドでは、認定サポートパートナー（ライフサイクルサービス認定）の対象となるシステムをフィルタして特定できます。
+
+
+
+==== Sustainability Dashboard
+
+サステナビリティプレゼンテーションに含まれているリンクを使用して、Sustainabilityダッシュボードを起動できるようになりました。
+
+
+
 === 2025年3月5日
 
 
@@ -771,16 +799,6 @@ BlueXPのコピーおよび同期サービスとデータブローカーを更�
 ==== Upgrade Advisor を使用します
 
 更新に推奨されるストレージファームウェア、SP / BMCファームウェア、およびAutonomous Ransomware Package（ARP）を確認できるようになりました。link:https://docs.netapp.com/us-en/active-iq/view-firmware-update-recommendations.html["ファームウェアアップデートの推奨事項を表示する方法"]です。
-
-
-
-=== 2024年12月4日
-
-
-
-==== AutoSupportウィジェット
-
-AutoSupportウィジェットがダッシュボードのメイン画面に追加され、AutoSupportのステータス関連の問題についてお客様に通知されるようになりました。
 
 
 
