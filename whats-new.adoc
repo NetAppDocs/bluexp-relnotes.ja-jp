@@ -206,6 +206,18 @@ https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["BlueXP  アラ
 
 
 
+=== 2025年7月14日
+
+
+
+==== 2つのFSx for ONTAPファイルシステム間でのデータ複製のサポート
+
+BlueXP コンソールから 2 つの FSx for ONTAP ファイル システム間でデータ レプリケーションが利用できるようになりました。
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html#replicate-data["データのレプリケート"]
+
+
+
 === 2025年6月29日
 
 
@@ -215,14 +227,6 @@ https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["BlueXP  アラ
 FSx for ONTAP ファイルシステムの認証情報と権限を設定すると、BlueXP の認証情報ページにリダイレクトされます。このページから、FSx for ONTAP の認証情報の名前を変更したり、削除したりできます。
 
 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["FSx for ONTAP ファイルシステムの権限を設定する"]
-
-
-
-==== 2つのFSx for ONTAPファイルシステム間でのデータ複製のサポート
-
-BlueXP コンソールから 2 つの FSx for ONTAP ファイル システム間でデータ レプリケーションが利用できるようになりました。
-
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html#replicate-data["データのレプリケート"]
 
 
 
@@ -263,18 +267,6 @@ BlueXP  コンソールで、適切に設計された問題があるFSx for ONT
 ==== 権限に関する用語を更新
 
 ワークロード ファクトリのユーザー インターフェースとドキュメントでは、読み取り権限を示すために「読み取り専用」を使用し、自動化権限を示すために「読み取り/書き込み」を使用するようになりました。
-
-
-
-=== 2025年3月30日
-
-
-
-==== IAM：SimulatePermissionPolicy権限の更新
-
-管理できるようになりまし `iam:SimulatePrincipalPolicy`AWSアカウントのクレデンシャルを追加したり、生成AIワークロードなどの新しいワークロード機能を追加したりするときに、BlueXP  コンソールから権限をた。
-
-link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html#change-log["アクセス権参照変更ログ"^]
 
 
 
@@ -1354,21 +1346,21 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 ==== ワークロード保護の改善
 
-このリリースでは、データ保護の有無にかかわらずワークロードを保護するためのワークフローが改善されています。スナップショットやバックアップにSnapCenterやBlueXP backup and recoveryなどの他のNetAppデータ保護ツールを使用している場合、 BlueXP ransomware protectionがそれらを検出し、それらを管理するポリシーを維持できます。このリリースでは、それらのポリシーをBlueXP ransomware protectionポリシーに置き換えることも、既存のポリシーを引き続き使用することもできます。
+このリリースでは、 SnapCenterやBlueXP backup and recoveryなどの他のNetAppツールのスナップショットおよびバックアップポリシーを使用するワークロードの設定プロセスが改善されました。以前のリリースでは、 BlueXP ransomware protectionは他のツールのポリシーを検出し、検出ポリシーの変更のみが可能でした。このリリースでは、スナップショットおよびバックアップポリシーをBlueXP ransomware protectionポリシーに置き換えたり、他のツールのポリシーを引き続き使用したりできるようになりました。
 
-詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["ワークロードを保護"]。
+詳細については、を参照してください link:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["ワークロードを保護"]。
 
 
 
 ==== Eメール通知
 
-BlueXP ransomware protectionが攻撃の可能性を検知すると、 BlueXP通知に通知が表示され、設定したメールアドレスにメールが送信されます。また、サービスは直ちにスナップショットを開始します。
+BlueXP ransomware protectionが攻撃の可能性を検出すると、 BlueXP通知に通知が表示され、設定した電子メール アドレスに電子メールが送信されます。
 
-この時点で、重大度と影響を受けるリソースをリストした電子メールを確認し、 BlueXP ransomware protectionの *アラート* タブで潜在的なリスクを確認する必要があります。
+メールには、深刻度、影響を受けるワークロード、そしてBlueXP ransomware protectionの「*アラート*」タブに表示されるアラートへのリンクが含まれます。
 
-BlueXP ransomware protectionでセキュリティおよびイベント管理 (SIEM) を構成した場合、サービスはアラートの詳細を SIEM システムに送信します。
+BlueXP ransomware protectionでセキュリティおよびイベント管理 (SIEM) システムを構成した場合、サービスはアラートの詳細を SIEM システムに送信します。
 
-詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["検出されたランサムウェアアラートを処理する"]。
+詳細については、を参照してください link:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["検出されたランサムウェアアラートを処理する"]。
 
 
 
