@@ -41,6 +41,13 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html["セットアッ
 
 
 
+== サービスとしてのストレージ
+
+* https://docs.netapp.com/us-en/keystone-staas/whats-new.html["Keystone"^]
+
+
+
+
 == データサービス
 
 * https://docs.netapp.com/us-en/bluexp-alerts/whats-new.html["アラート"^]
