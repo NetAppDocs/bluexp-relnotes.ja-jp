@@ -297,7 +297,6 @@
   <block id="1804830d648adf9126d51f4a827ca950" category="paragraph">BlueXPのデジタルウォレットで、BlueXPディザスタリカバリのライセンスを管理できるようになりました。ライセンスの追加、ライセンスの更新、およびライセンス容量に関する詳細の表示を行うことができます。</block>
   <block id="85bdddc8ce218c6365f105f9d309d898" category="inline-link">BlueXPデータサービスのライセンスを管理する方法</block>
   <block id="ca654cde28a00db1fb587b8b6bb82015" category="paragraph"><block ref="ca654cde28a00db1fb587b8b6bb82015" category="inline-link-rx"></block></block>
-  <block id="e907b41f5f3d7332bee5a43fbbf78a08" category="inline-link">ライセンスをセットアップする</block>
   <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="section-title">ランサムウェアからの保護</block>
   <block id="c615da36d364061ce672b091d8aa7d3b" category="list-text"><block ref="c615da36d364061ce672b091d8aa7d3b" category="inline-link-rx"></block></block>
   <block id="19532230e3ff8a5fc0c27cc8389cac67" category="list-text"><block ref="19532230e3ff8a5fc0c27cc8389cac67" category="inline-link-rx"></block></block>
@@ -321,13 +320,6 @@
   <block id="f1c8aee091d7af06827bd81ed4e56e5a" category="paragraph">現在BlueXPからAzure NetApp Filesを管理している場合は、以前に作成したMicrosoft Entraアプリケーションに関連付けられているカスタムロールにこの権限を追加する必要があります。</block>
   <block id="49cb664c5b71b8da627e27d37fe9de88" category="inline-link">Microsoft Entraアプリケーションをセットアップし、カスタムロール権限を表示する方法について説明します。</block>
   <block id="dd9368e78fe4f3483d324b6a988d2f87" category="paragraph"><block ref="aa8b5c9ebdcb57c9427e7bd28a70f7d0" category="inline-link-rx"></block>です。</block>
-  <block id="b1fb5b4805d079fc23dedcbe4848437e" category="inline-link">リモートサイトへのアプリケーションのフェイルオーバー</block>
-  <block id="ab132121a366abdd7667443cc98f3a69" category="paragraph">を参照してください<block ref="1cbf59ee3e77dd0082612a21b0900f81" category="inline-link-rx"></block>。</block>
-  <block id="7043d4fb27c94bc9a206c106cef9d80c" category="paragraph">その方法は次のとおりです。</block>
-  <block id="eff6d6d4d66ab65f33be5de8b62e16d3" category="list-text">トップメニューから*レプリケーションプラン*を選択します。</block>
-  <block id="2ae04d8f24d0c8f552b0d3857c0953b3" category="list-text">計画を選択し、[Actions]アイコンを選択してドロップダウンメニューを表示します。</block>
-  <block id="dbf8ea65a71d9e2042b03a97a0da4095" category="list-text">[*Disable*] を選択します。</block>
-  <block id="9ffe587f372d96c9b0db66cfe333c0cf" category="list-text">数分後、*[有効化]*を選択します。</block>
   <block id="9b4b29c7522dc70822a6513f530beb14" category="paragraph">BlueXP  エッジキャッシングサービスは、2024年8月7日に削除されました。</block>
   <block id="4ac75c7e9ef3301446bb1108a0761fd8" category="paragraph">Kubernetesクラスタの検出と管理のサポートが2024年8月7日に廃止されました。</block>
   <block id="2476ee901bdc6e29b6118470b13e2339" category="paragraph">BlueXP  移行レポートサービスは、2024年8月7日に削除されました。</block>
@@ -357,14 +349,7 @@
   <block id="d7a02621d52c29a3c5f7895e817cba5b" category="inline-link">自動化カタログ</block>
   <block id="4201d45b889a30d645c44cd087e150b0" category="list-text"><block ref="4201d45b889a30d645c44cd087e150b0" category="inline-link-rx"></block></block>
   <block id="4cdceaadddc0af73837f8fb074294edc" category="list-text"><block ref="4cdceaadddc0af73837f8fb074294edc" category="inline-link-rx"></block></block>
-  <block id="054b753af44fc4eeee43c9ba6037caaa" category="inline-link">ディザスタリカバリレポートの作成</block>
-  <block id="023cf8170104660fc796a64fdad98afa" category="paragraph">を参照してください<block ref="cca93cc3cfc082fe882eefc731706487" category="inline-link-rx"></block>。</block>
-  <block id="1cb57fbf1f1452e87f62dd668ea03759" category="paragraph">を参照してください<block ref="7585b54fad00f1219b8233730153156f" category="inline-link-rx"></block>。</block>
   <block id="1a390a4e18b059462c8f07ea2ea02106" category="paragraph">詳細については、を参照してください<block ref="5cf2140f2775e5f1ccc24bb836a069a3" category="inline-link-rx"></block>。</block>
-  <block id="3eddfb488d257605e7713c24d210beee" category="inline-link">サイト、リソースグループ、レプリケーションプラン、データストア、仮想マシンの情報を管理します。</block>
-  <block id="310c40c0ef022c90f1370d1fe91ca720" category="paragraph">詳細については、を参照してください<block ref="db7c318fcbcad8cfb9a44ac897b870b2" category="inline-link-rx"></block>。</block>
-  <block id="07851e0287e57a794c18de627c09e0e7" category="inline-link">レプリケーション計画の管理</block>
-  <block id="9a3a6422d384602f3e19e123263dc99f" category="paragraph">詳細については、を参照してください<block ref="59c3623215c45197e971057378c86d42" category="inline-link-rx"></block>。</block>
   <block id="7e4353e591e7ee71b0cc70a66b02ee7a" category="paragraph">BlueXP CanvasでAmazon S3バケットを表示できるようになりました。BlueXP  から直接、新しいバケットを追加したり、既存のバケットのプロパティを変更したりできるようになりました。<block ref="f5358cf9e8e537088a631ff4313d8401" category="inline-link-rx"></block>です。</block>
   <block id="3e9d2d36df8c91d7e9151cc5775042a8" category="paragraph">BlueXP CanvasでAzure Blob Storageを表示できるようになりました。新しいストレージアカウントを追加したり、既存のストレージアカウントのプロパティをBlueXP  から直接変更したりできるようになりました。<block ref="432ae671c636de993f8b5290b51ad53f" category="inline-link-rx"></block>です。</block>
   <block id="bff48bc8f1cd9f08f36e8d0c4fa810ff" category="paragraph">の詳細については、を<block ref="a53ad2061326060987afe3d1fd22d00d" category="inline-link-rx"></block>参照してください。</block>
@@ -451,27 +436,6 @@
   <block id="e8545e234450bbc06ae95bfd7828cfcd" category="section-title">Cloud Volume ONTAPライセンスの管理</block>
   <block id="592997dde366d5775e7e052816854f74" category="section-title">2024年3月5日</block>
   <block id="c94e28d852ce517312825c9ed339fc1d" category="section-title">2023年7月30日</block>
-  <block id="1992f2f9fa5c0cbd3b61255b9dd507bd" category="section-title">2024年10月30日</block>
-  <block id="c5562ce2e22a86c247849904ecef3dc8" category="section-title">レポート作成</block>
-  <block id="5139de9c5a9b2b36569213d7e9b32f21" category="paragraph">環境の分析に役立つレポートを生成してダウンロードできるようになりました。事前設計されたレポートには、フェイルオーバーとフェイルバックの概要、すべてのサイトのレプリケーションの詳細、過去7日間のジョブの詳細が表示されます。</block>
-  <block id="5ef05167488611c5bd4ff0f410595ce4" category="section-title">30日間の無償トライアル</block>
-  <block id="7a9cfed0d96577c6b811d11dfc152202" category="paragraph">BlueXP  ディザスタリカバリの30日間無償トライアルに申し込むことができます。以前は、無料トライアルは90日間でした。</block>
-  <block id="3d1d28bb2a74cb6e16888dd71e05374a" category="section-title">レプリケーション計画の無効化と有効化</block>
-  <block id="6f963c01bb5a207fe21d3d9137892d53" category="paragraph">以前のリリースでは、日次スケジュールと週次スケジュールをサポートするために必要なフェイルオーバーテストスケジュールの構造が更新されていました。この更新では、新しい日次および週次フェイルオーバーテストスケジュールを使用できるように、既存のレプリケーションプランをすべて無効にして再度有効にする必要がありました。これは1回限りの要件です。</block>
-  <block id="2c4b676c68e03ba0114109310daeb0bb" category="section-title">フォルダマッピング</block>
-  <block id="3bdb4d4a16c6f952e581bc706b1882f1" category="paragraph">レプリケーション計画を作成してコンピューティングリソースをマッピングするときに、フォルダをマッピングして、データセンター、クラスタ、およびホスト用に指定したフォルダにVMをリカバリできるようになりました。</block>
-  <block id="ddf914c371b7feb4383b7444a99b5fd7" category="section-title">フェイルオーバー、フェイルバック、テストフェイルオーバーに使用できるVMの詳細</block>
-  <block id="363712ac31c5614bfddfdcfad95b6a12" category="paragraph">障害が発生し、フェイルオーバーの開始、フェイルバックの実行、またはフェイルオーバーのテストを行うときに、VMの詳細を確認し、再起動しなかったVMを特定できるようになりました。</block>
-  <block id="5f20b8908706e397cd745a0bb1264de2" category="section-title">順序付けされた起動順序でのVM起動遅延</block>
-  <block id="7e15dbae84fa8dee12ba906ffe20a1d1" category="paragraph">レプリケーションプランを作成するときに、プラン内の各VMにブート遅延を設定できるようになりました。これにより、優先順位の高いすべてのVMが実行されてから、以降の優先順位の高いVMが起動されるように、VMの起動順序を設定できます。</block>
-  <block id="bb121112267374f0e2c29742b8091ab6" category="section-title">VMオペレーティングシステム情報</block>
-  <block id="1df70ff252045f8a47784f3a1371818c" category="paragraph">レプリケーションプランを作成すると、プラン内の各VMのオペレーティングシステムが表示されるようになります。これは、VMを1つのリソースグループにグループ化する方法を決定する際に役立ちます。</block>
-  <block id="09a63cfb0d6c3a3392c3872099b3fba5" category="section-title">VM名のエイリアス設定</block>
-  <block id="dcdfd42c566ed1c481f3c772573f39e0" category="paragraph">レプリケーション計画を作成するときに、ディザスタリカバリSITでVM名にプレフィックスとサフィックスを追加できるようになりました。これにより、プラン内のVMにわかりやすい名前を付けることができます。</block>
-  <block id="126e7b7b7fdb43e70f3e1542c1f0b51a" category="section-title">古いSnapshotをクリーンアップ</block>
-  <block id="61a7f53a93554e648fe2eb9ad8dd6468" category="paragraph">指定した保持数を超えて不要になったSnapshotは削除できます。Snapshotの保持数を減らすと、時間の経過とともにSnapshotが蓄積される可能性があります。削除してスペースを解放できるようになりました。これは、オンデマンドで、またはレプリケーションプランを削除するときにいつでも実行できます。</block>
-  <block id="8cd43e146a4fc163d690bdc8bdc47fc6" category="section-title">スナップショットの調整</block>
-  <block id="4472d2b5ab8a2ba1ff5429790d72930f" category="paragraph">ソースとターゲットの間で同期されていないスナップショットを調整できるようになりました。これは、BlueXP  ディザスタリカバリ以外のターゲットでSnapshotが削除された場合に発生することがあります。サービスは、ソース上のスナップショットを24時間ごとに自動的に削除します。ただし、これはオンデマンドで実行できます。この機能を使用すると、すべてのサイトでSnapshotの整合性を確保できます。</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022年9月18日</block>
   <block id="532b36a42fa02f3df85b0e70d519a9ac" category="section-title">Eシリーズのサポート</block>
   <block id="8060a341461a61edc489285d4c464062" category="paragraph">BlueXPからEシリーズシステムを直接検出できるようになりました。Eシリーズシステムを検出すると、ハイブリッドマルチクラウド全体のデータを包括的に把握できます。</block>
@@ -548,14 +512,6 @@
   <block id="c3f4889bec03e0a3ba10184db92b3b07" category="paragraph-title">すべてのスキャンを再試行</block>
   <block id="c50aaae687f0c98cc88e1445aecee2d4" category="paragraph">すべてのスキャンを再試行するには：</block>
   <block id="8e66898002589c26f968e6fd94a57988" category="list-text">失敗したスキャンをすべて再試行するには、*[すべてのスキャンを再試行]*を選択します。</block>
-  <block id="c3687f641cfdd19b41b8fe6f7cb68897" category="paragraph">バージョン4.2</block>
-  <block id="ca716ff875c64c5d237c8e862b62065c" category="section-title">VMFSストレージ上のVMとデータストアに対するASA R2のサポート</block>
-  <block id="1979efa5817be86acee4a8fbdf309a1a" category="paragraph">このリリースのBlueXP  ディザスタリカバリでは、VMFSストレージ上のVMとデータストアでASA R2がサポートされます。ASA R2システムでは、ONTAPソフトウェアは重要なSAN機能をサポートし、SAN環境でサポートされていない機能を削除します。</block>
-  <block id="d154d7f159ffe4fedd65f7894a405e59" category="paragraph">このリリースでは、ASA R2で次の機能がサポートされます。</block>
-  <block id="38e9022b7f95524a99b3126af89eb640" category="list-text">プライマリストレージのコンシステンシグループプロビジョニング（フラットコンシステンシグループのみ、階層構造を持たない1レベルのみ）</block>
-  <block id="bbc4e3ff648912e4a892f88fcb03c65b" category="list-text">バックアップ（整合グループ）処理（SnapMirrorの自動化など）</block>
-  <block id="7e13cc5491f076161e0aefc0728bf351" category="paragraph">BlueXP  ディザスタリカバリでのASA R2のサポートには、ONTAP 9.16.1が使用されます。</block>
-  <block id="60a0836359d058db16981cf45c24594f" category="paragraph">データストアはONTAPボリュームまたはASA R2ストレージユニットにマウントできますが、BlueXP  ディザスタリカバリのリソースグループにONTAPのデータストアとASA R2のデータストアの両方を含めることはできません。リソースグループには、ONTAPのデータストアまたはASA R2のデータストアを選択できます。</block>
   <block id="eb3dc66c3f5547559da4bd69622b70f1" category="paragraph-title">インデックス作成を有効にするにはどうすればよいですか。</block>
   <block id="6b14c6e0d643870ea727335d7739df30" category="inline-link">検索と復元を使用してONTAPデータを復元する方法</block>
   <block id="70c351474b2828e2c0dff97793686bc4" category="paragraph-title">カテゴリ化モデルの精度の向上</block>
@@ -641,20 +597,6 @@
   <block id="f50a226c5a51111405309ae78236d95d" category="section-title">軽減されたリスク</block>
   <block id="66fa090892a2bd81c896ab6fbf156b19" category="paragraph">BlueXP  ソフトウェア更新プログラムの概要セクションに、オペレーティングシステムの更新によって軽減できるリスクの総数が表示されるようになりました。これにより、インストールベースのセキュリティと安定性の向上を評価できます。</block>
   <block id="801c0fa0d304ca22d8afec06189bcf93" category="section-title">2025年4月16日</block>
-  <block id="f2265cb494c0b6dc346cf3703718b766" category="section-title">VMのスケジュールされた検出</block>
-  <block id="a1cc1dbaf027adca720112f5a8c48e4d" category="paragraph">BlueXP  ディザスタリカバリでは、24時間に1回検出が実行されます。このリリースでは、ニーズに合わせて調査スケジュールをカスタマイズし、必要なときにパフォーマンスへの影響を軽減できるようになりました。たとえば、VMの数が多い場合は、検出スケジュールを48時間ごとに実行するように設定できます。VMの数が少ない場合は、検出スケジュールを12時間ごとに実行するように設定できます。</block>
-  <block id="7e2d4377602fe8c7a718d5ef8759c008" category="paragraph">検出をスケジュールしない場合は、スケジュールされた検出オプションを無効にして、いつでも手動で検出を更新できます。</block>
-  <block id="d04fa3ae362a3ea46fde26bdba81b204" category="inline-link">vCenterサーバサイトを追加</block>
-  <block id="0002b275859484d6cdca867fbab8e165" category="paragraph">詳細については、を参照してください<block ref="54555db921feb31b73553520fa282341" category="inline-link-rx"></block>。</block>
-  <block id="84307a139104b06aba6c6de9c728b2ff" category="section-title">リソースグループデータストアのサポート</block>
-  <block id="ed0d134f0d7b751b80633ad848722c7a" category="paragraph">これまでは、VMごとにのみリソースグループを作成できました。このリリースでは、データストア別にリソースグループを作成できます。レプリケーション計画を作成し、その計画のリソースグループを作成すると、データストア内のすべてのVMが一覧表示されます。これは、多数のVMがあり、それらをデータストアでグループ化する場合に便利です。</block>
-  <block id="84ae8aaf40a4b59fed9a4fa741ccf225" category="paragraph">データストアを含むリソースグループは、次の方法で作成できます。</block>
-  <block id="ee64b17e5379b689c5eb4ab50027f625" category="list-text">データストアを使用してリソースグループを追加する場合は、データストアのリストが表示されます。1つ以上のデータストアを選択してリソースグループを作成できます。</block>
-  <block id="3043e1ee38988e4248b9d1966e6dd1a4" category="list-text">レプリケーション計画を作成し、その計画内にリソースグループを作成すると、データストア内のVMが表示されます。</block>
-  <block id="f7a1d657a7b8993c917f63602c0774a1" category="section-title">無償トライアルまたはライセンスの有効期限に関する通知</block>
-  <block id="38a9b45e86982c8330edcb875da55284" category="paragraph">このリリースでは、ライセンスを取得する時間を確保するために、無料トライアルが60日後に期限切れになることを通知します。また、このリリースでは、ライセンスの有効期限が切れる日に通知が送信されます。</block>
-  <block id="5d940e67e8d433508306c751ff0ea678" category="section-title">サービス更新の通知</block>
-  <block id="9bdd52eb995b6f47a02ffa6aa4318399" category="paragraph">このリリースでは、サービスがアップグレードされ、サービスがメンテナンスモードになったことを示すバナーが上部に表示されます。バナーはサービスのアップグレード中に表示され、アップグレードが完了すると消えます。アップグレードの進行中もUIで作業を続行できますが、新しいジョブを送信することはできません。スケジュールされたジョブは、更新が完了してサービスが本番モードに戻ると実行されます。</block>
   <block id="46c8a90c914cf567466d573545fb57d9" category="section-title">ボリュームダッシュボードの強化（プレビュー）</block>
   <block id="d4400da5c041019019538ea47e6a4d7e" category="paragraph">ボリュームダッシュボードが10秒未満でロードされるようになり、インターフェイスの速度と効率が大幅に向上しました。このプレビュー版は一部のお客様にご利用いただけ、これらの改善点をいち早くご紹介しています。</block>
   <block id="a43e01afb7862afba8cef123bb022bd8" category="section-title">UIの改善</block>
@@ -746,47 +688,10 @@
   <block id="6a86c1cc6c3338bb337a5e643e80da8e" category="paragraph">Cloud Volumes ONTAP作業環境をあるテナントで作成し、BlueXP  Connectorを別のテナントで作成するシナリオで、Azureテナントの階層化を有効にできるようになりました。この機能を使用すると、同じコネクタを使用して複数のAzureテナントのデータを階層化できます。</block>
   <block id="879e91c0a0fa09577c58d0330291ff06" category="inline-link">Azureテナントのデータを階層化するための要件</block>
   <block id="215678b43321c729a07cabb64971f83c" category="paragraph"><block ref="215678b43321c729a07cabb64971f83c" category="inline-link-rx"></block></block>
-  <block id="848964f0743e2416b5d061a5e088ca73" category="paragraph">バージョン4.2.2</block>
-  <block id="ae493f6fb938d3c8c6db8b5a9e623794" category="paragraph">バージョン4.2.1</block>
-  <block id="78e5de64c036a105265b3f447a5fbbca" category="section-title">インテリジェントなプロキシサポート</block>
-  <block id="12430fc7d9e2c156fb2dc1af2bf60126" category="paragraph">BlueXP  Connectorはインテリジェントプロキシをサポートしています。インテリジェントプロキシは、オンプレミス環境をBlueXP  サービスに接続するための、軽量で安全で効率的な方法です。VPNや直接インターネットアクセスを必要とせずに、環境とBlueXP  サービスの間に安全な接続を提供します。この最適化されたプロキシ実装により、ローカルネットワーク内のAPIトラフィックがオフロードされます。</block>
-  <block id="2baae43f4fa62104c66585e956c51e1e" category="paragraph">プロキシが設定されている場合、BlueXP  ディザスタリカバリはVMwareまたはONTAPとの直接通信を試み、直接通信に失敗した場合は設定されたプロキシを使用します。</block>
-  <block id="a115e6ab8acfcda534f22a18d1d6940d" category="paragraph">BlueXP  ディザスタリカバリプロキシを実装するには、HTTPSプロトコルを使用してコネクタとvCenter ServerおよびONTAPアレイをポート443で通信する必要があります。コネクタ内のBlueXP  ディザスタリカバリエージェントは、アクションの実行時にVMware vSphere、VC、またはONTAPと直接通信します。</block>
-  <block id="7297a33a5c9a50db535ceb180e4e6c29" category="inline-link">BlueXPディザスタリカバリのためのインフラのセットアップ</block>
-  <block id="a7a0475144b255eccfff4d2ee3e7a5c4" category="paragraph">BlueXP  ディザスタリカバリ用のインテリジェントプロキシの詳細については、を参照してください<block ref="bf1bf7a536149f2406a2eab17db3a297" category="inline-link-rx"></block>。</block>
-  <block id="146adb7944757e88795676b780c31811" category="inline-link">プロキシサーバを使用するようにコネクタを設定します</block>
-  <block id="635abfb2f80497d39998f2a81dfecd7e" category="paragraph">BlueXP  で設定される一般的なプロキシの詳細については、を参照してください<block ref="4d83a369cd8d5456206d71335578eaaa" category="inline-link-rx"></block>。</block>
-  <block id="7469dc0d82ce9411c03b852f2163d515" category="section-title">無償トライアルをいつでも終了</block>
-  <block id="38567a6024618c3687de90b3e2cff86e" category="paragraph">無料トライアルはいつでも停止することも、期限が切れるまで待つこともできます。</block>
-  <block id="8d4d6551ee286317b2a4f297766952f5" category="inline-link">無償トライアルを終了する</block>
-  <block id="b618f30aeca114d464120de119b19ced" category="paragraph">を参照してください<block ref="5f37f8bd4230e4b629c60b7dc23a5850" category="inline-link-rx"></block></block>
   <block id="74d516ef8dfa098bb4cd92313c403475" category="section-title">CloudShellオートコンプリートのサポート</block>
   <block id="df96b6f4ceabb5c4dbc915475fd821fe" category="paragraph">BlueXP  ワークロードファクトリCloudShellを使用している場合は、コマンドの入力を開始してTabキーを押すと、使用可能なオプションが表示されます。複数の候補が存在する場合は、CLIに候補のリストが表示されます。この機能は、エラーを最小限に抑え、コマンド実行を高速化することで、生産性を向上させます。</block>
   <block id="17fd2e7ebeeede6a03f9340d8abb7cb1" category="paragraph-title">スキャンイベントをBlueXP  タイムラインに送信</block>
   <block id="71df7d09aaee8e6796df0c3d10989fbd" category="section-title">2025年5月13日</block>
-  <block id="5a31c17caa12408e3b6093ed864c9821" category="paragraph">バージョン4.2.3</block>
-  <block id="c362166d3b35c5afaa0ddfbe7e69494b" category="section-title">サブネットマッピング</block>
-  <block id="2418e16fab8ca1ca0d50d0811f88b6eb" category="paragraph">このリリースでは、サブネットマッピングを使用してフェイルオーバー時のIPアドレスを新しい方法で管理できます。これにより、各vCenterにサブネットを追加できます。その場合は、IPv4 CIDR、デフォルトゲートウェイ、および各仮想ネットワークのDNSを定義します。</block>
-  <block id="eb784040bffb80024e0c56694e09283d" category="paragraph">フェイルオーバー時に、BlueXP  ディザスタリカバリは、マッピングされた仮想ネットワーク用に提供されたCIDRを参照して、各vNICの適切なIPアドレスを決定し、それを使用して新しいIPアドレスを取得します。</block>
-  <block id="506c2c0c7f5b70af3df68c45c46f45a7" category="paragraph">例：</block>
-  <block id="7f1dd179b7af043e895b4af287c713da" category="list-text">networkA = 10.1.1.0/24</block>
-  <block id="130ee01552bdfbbae122682d96ada96f" category="list-text">ネットワークB = 192.168.1.0/24</block>
-  <block id="c8512209d54525f96f71aef40bda4d89" category="paragraph">VM1には、NetworkAに接続されたvNIC（10.1.1.50）があります。NetworkAは、レプリケーションプラン設定でNetworkBにマッピングされます。</block>
-  <block id="54f173771463f16f3b7367756ee8a6df" category="paragraph">フェイルオーバー時、BlueXP  ディザスタリカバリは元のIPアドレス（10.1.1）のネットワーク部分を置き換え、元のIPアドレス（10.1.1.50）のホストアドレス（.50）を維持します。VM1の場合、BlueXP  ディザスタリカバリは、NetworkBのCIDR設定を確認し、ホスト部分（.50）を維持しながら、NetworkBネットワーク部分192.168.1を使用してVM1の新しいIPアドレスを作成します。新しいIPは192.168.1.50になります。</block>
-  <block id="726a53952ba1f868d3ec9d1d32a62b2e" category="paragraph">つまり、ホストアドレスは同じままですが、ネットワークアドレスはサイトサブネットマッピングで設定されているものに置き換えられます。これにより、フェイルオーバー時のIPアドレスの再割り当てをより簡単に管理できます。特に、数百のネットワークと数千のVMを管理する必要がある場合に便利です。</block>
-  <block id="e28871dd1f9f31bb54d653e42ab61487" category="paragraph">サイトにサブネットマッピングを含める方法の詳細については、を参照してください<block ref="54555db921feb31b73553520fa282341" category="inline-link-rx"></block>。</block>
-  <block id="a16eb72c6e9708bc4bdfd310db9a1760" category="section-title">保護をスキップ</block>
-  <block id="18a26d8a69342321f82f23b0b9667a2b" category="paragraph">レプリケーションプランのフェイルオーバー後にサービスが逆保護関係を自動的に作成しないように、保護をスキップできるようになりました。これは、BlueXP  ディザスタリカバリでリストアしたサイトをオンラインに戻す前に、そのサイトで追加の処理を実行する場合に便利です。</block>
-  <block id="83f2c5047d69bb49c6372714354b223e" category="paragraph">フェイルオーバーを開始すると、デフォルトでは、元のソースサイトがオンラインの場合、レプリケーションプランの各ボリュームに対して逆保護関係が自動的に作成されます。これは、サービスがターゲットサイトからソースサイトへのSnapMirror関係を作成することを意味します。フェイルバックを開始すると、SnapMirror関係も自動的に反転されます。</block>
-  <block id="39adaab4c8da99c378ac7814cd837b82" category="paragraph">フェイルオーバーを開始するときに、*[Skip protection]*オプションを選択できるようになりました。これにより、サービスはSnapMirror関係を自動的に反転しません。代わりに、書き込み可能なボリュームはレプリケーション計画の両側に残ります。</block>
-  <block id="0ed1a7f2cfa308cb3f608d5a24b47b8f" category="paragraph">元のソースサイトがオンラインに戻ったら、レプリケーションプランの[アクション]メニューから*[リソースの保護]*を選択して、逆保護を設定できます。これにより、プラン内の各ボリュームに対して逆レプリケーション関係の作成が試行されます。保護が回復するまで、このジョブを繰り返し実行できます。保護が復元されたら、通常の方法でフェイルバックを開始できます。</block>
-  <block id="981aed0e5104e08339386a1c5379d13f" category="paragraph">保護のスキップの詳細については、を参照してください<block ref="1cbf59ee3e77dd0082612a21b0900f81" category="inline-link-rx"></block>。</block>
-  <block id="bc1bbd522e7b060cf5530955a21a60e0" category="section-title">SnapMirrorスケジュールによるレプリケーション計画の更新</block>
-  <block id="c8c9a99c726a6f5a1158a1753fb72b2a" category="paragraph">BlueXP  ディザスタリカバリでは、標準のONTAP SnapMirrorポリシースケジューラやONTAPとのサードパーティ統合など、外部のSnapshot管理ソリューションの使用がサポートされるようになりました。レプリケーションプラン内のすべてのデータストア（ボリューム）にすでに別の場所で管理されているSnapMirror関係がある場合は、それらのSnapshotをBlueXP  ディザスタリカバリのリカバリポイントとして使用できます。</block>
-  <block id="51b94dd4c3836facc3789590ed219960" category="paragraph">設定するには、[Replication plan]&gt;[Resource mapping]セクションで、データストアマッピングの設定時に*[Use platform managed backups and retention schedules]*チェックボックスをオンにします。</block>
-  <block id="a104b856c104ac1d20a94ca4ed8ba3f8" category="paragraph">このオプションを選択した場合、BlueXP  ディザスタリカバリではバックアップスケジュールが設定されません。ただし、テスト、フェイルオーバー、フェイルバック操作のためにスナップショットが作成される可能性があるため、保持スケジュールを設定する必要があります。</block>
-  <block id="84c71600543673f6d7dd403d3e7a164a" category="paragraph">この設定後、サービスは定期的にスケジュールされたスナップショットを作成せず、代わりに外部エンティティに依存してこれらのスナップショットを作成および更新します。</block>
-  <block id="05861d9bf485f3b7dc6f56871ad28892" category="paragraph">レプリケーションプランでの外部スナップショットソリューションの使用の詳細については、を参照してください<block ref="5cf2140f2775e5f1ccc24bb836a069a3" category="inline-link-rx"></block>。</block>
   <block id="89f166f25960d4442ee3cf41fb712de0" category="section-title">ボリューム移行のためのSnapMirrorからクラウドへの再同期</block>
   <block id="f3afa2391337e5c71f0a9b02dedc2753" category="paragraph">SnapMirrorからクラウドへの再同期機能は、NetApp環境でのボリューム移行時のデータ保護と継続性を合理化します。SnapMirror論理レプリケーション（LRSE）を使用して、オンプレミスのNetApp環境から別の環境、またはCloud Volumes ONTAPやCloud Volumes Serviceなどのクラウドベースのソリューションにボリュームを移行する場合、SnapMirrorからクラウドへの再同期により、既存のクラウドバックアップに影響を与えずに運用できます。</block>
   <block id="9de9a72e99be1fee8dc0790411738dd4" category="paragraph">この機能により、時間とリソースを大量に消費するベースライン再処理が不要になり、移行後もバックアップ処理を継続できます。この機能は、FlexVolとFlexGroupの両方をサポートするワークロードマイグレーションシナリオで役立ちます。ONTAPバージョン9.16.1以降で使用できます。</block>
@@ -997,4 +902,42 @@
   <block id="f32aa7882dcd9a369e67d2808830a51e" category="paragraph">フェデレーションされていないユーザーは、 BlueXPアカウントでMFAを有効にしてセキュリティを強化できます。管理者は、必要に応じてユーザーのMFAをリセットまたは無効化するなど、MFA設定を管理できます。これは標準モードでのみサポートされます。</block>
   <block id="2bef154766331bbaacbab995f24ef0c2" category="section-title">必要なBlueXPアクセスロール</block>
   <block id="44a4a7c03393e00f4aeee3bd72474eea" category="paragraph">BlueXPでStorageGRID を表示、検出、または管理するには、次のアクセス ロールのいずれかが必要です: *組織管理者*、*フォルダーまたはプロジェクト管理者*、*ストレージ管理者*、または *ストレージ ヘルス スペシャリスト*。 <block ref="b792d0fe33393ff1eec4387f959ddd2c" category="inline-link-macro-rx"></block></block>
+  <block id="d0169e5c24cd4c5e05dcb7edb4ca10d7" category="section-title">バージョン1.45</block>
+  <block id="8321b9867214f5caa9d5a37197549cfb" category="paragraph">このBlueXP classificationリリースには、リソース使用率を最適化するコード変更が含まれており、次のようになります。</block>
+  <block id="8f993d1847870bf5334f9e8a709029c8" category="paragraph-title">スキャン対象ファイル共有を追加するワークフローの改善</block>
+  <block id="7363f98210e80281886d9b88b644899c" category="paragraph">ファイル共有グループにファイル共有を追加するワークフローが簡素化されました。また、認証タイプ（Kerberos または NTLM）に基づいて CIFS プロトコルのサポートが区別されるようになりました。</block>
+  <block id="628bc6ea752b2d2bd10bc4f22b8cfcca" category="inline-xref-macro">ファイル共有のスキャン</block>
+  <block id="1ac63d916d77b3c107f8a8cfa12fb2bb" category="paragraph">詳細については、を参照してください <block ref="828b8ad7e27c62fe81ed86d552495069" category="inline-xref-macro-rx"></block>。</block>
+  <block id="2cc1f0459a8aa18da26c0c17c08edd37" category="paragraph-title">拡張ファイル所有者情報</block>
+  <block id="11960942a6824585cdbadbb9ccfaa7b2" category="paragraph">「調査」タブでキャプチャされたファイルの所有者に関する詳細情報を表示できるようになりました。「調査」タブでファイルのメタデータを表示する際に、ファイルの所有者を探し、「詳細を表示」を選択すると、ユーザー名、メールアドレス、SAMアカウント名が表示されます。また、このユーザーが所有する他のアイテムも表示できます。この機能は、Active Directoryが稼働している環境でのみご利用いただけます。</block>
+  <block id="499dd7659f4fa7b600ca3796c449e41b" category="inline-xref-macro">組織に保存されているデータを調査します</block>
+  <block id="761b95894e65b7e84a1b42c7277548f8" category="paragraph">詳細については、を参照してください <block ref="52346db20931f188e29e56e6e913f681" category="inline-xref-macro-rx"></block>。</block>
+  <block id="875f73df70de111a8a6c2c5595b208a7" category="paragraph">バージョン4.2.5</block>
+  <block id="ef9968a47eda1ddd45a276b48c838f6f" category="section-title">BlueXP disaster recoveryにおけるユーザーの役割</block>
+  <block id="bc6794f75df9889a42be39a47210963d" category="paragraph">BlueXP disaster recoveryでは、ロールを使用して、各ユーザーの特定の機能およびアクションへのアクセスを管理するようになりました。</block>
+  <block id="3136785ff416b16b75216e5331402fac" category="paragraph">このサービスは、BlueXP disaster recoveryに固有の次のロールを使用します。</block>
+  <block id="7625d6e45273de6987a1bcebc498baa7" category="list-text">*災害復旧管理者*: BlueXP disaster recoveryであらゆるアクションを実行します。</block>
+  <block id="5106b00f6760172bc5c45cb19eb9b8a5" category="list-text">*災害復旧フェールオーバー管理者*: BlueXP disaster recoveryでフェールオーバーと移行アクションを実行します。</block>
+  <block id="64fbace2c8460fced3d10cb671f24651" category="list-text">*災害復旧アプリケーション管理者*: レプリケーション プランを作成および変更し、テスト フェイルオーバーを開始します。</block>
+  <block id="8a8f884ac550044fb8c536c29fb404af" category="list-text">*災害復旧ビューア*: BlueXP disaster recoveryの情報を表示しますが、アクションを実行することはできません。</block>
+  <block id="ffabfa17d07546861da02a532a19ee4b" category="paragraph">BlueXP disaster recoveryサービスをクリックして初めて構成する場合は、*SnapCenterAdmin* 権限または *Organization Admin* ロールが必要です。</block>
+  <block id="03f7d0a81585e8c5ce1a46f9bccaab7f" category="inline-link">BlueXP disaster recoveryにおけるユーザーの役割と権限</block>
+  <block id="3a3f201899ef67ba5014b223f6b6f313" category="paragraph">詳細については、を参照してください <block ref="024c70e4d2a5dd15bc5622316cbef3ed" category="inline-link-rx"></block>。</block>
+  <block id="46204d4c84a080b8821b1d198e735e91" category="section-title">BlueXP disaster recoveryのその他のアップデート</block>
+  <block id="982f7e3070a4d65cdf30b78b12adb75b" category="list-text">強化されたネットワーク検出</block>
+  <block id="3b5745c72d48a29358cef7c9db7cd826" category="list-text">スケーラビリティの改善:</block>
+  <block id="40228eea7c6ccc9e0cb61372c49d95eb" category="list-text">すべての詳細ではなく必要なメタデータをフィルタリングする</block>
+  <block id="1ac913a5bb5ab0a16e36b313be789aac" category="list-text">VM リソースをより速く取得および更新するための検出の改善</block>
+  <block id="b5e4470910d5e523e0dc277cc4e74bb2" category="list-text">データの取得と更新のためのメモリ最適化とパフォーマンス最適化</block>
+  <block id="49b1bd71187a3dcbd19f786ef2a10764" category="list-text">vCenter SDK クライアントの作成とプール管理の改善</block>
+  <block id="7af4cddf55cbfd0c887075f4b418f072" category="list-text">次回のスケジュールされた検出または手動検出時の古いデータの管理:</block>
+  <block id="0e9f332b69353d48350244fb204bbbe1" category="list-text">vCenter で VM が削除されると、 BlueXP disaster recoveryによってその VM がレプリケーション プランから自動的に削除されるようになりました。</block>
+  <block id="20f175753c0dd9c623cb206ce579bc77" category="list-text">vCenter でデータストアまたはネットワークが削除されると、 BlueXP disaster recoveryによってレプリケーション プランとリソース グループからそれが削除されるようになりました。</block>
+  <block id="e0f19e2b15951f47dcd9ce438c5ce481" category="list-text">vCenter でクラスタ、ホスト、またはデータセンターが削除されると、 BlueXP disaster recoveryによって、レプリケーション プランとリソース グループからそれが削除されるようになりました。</block>
+  <block id="24ed933119d9ba78138d2119f9ebbdac" category="inline-link">Swaggerドキュメント</block>
+  <block id="33526279be472c4427abeef413d79850" category="list-text">ブラウザのシークレットモードでSwaggerドキュメントにアクセスできるようになりました。BlueXPBlueXP disaster recoveryの「設定」オプション &gt; 「APIドキュメント」からアクセスするか、ブラウザのシークレットモードで以下のURLに直接アクセスしてください。 <block ref="fbeb63b8afb1564cb8457db3650e3513" category="inline-link-rx"></block> 。</block>
+  <block id="07249132999164b31d31db024261d558" category="list-text">フェイルバック操作後、状況によってはiGroupが操作完了後に残ってしまうことがあります。このアップデートにより、古いiGroupが削除されます。</block>
+  <block id="3a92c0f069a6fb7a0d4811f90afdd47c" category="list-text">レプリケーションプランでNFS FQDNが使用されていた場合、 BlueXP disaster recoveryはそれをIPアドレスに解決するようになりました。このアップデートは、ディザスタリカバリサイトでFQDNを解決できない場合に役立ちます。</block>
+  <block id="bd9a0211a986e2ba720cbe54530cd5c5" category="list-text">UIの配置の改善</block>
+  <block id="5c7dbecd0837cce38502f147b31156bc" category="list-text">検出が成功した後に vCenter のサイズ設定の詳細をキャプチャするためのログの改善</block>
 </blocks>
