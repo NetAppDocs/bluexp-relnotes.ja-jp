@@ -613,8 +613,6 @@
   <block id="906699741ebd9905a07af900abcfd438" category="paragraph">AWSアカウントのクレデンシャルを追加したり、生成AIワークロードなどの新しいワークロード機能を追加したりするときに、ワークロードファクトリコンソールから権限を管理できるようになりまし<block ref="19f5de89e4c667692a153296018e225f" prefix=" " category="inline-code"></block>た。</block>
   <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">2025年4月14日</block>
   <block id="5c4a2c71456e5295a9492bb06d95be3d" category="section-title">BlueXP  IDおよびアクセス管理（IAM）</block>
-  <block id="c86bd67be80794fcaa3f1d91aa8b2899" category="inline-link-macro">アクセスロールについて説明します。</block>
-  <block id="5a4d408bd57f7cf7efbd6cf878c737a7" category="paragraph"><block ref="5a4d408bd57f7cf7efbd6cf878c737a7" category="inline-link-macro-rx"></block></block>
   <block id="b84cda7d6006e8abb6e6264e292b13c0" category="paragraph">管理できるようになりまし<block ref="19f5de89e4c667692a153296018e225f" prefix=" " category="inline-code"></block>AWSアカウントのクレデンシャルを追加したり、生成AIワークロードなどの新しいワークロード機能を追加したりするときに、BlueXP  コンソールから権限をた。</block>
   <block id="8ee0913e940253bb841c1a05228d81e5" category="paragraph"><block ref="8ee0913e940253bb841c1a05228d81e5" category="inline-link-macro-rx"></block></block>
   <block id="33fc2a8f6921fec02571495993aa2c6c" category="section-title">バージョン1.42</block>
@@ -765,13 +763,6 @@
   <block id="74d516ef8dfa098bb4cd92313c403475" category="section-title">CloudShellオートコンプリートのサポート</block>
   <block id="df96b6f4ceabb5c4dbc915475fd821fe" category="paragraph">BlueXP  ワークロードファクトリCloudShellを使用している場合は、コマンドの入力を開始してTabキーを押すと、使用可能なオプションが表示されます。複数の候補が存在する場合は、CLIに候補のリストが表示されます。この機能は、エラーを最小限に抑え、コマンド実行を高速化することで、生産性を向上させます。</block>
   <block id="17fd2e7ebeeede6a03f9340d8abb7cb1" category="paragraph-title">スキャンイベントをBlueXP  タイムラインに送信</block>
-  <block id="f4136fdf902ca32b4530c7a614c0ed71" category="section-title">コネクタ3.9.52</block>
-  <block id="aa9f9a6b10a3fcd2209035620051306c" category="paragraph">このリリースのBlueXP  Connectorには、セキュリティのマイナーな改善とバグの修正、およびいくつかの追加アップデートが含まれています。</block>
-  <block id="6f9b6bb76caa4f1e59bff34c9ae037fe" category="paragraph">現時点では、3.9.52リリースは標準モードと制限モードで使用できます。</block>
-  <block id="66b821747bf772a5a92a60270143558a" category="section-title">Docker 27およびDocker 28のサポート</block>
-  <block id="01bd213c78b554183ce88619eeb02cce" category="paragraph">コネクタでDocker 27とDocker 28がサポートされるようになりました。</block>
-  <block id="ab83fd01c3620a62252ab67adbc06a91" category="section-title">Keystoneの管理はBlueXP  で可能</block>
-  <block id="4359bea5882e2896e306955792589a33" category="paragraph">BlueXP  のNetApp Keystoneベータ版では、Keystone管理機能へのアクセスが追加されました。NetApp Keystoneベータ版のサインアップページには、BlueXP  の左側のナビゲーションバーからアクセスできます。</block>
   <block id="71df7d09aaee8e6796df0c3d10989fbd" category="section-title">2025年5月13日</block>
   <block id="5a31c17caa12408e3b6093ed864c9821" category="paragraph">バージョン4.2.3</block>
   <block id="c362166d3b35c5afaa0ddfbe7e69494b" category="section-title">サブネットマッピング</block>
@@ -855,7 +846,6 @@
   <block id="29e615c9125f030edfca48f5dd489a27" category="inline-link-macro">BlueXP での Keystone サブスクリプション管理について学習します。</block>
   <block id="b449211baca42f6cd385865db145f827" category="paragraph"><block ref="b449211baca42f6cd385865db145f827" category="inline-link-macro-rx"></block></block>
   <block id="2519e52723b63d73b91fe9567002e2ad" category="section-title">多要素認証（MFA）</block>
-  <block id="079da054a19d880b356cedc5deeaf9e3" category="paragraph">フェデレーションされていないユーザーは、BlueXPアカウントで多要素認証（MFA）を有効にしてアカウントのセキュリティを強化できるようになりました。BlueXP管理者は、ユーザーのMFA設定を管理し、必要に応じて個々のユーザーのMFAをリセットまたは無効化できます。これは標準モードでのみサポートされます。</block>
   <block id="9950fd493db1cd52e6769f96bf27cc78" category="inline-link-macro">自分自身に多要素認証を設定する方法について説明します。</block>
   <block id="8b6178443fc25355a974613e3d6951b4" category="inline-link-macro">ユーザーに対する多要素認証の管理について学習します。</block>
   <block id="432ca61a502f036a7c9fe7850d55f376" category="paragraph"><block ref="b5f93708cb2e7c8499feb8c2a3a457d0" category="inline-link-macro-rx"></block> <block ref="1104a8a08c217b6a8c157f716ea4a98c" category="inline-link-macro-rx"></block></block>
@@ -868,22 +858,6 @@
   <block id="d29240cb60727e796e55d4bf8ac33966" category="cell">にアクセス<block ref="291fbb881b3918f162f476bad9d0c478" category="inline-link-rx"></block>し、バージョン3.9.52および3.9.50の変更点を参照してください。</block>
   <block id="fb6bee0c273267d6fdde07008552b62f" category="cell">に行く<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block> 2025 年 5 月のリリースに含まれる変更を参照してください。</block>
   <block id="3e18ba454ff1bfb5aee5e5d425b20ea3" category="cell">2025年5月12日（バージョン1.43）</block>
-  <block id="1cb98a955a2cc6db0fd659024f067adb" category="paragraph">Cloud Volumes ONTAPノードは、コネクタがコンプライアンス違反または14日間以上ダウンしている場合でもシャットダウンしなくなりました。CloudVolumes ONTAPは、コネクタへのアクセスを失った場合でも、イベント管理メッセージを送信します。この変更は、コネクタが長期間ダウンした場合でも、Cloud Volumes ONTAPが動作を継続できるようにするためのものです。コネクタのコンプライアンス要件は変更されません。</block>
-  <block id="b2a4dd9da503b6b927d0278084e6ea56" category="section-title">新しいストレージ管理の役割</block>
-  <block id="bf593570fbef026982251facf0c215e1" category="paragraph">ストレージ管理者、システム正常性スペシャリスト、ストレージ閲覧者の役割が利用可能であり、ユーザーに割り当てることができます。</block>
-  <block id="9e8f8caceb21ce13b88d4160e465e2a5" category="paragraph">これらのロールを使用すると、組織内のどのユーザーがストレージ リソースを検出および管理できるかを管理できるほか、ストレージの正常性情報を表示したり、ソフトウェアの更新を実行したりすることもできます。</block>
-  <block id="1640c7bcb4a85ded2f136361a51dd52e" category="paragraph">これらのロールは、次のストレージ リソースへのアクセスを制御するためにサポートされています。</block>
-  <block id="7fcb7f97cbc710b693fef37b5e86770f" category="list-text">StorageGRID システム</block>
-  <block id="d0a39c85bb5fdaacac18ed6c4e5b511f" category="list-text">オンプレミスの ONTAP システム</block>
-  <block id="b80ffca4d1f83e77193d4613c9044556" category="paragraph">これらのロールを使用して、次の BlueXP サービスへのアクセスを制御することもできます。</block>
-  <block id="19bea5bec76c66ef8bd189aa23a4c860" category="list-text">持続可能性</block>
-  <block id="a594a24eac9dea3cdb34c6d3c35b39a6" category="paragraph">次のロールが追加されました:</block>
-  <block id="98d63ffef525e1f04dd3ec407ff57b30" category="list-text">*ストレージ管理者*</block>
-  <block id="f1aeec4f24299e314aab97d634337c25" category="paragraph">組織内のストレージリソースの健全性、ガバナンス、検出を管理します。このロールは、ストレージリソースのソフトウェアアップデートも実行できます。</block>
-  <block id="24bae3be890c130e5ac1c22d16f741bd" category="list-text">*システムヘルススペシャリスト*</block>
-  <block id="3886b56eea2fe550b4e6b51dc07a1911" category="paragraph">組織内のストレージリソースの健全性とガバナンスを管理します。このロールは、ストレージリソースのソフトウェアアップデートも実行できます。作業環境を変更または削除することはできません。</block>
-  <block id="4172ddc56d4e9fa18f3ae18bdb0184b5" category="list-text">*ストレージビューア*</block>
-  <block id="c4bd9bd2263d800e3d498cc0849de57f" category="paragraph">ストレージの健全性情報とガバナンス データを表示します。</block>
   <block id="7454fc4c14df2a987637928e569efe3a" category="section-title">2025年6月29日</block>
   <block id="737f8adcd33c506f811980c79df8aa51" category="section-title">資格情報の更新</block>
   <block id="e7bb6404e9b51c8163ba1ed57cf3a336" category="paragraph">FSx for ONTAP ファイルシステムの認証情報と権限を設定すると、BlueXP の認証情報ページにリダイレクトされます。このページから、FSx for ONTAP の認証情報の名前を変更したり、削除したりできます。</block>
@@ -987,4 +961,40 @@
   <block id="76490568879e4523bb6bd6d8263472a9" category="inline-link">BlueXPワークロードファクトリー通知を構成する</block>
   <block id="533a43c23a4d81612b2392465e022a51" category="paragraph"><block ref="533a43c23a4d81612b2392465e022a51" category="inline-link-rx"></block></block>
   <block id="0e42c2b565849349fc544a0196ef1b6a" category="section-title">2025年6月10日</block>
+  <block id="f2673d4a3fe0162a501d43f5168ae950" category="section-title">2025年7月14日</block>
+  <block id="f7b353257b71afef5402701e6c93dc8a" category="section-title">コネクタ3.9.54</block>
+  <block id="98b6a9150dc84b6f02a11b49d3f18c05" category="paragraph">BlueXPコネクタのこのリリースには、セキュリティの改善、バグ修正、および次の新機能が含まれています。</block>
+  <block id="0e0a4ccfeecf6ead97d3838c2dc57d40" category="inline-link-macro">透過プロキシの構成について詳しく学びます。</block>
+  <block id="313ef52bd65a76709d5fc69694074f0c" category="list-text">Cloud Volumes ONTAPサービスのサポート専用のコネクタの透過プロキシのサポート。 <block ref="139e9d43e4ebdf2d28d8a7ff0c85548a" category="inline-link-macro-rx"></block></block>
+  <block id="4439ae12e6cc703b73c18fa22032bcff" category="list-text">コネクタが Google Cloud 環境にデプロイされているときに、ネットワーク タグを使用してコネクタ トラフィックをルーティングする機能。</block>
+  <block id="a72a5a23a9089a372f557a0032363d4e" category="list-text">CPU および RAM の使用状況を含む、コネクタのヘルス監視に関する追加の製品内通知。</block>
+  <block id="86c10fecfc44ffe6d27d3e73e9158cad" category="paragraph">現時点では、3.9.54リリースは標準モードと制限モードで使用できます。</block>
+  <block id="3c3f3f8da4e73401360151d23584f1ea" category="paragraph">BlueXPの ID およびアクセス管理では、次の機能が提供されるようになりました。</block>
+  <block id="ac7f0ef250a867a5ecb5c25482b98e18" category="list-text">プライベート モードでの IAM のサポートにより、 BlueXPサービスおよびアプリケーションに対するユーザー アクセスと権限を管理できます。</block>
+  <block id="24d91e6aa8972e7e5bb12c6d94624a97" category="list-text">より簡単なナビゲーション、フェデレーション接続を構成するためのより明確なオプション、既存のフェデレーションの可視性の向上など、ID フェデレーションの管理が合理化されます。</block>
+  <block id="db77c29257701c4d25faf6a7f5c4d6d5" category="list-text">BlueXP backup and recovery、 BlueXP disaster recovery、およびフェデレーション管理のアクセス ロール。</block>
+  <block id="90d9add65845a3ac3f06a9c505d3ca8c" category="section-title">プライベートモードでのIAMのサポート</block>
+  <block id="3f9f69d84e5d45c59f976ad54eb76e25" category="paragraph">BlueXPはプライベートモードでIAMをサポートするようになりました。これにより、 BlueXPのサービスとアプリケーションに対するユーザーアクセスと権限を管理できるようになります。この機能強化により、プライベートモードのお客様はロールベースアクセス制御（RBAC）を活用して、セキュリティとコンプライアンスを強化できます。</block>
+  <block id="45420c71b7c178f6317117fccb2ff617" category="inline-link-macro">BlueXPの IAM について詳しく学びます。</block>
+  <block id="b1f1212b2b71340bea9d195625f740ec" category="paragraph"><block ref="b1f1212b2b71340bea9d195625f740ec" category="inline-link-macro-rx"></block></block>
+  <block id="1a63a8b8fcf7d631a5e1fa8067ab9b08" category="section-title">アイデンティティ連携の効率的な管理</block>
+  <block id="a7cc903fc36eaee51a699d9d59b1496c" category="paragraph">BlueXPは、ID連携を管理するためのより直感的なインターフェースを提供します。これにより、ナビゲーションが簡素化され、連携接続の設定オプションが明確になり、既存の連携の可視性が向上します。</block>
+  <block id="c06fd8d559af4ac97a50afd1857f0e4e" category="paragraph">ID連携によるシングルサインオン（SSO）を有効にすると、ユーザーは企業の認証情報でBlueXPにログインできるようになります。これにより、セキュリティが向上し、パスワードの使用が削減され、オンボーディングが簡素化されます。</block>
+  <block id="62532a5520311cce692e8abb3a619189" category="inline-link-macro">既存のフェデレーション接続をBlueXPにインポートする方法の詳細をご覧ください。</block>
+  <block id="09de16a2da9f0884c7445f0a40b10aa4" category="paragraph">新しい管理機能にアクセスするには、既存のフェデレーション接続を新しいインターフェースにインポートするよう求められます。これにより、フェデレーション接続を再作成することなく、最新の機能強化を活用できます。 <block ref="172066467f700483f74d71d92d89ce7c" category="inline-link-macro-rx"></block></block>
+  <block id="35db97c0083a9f24d4de60744f2ae08c" category="paragraph">改善されたフェデレーション管理により、次のことが可能になります。</block>
+  <block id="c7cfa37b557dec5d42fe4ae1f33a84a9" category="list-text">フェデレーション接続に複数の検証済みドメインを追加すると、同じ ID プロバイダー (IdP) で複数のドメインを使用できるようになります。</block>
+  <block id="b4a4e2a03df0b0c5b7847629f778c654" category="list-text">必要に応じてフェデレーション接続を無効化または削除し、ユーザー アクセスとセキュリティを制御できます。</block>
+  <block id="77f3e518793db250165393f568090955" category="list-text">IAM ロールを使用してフェデレーション管理へのアクセスを制御します。</block>
+  <block id="ac784304eb7a6a12a493cf93b5cef5a9" category="inline-link-macro">BlueXPの ID フェデレーションの詳細をご覧ください。</block>
+  <block id="7970bfbac6093d2cbee1b40bcff193c3" category="paragraph"><block ref="7970bfbac6093d2cbee1b40bcff193c3" category="inline-link-macro-rx"></block></block>
+  <block id="e16a950fa56f1c93596e628653af0177" category="section-title">BlueXP backup and recovery、 BlueXP disaster recovery、フェデレーション管理の新しいアクセス ロール</block>
+  <block id="f4b57a3793a05b2b72338f8e9fcc9496" category="paragraph">BlueXPでは、次の機能とデータ サービスに対する IAM ロールの使用がサポートされるようになりました。</block>
+  <block id="ede1cce9f240fed5ecc4264bd699cee1" category="list-text">BlueXPのバックアップとリカバリ</block>
+  <block id="43db2a9bc6b7310c67fd6873bb6ca7a4" category="list-text">フェデレーション</block>
+  <block id="f52cf765b6d2324047bf70dbb3a134b2" category="inline-link-macro">アクセス ロールの使用について詳しく学習します。</block>
+  <block id="10bab6385b6290f87ce28199462adf76" category="paragraph"><block ref="10bab6385b6290f87ce28199462adf76" category="inline-link-macro-rx"></block></block>
+  <block id="f32aa7882dcd9a369e67d2808830a51e" category="paragraph">フェデレーションされていないユーザーは、 BlueXPアカウントでMFAを有効にしてセキュリティを強化できます。管理者は、必要に応じてユーザーのMFAをリセットまたは無効化するなど、MFA設定を管理できます。これは標準モードでのみサポートされます。</block>
+  <block id="2bef154766331bbaacbab995f24ef0c2" category="section-title">必要なBlueXPアクセスロール</block>
+  <block id="44a4a7c03393e00f4aeee3bd72474eea" category="paragraph">BlueXPでStorageGRID を表示、検出、または管理するには、次のアクセス ロールのいずれかが必要です: *組織管理者*、*フォルダーまたはプロジェクト管理者*、*ストレージ管理者*、または *ストレージ ヘルス スペシャリスト*。 <block ref="b792d0fe33393ff1eec4387f959ddd2c" category="inline-link-macro-rx"></block></block>
 </blocks>
