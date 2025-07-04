@@ -870,7 +870,6 @@
   <block id="f7b353257b71afef5402701e6c93dc8a" category="section-title">コネクタ3.9.54</block>
   <block id="98b6a9150dc84b6f02a11b49d3f18c05" category="paragraph">BlueXPコネクタのこのリリースには、セキュリティの改善、バグ修正、および次の新機能が含まれています。</block>
   <block id="0e0a4ccfeecf6ead97d3838c2dc57d40" category="inline-link-macro">透過プロキシの構成について詳しく学びます。</block>
-  <block id="313ef52bd65a76709d5fc69694074f0c" category="list-text">Cloud Volumes ONTAPサービスのサポート専用のコネクタの透過プロキシのサポート。 <block ref="139e9d43e4ebdf2d28d8a7ff0c85548a" category="inline-link-macro-rx"></block></block>
   <block id="4439ae12e6cc703b73c18fa22032bcff" category="list-text">コネクタが Google Cloud 環境にデプロイされているときに、ネットワーク タグを使用してコネクタ トラフィックをルーティングする機能。</block>
   <block id="a72a5a23a9089a372f557a0032363d4e" category="list-text">CPU および RAM の使用状況を含む、コネクタのヘルス監視に関する追加の製品内通知。</block>
   <block id="86c10fecfc44ffe6d27d3e73e9158cad" category="paragraph">現時点では、3.9.54リリースは標準モードと制限モードで使用できます。</block>
@@ -886,19 +885,16 @@
   <block id="a7cc903fc36eaee51a699d9d59b1496c" category="paragraph">BlueXPは、ID連携を管理するためのより直感的なインターフェースを提供します。これにより、ナビゲーションが簡素化され、連携接続の設定オプションが明確になり、既存の連携の可視性が向上します。</block>
   <block id="c06fd8d559af4ac97a50afd1857f0e4e" category="paragraph">ID連携によるシングルサインオン（SSO）を有効にすると、ユーザーは企業の認証情報でBlueXPにログインできるようになります。これにより、セキュリティが向上し、パスワードの使用が削減され、オンボーディングが簡素化されます。</block>
   <block id="62532a5520311cce692e8abb3a619189" category="inline-link-macro">既存のフェデレーション接続をBlueXPにインポートする方法の詳細をご覧ください。</block>
-  <block id="09de16a2da9f0884c7445f0a40b10aa4" category="paragraph">新しい管理機能にアクセスするには、既存のフェデレーション接続を新しいインターフェースにインポートするよう求められます。これにより、フェデレーション接続を再作成することなく、最新の機能強化を活用できます。 <block ref="172066467f700483f74d71d92d89ce7c" category="inline-link-macro-rx"></block></block>
   <block id="35db97c0083a9f24d4de60744f2ae08c" category="paragraph">改善されたフェデレーション管理により、次のことが可能になります。</block>
   <block id="c7cfa37b557dec5d42fe4ae1f33a84a9" category="list-text">フェデレーション接続に複数の検証済みドメインを追加すると、同じ ID プロバイダー (IdP) で複数のドメインを使用できるようになります。</block>
   <block id="b4a4e2a03df0b0c5b7847629f778c654" category="list-text">必要に応じてフェデレーション接続を無効化または削除し、ユーザー アクセスとセキュリティを制御できます。</block>
   <block id="77f3e518793db250165393f568090955" category="list-text">IAM ロールを使用してフェデレーション管理へのアクセスを制御します。</block>
   <block id="ac784304eb7a6a12a493cf93b5cef5a9" category="inline-link-macro">BlueXPの ID フェデレーションの詳細をご覧ください。</block>
-  <block id="7970bfbac6093d2cbee1b40bcff193c3" category="paragraph"><block ref="7970bfbac6093d2cbee1b40bcff193c3" category="inline-link-macro-rx"></block></block>
   <block id="e16a950fa56f1c93596e628653af0177" category="section-title">BlueXP backup and recovery、 BlueXP disaster recovery、フェデレーション管理の新しいアクセス ロール</block>
   <block id="f4b57a3793a05b2b72338f8e9fcc9496" category="paragraph">BlueXPでは、次の機能とデータ サービスに対する IAM ロールの使用がサポートされるようになりました。</block>
   <block id="ede1cce9f240fed5ecc4264bd699cee1" category="list-text">BlueXPのバックアップとリカバリ</block>
   <block id="43db2a9bc6b7310c67fd6873bb6ca7a4" category="list-text">フェデレーション</block>
   <block id="f52cf765b6d2324047bf70dbb3a134b2" category="inline-link-macro">アクセス ロールの使用について詳しく学習します。</block>
-  <block id="10bab6385b6290f87ce28199462adf76" category="paragraph"><block ref="10bab6385b6290f87ce28199462adf76" category="inline-link-macro-rx"></block></block>
   <block id="f32aa7882dcd9a369e67d2808830a51e" category="paragraph">フェデレーションされていないユーザーは、 BlueXPアカウントでMFAを有効にしてセキュリティを強化できます。管理者は、必要に応じてユーザーのMFAをリセットまたは無効化するなど、MFA設定を管理できます。これは標準モードでのみサポートされます。</block>
   <block id="2bef154766331bbaacbab995f24ef0c2" category="section-title">必要なBlueXPアクセスロール</block>
   <block id="44a4a7c03393e00f4aeee3bd72474eea" category="paragraph">BlueXPでStorageGRID を表示、検出、または管理するには、次のアクセス ロールのいずれかが必要です: *組織管理者*、*フォルダーまたはプロジェクト管理者*、*ストレージ管理者*、または *ストレージ ヘルス スペシャリスト*。 <block ref="b792d0fe33393ff1eec4387f959ddd2c" category="inline-link-macro-rx"></block></block>
@@ -940,4 +936,8 @@
   <block id="3a92c0f069a6fb7a0d4811f90afdd47c" category="list-text">レプリケーションプランでNFS FQDNが使用されていた場合、 BlueXP disaster recoveryはそれをIPアドレスに解決するようになりました。このアップデートは、ディザスタリカバリサイトでFQDNを解決できない場合に役立ちます。</block>
   <block id="bd9a0211a986e2ba720cbe54530cd5c5" category="list-text">UIの配置の改善</block>
   <block id="5c7dbecd0837cce38502f147b31156bc" category="list-text">検出が成功した後に vCenter のサイズ設定の詳細をキャプチャするためのログの改善</block>
+  <block id="5e976f8888129db7a70ab686bfcc86b9" category="list-text">Cloud Volumes ONTAPサービスのサポート専用のコネクタの透過プロキシのサポート。 <block ref="addeb9305f92d41fc2dd640d1ef810f0" category="inline-link-macro-rx"></block></block>
+  <block id="a930f8ca18589b33c946f81801d0bbf6" category="paragraph">新しい管理機能にアクセスするには、既存のフェデレーション接続を新しいインターフェースにインポートするよう求められます。これにより、フェデレーション接続を再作成することなく、最新の機能強化を活用できます。 <block ref="374020c220651e051317a80c1b5ae1db" category="inline-link-macro-rx"></block></block>
+  <block id="b658b3504fd725bf7abab622b28f1851" category="paragraph"><block ref="b658b3504fd725bf7abab622b28f1851" category="inline-link-macro-rx"></block></block>
+  <block id="12abdfb9ba5fcfe154c4363eb977b22b" category="paragraph"><block ref="12abdfb9ba5fcfe154c4363eb977b22b" category="inline-link-macro-rx"></block></block>
 </blocks>
