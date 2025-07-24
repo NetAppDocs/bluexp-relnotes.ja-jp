@@ -45,7 +45,7 @@ BlueXP は、次のストレージ システムに対するアクセス ロー�
 * Google Cloud NetAppボリューム
 
 
-link:https://docs.netapp.com/us-en/bluexp-admin/reference-iam-predefined-roles.html["アクセス ロールの使用について詳しく学習します。"]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["アクセス ロールの使用について詳しく学習します。"]
 
 
 
@@ -394,7 +394,7 @@ BlueXP backup and recoveryのこのリリースでは、 BlueXP backup and recov
 プレビューにサインアップするには、こちらに記入してください https://forms.office.com/pages/responsepage.aspx?id=oBEJS5uSFUeUS8A3RRZbOojtBW63mDRDv3ZK50MaTlJUNjdENllaVTRTVFJGSDQ2MFJIREcxN0EwQi4u&route=shorturl["プレビュー登録フォーム"^] 。
 
 
-NOTE: MICROSOFT SQL SERVER ワークロードの保護に関するこのドキュメントは、テクノロジ プレビューとして提供されています。このプレビューサービスでは、NetAppは、一般提供前にサービスの詳細、内容、スケジュールを変更する権利を留保します。
+NOTE: Microsoft SQL Server ワークロードの保護に関するこのドキュメントは、テクノロジープレビューとして提供されています。このプレビュー提供において、 NetApp は一般提供開始前に提供内容、内容、およびスケジュールを変更する権利を留保します。
 
 このバージョンのBlueXP backup and recoveryには、次の更新が含まれています。
 
@@ -771,6 +771,20 @@ Cloud Volumes ONTAP 9.13.1 以降、L8s_v3 は、新規および既存の高可�
 
 
 
+=== 2025年6月25日
+
+
+
+==== Cloud Volumes ONTAPの BYOL ライセンスの利用制限
+
+2025年6月25日より、 NetAppはCloud Volumes ONTAPのBYOL（Bring Your Own License）ライセンスモデルを制限いたします。この制限は、AWS、Azure、Google Cloudのすべてのお客様とCloud Volumes ONTAP導入環境に適用されます。例外となるのは、米国公共部門のお客様と中国リージョンの導入環境です。
+
+NetAppのサポートとサービスはBYOL契約の有効期限まで継続されますが、有効期限切れのライセンスは更新または延長されません。BYOLライセンスの有効期限が切れた場合は、クラウドマーケットプレイスのサブスクリプションを通じて容量ベースのライセンスを購入して切り替える必要があります。ハイパースケーラーマーケットプレイスを通じた容量ベースのライセンスモデルは、ライセンス手続きを効率化し、より大きなビジネスメリットをもたらします。切り替えのオプションについてご相談いただくには、 NetAppアカウントチームまたはカスタマーサクセス担当者までお問い合わせください。
+
+詳細については、次の顧客向け通信を参照してください。  https://mysupport.netapp.com/info/communications/CPC-00661.html["CPC-00661: Cloud Volumes ONTAP BYOLポリシーの変更"^] 。
+
+
+
 === 2025年5月29日
 
 
@@ -780,26 +794,6 @@ Cloud Volumes ONTAP 9.13.1 以降、L8s_v3 は、新規および既存の高可�
 Cloud Volumes ONTAP 9.15.1をプライベートモードでAWS、Azure、Google Cloudに導入できるようになりました。プライベートモードは、Cloud Volumes ONTAP 9.15.1のシングルノード環境とハイアベイラビリティ（HA）環境の両方で有効になります。
 
 プライベートモード配置の詳細については、を参照してくださいhttps://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#restricted-mode["BlueXPの導入モードについて説明します"^]。
-
-
-
-=== 2025年5月12日
-
-
-
-==== Azure Marketplaceを通じたBlueXP  の導入環境の調査
-
-BlueXP  では、Azure Marketplaceから直接導入されたCloud Volumes ONTAPシステムを検出できるようになりました。つまり、これらのシステムを他のCloud Volumes ONTAPシステムと同様に、BlueXP  で作業環境として追加および管理できるようになりました。
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploy-cvo-azure-mktplc.html["Azure MarketplaceからCloud Volumes ONTAPを導入"^]
-
-
-
-==== Azureテナントのデータを階層化する機能
-
-Cloud Volumes ONTAP作業環境をあるテナントで作成し、BlueXP  Connectorを別のテナントで作成するシナリオで、Azureテナントの階層化を有効にできるようになりました。この機能を使用すると、同じコネクタを使用して複数のAzureテナントのデータを階層化できます。
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html#requirements-to-tier-data-for-an-azure-tenant["Azureテナントのデータを階層化するための要件"^]
 
 
 

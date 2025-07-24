@@ -609,14 +609,6 @@
   <block id="4a02475d909bd7464565a63664e4dc8b" category="paragraph-title">パフォーマンスの強化</block>
   <block id="247e7f07f0a97b367563cc22c1a529cb" category="paragraph">RAMの使用量を削減し、BlueXP  分類の全体的なパフォーマンスを向上させるために、コードの拡張が実装されています。</block>
   <block id="223594359ca2e5c0c959aa756dea2d50" category="paragraph">StorageGRIDスキャンが失敗する原因となったバグ、調査ページのフィルタオプションがロードされない問題、および大量評価のためにダウンロードされないデータ検出評価が修正されました。</block>
-  <block id="462848e89fbcd7fc117ed7c36b47f6f3" category="section-title">Azure Marketplaceを通じたBlueXP  の導入環境の調査</block>
-  <block id="cb52ca43108f98673f7dcc6c4bc528f6" category="paragraph">BlueXP  では、Azure Marketplaceから直接導入されたCloud Volumes ONTAPシステムを検出できるようになりました。つまり、これらのシステムを他のCloud Volumes ONTAPシステムと同様に、BlueXP  で作業環境として追加および管理できるようになりました。</block>
-  <block id="e94250a733abb8fd0b0ca35ccdcc534f" category="inline-link">Azure MarketplaceからCloud Volumes ONTAPを導入</block>
-  <block id="2f3a59a024a5fa5e6d9049c44506f8b0" category="paragraph"><block ref="2f3a59a024a5fa5e6d9049c44506f8b0" category="inline-link-rx"></block></block>
-  <block id="d2e69d0efb90eba181fe1aff16489eba" category="section-title">Azureテナントのデータを階層化する機能</block>
-  <block id="6a86c1cc6c3338bb337a5e643e80da8e" category="paragraph">Cloud Volumes ONTAP作業環境をあるテナントで作成し、BlueXP  Connectorを別のテナントで作成するシナリオで、Azureテナントの階層化を有効にできるようになりました。この機能を使用すると、同じコネクタを使用して複数のAzureテナントのデータを階層化できます。</block>
-  <block id="879e91c0a0fa09577c58d0330291ff06" category="inline-link">Azureテナントのデータを階層化するための要件</block>
-  <block id="215678b43321c729a07cabb64971f83c" category="paragraph"><block ref="215678b43321c729a07cabb64971f83c" category="inline-link-rx"></block></block>
   <block id="74d516ef8dfa098bb4cd92313c403475" category="section-title">CloudShellオートコンプリートのサポート</block>
   <block id="df96b6f4ceabb5c4dbc915475fd821fe" category="paragraph">BlueXP  ワークロードファクトリCloudShellを使用している場合は、コマンドの入力を開始してTabキーを押すと、使用可能なオプションが表示されます。複数の候補が存在する場合は、CLIに候補のリストが表示されます。この機能は、エラーを最小限に抑え、コマンド実行を高速化することで、生産性を向上させます。</block>
   <block id="17fd2e7ebeeede6a03f9340d8abb7cb1" category="paragraph-title">スキャンイベントをBlueXP  タイムラインに送信</block>
@@ -867,7 +859,6 @@
   <block id="312aa67cbd2d7a037dd47a1f882d9f0d" category="paragraph">BlueXP backup and recoveryのこのリリースでは、 BlueXP backup and recoveryサービスでお馴染みの3-2-1保護戦略を用いてMicrosoft SQL Serverワークロードを管理できる、更新されたユーザーインターフェースが提供されます。この新バージョンでは、これらのワークロードをプライマリストレージにバックアップし、セカンダリストレージに複製し、クラウドオブジェクトストレージにバックアップすることが可能です。</block>
   <block id="b8307a4d76527581a7b59e0e8b710824" category="inline-link">プレビュー登録フォーム</block>
   <block id="240b59983b641b146915b794a0fa4966" category="paragraph">プレビューにサインアップするには、こちらに記入してください<block ref="b33811e9e55ab63ce9fecada8cb8558a" category="inline-link-rx"></block> 。</block>
-  <block id="0aa114cf5979a3879018cab8149d4fc8" category="admonition">MICROSOFT SQL SERVER ワークロードの保護に関するこのドキュメントは、テクノロジ プレビューとして提供されています。このプレビューサービスでは、NetAppは、一般提供前にサービスの詳細、内容、スケジュールを変更する権利を留保します。</block>
   <block id="55305f14da02876048cbec8f433b6e31" category="paragraph">このバージョンのBlueXP backup and recoveryには、次の更新が含まれています。</block>
   <block id="14c22a8793139c8c0e5b2ca06437ae76" category="list-text">*3-2-1 バックアップ機能*: このバージョンではSnapCenter機能が統合されており、 BlueXP backup and recoveryユーザー インターフェイスから 3-2-1 データ保護戦略を使用してSnapCenterリソースを管理および保護できます。</block>
   <block id="ad80e2efcb583c36651da40966b7c8aa" category="list-text">* SnapCenterからのインポート*: SnapCenter のバックアップ データとポリシーをBlueXP backup and recoveryにインポートできます。</block>
@@ -937,4 +928,12 @@
   <block id="24a524d6161aca2fe5398b80dd9fa10c" category="list-text">クラスタで実行された事前チェックの結果は、「合格」、「不合格」、「スキップ」などのフラグで表示されます。これにより、クラスタがONTAPアップグレードを完了するのに最適な状態であることが保証されます。</block>
   <block id="081533dbbdd673ebb2632d92a90a4a77" category="list-text">クラスタに適用可能な推奨される最新のファームウェア アップデートと、 ONTAPターゲット バージョンに付属のバージョンを表示できます。</block>
   <block id="6276222a738837860023343f423eb60c" category="list-text">SANクラスタの相互運用性チェックを提供する新しいタブが追加されました。選択したターゲットONTAPバージョンでサポートされているホストOSバージョンが表示されます。</block>
+  <block id="fa37736e47ccc44e2228f573f9d2a303" category="paragraph"><block ref="fa37736e47ccc44e2228f573f9d2a303" category="inline-link-macro-rx"></block></block>
+  <block id="6e23fbb0baad6a7a72bd41e60b71f566" category="admonition">Microsoft SQL Server ワークロードの保護に関するこのドキュメントは、テクノロジープレビューとして提供されています。このプレビュー提供において、 NetApp は一般提供開始前に提供内容、内容、およびスケジュールを変更する権利を留保します。</block>
+  <block id="98d06a8873f74ad318a67a8dee1dcd5f" category="section-title">2025年6月25日</block>
+  <block id="6bcfb67e751fc7a3d8dba22f37cbb570" category="section-title">Cloud Volumes ONTAPの BYOL ライセンスの利用制限</block>
+  <block id="94aa7f0bf110a253866678fe039b7133" category="paragraph">2025年6月25日より、 NetAppはCloud Volumes ONTAPのBYOL（Bring Your Own License）ライセンスモデルを制限いたします。この制限は、AWS、Azure、Google Cloudのすべてのお客様とCloud Volumes ONTAP導入環境に適用されます。例外となるのは、米国公共部門のお客様と中国リージョンの導入環境です。</block>
+  <block id="7b775530465bfc8e5ecd3d0244e8847c" category="paragraph">NetAppのサポートとサービスはBYOL契約の有効期限まで継続されますが、有効期限切れのライセンスは更新または延長されません。BYOLライセンスの有効期限が切れた場合は、クラウドマーケットプレイスのサブスクリプションを通じて容量ベースのライセンスを購入して切り替える必要があります。ハイパースケーラーマーケットプレイスを通じた容量ベースのライセンスモデルは、ライセンス手続きを効率化し、より大きなビジネスメリットをもたらします。切り替えのオプションについてご相談いただくには、 NetAppアカウントチームまたはカスタマーサクセス担当者までお問い合わせください。</block>
+  <block id="b902c393ae9091d227b03ac188f61f92" category="inline-link">CPC-00661: Cloud Volumes ONTAP BYOLポリシーの変更</block>
+  <block id="37e719f908b04fc23a8be8447926a507" category="paragraph">詳細については、次の顧客向け通信を参照してください。 <block ref="4276341cf7737eb343f72d4388b5947d" category="inline-link-rx"></block> 。</block>
 </blocks>
