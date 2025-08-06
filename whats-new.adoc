@@ -24,13 +24,45 @@ BlueXPプラットフォームの一部である クラウド サービス の�
 
 
 
+=== 2025年7月31日
+
+
+
+==== プライベートモードリリース（3.9.54）
+
+新しいプライベートモードリリースをからダウンロードできるようになりました。 https://mysupport.netapp.com/site/downloads["NetAppサポートサイト"^]
+
+3.9.54 リリースには、次のBlueXPコンポーネントとサービスの更新が含まれています。
+
+[cols="3*"]
+|===
+| コンポーネントまたはサービス | このリリースに含まれるバージョン | 前回のプライベートモードリリースからの変更点 
+
+
+| コネクタ | 3.9.54、3.9.53 | に行く https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-50["BlueXPページの新着情報"^]バージョン 3.9.54 および 3.9.53 に含まれる変更を参照してください。 
+
+
+| バックアップとリカバリ | 2025年7月28日 | に行く https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP  バックアップ/リカバリページの新機能"^]2025 年 7 月のリリースに含まれる変更点を参照してください。 
+
+
+| 分類 | 2025年7月14日（バージョン1.45） | に行く https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXP  分類ページの新機能"^]。 
+|===
+アップグレード方法を含むプライベートモードの詳細については、次を参照してください。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["プライベートモードの詳細"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["BlueXPのプライベートモードでの利用を開始する方法"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["プライベートモードの使用時にコネクタをアップグレードする方法について説明します。"]
+
+
+
+
 === 2025年7月21日
 
 
 
 ==== Google Cloud NetApp Volumesのサポート
 
-BlueXPでGoogle Cloud NetApp Volumes を表示できるようになりました。 link:https://docs.netapp.com/us-en//bluexp-google-cloud-netapp-volumes/index.html/index.html["Google Cloud NetApp Volumesの詳細をご覧ください。"]
+BlueXPでGoogle Cloud NetApp Volumes を表示できるようになりました。link:https://docs.netapp.com/us-en//bluexp-google-cloud-netapp-volumes/index.html["Google Cloud NetApp Volumesの詳細をご覧ください。"]
 
 
 
@@ -167,38 +199,6 @@ BlueXP の認証情報ページから Amazon FSx for NetApp ONTAP の認証情�
 
 
 
-=== 2025年5月29日
-
-
-
-==== プライベートモードリリース（3.9.52）
-
-新しいプライベートモードリリースをからダウンロードできるようになりました。 https://mysupport.netapp.com/site/downloads["NetAppサポートサイト"^]
-
-3.9.52リリースでは、BlueXP  の次のコンポーネントとサービスが更新されています。
-
-[cols="3*"]
-|===
-| コンポーネントまたはサービス | このリリースに含まれるバージョン | 前回のプライベートモードリリースからの変更点 
-
-
-| コネクタ | 3.9.52、3.9.51 | にアクセス https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-50["BlueXP  Connectorページの新機能"]し、バージョン3.9.52および3.9.50の変更点を参照してください。 
-
-
-| バックアップとリカバリ | 2025年5月12日 | に行く https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP  バックアップ/リカバリページの新機能"^] 2025 年 5 月のリリースに含まれる変更を参照してください。 
-
-
-| 分類 | 2025年5月12日（バージョン1.43） | にアクセス https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXP  分類ページの新機能"^]し、1.38リリースから1.371.41リリースに含まれる変更点を参照してください。 
-|===
-アップグレード方法を含むプライベートモードの詳細については、次を参照してください。
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["プライベートモードの詳細"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["BlueXPのプライベートモードでの利用を開始する方法"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["プライベートモードの使用時にコネクタをアップグレードする方法について説明します。"]
-
-
-
-
 == アラート
 
 
@@ -231,13 +231,30 @@ https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["BlueXP  アラ
 
 
 
+=== 2025年8月3日
+
+
+
+==== レプリケーション関係タブの機能強化
+
+レプリケーション関係テーブルにいくつかの新しい列が追加され、*レプリケーション関係*タブでレプリケーション関係に関する詳細情報が表示されるようになりました。テーブルには次の列が含まれるようになりました。
+
+* SnapMirrorポリシー
+* ソースファイルシステム
+* ターゲットファイルシステム
+* 関係の状態
+* 最終転送時間
+
+
+
+
 === 2025年7月14日
 
 
 
 ==== 2つのFSx for ONTAPファイルシステム間でのデータ複製のサポート
 
-BlueXP コンソールから 2 つの FSx for ONTAP ファイル システム間でデータ レプリケーションが利用できるようになりました。
+BlueXPコンソールのキャンバスから、2 つの FSx for ONTAPファイル システム間でのデータ レプリケーションが利用できるようになりました。
 
 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html#replicate-data["データのレプリケート"]
 
@@ -252,46 +269,6 @@ link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-envi
 FSx for ONTAP ファイルシステムの認証情報と権限を設定すると、BlueXP の認証情報ページにリダイレクトされます。このページから、FSx for ONTAP の認証情報の名前を変更したり、削除したりできます。
 
 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["FSx for ONTAP ファイルシステムの権限を設定する"]
-
-
-
-=== 2025年5月4日
-
-
-
-==== トラッカー応答サポート
-
-TrackerでAPI応答が返されるようになり、タスクに関連するREST API出力を確認できるようになりました。
-
-
-
-==== AWS Secrets Managerのリンク認証のサポート
-
-AWS Secrets Managerのシークレットを使用してリンクを認証できるようになり、BlueXP  ワークロードに保存されているクレデンシャルを使用する必要がなくなりました。
-
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["LambdaリンクでFSx for ONTAPファイルシステムに接続"]
-
-
-
-==== FSx for ONTAPファイルシステムのベストプラクティスを実装
-
-BlueXP  ワークロードは、ファイルシステム構成の適切な設計ステータスを確認できるダッシュボードを提供します。この分析を活用して、FSx for ONTAPファイルシステムのベストプラクティスを実装できます。ファイルシステム構成の分析には、SSD容量のしきい値、スケジュールされたローカルスナップショット、FSx for ONTAPのスケジュールされたバックアップ、データ階層化、リモートデータレプリケーションなどの構成が含まれます。
-
-* link:https://docs.netapp.com/us-en/workload-fsx-ontap/configuration-analysis.html["ファイルシステム構成の適切に設計された分析をご紹介します"]
-* link:https://review.docs.netapp.com/us-en/workload-fsx-ontap_well-architected/improve-configurations.html["ファイルシステムのベストプラクティスの実装"]
-
-
-
-
-==== ファイルシステムの問題に対する適切に設計された通知
-
-BlueXP  コンソールで、適切に設計された問題があるFSx for ONTAPファイルシステムに、ファイルシステムに修正が必要な問題があることを示す通知がキャンバスに表示されるようになりました。
-
-
-
-==== 権限に関する用語を更新
-
-ワークロード ファクトリのユーザー インターフェースとドキュメントでは、読み取り権限を示すために「読み取り専用」を使用し、自動化権限を示すために「読み取り/書き込み」を使用するようになりました。
 
 
 
@@ -775,26 +752,6 @@ Cloud Volumes ONTAP 9.15.1をプライベートモードでAWS、Azure、Google 
 
 
 
-== Cloud Volumes Service for Google Cloud
-
-
-
-=== 2020年9月9日
-
-
-
-==== Cloud Volumes Service for Google Cloud のサポート
-
-Cloud Volumes Service for Google CloudをBlueXPから直接管理できるようになりました。
-
-* 作業環境をセットアップして作成
-* Linux クライアントおよび UNIX クライアント用に、 NFSv3 ボリュームと NFSv4.1 ボリュームを作成および管理します
-* Windows クライアント用に SMB 3.x ボリュームを作成して管理します
-* ボリューム Snapshot を作成、削除、およびリストアします
-
-
-
-
 == コピーと同期
 
 
@@ -1142,6 +1099,12 @@ BlueXP  エッジキャッシングサービスは、2024年8月7日に削除�
 
 
 
+== Google Cloud NetAppボリューム
+
+<stdin>内の未解決のディレクティブ - include::https://raw.githubusercontent.com/NetAppDocs/bluexp-google-cloud-netapp-volumes/main/whats-new.adoc[tag=whats-new,leveloffset=+1]
+
+
+
 == Google クラウドストレージ
 
 
@@ -1160,22 +1123,13 @@ BlueXPキャンバスでGoogle Cloud Storageのバケットを表示できるよ
 
 
 
-=== 2025年6月19日
+=== 2025年8月5日
 
 
 
-==== BlueXPのKeystoneダッシュボード
+==== インスタンスレベルの消費データを表示する
 
-BlueXPからKeystoneダッシュボードに直接アクセスできるようになりました。この統合により、すべてのKeystoneサブスクリプションとその他のNetAppサービスを一元的に監視、管理、追跡できるようになります。
-
-BlueXP の Keystone ダッシュボードを使用すると、次のことが可能になります。
-
-* すべてのサブスクリプションの詳細、容量の使用状況、資産を 1 か所で表示します。
-* サブスクリプションを簡単に管理し、ニーズの変化に応じて変更をリクエストできます。
-* ストレージ環境の最新情報を常に把握してください。
-
-
-開始するには、BlueXP の左側のナビゲーション メニューで *ストレージ > Keystone* に移動します。詳細については、を参照して link:https://docs.netapp.com/us-en/keystone-staas/integrations/dashboard-overview.html["Keystoneダッシュボードの概要"]ください。
+BlueXPのKeystoneダッシュボードを通じて、各パフォーマンス サービス レベル インスタンスの現在の消費量と履歴データを表示できます。この機能は、 Keystoneバージョン 3 (v3) サブスクリプションをお持ちの場合、複数のインスタンスのパフォーマンス サービス レベルで利用できます。詳細については、link:https://docs.netapp.com/us-en/keystone-staas/integrations/current-usage-tab.html["Keystoneサブスクリプションの消費量を表示する"] 。
 
 
 
