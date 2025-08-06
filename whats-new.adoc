@@ -42,6 +42,12 @@ BlueXP UI が日本語で利用できるようになりました。ブラウザ�
 
 
 
+==== 運用回復力機能
+
+運用回復力機能はBlueXPから削除されました。問題が発生した場合は、 NetAppサポートにお問い合わせください。
+
+
+
 ==== BlueXP  IDおよびアクセス管理（IAM）
 
 BlueXPの ID およびアクセス管理では、次の機能が提供されるようになりました。
@@ -325,6 +331,66 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-set-up-azure-ad.htm
 
 
 == バックアップとリカバリ
+
+
+
+=== 2025年8月12日
+
+このBlueXP  バックアップ/リカバリリリースには、次の更新が含まれています。
+
+
+
+==== Microsoft SQL Server ワークロードが一般提供 (GA) でサポートされるようになりました
+
+Microsoft SQL Server ワークロード サポートがBlueXP backup and recoveryで一般提供 (GA) されました。ONTAP、 Cloud Volumes ONTAP、 Amazon FSx for NetApp ONTAPストレージ上で MSSQL 環境を使用している組織は、この新しいバックアップおよびリカバリ サービスを利用してデータを保護できるようになりました。
+
+このリリースには、以前のプレビュー バージョンからの Microsoft SQL Server ワークロード サポートに対する次の機能強化が含まれています。
+
+* * SnapMirrorアクティブ シンク*: このバージョンでは、 SnapMirrorアクティブ シンク ( SnapMirror Business Continuity [SM-BC] とも呼ばれる) がサポートされるようになりました。これにより、サイト全体に障害が発生した場合でもビジネス サービスの運用が継続され、セカンダリ コピーを使用してアプリケーションが透過的にフェイルオーバーできるようになります。BlueXP backup and recoveryでは、 SnapMirrorアクティブ同期および Metrocluster 構成での Microsoft SQL Server データベースの保護がサポートされるようになりました。情報は、保護の詳細ページの *ストレージと関係のステータス* セクションに表示されます。関係情報は、ポリシー ページの更新された *セカンダリ設定* セクションに表示されます。
++
+参照 https://docs.netapp.com/us-en/bluexp-backup-recovery/br-use-policies-create.html["ポリシーを使用してワークロードを保護する"]。
+
++
+image:../media/screen-br-sql-protection-details.png["Microsoft SQL Server ワークロードの保護の詳細ページ"]
+
+* *マルチバケットのサポート*: 異なるクラウド プロバイダーにまたがる作業環境ごとに最大 6 つのバケットを使用して、作業環境内のボリュームを保護できるようになりました。
+* *SQL Server ワークロードのライセンスと無料試用版の更新*: 既存のBlueXPバックアップおよびリカバリ ライセンス モデルを使用して、SQL Server ワークロードを保護できるようになりました。SQL Server ワークロードには個別のライセンス要件はありません。
++
+詳細については、 https://docs.netapp.com/us-en/bluexp-backup-recovery/br-start-licensing.html["BlueXP backup and recoveryのライセンスを設定する"] 。
+
+* *カスタム スナップショット名*: Microsoft SQL Server ワークロードのバックアップを管理するポリシーで、独自のスナップショット名を使用できるようになりました。ポリシー ページの *詳細設定* セクションにこの情報を入力します。
++
+image:../media/screen-br-sql-policy-create-advanced-snapmirror.png["BlueXP backup and recoveryポリシーのSnapMirrorおよびスナップショット形式の設定のスクリーンショット"]
+
++
+参照 https://docs.netapp.com/us-en/bluexp-backup-recovery/br-use-policies-create.html["ポリシーを使用してワークロードを保護する"]。
+
+* *セカンダリ ボリュームのプレフィックスとサフィックス*: ポリシー ページの *詳細設定* セクションで、カスタムのプレフィックスとサフィックスを入力できます。
+* *アイデンティティとアクセス管理 (IAM)*: ユーザーの機能へのアクセスを制御できるようになりました。
++
+参照 https://docs.netapp.com/us-en/bluexp-backup-recovery/br-start-login.html["BlueXP backup and recoveryにログイン"]そして https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-roles.html["BlueXP backup and recovery機能へのアクセス"]。
+
+* *オブジェクト ストレージから代替ホストへの復元*: プライマリ ストレージがダウンしている場合でも、オブジェクト ストレージから代替ホストに復元できるようになりました。
+* *ログ バックアップ データ*: データベース保護の詳細ページにログ バックアップが表示されるようになりました。バックアップが完全バックアップかログ バックアップかを示す「バックアップ タイプ」列が表示されます。
+* *強化されたダッシュボード*: ダッシュボードにストレージとクローンの節約が表示されるようになりました。
++
+image:../media/screen-br-dashboard3.png["BlueXP backup and recoveryダッシュボード"]
+
+
+
+
+
+==== ONTAPボリュームワークロードの強化
+
+* * ONTAPボリュームの複数フォルダの復元*: これまでは、参照と復元機能から一度に 1 つのフォルダまたは複数のファイルを復元できました。BlueXP backup and recoveryでは、参照と復元機能を使用して一度に複数のフォルダーを選択できるようになりました。
+* *削除されたボリュームのバックアップの表示と管理*: BlueXP backup and recoveryダッシュボードに、 ONTAPから削除されたボリュームを表示および管理するオプションが追加されました。これにより、 ONTAPに存在しなくなったボリュームのバックアップを表示および削除できるようになります。
+* *バックアップの強制削除*: 極端なケースでは、 BlueXP backup and recoveryがバックアップにアクセスできないようにする必要がある場合もあります。これは、たとえば、サービスがバックアップ バケットにアクセスできなくなった場合や、バックアップが DataLock で保護されているが不要になった場合に発生する可能性があります。以前は、これらを自分で削除することはできず、 NetAppサポートに連絡する必要がありました。このリリースでは、バックアップを強制的に削除するオプションを使用できます (ボリュームおよび作業環境レベル)。
+
+
+
+CAUTION: このオプションは慎重に使用し、極端なクリーンアップが必要な場合にのみ使用してください。BlueXP backup and recoveryは、オブジェクト ストレージでこれらのバックアップが削除されていない場合でも、これらのバックアップにアクセスできなくなります。クラウド プロバイダーにアクセスして、バックアップを手動で削除する必要があります。
+
+参照 https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-overview.html["ONTAPワークロードを保護する"]。
 
 
 
@@ -804,7 +870,7 @@ BlueXPのコピーおよび同期サービスとデータブローカーを更�
 
 ==== サポート対象のスイッチ
 
-サポート対象となるBrocade Fibre Channel SAN スイッチに関する情報を表示できるようになりました。これには、スイッチ モデル、シリアル番号、サポート ステータスに関する詳細が含まれます。link:https://docs.netapp.com/us-en/active-iq/task_view_inventory_details.html["サポート対象のスイッチを表示する方法を学ぶ"] 。
+ef3139c75debdd9ee259a4ea386083d3
 
 
 
@@ -1146,7 +1212,11 @@ BlueXP  エッジキャッシングサービスは、2024年8月7日に削除�
 
 == Google Cloud NetAppボリューム
 
-<stdin>内の未解決のディレクティブ - include::https://raw.githubusercontent.com/NetAppDocs/bluexp-google-cloud-netapp-volumes/main/whats-new.adoc[tag=whats-new,leveloffset=+1]
+
+
+=== 2025年7月21日
+
+未解決の指令 https://raw.githubusercontent.com/NetAppDocs/bluexp-google-cloud-netapp-volumes/main/whats-new.adoc[]- include::../_whatsnew/2025-07-14.adoc[]
 
 
 
