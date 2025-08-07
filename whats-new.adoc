@@ -870,7 +870,7 @@ BlueXPのコピーおよび同期サービスとデータブローカーを更�
 
 ==== サポート対象のスイッチ
 
-ef3139c75debdd9ee259a4ea386083d3
+サポート対象となるBrocade Fibre Channel SAN スイッチに関する情報を表示できるようになりました。これには、スイッチ モデル、シリアル番号、サポート ステータスに関する詳細が含まれます。link:https://docs.netapp.com/us-en/active-iq/task_view_inventory_details.html["サポート対象のスイッチを表示する方法を学ぶ"] 。
 
 
 
@@ -1216,7 +1216,16 @@ BlueXP  エッジキャッシングサービスは、2024年8月7日に削除�
 
 === 2025年7月21日
 
-未解決の指令 https://raw.githubusercontent.com/NetAppDocs/bluexp-google-cloud-netapp-volumes/main/whats-new.adoc[]- include::../_whatsnew/2025-07-14.adoc[]
+
+
+==== BlueXPでのGoogle Cloud NetApp Volumesのサポート
+
+BlueXPからGoogle Cloud NetApp Volumes を直接管理できるようになりました。
+
+* 作業環境を追加します。
+* ボリュームを表示します。
+* 作業環境を削除します。
+
 
 
 

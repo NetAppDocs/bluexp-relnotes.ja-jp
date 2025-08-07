@@ -962,5 +962,11 @@
   <block id="2ad14b464bc33278b17682af53ee8430" category="admonition">このオプションは慎重に使用し、極端なクリーンアップが必要な場合にのみ使用してください。BlueXP backup and recoveryは、オブジェクト ストレージでこれらのバックアップが削除されていない場合でも、これらのバックアップにアクセスできなくなります。クラウド プロバイダーにアクセスして、バックアップを手動で削除する必要があります。</block>
   <block id="04c7a623f8e877c84e93d77694cc5035" category="inline-link">ONTAPワークロードを保護する</block>
   <block id="ca202cae1bb121b6ad0687a5afe91a23" category="paragraph">参照<block ref="21eafc85c1e02f8afb995baf9105bba6" category="inline-link-rx"></block>。</block>
-  <block id="d050676cc5292d576618457e004c3537" category="paragraph">未解決の指令<block ref="faac70d8d5f83c69456fd13fe050e68d" category="inline-link-rx"></block>- include::../_whatsnew/2025-07-14.adoc[]</block>
+  <block id="617f2d0adf2001440f244bf5c45be277" category="inline-link-macro">サポート対象のスイッチを表示する方法を学ぶ</block>
+  <block id="ef3139c75debdd9ee259a4ea386083d3" category="paragraph">サポート対象となるBrocade Fibre Channel SAN スイッチに関する情報を表示できるようになりました。これには、スイッチ モデル、シリアル番号、サポート ステータスに関する詳細が含まれます。<block ref="de42528af60c9393a2c8b32539c694f1" category="inline-link-macro-rx"></block> 。</block>
+  <block id="71d0ee5d411b8f72f571401cdab213ac" category="section-title">BlueXPでのGoogle Cloud NetApp Volumesのサポート</block>
+  <block id="775e62d1bed90f08196ce9665fe3b625" category="paragraph">BlueXPからGoogle Cloud NetApp Volumes を直接管理できるようになりました。</block>
+  <block id="bfcabace496e3d26dcf080c810ecd405" category="list-text">作業環境を追加します。</block>
+  <block id="ee07da92eddb189dc56635b6831f1856" category="list-text">ボリュームを表示します。</block>
+  <block id="f842a501bbdfa7f71ac344c36591a1b8" category="list-text">作業環境を削除します。</block>
 </blocks>
