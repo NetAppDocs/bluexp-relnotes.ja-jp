@@ -608,25 +608,6 @@
   <block id="1ce2096c300f78bbb8389ca2603e6dd9" category="inline-link">Keystone</block>
   <block id="b49987f3f316f01d3769520e570e03c1" category="list-text"><block ref="b49987f3f316f01d3769520e570e03c1" category="inline-link-rx"></block></block>
   <block id="f27f1ce6df3e2ec2518f77e8e1a4a531" category="section-title">2025年6月9日</block>
-  <block id="e9bf07011be1831466ac0bf1bbfe1140" category="section-title">コネクタ3.9.53</block>
-  <block id="734a861d3d201b7a4e47067ddb5a7339" category="paragraph">BlueXP コネクタのこのリリースには、セキュリティの改善とバグ修正が含まれています。</block>
-  <block id="33eba214b6723fe54975309f2fc419fe" category="paragraph">3.9.53リリースは、標準モードと制限モードで使用できます。</block>
-  <block id="39615b94cc2fe576502275ed459d404b" category="section-title">ディスク容量使用状況アラート</block>
-  <block id="f990e553cdc4c29c2efffba33e08a8c7" category="inline-link-macro">もっと詳しく知る。</block>
-  <block id="da15b66e2df6f7619f48e376251ca70a" category="paragraph">通知センターに、コネクタのディスク領域の使用状況に関するアラートが含まれるようになりました。 <block ref="c622bedc83ce36b38252ce6167a6dc1f" category="inline-link-macro-rx"></block></block>
-  <block id="35e36a667d1baf91dbb76a03357b3183" category="section-title">監査の改善</block>
-  <block id="71c9d16d02984e33cfc9f5c051c0fdb6" category="paragraph">タイムラインにユーザーのログインとログアウトのイベントが表示されるようになりました。ログインアクティビティがいつ発生したかを確認できるため、監査やセキュリティ監視に役立ちます。組織管理者ロールを持つAPIユーザーは、ログインしたユーザーのメールアドレスをタイムラインに表示できます。 <block ref="603b75134f0f5d7ea187a9ec930623d0" prefix=" " category="inline-code"></block>パラメータは次のようになります。 <block ref="a87d1f23773a5263432b2160d5b0c667" prefix=" " category="inline-code"></block> 。</block>
-  <block id="a0b97dd4496f33209c0a49172d25b07e" category="section-title">BlueXPでKeystoneサブスクリプション管理が利用可能</block>
-  <block id="92fd6983a547cfe3acf24d017a43dd47" category="paragraph">BlueXP から NetApp Keystone サブスクリプションを管理できます。</block>
-  <block id="29e615c9125f030edfca48f5dd489a27" category="inline-link-macro">BlueXP での Keystone サブスクリプション管理について学習します。</block>
-  <block id="b449211baca42f6cd385865db145f827" category="paragraph"><block ref="b449211baca42f6cd385865db145f827" category="inline-link-macro-rx"></block></block>
-  <block id="2519e52723b63d73b91fe9567002e2ad" category="section-title">多要素認証（MFA）</block>
-  <block id="9950fd493db1cd52e6769f96bf27cc78" category="inline-link-macro">自分自身に多要素認証を設定する方法について説明します。</block>
-  <block id="8b6178443fc25355a974613e3d6951b4" category="inline-link-macro">ユーザーに対する多要素認証の管理について学習します。</block>
-  <block id="432ca61a502f036a7c9fe7850d55f376" category="paragraph"><block ref="b5f93708cb2e7c8499feb8c2a3a457d0" category="inline-link-macro-rx"></block> <block ref="1104a8a08c217b6a8c157f716ea4a98c" category="inline-link-macro-rx"></block></block>
-  <block id="35084d885dea7b061e6894c1cf3036d9" category="section-title">ワークロード</block>
-  <block id="01537291f07f4eb50dc075e6b0282ce8" category="paragraph">BlueXP の認証情報ページから Amazon FSx for NetApp ONTAP の認証情報を表示および削除できるようになりました。</block>
-  <block id="1971cba9fca6bc598cf10a08dfb20cb6" category="section-title">2025年5月29日</block>
   <block id="7454fc4c14df2a987637928e569efe3a" category="section-title">2025年6月29日</block>
   <block id="737f8adcd33c506f811980c79df8aa51" category="section-title">資格情報の更新</block>
   <block id="e7bb6404e9b51c8163ba1ed57cf3a336" category="paragraph">FSx for ONTAP ファイルシステムの認証情報と権限を設定すると、BlueXP の認証情報ページにリダイレクトされます。このページから、FSx for ONTAP の認証情報の名前を変更したり、削除したりできます。</block>
@@ -673,9 +654,6 @@
   <block id="98b92205e576b5e6498a01750fffbf6b" category="paragraph-title">パフォーマンスとセキュリティの改善</block>
   <block id="890d5712449921f1a6ffa08636045ac2" category="paragraph">BlueXP 分類のパフォーマンス、メモリ消費、セキュリティを改善するための機能強化が行われました。</block>
   <block id="cb000a9ed4aba8f6a1db1f518019d44e" category="paragraph">Redis がアップグレードされ、BlueXP 分類の信頼性が向上しました。BlueXP分類では、スキャン中のファイル数レポートの精度を向上させるために Elasticsearch が使用されるようになりました。</block>
-  <block id="389d4c98e2d0499c2e4e750430434afb" category="section-title">Cloud Volumes ONTAP 9.15.1でイネーブルになっているプライベートモード展開</block>
-  <block id="bce4906e9d915e525cd382b520b71325" category="paragraph">Cloud Volumes ONTAP 9.15.1をプライベートモードでAWS、Azure、Google Cloudに導入できるようになりました。プライベートモードは、Cloud Volumes ONTAP 9.15.1のシングルノード環境とハイアベイラビリティ（HA）環境の両方で有効になります。</block>
-  <block id="dc748283e7593515df9e8f2759a85349" category="paragraph">プライベートモード配置の詳細については、を参照してください<block ref="312f421b6dd5cf62286ecf6a82a8132e" category="inline-link-rx"></block>。</block>
   <block id="b77e8ec0a3425747f32b3dbc303adecb" category="section-title">2025年6月30日</block>
   <block id="f5939a7e3fd75d2d5422c1d6029f44c8" category="paragraph">バージョン4.2.4P2</block>
   <block id="dc729c135725ed28b09cd35258e2a28d" category="section-title">発見の改善</block>
@@ -744,7 +722,6 @@
   <block id="ede1cce9f240fed5ecc4264bd699cee1" category="list-text">BlueXPのバックアップとリカバリ</block>
   <block id="43db2a9bc6b7310c67fd6873bb6ca7a4" category="list-text">フェデレーション</block>
   <block id="f52cf765b6d2324047bf70dbb3a134b2" category="inline-link-macro">アクセス ロールの使用について詳しく学習します。</block>
-  <block id="f32aa7882dcd9a369e67d2808830a51e" category="paragraph">フェデレーションされていないユーザーは、 BlueXPアカウントでMFAを有効にしてセキュリティを強化できます。管理者は、必要に応じてユーザーのMFAをリセットまたは無効化するなど、MFA設定を管理できます。これは標準モードでのみサポートされます。</block>
   <block id="2bef154766331bbaacbab995f24ef0c2" category="section-title">必要なBlueXPアクセスロール</block>
   <block id="44a4a7c03393e00f4aeee3bd72474eea" category="paragraph">BlueXPでStorageGRID を表示、検出、または管理するには、次のアクセス ロールのいずれかが必要です: *組織管理者*、*フォルダーまたはプロジェクト管理者*、*ストレージ管理者*、または *ストレージ ヘルス スペシャリスト*。 <block ref="b792d0fe33393ff1eec4387f959ddd2c" category="inline-link-macro-rx"></block></block>
   <block id="d0169e5c24cd4c5e05dcb7edb4ca10d7" category="section-title">バージョン1.45</block>
@@ -785,7 +762,6 @@
   <block id="5e976f8888129db7a70ab686bfcc86b9" category="list-text">Cloud Volumes ONTAPサービスのサポート専用のコネクタの透過プロキシのサポート。 <block ref="addeb9305f92d41fc2dd640d1ef810f0" category="inline-link-macro-rx"></block></block>
   <block id="a930f8ca18589b33c946f81801d0bbf6" category="paragraph">新しい管理機能にアクセスするには、既存のフェデレーション接続を新しいインターフェースにインポートするよう求められます。これにより、フェデレーション接続を再作成することなく、最新の機能強化を活用できます。 <block ref="374020c220651e051317a80c1b5ae1db" category="inline-link-macro-rx"></block></block>
   <block id="b658b3504fd725bf7abab622b28f1851" category="paragraph"><block ref="b658b3504fd725bf7abab622b28f1851" category="inline-link-macro-rx"></block></block>
-  <block id="12abdfb9ba5fcfe154c4363eb977b22b" category="paragraph"><block ref="12abdfb9ba5fcfe154c4363eb977b22b" category="inline-link-macro-rx"></block></block>
   <block id="c65f3468fbd84ca6a3ed5c4f86c93ec8" category="section-title">強化されたONTAPボリュームダッシュボード</block>
   <block id="4fd717f9bf23502f14b97a4e0dd209e6" category="paragraph">2025 年 4 月には、はるかに高速で効率的な、強化されたONTAPボリューム ダッシュボードのプレビューをリリースしました。</block>
   <block id="24c045ea49f5ec7c22662da2305601e6" category="paragraph">このダッシュボードは、多数のワークロードを抱えるエンタープライズのお客様を支援するために設計されました。20,000ボリュームのお客様でも、新しいダッシュボードは10秒未満で読み込まれます。</block>
@@ -930,4 +906,28 @@
   <block id="276ba658474d8685c0925cd2bcb486a8" category="inline-link">BlueXP disaster recoveryライセンス</block>
   <block id="a7193edb26a4b1bca4b7b82254e6dd4b" category="inline-link">BlueXP disaster recoveryのライセンスを設定する</block>
   <block id="17c3f7bad28af5667bbaacbe3fe4f6d1" category="paragraph">詳細については、<block ref="ea68973aac8ca707300074d97a0eb98d" category="inline-link-rx"></block>そして<block ref="1e6c39dcb2e36546ede605d53a914ae9" category="inline-link-rx"></block>。</block>
+  <block id="b9d888f58b09c4007db0247286e392b5" category="section-title">2025年8月11日</block>
+  <block id="b21ef378da4454971a6488eacb2b5c87" category="section-title">コネクタ 3.9.55</block>
+  <block id="7c5236578de836eb6dde25bc3e995d02" category="paragraph">BlueXPコネクタのこのリリースには、セキュリティの改善とバグ修正が含まれています。</block>
+  <block id="95d98fc23d5487afb84beeeea8decb64" category="paragraph">3.9.55 リリースは、標準モードと制限モードで利用できます。</block>
+  <block id="6c88af8a9c03b6578eb8087b3113c649" category="section-title">日本語サポート</block>
+  <block id="a73649d115bb7a94bbfab3b7d4f15ddf" category="paragraph">BlueXP UI が日本語で利用できるようになりました。ブラウザの言語が日本語の場合、 BlueXP は日本語で表示されます。日本語のドキュメントにアクセスするには、ドキュメント Web サイトの言語メニューを使用します。</block>
+  <block id="65bb19480004be81c6ef8d7f7ef40e2f" category="paragraph">BlueXPの ID およびアクセス管理では、次の機能が提供されるようになりました。</block>
+  <block id="db971a19c27a52f19f1811c52c55dc2d" category="section-title">運用サポートのための新しいアクセスロール</block>
+  <block id="9a69bf13bbd4a86f23945e6b153f3913" category="paragraph">BlueXP は、運用サポートアナリストの役割をサポートするようになりました。このロールは、ストレージアラートを監視し、 BlueXP監査タイムラインを表示し、 NetAppサポートケースを入力および追跡する権限をユーザーに付与します。</block>
+  <block id="7a4e65e1bd3f1685ea059c893a13cb58" category="section-title">バージョン1.46</block>
+  <block id="d221ee9585220af20b8b4e1420b1a705" category="paragraph">このBlueXP classificationリリースには、バグ修正と次の更新が含まれています。</block>
+  <block id="688ea6ebefec0ae0aaddb70ff5413e00" category="paragraph-title">BlueXPタイムラインのスキャンイベントの洞察の強化</block>
+  <block id="e3f2c8a75408251f04a1059c3edcc328" category="paragraph">BlueXPタイムラインは、 BlueXP classificationのスキャン イベントに関する強化された分析をサポートするようになりました。タイムラインには、作業環境のスキャンがいつ開始されたか、作業環境のステータス、および問題が表示されるようになりました。共有と作業環境のステータスは、マッピング スキャンでのみ使用できます。</block>
+  <block id="57bee919903f0c92a41c5582519db779" category="inline-link-macro">BlueXP の操作を監視する</block>
+  <block id="6ae0edc3b3f0ae8b008d6d6252956898" category="paragraph">BlueXPのタイムラインの詳細については、以下を参照してください。<block ref="985f72ec91ace369e4feac0016fa4020" category="inline-link-macro-rx"></block> 。</block>
+  <block id="e5d2f68147d287044a7fffa2d0926eae" category="paragraph-title">RHEL 9.6 のサポート</block>
+  <block id="f1513d7b9b8ef1acb75bb450ddd12a6c" category="paragraph">このリリースでは、ダーク サイトの展開を含むBlueXP classificationの手動オンプレミス インストール用に Red Hat Enterprise Linux v9.6 のサポートが追加されました。</block>
+  <block id="9def883103b7b964dcbb0993e3f8a065" category="section-title">最適化ライセンスの提供終了</block>
+  <block id="cf4dd05cf065c9ae01bc836c5033bb63" category="paragraph">2025 年 8 月 11 日以降、 Cloud Volumes ONTAP Optimized ライセンスは廃止され、Azure および Google Cloud マーケットプレイスの従量課金制 (PAYGO) サブスクリプションで購入または更新できなくなります。Optimized ライセンスの年間契約を既に締結している場合は、契約終了までライセンスを引き続きご利用いただけます。Optimized ライセンスの有効期限が切れた場合は、 Cloud Volumes ONTAP Essentials または Professional ライセンスを選択できます。</block>
+  <block id="09027718866a8a3a2edb0bb0eb53c926" category="paragraph">ただし、最適化されたライセンスを追加または更新する機能は、API を通じて利用できるようになります。</block>
+  <block id="be02aeef4770b69cefbe40935aba2797" category="inline-link">Cloud Volumes ONTAPのライセンス</block>
+  <block id="2b8e43c95c1d15bc0824064c3dc0f993" category="paragraph">ライセンスパッケージの詳細については、以下を参照してください。<block ref="4b2776d787a70224c2441f63d3888380" category="inline-link-rx"></block> 。</block>
+  <block id="ed1f600d01a229b43b3196dd2f2e48ca" category="inline-link">容量ベースのライセンスを管理する</block>
+  <block id="1d4a9a37e700957e9d79664f032cf5ec" category="paragraph">別の充電方法への切り替えについては、<block ref="eeeecd1116eaf4db26e064552c04366d" category="inline-link-rx"></block> 。</block>
 </blocks>
