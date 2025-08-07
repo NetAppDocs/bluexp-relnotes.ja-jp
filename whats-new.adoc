@@ -775,7 +775,7 @@ Data Investigationレポートからのデータのエクスポートには、�
 
 ==== 最適化ライセンスの提供終了
 
-2025 年 8 月 11 日以降、 Cloud Volumes ONTAP Optimized ライセンスは廃止され、Azure および Google Cloud マーケットプレイスの従量課金制 (PAYGO) サブスクリプションで購入または更新できなくなります。Optimized ライセンスの年間契約を既に締結している場合は、契約終了までライセンスを引き続きご利用いただけます。Optimized ライセンスの有効期限が切れた場合は、 Cloud Volumes ONTAP Essentials または Professional ライセンスを選択できます。
+2025 年 8 月 11 日以降、 Cloud Volumes ONTAP Optimized ライセンスは廃止され、Azure および Google Cloud マーケットプレイスの従量課金制 (PAYGO) サブスクリプションで購入または更新できなくなります。Optimized ライセンスの年間契約を既に締結している場合は、契約終了までライセンスを引き続きご利用いただけます。Optimized ライセンスの有効期限が切れると、 BlueXPでCloud Volumes ONTAP Essentials または Professional ライセンスを選択できます。
 
 ただし、最適化されたライセンスを追加または更新する機能は、API を通じて利用できるようになります。
 
@@ -1334,6 +1334,12 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 == ランサムウェアからの保護
+
+
+
+=== 12 2025年7月
+
+このリリースには、全般的な機能強化と改善が含まれています。
 
 
 
