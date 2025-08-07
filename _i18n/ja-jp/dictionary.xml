@@ -516,9 +516,6 @@
   <block id="1183e1b8915696495b308d0bdfa59bd4" category="list-text"><block ref="1183e1b8915696495b308d0bdfa59bd4" category="inline-link-rx"></block></block>
   <block id="b29a186d936b198dcafa3a0308485e2c" category="inline-link">プライベートモードの使用時にコネクタをアップグレードする方法について説明します。</block>
   <block id="e5d325f390c70091b07096d63ab8f353" category="list-text"><block ref="e5d325f390c70091b07096d63ab8f353" category="inline-link-rx"></block></block>
-  <block id="1b4189ae198caba09051ca2138497fc7" category="section-title">2025年3月5日</block>
-  <block id="5542dbcb72159ed44fa6bf922b45c1e8" category="list-text">Disk Qualification Package（DQP）を使用して、事前に定義された健常性とパフォーマンスの条件に従って、ディスクコントローラとストレージデバイスファームウェアを自動的に更新できるようになりました。これにより、潜在的な障害が減少し、システム全体の信頼性が向上します。</block>
-  <block id="90dd6f07c096c3965dc62d991f80f7fd" category="list-text">システムと最新のタイムゾーン定義の整合性を自動的に維持するために、タイムゾーンデータベース（DB）が導入されました。これにより、タイムゾーンルールが変更された場合でも、時間依存の操作がスムーズに継続されます。</block>
   <block id="db54384248c75c5896f34bcb0879b66c" category="section-title">2025年3月30日</block>
   <block id="ef74d01649997b60252254da8a1573fd" category="section-title">ONTAP CLIコマンドについて、AIによって生成されたエラー応答がCloudShellで報告される</block>
   <block id="3450754e7ec63bd0a961376c9928752a" category="paragraph">CloudShellを使用している場合、ONTAP CLIコマンドを発行してエラーが発生するたびに、失敗の説明、失敗の原因、詳細な解決策を含むAI生成のエラー応答を取得できます。</block>
@@ -911,4 +908,14 @@
   <block id="c1682b4af830f8e1dcda8da16400f7e1" category="section-title">インスタンスレベルの消費データを表示する</block>
   <block id="10d5879ffcf41a017554a80a63e4b46e" category="inline-link-macro">Keystoneサブスクリプションの消費量を表示する</block>
   <block id="d2c70766af411fb0e8a745645e1d2b86" category="paragraph">BlueXPのKeystoneダッシュボードを通じて、各パフォーマンス サービス レベル インスタンスの現在の消費量と履歴データを表示できます。この機能は、 Keystoneバージョン 3 (v3) サブスクリプションをお持ちの場合、複数のインスタンスのパフォーマンス サービス レベルで利用できます。詳細については、<block ref="500828148463e083954a63124cb9a7bb" category="inline-link-macro-rx"></block> 。</block>
+  <block id="e8b6643d4bda95ae4c2dacb6a8e40cac" category="section-title">2025年8月6日</block>
+  <block id="a30ce25654f610d7e9e47c6277028c38" category="section-title">サポート対象のスイッチ</block>
+  <block id="d98c483ab007e03305ae5655fe6cbaf8" category="inline-link-macro">サポート対象のスイッチを表示する方法を学ぶ</block>
+  <block id="e71b090a525e98d8d6e64f80e67acf6f" category="paragraph">サポート対象となるBrocade Fibre Channel SAN スイッチに関する情報を表示できるようになりました。これには、スイッチ モデル、シリアル番号、サポート ステータスに関する詳細が含まれます。<block ref="0ccb1381392c0ca51f280aad697adc46" category="inline-link-macro-rx"></block> 。</block>
+  <block id="adc76ac62c705df3456206213de66002" category="section-title">RSS AutoSupportデータのしきい値</block>
+  <block id="3cdd6b50a4e4c3395ca5fea20c94ee5b" category="paragraph">AutoSupportウィジェットの最近の送信停止 (RSS) 制限が、システムが RSS としてフラグ付けされるまでの 48 時間 (2 日間) から 216 時間 (9 日間) に延長されました。これは、週ごとのAutoSupportデータのみを送信するStorageGRIDなどのプラットフォームに対応するために行われます。</block>
+  <block id="bbe4dac655b49c7a3978eb5864452f05" category="section-title">Digital Advisor API カタログの非推奨 API セクション</block>
+  <block id="4632607b0b76f87d36568a2df2c3a267" category="paragraph">Digital Advisor API カタログに、新しい非推奨の API セクションが追加されました。廃止が予定されている API と、廃止のタイムラインおよび代替 API がリストされます。</block>
+  <block id="9eadf268f4ef55df53b7403a020082b1" category="section-title">容量予測 V2 およびサポート終了 API モジュールの廃止</block>
+  <block id="bd2055e6fb5a6ca7ecc6d9d52f394548" category="paragraph">容量予測 V2 およびサポート終了 API モジュールは廃止される予定です。廃止された API にアクセスしたり、廃止予定のタイムラインや代替 API について知るには、*API サービス -&gt; 参照 -&gt; 廃止された API* に移動します。</block>
 </blocks>
