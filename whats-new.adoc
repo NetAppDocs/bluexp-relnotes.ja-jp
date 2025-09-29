@@ -157,7 +157,7 @@ link:https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#iam["BlueXP
 
 ===== アイデンティティ連携の効率的な管理
 
-BlueXPは、ID連携を管理するためのより直感的なインターフェースを提供します。これにより、ナビゲーションが簡素化され、連携接続の設定オプションが明確になり、既存の連携の可視性が向上します。
+BlueXPでは、標準モードの使用時に ID フェデレーションを管理するための、より直感的なインターフェースが提供されるようになりました。これには、より簡単なナビゲーション、フェデレーション接続を構成するためのより明確なオプション、既存のフェデレーションの可視性の向上が含まれます。
 
 ID連携によるシングルサインオン（SSO）を有効にすると、ユーザーは企業の認証情報でBlueXPにログインできるようになります。これにより、セキュリティが向上し、パスワードの使用が削減され、オンボーディングが簡素化されます。
 
@@ -360,66 +360,6 @@ link:br-use-vmware-protect-overview.html["BlueXP backup and recoveryによる VM
 * 新規のお客様の場合、高パフォーマンスのインデックス作成がデフォルトで有効になっています。
 * 既存のお客様の場合は、UI の [復元] セクションに移動して再インデックスを有効にすることができます。
 
-
-
-
-=== 2025年8月11日
-
-このBlueXP  バックアップ/リカバリリリースには、次の更新が含まれています。
-
-
-
-==== Microsoft SQL Server ワークロードが一般提供 (GA) でサポートされるようになりました
-
-Microsoft SQL Server ワークロード サポートがBlueXP backup and recoveryで一般提供 (GA) されました。ONTAP、 Cloud Volumes ONTAP、 Amazon FSx for NetApp ONTAPストレージ上で MSSQL 環境を使用している組織は、この新しいバックアップおよびリカバリ サービスを利用してデータを保護できるようになりました。
-
-このリリースには、以前のプレビュー バージョンからの Microsoft SQL Server ワークロード サポートに対する次の機能強化が含まれています。
-
-* * SnapMirrorアクティブ シンク*: このバージョンでは、 SnapMirrorアクティブ シンク ( SnapMirror Business Continuity [SM-BC] とも呼ばれる) がサポートされるようになりました。これにより、サイト全体に障害が発生した場合でもビジネス サービスの運用が継続され、セカンダリ コピーを使用してアプリケーションが透過的にフェイルオーバーできるようになります。BlueXP backup and recoveryでは、 SnapMirrorアクティブ同期および Metrocluster 構成での Microsoft SQL Server データベースの保護がサポートされるようになりました。情報は、保護の詳細ページの *ストレージと関係のステータス* セクションに表示されます。関係情報は、ポリシー ページの更新された *セカンダリ設定* セクションに表示されます。
-+
-参照 https://docs.netapp.com/us-en/bluexp-backup-recovery/br-use-policies-create.html["ポリシーを使用してワークロードを保護する"]。
-
-+
-image:../media/screen-br-sql-protection-details.png["Microsoft SQL Server ワークロードの保護の詳細ページ"]
-
-* *マルチバケットのサポート*: 異なるクラウド プロバイダーにまたがる作業環境ごとに最大 6 つのバケットを使用して、作業環境内のボリュームを保護できるようになりました。
-* *SQL Server ワークロードのライセンスと無料試用版の更新*: 既存のBlueXPバックアップおよびリカバリ ライセンス モデルを使用して、SQL Server ワークロードを保護できるようになりました。SQL Server ワークロードには個別のライセンス要件はありません。
-+
-詳細については、 https://docs.netapp.com/us-en/bluexp-backup-recovery/br-start-licensing.html["BlueXP backup and recoveryのライセンスを設定する"] 。
-
-* *カスタム スナップショット名*: Microsoft SQL Server ワークロードのバックアップを管理するポリシーで、独自のスナップショット名を使用できるようになりました。ポリシー ページの *詳細設定* セクションにこの情報を入力します。
-+
-image:../media/screen-br-sql-policy-create-advanced-snapmirror.png["BlueXP backup and recoveryポリシーのSnapMirrorおよびスナップショット形式の設定のスクリーンショット"]
-
-+
-参照 https://docs.netapp.com/us-en/bluexp-backup-recovery/br-use-policies-create.html["ポリシーを使用してワークロードを保護する"]。
-
-* *セカンダリ ボリュームのプレフィックスとサフィックス*: ポリシー ページの *詳細設定* セクションで、カスタムのプレフィックスとサフィックスを入力できます。
-* *アイデンティティとアクセス管理 (IAM)*: ユーザーの機能へのアクセスを制御できるようになりました。
-+
-参照 https://docs.netapp.com/us-en/bluexp-backup-recovery/br-start-login.html["BlueXP backup and recoveryにログイン"]そして https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-roles.html["BlueXP backup and recovery機能へのアクセス"]。
-
-* *オブジェクト ストレージから代替ホストへの復元*: プライマリ ストレージがダウンしている場合でも、オブジェクト ストレージから代替ホストに復元できるようになりました。
-* *ログ バックアップ データ*: データベース保護の詳細ページにログ バックアップが表示されるようになりました。バックアップが完全バックアップかログ バックアップかを示す「バックアップ タイプ」列が表示されます。
-* *強化されたダッシュボード*: ダッシュボードにストレージとクローンの節約が表示されるようになりました。
-+
-image:../media/screen-br-dashboard3.png["BlueXP backup and recoveryダッシュボード"]
-
-
-
-
-
-==== ONTAPボリュームワークロードの強化
-
-* * ONTAPボリュームの複数フォルダの復元*: これまでは、参照と復元機能から一度に 1 つのフォルダまたは複数のファイルを復元できました。BlueXP backup and recoveryでは、参照と復元機能を使用して一度に複数のフォルダーを選択できるようになりました。
-* *削除されたボリュームのバックアップの表示と管理*: BlueXP backup and recoveryダッシュボードに、 ONTAPから削除されたボリュームを表示および管理するオプションが追加されました。これにより、 ONTAPに存在しなくなったボリュームのバックアップを表示および削除できるようになります。
-* *バックアップの強制削除*: 極端なケースでは、 BlueXP backup and recoveryがバックアップにアクセスできないようにする必要がある場合もあります。これは、たとえば、サービスがバックアップ バケットにアクセスできなくなった場合や、バックアップが DataLock で保護されているが不要になった場合に発生する可能性があります。以前は、これらを自分で削除することはできず、 NetAppサポートに連絡する必要がありました。このリリースでは、バックアップを強制的に削除するオプションを使用できます (ボリュームおよび作業環境レベル)。
-
-
-
-CAUTION: このオプションは慎重に使用し、極端なクリーンアップが必要な場合にのみ使用してください。BlueXP backup and recoveryは、オブジェクト ストレージでこれらのバックアップが削除されていない場合でも、これらのバックアップにアクセスできなくなります。クラウド プロバイダーにアクセスして、バックアップを手動で削除する必要があります。
-
-参照 https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-overview.html["ONTAPワークロードを保護する"]。
 
 
 
@@ -858,6 +798,18 @@ Data Investigationレポートからのデータのエクスポートには、�
 
 
 
+=== 2025年9月4日
+
+
+
+==== Cloud Volumes ONTAP 9.17.1RC
+
+BlueXPを使用して、Azure および Google Cloud でCloud Volumes ONTAP 9.17.1 のリリース候補 1 をデプロイおよび管理できるようになりました。ただし、このバージョンは AWS でのデプロイおよびアップグレードには使用できません。
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Cloud Volumes ONTAPのこのリリースの詳細"^] 。
+
+
+
 === 2025年8月11日
 
 
@@ -896,20 +848,6 @@ Cloud Volumes ONTAPでのプロキシ サーバーの使用の詳細について
 Cloud Volumes ONTAP 9.13.1 以降、L8s_v3 は、新規および既存の高可用性 (HA) ペアの展開の両方で、Azure の単一および複数の可用性ゾーンの VM タイプとしてサポートされます。
 
 詳細については、を参照してください https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure でサポートされる構成"^]。
-
-
-
-=== 2025年6月25日
-
-
-
-==== Cloud Volumes ONTAPの BYOL ライセンスの利用制限
-
-2025年6月25日より、 NetAppはCloud Volumes ONTAPのBYOL（Bring Your Own License）ライセンスモデルを制限いたします。この制限は、AWS、Azure、Google Cloudのすべてのお客様とCloud Volumes ONTAP導入環境に適用されます。例外となるのは、米国公共部門のお客様と中国リージョンの導入環境です。
-
-NetAppのサポートとサービスはBYOL契約の有効期限まで継続されますが、有効期限切れのライセンスは更新または延長されません。BYOLライセンスの有効期限が切れた場合は、クラウドマーケットプレイスのサブスクリプションを通じて容量ベースのライセンスを購入して切り替える必要があります。ハイパースケーラーマーケットプレイスを通じた容量ベースのライセンスモデルは、ライセンス手続きを効率化し、より大きなビジネスメリットをもたらします。切り替えのオプションについてご相談いただくには、 NetAppアカウントチームまたはカスタマーサクセス担当者までお問い合わせください。
-
-詳細については、次の顧客向け通信を参照してください。  https://mysupport.netapp.com/info/communications/CPC-00661.html["CPC-00661: Cloud Volumes ONTAP BYOLポリシーの変更"^] 。
 
 
 
@@ -1104,6 +1042,28 @@ Cloud Volumes ONTAP使用状況レポートにいくつかの改善点が追加�
 
 
 == ディザスタリカバリ
+
+
+
+=== 2025年9月15日
+
+バージョン4.3.5P3
+
+
+
+==== テストフェイルオーバーのスクリプト構成
+
+このリリースでは、テスト フェイルオーバー プロセス中に VM の電源をオンにした後で、VM 上でスクリプトを実行できるようになりました。これにより、スクリプトをテストおよび検証できるようになります。たとえば、NFS マウントを更新して新しいターゲット サーバーを指すようにすることで、ゲスト アプリケーションが完全にオンラインになり、回復プロセスをエンドツーエンドでテストできるようになります。
+
+フェイルオーバープロセスの詳細については、以下を参照してください。link:https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html["アプリケーションをリモートサイトにフェイルオーバーする"] 。
+
+
+
+==== フェイルバックプロセスの改善
+
+フェイルオーバー中は、検出が完了するまでフェイルバック プロセスが無効になります。これにより、フェイルバックを開始する前にすべての構成が正しく識別され、考慮されるようになり、エラーのリスクが軽減されます。
+
+フェイルバックプロセスの詳細については、以下を参照してください。link:https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failback.html["アプリケーションを元のソースにフェイルバックする"] 。
 
 
 
@@ -1333,6 +1293,44 @@ BlueXPキャンバスでGoogle Cloud Storageのバケットを表示できるよ
 
 
 == Keystone
+
+
+
+=== 2025年9月22日
+
+
+
+==== アラート監視の追加
+
+BlueXPのKeystoneダッシュボードには、サブスクリプション全体のアラートとモニターを管理するための *監視* タブが追加されました。この新しいタブでは次のことが可能になります。
+
+* 容量使用状況とサブスクリプションの有効期限に関するシステム生成アラートとユーザー定義アラートの両方を含むアクティブなアラートを表示して解決します。
+* 容量使用状況とサブスクリプション有効期限イベントを追跡するためのアラート モニターを作成します。
+
+
+詳細については、link:https://docs.netapp.com/us-en/keystone-staas/integrations/monitoring-alerts.html["アラートとモニターの表示と管理"] 。
+
+
+
+==== 合理化されたパフォーマンス サービス レベルの表示
+
+パフォーマンス サービス レベル情報は、別のタブから展開可能なビューに移動され、[*サブスクリプション*] タブ内で表示できます。各サブスクリプションの有効期限を表示するには、「*有効期限*」列の横にある下矢印をクリックします。詳細については、link:https://docs.netapp.com/us-en/keystone-staas/integrations/subscriptions-tab.html["Keystoneサブスクリプションの詳細を表示する"] 。
+
+
+
+=== 2025年8月28日
+
+
+
+==== 新しい列による論理使用状況の追跡の強化
+
+FabricPoolボリュームのKeystone消費量追跡を強化するために、新しい列「合計フットプリント」が追加されました。
+
+* * BlueXPのKeystoneダッシュボード *: *Assets* タブ内の *Volumes in clusters* タブに *Total footnotes* 列が表示されます。
+* *Digital Advisor*: * ボリュームとオブジェクト * タブ内の * ボリュームの詳細 * タブに * 合計フットプリント * 列が表示されます。
+
+
+この列には、パフォーマンス層とコールド層の両方のデータを含む、 FabricPool階層化を使用したボリュームの合計論理フットプリントが表示されるため、 Keystone の消費量を正確に計算できます。
 
 
 

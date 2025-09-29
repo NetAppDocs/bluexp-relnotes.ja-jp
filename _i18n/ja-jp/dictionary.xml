@@ -709,7 +709,6 @@
   <block id="45420c71b7c178f6317117fccb2ff617" category="inline-link-macro">BlueXPの IAM について詳しく学びます。</block>
   <block id="b1f1212b2b71340bea9d195625f740ec" category="paragraph"><block ref="b1f1212b2b71340bea9d195625f740ec" category="inline-link-macro-rx"></block></block>
   <block id="1a63a8b8fcf7d631a5e1fa8067ab9b08" category="section-title">アイデンティティ連携の効率的な管理</block>
-  <block id="a7cc903fc36eaee51a699d9d59b1496c" category="paragraph">BlueXPは、ID連携を管理するためのより直感的なインターフェースを提供します。これにより、ナビゲーションが簡素化され、連携接続の設定オプションが明確になり、既存の連携の可視性が向上します。</block>
   <block id="c06fd8d559af4ac97a50afd1857f0e4e" category="paragraph">ID連携によるシングルサインオン（SSO）を有効にすると、ユーザーは企業の認証情報でBlueXPにログインできるようになります。これにより、セキュリティが向上し、パスワードの使用が削減され、オンボーディングが簡素化されます。</block>
   <block id="62532a5520311cce692e8abb3a619189" category="inline-link-macro">既存のフェデレーション接続をBlueXPにインポートする方法の詳細をご覧ください。</block>
   <block id="35db97c0083a9f24d4de60744f2ae08c" category="paragraph">改善されたフェデレーション管理により、次のことが可能になります。</block>
@@ -841,12 +840,6 @@
   <block id="6276222a738837860023343f423eb60c" category="list-text">SANクラスタの相互運用性チェックを提供する新しいタブが追加されました。選択したターゲットONTAPバージョンでサポートされているホストOSバージョンが表示されます。</block>
   <block id="fa37736e47ccc44e2228f573f9d2a303" category="paragraph"><block ref="fa37736e47ccc44e2228f573f9d2a303" category="inline-link-macro-rx"></block></block>
   <block id="6e23fbb0baad6a7a72bd41e60b71f566" category="admonition">Microsoft SQL Server ワークロードの保護に関するこのドキュメントは、テクノロジープレビューとして提供されています。このプレビュー提供において、 NetApp は一般提供開始前に提供内容、内容、およびスケジュールを変更する権利を留保します。</block>
-  <block id="98d06a8873f74ad318a67a8dee1dcd5f" category="section-title">2025年6月25日</block>
-  <block id="6bcfb67e751fc7a3d8dba22f37cbb570" category="section-title">Cloud Volumes ONTAPの BYOL ライセンスの利用制限</block>
-  <block id="94aa7f0bf110a253866678fe039b7133" category="paragraph">2025年6月25日より、 NetAppはCloud Volumes ONTAPのBYOL（Bring Your Own License）ライセンスモデルを制限いたします。この制限は、AWS、Azure、Google Cloudのすべてのお客様とCloud Volumes ONTAP導入環境に適用されます。例外となるのは、米国公共部門のお客様と中国リージョンの導入環境です。</block>
-  <block id="7b775530465bfc8e5ecd3d0244e8847c" category="paragraph">NetAppのサポートとサービスはBYOL契約の有効期限まで継続されますが、有効期限切れのライセンスは更新または延長されません。BYOLライセンスの有効期限が切れた場合は、クラウドマーケットプレイスのサブスクリプションを通じて容量ベースのライセンスを購入して切り替える必要があります。ハイパースケーラーマーケットプレイスを通じた容量ベースのライセンスモデルは、ライセンス手続きを効率化し、より大きなビジネスメリットをもたらします。切り替えのオプションについてご相談いただくには、 NetAppアカウントチームまたはカスタマーサクセス担当者までお問い合わせください。</block>
-  <block id="b902c393ae9091d227b03ac188f61f92" category="inline-link">CPC-00661: Cloud Volumes ONTAP BYOLポリシーの変更</block>
-  <block id="37e719f908b04fc23a8be8447926a507" category="paragraph">詳細については、次の顧客向け通信を参照してください。 <block ref="4276341cf7737eb343f72d4388b5947d" category="inline-link-rx"></block> 。</block>
   <block id="67c66b3b8df7b2dee0354dd9f9fcec17" category="section-title">2025年7月28日</block>
   <block id="5d8fc779baf0d068c296ee5013b2224f" category="section-title">Kubernetes ワークロードのサポート (プレビュー)</block>
   <block id="36442e954ef2484603f79c5f3abc842b" category="paragraph">BlueXP backup and recoveryのこのリリースでは、Kubernetes ワークロードの検出と管理のサポートが導入されています。</block>
@@ -969,7 +962,6 @@
   <block id="ee07da92eddb189dc56635b6831f1856" category="list-text">ボリュームを表示します。</block>
   <block id="f842a501bbdfa7f71ac344c36591a1b8" category="list-text">作業環境を削除します。</block>
   <block id="667b631b672b77239becd955ba1e71e7" category="paragraph">2025 年 8 月 11 日以降、 Cloud Volumes ONTAP Optimized ライセンスは廃止され、Azure および Google Cloud マーケットプレイスの従量課金制 (PAYGO) サブスクリプションで購入または更新できなくなります。Optimized ライセンスの年間契約を既に締結している場合は、契約終了までライセンスを引き続きご利用いただけます。Optimized ライセンスの有効期限が切れると、 BlueXPでCloud Volumes ONTAP Essentials または Professional ライセンスを選択できます。</block>
-  <block id="742f9b79f178d376f2ac9836103a6f86" category="section-title">12 2025年7月</block>
   <block id="3662750346c2942117b5e1492f2bdcd4" category="paragraph">このリリースには、全般的な機能強化と改善が含まれています。</block>
   <block id="0428e48e7f58929099e52febd0558232" category="section-title">2025年8月25日</block>
   <block id="f7919ff057187672b74306b219aadaa0" category="section-title">プレビューでの VMware ワークロードの保護のサポート</block>
@@ -982,4 +974,36 @@
   <block id="5ced283cbe92781b3a48240fd1fde5cd" category="paragraph">デフォルトで有効:</block>
   <block id="234f6b906c6e6adf3ab5f1a4906d5366" category="list-text">新規のお客様の場合、高パフォーマンスのインデックス作成がデフォルトで有効になっています。</block>
   <block id="3b98c4910d4638f409d4421b51847611" category="list-text">既存のお客様の場合は、UI の [復元] セクションに移動して再インデックスを有効にすることができます。</block>
+  <block id="307e5b33b6254865d4841916d3fe8eb1" category="paragraph">BlueXPでは、標準モードの使用時に ID フェデレーションを管理するための、より直感的なインターフェースが提供されるようになりました。これには、より簡単なナビゲーション、フェデレーション接続を構成するためのより明確なオプション、既存のフェデレーションの可視性の向上が含まれます。</block>
+  <block id="ba3c0cba3a3d15ce8426fc737476a59c" category="section-title">2025年9月4日</block>
+  <block id="186b3997de3027cf87a351ba0a1f9bf4" category="section-title">Cloud Volumes ONTAP 9.17.1RC</block>
+  <block id="2a0942c706fe1023b055df5cfc6720d2" category="paragraph">BlueXPを使用して、Azure および Google Cloud でCloud Volumes ONTAP 9.17.1 のリリース候補 1 をデプロイおよび管理できるようになりました。ただし、このバージョンは AWS でのデプロイおよびアップグレードには使用できません。</block>
+  <block id="1794b1ebac03efdd38e24eb28c47629a" category="inline-link-macro">Cloud Volumes ONTAPのこのリリースの詳細</block>
+  <block id="e0a027f4bdcd16cda78c830ace94fc76" category="paragraph"><block ref="539cae97b36c04420caaf667f01300c8" category="inline-link-macro-rx"></block> 。</block>
+  <block id="2f5c8ea43e93d972b7a25e5290de1a89" category="section-title">2025年9月15日</block>
+  <block id="7b79550b0f239051cee47679029d92d0" category="paragraph">バージョン4.3.5P3</block>
+  <block id="b9c1cdf7f87b0afdb4912dd1210368b2" category="section-title">テストフェイルオーバーのスクリプト構成</block>
+  <block id="23b8df4f947d4876b62a4f35651dc9da" category="paragraph">このリリースでは、テスト フェイルオーバー プロセス中に VM の電源をオンにした後で、VM 上でスクリプトを実行できるようになりました。これにより、スクリプトをテストおよび検証できるようになります。たとえば、NFS マウントを更新して新しいターゲット サーバーを指すようにすることで、ゲスト アプリケーションが完全にオンラインになり、回復プロセスをエンドツーエンドでテストできるようになります。</block>
+  <block id="b1fb5b4805d079fc23dedcbe4848437e" category="inline-link-macro">アプリケーションをリモートサイトにフェイルオーバーする</block>
+  <block id="c50483baf55d5fc84eb7cde2deb8dbbe" category="paragraph">フェイルオーバープロセスの詳細については、以下を参照してください。<block ref="971d0cd2e9d374816901b4e00433e2bb" category="inline-link-macro-rx"></block> 。</block>
+  <block id="bf6db1e2a0fdc4928d739c9a62b174a9" category="section-title">フェイルバックプロセスの改善</block>
+  <block id="3409a7280b540ad3a82c8fa7bda31a54" category="paragraph">フェイルオーバー中は、検出が完了するまでフェイルバック プロセスが無効になります。これにより、フェイルバックを開始する前にすべての構成が正しく識別され、考慮されるようになり、エラーのリスクが軽減されます。</block>
+  <block id="4e76033871d8eb52e7a46330cc531bd8" category="inline-link-macro">アプリケーションを元のソースにフェイルバックする</block>
+  <block id="61a1bcd67556c0aafb06a8820e6e7dce" category="paragraph">フェイルバックプロセスの詳細については、以下を参照してください。<block ref="5386470d7b73cea41e5e361ec83bbd7a" category="inline-link-macro-rx"></block> 。</block>
+  <block id="7438fabae28e88c43c70139fd85c992a" category="section-title">2025年9月22日</block>
+  <block id="e83b5a250e0912f549b3d3758e90e680" category="section-title">アラート監視の追加</block>
+  <block id="eff9717b3e6b80befe3a05db7b3e6a1d" category="paragraph">BlueXPのKeystoneダッシュボードには、サブスクリプション全体のアラートとモニターを管理するための *監視* タブが追加されました。この新しいタブでは次のことが可能になります。</block>
+  <block id="d540a0a7aa0f09414e542ffabc6300c6" category="list-text">容量使用状況とサブスクリプションの有効期限に関するシステム生成アラートとユーザー定義アラートの両方を含むアクティブなアラートを表示して解決します。</block>
+  <block id="64d4cc394badd0b54b5b74f5080233c6" category="list-text">容量使用状況とサブスクリプション有効期限イベントを追跡するためのアラート モニターを作成します。</block>
+  <block id="fad96b4b3d3badf81c42f03f5e3e79f9" category="inline-link-macro">アラートとモニターの表示と管理</block>
+  <block id="cdd57c5e351290faba63a64f9aeaaa00" category="paragraph">詳細については、<block ref="54a7920301641a95eb19ac46b9860916" category="inline-link-macro-rx"></block> 。</block>
+  <block id="bcf269fdba28fb16246a22e167483e0c" category="section-title">合理化されたパフォーマンス サービス レベルの表示</block>
+  <block id="6e665113a95f128bda94a45125d034c0" category="inline-link-macro">Keystoneサブスクリプションの詳細を表示する</block>
+  <block id="d5361f65bad1a0cefb26442a03e3f1a3" category="paragraph">パフォーマンス サービス レベル情報は、別のタブから展開可能なビューに移動され、[*サブスクリプション*] タブ内で表示できます。各サブスクリプションの有効期限を表示するには、「*有効期限*」列の横にある下矢印をクリックします。詳細については、<block ref="c9175061cd37da451a004ee428397f08" category="inline-link-macro-rx"></block> 。</block>
+  <block id="b8d454c9414aa4b52ad019b0311711b5" category="section-title">2025年8月28日</block>
+  <block id="7e8fe67b005603b496012796735f2d36" category="section-title">新しい列による論理使用状況の追跡の強化</block>
+  <block id="b79d3069a7b9ca9140a5c9b1bf2f8d81" category="paragraph">FabricPoolボリュームのKeystone消費量追跡を強化するために、新しい列「合計フットプリント」が追加されました。</block>
+  <block id="729a65ff91860ad65935d125d788f643" category="list-text">* BlueXPのKeystoneダッシュボード *: *Assets* タブ内の *Volumes in clusters* タブに *Total footnotes* 列が表示されます。</block>
+  <block id="61f4e69294ec080e5cb7bce32f2f8b99" category="list-text">*Digital Advisor*: * ボリュームとオブジェクト * タブ内の * ボリュームの詳細 * タブに * 合計フットプリント * 列が表示されます。</block>
+  <block id="610355e82f0e7cf01bdfa1df13985f3f" category="paragraph">この列には、パフォーマンス層とコールド層の両方のデータを含む、 FabricPool階層化を使用したボリュームの合計論理フットプリントが表示されるため、 Keystone の消費量を正確に計算できます。</block>
 </blocks>
